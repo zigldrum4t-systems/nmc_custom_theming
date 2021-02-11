@@ -25,7 +25,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getBaseUrl() {
-		return 'http://dev1.nextcloud.indemo.t-systems.net';
+		return 'http://nextcloud.indemo.t-systems.net';
 	}
 
 	/**
