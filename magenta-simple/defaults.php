@@ -131,7 +131,7 @@ class OC_Theme {
 	public function getScssVariables() {
 		return [
 			'color-primary' => '#E20074',
-			'image-login-background' => 'nmcloud-background.jpg'
+			//'image-login-background' => 'url("./img/nmcloud-background.jpg?v=2")',
 		];
 	}
 }
