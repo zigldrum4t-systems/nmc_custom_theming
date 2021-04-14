@@ -18,15 +18,11 @@
 
 @import url("design-tokens-telekom.css");
 
-#body-login {
-	background: red;
-}
-
-body {
-	background-color: white;
-}
-
 button {
+	text-align: center;
+	border-radius: var(--radius);
+	background: var(--background-primary);
+	color: var(--color-primary);
 	--spacing-x: var(--scl-spacing-24);
 	--spacing-x-icon-only: var(--scl-spacing-8);
 	--min-height: var(--scl-spacing-40);
