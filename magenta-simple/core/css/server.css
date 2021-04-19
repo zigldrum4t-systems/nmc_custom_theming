@@ -19,19 +19,19 @@
 @import url("design-tokens-telekom.css");
 
 #app-navigation > ul > li > a:hover {
-	/* --icon-search-fffffe: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE2IDE2IiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiPjxnIHN0cm9rZT0iI2ZmZmZmZSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIj48ZWxsaXBzZSByeD0iNCIgcnk9IjQiIGN5PSI2IiBjeD0iNiIvPjxwYXRoIGQ9Im0xNC4zIDE0LjI1LTUuNjUtNS42NSIgZmlsbD0iI2ZmZmZmZSIvPjwvZz48L3N2Zz4K) */
-	/* background-image: var(--icon-search-fffffe) !important; */
 	color: var(--scl-color-magenta);
 	opacity: 1;
 }
 
 #app-navigation > ul > li > ul > li > a:hover {
-	/* --icon-search-fffffe: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE2IDE2IiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiPjxnIHN0cm9rZT0iI2ZmZmZmZSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIj48ZWxsaXBzZSByeD0iNCIgcnk9IjQiIGN5PSI2IiBjeD0iNiIvPjxwYXRoIGQ9Im0xNC4zIDE0LjI1LTUuNjUtNS42NSIgZmlsbD0iI2ZmZmZmZSIvPjwvZz48L3N2Zz4K) */
 	color: var(--scl-color-magenta);
 	opacity: 1;
-	/* background-image: var(--icon-search-fffffe); */
 }
 
-.nav-icon-recent:hover path {
+#app-navigation > ul > li > a:hover path {
+	fill: red !important;
+}
+
+#app-navigation > ul > li > ul > li > a:hover path {
 	fill: red !important;
 }
