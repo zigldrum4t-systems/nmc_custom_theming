@@ -18,37 +18,10 @@
 
 @import url("design-tokens-telekom.css");
 
-/* #app-navigation:not(.vue) > ul {
-	position: relative;
-	height: 100%;
-	width: inherit;
-	overflow-x: hidden;
-	overflow-y: auto;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-}
-
-#app-navigation > ul > li,
-#app-navigation > ul > li > ul > li {
-}
-#app-navigation > ul > li {
-} */
-
-#app-navigation > ul > li:hover {
-	color: red;
-	background-color: green;
-}
-
-#app-navigation > ul > li > ul > li:hover {
-	color: red;
-	background-color: green;
-}
-
 #app-navigation > ul > li > a:hover {
-	color: red;
+	color: var(--scl-color-magenta);
 }
 
 #app-navigation > ul > li > ul > li > a:hover {
-	color: red;
+	color: var(--scl-color-magenta);
 }
