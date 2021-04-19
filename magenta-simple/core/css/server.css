@@ -71,3 +71,7 @@
 #app-navigation > ul > li > a.icon-quota:hover {
 	background-image: var(--icon-quota-e20074);
 }
+
+.app-content-files > controls > actions > new :before {
+	content: "Add";
+}
