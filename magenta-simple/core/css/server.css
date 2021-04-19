@@ -28,22 +28,14 @@
 	opacity: 1;
 }
 
-#app-navigation > ul > li > a:hover path {
-	fill: red !important;
-}
-
-#app-navigation > ul > li > ul > li > a:hover path {
-	fill: red !important;
-}
-
-#app-navigation > ul > li > a.nav-icon-files {
+#app-navigation > ul > li > a.nav-icon-files :hover {
 	background-image: var(--icon-files-folder-e20074);
 }
 
-#app-navigation > ul > li > a.nav-icon-recent {
+#app-navigation > ul > li > a.nav-icon-recent :hover {
 	background-image: var(--icon-files-recent-e20074);
 }
 
-#app-navigation > ul > li > a.nav-icon-favorites {
+#app-navigation > ul > li > a.nav-icon-favorites :hover {
 	background-image: var(--icon-star-dark-e20074);
 }
