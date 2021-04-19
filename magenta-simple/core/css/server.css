@@ -60,10 +60,10 @@
 	background-image: var(--icon-files-share-e20074);
 }
 
-#app-navigation > ul > li > ul > li > a.nav-icon-systemtagsfilter:hover {
+#app-navigation > ul > li > a.nav-icon-systemtagsfilter:hover {
 	background-image: var(--icon-tag-e20074);
 }
 
-#app-navigation > ul > li > ul > li > a.nav-icon-trashbin:hover {
+#app-navigation > ul > li > a.nav-icon-trashbin:hover {
 	background-image: var(--icon-files-delete-e20074);
 }
