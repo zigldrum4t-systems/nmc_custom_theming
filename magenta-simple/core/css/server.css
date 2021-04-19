@@ -35,3 +35,15 @@
 #app-navigation > ul > li > ul > li > a:hover path {
 	fill: red !important;
 }
+
+#app-navigation > ul > li > a.nav-icon-files {
+	background-image: var(--icon-files-folder-e20074);
+}
+
+#app-navigation > ul > li > a.nav-icon-recent {
+	background-image: var(--icon-files-recent-e20074);
+}
+
+#app-navigation > ul > li > a.nav-icon-favorites {
+	background-image: var(--icon-star-dark-e20074);
+}
