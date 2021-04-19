@@ -28,14 +28,14 @@
 	opacity: 1;
 }
 
-#app-navigation > ul > li > a.nav-icon-files :hover {
+#app-navigation > ul > li > a.nav-icon-files:hover {
 	background-image: var(--icon-files-folder-e20074);
 }
 
-#app-navigation > ul > li > a.nav-icon-recent :hover {
+#app-navigation > ul > li > a.nav-icon-recent:hover {
 	background-image: var(--icon-files-recent-e20074);
 }
 
-#app-navigation > ul > li > a.nav-icon-favorites :hover {
+#app-navigation > ul > li > a.nav-icon-favorites:hover {
 	background-image: var(--icon-star-dark-e20074);
 }
