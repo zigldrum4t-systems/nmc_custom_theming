@@ -44,3 +44,7 @@
 	color: red;
 	background-color: green;
 }
+
+app-navigation:not(.vue) > ul > li > a:hover {
+	color: red;
+}
