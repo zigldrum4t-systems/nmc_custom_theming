@@ -45,6 +45,10 @@
 	background-color: green;
 }
 
-app-navigation > ul > li > a:hover {
+#app-navigation > ul > li > a:hover {
+	color: red;
+}
+
+#app-navigation > ul > li > ul > li > a:hover {
 	color: red;
 }
