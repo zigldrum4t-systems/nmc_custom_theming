@@ -39,3 +39,31 @@
 #app-navigation > ul > li > a.nav-icon-favorites:hover {
 	background-image: var(--icon-star-dark-e20074);
 }
+
+#app-navigation > ul > li > ul > li > a.nav-icon-sharingout:hover {
+	background-image: var(--icon-files-share-e20074);
+}
+
+#app-navigation > ul > li > ul > li > a.nav-icon-sharingin:hover {
+	background-image: var(--icon-files-share-e20074);
+}
+
+#app-navigation > ul > li > ul > li > a.nav-icon-sharinglinks:hover {
+	background-image: var(--icon-files-public-e20074);
+}
+
+#app-navigation > ul > li > ul > li > a.nav-icon-deletedshares:hover {
+	background-image: var(--icon-files-unshare-e20074);
+}
+
+#app-navigation > ul > li > ul > li > a.nav-icon-pendingshares:hover {
+	background-image: var(--icon-files-share-e20074);
+}
+
+#app-navigation > ul > li > ul > li > a.nav-icon-systemtagsfilter:hover {
+	background-image: var(--icon-tag-e20074);
+}
+
+#app-navigation > ul > li > ul > li > a.nav-icon-trashbin:hover {
+	background-image: var(--icon-files-delete-e20074);
+}
