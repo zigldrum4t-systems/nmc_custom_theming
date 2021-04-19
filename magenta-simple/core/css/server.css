@@ -18,43 +18,29 @@
 
 @import url("design-tokens-telekom.css");
 
-button {
-	text-align: center !important;
-	border-radius: var(--radius) !important;
-	background-color: var(--background-primary) !important;
-	color: var(--color-primary) !important;
-	--spacing-x: var(--scl-spacing-24) !important;
-	--spacing-x-icon-only: var(--scl-spacing-8) !important;
-	--min-height: var(--scl-spacing-40) !important;
-	--radius: var(--scl-radius-8) !important;
-	--transition: all var(--scl-motion-duration-fast) var(--scl-motion-easing-standard) !important;
-	--box-shadow-focus: 0 0 0 var(--scl-spacing-2) var(--scl-color-focus) !important;
-	--font-weight: var(--scl-font-weight-bold) !important;
-	--font-size: var(--scl-font-size-16) !important;
-	--line-height: var(--scl-font-line-height-150) !important;
-	--spacing-icon-x: var(--scl-spacing-8) !important;
-	--vertical-align: middle !important;
+/* #app-navigation:not(.vue) > ul {
+	position: relative;
+	height: 100%;
+	width: inherit;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
 
-	/* size: small */
-	--font-size-small: var(--scl-font-size-12) !important;
-	--line-height-small: var(--scl-font-line-height-133) !important;
-	--min-height-small: var(--scl-spacing-32) !important;
+#app-navigation > ul > li,
+#app-navigation > ul > li > ul > li {
+}
+#app-navigation > ul > li {
+} */
 
-	/* variant: primary */
-	--radius-primary: var(--radius) !important;
-	--background-primary: var(--scl-color-primary) !important;
-	--background-primary-hover: var(--scl-color-primary-hover) !important;
-	--background-primary-active: var(--scl-color-primary-active) !important;
-	--background-primary-disabled: var(--scl-color-background-disabled) !important;
-	--color-primary: var(--scl-color-white) !important;
-	--color-primary-disabled: var(--scl-color-grey-40) !important;
+#app-navigation > ul > li:hover {
+	color: red;
+	background-color: green;
+}
 
-	/* variant: secondary */
-	--radius-secondary: var(--radius) !important;
-	--border-width-secondary: var(--scl-spacing-1) !important;
-	--background-secondary: transparent !important;
-	--color-secondary: var(--scl-color-text-standard) !important;
-	--color-secondary-hover: var(--scl-color-primary-hover) !important;
-	--color-secondary-active: var(--scl-color-primary-active) !important;
-	--color-secondary-disabled: var(--scl-color-background-disabled) !important;
+#app-navigation > ul > li > ul > li:hover {
+	color: red;
+	background-color: green;
 }
