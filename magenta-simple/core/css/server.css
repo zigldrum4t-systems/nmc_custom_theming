@@ -24,6 +24,7 @@
 
 #app-navigation > ul > li > ul > li > a:hover {
 	color: var(--scl-color-magenta);
+	background-image: var(--icon-search-fffffe);
 }
 
 .nav-icon-recent :hover {
