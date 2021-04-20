@@ -76,24 +76,24 @@
 	content: "Add";
 } */
 
-#app-content-files > .controls > .actions > a.new {
+#app-content > #app-content-files > .controls > .actions > a.new {
 	justify-content: left !important;
 	width: 75px !important;
 	border: none !important;
 	background: transparent !important;
 }
 
-#app-content-files > .controls > .actions > a.new:hover {
+#app-content > #app-content-files > .controls > .actions > a.new:hover {
 	text-decoration: underline !important;
 }
 
-#app-content-files > .controls > .actions > a > span.icon-add {
+#app-content > #app-content-files > .controls > .actions > a > span.icon-add {
 	border: 1px solid var(--color-border-dark) !important;
 	border-radius: 50px !important;
 	padding: 15px !important;
 }
 
-#app-content-files > .controls > .actions > a > span.hidden-visually {
+#app-content > #app-content-files > .controls > .actions > a > span.hidden-visually {
 	height: 50px !important;
 	width: 50px !important;
 	left: 45px !important;
