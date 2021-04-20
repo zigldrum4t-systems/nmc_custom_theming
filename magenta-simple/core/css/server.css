@@ -83,7 +83,12 @@
 	background: transparent !important;
 }
 
-#controls > div.actions.creatable > a.button:hover {
+#controls > div.actions.creatable > a.hover {
+	color: #e20074;
+	text-decoration: none;
+}
+
+#controls > div.actions.creatable > a.hover:hover {
 	text-decoration: underline !important;
 }
 
