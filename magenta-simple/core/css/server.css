@@ -76,24 +76,24 @@
 	content: "Add";
 } */
 
-#app-content > #app-content-files > .controls > .actions > a.button {
+#controls > div.actions.creatable > a.button {
 	justify-content: left !important;
 	width: 75px !important;
 	border: none !important;
 	background: transparent !important;
 }
 
-#app-content > #app-content-files > .controls > .actions > a.button:hover {
+#controls > div.actions.creatable > a.button:hover {
 	text-decoration: underline !important;
 }
 
-#app-content > #app-content-files > .controls > .actions > a > span.icon-add {
+#controls > div.actions.creatable > a.button > span.icon.icon-add {
 	border: 1px solid var(--color-border-dark) !important;
 	border-radius: 50px !important;
 	padding: 15px !important;
 }
 
-#app-content > #app-content-files > .controls > .actions > a > span.hidden-visually {
+#controls > div.actions.creatable > a > span.hidden-visually {
 	height: 50px !important;
 	width: 50px !important;
 	left: 45px !important;
