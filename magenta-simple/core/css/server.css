@@ -76,14 +76,14 @@
 	content: "Add";
 } */
 
-#app-content > #app-content-files > .controls > .actions > a.new {
+#app-content > #app-content-files > .controls > .actions > a.button {
 	justify-content: left !important;
 	width: 75px !important;
 	border: none !important;
 	background: transparent !important;
 }
 
-#app-content > #app-content-files > .controls > .actions > a.new:hover {
+#app-content > #app-content-files > .controls > .actions > a.button:hover {
 	text-decoration: underline !important;
 }
 
