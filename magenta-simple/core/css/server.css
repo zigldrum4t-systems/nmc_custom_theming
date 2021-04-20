@@ -90,7 +90,7 @@
 }
 
 #controls > div.actions.creatable > a > span.hidden-visually {
-	height: 50px !important;
+	height: auto !important;
 	width: 50px !important;
 	left: 45px !important;
 	top: 5px !important;
@@ -100,5 +100,5 @@
 
 #controls > div.actions.creatable > a > span.hidden-visually:hover {
 	color: #e20074;
-	text-decoration: none;
+	text-decoration: underline;
 }
