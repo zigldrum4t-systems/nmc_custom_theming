@@ -83,15 +83,6 @@
 	background: transparent !important;
 }
 
-#controls > div.actions.creatable > a.hover {
-	color: #e20074;
-	text-decoration: none;
-}
-
-#controls > div.actions.creatable > a.hover:hover {
-	text-decoration: underline !important;
-}
-
 #controls > div.actions.creatable > a.button > span.icon.icon-add {
 	border: 1px solid var(--color-border-dark) !important;
 	border-radius: 50px !important;
@@ -103,4 +94,11 @@
 	width: 50px !important;
 	left: 45px !important;
 	top: 5px !important;
+	color: var(--color-main-text);
+	text-decoration: none;
+}
+
+#controls > div.actions.creatable > a > span.hidden-visually:hover {
+	color: #e20074;
+	text-decoration: none;
 }
