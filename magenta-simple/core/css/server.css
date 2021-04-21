@@ -99,6 +99,11 @@
 	text-decoration: none;
 }
 
+#controls > div.actions.creatable > a:hover {
+	color: #e20074;
+	text-decoration: underline;
+}
+
 #controls > div.actions.creatable > a > span.hidden-visually:hover {
 	color: #e20074;
 	text-decoration: underline;
