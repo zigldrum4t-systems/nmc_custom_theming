@@ -17,7 +17,7 @@
  */
 
 @import url("design-tokens-telekom.css");
-@import url("nextcloud-to-telekom-colors.css");
+/* @import url("nextcloud-to-telekom-colors.css"); */
 
 #app-navigation > ul > li > a:hover {
 	color: var(--scl-color-magenta);
