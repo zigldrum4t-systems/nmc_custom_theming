@@ -40,8 +40,17 @@
 		<div id="notification-container">
 			<div id="notification"></div>
 		</div>
-		<div id="brandbar" style="height: 50px; width: 100%">
-		Dipak's Bransbar...
+		<div class="brandbar">
+			<div class="container-fixed">
+				<div class="brand-logo">
+					<img src="deutsche-telekom-logo.svg" alt="Telekom Logo">
+					<span class="sr-only">Telekom Logo</span>
+				</div>
+				<div class="brand-claim">
+					<span class="brand-slogan">LET'S POWER HIGHER PERFORMANCE</span>
+					<span class="sr-only">Brand Claim</span>
+				</div>
+			</div>
 		</div>
 		<header role="banner" id="header">
 			<div class="header-left">
