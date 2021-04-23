@@ -45,6 +45,7 @@
 		</style>
 		<script type="text/javascript">
 			function loadFunction() {
+				debugger;
 				if (window.innerWidth <= 1024) {
 					setTimeout(function () {
 						document.getElementsByClassName("brandbar")[0].style.height = "5px";
