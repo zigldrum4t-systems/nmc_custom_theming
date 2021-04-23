@@ -23,11 +23,57 @@
 		<link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
 		<link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
 		<link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
+		<style>
+			.brandbar {
+				color: #fff;
+				background: #e20074;
+				overflow: hidden;
+				width: 100%;
+			}
+
+			.container-fixed {
+				padding: 10px 70px;
+			}
+
+			body {
+				height: 1000px;
+			}
+
+			.shrink {
+				height: 5px;
+			}
+		</style>
+		<script type="text/javascript">
+			function loadFunction() {
+				if (window.innerWidth <= 1024) {
+					setTimeout(function () {
+						document.getElementsByClassName("brandbar")[0].style.height = "5px";
+						document.getElementsByClassName("brandbar")[0].style.position = "fixed";
+						document.getElementsByClassName("container-fixed")[0].style.display = "none";
+					}, 3000)
+				} else {
+					window.onscroll = function () { myFunction() };
+				}
+			}
+
+			function myFunction() {
+				if (document.documentElement.scrollTop > 50) {
+					document.getElementsByClassName("brandbar")[0].style.height = "5px";
+					document.getElementsByClassName("brandbar")[0].style.position = "fixed";
+					document.getElementsByClassName("container-fixed")[0].style.display = "none";
+				}
+				else if (document.documentElement.scrollTop < 50) {
+					document.getElementsByClassName("brandbar")[0].style.height = "auto";
+					document.getElementsByClassName("brandbar")[0].style.position = "static";
+					document.getElementsByClassName("container-fixed")[0].style.display = "block";
+				}
+			}
+		</script>
 		<?php emit_css_loading_tags($_); ?>
 		<?php emit_script_loading_tags($_); ?>
 		<?php print_unescaped($_['headers']); ?>
 	</head>
-	<body id="<?php p($_['bodyid']);?>">
+	<body id="<?php p($_['bodyid']);?>"  onload="loadFunction()">
 	<?php include 'layout.noscript.warning.php'; ?>
 
 		<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
@@ -40,19 +86,20 @@
 		<div id="notification-container">
 			<div id="notification"></div>
 		</div>
-		<div class="brandbar">
-			<div class="container-fixed">
-				<div class="brand-logo">
-					<img src="deutsche-telekom-logo.svg" alt="Telekom Logo">
-					<span class="sr-only">Telekom Logo</span>
-				</div>
-				<div class="brand-claim">
-					<span class="brand-slogan">LET'S POWER HIGHER PERFORMANCE</span>
-					<span class="sr-only">Brand Claim</span>
+		
+		<header role="banner" id="header">
+			<div class="brandbar">
+				<div class="container-fixed">
+					<div class="brand-logo">
+						<img src="deutsche-telekom-logo.svg" alt="Telekom Logo">
+						<span class="sr-only">Telekom Logo</span>
+					</div>
+					<div class="brand-claim">
+						<span class="brand-slogan">LET'S POWER HIGHER PERFORMANCE</span>
+						<span class="sr-only">Brand Claim</span>
+					</div>
 				</div>
 			</div>
-		</div>
-		<header role="banner" id="header">
 			<div class="header-left">
 				<a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
 					id="nextcloud">
