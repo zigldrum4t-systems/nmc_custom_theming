@@ -1,7 +1,7 @@
 @import url("design-tokens-telekom.css");
 
 :root {
-    /* --color-main-text: var(--scl-color-black);
+    --color-main-text: var(--scl-color-black);
     --color-main-background: var(--scl-color-background-standard);
     --color-main-background-translucent: rgba(255, 255, 255, 0.97);
     --gradient-main-background: var(--color-main-background) 0%, var(--color-main-background-translucent) 85%,
@@ -41,5 +41,5 @@
     --default-line-height: 24px;
     --animation-quick: 100ms;
     --animation-slow: 300ms;
-    --header-height: 50px; */
+    --header-height: 50px;
 }
