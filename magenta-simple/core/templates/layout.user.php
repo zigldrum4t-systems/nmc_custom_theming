@@ -75,7 +75,7 @@
 		<?php emit_script_loading_tags($_); ?>
 		<?php print_unescaped($_['headers']); ?>
 	</head>
-	<body id="<?php p($_['bodyid']);?>"  onload="loadFunction()">
+	<body id="<?php p($_['bodyid']);?>"  onscroll="loadFunction()">
 	<?php include 'layout.noscript.warning.php'; ?>
 
 		<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
