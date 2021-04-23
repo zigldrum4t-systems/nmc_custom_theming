@@ -87,8 +87,7 @@
 			<div id="notification"></div>
 		</div>
 
-		<header role="banner" id="header">
-			<div class="brandbar">
+		<div class="brandbar">
 				<div class="container-fixed">
 					<div class="brand-logo">
 						<img src="deutsche-telekom-logo.svg" alt="Telekom Logo">
@@ -101,6 +100,7 @@
 				</div>
 			</div>
 
+		<header role="banner" id="header">
 			<div class="header-left">
 				<a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
 					id="nextcloud">
