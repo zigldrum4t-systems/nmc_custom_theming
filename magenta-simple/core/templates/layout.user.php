@@ -46,6 +46,7 @@
 		<script type="text/javascript">
 			function loadFunction() {
 				debugger;
+				console.log('body scrolling...');
 				if (window.innerWidth <= 1024) {
 					setTimeout(function () {
 						document.getElementsByClassName("brandbar")[0].style.height = "5px";
