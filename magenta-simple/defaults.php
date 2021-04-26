@@ -18,6 +18,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
+use OCP\Util;
+
 class OC_Theme {
 
 	/**
@@ -133,5 +135,9 @@ class OC_Theme {
 			'color-primary' => '#E20074',
 			//'image-login-background' => 'url("./img/nmcloud-background.jpg?v=2")',
 		];
+	}
+
+	public function addCustomScript() {
+		Util::addScript('files_external', 'brandbar');
 	}
 }

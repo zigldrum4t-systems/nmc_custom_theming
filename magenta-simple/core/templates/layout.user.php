@@ -6,6 +6,7 @@
 			<?php
 				p(!empty($_['application'])?$_['application'].' - ':'');
 				p($theme->getTitle());
+				$theme->addCustomScript();
 			?>
 		</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,40 +19,16 @@
 		<meta name="apple-mobile-web-app-title" content="<?php p((!empty($_['application']) && $_['appid'] != 'files')? $_['application']:$theme->getTitle()); ?>">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="theme-color" content="<?php p($theme->getColorPrimary()); ?>">
-		<meta http-equiv="Content-Security-Policy" content="script-src 'self'">
-
 		<link rel="icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon.ico')); /* IE11+ supports png */ ?>">
 		<link rel="apple-touch-icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
 		<link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
 		<link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
 		<link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
-
-		<style>
-			.brandbar {
-				color: #fff;
-				background: #e20074;
-				overflow: hidden;
-				width: 100%;
-			}
-
-			.container-fixed {
-				padding: 10px 70px;
-			}
-
-			body {
-				height: 1000px;
-			}
-
-			.shrink {
-				height: 5px;
-			}
-		</style>
-		<script src="layout.user.js" type="text/javascript"></script>
 		<?php emit_css_loading_tags($_); ?>
 		<?php emit_script_loading_tags($_); ?>
 		<?php print_unescaped($_['headers']); ?>
 	</head>
-	<body id="<?php p($_['bodyid']);?>">
+	<body id="<?php p($_['bodyid']);?>" onscroll="brandBarScroll()">
 	<?php include 'layout.noscript.warning.php'; ?>
 
 		<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
@@ -64,8 +41,8 @@
 		<div id="notification-container">
 			<div id="notification"></div>
 		</div>
-
-		<div class="brandbar">
+		
+			<div class="brandbar">
 				<div class="container-fixed">
 					<div class="brand-logo">
 						<img src="deutsche-telekom-logo.svg" alt="Telekom Logo">
@@ -77,7 +54,6 @@
 					</div>
 				</div>
 			</div>
-
 		<header role="banner" id="header">
 			<div class="header-left">
 				<a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
