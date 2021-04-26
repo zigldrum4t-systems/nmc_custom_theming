@@ -23,6 +23,8 @@
 		<link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
 		<link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
 		<link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+
 		<style>
 			.brandbar {
 				color: #fff;
@@ -43,7 +45,7 @@
 				height: 5px;
 			}
 		</style>
-		<script type="text/javascript">
+		<script src='self' 'unsafe-inline' type="text/javascript">
 			window.onload = function()
 			{
 				window.onscroll = function()
