@@ -23,7 +23,6 @@
 		<link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
 		<link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
 		<link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
 
 		<style>
 			.brandbar {
@@ -45,48 +44,12 @@
 				height: 5px;
 			}
 		</style>
-		<script src='self' 'unsafe-inline' type="text/javascript">
-			window.onload = function()
-			{
-				window.onscroll = function()
-				{
-					console.log("Calling this function");
-				}
-			}
-
-			function loadFunction() {
-				debugger;
-				console.log('body scrolling...');
-				if (window.innerWidth <= 1024) {
-					setTimeout(function () {
-						document.getElementsByClassName("brandbar")[0].style.height = "5px";
-						document.getElementsByClassName("brandbar")[0].style.position = "fixed";
-						document.getElementsByClassName("container-fixed")[0].style.display = "none";
-					}, 3000)
-				} else {
-					window.onscroll = function () { myFunction() };
-				}
-			}
-
-			function myFunction() {
-				debugger;
-				if (document.documentElement.scrollTop > 80) {
-					document.getElementsByClassName("brandbar")[0].style.height = "5px";
-					document.getElementsByClassName("brandbar")[0].style.position = "fixed";
-					document.getElementsByClassName("container-fixed")[0].style.display = "none";
-				}
-				else if (document.documentElement.scrollTop < 80) {
-					document.getElementsByClassName("brandbar")[0].style.height = "auto";
-					document.getElementsByClassName("brandbar")[0].style.position = "static";
-					document.getElementsByClassName("container-fixed")[0].style.display = "block";
-				}
-			}
-		</script>
+		<script src="layout.user.js" type="text/javascript"></script>
 		<?php emit_css_loading_tags($_); ?>
 		<?php emit_script_loading_tags($_); ?>
 		<?php print_unescaped($_['headers']); ?>
 	</head>
-	<body id="<?php p($_['bodyid']);?>"  onscroll="loadFunction()">
+	<body id="<?php p($_['bodyid']);?>">
 	<?php include 'layout.noscript.warning.php'; ?>
 
 		<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
