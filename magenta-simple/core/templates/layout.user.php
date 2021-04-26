@@ -44,6 +44,14 @@
 			}
 		</style>
 		<script type="text/javascript">
+			window.onload = function()
+			{
+				window.onscroll = function()
+				{
+					console.log("Calling this function");
+				}
+			}
+
 			function loadFunction() {
 				debugger;
 				console.log('body scrolling...');
