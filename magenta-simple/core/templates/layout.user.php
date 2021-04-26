@@ -18,7 +18,7 @@
 		<meta name="apple-mobile-web-app-title" content="<?php p((!empty($_['application']) && $_['appid'] != 'files')? $_['application']:$theme->getTitle()); ?>">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="theme-color" content="<?php p($theme->getColorPrimary()); ?>">
-		<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'nonce-OXJhdmNJRmJUUURpcXhPM012UXlPSjltNmZsb3dFdnVzT0V0YkZ3bEZjdz06Z08rZlNiZ0xMbTZoelVMd2Q1TkViL1pWcXBBaG9nS2czb2RDWGpKT1pMOD0='">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'self'">
 
 		<link rel="icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon.ico')); /* IE11+ supports png */ ?>">
 		<link rel="apple-touch-icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
