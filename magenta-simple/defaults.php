@@ -138,6 +138,6 @@ class OC_Theme {
 	}
 
 	public function addCustomScript() {
-		Util::addScript('files_external', 'brandbar');
+		Util::addScript('core', 'brandbar');
 	}
 }
