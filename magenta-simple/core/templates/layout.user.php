@@ -176,5 +176,20 @@
 			<?php print_unescaped($_['content']); ?>
 		</div>
 
+		<footer class="brand-footer" role="contentinfo">
+        	<div class="brand-footer-separator hidden-xl hidden-l hidden-m"></div>
+			<div class="container-fixed">
+				<div class="row brand-footer-bar">
+					<div class="col-l-4 col-s-12 text-muted text-s-center">
+						<div class="brand-footer-bar-text">
+							© 2021 Deutsche Telekom AG
+						</div>
+					</div>
+					<div class="col-l-8 col-s-12">
+						<ul class="nav brand-footer-nav brand-footer-nav-muted text-l-right text-s-center"><li><a href="/en/account/register/" title="Switch to english version">English</a></li><li class="divider"></li><li><a href="/kontakt/" data-href="/kontakt/?type=78" class="modal-form">Kontakt</a></li><li><a href="/nutzungsbedingungen/" title="Nutzungsbedingungen">Nutzungsbedingungen</a></li><li><a href="/impressum/" title="Impressum">Impressum</a></li><li><a href="/datenschutz/" title="Datenschutz">Datenschutz</a></li></ul>
+					</div>
+				</div>
+			</div>
+    </footer>
 	</body>
 </html>
