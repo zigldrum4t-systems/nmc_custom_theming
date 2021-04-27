@@ -26,6 +26,75 @@
 		<?php emit_css_loading_tags($_); ?>
 		<?php emit_script_loading_tags($_); ?>
 		<?php print_unescaped($_['headers']); ?>
+		<style>
+			.brandbar {
+				color: #fff;
+				background: #e20074;
+				overflow: hidden;
+				width: 100%;
+			}
+
+			.container-fixed {
+				padding: 10px 70px;
+			}
+
+			body {
+				height: 1000px;
+			}
+
+			.shrink {
+				height: 5px;
+			}
+
+
+.brand-footer {
+    background-color: #262626;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 12px;
+}
+
+@media (max-width: 1499px) and (min-width: 1024px)
+.hidden-l {
+    display: none!important;
+}
+.brand-footer-separator {
+    border-bottom: 1px solid #918984;
+}
+
+.brand-footer-bar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.brand-footer-bar-text {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.brand-footer-nav {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.nav {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.text-l-right {
+    text-align: right;
+}
+
+
+		</style>
 	</head>
 	<body id="<?php p($_['bodyid']);?>">
 	<?php include 'layout.noscript.warning.php'; ?>
@@ -190,6 +259,6 @@
 					</div>
 				</div>
 			</div>
-    </footer>
+    	</footer>
 	</body>
 </html>
