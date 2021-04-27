@@ -93,6 +93,28 @@
     text-align: right;
 }
 
+.brand-footer-nav-muted>li>a, .brand-footer-nav-muted>li>a:active, .brand-footer-nav-muted>li>a:focus, .brand-footer-nav-muted>li>a:hover {
+    color: #918984;
+}
+
+.brand-footer-nav>li>a, .brand-footer-nav>li>a:active, .brand-footer-nav>li>a:focus, .brand-footer-nav>li>a:hover {
+    color: #fff;
+}
+.brand-footer-nav>li>a {
+    padding: 4px 0 3px;
+    border-bottom: 1px solid transparent;
+}
+.nav>li>a {
+    padding: 8px 12px 10px;
+}
+.nav>li, .nav>li>a {
+    position: relative;
+    display: block;
+}
+a {
+    color: #00739f;
+    text-decoration: none;
+}
 
 		</style>
 	</head>
