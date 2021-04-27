@@ -93,6 +93,25 @@
     text-align: right;
 }
 
+.text-muted {
+    color: #918984!important;
+}
+
+.col-l-4 {
+    width: 33.33334%;
+}
+
+.col-l-8 {
+    width: 66.66668%;
+}
+.col-l-1, .col-l-2, .col-l-3, .col-l-4, .col-l-5, .col-l-6, .col-l-7, .col-l-8, .col-l-9, .col-l-10, .col-l-11, .col-l-12, .col-m-1, .col-m-2, .col-m-3, .col-m-4, .col-m-5, .col-m-6, .col-m-7, .col-m-8, .col-m-9, .col-m-10, .col-m-11, .col-m-12, .col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9, .col-s-10, .col-s-11, .col-s-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    float: left;
+    min-height: 1px;
+}
+
 .brand-footer-nav-muted>li>a, .brand-footer-nav-muted>li>a:active, .brand-footer-nav-muted>li>a:focus, .brand-footer-nav-muted>li>a:hover {
     color: #918984;
 }
