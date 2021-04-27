@@ -6,7 +6,6 @@
 			<?php
 				p(!empty($_['application'])?$_['application'].' - ':'');
 				p($theme->getTitle());
-				$theme->addCustomScript();
 			?>
 		</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +27,7 @@
 		<?php emit_script_loading_tags($_); ?>
 		<?php print_unescaped($_['headers']); ?>
 	</head>
-	<body id="<?php p($_['bodyid']);?>" onscroll="brandBarScroll()">
+	<body id="<?php p($_['bodyid']);?>">
 	<?php include 'layout.noscript.warning.php'; ?>
 
 		<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
