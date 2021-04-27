@@ -97,6 +97,15 @@
     color: #918984;
 }
 
+.brand-footer-nav>li {
+    display: inline-block;
+    padding: 12px;
+}
+.nav>li, .nav>li>a {
+    position: relative;
+    display: block;
+}
+
 .brand-footer-nav>li>a, .brand-footer-nav>li>a:active, .brand-footer-nav>li>a:focus, .brand-footer-nav>li>a:hover {
     color: #fff;
 }
