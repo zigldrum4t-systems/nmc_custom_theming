@@ -55,6 +55,24 @@
     padding: 0 12px;
 }
 
+@media screen and (max-width: 1499px) and (min-width: 1236px)
+.container-fixed {
+    width: 1236px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1499px)
+.container-fixed {
+    width: 1009px;
+}
+.container-fixed, .container-fixed.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-fixed, .container-liquid {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 @media (max-width: 1499px) and (min-width: 1024px)
 .hidden-l {
     display: none!important;
