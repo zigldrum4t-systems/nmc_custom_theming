@@ -110,12 +110,6 @@
         margin-right: -12px;
     }
 
-    .nav {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-    }
-
     .text-l-right {
         text-align: right;
     }
