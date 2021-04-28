@@ -17,6 +17,7 @@
  */
 
 @import url("design-tokens-telekom.css");
+@import url("bootstrap.min.css");
 /* @import url("nextcloud-to-telekom-colors.css"); */
 
 #app-navigation > ul > li > a:hover {
