@@ -29,6 +29,7 @@
     <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>"
         color="<?php p($theme->getColorPrimary()); ?>">
     <link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <?php emit_css_loading_tags($_); ?>
     <?php emit_script_loading_tags($_); ?>
     <?php print_unescaped($_['headers']); ?>
@@ -40,13 +41,13 @@
         width: 100%;
     }
 
-    .container-fixed {
+    /* .container-fixed {
         padding: 10px 70px;
     }
 
     body {
         height: 1000px;
-    }
+    } */
 
     .shrink {
         height: 5px;
@@ -61,15 +62,15 @@
         padding: 0 12px;
     }
 
-    @media screen and (max-width: 1499px) and (min-width: 1236px) .container-fixed {
+    /* @media screen and (max-width: 1499px) and (min-width: 1236px) .container-fixed {
         width: 1236px;
     }
 
     @media screen and (min-width: 1024px) and (max-width: 1499px) .container-fixed {
         width: 1009px;
-    }
+    } */
 
-    .container-fixed,
+    /* .container-fixed,
     .container-fixed.center {
         margin-left: auto;
         margin-right: auto;
@@ -83,13 +84,14 @@
 
     @media (max-width: 1499px) and (min-width: 1024px) .hidden-l {
         display: none !important;
-    }
+    } */
 
     .brand-footer-separator {
         border-bottom: 1px solid #918984;
     }
 
     .brand-footer-bar {
+		display: flex;
         padding-top: 18px;
         padding-bottom: 18px;
     }
