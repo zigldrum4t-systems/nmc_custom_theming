@@ -148,7 +148,7 @@
     }
 
     .brand-footer-nav>li>a {
-        padding: 4px 0 3px;
+		background: transparent;
         border-bottom: 1px solid transparent;
     }
     </style>
