@@ -48,6 +48,14 @@
 
     /* Brand Footer */
 
+    .container-fixed {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     @media only screen and (min-width: 1200px) .container-fixed {
         .container-fixed {
             max-width: 1140px;
@@ -70,14 +78,6 @@
         .container-fixed {
             max-width: 540px;
         }
-    }
-
-    .container-fixed {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
     }
 
     .brand-footer {
