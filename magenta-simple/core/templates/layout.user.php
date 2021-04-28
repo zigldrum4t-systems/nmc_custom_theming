@@ -56,28 +56,15 @@
         margin-left: auto;
     }
 
-    @media only screen and (min-width: 1200px) {
+    @media screen and (max-width: 1499px) and (min-width: 1236px) {
         .container-fixed {
-            max-width: 1140px;
+            width: 1236px;
         }
     }
 
-    @media only screen and (min-width: 992px) {
+    @media screen and (min-width: 1024px) and (max-width: 1499px) {
         .container-fixed {
-            max-width: 960px;
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        .container-fixed {
-            max-width: 720px;
-        }
-    }
-
-
-    @media only screen and (min-width: 576px) {
-        .container-fixed {
-            max-width: 540px;
+            width: 1009px;
         }
     }
 
