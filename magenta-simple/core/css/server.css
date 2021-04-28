@@ -109,3 +109,104 @@
 	color: #e20074;
 	text-decoration: underline;
 }
+
+/* Footer */
+.brand-footer {
+	font-family: TeleNeoWeb, sans-serif;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #262626;
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 0 12px;
+}
+
+.brand-footer > .container-fixed {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1300px) {
+	.brand-footer > .container-fixed {
+		width: 1336px;
+	}
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1236px) {
+	.brand-footer > .container-fixed {
+		width: 1236px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1499px) {
+	.brand-footer > .container-fixed {
+		width: 1009px;
+	}
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar {
+	display: flex;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-4 {
+	width: 33.33334%;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > text-muted {
+	color: #918984 !important;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-4 > .brand-footer-bar-text {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 {
+	width: 66.66668%;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .text-l-right {
+	float: right;
+	text-align: right;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .brand-footer-nav {
+	display: flex;
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .brand-footer-nav > li .active > a,
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .brand-footer-nav > li > a.hover,
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .brand-footer-nav > li > a:hover {
+	border-bottom-color: #918984;
+	background: transparent;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .brand-footer-nav > li > a,
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .brand-footer-nav > li > a:active,
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .brand-footer-nav > li > a:focus,
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .brand-footer-nav > li > a:hover {
+	color: #918984;
+	background: transparent;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .nav > li {
+	background: transparent;
+	border-bottom: 1px solid transparent;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .nav > li > a {
+	background: transparent;
+	border-bottom: 1px solid transparent;
+}
+
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .nav > li > ahover {
+	text-decoration: none;
+	transition-duration: 0.1s;
+}

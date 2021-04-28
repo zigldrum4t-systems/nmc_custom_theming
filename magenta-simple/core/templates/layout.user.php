@@ -52,14 +52,12 @@
 
     /* Brand Footer */
 
-    .container-fixed,
-    .container-fixed.center {
+    /* .container-fixed {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .container-fixed,
-    .container-liquid {
+    .container-fixed {
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -80,9 +78,9 @@
         .container-fixed {
             width: 1009px;
         }
-    }
+    } */
 
-    .brand-footer {
+    /* .brand-footer {
         position: fixed;
         left: 0;
         bottom: 0;
@@ -98,37 +96,37 @@
         display: flex;
         padding-top: 18px;
         padding-bottom: 18px;
-    }
+    } 
 
     .brand-footer-bar-text {
         padding-top: 16px;
         padding-bottom: 16px;
-    }
+    }*/
 
-    .brand-footer-nav {
+    /* .brand-footer-nav {
         display: flex;
         margin-left: -12px;
         margin-right: -12px;
-    }
+    } */
 
-    .text-l-right {
+    /* .text-l-right {
         float: right;
         text-align: right;
     }
 
     .text-muted {
         color: #918984 !important;
-    }
+    } */
 
-    .col-l-4 {
+    /* .col-l-4 {
         width: 33.33334%;
     }
 
     .col-l-8 {
         width: 66.66668%;
-    }
+    } */
 
-    .brand-footer-nav>li .active>a,
+    /* .brand-footer-nav>li .active>a,
     .brand-footer-nav>li>a.hover,
     .brand-footer-nav>li>a:hover {
         border-bottom-color: #918984;
@@ -141,15 +139,15 @@
     .brand-footer-nav>li>a:hover {
         color: #918984;
         background: transparent;
-    }
+    } */
 
-    .nav>li>a.hover,
+    /* .nav>li>a.hover,
     .nav>li>a:hover {
         text-decoration: none;
         transition-duration: .1s;
-    }
+    } */
 
-    .brand-footer-nav>li {
+    /* .brand-footer-nav>li {
         background: transparent;
         border-bottom: 1px solid transparent;
     }
@@ -157,7 +155,7 @@
     .brand-footer-nav>li>a {
         background: transparent;
         border-bottom: 1px solid transparent;
-    }
+    } */
     </style>
 </head>
 
