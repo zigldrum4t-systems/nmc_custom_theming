@@ -132,6 +132,7 @@
     .brand-footer-nav>li>a.hover,
     .brand-footer-nav>li>a:hover {
         border-bottom-color: #918984;
+        background: transparent;
     }
 
     .brand-footer-nav>li>a,
@@ -139,6 +140,7 @@
     .brand-footer-nav>li>a:focus,
     .brand-footer-nav>li>a:hover {
         color: #918984;
+        background: transparent;
     }
 
     .nav>li>a.hover,
@@ -147,8 +149,13 @@
         transition-duration: .1s;
     }
 
+    .brand-footer-nav>li {
+        background: transparent;
+        border-bottom: 1px solid transparent;
+    }
+
     .brand-footer-nav>li>a {
-		background: transparent;
+        background: transparent;
         border-bottom: 1px solid transparent;
     }
     </style>
