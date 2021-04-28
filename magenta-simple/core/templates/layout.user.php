@@ -106,6 +106,7 @@
     }
 
     .brand-footer-nav {
+        display: flex;
         margin-left: -12px;
         margin-right: -12px;
     }
@@ -125,6 +126,25 @@
 
     .col-l-8 {
         width: 66.66668%;
+    }
+
+    .brand-footer-nav-muted>li .active>a,
+    .brand-footer-nav-muted>li>a.hover,
+    .brand-footer-nav-muted>li>a:hover {
+        border-bottom-color: #918984;
+    }
+
+    <style>.brand-footer-nav-muted>li>a,
+    .brand-footer-nav-muted>li>a:active,
+    .brand-footer-nav-muted>li>a:focus,
+    .brand-footer-nav-muted>li>a:hover {
+        color: #918984;
+    }
+
+    .nav>li>a.hover,
+    .nav>li>a:hover {
+        text-decoration: none;
+        transition-duration: .1s;
     }
     </style>
 </head>
