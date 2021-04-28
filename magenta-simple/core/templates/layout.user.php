@@ -35,6 +35,10 @@
     <?php print_unescaped($_['headers']); ?>
     <style>
     /* Brand header */
+    body {
+        font-family: TeleNeoWeb, sans-serif;
+    }
+
     .brandbar {
         color: #fff;
         background: #e20074;
@@ -58,6 +62,12 @@
     .container-liquid {
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    @media screen and (max-width: 1599px) and (min-width: 1300px) {
+        .container-fixed {
+            width: 1336px;
+        }
     }
 
     @media screen and (max-width: 1499px) and (min-width: 1236px) {
