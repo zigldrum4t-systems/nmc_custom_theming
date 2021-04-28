@@ -47,6 +47,15 @@
     }
 
     /* Brand Footer */
+
+    @media screen and (max-width: 1499px) and (min-width: 1236px) .container-fixed {
+        width: 1236px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1499px) .container-fixed {
+        width: 1009px;
+    }
+
     .brand-footer {
         position: fixed;
         left: 0;
