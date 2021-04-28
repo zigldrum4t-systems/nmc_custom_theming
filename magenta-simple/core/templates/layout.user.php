@@ -154,6 +154,10 @@
         display: block;
     }
 
+    .nav>li>a {
+        padding: 8px 12px 10px;
+    }
+
     .brand-footer-nav>li>a,
     .brand-footer-nav>li>a:active,
     .brand-footer-nav>li>a:focus,
@@ -164,16 +168,6 @@
     .brand-footer-nav>li>a {
         padding: 4px 0 3px;
         border-bottom: 1px solid transparent;
-    }
-
-    .nav>li>a {
-        padding: 8px 12px 10px;
-    }
-
-    .nav>li,
-    .nav>li>a {
-        position: relative;
-        display: block;
     }
 
     a {
