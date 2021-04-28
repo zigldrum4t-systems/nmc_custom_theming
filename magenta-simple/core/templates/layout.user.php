@@ -131,49 +131,6 @@
     .col-l-8 {
         width: 66.66668%;
     }
-
-    .brand-footer-nav-muted>li>a,
-    .brand-footer-nav-muted>li>a:active,
-    .brand-footer-nav-muted>li>a:focus,
-    .brand-footer-nav-muted>li>a:hover {
-        color: #918984;
-    }
-
-    .brand-footer-nav>li {
-        display: inline-block;
-        padding: 12px;
-    }
-
-    ul {
-        display: flex;
-    }
-
-    .nav>li,
-    .nav>li>a {
-        position: relative;
-        display: block;
-    }
-
-    .nav>li>a {
-        padding: 8px 12px 10px;
-    }
-
-    .brand-footer-nav>li>a,
-    .brand-footer-nav>li>a:active,
-    .brand-footer-nav>li>a:focus,
-    .brand-footer-nav>li>a:hover {
-        color: #fff;
-    }
-
-    .brand-footer-nav>li>a {
-        padding: 4px 0 3px;
-        border-bottom: 1px solid transparent;
-    }
-
-    a {
-        color: #00739f;
-        text-decoration: none;
-    }
     </style>
 </head>
 
@@ -344,13 +301,13 @@
     <footer class="brand-footer">
         <div class="container-fixed">
             <div class="row brand-footer-bar">
-                <div class="col-l-4 col-s-12 text-muted text-s-center">
+                <div class="col-l-4 col-s-12 text-muted">
                     <div class="brand-footer-bar-text">
                         © 2021 Deutsche Telekom AG
                     </div>
                 </div>
                 <div class="col-l-8 col-s-12">
-                    <ul class="nav brand-footer-nav brand-footer-nav-muted text-l-right text-s-center">
+                    <ul class="nav brand-footer-nav text-l-right">
                         <li><a href="/en/account/register/" title="Switch to english version">English</a></li>
                         <li class="divider"></li>
                         <li><a href="/kontakt/" data-href="/kontakt/?type=78" class="modal-form">Kontakt</a></li>
