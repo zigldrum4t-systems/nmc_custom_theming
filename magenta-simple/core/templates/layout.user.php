@@ -57,27 +57,20 @@
     }
 
     @media only screen and (min-width: 1200px) .container-fixed {
-        .container-fixed {
-            max-width: 1140px;
-        }
+        max-width: 1140px;
     }
 
     @media only screen and (min-width: 992px) .container-fixed {
-        .container-fixed {
-            max-width: 960px;
-        }
+        max-width: 960px;
     }
 
     @media only screen and (min-width: 768px) .container-fixed {
-        .container-fixed {
-            max-width: 720px;
-        }
+        max-width: 720px;
     }
 
+
     @media only screen and (min-width: 576px) .container-fixed {
-        .container-fixed {
-            max-width: 540px;
-        }
+        max-width: 540px;
     }
 
     .brand-footer {
