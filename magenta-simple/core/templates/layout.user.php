@@ -146,6 +146,11 @@
         text-decoration: none;
         transition-duration: .1s;
     }
+
+    .brand-footer-nav>li>a {
+        padding: 4px 0 3px;
+        border-bottom: 1px solid transparent;
+    }
     </style>
 </head>
 
