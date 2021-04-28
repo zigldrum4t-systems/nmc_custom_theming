@@ -48,24 +48,28 @@
 
     /* Brand Footer */
 
-    @media screen and (max-width: 1499px) and (min-width: 1236px) .container-fixed {
-        width: 1236px;
+    @media (min-width: 1200px) .container-fixed {
+        max-width: 1140px;
     }
 
-    @media screen and (min-width: 1024px) and (max-width: 1499px) .container-fixed {
-        width: 1009px;
+    @media (min-width: 992px) .container-fixed {
+        max-width: 960px;
     }
 
-    .container-fixed,
-    .container-fixed.center {
-        margin-left: auto;
+    @media (min-width: 768px) .container-fixed {
+        max-width: 720px;
+    }
+
+    @media (min-width: 576px) .container-fixed {
+        max-width: 540px;
+    }
+
+    .container-fixed {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
         margin-right: auto;
-    }
-
-    .container-fixed,
-    .container-liquid {
-        padding-left: 12px;
-        padding-right: 12px;
+        margin-left: auto;
     }
 
     .brand-footer {
