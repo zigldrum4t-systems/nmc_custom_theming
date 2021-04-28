@@ -56,6 +56,18 @@
         width: 1009px;
     }
 
+    .container-fixed,
+    .container-fixed.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-fixed,
+    .container-liquid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .brand-footer {
         position: fixed;
         left: 0;
