@@ -111,6 +111,7 @@
     }
 
     .text-l-right {
+        float: right;
         text-align: right;
     }
 
