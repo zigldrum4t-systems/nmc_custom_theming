@@ -123,6 +123,14 @@
         color: #918984 !important;
     }
 
+    .col-l-4 {
+        width: 33.33334%;
+    }
+
+    .col-l-8 {
+        width: 66.66668%;
+    }
+
     .brand-footer-nav-muted>li>a,
     .brand-footer-nav-muted>li>a:active,
     .brand-footer-nav-muted>li>a:focus,
