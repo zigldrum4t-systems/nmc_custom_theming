@@ -135,6 +135,7 @@
 }
 
 .brandbar {
+	height: 72px;
 	position: fixed !important;
 	z-index: 4999 !important;
 	color: var(--scl-color-white);
