@@ -52,9 +52,9 @@
 
     <div class="brandbar">
         <div class="container-fixed">
-            <div class="header-brandbar__wrapper">
-                <a href="/en" title="Home" class="header-brandbar__logo">
-                    <svg id="brand__logo" viewBox="0 0 73 36" fill="currentColor">
+            <div class="header-brandbar">
+                <a href="/en" title="Home" class="header-brandbar-logo">
+                    <svg id="brand-logo" viewBox="0 0 73 36" fill="currentColor">
                         <g>
                             <path d="M0 24v-7h7v7H0zM22 24v-7h7v7h-7zM44 24v-7h7v7h-7zM66 24v-7h7v7h-7z"></path>
                             <path

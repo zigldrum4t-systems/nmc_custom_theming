@@ -149,6 +149,15 @@
 	margin-right: auto;
 }
 
+.brandbar > .container-fixed > .header-brandbar {
+}
+
+.brandbar > .container-fixed > .header-brandbar > .header-brandbar-logo > svg {
+	fill: white;
+	height: 64px;
+	width: 64px;
+}
+
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
 	.brandbar > .container-fixed {
 		width: 1236px;
