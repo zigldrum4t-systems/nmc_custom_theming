@@ -118,6 +118,12 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
+#header {
+	top: unset;
+	position: absolute;
+	--color-header: transparent !important;
+}
+
 .brandbar {
 	color: var(--scl-color-white);
 	background: var(--scl-color-magenta);
@@ -153,7 +159,7 @@
 
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
 	.brand-footer > .container-fixed {
-		width: 1336px;
+		width: 1236px;
 	}
 }
 
