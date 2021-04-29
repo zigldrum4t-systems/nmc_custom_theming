@@ -79,8 +79,16 @@
 	background-image: var(--icon-quota-e20074);
 }
 
+#controls {
+	top: 90px !important;
+}
+
 #controls > div.breadcrumb {
 	background: transparent !important;
+}
+
+#controls > div.actions.creatable {
+	padding-top: 10px !important;
 }
 
 #controls > div.actions.creatable > a.button {
@@ -103,6 +111,7 @@
 	top: 5px !important;
 	color: var(--color-main-text);
 	text-decoration: none;
+	padding-top: 4px !important;
 }
 
 #controls > div.actions.creatable > a:hover {
@@ -127,7 +136,7 @@
 
 .brandbar {
 	position: fixed !important;
-	z-index: 9999 !important;
+	z-index: 4999 !important;
 	color: var(--scl-color-white);
 	background: var(--scl-color-magenta);
 	overflow: hidden;
