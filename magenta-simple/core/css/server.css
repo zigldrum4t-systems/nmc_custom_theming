@@ -189,6 +189,7 @@
 }
 
 .brandbar > .container-fixed > .header-brandbar > .header-brandbar-navigation > li > a {
+	color: #fff !important;
 	font-size: 15px;
 	margin-top: 24px;
 	font-weight: 800;
@@ -196,6 +197,11 @@
 	display: block;
 	padding-left: 6px;
 	padding-right: 6px;
+}
+
+brandbar > .container-fixed > .header-brandbar > .header-brandbar-navigation > li > a:focus,
+a:hover {
+	color: #fff !important;
 }
 
 @media screen and (min-width: 1024px) {
