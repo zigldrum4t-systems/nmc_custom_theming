@@ -21,8 +21,8 @@
 /* @import url("nextcloud-to-telekom-colors.css"); */
 
 #app-navigation {
-	height: calc(100% - 175px) !important;
-	top: 90px !important;
+	height: calc(100% - 208px) !important;
+	top: 122px !important;
 }
 
 #app-navigation > ul > li > a:hover {
@@ -80,7 +80,7 @@
 }
 
 #controls {
-	top: 90px !important;
+	top: 120px !important;
 }
 
 #controls > div.breadcrumb {
@@ -89,6 +89,10 @@
 
 #controls > div.actions.creatable {
 	padding-top: 10px !important;
+}
+
+#filelist-header {
+	margin-top: 35px;
 }
 
 #controls > div.actions.creatable > a.button {
@@ -135,7 +139,7 @@
 #header {
 	--color-header: transparent !important;
 	position: fixed !important;
-	top: 75px !important;
+	top: 72px !important;
 }
 
 .brandbar {
