@@ -33,130 +33,6 @@
     <?php emit_css_loading_tags($_); ?>
     <?php emit_script_loading_tags($_); ?>
     <?php print_unescaped($_['headers']); ?>
-    <style>
-    /* Brand header */
-    body {
-        font-family: TeleNeoWeb, sans-serif;
-    }
-
-    .brandbar {
-        color: #fff;
-        background: #e20074;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .shrink {
-        height: 5px;
-    }
-
-    /* Brand Footer */
-
-    /* .container-fixed {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .container-fixed {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    @media screen and (max-width: 1599px) and (min-width: 1300px) {
-        .container-fixed {
-            width: 1336px;
-        }
-    }
-
-    @media screen and (max-width: 1499px) and (min-width: 1236px) {
-        .container-fixed {
-            width: 1236px;
-        }
-    }
-
-    @media screen and (min-width: 1024px) and (max-width: 1499px) {
-        .container-fixed {
-            width: 1009px;
-        }
-    } */
-
-    /* .brand-footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #262626;
-        color: #fff;
-        font-size: 16px;
-        line-height: 16px;
-        padding: 0 12px;
-    }
-
-    .brand-footer-bar {
-        display: flex;
-        padding-top: 18px;
-        padding-bottom: 18px;
-    } 
-
-    .brand-footer-bar-text {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }*/
-
-    /* .brand-footer-nav {
-        display: flex;
-        margin-left: -12px;
-        margin-right: -12px;
-    } */
-
-    /* .text-l-right {
-        float: right;
-        text-align: right;
-    }
-
-    .text-muted {
-        color: #918984 !important;
-    } */
-
-    /* .col-l-4 {
-        width: 33.33334%;
-    }
-
-    .col-l-8 {
-        width: 66.66668%;
-    } */
-
-    /* .brand-footer-nav>li .active>a,
-    .brand-footer-nav>li>a.hover,
-    .brand-footer-nav>li>a:hover {
-        border-bottom-color: #918984;
-        background: transparent;
-    }
-
-    .brand-footer-nav>li>a,
-    .brand-footer-nav>li>a:active,
-    .brand-footer-nav>li>a:focus,
-    .brand-footer-nav>li>a:hover {
-        color: #918984;
-        background: transparent;
-    } */
-
-    /* .nav>li>a.hover,
-    .nav>li>a:hover {
-        text-decoration: none;
-        transition-duration: .1s;
-    } */
-
-    /* .brand-footer-nav>li {
-        background: transparent;
-        border-bottom: 1px solid transparent;
-    }
-
-    .brand-footer-nav>li>a {
-        background: transparent;
-        border-bottom: 1px solid transparent;
-    } */
-    </style>
 </head>
 
 <body id="<?php p($_['bodyid']);?>">
@@ -328,17 +204,14 @@
             <div class="row brand-footer-bar">
                 <div class="col-l-4 col-s-12 text-muted">
                     <div class="brand-footer-bar-text">
-                        © 2021 Deutsche Telekom AG
+                        © Telekom Deutschland GmbH
                     </div>
                 </div>
                 <div class="col-l-8 col-s-12">
                     <ul class="nav brand-footer-nav text-l-right">
-                        <li><a href="/en/account/register/" title="Switch to english version">English</a></li>
-                        <li class="divider"></li>
-                        <li><a href="/kontakt/" data-href="/kontakt/?type=78" class="modal-form">Kontakt</a></li>
-                        <li><a href="/nutzungsbedingungen/" title="Nutzungsbedingungen">Nutzungsbedingungen</a></li>
                         <li><a href="/impressum/" title="Impressum">Impressum</a></li>
                         <li><a href="/datenschutz/" title="Datenschutz">Datenschutz</a></li>
+                        <li><a href="/hilfeandfaq/" title="HilfeAndFAQ">Hilfe & FAQ</a></li>
                     </ul>
                 </div>
             </div>
