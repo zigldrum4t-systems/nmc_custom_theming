@@ -79,9 +79,9 @@
 	background-image: var(--icon-quota-e20074);
 }
 
-/* #app-content-files > .controls > .actions > a.new :before {
-	content: "Add";
-} */
+#controls > div.breadcrumb {
+	background: transparent !important;
+}
 
 #controls > div.actions.creatable > a.button {
 	justify-content: left !important;
@@ -120,12 +120,14 @@
 /* ---------------------------------------------------------------------------- */
 
 #header {
-	top: unset !important;
-	position: absolute !important;
 	--color-header: transparent !important;
+	position: fixed !important;
+	top: 40px !important;
 }
 
 .brandbar {
+	position: fixed !important;
+	z-index: 9999 !important;
 	color: var(--scl-color-white);
 	background: var(--scl-color-magenta);
 	overflow: hidden;
