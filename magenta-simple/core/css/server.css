@@ -99,6 +99,14 @@
 	top: 165px !important;
 }
 
+#controls > .breadcrumb > div.crumb.svg > a {
+	color: var(--color-main-text);
+}
+
+/* #controls > .breadcrumb > div.crumb.svg > a:hover {
+	color: var(--color-main-text);
+} */
+
 #controls > div.actions.creatable > a.button {
 	justify-content: left !important;
 	width: 75px !important;
