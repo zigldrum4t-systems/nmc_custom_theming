@@ -21,7 +21,8 @@
 /* @import url("nextcloud-to-telekom-colors.css"); */
 
 #app-navigation {
-	height: calc(100% - 135px);
+	height: calc(100% - 175px);
+	top: 90px;
 }
 
 #app-navigation > ul > li > a:hover {
