@@ -63,10 +63,10 @@
                         </g>
                     </svg>
                 </a>
-                <p class="header-brandbar__claim">
+                <p class="header-brandbar-claim">
                     <span>Life is for sharing.</span>
                 </p>
-                <ul class="header-brandbar__navigation">
+                <ul class="header-brandbar-navigation">
                     <li><a class="nav-language"
                             href="https://www.telekom.com/de/konzern/themenspecials/special-corona">Deutsch</a></li>
                 </ul>
