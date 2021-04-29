@@ -138,10 +138,11 @@
 	height: 72px;
 	position: fixed !important;
 	z-index: 4999 !important;
-	color: var(--scl-color-white);
+	color: var(--scl-color-white) !important;
 	background: var(--scl-color-magenta);
 	overflow: hidden;
 	width: 100%;
+	font-family: TeleNeo, sans-serif;
 }
 
 .brandbar > .container-fixed {
@@ -185,12 +186,11 @@
 	padding: 0;
 	margin: 0;
 	margin: 0 6px;
-	display: none;
 }
 
 .brandbar > .container-fixed > .header-brandbar > .header-brandbar-navigation > li > a {
 	font-size: 15px;
-	padding: 9px 0 7px;
+	margin-top: 24px;
 	font-weight: 800;
 	position: relative;
 	display: block;
