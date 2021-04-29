@@ -103,9 +103,9 @@
 	color: var(--color-main-text);
 }
 
-/* #controls > .breadcrumb > div.crumb.svg > a:hover {
-	color: var(--color-main-text);
-} */
+#controls > .breadcrumb > div.crumb.svg > a:hover {
+	opacity: 0.7;
+}
 
 #controls > div.actions.creatable > a.button {
 	justify-content: left !important;
