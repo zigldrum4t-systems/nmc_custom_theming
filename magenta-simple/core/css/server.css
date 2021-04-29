@@ -119,8 +119,8 @@
 /* ---------------------------------------------------------------------------- */
 
 #header {
-	top: unset;
-	position: absolute;
+	top: unset !important;
+	position: absolute !important;
 	--color-header: transparent !important;
 }
 
