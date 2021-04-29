@@ -92,7 +92,11 @@
 }
 
 #filelist-header {
-	margin-top: 35px;
+	margin-top: 35px !important;
+}
+
+#filestable > thead {
+	top: 165px !important;
 }
 
 #controls > div.actions.creatable > a.button {
