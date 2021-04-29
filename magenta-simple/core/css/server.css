@@ -128,10 +128,14 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
+#content {
+	padding-top: unset !important;
+}
+
 #header {
 	--color-header: transparent !important;
 	position: fixed !important;
-	top: 40px !important;
+	top: 75px !important;
 }
 
 .brandbar {
@@ -195,7 +199,7 @@
 	font-weight: 800;
 	position: relative;
 	display: block;
-	padding: 9px 0 7px;
+	padding: 0 0 7px;
 	padding-left: 6px;
 	padding-right: 6px;
 }
