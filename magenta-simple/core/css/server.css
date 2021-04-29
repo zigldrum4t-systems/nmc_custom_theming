@@ -142,7 +142,7 @@
 	width: 100%;
 	background-color: var(--scl-color-black);
 	color: var(--scl-color-white);
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 16px;
 	padding: 0 12px;
 }
@@ -187,6 +187,7 @@
 .brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-4 > .brand-footer-bar-text {
 	padding-top: 16px;
 	padding-bottom: 16px;
+	color: var(--scl-color-grey-50) !important;
 }
 
 .brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 {
