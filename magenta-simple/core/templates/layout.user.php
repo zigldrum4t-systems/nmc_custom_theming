@@ -74,123 +74,129 @@
         </div>
     </div>
     <header role="banner" id="header">
-        <div class="header-left container-fixed">
-            <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
-                <div class="logo logo-icon">
-                    <h1 class="hidden-visually">
-                        <?php p($theme->getName()); ?>
-                        <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
-                    </h1>
-                </div>
-            </a>
+        <div class="container-fixed">
 
-            <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
-                <?php foreach ($_['navigation'] as $entry): ?>
-                <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
-                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?> class="active"
-                        <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
-                        <svg width="20" height="20" viewBox="0 0 20 20" alt="">
-                            <?php if ($_['themingInvertMenu']) { ?>
-                            <defs>
-                                <filter id="invertMenuMain-<?php p($entry['id']); ?>">
-                                    <feColorMatrix in="SourceGraphic" type="matrix"
-                                        values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
-                                </filter>
-                            </defs>
-                            <?php } ?>
-                            <image x="0" y="0" width="20" height="20" preserveAspectRatio="xMinYMin meet"
-                                <?php if ($_['themingInvertMenu']) { ?>
-                                filter="url(#invertMenuMain-<?php p($entry['id']); ?>)" <?php } ?>
-                                xlink:href="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>"
-                                class="app-icon"></image>
-                        </svg>
-                        <span>
-                            <?php p($entry['name']); ?>
-                        </span>
-                    </a>
-                </li>
-                <?php endforeach; ?>
-                <li id="more-apps" class="menutoggle" aria-haspopup="true" aria-controls="navigation"
-                    aria-expanded="false">
-                    <a href="#" aria-label="<?php p($l->t('More apps')); ?>">
-                        <div class="icon-more-white"></div>
-                        <span><?php p($l->t('More')); ?></span>
-                    </a>
-                </li>
-            </ul>
-
-            <nav role="navigation">
-                <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
-                    <div id="apps">
-                        <ul>
-                            <?php foreach ($_['navigation'] as $entry): ?>
-                            <li data-id="<?php p($entry['id']); ?>">
-                                <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
-                                    class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" alt="">
-                                        <defs>
-                                            <filter id="invertMenuMore-<?php p($entry['id']); ?>">
-                                                <feColorMatrix in="SourceGraphic" type="matrix"
-                                                    values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"></feColorMatrix>
-                                            </filter>
-                                        </defs>
-                                        <image x="0" y="0" width="16" height="16" preserveAspectRatio="xMinYMin meet"
-                                            filter="url(#invertMenuMore-<?php p($entry['id']); ?>)"
-                                            xlink:href="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>"
-                                            class="app-icon"></image>
-                                    </svg>
-                                    <span><?php p($entry['name']); ?></span>
-                                </a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
+            <div class="header-left">
+                <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
+                    <div class="logo logo-icon">
+                        <h1 class="hidden-visually">
+                            <?php p($theme->getName()); ?>
+                            <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
+                        </h1>
                     </div>
-                </div>
-            </nav>
+                </a>
 
-        </div>
+                <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
+                    <?php foreach ($_['navigation'] as $entry): ?>
+                    <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
+                        <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
+                            class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+                            <svg width="20" height="20" viewBox="0 0 20 20" alt="">
+                                <?php if ($_['themingInvertMenu']) { ?>
+                                <defs>
+                                    <filter id="invertMenuMain-<?php p($entry['id']); ?>">
+                                        <feColorMatrix in="SourceGraphic" type="matrix"
+                                            values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+                                    </filter>
+                                </defs>
+                                <?php } ?>
+                                <image x="0" y="0" width="20" height="20" preserveAspectRatio="xMinYMin meet"
+                                    <?php if ($_['themingInvertMenu']) { ?>
+                                    filter="url(#invertMenuMain-<?php p($entry['id']); ?>)" <?php } ?>
+                                    xlink:href="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>"
+                                    class="app-icon"></image>
+                            </svg>
+                            <span>
+                                <?php p($entry['name']); ?>
+                            </span>
+                        </a>
+                    </li>
+                    <?php endforeach; ?>
+                    <li id="more-apps" class="menutoggle" aria-haspopup="true" aria-controls="navigation"
+                        aria-expanded="false">
+                        <a href="#" aria-label="<?php p($l->t('More apps')); ?>">
+                            <div class="icon-more-white"></div>
+                            <span><?php p($l->t('More')); ?></span>
+                        </a>
+                    </li>
+                </ul>
 
-        <div class="header-right">
-            <div id="unified-search"></div>
-            <div id="notifications"></div>
-            <div id="contactsmenu">
-                <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
-                    aria-controls="contactsmenu-menu" aria-expanded="false">
-                    <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
-                </div>
-                <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
+                <nav role="navigation">
+                    <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
+                        <div id="apps">
+                            <ul>
+                                <?php foreach ($_['navigation'] as $entry): ?>
+                                <li data-id="<?php p($entry['id']); ?>">
+                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
+                                        class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" alt="">
+                                            <defs>
+                                                <filter id="invertMenuMore-<?php p($entry['id']); ?>">
+                                                    <feColorMatrix in="SourceGraphic" type="matrix"
+                                                        values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0">
+                                                    </feColorMatrix>
+                                                </filter>
+                                            </defs>
+                                            <image x="0" y="0" width="16" height="16"
+                                                preserveAspectRatio="xMinYMin meet"
+                                                filter="url(#invertMenuMore-<?php p($entry['id']); ?>)"
+                                                xlink:href="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>"
+                                                class="app-icon"></image>
+                                        </svg>
+                                        <span><?php p($entry['name']); ?></span>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
             </div>
-            <div id="settings">
-                <div id="expand" tabindex="0" role="button" class="menutoggle"
-                    aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
-                    aria-expanded="false">
-                    <div class="avatardiv<?php if ($_['userAvatarSet']) {
+
+            <div class="header-right">
+                <div id="unified-search"></div>
+                <div id="notifications"></div>
+                <div id="contactsmenu">
+                    <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
+                        aria-controls="contactsmenu-menu" aria-expanded="false">
+                        <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
+                    </div>
+                    <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
+                </div>
+                <div id="settings">
+                    <div id="expand" tabindex="0" role="button" class="menutoggle"
+                        aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
+                        aria-expanded="false">
+                        <div class="avatardiv<?php if ($_['userAvatarSet']) {
 				print_unescaped(' avatardiv-shown');
 			} else {
 				print_unescaped('" style="display: none');
 			} ?>">
-                        <?php if ($_['userAvatarSet']): ?>
-                        <img alt="" width="32" height="32"
-                            src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32, 'v' => $_['userAvatarVersion']]));?>"
-                            srcset="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 64, 'v' => $_['userAvatarVersion']]));?> 2x, <?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 128, 'v' => $_['userAvatarVersion']]));?> 4x">
-                        <?php endif; ?>
+                            <?php if ($_['userAvatarSet']): ?>
+                            <img alt="" width="32" height="32"
+                                src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32, 'v' => $_['userAvatarVersion']]));?>"
+                                srcset="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 64, 'v' => $_['userAvatarVersion']]));?> 2x, <?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 128, 'v' => $_['userAvatarVersion']]));?> 4x">
+                            <?php endif; ?>
+                        </div>
+                        <div id="expandDisplayName" class="icon-settings-white"></div>
                     </div>
-                    <div id="expandDisplayName" class="icon-settings-white"></div>
+                    <nav class="settings-menu" id="expanddiv" style="display:none;"
+                        aria-label="<?php p($l->t('Settings menu'));?>">
+                        <ul>
+                            <?php foreach ($_['settingsnavigation'] as $entry):?>
+                            <li data-id="<?php p($entry['id']); ?>">
+                                <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
+                                    class="active" <?php endif; ?>>
+                                    <img alt=""
+                                        src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
+                                    <?php p($entry['name']) ?>
+                                </a>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="settings-menu" id="expanddiv" style="display:none;"
-                    aria-label="<?php p($l->t('Settings menu'));?>">
-                    <ul>
-                        <?php foreach ($_['settingsnavigation'] as $entry):?>
-                        <li data-id="<?php p($entry['id']); ?>">
-                            <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
-                                class="active" <?php endif; ?>>
-                                <img alt="" src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
-                                <?php p($entry['name']) ?>
-                            </a>
-                        </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </nav>
             </div>
         </div>
     </header>
