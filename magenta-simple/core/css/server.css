@@ -244,7 +244,7 @@
 	-webkit-transform: translateY(3px);
 	transform: translateY(3px);
 }
-
+/* 
 .brandbar > .container-fixed > .header-brandbar > .header-brandbar-navigation {
 	list-style-type: none;
 	padding: 0;
@@ -276,7 +276,7 @@ a:hover {
 		display: -ms-flexbox;
 		display: flex;
 	}
-}
+} */
 
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
 	.brandbar > .container-fixed {
