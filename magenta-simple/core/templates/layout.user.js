@@ -1,7 +1,6 @@
 window.onload = function () {
 	window.onscroll = function () {
-		console.log("Calling this function");
-		loadFunction();
+		console.log("Calling custom js event");
 	}
 }
 

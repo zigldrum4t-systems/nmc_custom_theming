@@ -228,9 +228,10 @@
                 </div>
                 <div class="col-l-8 col-s-12">
                     <ul class="nav brand-footer-nav text-l-right">
-                        <li><a href="/impressum/" title="Impressum">Impressum</a></li>
-                        <li><a href="/datenschutz/" title="Datenschutz">Datenschutz</a></li>
-                        <li><a href="/hilfeandfaq/" title="HilfeAndFAQ">Hilfe & FAQ</a></li>
+                        <li><a href="http://www.telekom.de/impressum" title="Impressum">Impressum</a></li>
+                        <li><a href="https://static.magentacloud.de/Datenschutz" title="Datenschutz">Datenschutz</a>
+                        </li>
+                        <li><a href="https://cloud.telekom-dienste.de/hilfe" title="HilfeAndFAQ">Hilfe & FAQ</a></li>
                     </ul>
                 </div>
             </div>

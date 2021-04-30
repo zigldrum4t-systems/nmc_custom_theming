@@ -313,7 +313,7 @@
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: var(--scl-color-black);
+	background-color: var(--scl-color-white);
 	color: var(--scl-color-white);
 	line-height: 16px;
 	padding: 0 12px;
