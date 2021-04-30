@@ -199,8 +199,8 @@
 
 #header {
 	--color-header: transparent !important;
-	position: fixed !important;
-	top: 72px !important;
+	position: absolute !important;
+	top: 62px !important;
 }
 
 #header > .container-fixed {
