@@ -74,7 +74,7 @@
         </div>
     </div>
     <header role="banner" id="header">
-        <div class="header-left">
+        <div class="header-left container-fixed">
             <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
                 <div class="logo logo-icon">
                     <h1 class="hidden-visually">
