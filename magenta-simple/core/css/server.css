@@ -308,6 +308,7 @@
 
 .brand-footer {
 	z-index: 4999;
+	font-size: 14px;
 	font-family: TeleNeo, sans-serif;
 	position: fixed;
 	left: 0;
