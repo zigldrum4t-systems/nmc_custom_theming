@@ -100,6 +100,14 @@
 	top: 165px !important;
 }
 
+#filestable > thead tbody > a {
+	color: var(--color-main-text) !important;
+}
+
+#filestable > thead tbody > a:hover {
+	opacity: 1 !important;
+}
+
 #controls > .breadcrumb > div.crumb.svg > a {
 	color: var(--color-main-text) !important;
 }
