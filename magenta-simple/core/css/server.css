@@ -100,11 +100,35 @@
 	top: 165px !important;
 }
 
-#filestable > thead tbody > a {
+#filestable > thead > tr > th > a {
 	color: var(--color-main-text) !important;
 }
 
-#filestable > thead tbody > a:hover {
+#filestable > thead > tr > th > div > a {
+	color: var(--color-main-text) !important;
+}
+
+#filestable > tbody > tr > td > a {
+	color: var(--color-main-text) !important;
+}
+
+#filestable > tbody > tr > td > div > a {
+	color: var(--color-main-text) !important;
+}
+
+#filestable > thead > tr > th > a:hover {
+	opacity: 1 !important;
+}
+
+#filestable > thead > tr > th > div > a:hover {
+	opacity: 1 !important;
+}
+
+#filestable > tbody > tr > td > a:hover {
+	opacity: 1 !important;
+}
+
+#filestable > tbody > tr > td > div > a:hover {
 	opacity: 1 !important;
 }
 
