@@ -23,6 +23,7 @@
 #app-navigation {
 	height: calc(100% - 208px) !important;
 	top: 122px !important;
+	left: unset !important;
 }
 
 #app-navigation > ul > li > a:hover {
