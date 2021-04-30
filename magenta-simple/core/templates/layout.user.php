@@ -213,7 +213,9 @@
     </form>
 
     <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
-        <?php print_unescaped($_['content']); ?>
+        <div class="container-fixed">
+            <?php print_unescaped($_['content']); ?>
+        </div>
     </div>
 
     <footer class="brand-footer">
