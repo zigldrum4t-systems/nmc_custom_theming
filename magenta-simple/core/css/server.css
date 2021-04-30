@@ -27,13 +27,13 @@
 }
 
 #app-navigation > ul > li > a:hover {
-	color: var(--scl-color-magenta);
-	opacity: 1;
+	color: var(--scl-color-magenta) !important;
+	opacity: 1 !important;
 }
 
 #app-navigation > ul > li > ul > li > a:hover {
-	color: var(--scl-color-magenta);
-	opacity: 1;
+	color: var(--scl-color-magenta) !important;
+	opacity: 1 !important;
 }
 
 #app-navigation > ul > li > a.nav-icon-files:hover {
