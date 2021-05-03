@@ -199,6 +199,7 @@
 
 #header {
 	--color-header: transparent !important;
+	height: 112px;
 	/* position: absolute !important; */
 	/* margin-top: 62px !important; */
 }
