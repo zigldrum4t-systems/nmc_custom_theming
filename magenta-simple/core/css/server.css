@@ -207,7 +207,7 @@
 	--color-header: transparent !important;
 }
 
-#header > .header-bar {
+#header > .container-fixed {
 	padding-top: 62px !important;
 	height: 128px !important;
 	margin-left: auto;
