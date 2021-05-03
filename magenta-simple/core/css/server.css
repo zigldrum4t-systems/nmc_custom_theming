@@ -206,6 +206,7 @@
 #header {
 	--color-header: transparent !important;
 	height: unset !important;
+	position: static;
 	top: 72px !important;
 }
 
@@ -217,7 +218,7 @@
 
 .brandbar {
 	height: 72px;
-	position: fixed !important;
+	/* position: fixed !important; */
 	z-index: 4999 !important;
 	color: var(--scl-color-white) !important;
 	background: var(--scl-color-magenta);
