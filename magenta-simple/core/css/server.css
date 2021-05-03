@@ -81,7 +81,7 @@
 }
 
 #controls {
-	top: 120px !important;
+	/* top: 120px !important; */
 }
 
 #controls > div.breadcrumb {
@@ -93,7 +93,7 @@
 }
 
 #filelist-header {
-	margin-top: 35px !important;
+	/* margin-top: 35px !important; */
 }
 
 #filestable > thead {
