@@ -207,7 +207,7 @@
 	--color-header: transparent !important;
 	height: unset !important;
 	position: static;
-	top: 72px !important;
+	/* top: 72px !important; */
 }
 
 #header > .container-fixed {
