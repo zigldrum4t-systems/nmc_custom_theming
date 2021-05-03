@@ -97,7 +97,7 @@
 }
 
 #filestable > thead {
-	top: 165px !important;
+	/* top: 165px !important; */
 }
 
 #filestable > thead > tr > th > a {
