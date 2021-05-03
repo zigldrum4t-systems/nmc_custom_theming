@@ -350,7 +350,7 @@
 
 .brand-footer > .container-fixed > div.brand-footer-bar {
 	display: flex;
-	padding-top: 18px;
+	padding-top: 8px;
 	padding-bottom: 18px;
 }
 
@@ -406,10 +406,9 @@
 
 .brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .nav > li > a {
 	background: transparent;
-	border-bottom: 1px solid transparent;
 }
 
 .brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .nav > li > ahover {
-	text-decoration: none;
+	text-decoration: underline;
 	transition-duration: 0.1s;
 }
