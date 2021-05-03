@@ -205,11 +205,10 @@
 
 #header {
 	--color-header: transparent !important;
+	height: unset !important;
 }
 
 #header > .container-fixed {
-	padding-top: 62px !important;
-	height: 128px !important;
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-flex;
