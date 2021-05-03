@@ -199,8 +199,8 @@
 
 #header {
 	--color-header: transparent !important;
-	padding-top: 62px;
-	height: 112px;
+	padding-top: 62px !important;
+	height: 112px !important;
 }
 
 #header > .container-fixed {
