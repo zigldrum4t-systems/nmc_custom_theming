@@ -198,7 +198,7 @@
 }
 
 #header {
-	position: fixed !important;
+	position: relative !important;
 	--color-header: transparent !important;
 	/* padding-top: 62px !important;
 	height: 112px !important; */
