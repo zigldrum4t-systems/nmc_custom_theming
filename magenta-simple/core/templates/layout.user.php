@@ -50,7 +50,7 @@
         <div id="notification"></div>
     </div>
 
-    <header role="banner" id="header" class="header-bar">
+    <header role="banner" id="header">
         <div class="brandbar">
             <div class="container-fixed">
                 <div class="header-brandbar">
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <div class="container-fixed">
+        <div class="container-fixed header-bar">
 
             <div class="header-left">
                 <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">

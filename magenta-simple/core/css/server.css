@@ -200,11 +200,11 @@
 #header {
 	position: relative !important;
 	--color-header: transparent !important;
-	/* padding-top: 62px !important;
-	height: 112px !important; */
 }
 
-#header > .container-fixed {
+#header > .header-bar {
+	padding-top: 62px !important;
+	height: 128px !important;
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-flex;
