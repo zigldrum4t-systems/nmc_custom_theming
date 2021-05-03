@@ -204,8 +204,8 @@
 }
 
 #header {
+	background-color: #0082c9;
 	--color-header: transparent !important;
-	/* height: unset !important; */
 	position: static;
 	top: unset !important;
 }
