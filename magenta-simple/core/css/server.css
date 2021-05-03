@@ -267,6 +267,7 @@
 
 	#content > .container-fixed {
 		width: 1236px;
+		padding-top: 100px;
 	}
 }
 
@@ -281,6 +282,7 @@
 
 	#content > .container-fixed {
 		width: 1236px;
+		padding-top: 100px;
 	}
 }
 
@@ -295,6 +297,7 @@
 
 	#content > .container-fixed {
 		width: 1009px;
+		padding-top: 100px;
 	}
 }
 
