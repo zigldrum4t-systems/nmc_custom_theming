@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-    <header role="banner" id="header">
+    <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
 
             <div class="header-left">
