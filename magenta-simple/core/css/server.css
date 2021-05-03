@@ -177,6 +177,12 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
+.sticky {
+	position: fixed;
+	top: 5px;
+	width: 100%;
+}
+
 #app-dashboard {
 	height: 100%;
 }
@@ -198,7 +204,6 @@
 }
 
 #header {
-	position: relative !important;
 	--color-header: transparent !important;
 }
 
