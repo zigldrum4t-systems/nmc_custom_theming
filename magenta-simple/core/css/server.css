@@ -408,7 +408,7 @@
 	background: transparent;
 }
 
-.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .nav > li > ahover {
+.brand-footer > .container-fixed > div.brand-footer-bar > div.col-l-8 > .nav > li > a:hover {
 	text-decoration: underline !important;
 	transition-duration: 0.1s;
 }
