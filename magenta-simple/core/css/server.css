@@ -195,7 +195,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 1236px;
-	padding-top: 122px !important;
+	/* padding-top: 122px !important; */
 }
 
 #content > .container-fixed {
