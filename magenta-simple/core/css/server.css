@@ -21,7 +21,7 @@
 /* @import url("nextcloud-to-telekom-colors.css"); */
 
 #app-navigation {
-	height: calc(100% - 208px) !important;
+	height: calc(100% - 108px) !important;
 	/* top: 122px !important; */
 	left: unset !important;
 }
@@ -204,7 +204,7 @@
 }
 
 #header {
-	background-color: #0082c9 !important;
+	background-color: #ffffff !important;
 	--color-header: transparent !important;
 	position: static;
 	top: unset !important;
