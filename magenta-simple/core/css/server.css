@@ -181,7 +181,7 @@
 	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
 }
 
-#header > .container-fixed > .header-left > appmenu > li > a > avg {
+#header > .container-fixed > .header-left > appmenu > li > a > svg {
 	filter: invert(1);
 }
 
