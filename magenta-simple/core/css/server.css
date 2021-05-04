@@ -185,6 +185,18 @@
 	filter: invert(1);
 }
 
+#header > .container-fixed > .header-right > #header-menu > a > span > svg {
+	filter: invert(1);
+}
+
+#header > .container-fixed > .header-right > #header-menu > #contactsmenu > #icon-contacts {
+	filter: invert(1);
+}
+
+#header > .container-fixed > .header-right > #header-menu > #settings > .menutoggle > .avatardiv > img {
+	filter: invert(1);
+}
+
 .sticky {
 	position: fixed;
 	top: 5px;
