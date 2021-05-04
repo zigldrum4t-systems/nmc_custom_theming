@@ -185,6 +185,11 @@
 	filter: invert(1);
 }
 
+#header > .container-fixed > .header-left > #appmenu li span {
+	color: var(--scl-color-grey-10) !important;
+	opacity: 0.6 !important;
+}
+
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
 	filter: invert(1);
 }
