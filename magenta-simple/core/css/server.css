@@ -224,10 +224,12 @@
 }
 
 #header {
+	background-image: unset !important;
 	background-color: #ffffff !important;
 	--color-header: transparent !important;
 	position: static;
 	top: unset !important;
+	border-bottom: 2px solid var(--scl-color-grey-10);
 }
 
 #header > .container-fixed {
