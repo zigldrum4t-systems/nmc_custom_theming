@@ -177,6 +177,14 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
+#header > .container-fixed > .header-left > #nextcloud > .logo {
+	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
+}
+
+#header > .container-fixed > .header-left > appmenu > li > a > avg {
+	filter: invert(1);
+}
+
 .sticky {
 	position: fixed;
 	top: 5px;
