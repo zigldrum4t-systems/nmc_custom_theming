@@ -189,11 +189,11 @@
 	filter: invert(1);
 }
 
-#header > .container-fixed > .header-right > .header-menu > #contactsmenu > .icon-contacts {
+#header > .container-fixed > .header-right > #contactsmenu > .icon-contacts {
 	filter: invert(1);
 }
 
-#header > .container-fixed > .header-right > .header-menu > #settings > .menutoggle > .avatardiv > img {
+#header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {
 	filter: invert(1);
 }
 
