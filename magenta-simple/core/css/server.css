@@ -182,24 +182,25 @@
 }
 
 #header > .container-fixed > .header-left > #appmenu > li > a > svg {
-	filter: invert(1);
+	/* filter: invert(1); */
+	fill: var(--scl-color-magenta);
 }
 
 #header > .container-fixed > .header-left > #appmenu li span {
 	color: var(--scl-color-grey-90) !important;
-	opacity: 0.6 !important;
+	opacity: 1 !important;
 }
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
-	filter: invert(1);
+	fill: var(--scl-color-magenta);
 }
 
 #header > .container-fixed > .header-right > #contactsmenu > .icon-contacts {
-	filter: invert(1);
+	fill: var(--scl-color-magenta);
 }
 
 #header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {
-	filter: invert(1);
+	fill: var(--scl-color-magenta);
 }
 
 .sticky {
