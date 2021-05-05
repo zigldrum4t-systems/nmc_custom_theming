@@ -208,25 +208,32 @@
 	opacity: 1 !important;
 }
 
-/* #header > .container-fixed > .header-left > #appmenu li:a hover,
+#header > .container-fixed > .header-left > #appmenu li:a hover,
 #header > .container-fixed > .header-left > #appmenu li a:focus,
 #header > .container-fixed > .header-left > #appmenu li a.active span {
 	/* font-size: 14px !important; */
 	font-weight: normal !important;
 	opacity: 1 !important;
 	color: var(--scl-color-magenta) !important;
-} */
+}
 
 #appmenu li:hover a,
 #appmenu li a:focus {
+	font-size: 12px !important;
 	font-weight: normal !important;
 	opacity: 1 !important;
+	color: var(--scl-color-magenta) !important;
+}
+
+#appmenu li:hover,
+#appmenu li a:focus span {
 	color: var(--scl-color-magenta) !important;
 }
 
 #appmenu li:hover a,
 #appmenu li a:focus,
 #appmenu li a.active {
+	font-size: 12px !important;
 	font-weight: normal !important;
 	opacity: 1 !important;
 	color: var(--scl-color-magenta) !important;
