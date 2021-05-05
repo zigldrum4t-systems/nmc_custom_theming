@@ -182,8 +182,8 @@
 }
 
 #header > .container-fixed > .header-left > #appmenu > li > a > svg {
-	/* filter: invert(1); */
-	fill: var(--scl-color-magenta);
+	filter: invert(1);
+	/* fill: var(--scl-color-magenta); */
 }
 
 #header > .container-fixed > .header-left > #appmenu li span {
@@ -192,15 +192,15 @@
 }
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
-	fill: var(--scl-color-magenta);
+	filter: invert(1);
 }
 
 #header > .container-fixed > .header-right > #contactsmenu > .icon-contacts {
-	fill: var(--scl-color-magenta);
+	filter: invert(1);
 }
 
 #header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {
-	fill: var(--scl-color-magenta);
+	filter: invert(1);
 }
 
 .sticky {
