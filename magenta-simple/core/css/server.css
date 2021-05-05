@@ -186,7 +186,7 @@
 }
 
 #header > .container-fixed > .header-left > #appmenu li span {
-	color: red !important;
+	color: var(--scl-color-grey-90) !important;
 	opacity: 0.6 !important;
 }
 
