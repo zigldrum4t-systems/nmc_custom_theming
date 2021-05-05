@@ -208,14 +208,23 @@
 	opacity: 1 !important;
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a:hover,
+#header > .container-fixed > .header-left > #appmenu li:hover a,
+#header > .container-fixed > .header-left > #appmenu li a:focus,
+#header > .container-fixed > .header-left > #appmenu li a.active {
+	font-size: 14px !important;
+	font-weight: normal !important;
+	opacity: 1 !important;
+	color: var(--scl-color-magenta) !important;
+}
+
+/* #header > .container-fixed > .header-left > #appmenu > li > a:hover,
 #header > .container-fixed > .header-left > #appmenu > li > a:focus,
 #header > .container-fixed > .header-left > #appmenu > li > a.active span {
 	font-size: 14px !important;
 	font-weight: normal !important;
 	opacity: 1 !important;
 	color: var(--scl-color-magenta) !important;
-}
+} */
 
 .sticky {
 	position: fixed;
