@@ -200,8 +200,12 @@
 }
 
 #header > .container-fixed > .header-left > #appmenu > li > a > svg {
-	filter: invert(1);
-	/* fill: var(--scl-color-magenta); */
+	/* filter: invert(1); */
+	fill: #e20074;
+}
+
+#header > .container-fixed > .header-left > #appmenu svg image {
+	fill: #e20074 !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a span {
@@ -232,24 +236,6 @@
 #header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {
 	filter: invert(1);
 }
-
-/* #appmenu li:hover a + span,
-#appmenu li a:focus + span,
-#appmenu li:hover span,
-#appmenu li:focus span,
-#appmenu li a:focus span,
-#appmenu li a.active span {
-	color: var(--scl-color-magenta);
-}
-
-#appmenu li:hover a,
-#appmenu li a:focus,
-#appmenu li a.active {
-	font-size: 12px !important;
-	font-weight: bold !important;
-	opacity: 1 !important;
-	color: var(--scl-color-magenta) !important;
-} */
 
 .sticky {
 	position: fixed;
