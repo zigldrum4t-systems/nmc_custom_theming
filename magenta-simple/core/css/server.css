@@ -191,6 +191,11 @@
 	opacity: 1 !important;
 } */
 
+#appmenu li a span {
+	color: var(--scl-color-black) !important;
+	opacity: 1 !important;
+}
+
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
 	filter: invert(1);
 }
@@ -229,10 +234,6 @@
 #appmenu li a:focus span {
 	color: var(--scl-color-magenta) !important;
 } */
-
-#appmenu li a span {
-	color: var(--scl-color-black);
-}
 
 #appmenu li:hover a + span,
 #appmenu li a:focus + span,
