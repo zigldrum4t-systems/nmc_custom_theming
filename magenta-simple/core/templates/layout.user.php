@@ -198,6 +198,14 @@
         </div>
     </header>
 
+    <div class="breadcrumb-bar" id="breadcrumb" >
+        <div class="container-fixed">
+            <div class="header-breadcrumb">
+
+            </div>
+        </div>
+    </div>
+
     <div id="sudo-login-background" class="hidden"></div>
     <form id="sudo-login-form" class="hidden" method="POST">
         <label>

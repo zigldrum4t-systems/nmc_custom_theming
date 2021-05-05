@@ -335,6 +335,22 @@
 	}
 }
 
+#breadcrumb {
+	background-image: unset !important;
+	background-color: gray !important;
+	--color-header: transparent !important;
+	position: static;
+	height: 52px;
+	top: unset !important;
+	border-bottom: 2px solid var(--scl-color-grey-10);
+}
+
+#breadcrumb > .container-fixed {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-flex;
+}
+
 .shrink {
 	height: 5px;
 }
