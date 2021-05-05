@@ -203,10 +203,10 @@
 	filter: invert(1);
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a > span {
+/* #header > .container-fixed > .header-left > #appmenu > li > a > span {
 	color: var(--scl-color-black) !important;
 	opacity: 1 !important;
-}
+} */
 
 #header > .container-fixed > .header-left > #appmenu li:a hover,
 #header > .container-fixed > .header-left > #appmenu li a:focus,
@@ -230,13 +230,17 @@
 	color: var(--scl-color-magenta) !important;
 } */
 
+#appmenu li span {
+	color: var(--scl-color-black);
+}
+
 #appmenu li:hover a + span,
 #appmenu li a:focus + span,
 #appmenu li:hover span,
 #appmenu li:focus span,
 #appmenu li a:focus span,
 #appmenu li a.active span {
-	color: var(--scl-color-magenta) !important;
+	color: var(--scl-color-magenta);
 }
 
 #appmenu li:hover a,
