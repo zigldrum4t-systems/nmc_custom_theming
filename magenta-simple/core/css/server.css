@@ -230,7 +230,7 @@
 	color: var(--scl-color-magenta) !important;
 } */
 
-#appmenu li span {
+#appmenu li a span {
 	color: var(--scl-color-black);
 }
 
