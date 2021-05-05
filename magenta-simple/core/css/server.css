@@ -191,8 +191,8 @@
 	opacity: 1 !important;
 } */
 
-#appmenu li a span {
-	color: var(--scl-color-black) !important;
+#header > .container-fixed > .header-left > #appmenu li a span {
+	color: var(--scl-color-black);
 	opacity: 1 !important;
 }
 
