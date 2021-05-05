@@ -224,9 +224,18 @@
 	opacity: 1 !important;
 	color: var(--scl-color-magenta) !important;
 }
-
+/* 
 #appmenu li:hover,
 #appmenu li a:focus span {
+	color: var(--scl-color-magenta) !important;
+} */
+
+#appmenu li:hover a + span,
+#appmenu li a:focus + span,
+#appmenu li:hover span,
+#appmenu li:focus span,
+#appmenu li a:focus span,
+#appmenu li a.active span {
 	color: var(--scl-color-magenta) !important;
 }
 
