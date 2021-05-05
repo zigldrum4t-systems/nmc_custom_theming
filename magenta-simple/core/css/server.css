@@ -177,6 +177,24 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
+#header {
+	height: 63px;
+	background-image: unset !important;
+	background-color: #ffffff !important;
+	--color-header: transparent !important;
+	position: static;
+	top: unset !important;
+	border-bottom: 1px solid #e5e5e5;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#header > .container-fixed {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-flex;
+}
+
 #header > .container-fixed > .header-left > #nextcloud > .logo {
 	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
 }
@@ -191,23 +209,16 @@
 	opacity: 1 !important;
 }
 
-/* #header > .container-fixed > .header-left > #appmenu li a:hover,
-#header > .container-fixed > .header-left > #appmenu li a:focus,
-#header > .container-fixed > .header-left > #appmenu li a.active {
-	font-weight: normal !important;
-	opacity: 1 !important;
-	color: var(--scl-color-magenta) !important;
-} */
-
 #header > .container-fixed > .header-left > #appmenu li a:hover span {
-	font-weight: normal !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
 	opacity: 1 !important;
-	color: var(--scl-color-magenta) !important;
+	color: #e20074 !important;
 }
 #header > .container-fixed > .header-left > #appmenu li a span:hover {
-	font-weight: normal !important;
+	font-weight: bold !important;
 	opacity: 1 !important;
-	color: var(--scl-color-magenta) !important;
+	color: #e20074 !important;
 }
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
@@ -222,7 +233,7 @@
 	filter: invert(1);
 }
 
-#appmenu li:hover a + span,
+/* #appmenu li:hover a + span,
 #appmenu li a:focus + span,
 #appmenu li:hover span,
 #appmenu li:focus span,
@@ -235,10 +246,10 @@
 #appmenu li a:focus,
 #appmenu li a.active {
 	font-size: 12px !important;
-	font-weight: normal !important;
+	font-weight: bold !important;
 	opacity: 1 !important;
 	color: var(--scl-color-magenta) !important;
-}
+} */
 
 .sticky {
 	position: fixed;
@@ -264,21 +275,6 @@
 #content > .container-fixed {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#header {
-	background-image: unset !important;
-	background-color: #ffffff !important;
-	--color-header: transparent !important;
-	position: static;
-	top: unset !important;
-	border-bottom: 2px solid var(--scl-color-grey-10);
-}
-
-#header > .container-fixed {
-	margin-left: auto;
-	margin-right: auto;
-	display: inline-flex;
 }
 
 .brandbar {
