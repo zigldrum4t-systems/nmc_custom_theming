@@ -186,14 +186,17 @@
 	/* fill: var(--scl-color-magenta); */
 }
 
-/* #header > .container-fixed > .header-left > #appmenu li span {
-	color: var(--scl-color-black) !important;
-	opacity: 1 !important;
-} */
-
 #header > .container-fixed > .header-left > #appmenu li a span {
 	color: var(--scl-color-black);
 	opacity: 1 !important;
+}
+
+#header > .container-fixed > .header-left > #appmenu li a:hover,
+#header > .container-fixed > .header-left > #appmenu li a:focus,
+#header > .container-fixed > .header-left > #appmenu li a.active {
+	font-weight: normal !important;
+	opacity: 1 !important;
+	color: var(--scl-color-magenta) !important;
 }
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
@@ -207,33 +210,6 @@
 #header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {
 	filter: invert(1);
 }
-
-/* #header > .container-fixed > .header-left > #appmenu > li > a > span {
-	color: var(--scl-color-black) !important;
-	opacity: 1 !important;
-} */
-
-#header > .container-fixed > .header-left > #appmenu li:a hover,
-#header > .container-fixed > .header-left > #appmenu li a:focus,
-#header > .container-fixed > .header-left > #appmenu li a.active span {
-	/* font-size: 14px !important; */
-	font-weight: normal !important;
-	opacity: 1 !important;
-	color: var(--scl-color-magenta) !important;
-}
-
-#appmenu li:hover a,
-#appmenu li a:focus {
-	font-size: 12px !important;
-	font-weight: normal !important;
-	opacity: 1 !important;
-	color: var(--scl-color-magenta) !important;
-}
-/* 
-#appmenu li:hover,
-#appmenu li a:focus span {
-	color: var(--scl-color-magenta) !important;
-} */
 
 #appmenu li:hover a + span,
 #appmenu li a:focus + span,
@@ -252,15 +228,6 @@
 	opacity: 1 !important;
 	color: var(--scl-color-magenta) !important;
 }
-
-/* #header > .container-fixed > .header-left > #appmenu > li > a:hover,
-#header > .container-fixed > .header-left > #appmenu > li > a:focus,
-#header > .container-fixed > .header-left > #appmenu > li > a.active span {
-	font-size: 14px !important;
-	font-weight: normal !important;
-	opacity: 1 !important;
-	color: var(--scl-color-magenta) !important;
-} */
 
 .sticky {
 	position: fixed;
