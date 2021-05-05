@@ -191,9 +191,20 @@
 	opacity: 1 !important;
 }
 
-#header > .container-fixed > .header-left > #appmenu li a:hover,
+/* #header > .container-fixed > .header-left > #appmenu li a:hover,
 #header > .container-fixed > .header-left > #appmenu li a:focus,
 #header > .container-fixed > .header-left > #appmenu li a.active {
+	font-weight: normal !important;
+	opacity: 1 !important;
+	color: var(--scl-color-magenta) !important;
+} */
+
+#header > .container-fixed > .header-left > #appmenu li a:hover span {
+	font-weight: normal !important;
+	opacity: 1 !important;
+	color: var(--scl-color-magenta) !important;
+}
+#header > .container-fixed > .header-left > #appmenu li a span:hover {
 	font-weight: normal !important;
 	opacity: 1 !important;
 	color: var(--scl-color-magenta) !important;
