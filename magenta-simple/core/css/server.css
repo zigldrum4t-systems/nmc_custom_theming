@@ -186,10 +186,10 @@
 	/* fill: var(--scl-color-magenta); */
 }
 
-#header > .container-fixed > .header-left > #appmenu li span {
+/* #header > .container-fixed > .header-left > #appmenu li span {
 	color: var(--scl-color-black) !important;
 	opacity: 1 !important;
-}
+} */
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
 	filter: invert(1);
@@ -211,8 +211,8 @@
 #header > .container-fixed > .header-left > #appmenu > li > a:hover,
 #header > .container-fixed > .header-left > #appmenu > li > a:focus,
 #header > .container-fixed > .header-left > #appmenu > li > a.active {
-	opacity: 1;
-	color: var(--scl-color-magenta);
+	opacity: 1 !important;
+	color: var(--scl-color-magenta) !important;
 }
 
 .sticky {
