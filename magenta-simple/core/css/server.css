@@ -187,7 +187,7 @@
 }
 
 #header > .container-fixed > .header-left > #appmenu li span {
-	color: var(--scl-color-grey-90) !important;
+	color: var(--scl-color-black) !important;
 	opacity: 1 !important;
 }
 
@@ -201,6 +201,18 @@
 
 #header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {
 	filter: invert(1);
+}
+
+#header > .container-fixed > .header-right > .header-menu > a > span {
+	color: var(--scl-color-black) !important;
+	opacity: 1 !important;
+}
+
+#header > .container-fixed > .header-right > .header-menu > a:hover,
+#header > .container-fixed > .header-right > .header-menu > a:focus,
+#header > .container-fixed > .header-right > .header-menu > a.active {
+	opacity: 1;
+	color: var(--scl-color-magenta);
 }
 
 .sticky {
@@ -334,22 +346,6 @@
 		width: 1009px;
 		/* padding-top: 100px; */
 	}
-}
-
-#breadcrumb {
-	background-image: unset !important;
-	background-color: gray !important;
-	--color-header: transparent !important;
-	position: static;
-	height: 52px;
-	top: unset !important;
-	border-bottom: 2px solid var(--scl-color-grey-10);
-}
-
-#breadcrumb > .container-fixed {
-	margin-left: auto;
-	margin-right: auto;
-	display: inline-flex;
 }
 
 .shrink {
