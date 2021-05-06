@@ -23,7 +23,7 @@
 #app-navigation {
 	height: calc(100% - 108px) !important;
 	/* top: 122px !important; */
-	top: unset !important;
+	z-index: 10 !important;
 	left: unset !important;
 }
 
