@@ -89,14 +89,7 @@
                         <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
                             class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
                             <svg width="20" height="20" viewBox="0 0 20 20" alt="">
-                                <?php if ($_['themingInvertMenu']) { ?>
-                                <defs>
-                                    <filter id="invertMenuMain-<?php p($entry['id']); ?>">
-                                        <feColorMatrix in="SourceGraphic" type="matrix"
-                                            values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
-                                    </filter>
-                                </defs>
-                                <?php } ?>
+                                
                                 <image x="0" y="0" width="20" height="20" preserveAspectRatio="xMinYMin meet"
                                     <?php if ($_['themingInvertMenu']) { ?>
                                     filter="url(#invertMenuMain-<?php p($entry['id']); ?>)" <?php } ?>
