@@ -286,6 +286,7 @@
 }
 
 .brandbar > .container-fixed > .header-brandbar {
+	z-index: 4999 !important;
 	display: flex;
 }
 
