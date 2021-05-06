@@ -229,6 +229,15 @@
 	filter: invert(1);
 }
 
+#header > .container-fixed > .header-right > .header-menu > a:hover > span > svg {
+	filter: invert(0);
+	fill: #e20074;
+}
+
+.icon-contacts {
+	@include icon-color("contacts", "places", #e20070, 1, true);
+}
+
 #header > .container-fixed > .header-right > #contactsmenu > .icon-contacts {
 	filter: invert(1);
 }
