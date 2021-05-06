@@ -205,6 +205,10 @@
 	fill: #e20074;
 }
 
+#header > .container-fixed > .header-left > #appmenu > li > a.nav-icon-files:hover {
+	background-image: var(--icon-files-folder-e20074);
+}
+
 #header > .container-fixed > .header-left > #appmenu svg image {
 	fill: #e20074 !important;
 }
