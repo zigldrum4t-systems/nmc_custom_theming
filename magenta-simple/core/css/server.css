@@ -271,7 +271,7 @@
 
 .brandbar {
 	height: 72px;
-	/* position: fixed !important; */
+	position: fixed;
 	z-index: 4999 !important;
 	color: var(--scl-color-white) !important;
 	background: var(--scl-color-magenta);
@@ -281,6 +281,7 @@
 }
 
 .brandbar > .container-fixed {
+	z-index: 4999 !important;
 	margin-left: auto;
 	margin-right: auto;
 }
