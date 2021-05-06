@@ -183,7 +183,7 @@
 	background-image: unset !important;
 	background-color: #ffffff !important;
 	--color-header: transparent !important;
-	position: static;
+	position: fixed;
 	top: unset !important;
 	border-bottom: 1px solid #e5e5e5;
 	border-top-left-radius: 8px;
