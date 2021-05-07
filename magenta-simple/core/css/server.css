@@ -227,22 +227,22 @@
 	height: 30px !important;
 }
 
-#header > .container-fixed > .header-left > #appmenu li a span {
+/* #header > .container-fixed > .header-left > #appmenu li a span {
 	color: var(--scl-color-black);
 	opacity: 1 !important;
-}
+} */
 
-#header > .container-fixed > .header-left > #appmenu li a:hover span {
+#header > .container-fixed > .header-left > #appmenu li a:hover {
 	font-size: 12px !important;
-	font-weight: bold !important;
+	/* font-weight: bold !important; */
 	opacity: 1 !important;
 	color: #e20074 !important;
 }
-#header > .container-fixed > .header-left > #appmenu li a span:hover {
+/* #header > .container-fixed > .header-left > #appmenu li a span:hover {
 	font-weight: bold !important;
 	opacity: 1 !important;
 	color: #e20074 !important;
-}
+} */
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
 	filter: invert(1);
