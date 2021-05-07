@@ -196,28 +196,36 @@
 	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-icon {
-	background-image: var(--icon-files-folder);
+#header > .container-fixed > .header-left > #appmenu > li > a.custom-dashboard-icon {
+	background-image: var(--icon-files-folder-e20074);
 	background-size: 16px 16px;
 	background-position: 14px center;
 	background-repeat: no-repeat;
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-icon {
-	background-image: var(--icon-files-folder);
+#header > .container-fixed > .header-left > #appmenu > li > a.custom-files-icon {
+	background-image: var(--icon-files-folder-e20074);
 	background-size: 16px 16px;
 	background-position: 14px center;
 	background-repeat: no-repeat;
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-icon {
-	background-image: var(--icon-files-folder);
+#header > .container-fixed > .header-left > #appmenu > li > a.custom-photos-icon {
+	background-image: var(--icon-files-folder-e20074);
 	background-size: 16px 16px;
 	background-position: 14px center;
 	background-repeat: no-repeat;
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-icon:hover {
+#header > .container-fixed > .header-left > #appmenu > li > a.custom-dashboard-icon:hover {
+	background-image: var(--icon-files-folder-e20074);
+}
+
+#header > .container-fixed > .header-left > #appmenu > li > a.custom-files-icon:hover {
+	background-image: var(--icon-files-folder-e20074);
+}
+
+#header > .container-fixed > .header-left > #appmenu > li > a.custom-photos-icon:hover {
 	background-image: var(--icon-files-folder-e20074);
 }
 
