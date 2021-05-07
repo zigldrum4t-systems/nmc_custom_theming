@@ -196,53 +196,27 @@
 	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a {
-	color: #000000 !important;
-}
-
-#header > .container-fixed > .header-left > #appmenu > li > a.active {
-	color: #e20074 !important;
-}
-
-#header > .container-fixed > .header-left > #appmenu > li > a:hover {
-	color: #e20074 !important;
-}
-
-#header > .container-fixed > .header-left > #appmenu > li > a > svg {
-	/* filter: invert(1); */
-	fill: #e20074;
-}
-
-#header > .container-fixed > .header-left > #appmenu > li > a.nav-icon-files:hover {
-	background-image: var(--icon-files-folder-e20074);
-}
-
-#header > .container-fixed > .header-left > #appmenu svg image {
-	fill: #e20074 !important;
-}
-
 #header > .container-fixed > .header-left > #appmenu li a {
 	color: var(--scl-color-black);
 	opacity: 1 !important;
 	height: 30px !important;
+	font-size: 14px !important;
+	font-weight: normal !important;
 }
 
-/* #header > .container-fixed > .header-left > #appmenu li a span {
-	color: var(--scl-color-black);
+#header > .container-fixed > .header-left > #appmenu li a.active {
+	font-size: 14px !important;
+	font-weight: normal !important;
 	opacity: 1 !important;
-} */
+	color: #e20074 !important;
+}
 
 #header > .container-fixed > .header-left > #appmenu li a:hover {
-	font-size: 12px !important;
-	/* font-weight: bold !important; */
+	font-size: 14px !important;
+	font-weight: normal !important;
 	opacity: 1 !important;
 	color: #e20074 !important;
 }
-/* #header > .container-fixed > .header-left > #appmenu li a span:hover {
-	font-weight: bold !important;
-	opacity: 1 !important;
-	color: #e20074 !important;
-} */
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
 	filter: invert(1);
