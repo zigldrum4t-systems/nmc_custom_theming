@@ -87,8 +87,7 @@
                     <?php foreach ($_['navigation'] as $entry): ?>
                     <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
                         <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
-                            class="active  nav-icon-files svg " <?php endif; ?>
-                            class="nav-icon-files svg"
+                            class="active custom-icon svg " <?php endif; ?> class="custom-icon svg"
                             aria-label="<?php p($entry['name']); ?>">
 
                             <span>

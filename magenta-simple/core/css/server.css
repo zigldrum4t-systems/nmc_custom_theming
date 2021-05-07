@@ -37,7 +37,11 @@
 	opacity: 1 !important;
 }
 
-#app-navigation > ul > li > a.nav-icon-files:hover {
+#app-navigation > ul > li > a.custom-icon {
+	background-image: var(--icon-files-folder-e20074);
+}
+
+#app-navigation > ul > li > a.custom-icon:hover {
 	background-image: var(--icon-files-folder-e20074);
 }
 
