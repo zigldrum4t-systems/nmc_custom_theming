@@ -196,37 +196,16 @@
 	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-dashboard-icon {
-	background-image: var(--custom-dashboard-icon-000000);
-	background-size: 16px 16px;
-	background-position: 14px center;
-	background-repeat: no-repeat;
+#header > .container-fixed > .header-left > #appmenu > li > a {
+	color: #000000 !important;
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-files-icon {
-	background-image: var(--custom-files-icon-000000);
-	background-size: 16px 16px;
-	background-position: 14px center;
-	background-repeat: no-repeat;
+#header > .container-fixed > .header-left > #appmenu > li > a.active {
+	color: #e20074 !important;
 }
 
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-photos-icon {
-	background-image: var(--custom-photos-icon-000000);
-	background-size: 16px 16px;
-	background-position: 14px center;
-	background-repeat: no-repeat;
-}
-
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-dashboard-icon:hover {
-	background-image: var(--custom-dashboard-icon-e20074);
-}
-
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-files-icon:hover {
-	background-image: var(--custom-files-icon-e20074);
-}
-
-#header > .container-fixed > .header-left > #appmenu > li > a.custom-photos-icon:hover {
-	background-image: var(--custom-photos-icon-e20074);
+#header > .container-fixed > .header-left > #appmenu > li > a:hover {
+	color: #e20074 !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu > li > a > svg {
@@ -240,6 +219,12 @@
 
 #header > .container-fixed > .header-left > #appmenu svg image {
 	fill: #e20074 !important;
+}
+
+#header > .container-fixed > .header-left > #appmenu li a {
+	color: var(--scl-color-black);
+	opacity: 1 !important;
+	height: 30px !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a span {

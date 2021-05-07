@@ -86,10 +86,9 @@
                 <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
                     <?php foreach ($_['navigation'] as $entry): ?>
                     <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
-                        <a href="<?php print_unescaped($entry['href']); ?>" aria-label="<?php p($entry['name']); ?>">
-                            <span>
-                                <?php p($entry['name']); ?>
-                            </span>
+                        <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
+                            class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+                            <?php p($entry['name']); ?>
                         </a>
                     </li>
                     <?php endforeach; ?>
