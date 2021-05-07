@@ -198,6 +198,9 @@
 
 #header > .container-fixed > .header-left > #appmenu > li > a.custom-icon {
 	background-image: var(--icon-files-folder);
+	background-size: 16px 16px;
+	background-position: 14px center;
+	background-repeat: no-repeat;
 }
 
 #header > .container-fixed > .header-left > #appmenu > li > a.custom-icon:hover {
