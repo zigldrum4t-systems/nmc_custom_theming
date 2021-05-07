@@ -37,14 +37,6 @@
 	opacity: 1 !important;
 }
 
-#app-navigation > ul > li > a.custom-icon {
-	background-image: var(--icon-files-folder-e20074);
-}
-
-#app-navigation > ul > li > a.custom-icon:hover {
-	background-image: var(--icon-files-folder-e20074);
-}
-
 #app-navigation > ul > li > a.nav-icon-recent:hover {
 	background-image: var(--icon-files-recent-e20074);
 }
@@ -202,6 +194,14 @@
 
 #header > .container-fixed > .header-left > #nextcloud > .logo {
 	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
+}
+
+#header > .container-fixed > .header-left > #appmenu > li > a.custom-icon {
+	background-image: var(--icon-files-folder);
+}
+
+#header > .container-fixed > .header-left > #appmenu > li > a.custom-icon:hover {
+	background-image: var(--icon-files-folder-e20074);
 }
 
 #header > .container-fixed > .header-left > #appmenu > li > a > svg {
