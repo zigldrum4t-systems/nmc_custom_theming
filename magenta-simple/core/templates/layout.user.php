@@ -87,22 +87,9 @@
                     <?php foreach ($_['navigation'] as $entry): ?>
                     <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
                         <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
-                            class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
-                            <svg width="20" height="20" viewBox="0 0 20 20" alt="">
-                                <?php if ($_['themingInvertMenu']) { ?>
-                                <defs>
-                                    <filter id="invertMenuMain-<?php p($entry['id']); ?>">
-                                        <feColorMatrix in="SourceGraphic" type="matrix"
-                                            values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
-                                    </filter>
-                                </defs>
-                                <?php } ?>
-                                <image x="0" y="0" width="20" height="20" preserveAspectRatio="xMinYMin meet"
-                                    <?php if ($_['themingInvertMenu']) { ?>
-                                    filter="url(#invertMenuMain-<?php p($entry['id']); ?>)" <?php } ?>
-                                    xlink:href="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>"
-                                    class="app-icon"></image>
-                            </svg>
+                            class="active  nav-icon-files svg " <?php endif; ?>
+                            aria-label="<?php p($entry['name']); ?>">
+
                             <span>
                                 <?php p($entry['name']); ?>
                             </span>
@@ -125,21 +112,9 @@
                                 <?php foreach ($_['navigation'] as $entry): ?>
                                 <li data-id="<?php p($entry['id']); ?>">
                                     <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
-                                        class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" alt="">
-                                            <defs>
-                                                <filter id="invertMenuMore-<?php p($entry['id']); ?>">
-                                                    <feColorMatrix in="SourceGraphic" type="matrix"
-                                                        values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0">
-                                                    </feColorMatrix>
-                                                </filter>
-                                            </defs>
-                                            <image x="0" y="0" width="16" height="16"
-                                                preserveAspectRatio="xMinYMin meet"
-                                                filter="url(#invertMenuMore-<?php p($entry['id']); ?>)"
-                                                xlink:href="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>"
-                                                class="app-icon"></image>
-                                        </svg>
+                                        class="active nav-icon-files svg " <?php endif; ?>
+                                        aria-label="<?php p($entry['name']); ?>">
+
                                         <span><?php p($entry['name']); ?></span>
                                     </a>
                                 </li>
