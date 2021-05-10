@@ -466,3 +466,24 @@
 	text-decoration: underline !important;
 	transition-duration: 0.1s;
 }
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------------EXTRACSS------------------------------------ */
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (min-width: 375px) {
+	.breadcrumb {
+		padding: 8px 0px;
+	}
+	.header-brandbar-logo {
+		display: none;
+	}
+}
+
+/* (max-width: 768px) */
+
+@media screen and (min-width: 640px) {
+	.button.new .hidden-visually {
+		display: none;
+	}
+}
