@@ -175,12 +175,17 @@
 /* ---------------------------------------------------------------------------- */
 
 #header {
-	height: 63px;
+	/* height: 63px;
 	background-image: unset !important;
 	background-color: #ffffff !important;
 	--color-header: transparent !important;
 	position: fixed;
 	top: unset !important;
+	border-bottom: 1px solid #e5e5e5;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px; */
+	background-color: white;
+	height: 63px;
 	border-bottom: 1px solid #e5e5e5;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
@@ -487,3 +492,7 @@
 		display: none;
 	}
 }
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------------EXTRACSS------------------------------------ */
+/* ---------------------------------------------------------------------------- */
