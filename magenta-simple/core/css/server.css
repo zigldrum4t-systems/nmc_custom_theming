@@ -230,8 +230,20 @@
 	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
 }
 
-#header .container-fixed .header-left #appmenu {
+/* #header .container-fixed .header-left #appmenu {
 	padding-left: 228px;
+}
+
+#header > .container-fixed > .header-left > #appmenu li a {
+	opacity: 1 !important;
+	font-size: 16px !important;
+	padding: 10px 0px 0px 10px;
+	font-weight: 600;
+	color: #161616;
+} */
+
+#header .container-fixed .header-left #appmenu {
+	padding-left: 322px;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a {
@@ -257,12 +269,12 @@
 	color: #161616;
 }
 
-#header .container-fixed .header-left .ul-style li a:hover {
+/* #header .container-fixed .header-left .ul-style li a:hover {
 	text-decoration: none;
 	color: #e20074 !important;
-}
+} */
 
-#header > .container-fixed > .header-left > #appmenu li a.active {
+/* #header > .container-fixed > .header-left > #appmenu li a.active {
 	font-size: 14px !important;
 	font-weight: normal !important;
 	opacity: 1 !important;
@@ -274,7 +286,7 @@
 	font-weight: normal !important;
 	opacity: 1 !important;
 	color: #e20074 !important;
-}
+} */
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
 	filter: invert(1);
