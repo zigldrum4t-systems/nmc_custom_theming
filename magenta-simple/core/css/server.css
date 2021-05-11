@@ -209,6 +209,26 @@
 	font-weight: normal !important;
 }
 
+#header .container-fixed .header-left .ul-style {
+	padding-left: 228px;
+}
+
+#header .container-fixed .header-left .ul-style li a {
+	height: 0px;
+	width: 0px;
+	opacity: none;
+	letter-spacing: none;
+	font-size: 16px;
+	padding: 10px 0px 0px 10px;
+	font-weight: 600;
+	color: #161616;
+}
+
+#header .container-fixed .header-left .ul-style li a:hover {
+	text-decoration: none;
+	color: #e20074 !important;
+}
+
 #header > .container-fixed > .header-left > #appmenu li a.active {
 	font-size: 14px !important;
 	font-weight: normal !important;
