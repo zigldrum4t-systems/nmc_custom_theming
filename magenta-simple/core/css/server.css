@@ -174,16 +174,7 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
-#header {
-	/* height: 63px;
-	background-image: unset !important;
-	background-color: #ffffff !important;
-	--color-header: transparent !important;
-	position: fixed;
-	top: unset !important;
-	border-bottom: 1px solid #e5e5e5;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px; */
+/* #header {
 	background-color: white;
 	height: 63px;
 	border-bottom: 1px solid #e5e5e5;
@@ -207,6 +198,48 @@
 	height: 30px !important;
 	font-size: 14px !important;
 	font-weight: normal !important;
+} */
+
+#header {
+	/* height: 63px;
+	background-image: unset !important;
+	background-color: #ffffff !important;
+	--color-header: transparent !important;
+	position: fixed;
+	top: unset !important;
+	border-bottom: 1px solid #e5e5e5;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px; */
+	height: 63px !important;
+	background-image: unset !important;
+	background-color: #ffffff !important;
+	position: fixed;
+	top: unset !important;
+	border-bottom: 1px solid #e5e5e5;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#header > .container-fixed {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-flex;
+}
+
+#header > .container-fixed > .header-left > #nextcloud > .logo {
+	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
+}
+
+#header .container-fixed .header-left #appmenu {
+	padding-left: 228px;
+}
+
+#header > .container-fixed > .header-left > #appmenu li a {
+	opacity: 1 !important;
+	font-size: 16px !important;
+	padding: 10px 0px 0px 10px;
+	font-weight: 600;
+	color: #161616;
 }
 
 #header .container-fixed .header-left .ul-style {
