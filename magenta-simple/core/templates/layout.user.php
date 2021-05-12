@@ -83,7 +83,7 @@
                     </div>
                 </a>
 
-                <ul id="appmenu" class="ul-style" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
+                <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
                     <?php foreach ($_['navigation'] as $entry): ?>
                     <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
                         <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>

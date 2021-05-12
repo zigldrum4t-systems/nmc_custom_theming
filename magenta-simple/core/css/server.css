@@ -175,17 +175,12 @@
 /* ---------------------------------------------------------------------------- */
 
 #header {
-	/* height: 63px;
-	 background-image: unset !important;
-	 background-color: #ffffff !important;
-	 --color-header: transparent !important;
-	 position: fixed;
-	 top: unset !important;
-	 border-bottom: 1px solid #e5e5e5;
-	 border-top-left-radius: 8px;
-	 border-top-right-radius: 8px; */
-	background-color: white;
 	height: 63px;
+	background-image: unset !important;
+	background-color: #ffffff !important;
+	--color-header: transparent !important;
+	position: fixed;
+	top: unset !important;
 	border-bottom: 1px solid #e5e5e5;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
@@ -471,28 +466,3 @@
 	text-decoration: underline !important;
 	transition-duration: 0.1s;
 }
-
-/* ---------------------------------------------------------------------------- */
-/* --------------------------------EXTRACSS------------------------------------ */
-/* ---------------------------------------------------------------------------- */
-
-@media screen and (min-width: 375px) {
-	.breadcrumb {
-		padding: 8px 0px;
-	}
-	.header-brandbar-logo {
-		display: none;
-	}
-}
-
-/* (max-width: 768px) */
-
-@media screen and (min-width: 640px) {
-	.button.new .hidden-visually {
-		display: none;
-	}
-}
-
-/* ---------------------------------------------------------------------------- */
-/* --------------------------------EXTRACSS------------------------------------ */
-/* ---------------------------------------------------------------------------- */
