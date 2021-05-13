@@ -470,7 +470,9 @@
 /* UI chnages */
 
 @media screen and (min-width: 375px) {
-    .breadcrumb{ padding: 8px 0px; }
+    /* .breadcrumb{ 
+		padding: 8px 0px; 
+	} */
     #nextcloud{
         display: none;
     }
@@ -484,10 +486,19 @@
     }
     .app-files #app-content{
         width:100%;
-    }
-    .breadcrumb{
-        padding:0;
-    }
+	}
+	#app-navigation-toggle{
+		margin-top: 10px;
+	}
+    .breadcrumb{ 
+		padding: 10px 0px; 
+	}
+	#view-toggle{
+		margin-top: 10px;
+	}
+	.actions.creatable{
+		margin-top:5px;
+	}
     #controls > div.actions.creatable{
         padding-top:7px;
     }
