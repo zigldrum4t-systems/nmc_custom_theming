@@ -466,6 +466,29 @@
 	text-decoration: underline !important;
 	transition-duration: 0.1s;
 }
-body{
-	border:2px solid red !important;
+
+/* UI chnages */
+
+@media screen and (min-width: 375px) {
+    .breadcrumb{ padding: 8px 0px; }
+    #nextcloud{
+        display: none;
+    }
+}
+
+/* (max-width: 768px) */
+
+@media screen and (min-width: 640px){
+    .button.new .hidden-visually{
+         display:none;
+    }
+    .app-files #app-content{
+        width:100%;
+    }
+    .breadcrumb{
+        padding:0;
+    }
+    #controls > div.actions.creatable{
+        padding-top:7px;
+    }
 }
