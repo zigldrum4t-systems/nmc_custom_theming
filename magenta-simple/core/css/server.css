@@ -254,8 +254,12 @@
 	background-image: var(--custom-icon-mail-000000);
 }
 
-#header> .container-fixed > .header-right > #contactsmenu > .icon-contacts:hover {
+#header > .container-fixed > .header-right > #contactsmenu > .icon-contacts:hover {
 	background-image: var(--custom-icon-mail-e20074);
+}
+
+#header > .container-fixed > .header-right > #settings > .icon-user-menu {
+	background-image: var(--custom-icon-user-000000);
 }
 
 #header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {

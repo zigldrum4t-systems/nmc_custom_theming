@@ -148,9 +148,7 @@
 				print_unescaped('" style="display: none');
 			} ?>">
                             <?php if ($_['userAvatarSet']): ?>
-                            <img alt="" width="32" height="32"
-                                src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32, 'v' => $_['userAvatarVersion']]));?>"
-                                srcset="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 64, 'v' => $_['userAvatarVersion']]));?> 2x, <?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 128, 'v' => $_['userAvatarVersion']]));?> 4x">
+                                <div class="icon-user-menu"></div>
                             <?php endif; ?>
                         </div>
                         <div id="expandDisplayName" class="icon-settings-white"></div>
