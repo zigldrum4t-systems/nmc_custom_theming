@@ -262,6 +262,10 @@
 	background-image: var(--custom-icon-user-000000);
 }
 
+#header > .container-fixed > .header-right > #settings > #expand > .avatardiv > .icon-user-menu:hover {
+	background-image: var(--custom-icon-user-e20074);
+}
+
 #header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {
 	filter: invert(1);
 }
