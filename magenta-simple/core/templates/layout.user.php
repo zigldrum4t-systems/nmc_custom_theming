@@ -124,8 +124,12 @@
             </div>
 
             <div class="header-right">
-                <div id="unified-search"></div>
-                <div id="notifications"></div>
+                <div id="unified-search">
+                    <span class="unified-search-title">Search</span>
+                </div>
+                <div id="notifications">
+                    <span class="unified-search-title">Mail</span>
+                </div>
                 <div id="contactsmenu">
                     <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
                         aria-controls="contactsmenu-menu" aria-expanded="false">
