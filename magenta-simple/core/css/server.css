@@ -175,7 +175,7 @@
 /* ---------------------------------------------------------------------------- */
 
 #header {
-	height: 63px;
+	height: 63px !important;
 	background-image: unset !important;
 	background-color: #ffffff !important;
 	--color-header: transparent !important;
@@ -186,37 +186,60 @@
 	border-top-right-radius: 8px;
 }
 
+
 #header > .container-fixed {
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-flex;
 }
 
+#header #appmenu{
+	padding-left:124px;
+}
+
+#header > .container-fixed > .header-left > #nextcloud{
+	font-size:25px;
+        color:#161616;
+        font-weight:bold;
+        padding-left:12px;
+}
 #header > .container-fixed > .header-left > #nextcloud > .logo-title {
 	left: 0;
 	position: absolute;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a {
-	color: var(--scl-color-black);
 	opacity: 1 !important;
-	height: 30px !important;
-	font-size: 14px !important;
-	font-weight: normal !important;
+	padding: 4px 15px 0px 0px;
+    font-size: 16px !important;
+    color: #161616;
+	font-weight:600 !important;
+	width: auto;
+	transition: all 1s; 
+	font-family: TeleNeo,Helvetica Neue,Helvetica,Arial,sans-serif;  
 }
 
 #header > .container-fixed > .header-left > #appmenu li a.active {
-	font-size: 14px !important;
-	font-weight: normal !important;
-	opacity: 1 !important;
 	color: #e20074 !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a:hover {
-	font-size: 14px !important;
-	font-weight: normal !important;
-	opacity: 1 !important;
 	color: #e20074 !important;
+    text-decoration:none;
+    font-size:16px !important;
+    font-weight:600 !important;   
+}
+#header > .container-fixed > .header-right > .unified-search-title{
+	padding-top:22px;
+	font-size:12px;
+	font-weight:bold;
+	color: #161616 !important;
+}
+	#header > .container-fixed > .header-right > .contactsmenu-title{
+	padding-top:22px;
+	font-size:12px;
+	font-weight:bold;
+	color: #161616 !important;
 }
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
@@ -265,7 +288,7 @@
 .brandbar {
 	height: 72px;
 	position: fixed;
-	z-index: 4999 !important;
+	z-index: 0 !important;
 	color: var(--scl-color-white) !important;
 	background: var(--scl-color-magenta);
 	overflow: hidden;
