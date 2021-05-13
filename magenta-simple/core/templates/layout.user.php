@@ -125,16 +125,17 @@
 
             <div class="header-right">
                 <div id="unified-search">
-                    <span class="unified-search-title">Search</span>
+                    <div class="unified-search-title">Search</div>
                 </div>
                 <div id="notifications">
-                    <span class="unified-search-title">Mail</span>
+
                 </div>
                 <div id="contactsmenu">
                     <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
                         aria-controls="contactsmenu-menu" aria-expanded="false">
                         <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
                     </div>
+                    <div class="unified-search-title">Search</div>
                     <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
                 </div>
                 <div id="settings">
