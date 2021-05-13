@@ -192,8 +192,9 @@
 	display: inline-flex;
 }
 
-#header > .container-fixed > .header-left > #nextcloud > .logo {
-	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
+#header > .container-fixed > .header-left > #nextcloud > .logo-title {
+	left: 0;
+	position: absolute;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a {

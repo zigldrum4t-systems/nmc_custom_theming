@@ -75,7 +75,8 @@
 
             <div class="header-left">
                 <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
-                    <div class="logo logo-icon">
+                    <div>
+                        <span class="logo-title">MagentaCLOUD</span>
                         <h1 class="hidden-visually">
                             <?php p($theme->getName()); ?>
                             <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
