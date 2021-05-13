@@ -124,7 +124,8 @@
             </div>
 
             <div class="header-right">
-                <div id="unified-search">
+                <div>
+                    <div id="unified-search"> </div>
                     <div class="unified-search-title">Search</div>
                 </div>
                 <div id="notifications">
