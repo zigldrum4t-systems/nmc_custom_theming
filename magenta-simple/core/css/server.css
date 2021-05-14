@@ -501,7 +501,7 @@
 
 @media screen and (min-width: 1600px){
 	.container-fixed{
-		width:1536px;
+		width:1536px !important;
 		padding-left:16px;
 		padding-right:16px;
 	}
@@ -509,7 +509,7 @@
 
 @media screen and (min-width: 1300px)  and (max-width: 1599px) {
 	.container-fixed{
-		width:1280px;
+		width:1280px !important;
 		padding-left:16px;
 		padding-right:16px;
 	}
@@ -517,7 +517,7 @@
 
 @media screen and (min-width: 1024px)  and (max-width: 1299px) {
 	.container-fixed{
-		width:1024px;
+		width:1024px !important;
 		padding-left:16px;
 		padding-right:16px;
 	}
