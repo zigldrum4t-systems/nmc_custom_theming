@@ -503,3 +503,33 @@
         padding-top:7px;
     }
 }
+
+@media screen and (min-width: 1600px){
+	.container-fixed{
+		width:1536px;
+	}
+}
+
+@media screen and (min-width: 1600px){
+	.container-fixed{
+		width:1536px;
+		padding-left:16px;
+		padding-right:16px;
+	}
+}
+
+@media screen and (min-width: 1300px)  and (max-width: 1599px) {
+	.container-fixed{
+		width:1280px;
+		padding-left:16px;
+		padding-right:16px;
+	}
+}
+
+@media screen and (min-width: 1024px)  and (max-width: 1299px) {
+	.container-fixed{
+		width:1024px;
+		padding-left:16px;
+		padding-right:16px;
+	}
+}
