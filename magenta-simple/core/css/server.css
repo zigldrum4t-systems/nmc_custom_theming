@@ -175,7 +175,7 @@
 /* ---------------------------------------------------------------------------- */
 
 #header {
-	height: 63px !important;
+	height: 63px;
 	background-image: unset !important;
 	background-color: #ffffff !important;
 	--color-header: transparent !important;
@@ -192,53 +192,30 @@
 	display: inline-flex;
 }
 
-#header #appmenu {
-	padding-left: 124px;
-}
-
-#header > .container-fixed > .header-left > #nextcloud {
-	font-size: 25px;
-	color: #161616;
-	font-weight: bold;
-	padding-left: 12px;
-}
-#header > .container-fixed > .header-left > #nextcloud > .logo-title {
-	left: 0;
-	position: absolute;
+#header > .container-fixed > .header-left > #nextcloud > .logo {
+	background-image: url(/index.php/svg/core/logo/logo?color=000000&v=1);
 }
 
 #header > .container-fixed > .header-left > #appmenu li a {
+	color: var(--scl-color-black);
 	opacity: 1 !important;
-	padding: 4px 15px 0px 0px;
-	font-size: 16px !important;
-	color: #161616;
-	font-weight: 600 !important;
-	width: auto;
-	transition: all 1s;
-	font-family: TeleNeo, Helvetica Neue, Helvetica, Arial, sans-serif;
+	height: 30px !important;
+	font-size: 14px !important;
+	font-weight: normal !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a.active {
+	font-size: 14px !important;
+	font-weight: normal !important;
+	opacity: 1 !important;
 	color: #e20074 !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a:hover {
+	font-size: 14px !important;
+	font-weight: normal !important;
+	opacity: 1 !important;
 	color: #e20074 !important;
-	text-decoration: none;
-	font-size: 16px !important;
-	font-weight: 600 !important;
-}
-#header > .container-fixed > .header-right > .unified-search-title {
-	padding-top: 22px;
-	font-size: 12px;
-	font-weight: bold;
-	color: #161616 !important;
-}
-#header > .container-fixed > .header-right > .contactsmenu-title {
-	padding-top: 22px;
-	font-size: 12px;
-	font-weight: bold;
-	color: #161616 !important;
 }
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
@@ -251,19 +228,7 @@
 }
 
 #header > .container-fixed > .header-right > #contactsmenu > .icon-contacts {
-	background-image: var(--custom-icon-mail-000000);
-}
-
-#header > .container-fixed > .header-right > #contactsmenu > .icon-contacts:hover {
-	background-image: var(--custom-icon-mail-e20074);
-}
-
-#header > .container-fixed > .header-right > #settings > #expand > .avatardiv > .icon-user-menu {
-	background-image: var(--custom-icon-user-000000);
-}
-
-#header > .container-fixed > .header-right > #settings > #expand > .avatardiv > .icon-user-menu:hover {
-	background-image: var(--custom-icon-user-e20074);
+	filter: invert(1);
 }
 
 #header > .container-fixed > .header-right > #settings > .menutoggle > .avatardiv > img {
@@ -299,7 +264,7 @@
 .brandbar {
 	height: 72px;
 	position: fixed;
-	z-index: 0 !important;
+	z-index: 4999 !important;
 	color: var(--scl-color-white) !important;
 	background: var(--scl-color-magenta);
 	overflow: hidden;
@@ -504,46 +469,35 @@
 
 /* UI chnages */
 
-@media screen and (max-width: 375px) {
-	/* .breadcrumb{ 
-		padding: 8px 0px; 
-	} */
-	#nextcloud {
-		display: none;
-	}
-}
+
 
 /* (max-width: 768px) */
 
-@media screen and (max-width: 640px) {
-	.button.new .hidden-visually {
-		display: none;
+@media screen and (max-width: 640px){
+    .button.new .hidden-visually{
+         display:none;
+    }
+    .app-files #app-content{
+        width:100%;
 	}
-	.app-files #app-content {
-		width: 100%;
-	}
-	#app-navigation-toggle {
+	#app-navigation-toggle{
 		margin-top: 10px;
 	}
-	.breadcrumb {
-		padding: 10px 0px;
+    .breadcrumb{ 
+		padding: 10px 0px; 
 	}
-	#view-toggle {
+	#view-toggle{
 		margin-top: 10px;
 	}
-	.actions.creatable {
-		margin-top: 5px;
+	.actions.creatable{
+		margin-top:5px;
 	}
-	#controls > div.actions.creatable {
-		padding-top: 7px;
-	}
+    #controls > div.actions.creatable{
+        padding-top:7px;
+    }
 }
 
-@media screen and (min-width: 1600px){
-	.container-fixed{
-		width:1536px;
-	}
-}
+
 
 @media screen and (min-width: 1600px){
 	.container-fixed{
@@ -567,4 +521,28 @@
 		padding-left:16px;
 		padding-right:16px;
 	}
+}
+
+@media screen and (min-width: 640px)  and (max-width: 1023px){
+	.container-fixed{
+		padding-left:16px;
+		padding-right:16px;
+	}
+}
+
+@media screen and (min-width: 375px)  and (max-width: 639px){
+	.container-fixed{
+		padding-left:16px;
+		padding-right:16px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.container-fixed{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+    #nextcloud{
+        display: none;
+    }
 }
