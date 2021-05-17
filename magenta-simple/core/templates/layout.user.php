@@ -134,7 +134,17 @@
         </div>
     </header>
 
-    <div class="breadcrumb-bar"></div>
+    <div class="breadcrumb-bar">
+        <div class="container-fixed">
+        <ul class="breadcrumb">
+        <li><a class="carat"></a></li>
+        <li><a href="#">Dokumente</a></li>
+        <li><a class="carat"></a></li>
+        <li><a href="#">Dokumente</a></li>
+        </ul>
+        </div>
+    </div>
+
 
     <div id="sudo-login-background" class="hidden"></div>
     <form id="sudo-login-form" class="hidden" method="POST">

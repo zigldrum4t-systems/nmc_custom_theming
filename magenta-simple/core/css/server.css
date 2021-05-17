@@ -210,7 +210,7 @@
 	
 }
 
-#header  .container-fixed  .header-left  #nextcloud h5:hover{
+#header  .container-fixed  .header-left  #nextcloud a:hover{
 	text-decoration: none;
 }
 #header > .container-fixed > .header-left > #nextcloud > .logo-title {
@@ -407,10 +407,55 @@
 
 /*---------------------------BREADCRUMNB-BAR-----------------------------------*/
 .breadcrumb-bar{
-	height: 10px;
-	background-color:yellow ;
+	height:100px;
+	background-color:#f2f2f2 ;
 }
 
+
+.breadcrumb-bar ul.breadcrumb {
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  .breadcrumb-bar ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+  }
+  
+  
+  /* Add a color to all links inside the list */
+  .breadcrumb-bar ul.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+  }
+.caret {
+	position: relative;
+  }
+  
+  .caret:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-left: 10px solid #ff0000;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+  }
+  
+  .caret:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	border-left: 9px solid #fff;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+  }
+
+
+  
 
 /* ---------------------------------------------------------------------------- */
 /* ----------------------------------FOOTER------------------------------------ */
