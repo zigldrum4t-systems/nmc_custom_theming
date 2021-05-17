@@ -175,7 +175,7 @@
 /* ---------------------------------------------------------------------------- */
 
 #header {
-	height: 60px !important;
+	height: 63px !important;
 	background-image: unset !important;
 	background-color: #ffffff !important;
 	--color-header: transparent !important;
@@ -393,6 +393,13 @@
 .shrink {
 	height: 5px;
 }
+
+/*---------------------------BREADCRUMNB-BAR-----------------------------------*/
+.breadcrumb-bar{
+	height: 10px;
+	background-color:yellow ;
+}
+
 
 /* ---------------------------------------------------------------------------- */
 /* ----------------------------------FOOTER------------------------------------ */
