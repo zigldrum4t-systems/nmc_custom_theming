@@ -558,6 +558,9 @@
 		padding-left:16px;
 		padding-right:16px;
 	}
+	#app-navigation{
+		width:288px !important;
+	}
 }
 
 @media screen and (min-width: 1300px)  and (max-width: 1599px) {
@@ -566,6 +569,9 @@
 		padding-left:16px;
 		padding-right:16px;
 	}
+	#app-navigation{
+		width:288px !important;
+	}
 }
 
 @media screen and (min-width: 1024px)  and (max-width: 1299px) {
@@ -573,6 +579,9 @@
 		width:1024px !important;
 		padding-left:16px;
 		padding-right:16px;
+	}
+	#app-navigation{
+		width:288px !important;
 	}
 }
 
