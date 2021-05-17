@@ -196,13 +196,13 @@
 	padding-left: 124px;
 }
 
-#header > .container-fixed > .header-left > #nextcloud h5{
+#header > .container-fixed > .header-left > #nextcloud >h5{
 	font-size: 25px;
 	color: #161616;
 	font-weight: bold;
 	padding-left: 12px;
 }
-#header > .container-fixed > .header-left > #nextcloud span{
+#header > .container-fixed > .header-left > #nextcloud >span{
 	font-weight: normal;
 	
 }
