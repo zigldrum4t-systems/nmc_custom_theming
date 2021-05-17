@@ -196,6 +196,9 @@
 	padding-left: 124px;
 }
 
+#header  .container-fixed  .header-left  #nextcloud {
+	padding-left:2px;
+}
 #header  .container-fixed  .header-left  #nextcloud  h5{
 	font-size: 25px;
 	color: #161616;
@@ -207,7 +210,7 @@
 	
 }
 
-#header > .container-fixed > .header-left > #nextcloud h5:hover{
+#header  .container-fixed  .header-left  #nextcloud h5:hover{
 	text-decoration: none;
 }
 #header > .container-fixed > .header-left > #nextcloud > .logo-title {
