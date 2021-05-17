@@ -196,11 +196,19 @@
 	padding-left: 124px;
 }
 
-#header > .container-fixed > .header-left > #nextcloud {
+#header > .container-fixed > .header-left > #nextcloud h5{
 	font-size: 25px;
 	color: #161616;
 	font-weight: bold;
 	padding-left: 12px;
+}
+#header > .container-fixed > .header-left > #nextcloud span{
+	font-weight: normal;
+	
+}
+
+#header > .container-fixed > .header-left > #nextcloud h5:hover{
+	text-decoration: none;
 }
 #header > .container-fixed > .header-left > #nextcloud > .logo-title {
 	left: 0;

@@ -73,10 +73,10 @@
     <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
 
-            <div class="header-left">
+        <div class="header-left">
                 <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
                     <div>
-                        <span class="logo-title">MagentaCLOUD</span>
+                        <h5>Magenta<span class="logo-title">MagentaCLOUD</span></h5>
                         <h1 class="hidden-visually">
                             <?php p($theme->getName()); ?>
                             <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
@@ -130,47 +130,7 @@
                 <div id="notifications"> </div>
 
                 <div id="contactsmenu">
-                    <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
-                        aria-controls="contactsmenu-menu" aria-expanded="false">
-                        <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
-                    </div>
-                    <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
-                </div>
-                <div class="contactsmenu-title">Email</div>
 
-                <div id="settings">
-                    <div id="expand" tabindex="0" role="button" class="menutoggle"
-                        aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
-                        aria-expanded="false">
-                        <div class="avatardiv<?php if ($_['userAvatarSet']) {
-				print_unescaped(' avatardiv-shown');
-			} else {
-				print_unescaped('" style="display: none');
-			} ?>">
-                            <?php if ($_['userAvatarSet']): ?>
-                            <div class="icon-user-menu"></div>
-                            <div class="user-id-title"><?php p($_['user_uid']); ?></div>
-                            <?php endif; ?>
-                        </div>
-                        <div id="expandDisplayName" class="icon-settings-white"></div>
-                    </div>
-                    <nav class="settings-menu" id="expanddiv" style="display:none;"
-                        aria-label="<?php p($l->t('Settings menu'));?>">
-                        <ul>
-                            <?php foreach ($_['settingsnavigation'] as $entry):?>
-                            <li data-id="<?php p($entry['id']); ?>">
-                                <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
-                                    class="active" <?php endif; ?>>
-                                    <img alt=""
-                                        src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
-                                    <?php p($entry['name']) ?>
-                                </a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
         </div>
     </header>
 
