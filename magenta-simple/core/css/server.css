@@ -25,7 +25,6 @@
 	/* top: 122px !important; */
 	z-index: 10 !important;
 	left: unset !important;
-	position:absolute !important;
 	
 }
 
@@ -183,6 +182,7 @@
 	--color-header: transparent !important;
 	top: unset !important;
 	border-bottom: 1px solid #e5e5e5;
+	position:absolute;
 	/* border-top-left-radius: 8px;
 	border-top-right-radius: 8px; */
 }
@@ -320,9 +320,9 @@
 }
 
 .brandbar > .container-fixed {
-	z-index: 4999 !important;
 	margin-left: auto;
 	margin-right: auto;
+	display: inline-flex;
 }
 
 .brandbar > .container-fixed > .header-brandbar {
