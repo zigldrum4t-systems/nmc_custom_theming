@@ -418,16 +418,15 @@
 .breadcrumb-bar .container-fixed {
 	margin-left: auto;
 	margin-right: auto;
-	display:inline-flex;
 }
 
-.breadcrumb-bar ul.breadcrumb {
+.breadcrumb-bar ul.breadcrumb-style {
 	padding: 10px 16px;
 	list-style: none;
   }
   
   /* Display list items side by side */
-  .breadcrumb-bar ul.breadcrumb li {
+  .breadcrumb-bar ul.breadcrumb-style li {
 	display: inline;
 	font-size: 12px;
   }

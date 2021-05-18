@@ -136,11 +136,11 @@
 
     <div class="breadcrumb-bar">
        <div class="container-fixed">
-       <ul class="breadcrumb">
+       <ul class="breadcrumb-style">
         <li><a></a></li>
         <li><a href="#">Dokumente</a></li>
         <li><a></a></li>
-        <li><a href="#">Dokumente</a></li>
+        <li><a href="#">Scans</a></li>
         </ul>
        </div>
        
