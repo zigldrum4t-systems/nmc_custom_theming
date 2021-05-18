@@ -431,15 +431,27 @@
 	font-size: 12px;
   }
 
- 
-  
+  .breadcrumb-bar ul.breadcrumb-style  .arrow-right{
+	display: block;
+	margin: 30px auto;
+	width: 25px;
+	height: 25px;
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
+  }
+
+
+  .breadcrumb-bar ul.breadcrumb-style  .arrow-right{
+   transform: rotate(135deg);
+  }  
   
   /* Add a color to all links inside the list */
-  .breadcrumb-bar ul.breadcrumb li a {
+  .breadcrumb-bar ul.breadcrumb-style li a {
 	color: #191919;
 	text-decoration: none;
   }
-  .breadcrumb-bar ul.breadcrumb li a:hover{
+
+  .breadcrumb-bar ul.breadcrumb-style li a:hover{
 	  text-decoration:none;
   }
 
