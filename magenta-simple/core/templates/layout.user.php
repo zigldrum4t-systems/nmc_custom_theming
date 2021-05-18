@@ -146,11 +146,12 @@
 			} ?>">
                             <?php if ($_['userAvatarSet']): ?>
                             <div class="icon-user-menu"></div>
-                            <div class="user-id-title"><?php p($_['user_uid']); ?></div>
+
                             <?php endif; ?>
                         </div>
                         <div id="expandDisplayName" class="icon-settings-white"></div>
                     </div>
+                    <div class="user-id-title"><?php p($_['user_uid']); ?></div>
                     <nav class="settings-menu" id="expanddiv" style="display:none;"
                         aria-label="<?php p($l->t('Settings menu'));?>">
                         <ul>
