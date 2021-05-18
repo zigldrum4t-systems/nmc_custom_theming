@@ -146,6 +146,7 @@
 			} ?>">
                             <?php if ($_['userAvatarSet']): ?>
                             <div class="icon-user-menu"></div>
+                            <div class="user-id-title"><?php p($_['user_uid']); ?></div>
                             <?php endif; ?>
                         </div>
                         <div id="expandDisplayName" class="icon-settings-white"></div>
