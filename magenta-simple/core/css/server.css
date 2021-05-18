@@ -25,6 +25,7 @@
 	/* top: 122px !important; */
 	z-index: 10 !important;
 	left: unset !important;
+	position: absolute !important;
 	
 }
 
@@ -182,7 +183,6 @@
 	--color-header: transparent !important;
 	top: unset !important;
 	border-bottom: 1px solid #e5e5e5;
-	position:absolute;
 	/* border-top-left-radius: 8px;
 	border-top-right-radius: 8px; */
 }
