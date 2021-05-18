@@ -214,7 +214,7 @@
 	
 }
 
-#header  .container-fixed  .header-left  #nextcloud a:hover{
+#header  .container-fixed  .header-left   a:hover{
 	text-decoration: none;
 }
 #header > .container-fixed > .header-left > #nextcloud > .logo-title {
