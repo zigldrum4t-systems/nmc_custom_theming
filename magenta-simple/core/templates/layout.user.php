@@ -137,9 +137,9 @@
     <div class="breadcrumb-bar">
         <div class="container-fixed">
         <ul class="breadcrumb">
-        <li><a> > </a></li>
+        <li><a></a></li>
         <li><a href="#">Dokumente</a></li>
-        <li><a> > </a></li>
+        <li><a></a></li>
         <li><a href="#">Dokumente</a></li>
         </ul>
         </div>

@@ -25,6 +25,8 @@
 	/* top: 122px !important; */
 	z-index: 10 !important;
 	left: unset !important;
+	position:absolute;
+	
 }
 
 #app-navigation > ul > li > a:hover {
@@ -293,6 +295,7 @@
 
 #content {
 	/* padding-top: 50px !important; */
+	margin-top:15px;
 }
 
 .content {
@@ -423,10 +426,7 @@
 	font-size: 16px;
   }
 
-  .breadcrumb-bar ul.breadcrumb li:after {
-    content: ' \003E';
-	font-size:20px;
-}
+ 
   
   
   /* Add a color to all links inside the list */
