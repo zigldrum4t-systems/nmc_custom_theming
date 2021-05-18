@@ -430,16 +430,11 @@
   }
   
   /* Display list items side by side */
-  .breadcrumb-bar ul.breadcrumb-style li .fonts-style{
+  .breadcrumb-bar ul.breadcrumb-style li {
 	display: inline;
 	font-size: 12px;
   }
 
-  .breadcrumb-bar ul.breadcrumb-style li .arrow-style{
-	font-size:16px;
-	font-weight:400;
-	display: inline;
-  }
 
 
   .breadcrumb-bar ul.breadcrumb-style li .arrow-right{
