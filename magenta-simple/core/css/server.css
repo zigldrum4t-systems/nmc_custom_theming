@@ -25,7 +25,7 @@
 	/* top: 122px !important; */
 	z-index: 10 !important;
 	left: unset !important;
-	position:absolute;
+	position:absolute !important;
 	
 }
 
@@ -181,11 +181,10 @@
 	background-image: unset !important;
 	background-color: #ffffff !important;
 	--color-header: transparent !important;
-	position: fixed;
 	top: unset !important;
 	border-bottom: 1px solid #e5e5e5;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
+	/* border-top-left-radius: 8px;
+	border-top-right-radius: 8px; */
 }
 
 #header > .container-fixed {
@@ -312,7 +311,6 @@
 
 .brandbar {
 	height: 72px;
-	position: fixed;
 	z-index: 0 !important;
 	color: var(--scl-color-white) !important;
 	background: var(--scl-color-magenta);
@@ -410,7 +408,7 @@
 
 /*---------------------------BREADCRUMNB-BAR-----------------------------------*/
 .breadcrumb-bar{
-	height:100px;
+	height:38px;
 	background-color:#f2f2f2 ;
 }
 
@@ -423,7 +421,7 @@
   /* Display list items side by side */
   .breadcrumb-bar ul.breadcrumb li {
 	display: inline;
-	font-size: 16px;
+	font-size: 12px;
   }
 
  
