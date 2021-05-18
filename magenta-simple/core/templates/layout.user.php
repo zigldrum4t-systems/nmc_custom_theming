@@ -73,7 +73,7 @@
     <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
 
-        <div class="header-left">
+            <div class="header-left">
                 <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
                     <div>
                         <h5>Magenta<span class="logo-title">CLOUD</span></h5>
@@ -126,27 +126,62 @@
             <div class="header-right">
                 <div id="unified-search"> </div>
                 <div class="unified-search-title">Search</div>
-
-                <div id="notifications"> </div>
-
                 <div id="contactsmenu">
+                    <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
+                        aria-controls="contactsmenu-menu" aria-expanded="false">
+                        <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
+                    </div>
+                    <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
+                </div>
+                <div class="contactsmenu-title">Email</div>
 
-        </div>
+                <div id="settings">
+                    <div id="expand" tabindex="0" role="button" class="menutoggle"
+                        aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
+                        aria-expanded="false">
+                        <div class="avatardiv<?php if ($_['userAvatarSet']) {
+				print_unescaped(' avatardiv-shown');
+			} else {
+				print_unescaped('" style="display: none');
+			} ?>">
+                            <?php if ($_['userAvatarSet']): ?>
+                            <div class="icon-user-menu"></div>
+                            <?php endif; ?>
+                        </div>
+                        <div id="expandDisplayName" class="icon-settings-white"></div>
+                    </div>
+                    <nav class="settings-menu" id="expanddiv" style="display:none;"
+                        aria-label="<?php p($l->t('Settings menu'));?>">
+                        <ul>
+                            <?php foreach ($_['settingsnavigation'] as $entry):?>
+                            <li data-id="<?php p($entry['id']); ?>">
+                                <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
+                                    class="active" <?php endif; ?>>
+                                    <img alt=""
+                                        src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
+                                    <?php p($entry['name']) ?>
+                                </a>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </nav>
+                </div>
     </header>
 
     <div class="breadcrumb-bar">
-       <div class="container-fixed">
-         
-       <ul class="breadcrumb-style">
-        <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
-        <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z"/></svg></a></li>
-        <li > > </li>
-        <li ><a href="#">Dokumente</a></li>
-        <li > > </li>
-        <li ><a href="#">Scans</a></li>
-      </ul>
-      
-       </div>
+        <div class="container-fixed">
+
+            <ul class="breadcrumb-style">
+                <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
+                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                        </svg></a></li>
+                <li> > </li>
+                <li><a href="#">Dokumente</a></li>
+                <li> > </li>
+                <li><a href="#">Scans</a></li>
+            </ul>
+
+        </div>
     </div>
 
 
