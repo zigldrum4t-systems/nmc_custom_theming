@@ -435,13 +435,9 @@
 	font-size: 12px;
   }
 
-  .breadcrumb-bar ul.breadcrumb-style li .arrow-right{
-	display: block;
-	margin: 30px auto;
-	width: 25px;
-	height: 25px;
-	border-top: 2px solid #000;
-	border-left: 2px solid #000;
+  .breadcrumb-bar ul.breadcrumb-style li .arrow-style{
+	font-size:16px;
+	font-weight:400;
   }
 
 
