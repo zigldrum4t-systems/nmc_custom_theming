@@ -419,14 +419,14 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-.breadcrumb-bar .left-part{
-	width:330px;
-}
+
 
 
 .breadcrumb-bar ul.breadcrumb-style {
 	padding: 6px 16px;
 	list-style: none;
+	width: 772px;
+    text-align: center;
   }
   
   /* Display list items side by side */
