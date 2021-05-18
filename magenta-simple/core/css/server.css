@@ -26,7 +26,6 @@
 	z-index: 10 !important;
 	left: unset !important;
 	position: absolute !important;
-	
 }
 
 #app-navigation > ul > li > a:hover {
@@ -186,7 +185,7 @@
 	/* border-top-left-radius: 8px;
 	border-top-right-radius: 8px; */
 }
-#body-user #header{
+#body-user #header {
 	position: unset;
 }
 
@@ -200,21 +199,20 @@
 	padding-left: 124px;
 }
 
-#header  .container-fixed  .header-left  #nextcloud {
-	padding-left:2px;
+#header .container-fixed .header-left #nextcloud {
+	padding-left: 2px;
 }
-#header  .container-fixed  .header-left  #nextcloud  h5{
+#header .container-fixed .header-left #nextcloud h5 {
 	font-size: 25px;
 	color: #161616;
 	font-weight: bold;
 	padding-left: 12px;
 }
-#header  .container-fixed  .header-left  #nextcloud  span{
+#header .container-fixed .header-left #nextcloud span {
 	font-weight: normal;
-	
 }
 
-#header  .container-fixed  .header-left   a:hover{
+#header .container-fixed .header-left a:hover {
 	text-decoration: none;
 }
 #header > .container-fixed > .header-left > #nextcloud > .logo-title {
@@ -249,11 +247,20 @@
 	font-weight: bold;
 	color: #161616 !important;
 }
+
+#header > .container-fixed > .header-right > .unified-search-title:hover {
+	color: #e20074 !important;
+}
+
 #header > .container-fixed > .header-right > .contactsmenu-title {
 	padding-top: 22px;
 	font-size: 12px;
 	font-weight: bold;
 	color: #161616 !important;
+}
+
+#header > .container-fixed > .header-right > .contactsmenu-title:hover {
+	color: #e20074 !important;
 }
 
 #header > .container-fixed > .header-right > .header-menu > a > span > svg {
@@ -297,7 +304,7 @@
 
 #content {
 	/* padding-top: 50px !important; */
-	margin-top:15px;
+	margin-top: 15px;
 }
 
 .content {
@@ -326,7 +333,6 @@
 	z-index: 4999 !important;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 
 .brandbar > .container-fixed > .header-brandbar {
@@ -411,48 +417,41 @@
 }
 
 /*---------------------------BREADCRUMNB-BAR-----------------------------------*/
-.breadcrumb-bar{
-	height:38px;
-	background-color:#f2f2f2 ;
+.breadcrumb-bar {
+	height: 38px;
+	background-color: #f2f2f2;
 }
 .breadcrumb-bar .container-fixed {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-
-
 .breadcrumb-bar ul.breadcrumb-style {
 	padding: 6px 16px;
 	list-style: none;
 	width: 772px;
-    text-align: center;
-  }
-  
-  /* Display list items side by side */
-  .breadcrumb-bar ul.breadcrumb-style li {
+	text-align: center;
+}
+
+/* Display list items side by side */
+.breadcrumb-bar ul.breadcrumb-style li {
 	display: inline;
 	font-size: 12px;
-  }
+}
 
+.breadcrumb-bar ul.breadcrumb-style li .arrow-right {
+	transform: rotate(135deg);
+}
 
-
-  .breadcrumb-bar ul.breadcrumb-style li .arrow-right{
-   transform: rotate(135deg);
-  }  
-  
-  /* Add a color to all links inside the list */
-  .breadcrumb-bar ul.breadcrumb-style li a {
+/* Add a color to all links inside the list */
+.breadcrumb-bar ul.breadcrumb-style li a {
 	color: #191919;
 	text-decoration: none;
-  }
+}
 
-  .breadcrumb-bar ul.breadcrumb-style li a:hover{
-	  text-decoration:underline;
-  }
-
-
-  
+.breadcrumb-bar ul.breadcrumb-style li a:hover {
+	text-decoration: underline;
+}
 
 /* ---------------------------------------------------------------------------- */
 /* ----------------------------------FOOTER------------------------------------ */
@@ -564,89 +563,85 @@
 
 /* UI chnages */
 
-
-
 /* (max-width: 768px) */
 
-@media screen and (max-width: 640px){
-    .button.new .hidden-visually{
-         display:none;
-    }
-    .app-files #app-content{
-        width:100%;
+@media screen and (max-width: 640px) {
+	.button.new .hidden-visually {
+		display: none;
 	}
-	#app-navigation-toggle{
+	.app-files #app-content {
+		width: 100%;
+	}
+	#app-navigation-toggle {
 		margin-top: 10px;
 	}
-    .breadcrumb{ 
-		padding: 10px 0px; 
+	.breadcrumb {
+		padding: 10px 0px;
 	}
-	#view-toggle{
+	#view-toggle {
 		margin-top: 10px;
 	}
-	.actions.creatable{
-		margin-top:5px;
+	.actions.creatable {
+		margin-top: 5px;
 	}
-    #controls > div.actions.creatable{
-        padding-top:7px;
-    }
-}
-
-
-
-@media screen and (min-width: 1600px){
-	.container-fixed{
-		width:1536px !important;
-		padding-left:16px;
-		padding-right:16px;
-	}
-	#app-navigation{
-		width:288px !important;
+	#controls > div.actions.creatable {
+		padding-top: 7px;
 	}
 }
 
-@media screen and (min-width: 1300px)  and (max-width: 1599px) {
-	.container-fixed{
-		width:1280px !important;
-		padding-left:16px;
-		padding-right:16px;
+@media screen and (min-width: 1600px) {
+	.container-fixed {
+		width: 1536px !important;
+		padding-left: 16px;
+		padding-right: 16px;
 	}
-	#app-navigation{
-		width:288px !important;
-	}
-}
-
-@media screen and (min-width: 1024px)  and (max-width: 1299px) {
-	.container-fixed{
-		width:1024px !important;
-		padding-left:16px;
-		padding-right:16px;
-	}
-	#app-navigation{
-		width:288px !important;
+	#app-navigation {
+		width: 288px !important;
 	}
 }
 
-@media screen and (min-width: 640px)  and (max-width: 1023px){
-	.container-fixed{
-		padding-left:16px;
-		padding-right:16px;
+@media screen and (min-width: 1300px) and (max-width: 1599px) {
+	.container-fixed {
+		width: 1280px !important;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	#app-navigation {
+		width: 288px !important;
 	}
 }
 
-@media screen and (min-width: 375px)  and (max-width: 639px){
-	.container-fixed{
-		padding-left:16px;
-		padding-right:16px;
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+	.container-fixed {
+		width: 1024px !important;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	#app-navigation {
+		width: 288px !important;
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+	.container-fixed {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 639px) {
+	.container-fixed {
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 }
 
 @media screen and (max-width: 375px) {
-	.container-fixed{
+	.container-fixed {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
-    #nextcloud{
-        display: none;
-    }
+	#nextcloud {
+		display: none;
+	}
 }
