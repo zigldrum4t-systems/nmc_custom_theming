@@ -258,6 +258,9 @@
 	text-decoration: none;
 	font-size: 12px;
   }
+  #header  .container-fixed .header-right .navbar-icons a span{
+	  padding-left:4px;
+  }
   
   /* Navbar links on mouse-over */
   #header .container-fixed  .header-right .navbar-icons a:hover {
@@ -451,7 +454,7 @@
 .breadcrumb-bar ul.breadcrumb-style {
 	padding: 6px 16px;
 	list-style: none;
-	width: 772px;
+	width: 800px;
 	text-align: center;
 }
 
