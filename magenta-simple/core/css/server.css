@@ -182,8 +182,10 @@
 	--color-header: transparent !important;
 	top: unset !important;
 	border-bottom: 1px solid #e5e5e5;
-	/* border-top-left-radius: 8px;
-	border-top-right-radius: 8px; */
+	position:absolute;
+	content: "";
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
 #body-user #header {
 	position: unset;
@@ -352,6 +354,7 @@
 	overflow: hidden;
 	width: 100%;
 	font-family: TeleNeo, sans-serif;
+	position:relative;
 }
 
 .brandbar > .container-fixed {
