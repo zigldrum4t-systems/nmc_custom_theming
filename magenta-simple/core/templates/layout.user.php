@@ -140,17 +140,18 @@
                         aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
                         aria-expanded="false">
                         <div class="avatardiv<?php if ($_['userAvatarSet']) {
-				print_unescaped(' avatardiv-shown');
-			} else {
-				print_unescaped('" style="display: none');
-			} ?>">
+				         print_unescaped(' avatardiv-shown');
+			              } else {
+				            print_unescaped('" style="display: none');
+			                 } ?>">
                             <?php if ($_['userAvatarSet']): ?>
                             <div class="icon-user-menu"></div>
                             <div class="user-id-title"><?php p($_['user_uid']); ?></div>
                             <?php endif; ?>
                         </div>
-                        <div id="expandDisplayName" class="icon-settings-white"></div>
                     </div>
+                        <div id="expandDisplayName" class="icon-settings-white"></div>
+                </div>
                     <nav class="settings-menu" id="expanddiv" style="display:none;"
                         aria-label="<?php p($l->t('Settings menu'));?>">
                         <ul>
