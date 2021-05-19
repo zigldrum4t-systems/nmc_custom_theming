@@ -624,6 +624,9 @@
 	#app-navigation {
 		width: 288px !important;
 	}
+	.app-sidebar-header__info{
+		width:352px !important;
+	}
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -632,7 +635,7 @@
 		padding-left: 16px;
 		padding-right: 16px;
 	}
-	#app-navigation {
+	#app-navigation,.app-sidebar-header__info {
 		width: 288px !important;
 	}
 }
@@ -645,7 +648,7 @@
 	}
 
 	
-	#app-navigation {
+	#app-navigation,.app-sidebar-header__info {
 		width: 288px !important;
 	}
 }
