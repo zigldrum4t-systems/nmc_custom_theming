@@ -241,6 +241,28 @@
 	font-size: 16px !important;
 	font-weight: 600 !important;
 }
+
+
+#header  .container-fixed  .header-right .navbar-icons {
+	width: 100%;
+	overflow: auto;
+  }
+  
+  /* Navbar links */
+  #header  .container-fixed .header-right .navbar-icons a {
+	float: left;
+	text-align: center;
+	padding: 8px;
+	color:#191919;
+	font-weight:bold;
+	text-decoration: none;
+	font-size: 12px;
+  }
+  
+  /* Navbar links on mouse-over */
+  #header .container-fixed  .header-right .navbar-icons a:hover {
+	color: #e20074;
+  }
 #header > .container-fixed > .header-right > .unified-search-title {
 	padding-top: 22px;
 	font-size: 12px;
