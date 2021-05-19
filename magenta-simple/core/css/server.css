@@ -182,8 +182,6 @@
 	--color-header: transparent !important;
 	top: unset !important;
 	border-bottom: 1px solid #e5e5e5;
-	position:absolute;
-	content: "";
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
@@ -354,7 +352,6 @@
 	overflow: hidden;
 	width: 100%;
 	font-family: TeleNeo, sans-serif;
-	position:relative;
 }
 
 .brandbar > .container-fixed {
@@ -645,6 +642,8 @@
 		padding-left: 16px;
 		padding-right: 16px;
 	}
+
+	
 	#app-navigation {
 		width: 288px !important;
 	}
@@ -670,6 +669,12 @@
 		padding-right: 16px;
 	}
 	#nextcloud {
+		display: none;
+	}
+}
+
+@media screen and (max-width:1299px) {
+	#appmenu{
 		display: none;
 	}
 }

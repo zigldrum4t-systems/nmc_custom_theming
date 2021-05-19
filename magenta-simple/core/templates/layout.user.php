@@ -70,6 +70,8 @@
         </div>
     </div>
 
+
+    <div class="HeaderMenuWrapper">
     <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
 
@@ -201,6 +203,9 @@
 
         </div>
     </div>
+    </div>
+
+   
 
 
     <div id="sudo-login-background" class="hidden"></div>
