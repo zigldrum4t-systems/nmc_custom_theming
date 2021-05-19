@@ -124,7 +124,18 @@
             </div>
 
             <div class="header-right">
-                <div id="unified-search"> </div>
+
+            <div class="navbar-icons">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
+                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                        </svg></a>Suche</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i>Mail</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i>Jens Weidemann</a>
+            </div>
+
+
+        
+                <!-- <div id="unified-search"></div>
                 <div class="unified-search-title">Search</div>
                 <div id="contactsmenu">
                     <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
@@ -166,8 +177,9 @@
                             </li>
                             <?php endforeach; ?>
                         </ul>
-                    </nav>
-                </div>
+                    </nav> -->
+      
+            </div>
     </header>
 
     <div class="breadcrumb-bar">
