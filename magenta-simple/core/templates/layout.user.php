@@ -71,7 +71,7 @@
     </div>
 
 
-    <div class="HeaderMenuWrapper">
+    <div id="HeaderMenuWrapper">
     <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
 

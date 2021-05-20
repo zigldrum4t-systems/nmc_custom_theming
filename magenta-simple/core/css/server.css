@@ -176,6 +176,10 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
+#HeaderMenuWrapper{
+	position:absolute;
+	top:70;
+}
 #header {
 	height: 63px !important;
 	background-image: unset !important;
@@ -185,8 +189,7 @@
 	border-bottom: 1px solid #e5e5e5;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
-	position:absolute;
-	top:70;
+	
 }
 #body-user #header {
 	position: unset;
