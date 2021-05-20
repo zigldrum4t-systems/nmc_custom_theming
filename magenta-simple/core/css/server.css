@@ -242,6 +242,9 @@
 
 #header > .container-fixed > .header-left > #appmenu li a.active {
 	color: #e20074 !important;
+	text-decoration: none;
+	font-size: 16px !important;
+	font-weight: 600 !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a:hover {
@@ -458,6 +461,7 @@
 .breadcrumb-bar {
 	height: 38px;
 	background-color: #f2f2f2;
+	margin-top:51px;
 }
 .breadcrumb-bar .container-fixed {
 	margin-left: auto;
