@@ -193,6 +193,7 @@
       </header> 
     </div>
     <div class="breadcrumb-bar">
+        <div class="container-fixed">
         <div class="left-part" style="width=:410px;"></div>
         <div class="right-part" size="width= calc(100% - 410px);">
         <ul class="breadcrumb-style">
@@ -205,6 +206,8 @@
                 <li><a href="#">Scans</a></li>
             </ul>
         </div>
+        </div>       
+        
        
 
            
