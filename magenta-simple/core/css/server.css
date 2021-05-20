@@ -176,9 +176,9 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
-#HeaderMenuWrapper{
-	position:absolute;
-	top:70;
+.MenuWrapper{
+	position: relative;
+	
 }
 #header {
 	height: 63px !important;
@@ -189,6 +189,8 @@
 	border-bottom: 1px solid #e5e5e5;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
+	position:absolute;
+	top:70;
 	
 }
 #body-user #header {
@@ -358,7 +360,6 @@
 	overflow: hidden;
 	width: 100%;
 	font-family: TeleNeo, sans-serif;
-	position:relative;
 }
 
 .brandbar > .container-fixed {
