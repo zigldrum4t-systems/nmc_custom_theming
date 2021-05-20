@@ -193,9 +193,9 @@
       </header> 
     </div>
     <div class="breadcrumb-bar">
-        <div class="container-fixed">
-
-            <ul class="breadcrumb-style">
+        <div class="col-sm-6 left-part"></div>
+        <div class="col-sm-6 right-part">
+        <ul class="breadcrumb-style">
                 <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
                             <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
                         </svg></a></li>
@@ -204,8 +204,12 @@
                 <li> > </li>
                 <li><a href="#">Scans</a></li>
             </ul>
-
         </div>
+       
+
+           
+
+       
     </div>
  
 
