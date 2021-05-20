@@ -130,17 +130,17 @@
                <div class="navbar-icons">
                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
                             <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><span>Search</span></a>
+                        </svg><label>Search</label></a>
                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
                             <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><span>Mail</span></a>
+                        </svg><label>Mail</label></a>
                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
                             <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><span>Jens Weidemann</span></a>
+                        </svg><label>Jens Weidemann</label></a>
 
                  <a href="#" class="smallscreenSize"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
                             <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><span>Menu</span></a>
+                        </svg><label>Menu</label></a>
                </div>
 
 
