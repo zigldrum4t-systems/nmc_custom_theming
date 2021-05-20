@@ -50,7 +50,9 @@
         <div id="notification"></div>
     </div>
 
-    <div class="brandbar">
+
+    <div class="MenuWrapperParent">
+      <div class="brandbar">
         <div class="container-fixed">
             <div class="header-brandbar">
                 <a href="/en" title="Home" class="header-brandbar-logo">
@@ -68,12 +70,20 @@
                 </p>
             </div>
         </div>
-    </div>
+      </div>
 
-    <header role="banner" id="header" class="header-bar">
+      <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
 
             <div class="header-left">
+            <a>
+            <svg id="brand__logo" viewBox="0 0 73 36" fill="currentColor">
+             <g>
+             <path d="M0 24v-7h7v7H0zM22 24v-7h7v7h-7zM44 24v-7h7v7h-7zM66 24v-7h7v7h-7z"></path>
+             <path d="M12 1.74c-2.94.09-5.56 1.09-7.22 2.98-1.57 1.8-2.55 4.6-2.91 8.32L0 12.71.36 0h28.29L29 12.71l-1.87.33c-.36-3.76-1.34-6.52-2.91-8.32-1.66-1.89-4.28-2.89-7.22-2.98V28.3c0 2.31.57 3.82 1.25 4.51.56.6 1.41.96 2.75 1.08.42.03 1.05.06 2 .06V36H6v-2.04c.95 0 1.58-.03 2-.06 1.34-.12 2.18-.48 2.75-1.08.68-.69 1.25-2.19 1.25-4.51V1.74z"></path>
+             </g>
+            </svg>
+                </a>
                 <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
                     <div>
                         <h5>Magenta<span class="logo-title">CLOUD</span></h5>
@@ -124,7 +134,26 @@
             </div>
 
             <div class="header-right">
-                <div id="unified-search"> </div>
+
+               <div class="navbar-icons">
+                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
+                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                        </svg><label>Search</label></a>
+                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
+                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                        </svg><label>Mail</label></a>
+                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
+                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                        </svg><label>Jens Weidemann</label></a>
+
+                 <a href="#" class="smallscreenSize"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
+                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                        </svg><label>Menu</label></a>
+               </div>
+
+
+            </div>
+                <!-- <div id="unified-search"></div>
                 <div class="unified-search-title">Search</div>
                 <div id="contactsmenu">
                     <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
@@ -140,17 +169,18 @@
                         aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
                         aria-expanded="false">
                         <div class="avatardiv<?php if ($_['userAvatarSet']) {
-				print_unescaped(' avatardiv-shown');
-			} else {
-				print_unescaped('" style="display: none');
-			} ?>">
+				         print_unescaped(' avatardiv-shown');
+			              } else {
+				            print_unescaped('" style="display: none');
+			                 } ?>">
                             <?php if ($_['userAvatarSet']): ?>
                             <div class="icon-user-menu"></div>
                             <div class="user-id-title"><?php p($_['user_uid']); ?></div>
                             <?php endif; ?>
                         </div>
-                        <div id="expandDisplayName" class="icon-settings-white"></div>
                     </div>
+                        
+                </div>
                     <nav class="settings-menu" id="expanddiv" style="display:none;"
                         aria-label="<?php p($l->t('Settings menu'));?>">
                         <ul>
@@ -165,14 +195,16 @@
                             </li>
                             <?php endforeach; ?>
                         </ul>
-                    </nav>
-                </div>
-    </header>
-
+                    </nav> -->
+      
+        </div>
+      </header> 
+    </div>
     <div class="breadcrumb-bar">
         <div class="container-fixed">
-
-            <ul class="breadcrumb-style">
+        <div class="col-xs-3 left-part"></div>
+        <div class="col-xs-9 right-part">
+        <ul class="breadcrumb-style">
                 <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
                             <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
                         </svg></a></li>
@@ -181,9 +213,19 @@
                 <li> > </li>
                 <li><a href="#">Scans</a></li>
             </ul>
-
         </div>
+        </div>       
+        
+       
+
+           
+
+       
     </div>
+ 
+
+
+   
 
 
     <div id="sudo-login-background" class="hidden"></div>
