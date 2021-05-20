@@ -51,7 +51,7 @@
     </div>
 
 
-    <div class="MenuWrapper">
+    <div class="MenuWrapperParent">
     <div class="brandbar">
         <div class="container-fixed">
             <div class="header-brandbar">
@@ -71,9 +71,8 @@
             </div>
         </div>
     </div>
-
-
-    <header role="banner" id="header" class="header-bar">
+    <div class="MenuWrapperChild">
+      <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
 
             <div class="header-left">
@@ -191,9 +190,9 @@
                     </nav> -->
       
         </div>
-    </header>
+      </header>
 
-    <div class="breadcrumb-bar">
+      <div class="breadcrumb-bar">
         <div class="container-fixed">
 
             <ul class="breadcrumb-style">
@@ -207,6 +206,7 @@
             </ul>
 
         </div>
+      </div>
     </div>
     </div>
  
