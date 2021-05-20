@@ -18,6 +18,7 @@
 
 @import url("design-tokens-telekom.css");
 @import url("bootstrap.min.css");
+@import url("../node_modules/@telekom/scale-components/dist/scale-components/scale-components.css");
 
 /* @import url("nextcloud-to-telekom-colors.css"); */
 
@@ -176,10 +177,9 @@
 /* ----------------------------------HEADER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 
-.MenuWrapperParent{
-	position: relative;	
+.MenuWrapperParent {
+	position: relative;
 }
-
 
 #header {
 	height: 63px !important;
@@ -190,9 +190,8 @@
 	border-bottom: 1px solid #e5e5e5;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
-	position:absolute !important;
-	top:60px !important;
-		
+	position: absolute !important;
+	top: 60px !important;
 }
 #body-user #header {
 	position: unset;
@@ -254,29 +253,28 @@
 	font-weight: 600 !important;
 }
 
-
-#header  .container-fixed  .header-right .navbar-icons {
+#header .container-fixed .header-right .navbar-icons {
 	width: 100%;
-  }
-  
-  /* Navbar links */
-  #header  .container-fixed .header-right .navbar-icons a {
+}
+
+/* Navbar links */
+#header .container-fixed .header-right .navbar-icons a {
 	float: left;
 	text-align: center;
 	padding: 21px 6px;
-	color:#191919;
-	font-weight:bold;
+	color: #191919;
+	font-weight: bold;
 	text-decoration: none;
 	font-size: 12px;
-  }
-  #header  .container-fixed .header-right .navbar-icons a label{
-	  padding-left:4px !important;
-  }
-  
-  /* Navbar links on mouse-over */
-  #header .container-fixed  .header-right .navbar-icons a:hover {
+}
+#header .container-fixed .header-right .navbar-icons a label {
+	padding-left: 4px !important;
+}
+
+/* Navbar links on mouse-over */
+#header .container-fixed .header-right .navbar-icons a:hover {
 	color: #e20074;
-  }
+}
 #header > .container-fixed > .header-right > .unified-search-title {
 	padding-top: 22px;
 	font-size: 12px;
@@ -416,10 +414,9 @@
 		width: 1236px;
 		/* padding-top: 100px; */
 	}
-	.header-right .navbar-icons .smallscreenSize{
-		display:none;
+	.header-right .navbar-icons .smallscreenSize {
+		display: none;
 	}
-
 }
 
 @media screen and (max-width: 1499px) and (min-width: 1236px) {
@@ -460,7 +457,7 @@
 .breadcrumb-bar {
 	height: 38px;
 	background-color: #f2f2f2;
-	margin-top:51px;
+	margin-top: 51px;
 }
 .breadcrumb-bar .container-fixed {
 	margin-left: auto;
@@ -469,7 +466,7 @@
 
 .breadcrumb-bar ul.breadcrumb-style {
 	padding: 6px 4px;
-	list-style: none;	
+	list-style: none;
 }
 
 /* Display list items side by side */
@@ -637,8 +634,8 @@
 	#app-navigation {
 		width: 288px !important;
 	}
-	.app-sidebar-header__info{
-		width:352px !important;
+	.app-sidebar-header__info {
+		width: 352px !important;
 	}
 }
 
@@ -648,7 +645,8 @@
 		padding-left: 16px;
 		padding-right: 16px;
 	}
-	#app-navigation,#app-sidebar-vue{
+	#app-navigation,
+	#app-sidebar-vue {
 		width: 288px !important;
 	}
 }
@@ -660,13 +658,10 @@
 		padding-right: 16px;
 	}
 
-	
-	
-	#app-navigation,#app-sidebar-vue{
+	#app-navigation,
+	#app-sidebar-vue {
 		width: 288px !important;
 	}
-
-
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -681,17 +676,17 @@
 		padding-left: 16px;
 		padding-right: 16px;
 	}
-   .header-left #nextcloud h5{
-	   font-size:14px !important;
-	   padding-left:0px !important;
-   }
-    .header-right .navbar-icons a{
-		font-size:6px  !important;
+	.header-left #nextcloud h5 {
+		font-size: 14px !important;
+		padding-left: 0px !important;
+	}
+	.header-right .navbar-icons a {
+		font-size: 6px !important;
 	}
 
-	.breadcrumb-bar .right-part{
-		padding-left:0px;
-		padding-right:0px;
+	.breadcrumb-bar .right-part {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 
@@ -705,20 +700,18 @@
 	}
 }
 
-@media screen and (max-width:1299px) {
-	#appmenu{
+@media screen and (max-width: 1299px) {
+	#appmenu {
 		display: none;
 	}
-	.container-fixed{
-		width:100%;
+	.container-fixed {
+		width: 100%;
 	}
-	.breadcrumb-bar .left-part{
-		display:none;
+	.breadcrumb-bar .left-part {
+		display: none;
 	}
-	#header  .container-fixed .header-right .navbar-icons a label{
-		display:block !important;
-		padding-left:4px;
+	#header .container-fixed .header-right .navbar-icons a label {
+		display: block !important;
+		padding-left: 4px;
 	}
-	
-
 }
