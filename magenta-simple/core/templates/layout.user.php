@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="MenuWrapperChild">
+
       <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
 
@@ -207,7 +207,7 @@
 
         </div>
       </div>
-    </div>
+  
     </div>
  
 

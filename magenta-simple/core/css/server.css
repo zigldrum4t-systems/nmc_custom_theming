@@ -180,10 +180,7 @@
 	position: relative;	
 }
 
-.MenuWrapperChild{
-	position:absolute;
-	top:60px;
-}
+
 #header {
 	height: 63px !important;
 	background-image: unset !important;
@@ -193,8 +190,9 @@
 	border-bottom: 1px solid #e5e5e5;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
-	
-	
+	position:absolute !important;
+	top:60px !important;
+		
 }
 #body-user #header {
 	position: unset;
