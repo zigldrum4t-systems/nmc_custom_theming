@@ -52,7 +52,7 @@
 
 
     <div class="MenuWrapperParent">
-    <div class="brandbar">
+      <div class="brandbar">
         <div class="container-fixed">
             <div class="header-brandbar">
                 <a href="/en" title="Home" class="header-brandbar-logo">
@@ -70,7 +70,7 @@
                 </p>
             </div>
         </div>
-    </div>
+      </div>
 
       <header role="banner" id="header" class="header-bar">
         <div class="container-fixed">
@@ -190,9 +190,9 @@
                     </nav> -->
       
         </div>
-      </header>
-
-      <div class="breadcrumb-bar">
+      </header> 
+    </div>
+    <div class="breadcrumb-bar">
         <div class="container-fixed">
 
             <ul class="breadcrumb-style">
@@ -206,8 +206,6 @@
             </ul>
 
         </div>
-      </div>
-  
     </div>
  
 
