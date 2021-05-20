@@ -689,6 +689,11 @@
     .header-right .navbar-icons a{
 		font-size:6px  !important;
 	}
+
+	.breadcrumb-bar .right-part{
+		padding-left:0px;
+		padding-right:0px;
+	}
 }
 
 @media screen and (max-width: 375px) {
