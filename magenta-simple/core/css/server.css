@@ -470,9 +470,7 @@
 
 .breadcrumb-bar ul.breadcrumb-style {
 	padding: 6px 16px;
-	list-style: none;
-	width: 800px;
-	text-align: center;
+	list-style: none;	
 }
 
 /* Display list items side by side */
