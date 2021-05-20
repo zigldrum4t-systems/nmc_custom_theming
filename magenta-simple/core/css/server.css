@@ -600,6 +600,9 @@
 /* UI chnages */
 
 /* (max-width: 768px) */
+#content{
+	padding-top:0 !important;
+}
 
 @media screen and (max-width: 640px) {
 	.button.new .hidden-visually {
