@@ -257,7 +257,6 @@
 
 #header  .container-fixed  .header-right .navbar-icons {
 	width: 100%;
-	overflow: auto;
   }
   
   /* Navbar links */
@@ -270,7 +269,8 @@
 	text-decoration: none;
 	font-size: 12px;
   }
-  #header  .container-fixed .header-right .navbar-icons a span{
+  #header  .container-fixed .header-right .navbar-icons a label{
+	  display:inline;
 	  padding-left:4px;
   }
   
@@ -716,5 +716,9 @@
 	.breadcrumb-bar .left-part{
 		display:none;
 	}
+	#header  .container-fixed .header-right .navbar-icons a label{
+		display:inline;
+	}
+	
 
 }
