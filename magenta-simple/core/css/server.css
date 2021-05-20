@@ -469,7 +469,7 @@
 }
 
 .breadcrumb-bar ul.breadcrumb-style {
-	padding: 6px 16px;
+	padding: 6px 0px;
 	list-style: none;	
 }
 
@@ -662,9 +662,12 @@
 	}
 
 	
+	
 	#app-navigation,#app-sidebar-vue{
 		width: 288px !important;
 	}
+
+
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -705,4 +708,8 @@
 	.container-fixed{
 		width:100%;
 	}
+	.breadcrumb-bar .left-part{
+		display:none;
+	}
+
 }
