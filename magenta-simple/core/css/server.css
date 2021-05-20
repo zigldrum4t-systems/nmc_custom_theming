@@ -185,6 +185,8 @@
 	border-bottom: 1px solid #e5e5e5;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
+	position:absolute;
+	top:70;
 }
 #body-user #header {
 	position: unset;
@@ -353,6 +355,7 @@
 	overflow: hidden;
 	width: 100%;
 	font-family: TeleNeo, sans-serif;
+	position:relative;
 }
 
 .brandbar > .container-fixed {
@@ -406,7 +409,7 @@
 		width: 1236px;
 		/* padding-top: 100px; */
 	}
-	.header-right .navbar-icons a .smallscreenSize{
+	.header-right .navbar-icons .smallscreenSize{
 		display:none;
 	}
 
@@ -671,9 +674,10 @@
 	}
    .header-left #nextcloud h5{
 	   font-size:14px !important;
+	   padding-left:0px !important;
    }
     .header-right .navbar-icons a{
-		font-size:12px  !important;
+		font-size:6px  !important;
 	}
 }
 
