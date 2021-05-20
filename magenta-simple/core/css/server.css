@@ -270,7 +270,6 @@
 	font-size: 12px;
   }
   #header  .container-fixed .header-right .navbar-icons a label{
-	  display:inline !important;
 	  padding-left:4px !important;
   }
   
@@ -717,7 +716,8 @@
 		display:none;
 	}
 	#header  .container-fixed .header-right .navbar-icons a label{
-		display:inline;
+		display:block !important;
+		padding-left:4px;
 	}
 	
 
