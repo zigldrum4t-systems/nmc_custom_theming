@@ -259,6 +259,7 @@
 
 /* Navbar links */
 #header .container-fixed .header-right .navbar-icons a {
+	display: flex;
 	float: left;
 	text-align: center;
 	padding: 21px 6px;
