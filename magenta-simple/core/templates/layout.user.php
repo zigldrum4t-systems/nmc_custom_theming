@@ -4,7 +4,9 @@
 
 <head data-user="<?php p($_['user_uid']); ?>" data-user-displayname="<?php p($_['user_displayname']); ?>"
     data-requesttoken="<?php p($_['requesttoken']); ?>">
+
     <meta charset="utf-8">
+    <link rel="stylesheet" href="node_modules/@telekom/scale-components/dist/scale-components/scale-components.css">
     <title>
         <?php
 				p(!empty($_['application'])?$_['application'].' - ':'');
