@@ -7,6 +7,7 @@
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="node_modules/@telekom/scale-components/dist/scale-components/scale-components.css">
+    <script type="module" src="node_modules/@telekom/scale-components/dist/scale-components/scale-components.esm.js"></script>
     <title>
         <?php
 				p(!empty($_['application'])?$_['application'].' - ':'');
@@ -36,6 +37,7 @@
     <?php emit_script_loading_tags($_); ?>
     <?php print_unescaped($_['headers']); ?>
 </head>
+
 
 <body id="<?php p($_['bodyid']);?>">
     <?php include 'layout.noscript.warning.php'; ?>
