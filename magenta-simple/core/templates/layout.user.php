@@ -6,8 +6,7 @@
     data-requesttoken="<?php p($_['requesttoken']); ?>">
 
     <meta charset="utf-8">
-    <link rel="stylesheet" href="node_modules/@telekom/scale-components/dist/scale-components/scale-components.css">
-    <script type="module" src="node_modules/@telekom/scale-components/dist/scale-components/scale-components.esm.js"></script>
+   
     <title>
         <?php
 				p(!empty($_['application'])?$_['application'].' - ':'');
@@ -140,16 +139,8 @@
             <div class="header-right">
 
                <div class="navbar-icons">
-               <a href="#">
-                 
-               <svg>
-               <defs>
-                <g id="icon-search">
-                 <path d="M11.84 1.5a4.5 4.5 0 014.495 4.288l.004.212v.749l4.45.001.883 12.794a3 3 0 01-2.993 3.206H5a3 3 0 01-2.992-3.206L2.89 6.75h4.45V6l.002-.133A4.5 4.5 0 0111.84 1.5zm7.549 6.75h-15.1l-.785 11.397A1.5 1.5 0 005 21.25h13.68l.088-.003a1.5 1.5 0 001.407-1.6L19.39 8.25zM8.089 9.5a1 1 0 11.002 1.999A1 1 0 018.089 9.5zm7.5 0a1 1 0 11.002 1.999 1 1 0 01-.002-1.999zM11.84 3a3 3 0 00-2.994 2.824L8.839 6v.75l6-.001V6l-.002-.112A3 3 0 0011.84 3z" fill-rule="nonzero" />
-                </g>
-               </defs>
-                 </svg>
-                 <label>Search</label></a>
+             
+                 <scale-icon name="shopping-bag" />
                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
                             <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
                         </svg><label>Mail</label></a>
