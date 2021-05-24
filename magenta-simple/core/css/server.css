@@ -203,8 +203,11 @@
 	display: inline-flex;
 }
 
+#header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo > .brandbar-logo-magenta {
+	margin-left:16px;
+}
 #header #appmenu {
-	padding-left: 124px;
+	padding-left: 62px;
 }
 
 #header .container-fixed .header-left #nextcloud {
