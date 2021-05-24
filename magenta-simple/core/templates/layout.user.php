@@ -79,7 +79,63 @@
         <div class="container-fixed">
 
             <div class="header-left">
-             <div class="logo-area"></div>
+            <div class="logo-area">
+              <div class="logo-area__inner">
+                <a href="/en" title="Home">
+                  <svg aria-hidden="true" focusable="false" role="img">
+                  <use href="#brand__logo"></use>
+                  </svg>
+                 </a>
+              </div>
+                </div>
+                <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
+                    <div>
+                        <h5>Magenta<span class="logo-title">CLOUD</span></h5>
+                        <h1 class="hidden-visually">
+                            <?php p($theme->getName()); ?>
+                            <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
+                        </h1>
+                    </div>
+                </a>
+
+                <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
+                    <?php foreach ($_['navigation'] as $entry): ?>
+                    <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
+                        <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
+                            class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+                            <?php p($entry['name']); ?>
+                        </a>
+                    </li>
+                    <?php endforeach; ?>
+                    <li id="more-apps" class="menutoggle" aria-haspopup="true" aria-controls="navigation"
+                        aria-expanded="false">
+                        <a href="#" aria-label="<?php p($l->t('More apps')); ?>">
+                            <div class="icon-more-white"></div>
+                            <span><?php p($l->t('More')); ?></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <nav role="navigation">
+                    <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
+                        <div id="apps">
+                            <ul>
+                                <?php foreach ($_['navigation'] as $entry): ?>
+                                <li data-id="<?php p($entry['id']); ?>">
+                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
+                                        class="active nav-icon-files svg " <?php endif; ?>
+                                        aria-label="<?php p($entry['name']); ?>">
+
+                                        <span><?php p($entry['name']); ?></span>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
 
             <div class="header-right">
 
