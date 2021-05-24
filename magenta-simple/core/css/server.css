@@ -210,6 +210,13 @@
 #header .container-fixed .header-left #nextcloud {
 	padding-left: 2px;
 }
+
+#header .container-fixed .header-left > .header-brandbar-logo > svg {
+	height: 25px;
+	width: 50px;
+	fill: #e20074;
+}
+
 #header .container-fixed .header-left #nextcloud h5 {
 	font-size: 25px;
 	color: #161616;
@@ -601,8 +608,8 @@
 /* UI chnages */
 
 /* (max-width: 768px) */
-#content{
-	padding-top:0 !important;
+#content {
+	padding-top: 0 !important;
 }
 
 @media screen and (max-width: 640px) {
