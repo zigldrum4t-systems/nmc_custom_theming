@@ -6,7 +6,7 @@
     data-requesttoken="<?php p($_['requesttoken']); ?>">
 
     <meta charset="utf-8">
-   
+
     <title>
         <?php
 				p(!empty($_['application'])?$_['application'].' - ':'');
@@ -55,107 +55,116 @@
 
 
     <div class="MenuWrapperParent">
-      <div class="brandbar">
-        <div class="container-fixed">
-            <div class="header-brandbar">
-                <a href="/en" title="Home" class="header-brandbar-logo">
-                    <svg id="brand-logo" viewBox="0 0 73 36" fill="currentColor">
-                        <g>
-                            <path d="M0 24v-7h7v7H0zM22 24v-7h7v7h-7zM44 24v-7h7v7h-7zM66 24v-7h7v7h-7z"></path>
-                            <path
-                                d="M12 1.74c-2.94.09-5.56 1.09-7.22 2.98-1.57 1.8-2.55 4.6-2.91 8.32L0 12.71.36 0h28.29L29 12.71l-1.87.33c-.36-3.76-1.34-6.52-2.91-8.32-1.66-1.89-4.28-2.89-7.22-2.98V28.3c0 2.31.57 3.82 1.25 4.51.56.6 1.41.96 2.75 1.08.42.03 1.05.06 2 .06V36H6v-2.04c.95 0 1.58-.03 2-.06 1.34-.12 2.18-.48 2.75-1.08.68-.69 1.25-2.19 1.25-4.51V1.74z">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
-                <p class="header-brandbar-claim">
-                    <span>Life is for sharing.</span>
-                </p>
+        <div class="brandbar">
+            <div class="container-fixed">
+                <div class="header-brandbar">
+                    <a href="/en" title="Home" class="header-brandbar-logo">
+                        <svg id="brand-logo" viewBox="0 0 73 36" fill="currentColor">
+                            <g>
+                                <path d="M0 24v-7h7v7H0zM22 24v-7h7v7h-7zM44 24v-7h7v7h-7zM66 24v-7h7v7h-7z"></path>
+                                <path
+                                    d="M12 1.74c-2.94.09-5.56 1.09-7.22 2.98-1.57 1.8-2.55 4.6-2.91 8.32L0 12.71.36 0h28.29L29 12.71l-1.87.33c-.36-3.76-1.34-6.52-2.91-8.32-1.66-1.89-4.28-2.89-7.22-2.98V28.3c0 2.31.57 3.82 1.25 4.51.56.6 1.41.96 2.75 1.08.42.03 1.05.06 2 .06V36H6v-2.04c.95 0 1.58-.03 2-.06 1.34-.12 2.18-.48 2.75-1.08.68-.69 1.25-2.19 1.25-4.51V1.74z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class="header-brandbar-claim">
+                        <span>Life is for sharing.</span>
+                    </p>
+                </div>
             </div>
         </div>
-      </div>
 
-      <header role="banner" id="header" class="header-bar">
-        <div class="container-fixed">
+        <header role="banner" id="header" class="header-bar">
+            <div class="container-fixed">
 
-            <div class="header-left">
-            <div class="logo-area">
-              <div class="logo-area__inner">
-                <a href="/en" title="Home">
-                  <svg aria-hidden="true" focusable="false" role="img">
-                  <use href="#brand__logo"></use>
-                  </svg>
-                 </a>
-              </div>
-                </div>
-                <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
-                    <div>
-                        <h5>Magenta<span class="logo-title">CLOUD</span></h5>
-                        <h1 class="hidden-visually">
-                            <?php p($theme->getName()); ?>
-                            <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
-                        </h1>
-                    </div>
-                </a>
-
-                <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
-                    <?php foreach ($_['navigation'] as $entry): ?>
-                    <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
-                        <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
-                            class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
-                            <?php p($entry['name']); ?>
-                        </a>
-                    </li>
-                    <?php endforeach; ?>
-                    <li id="more-apps" class="menutoggle" aria-haspopup="true" aria-controls="navigation"
-                        aria-expanded="false">
-                        <a href="#" aria-label="<?php p($l->t('More apps')); ?>">
-                            <div class="icon-more-white"></div>
-                            <span><?php p($l->t('More')); ?></span>
-                        </a>
-                    </li>
-                </ul>
-
-                <nav role="navigation">
-                    <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
-                        <div id="apps">
-                            <ul>
-                                <?php foreach ($_['navigation'] as $entry): ?>
-                                <li data-id="<?php p($entry['id']); ?>">
-                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
-                                        class="active nav-icon-files svg " <?php endif; ?>
-                                        aria-label="<?php p($entry['name']); ?>">
-
-                                        <span><?php p($entry['name']); ?></span>
-                                    </a>
-                                </li>
-                                <?php endforeach; ?>
-                            </ul>
+                <div class="header-left">
+                    <div class="logo-area">
+                        <div class="logo-area__inner">
+                            <a href="/en" title="Home" class="header-brandbar-logo">
+                                <svg id="brand-logo" viewBox="0 0 73 36" fill="currentColor">
+                                    <g>
+                                        <path d="M0 24v-7h7v7H0zM22 24v-7h7v7h-7zM44 24v-7h7v7h-7zM66 24v-7h7v7h-7z">
+                                        </path>
+                                        <path
+                                            d="M12 1.74c-2.94.09-5.56 1.09-7.22 2.98-1.57 1.8-2.55 4.6-2.91 8.32L0 12.71.36 0h28.29L29 12.71l-1.87.33c-.36-3.76-1.34-6.52-2.91-8.32-1.66-1.89-4.28-2.89-7.22-2.98V28.3c0 2.31.57 3.82 1.25 4.51.56.6 1.41.96 2.75 1.08.42.03 1.05.06 2 .06V36H6v-2.04c.95 0 1.58-.03 2-.06 1.34-.12 2.18-.48 2.75-1.08.68-.69 1.25-2.19 1.25-4.51V1.74z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                </nav>
+                    <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
+                        <div>
+                            <h5>Magenta<span class="logo-title">CLOUD</span></h5>
+                            <h1 class="hidden-visually">
+                                <?php p($theme->getName()); ?>
+                                <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
+                            </h1>
+                        </div>
+                    </a>
 
-            </div>
+                    <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
+                        <?php foreach ($_['navigation'] as $entry): ?>
+                        <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
+                            <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
+                                class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+                                <?php p($entry['name']); ?>
+                            </a>
+                        </li>
+                        <?php endforeach; ?>
+                        <li id="more-apps" class="menutoggle" aria-haspopup="true" aria-controls="navigation"
+                            aria-expanded="false">
+                            <a href="#" aria-label="<?php p($l->t('More apps')); ?>">
+                                <div class="icon-more-white"></div>
+                                <span><?php p($l->t('More')); ?></span>
+                            </a>
+                        </li>
+                    </ul>
 
-            <div class="header-right">
+                    <nav role="navigation">
+                        <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
+                            <div id="apps">
+                                <ul>
+                                    <?php foreach ($_['navigation'] as $entry): ?>
+                                    <li data-id="<?php p($entry['id']); ?>">
+                                        <a href="<?php print_unescaped($entry['href']); ?>"
+                                            <?php if ($entry['active']): ?> class="active nav-icon-files svg "
+                                            <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
 
-               <div class="navbar-icons">
-             
-                 <scale-icon name="shopping-bag" />
-                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
-                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><label>Mail</label></a>
-                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
-                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><label>Jens Weidemann</label></a>
+                                            <span><?php p($entry['name']); ?></span>
+                                        </a>
+                                    </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
 
-                 <a href="#" class="smallscreenSize"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
-                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><label>Menu</label></a>
-               </div>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="navbar-icons">
+
+                        <scale-icon name="shopping-bag" />
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16"
+                                height="16" width="16">
+                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                            </svg><label>Mail</label></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16"
+                                height="16" width="16">
+                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                            </svg><label>Jens Weidemann</label></a>
+
+                        <a href="#" class="smallscreenSize"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                viewBox="0 0 16 16" height="16" width="16">
+                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                            </svg><label>Menu</label></a>
+                    </div>
 
 
-            </div>
+                </div>
                 <!-- <div id="unified-search"></div>
                 <div class="unified-search-title">Search</div>
                 <div id="contactsmenu">
@@ -199,36 +208,37 @@
                             <?php endforeach; ?>
                         </ul>
                     </nav> -->
-      
-        </div>
-      </header> 
+
+            </div>
+        </header>
     </div>
     <div class="breadcrumb-bar">
         <div class="container-fixed">
-        <div class="col-xs-3 left-part"></div>
-        <div class="col-xs-9 right-part">
-        <ul class="breadcrumb-style">
-                <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16" width="16">
-                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg></a></li>
-                <li> > </li>
-                <li><a href="#">Dokumente</a></li>
-                <li> > </li>
-                <li><a href="#">Scans</a></li>
-            </ul>
+            <div class="col-xs-3 left-part"></div>
+            <div class="col-xs-9 right-part">
+                <ul class="breadcrumb-style">
+                    <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
+                                width="16">
+                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                            </svg></a></li>
+                    <li> > </li>
+                    <li><a href="#">Dokumente</a></li>
+                    <li> > </li>
+                    <li><a href="#">Scans</a></li>
+                </ul>
+            </div>
         </div>
-        </div>       
-        
-       
 
-           
 
-       
+
+
+
+
     </div>
- 
 
 
-   
+
+
 
 
     <div id="sudo-login-background" class="hidden"></div>
