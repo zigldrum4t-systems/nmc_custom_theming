@@ -53,14 +53,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     background-color: #f2f2f2;
 }
 
-#app-navigation .with-icon > ul > li.active,
- #app-navigation .with-icon > ul > li.active > a,
-  #app-navigation .with-icon > ul > li a:active,
-   #app-navigation .with-icon > ul > li a:active > a, 
-   #app-navigation .with-icon > ul > li a.selected,
-    #app-navigation .with-icon > ul > li a.selected > a,
-	 #app-navigation .with-icon > ul > li a.active,
-	  #app-navigation .with-icon > ul > li a.active > a {
+#app-navigation .with-icon ul li.active,
+ #app-navigation .with-icon ul li.active > a,
+  #app-navigation .with-icon ul li a:active,
+   #app-navigation .with-icon ul li a:active > a, 
+   #app-navigation .with-icon ul li a.selected,
+    #app-navigation .with-icon ul li a.selected > a,
+	 #app-navigation .with-icon ul li a.active,
+	  #app-navigation .with-icon ul li a.active > a {
     background-color: #f2f2f2 !important;
 }
 
