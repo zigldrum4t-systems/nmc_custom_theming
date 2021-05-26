@@ -738,6 +738,11 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	}
 }
 
+@media screen and (max-width: 1023px){
+	#header .container-fixed .header-right .navbar-icons a  {
+		display: block !important;
+	}
+}
 @media screen and (max-width: 1299px) {
 	#appmenu {
 		display: none;
@@ -748,8 +753,5 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	.breadcrumb-bar .left-part {
 		display: none;
 	}
-	#header .container-fixed .header-right .navbar-icons a label {
-		display: block !important;
-		padding-left: 4px;
-	}
+	
 }
