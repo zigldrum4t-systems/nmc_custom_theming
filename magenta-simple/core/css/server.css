@@ -42,12 +42,15 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	top: 162px !important;	
 }
 
-#app-navigation  ul  li:hover{
-	background-color: #f2f2f2 !important;
-}
-
-#app-navigation  ul  li:active{
-	background-color: #f2f2f2 !important;
+#app-navigation > ul > li.active,
+ #app-navigation > ul > li.active > a,
+  #app-navigation > ul > li a:active,
+   #app-navigation > ul > li a:active > a, 
+   #app-navigation > ul > li a.selected,
+    #app-navigation > ul > li a.selected > a,
+	 #app-navigation > ul > li a.active,
+	  #app-navigation > ul > li a.active > a {
+    background-color: #f2f2f2;
 }
 
 #app-navigation > ul > li > a:hover {
