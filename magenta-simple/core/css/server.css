@@ -56,6 +56,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	color: var(--scl-color-magenta) !important;
 	opacity: 1 !important;
 	text-decoration: none;
+	background-color: #f2f2f2;
 }
 
 #app-navigation > ul > li > ul > li > a:hover {
