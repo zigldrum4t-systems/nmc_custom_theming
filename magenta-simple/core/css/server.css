@@ -48,11 +48,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	text-decoration: none;
 }
 
-#app-navigation > ul > li > a:active,
-#app-navigation > ul > li > a::selection {
+#app-navigation > ul > li > a:active{
 	color: var(--scl-color-magenta) !important;
 	opacity: 1 !important;
 	text-decoration: none;
+	
+}
+
+#app-navigation > ul > li > a::selection{
 	background-color: #f2f2f2 !important;
 }
 
