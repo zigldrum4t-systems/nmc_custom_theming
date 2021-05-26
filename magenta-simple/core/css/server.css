@@ -42,23 +42,27 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	top: 162px !important;	
 }
 
+#app-navigation  ul  li:hover{
+	background-color: #f2f2f2 !important;
+}
+
+#app-navigation  ul  li:active{
+	background-color: #f2f2f2 !important;
+}
+
 #app-navigation > ul > li > a:hover {
 	color: var(--scl-color-magenta) !important;
 	opacity: 1 !important;
 	text-decoration: none;
-	background-color: #f2f2f2 !important;
 }
-
+	
 #app-navigation > ul > li > a:active{
 	color: var(--scl-color-magenta) !important;
 	opacity: 1 !important;
-	text-decoration: none;
-	background-color: #f2f2f2 !important;
-	
-	
+	text-decoration: none;	
 }
 
-#app-navigation > ul > li > a::selection{
+#app-navigation > ul > li::selection{
 	background-color: #f2f2f2 !important;
 }
 
