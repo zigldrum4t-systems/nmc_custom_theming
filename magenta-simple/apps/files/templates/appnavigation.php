@@ -32,16 +32,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 		<?php endif; ?>
 	</ul>
 
-	<div class="progess-bar">
-	  <div class="container">
-        <h2>Basic Progress Bar</h2>
-           <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                <span class="sr-only">70% Complete</span>
-             </div>
-           </div>
-           </div>
-	</div>
+	  
 	<div class="custom-button">
  	  <button type="button" class="btn btn-default btn-style">Default</button>
 	</div>
