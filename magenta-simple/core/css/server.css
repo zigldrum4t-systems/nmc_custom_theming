@@ -77,11 +77,10 @@ header,
 hgroup,
 nav,
 section {
-	font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
-	font-size: 16px !important;
-	line-height: 1.223 !important;
-	color: var(--scl-color-grey-90) !important;
-	background-color: #fff !important;
+	font-family: TeleNeoWeb, TeleNeo, sans-serif;
+	font-size: 16px;
+	line-height: 1.223;
+	color: var(--scl-color-grey-90);
 }
 
 /* ---------------------------------------------------------------------------- */
