@@ -22,13 +22,66 @@
 
 /* @import url("nextcloud-to-telekom-colors.css"); */
 
-
-
 /* ---------------------------------------------------------------------------- */
 /* ----------------------------------COMMON------------------------------------ */
 /* ---------------------------------------------------------------------------- */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
-	font-family: inherit;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+	font-size: 16px !important;
+	line-height: 1.223 !important;
+	color: var(--scl-color-grey-90) !important;
+	background-color: #fff !important;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -38,19 +91,19 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	/* top: 122px !important; */
 	z-index: 10 !important;
 	left: unset !important;
-    position: fixed !important;
-	top: 162px !important;	
+	position: fixed !important;
+	top: 162px !important;
 }
 
 #app-navigation > ul > li.active,
- #app-navigation > ul > li.active > a,
-  #app-navigation > ul > li a:active,
-   #app-navigation > ul > li a:active > a, 
-   #app-navigation > ul > li a.selected,
-    #app-navigation > ul > li a.selected > a,
-	 #app-navigation > ul > li a.active,
-	  #app-navigation > ul > li a.active > a {
-    background-color: #f2f2f2 !important;
+#app-navigation > ul > li.active > a,
+#app-navigation > ul > li a:active,
+#app-navigation > ul > li a:active > a,
+#app-navigation > ul > li a.selected,
+#app-navigation > ul > li a.selected > a,
+#app-navigation > ul > li a.active,
+#app-navigation > ul > li a.active > a {
+	background-color: #f2f2f2 !important;
 }
 
 /* #app-navigation .with-icon ul li.active,
@@ -74,21 +127,21 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	text-decoration: none;
 	background-color: #f2f2f2 !important;
 }
-	
-#app-navigation > ul > li > a:active{
+
+#app-navigation > ul > li > a:active {
 	color: var(--scl-color-magenta) !important;
 	opacity: 1 !important;
-	text-decoration: none;	
+	text-decoration: none;
 }
-#app-navigation .memorytext{
-	font-weight:bold;
-	font-size:22px;
-	}
+#app-navigation .memorytext {
+	font-weight: bold;
+	font-size: 22px;
+}
 
-#app-navigation .custom-button .btn-style{
-	width:70%;
+#app-navigation .custom-button .btn-style {
+	width: 70%;
 }
-#app-navigation > ul > li::selection{
+#app-navigation > ul > li::selection {
 	background-color: #f2f2f2 !important;
 }
 
@@ -261,7 +314,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo > .brandbar-logo-magenta {
-	margin-left:16px;
+	margin-left: 16px;
 }
 #header #appmenu {
 	padding-left: 62px;
@@ -668,9 +721,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 /* UI chnages */
 
 /* (max-width: 768px) */
-.MenuWrapperParent{
+.MenuWrapperParent {
 	z-index: 9999 !important;
-	width:100%;
+	width: 100%;
 }
 #content {
 	padding-top: 0 !important;
@@ -775,8 +828,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	}
 }
 
-@media screen and (max-width: 1023px){
-	#header .container-fixed .header-right .navbar-icons a  {
+@media screen and (max-width: 1023px) {
+	#header .container-fixed .header-right .navbar-icons a {
 		display: block !important;
 	}
 }
@@ -790,5 +843,4 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	.breadcrumb-bar .left-part {
 		display: none;
 	}
-	
 }
