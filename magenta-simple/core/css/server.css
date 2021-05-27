@@ -337,6 +337,7 @@ section {
 }
 #header .container-fixed .header-left #nextcloud span {
 	font-weight: normal;
+	font-size: 25px !important;
 }
 
 #header .container-fixed .header-left a:hover {
@@ -345,7 +346,6 @@ section {
 #header > .container-fixed > .header-left > #nextcloud > .logo-title {
 	left: 0;
 	position: absolute;
-	font-size: 25px !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a {
@@ -520,9 +520,11 @@ section {
 	font-size: 15px;
 	-webkit-transform: translateY(3px);
 	transform: translateY(3px);
-	color: white;
 }
 
+.brandbar > .container-fixed > .header-brandbar > p.header-brandbar-claim span {
+	color: white !important;
+}
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
 	.brandbar > .container-fixed {
 		width: 1236px;
