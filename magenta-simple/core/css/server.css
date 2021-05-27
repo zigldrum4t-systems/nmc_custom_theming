@@ -345,6 +345,7 @@ section {
 #header > .container-fixed > .header-left > #nextcloud > .logo-title {
 	left: 0;
 	position: absolute;
+	font-size: 25px !important;
 }
 
 #header > .container-fixed > .header-left > #appmenu li a {
@@ -519,6 +520,7 @@ section {
 	font-size: 15px;
 	-webkit-transform: translateY(3px);
 	transform: translateY(3px);
+	color: white;
 }
 
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
