@@ -84,6 +84,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	font-weight:bold;
 	font-size:22px;
 	}
+
+#app-navigation .custom-button .btn-style{
+	width:70%;
+}
 #app-navigation > ul > li::selection{
 	background-color: #f2f2f2 !important;
 }
