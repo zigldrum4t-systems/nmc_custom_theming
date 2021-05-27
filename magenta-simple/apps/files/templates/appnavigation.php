@@ -15,7 +15,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 		<?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
 			<li id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
 				<a href="#" class="icon-image">
-					<img src='C:\Magenta cloud\themes\custom-theme\core\img'>
+					<img src='C:/Magenta cloud/themes/custom-theme/core/img/favicon.png'>
 					<p class="memorytext"><?php p($l->t('%s used', [$_['usage']])); ?></p>
 				</a>
 			</li>
