@@ -15,7 +15,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 		<?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
 			<li id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
 				<a href="#" class="icon-quota svg">
-					<p><?php p($l->t('%s used', [$_['usage']])); ?></p>
+					<p class="memorytext"><?php p($l->t('%s used', [$_['usage']])); ?></p>
 				</a>
 			</li>
 		<?php else: ?>
@@ -30,6 +30,9 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 			</li>
 		<?php endif; ?>
 	</ul>
+	<div class="custom-button">
+	<button type="button" class="btn btn-default">Default</button>
+	</div>
 	<div id="app-settings">
 		<div id="app-settings-header">
 			<button class="settings-button"
@@ -55,6 +58,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 			<em><a href="<?php echo link_to_docs('user-webdav') ?>" target="_blank" rel="noreferrer noopener"><?php p($l->t('Use this address to access your Files via WebDAV')) ?> ↗</a></em>
 		</div>
 	</div>
+
 
 </div>
 

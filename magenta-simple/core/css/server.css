@@ -42,7 +42,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	top: 162px !important;	
 }
 
-/* #app-navigation > ul > li.active,
+#app-navigation > ul > li.active,
  #app-navigation > ul > li.active > a,
   #app-navigation > ul > li a:active,
    #app-navigation > ul > li a:active > a, 
@@ -50,8 +50,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     #app-navigation > ul > li a.selected > a,
 	 #app-navigation > ul > li a.active,
 	  #app-navigation > ul > li a.active > a {
-    background-color: #f2f2f2;
-} */
+    background-color: #f2f2f2 !important;
+}
 
 /* #app-navigation .with-icon ul li.active,
  #app-navigation .with-icon ul li.active > a,
@@ -64,9 +64,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     background-color: #f2f2f2 !important;
 } */
 
-#app-navigation .with-icon li a:active {
+/* #app-navigation .with-icon li a:active {
 	background-color: #f2f2f2 !important;
-}
+} */
 
 #app-navigation > ul > li > a:hover {
 	color: var(--scl-color-magenta) !important;
@@ -80,7 +80,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	opacity: 1 !important;
 	text-decoration: none;	
 }
-
+#app-navigation .memorytext{
+	font-weight:bold;
+	font-size:22px;
+	}
 #app-navigation > ul > li::selection{
 	background-color: #f2f2f2 !important;
 }
