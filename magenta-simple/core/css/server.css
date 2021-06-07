@@ -886,14 +886,42 @@ input[type='checkbox'].checkbox:checked+label:before{
 table td.filename .nametext .innernametext{
 font-size:16px !important;
 color:#191919 !important;
-padding-left: 10px;
+padding-left:20px;
+padding-top:12px;
 }
 
 table td.filename .thumbnail{
 width:44px !important;
 height:44px !important;
+margin-top:4px;
 }
 
 #filestable tbody tr:hover{
 background-color: rgb(242 242 242 / 50%) !important;
+}
+
+span.extension{
+	padding-top:11px !important;
+}
+
+#filestable > thead > tr > th > div > a {
+	color:#f2f2f2;
+	font-size:14px;
+}
+
+#filestable > thead > tr > th > div > a:hover{
+	text-decoration: none;
+}
+
+
+
+#filestable > thead > tr > th > div > a:hover {
+    opacity: 1 !important;
+}
+
+#filestable > thead > tr > th > div > a {
+    color: #f2f2f2 !important;
+}
+table th .columntitle.name{
+	margin-left:65px !important;
 }
