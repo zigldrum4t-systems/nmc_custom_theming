@@ -138,17 +138,15 @@ section {
 }
 
 #app-navigation .custom-button button{
-	border:none;
-	background-color: none;
+	border:none !important;
+	background-color: none !important;
 }
+
 #app-navigation .custom-button .btn-style {
 	width: 70%;
 	border:1px solid #191919;
 }
-#app-navigation .custom-button button:hover{
-	border:1px solid #e20074;
-	background-color: #f2f2f2;
-}
+
 
 #app-navigation > ul > li::selection {
 	background-color: #f2f2f2 !important;
@@ -864,6 +862,11 @@ section {
 input[type='checkbox'].checkbox+label:before{
 	border-radius:3px !important;
 	border:1px solid #191919 !important;
+}
+
+input[type='checkbox'].checkbox+label:hover{
+	border-radius:3px !important;
+	border:1px solid #e20074 !important;
 }
 
 input[type='checkbox'].checkbox:checked+label:before{
