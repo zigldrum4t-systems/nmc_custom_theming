@@ -10,12 +10,12 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 		$customNavigationItems['myshares'] = $_['navigationItems']['files'];
 
 		$customNavigationItems['myshares'] = array(
-			'id' = 'myshares','appname' => 'files','script' => '','order'=>'',
+			'id' => 'myshares','appname' => 'files','script' => '','order'=>'',
 			'name'=>'My shares', 'active'=>'','icon'=>'','classes'=>'','type'=>'link'
 		);
 
 		$customNavigationItems['sharedwithme'] = array(
-			'id' = 'sharedwithme','appname' => 'files','script' => '','order'=>'',
+			'id' => 'sharedwithme','appname' => 'files','script' => '','order'=>'',
 			'name'=>'Shared with me', 'active'=>'','icon'=>'','classes'=>'','type'=>'link'
 		);	
 
