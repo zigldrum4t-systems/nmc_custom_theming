@@ -849,11 +849,11 @@ section {
 	}
 }
 
-<<<<<<< HEAD
 
 /*---------------------------LeftNav-----------------------------------*/
 input[type='checkbox'].checkbox+label:before{
 	border-radius:4px !important;
+	border:1px solid #191919;
 }
 
 .round input[type="checkbox"]:checked + label:after {
@@ -861,6 +861,3 @@ input[type='checkbox'].checkbox+label:before{
 	border: 1px solid #fff;
   }
   
-=======
-/* Sangram code */
->>>>>>> 43ff624ad0f8795472f544b1627a1aa959237c73
