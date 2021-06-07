@@ -6,8 +6,22 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
 		<?php
 		$customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
+		$customNavigationItems['favorites']['order']=0;
 		$customNavigationItems['files'] = $_['navigationItems']['files'];
-		$customNavigationItems['shareoverview'] = $_['navigationItems']['shareoverview'];
+		$customNavigationItems['files']['order']=1;
+		/***  My shares **/
+		$customNavigationItems['my_shares'] = array(
+			"id" = "my_shares","appname" => "files","script" => "","order"=>2,
+			"name"=>"My shares", "active"=>"","icon"=>"","classes"=>"","type"=>"link"
+		);
+		
+
+		/***  Shared with me **/
+		$customNavigationItems['shared_with_me'] = array(
+			"id" = "shared_with_me","appname" => "files","script" => "","order"=>3,
+			"name"=>"Shared with me", "active"=>"","icon"=>"","classes"=>"","type"=>"link"
+		);
+
 		$customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
 		$pinned = 0;
 	/*	foreach ($_['navigationItems'] as $item) {
