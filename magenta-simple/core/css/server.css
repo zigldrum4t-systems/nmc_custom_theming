@@ -306,7 +306,7 @@ section {
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	position: absolute !important;
-	top: 60px !important;
+	top: 73px !important;
 }
 #body-user #header {
 	position: unset;
@@ -481,7 +481,7 @@ section {
 }
 
 .brandbar {
-	height: 72px;
+	height: 80px;
 	z-index: 0 !important;
 	color: var(--scl-color-white) !important;
 	background: var(--scl-color-magenta);
