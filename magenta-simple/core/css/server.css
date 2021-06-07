@@ -91,7 +91,7 @@ section {
 	z-index: 10 !important;
 	left: unset !important;
 	position: fixed !important;
-	top: 162px !important;
+	/* top: 162px !important; */
 }
 
 #app-navigation > ul > li.active,
@@ -137,9 +137,14 @@ section {
 	font-size: 22px;
 }
 
+
 #app-navigation .custom-button .btn-style {
 	width: 70%;
+	border:1px solid #191919;
+	margin-left:10px;
 }
+
+
 #app-navigation > ul > li::selection {
 	background-color: #f2f2f2 !important;
 }
@@ -613,6 +618,7 @@ section {
 	text-decoration: underline;
 }
 
+
 /* ---------------------------------------------------------------------------- */
 /* ----------------------------------FOOTER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
@@ -848,4 +854,24 @@ section {
 	}
 }
 
-/* Sangram code */
+
+/*---------------------------LeftNav-----------------------------------*/
+input[type='checkbox'].checkbox+label:before{
+	border-radius:3px !important;
+	border:1px solid #191919 !important;
+}
+
+input[type='checkbox'].checkbox+label:before:hover{
+	border:1px solid #e20074 !important;
+}
+
+
+input[type='checkbox'].checkbox:checked+label:before{
+	background-color: #e20074 !important;
+	border: 1px solid #e20074 !important;
+}
+.round input[type="checkbox"]:checked + label:after {
+	background-color: #e20074 !important;
+	border: 1px solid #fff !important;
+  }
+  
