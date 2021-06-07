@@ -5,10 +5,6 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 	<ul class="with-icon">
 
 		<?php
-		echo "Navigation menu printed for testing";
-		echo "<Pre>";
-		print_r($_['navigationItems']);
-	
 
 		$pinned = 0;
 		foreach ($_['navigationItems'] as $item) {
