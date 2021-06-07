@@ -137,14 +137,19 @@ section {
 	font-size: 22px;
 }
 
+#app-navigation .custom-button button{
+	border:none;
+	background-color: none;
+}
 #app-navigation .custom-button .btn-style {
 	width: 70%;
 	border:1px solid #191919;
 }
-#app-navigation .custom-button .btn-style:hover{
+#app-navigation .custom-button button:hover{
 	border:1px solid #e20074;
 	background-color: #f2f2f2;
 }
+
 #app-navigation > ul > li::selection {
 	background-color: #f2f2f2 !important;
 }
