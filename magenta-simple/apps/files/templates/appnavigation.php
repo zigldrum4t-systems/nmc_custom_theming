@@ -8,6 +8,8 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 		$customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
 		$customNavigationItems['files'] = $_['navigationItems']['files'];
 		$customNavigationItems['my_shares'] = $_['navigationItems']['files'];
+		$customNavigationItems['my_shares']['id']='my_shares';
+		$customNavigationItems['my_shares']['name']='My shares';
 		/*$customNavigationItems['my_shares'] = array(
 			"id" = "my_shares","appname" => "files","script" => "","order"=>2,
 			"name"=>"My shares", "active"=>"","icon"=>"","classes"=>"","type"=>"link"
