@@ -852,13 +852,13 @@ section {
 
 /*---------------------------LeftNav-----------------------------------*/
 input[type='checkbox'].checkbox+label:before{
-	border-radius:4px !important;
+	border-radius:3px !important;
 	border:1px solid #191919 !important;
 }
 
 input[type='checkbox'].checkbox:checked+label:before{
 	background-color: #e20074 !important;
-	border: 1px solid #fff !important;
+	border: 1px solid #e20074 !important;
 }
 .round input[type="checkbox"]:checked + label:after {
 	background-color: #e20074 !important;
