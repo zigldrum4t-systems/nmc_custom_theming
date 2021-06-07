@@ -240,10 +240,7 @@ class ViewController extends Controller {
 
 		$navItems = \OCA\Files\App::getNavigationManager()->getAll(); // Need to modify this result
 		
-		echo "Navigation menu printed for testing";
-		echo "<Pre>";
-		print_r($navItems);
-		exit;
+
 		// add the favorites entry in menu
 		$navItems['favorites']['sublist'] = $favoritesSublistArray;
 		$navItems['favorites']['classes'] = $collapseClasses;
