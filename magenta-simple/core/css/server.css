@@ -91,7 +91,7 @@ section {
 	z-index: 10 !important;
 	left: unset !important;
 	position: fixed !important;
-	top: 162px !important;
+	/* top: 162px !important; */
 }
 
 #app-navigation > ul > li.active,
@@ -613,6 +613,7 @@ section {
 	text-decoration: underline;
 }
 
+
 /* ---------------------------------------------------------------------------- */
 /* ----------------------------------FOOTER------------------------------------ */
 /* ---------------------------------------------------------------------------- */
@@ -847,3 +848,15 @@ section {
 		display: none;
 	}
 }
+
+
+/*---------------------------LeftNav-----------------------------------*/
+input[type='checkbox'].checkbox+label:before{
+	border-radius:4px !important;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+	background-color: #e20074 !important;
+	border: 1px solid #fff;
+  }
+  
