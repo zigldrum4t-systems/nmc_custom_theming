@@ -6,9 +6,9 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
 		<?php
 		$customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
-		$customNavigationItems['favorites']['order']=0;
+		// $customNavigationItems['favorites']['order']=0;
 		$customNavigationItems['files'] = $_['navigationItems']['files'];
-		$customNavigationItems['files']['order']=1;
+		//$customNavigationItems['files']['order']=1;
 		
 		/*$customNavigationItems['my_shares'] = array(
 			"id" = "my_shares","appname" => "files","script" => "","order"=>2,
