@@ -83,6 +83,9 @@ section {
 	color: var(--scl-color-grey-90);
 }
 
+body{
+	overflow-y: hidden;
+}
 /* ---------------------------------------------------------------------------- */
 
 #app-navigation {
@@ -932,4 +935,12 @@ span.extension{
 }
 table th .columntitle.name{
 	margin-left:65px !important;
+}
+
+#filestable tbody {
+    height: 300px;
+    display: table;
+    width: 100%;
+    display: block;
+    overflow: auto;
 }
