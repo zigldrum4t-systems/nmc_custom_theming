@@ -137,10 +137,6 @@ section {
 	font-size: 22px;
 }
 
-#app-navigation .custom-button button{
-	border:none !important;
-	background-color: none !important;
-}
 
 #app-navigation .custom-button .btn-style {
 	width: 70%;
@@ -864,10 +860,10 @@ input[type='checkbox'].checkbox+label:before{
 	border:1px solid #191919 !important;
 }
 
-input[type='checkbox'].checkbox+label:hover{
-	border-radius:3px !important;
+input[type='checkbox'].checkbox+label:before:hover{
 	border:1px solid #e20074 !important;
 }
+
 
 input[type='checkbox'].checkbox:checked+label:before{
 	background-color: #e20074 !important;
