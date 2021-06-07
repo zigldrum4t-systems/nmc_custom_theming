@@ -910,7 +910,7 @@ span.extension{
 }
 
 #filestable > thead > tr > th > div > a:hover{
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 
