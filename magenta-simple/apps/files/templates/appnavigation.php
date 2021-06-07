@@ -1,15 +1,22 @@
 <?php
 script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
-?>
+?>	
 <div id="app-navigation">
 	<ul class="with-icon">
 
 		<?php
-
+		$customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
+		$customNavigationItems['files'] = $_['navigationItems']['files'];
+		$customNavigationItems['shareoverview'] = $_['navigationItems']['shareoverview'];
+		$customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
 		$pinned = 0;
-		foreach ($_['navigationItems'] as $item) {
+	/*	foreach ($_['navigationItems'] as $item) {
 			$pinned = NavigationListElements($item, $l, $pinned);
-		}
+		}*/
+
+		foreach ($customNavigationItems as $item) {
+			$pinned = NavigationListElements($item, $l, $pinned);
+		}		
 		?>
 
 		<?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
