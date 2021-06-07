@@ -92,6 +92,7 @@ section {
 	left: unset !important;
 	position: fixed !important;
 	top:162px !important;
+	height:500px !important;
 	/* top: 162px !important; */
 }
 
@@ -121,11 +122,11 @@ section {
 	background-color: #f2f2f2 !important;
 } */
 
-#app-navigation .with-icon ul{
+#app-navigation > ul{
 	overflow-y: unset;
 	overflow-x: unset;
-
 }
+
 #app-navigation > ul > li > a:hover {
 	color: var(--scl-color-magenta) !important;
 	opacity: 1 !important;
