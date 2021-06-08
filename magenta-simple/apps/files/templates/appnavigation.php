@@ -28,14 +28,14 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
     <div class="memoryused">
 		<?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
-				<li id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
+				<div id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
 					<a href="#" class="icon-image">
 						<img src='C:/Magenta cloud/themes/custom-theme/core/img/favicon.png'>
 						<p class="memorytext"><?php p($l->t('%s used', [$_['usage']])); ?></p>
 					</a>
-				</li>
+				</div>
 			<?php else: ?>
-				<li id="quota" class="has-tooltip pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
+				<div id="quota" class="has-tooltip pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
 					title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
 					<a href="#" class="icon-quota svg">
 						<p id="quotatext"><?php p($l->t('%1$s of %2$s used', [$_['usage'], $_['total_space']])); ?></p>
@@ -43,7 +43,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 							<progress value="<?php p($_['usage_relative']); ?>" max="100" class="<?= ($_['usage_relative'] > 80) ? 'warn' : '' ?>"></progress>
 						</div>
 					</a>
-				</li>
+				</div>
 			<?php endif; ?>
 	</div>
 	<div class="progress-bar">
