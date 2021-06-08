@@ -149,6 +149,17 @@ body{
 	background-color: none !important;
 	box-shadow: none !important;
 } */
+
+.progress .customprogressbar{
+	margin-left:10px;
+	height:7px;
+	border-radius:4px;
+}
+
+.progress-bar .styledbar{
+	background-color: #e20074;
+	border-radius:4px;
+}
 #app-navigation .progress-bar-custom li{
 	list-style:none;
 }
