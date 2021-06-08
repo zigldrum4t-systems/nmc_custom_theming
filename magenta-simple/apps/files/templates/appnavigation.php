@@ -26,7 +26,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
     </ul>
 
-    <div class="memoryused">
+    <!-- <div class="memoryused">
         <?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
         <div id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
             <a href="#" class="icon-image">
@@ -46,6 +46,11 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
             </a>
         </div>
         <?php endif; ?>
+    </div> -->
+
+    <div class="Memory-consumed">
+    <div class="left-logo"><img src='C:\Magenta cloud\themes\magenta-simple\core\img\CloudPink.png'></div>
+    <div class="logo-right-text">5 MB Used</div>
     </div>
 
 
@@ -61,7 +66,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         <!-- <li><span class="bar"><span class="style-html"></span></span></li> -->
     </div>
     <div class="custom-button">
-        <button type="button" class="btn btn-default btn-style">Expand Storage</button>
+        <button type="button" class="btn btn-default btn-xs btn-style">Expand Storage</button>
     </div>
     <div id="app-settings">
         <div id="app-settings-header">

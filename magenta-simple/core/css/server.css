@@ -150,7 +150,7 @@ body {
  } */
 
 .NextCloudPorgressBar .customprogressbar {
-	margin-left: 10px;
+	margin-left: 12px;
 	height: 7px;
 	border-radius: 4px;
 }
@@ -939,6 +939,16 @@ input[type="checkbox"].checkbox:checked + label:before {
 	margin-top: 0px !important;
 }
 
+/*-------------------MemoryLogo------------------------------*/
+.Memory-consumed .left-logo{
+	width:30%;
+	display: inline;
+}
+
+.Memory-consumed .logo-right-text{
+	width:70%;
+	display: inline;
+}
 /*---------------------------RightContent-----------------------------------*/
 #filestable tbody tr {
 	height: 68px !important;
