@@ -203,10 +203,8 @@ body{
 }
 
 
-#app-navigation .custom-button button{
+#app-navigation .custom-button .btn-style{
 	width: 70%;
-	height:30px;
-	border-radius:10px;
 	border:1px solid #191919;
 	margin-left:10px;
 	color:#191919;

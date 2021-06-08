@@ -49,17 +49,14 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
 
 	<div class="NextCloudPorgressBar">
-	<div class="progress customprogressbar">
+	  <div class="progress customprogressbar">
        <div class="progress-bar styledbar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
        <span class="sr-only">60% Complete</span>
       </div>
 	</div>
 	
-
-	<!-- <li><span class="bar"><span class="style-html"></span></span></li> -->
-	</div>
     <div class="custom-button">
-	<button type="button" onclick="">Expand Storage</button>
+	  <button type="button" class="btn btn-default btn-style btn-sm">Expand Storage</button>
 	</div>
 	<div id="app-settings">
 		<div id="app-settings-header">
