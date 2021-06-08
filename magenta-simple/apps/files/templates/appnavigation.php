@@ -61,7 +61,10 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
                 <span class="sr-only"><?php p($_['usage_relative']); ?>% Complete</span>
             </div>
         </div>
-
+        
+        <span class="memoryocupmessage" data-extr="<?php echo $_['usage_relative']; ?>">
+            <?php p($l->t('Memory occupied by %s%%', [$_['usage']])); ?>
+        </span>
 
         <!-- <li><span class="bar"><span class="style-html"></span></span></li> -->
     </div>
