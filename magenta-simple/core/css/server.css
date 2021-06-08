@@ -144,17 +144,22 @@ body{
 	opacity: 1 !important;
 	text-decoration: none;
 }
+#app-navigation .progress-bar{
+	margin-left:14px !important;
+	background-color: none !important;
+	box-shadow: none !important;
+}
 #app-navigation .progress-bar li{
 	list-style:none;
 }
 #app-navigation .progress-bar .bar{
 	background-color:#e20074;
 	display: block;
-	height:3px;
-	border:1px solid rgba(0, 0, 0, 0.3);
+	height:5px;
+	border:1px solid #e20074;
 	border-radius:3px;
 	overflow:hidden;
-	box-shadow: 0 0 10px #2187e7b3;
+	box-shadow: 0 0 10px #e20074ba;
 }
 
 #app-navigation .progress-bar .bar span{
@@ -169,9 +174,9 @@ body{
 }
 
 @keyframes style-html{
-	0%{
+	/* 0%{
 		width: 0%;
-	}
+	} */
 
 	30%{
 		width: 30%;
