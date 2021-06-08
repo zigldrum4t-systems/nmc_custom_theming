@@ -2,8 +2,7 @@
 script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 ?>	
 <div id="app-navigation">
-	<ul class="with-icon">
-
+  <ul class="with-icon">
 		<?php
 		$customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
 		$customNavigationItems['files'] = $_['navigationItems']['files'];
@@ -14,16 +13,16 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 		$customNavigationItems['sharingin'] = $_['navigationItems']['shareoverview']['sublist'][1];
 		$customNavigationItems['sharingin']['name']='Shared with me';
 
-		$customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
-		$pinned = 0;
+		 $customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
+		 $pinned = 0;
 	/*	foreach ($_['navigationItems'] as $item) {
 			$pinned = NavigationListElements($item, $l, $pinned);
 		}*/
 
-		foreach ($customNavigationItems as $item) {
+		 foreach ($customNavigationItems as $item) {
 			$pinned = NavigationListElements($item, $l, $pinned);
-		}		
-		?>
+		 }		
+	?>
 
 		<?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
 			<li id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
@@ -43,14 +42,15 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 				</a>
 			</li>
 		<?php endif; ?>
-	</ul>
+  </ul>
 
-	  
-	<div class="custom-button">
+    <div class="memoryused"></div>
+	<div class="progress-bar">
+	<li><span class="bar"><span class="style-html"></span></span></li>
+	</div>
+    <div class="custom-button">
  	  <button type="button" class="btn btn-default btn-style">Expand Storage</button>
 	</div>
-
-
 	<div id="app-settings">
 		<div id="app-settings-header">
 			<button class="settings-button"

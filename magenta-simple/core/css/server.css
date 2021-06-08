@@ -144,6 +144,43 @@ body{
 	opacity: 1 !important;
 	text-decoration: none;
 }
+#app-navigation .progress-bar li{
+	list-style:none;
+}
+#app-navigation .progress-bar .bar{
+	background-color:#e20074;
+	display: block;
+	height:3px;
+	border:1px solid rgba(0, 0, 0, 0.3);
+	border-radius:3px;
+	overflow:hidden;
+	box-shadow: 0 0 10px #2187e7b3;
+}
+
+#app-navigation .progress-bar .bar span{
+	height:2px;
+	float:left;
+	background: #2187e7;
+}
+
+#app-navigation .progress-bar.style-html{
+	width:90%;
+	animation: style-html 2s;
+}
+
+@keyframes style-html{
+	0%{
+		width: 0%;
+	}
+
+	30%{
+		width: 30%;
+	}
+
+	100%{
+		width:90%;
+	}
+}
 #app-navigation .memorytext {
 	font-weight: bold;
 	font-size: 22px;
