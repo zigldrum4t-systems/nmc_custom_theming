@@ -48,17 +48,17 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         <?php endif; ?>
     </div> -->
 			
-    <div class="Memory-consumed">
+    <div class="Memory-consumed" title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
 		<div class="left-logo"><img src='C:/Magenta cloud/themes/magenta-simple/core/img/CloudPink.png'></div>
-		<div class="logo-right-text"><?php p($l->t('%1$s used,  %2$s used', [$_['usage'], $_['total_space']])); ?>/div>
+		<div class="logo-right-text"><?php p($l->t('%1$s out of  %2$s', [$_['usage'], $_['total_space']])); ?></div>
     </div>
 	
 
-    <div class="NextCloudPorgressBar">
+    <div class="NextCloudPorgressBar" title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
         <div class="progress customprogressbar">
             <div class="progress-bar styledbar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only">60% Complete</span>
+                aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+                <span class="sr-only"><?php p($_['usage_relative']); ?>% Complete</span>
             </div>
         </div>
 
