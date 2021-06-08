@@ -26,16 +26,6 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
   </ul>
 
-<<<<<<< HEAD
-    <div class="memoryused"></div>
-	<div class="progress-bar-custom">
-	<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    <span class="sr-only">60% Complete</span>
-  </div>
-</div>
-	<!-- <li><span class="bar"><span class="style-html"></span></span></li> -->
-=======
     <div class="memoryused">
 		<?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
 				<div id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
@@ -56,9 +46,13 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 				</div>
 			<?php endif; ?>
 	</div>
-	<div class="progress-bar">
-	<li><span class="bar"><span class="style-html"></span></span></li>
->>>>>>> ce4acfe6cda06d8bc8e6cb806edde62a5369c8e9
+
+	  <div class="progress">
+       <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+       <span class="sr-only">60% Complete</span>
+     </div>
+
+	<!-- <li><span class="bar"><span class="style-html"></span></span></li> -->
 	</div>
     <div class="custom-button">
  	  <button type="button" class="btn btn-default btn-style">Expand Storage</button>
