@@ -922,6 +922,9 @@ input[type='checkbox'].checkbox:checked+label:before{
 	border: 1px solid #fff !important;
   }
   
+  #app-navigation:not(.vue)>ul>li.pinned.first-pinned {
+    margin-top: 0px !important;
+}
 
   /*---------------------------RightContent-----------------------------------*/
   #filestable tbody tr {
