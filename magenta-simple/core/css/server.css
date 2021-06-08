@@ -940,6 +940,9 @@ input[type="checkbox"].checkbox:checked + label:before {
 }
 
 /*-------------------MemoryLogo------------------------------*/
+.Memory-consumed{
+	margin:12px;
+}
 .Memory-consumed .left-logo{
 	width:30%;
 	display: inline;
@@ -948,6 +951,11 @@ input[type="checkbox"].checkbox:checked + label:before {
 .Memory-consumed .logo-right-text{
 	width:70%;
 	display: inline;
+	padding-left:30px;
+}
+
+.Memory-consumed .logo-right-text span{
+	font-weight:bold;
 }
 /*---------------------------RightContent-----------------------------------*/
 #filestable tbody tr {

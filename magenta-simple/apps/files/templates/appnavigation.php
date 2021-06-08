@@ -49,8 +49,8 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
     </div> -->
 
     <div class="Memory-consumed">
-    <div class="left-logo"><img src='C:\Magenta cloud\themes\magenta-simple\core\img\CloudPink.png'></div>
-    <div class="logo-right-text">5 MB Used</div>
+    <div class="left-logo"><img src='C:/Magenta cloud/themes/magenta-simple/core/img/CloudPink.png'></div>
+    <div class="logo-right-text"><span>5 MB Used</span>von 25 GB</div>
     </div>
 
 
