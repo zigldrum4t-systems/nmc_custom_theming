@@ -144,6 +144,9 @@ body{
 	opacity: 1 !important;
 	text-decoration: none;
 }
+#app-navigation .progress-bar li{
+	list-style:none;
+}
 #app-navigation .progress-bar .bar{
 	background-color:#e20074;
 	display: block;
