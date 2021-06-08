@@ -47,12 +47,22 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         </div>
         <?php endif; ?>
     </div> -->
-
+			
     <div class="Memory-consumed">
-    <div class="left-logo"><img src='C:/Magenta cloud/themes/magenta-simple/core/img/CloudPink.png'></div>
-    <div class="logo-right-text"><span>5 MB Used</span>, von 25 GB</div>
+		<div class="left-logo"><img src='C:/Magenta cloud/themes/magenta-simple/core/img/CloudPink.png'></div>
+		<div class="logo-right-text"><span>5 MB Used</span>, von 25 GB</div>
     </div>
 
+	<div id="quota" class="has-tooltip pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
+		title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
+		<a href="#" class="icon-quota svg">
+			<p id="quotatext"><?php p($l->t('%1$s of %2$s used', [$_['usage'], $_['total_space']])); ?></p>
+			<div class="quota-container">
+				<progress value="<?php p($_['usage_relative']); ?>" max="100"
+					class="<?= ($_['usage_relative'] > 80) ? 'warn' : '' ?>"></progress>
+			</div>
+		</a>
+	</div>
 
     <div class="NextCloudPorgressBar">
         <div class="progress customprogressbar">
