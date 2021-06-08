@@ -50,7 +50,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 			
     <div class="Memory-consumed pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>" title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
 		<div class="left-logo"><img src="#"></div>
-		<div class="logo-right-text"><?php p($l->t('<strong>%1$s</strong> out of  %2$s', [$_['usage'], $_['total_space']])); ?></div>
+		<div class="logo-right-text"><strong><?php p($l->t('%1$s out of  %2$s')); ?></strong> <?php p($l->t([$_['usage'], $_['total_space']])); ?></div>
     </div>
 	
 
