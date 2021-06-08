@@ -1,6 +1,5 @@
 <?php
-	script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
-	use OCA\ContactsInteraction\AppInfo\Application;
+script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 ?>
 <div id="app-navigation">
     <ul class="with-icon">
@@ -50,7 +49,7 @@
     </div> -->
 			
     <div class="Memory-consumed pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>" title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
-		<div class="left-logo"><img src="<?php print_unescaped(image_path(Application::APP_ID, 'CloudPink.png')); ?>"></div>
+		<div class="left-logo"><img src="#"></div>
 		<div class="logo-right-text"><?php p($l->t('%1$s out of  %2$s', [$_['usage'], $_['total_space']])); ?></div>
     </div>
 	
