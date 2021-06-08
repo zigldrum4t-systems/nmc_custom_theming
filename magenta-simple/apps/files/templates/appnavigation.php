@@ -30,7 +30,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         <?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
         <div id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
             <a href="#" class="icon-image">
-                <img src='<?php print_unescaped(image_path($_['appid'], 'CloudPink.png')); ?>'>
+                <img src='#'>
 			   <p id="quotatext"><?php p($l->t('%1$s of %2$s used', [$_['usage'], $_['total_space']])); ?></p>
 			   <div class="quota-container">
                     <progress value="<?php p($_['usage_relative']); ?>" max="100"
@@ -42,7 +42,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         <div id="quota" class="has-tooltip pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
             title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
             <a href="#" class="icon-quota svg">
-				<img src='<?php print_unescaped(image_path($_['appid'], 'CloudPink.png')); ?>'>
+				<img src='#'>
                 <p id="quotatext"><?php p($l->t('%1$s of %2$s used', [$_['usage'], $_['total_space']])); ?></p>
                 <div class="quota-container">
                     <progress value="<?php p($_['usage_relative']); ?>" max="100"
