@@ -49,7 +49,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
     </div> -->
 			
     <div class="Memory-consumed pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>" title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
-		<div class="left-logo"><img src='C:/Magenta cloud/themes/magenta-simple/core/img/CloudPink.png'></div>
+		<div class="left-logo"><img src="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>"></div>
 		<div class="logo-right-text"><?php p($l->t('%1$s out of  %2$s', [$_['usage'], $_['total_space']])); ?></div>
     </div>
 	
