@@ -24,26 +24,9 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 		 }		
 	?>
 
-		<?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
-			<li id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
-				<a href="#" class="icon-image">
-					<img src='C:/Magenta cloud/themes/custom-theme/core/img/favicon.png'>
-					<p class="memorytext"><?php p($l->t('%s used', [$_['usage']])); ?></p>
-				</a>
-			</li>
-		<?php else: ?>
-			<li id="quota" class="has-tooltip pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
-				title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
-				<a href="#" class="icon-quota svg">
-					<p id="quotatext"><?php p($l->t('%1$s of %2$s used', [$_['usage'], $_['total_space']])); ?></p>
-					<div class="quota-container">
-						<progress value="<?php p($_['usage_relative']); ?>" max="100" class="<?= ($_['usage_relative'] > 80) ? 'warn' : '' ?>"></progress>
-					</div>
-				</a>
-			</li>
-		<?php endif; ?>
   </ul>
 
+<<<<<<< HEAD
     <div class="memoryused"></div>
 	<div class="progress-bar-custom">
 	<div class="progress">
@@ -52,6 +35,30 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
   </div>
 </div>
 	<!-- <li><span class="bar"><span class="style-html"></span></span></li> -->
+=======
+    <div class="memoryused">
+		<?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
+				<div id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
+					<a href="#" class="icon-image">
+						<img src='C:/Magenta cloud/themes/custom-theme/core/img/favicon.png'>
+						<p class="memorytext"><?php p($l->t('%s used', [$_['usage']])); ?></p>
+					</a>
+				</div>
+			<?php else: ?>
+				<div id="quota" class="has-tooltip pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
+					title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
+					<a href="#" class="icon-quota svg">
+						<p id="quotatext"><?php p($l->t('%1$s of %2$s used', [$_['usage'], $_['total_space']])); ?></p>
+						<div class="quota-container">
+							<progress value="<?php p($_['usage_relative']); ?>" max="100" class="<?= ($_['usage_relative'] > 80) ? 'warn' : '' ?>"></progress>
+						</div>
+					</a>
+				</div>
+			<?php endif; ?>
+	</div>
+	<div class="progress-bar">
+	<li><span class="bar"><span class="style-html"></span></span></li>
+>>>>>>> ce4acfe6cda06d8bc8e6cb806edde62a5369c8e9
 	</div>
     <div class="custom-button">
  	  <button type="button" class="btn btn-default btn-style">Expand Storage</button>
