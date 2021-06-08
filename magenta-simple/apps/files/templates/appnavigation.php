@@ -7,17 +7,12 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 		<?php
 		$customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
 		$customNavigationItems['files'] = $_['navigationItems']['files'];
-		$customNavigationItems['myshares'] = $_['navigationItems']['files'];
 
-		$customNavigationItems['myshares'] = array(
-			'id' => 'myshares','appname' => 'files','script' => '','order'=>'',
-			'name'=>'My shares', 'active'=>'','icon'=>'','classes'=>'','type'=>'link'
-		);
+		$customNavigationItems['sharingout'] = $_['navigationItems']['shareoverview']['sublist'][0];
+		$customNavigationItems['sharingout']['name']='My shares';
 
-		$customNavigationItems['sharedwithme'] = array(
-			'id' => 'sharedwithme','appname' => 'files','script' => '','order'=>'',
-			'name'=>'Shared with me', 'active'=>'','icon'=>'','classes'=>'','type'=>'link'
-		);	
+		$customNavigationItems['sharingin'] = $_['navigationItems']['shareoverview']['sublist'][1];
+		$customNavigationItems['sharingin']['name']='Shared with me';
 
 		$customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
 		$pinned = 0;
