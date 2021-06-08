@@ -94,8 +94,8 @@ body{
 	z-index: 10 !important;
 	left: unset !important;
 	position: fixed !important;
-	top:162px !important;
-	height:500px !important;
+	top:170px !important;
+	height:480px !important;
 	/* top: 162px !important; */
 }
 
@@ -137,7 +137,9 @@ body{
 	background-color: #f2f2f2 !important;
 }
 
-#app-navigation > ul > li > a:active {
+#app-navigation > ul > li > a:active,
+#app-navigation > ul > li > a::selection
+ {
 	color: var(--scl-color-magenta) !important;
 	opacity: 1 !important;
 	text-decoration: none;
