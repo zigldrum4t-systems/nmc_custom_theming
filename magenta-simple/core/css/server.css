@@ -950,7 +950,8 @@ input[type="checkbox"].checkbox:checked + label:before {
 
 /*-------------------Memory Occupied Message Left Nav------------------------------*/
 .memory-ocup-message{
-	padding-left: 10px;;
+	padding-left: 12px;;
+	font-size: 14px;
 }
 
 /*-------------------MemoryLogo------------------------------*/
@@ -961,12 +962,13 @@ input[type="checkbox"].checkbox:checked + label:before {
 .Memory-consumed .left-logo{
 	width:30%;
 	display: inline;
+	font-size: 20px;
 }
 
 .Memory-consumed .logo-right-text{
 	width:70%;
 	display: inline;
-	padding-left:10px;
+	padding-left:40px;
 }
 
 .Memory-consumed .logo-right-text span{
