@@ -943,6 +943,14 @@ input[type="checkbox"].checkbox:checked + label:before {
 	margin-top: 0px !important;
 }
 
+.outofspace{
+ 	font-weight: 600;
+}
+
+.memory-ocup-message{
+	padding-left: 10px;;
+}
+
 /*-------------------MemoryLogo------------------------------*/
 .Memory-consumed{
 	margin-left:14px;
