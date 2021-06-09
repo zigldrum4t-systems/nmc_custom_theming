@@ -962,13 +962,13 @@ input[type="checkbox"].checkbox:checked + label:before {
 .Memory-consumed .left-logo{
 	width:30%;
 	display: inline;
-	font-size: 20px;
 }
 
 .Memory-consumed .logo-right-text{
 	width:70%;
 	display: inline;
 	padding-left:40px;
+	font-size: 20px;
 }
 
 .Memory-consumed .logo-right-text span{
