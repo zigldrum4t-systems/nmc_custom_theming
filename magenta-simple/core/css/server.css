@@ -945,6 +945,7 @@ input[type="checkbox"].checkbox:checked + label:before {
 
 .outofspace{
  	font-weight: 600;
+	padding-right: 4px;
 }
 
 .memory-ocup-message{
