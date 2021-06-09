@@ -54,7 +54,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
             <span class="outofssace">
               <?php p($l->t('%1$s', [$_['usage']])); ?>
             </sapn>
-            <?php p($l->t('out of  %1$s', $_['total_space']])); ?>
+            <?php p($l->t('out of  %1$s', [$_['total_space']])); ?>
         </div>
     </div>
 	
