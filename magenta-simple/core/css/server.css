@@ -942,12 +942,13 @@ input[type="checkbox"].checkbox:checked + label:before {
 #app-navigation:not(.vue) > ul > li.pinned.first-pinned {
 	margin-top: 0px !important;
 }
-
+/*-------------------MemoryUsed Left Nav------------------------------*/
 .outofspace{
  	font-weight: 600;
 	padding-right: 4px;
 }
 
+/*-------------------Memory Occupied Message Left Nav------------------------------*/
 .memory-ocup-message{
 	padding-left: 10px;;
 }
@@ -965,7 +966,7 @@ input[type="checkbox"].checkbox:checked + label:before {
 .Memory-consumed .logo-right-text{
 	width:70%;
 	display: inline;
-	padding-left:30px;
+	padding-left:10px;
 }
 
 .Memory-consumed .logo-right-text span{
