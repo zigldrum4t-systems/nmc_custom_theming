@@ -943,10 +943,15 @@ input[type="checkbox"].checkbox:checked + label:before {
 	margin-top: 0px !important;
 }
 /*-------------------MemoryUsed Left Nav------------------------------*/
-.outofspace{
+.avlspace{
  	font-weight: 600;
+}
+.outoftext{
+	padding-left: 4px;
 	padding-right: 4px;
-	font-size: 20px
+}
+.totalspace{
+	font-weight: 600;
 }
 
 /*-------------------Memory Occupied Message Left Nav------------------------------*/
