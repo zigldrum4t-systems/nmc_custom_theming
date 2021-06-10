@@ -937,7 +937,7 @@ input[type="checkbox"].checkbox + label:before:hover {
 	border: 1px solid #e20074 !important;
 }
 
-input[type="checkbox"].checkbox:checked + label:before {
+#app-settings-content > input[type="checkbox"].checkbox:checked + label:before {
 	background-color: #e20074 !important;
 	border: 1px solid #e20074 !important;
 }
@@ -1047,4 +1047,9 @@ table th .columntitle.name {
 	width: 100%;
 	display: block;
 	overflow: auto;
+}
+
+input[type="checkbox"].checkbox:checked + label:before {
+	background-color: #248B31 !important;
+	border: 1px solid #248B31 !important;
 }
