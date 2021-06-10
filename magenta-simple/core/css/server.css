@@ -1007,6 +1007,8 @@ table td.filename .thumbnail {
 	width: 44px !important;
 	height: 44px !important;
 	margin-top: 4px;
+	background-size: 42px;
+    border: none;
 }
 
 #filestable tbody tr:hover {
