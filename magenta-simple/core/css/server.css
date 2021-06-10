@@ -206,7 +206,7 @@ body {
 }
 
 #app-navigation button{
-height:0px;
+min-height:unset;
 }
 
 #app-navigation .custom-button .btn-style {
