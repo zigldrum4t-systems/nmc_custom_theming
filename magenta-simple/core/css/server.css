@@ -153,6 +153,7 @@ body {
  }
 .NextCloudPorgressBar .customprogressbar {
 	margin-left: 12px;
+	margin-right:4px;
 	height: 7px;
 	border-radius: 4px;
 	margin-bottom: 10px;
@@ -202,6 +203,10 @@ body {
 #app-navigation .memorytext {
 	font-weight: bold;
 	font-size: 22px;
+}
+
+#app-navigation button{
+height:0px;
 }
 
 #app-navigation .custom-button .btn-style {
@@ -976,8 +981,7 @@ input[type="checkbox"].checkbox:checked + label:before {
 .Memory-consumed .logo-right-text{
 	width:70%;
 	display: inline;
-	padding-left:40px;
-	font-size: 20px;
+	padding-left:18px;
 }
 
 /*
