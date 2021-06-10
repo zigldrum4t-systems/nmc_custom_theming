@@ -108,6 +108,8 @@ body {
 #app-navigation > ul > li a.active,
 #app-navigation > ul > li a.active > a {
 	background-color: #f2f2f2 !important;
+	color:#e20074;
+	text-decoration: none;
 }
 
 /* #app-navigation .with-icon ul li.active,
