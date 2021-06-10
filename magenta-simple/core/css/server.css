@@ -927,11 +927,6 @@ min-height:unset;
 	}
 }
 
-input[type="checkbox"].checkbox:checked + label:before {
-	background-color: #248B31 !important;
-	border: 1px solid #248B31 !important;
-}
-
 /*---------------------------LeftNav-----------------------------------*/
 input[type="checkbox"].checkbox + label:before {
 	border-radius: 3px !important;
@@ -1054,3 +1049,7 @@ table th .columntitle.name {
 	overflow: auto;
 }
 
+.viewcontainer > input[type="checkbox"].checkbox:checked + label:before {
+	background-color: #248B31 !important;
+	border: 1px solid #248B31 !important;
+}
