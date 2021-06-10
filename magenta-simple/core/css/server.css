@@ -937,10 +937,10 @@ input[type="checkbox"].checkbox + label:before:hover {
 	border: 1px solid #e20074 !important;
 }
 
-input[type="checkbox"].checkbox:checked + label:before {
+/*input[type="checkbox"].checkbox:checked + label:before {
 	background-color: #e20074 !important;
 	border: 1px solid #e20074 !important;
-}
+}*/
 .round input[type="checkbox"]:checked + label:after {
 	background-color: #e20074 !important;
 	border: 1px solid #fff !important;
@@ -1049,7 +1049,7 @@ table th .columntitle.name {
 	overflow: auto;
 }
 
-.input[type="checkbox"].checkbox:checked + label:before {
+input[type="checkbox"].checkbox:checked + label:before {
 	background-color: #248B31 !important;
 	border: 1px solid #248B31 !important;
 }
