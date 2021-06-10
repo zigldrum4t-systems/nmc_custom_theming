@@ -153,7 +153,7 @@ body {
  }
 .NextCloudPorgressBar .customprogressbar {
 	margin-left: 12px;
-	margin-right:4px;
+	margin-right:8px;
 	height: 7px;
 	border-radius: 4px;
 	margin-bottom: 10px;
@@ -971,7 +971,7 @@ input[type="checkbox"].checkbox:checked + label:before {
 /*-------------------MemoryLogo------------------------------*/
 .Memory-consumed{
 	margin-left:14px;
-	margin-bottom:12px;
+	margin-bottom:8px;
 }
 .Memory-consumed .left-logo{
 	width:30%;
