@@ -95,7 +95,7 @@ body {
 	left: unset !important;
 	position: fixed !important;
 	top: 170px !important;
-	height: 480px !important;
+	height: 485px !important;
 	/* top: 162px !important; */
 }
 
@@ -153,7 +153,7 @@ body {
  }
 .NextCloudPorgressBar .customprogressbar {
 	margin-left: 12px;
-	margin-right:4px;
+	margin-right:8px;
 	height: 7px;
 	border-radius: 4px;
 	margin-bottom: 10px;
@@ -960,6 +960,7 @@ input[type="checkbox"].checkbox:checked + label:before {
 .totalspace{
 	font-weight: 600;
 	font-size: inherit;
+	padding-left:3px;
 }
 
 /*-------------------Memory Occupied Message Left Nav------------------------------*/
@@ -971,7 +972,7 @@ input[type="checkbox"].checkbox:checked + label:before {
 /*-------------------MemoryLogo------------------------------*/
 .Memory-consumed{
 	margin-left:14px;
-	margin-bottom:12px;
+	margin-bottom:8px;
 }
 .Memory-consumed .left-logo{
 	width:30%;
@@ -981,7 +982,7 @@ input[type="checkbox"].checkbox:checked + label:before {
 .Memory-consumed .logo-right-text{
 	width:70%;
 	display: inline;
-	padding-left:18px;
+	padding-left:8px;
 }
 
 /*
