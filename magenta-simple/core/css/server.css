@@ -270,6 +270,7 @@ min-height:unset;
 
 #controls {
 	/* top: 120px !important; */
+	display: none;
 }
 
 #controls > div.breadcrumb {
