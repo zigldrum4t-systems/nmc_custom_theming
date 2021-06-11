@@ -1043,7 +1043,7 @@ table th .columntitle.name {
 }
 
 #filestable tbody {
-	height: 300px;
+	height: 400px;
 	display: table;
 	width: 100%;
 	display: block;
