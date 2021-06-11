@@ -339,6 +339,7 @@ min-height:unset;
 	border: 1px solid var(--color-border-dark) !important;
 	border-radius: 50px !important;
 	padding: 15px !important;
+	display: none;
 }
 
 #controls > div.actions.creatable > a > span.hidden-visually {
@@ -349,7 +350,13 @@ min-height:unset;
 	color: var(--color-main-text);
 	text-decoration: none;
 	padding-top: 4px !important;
+	display: none;
 }
+
+#controls .breadcrumb{
+	display:none;
+}
+
 
 #controls > div.actions.creatable > a:hover {
 	color: var(--scl-color-magenta);
@@ -1054,3 +1061,5 @@ input[type="checkbox"].checkbox:checked + label:before {
 	background-color: #248B31 !important;
 	border: 1px solid #248B31 !important;
 }
+
+
