@@ -44,8 +44,8 @@
 			<th id='headerName' class="hidden column-name">
 				<div id="headerName-container">
 					<a class="name sort columntitle" data-sort="name">
-                        <span class="sort-indicator"></span>
-						<span><?php p($l->t('Name')); ?></span>
+						<span class="sort-indicator"></span>
+                        <span><?php p($l->t('Name')); ?></span>
                     </a>
                     <span id="selectedActionsList" class="selectedActions">
                         <a href="" class="actions-selected">
@@ -56,10 +56,16 @@
 				</div>
 			</th>
 			<th id="headerSize" class="hidden column-size">
-				<a class="size sort columntitle" data-sort="size"><span><span class="sort-indicator"></span><?php p($l->t('Size')); ?></span></a>
+				<a class="size sort columntitle" data-sort="size">
+					<span class="sort-indicator"></span>
+					<span><?php p($l->t('Size')); ?></span>
+				</a>
 			</th>
 			<th id="headerDate" class="hidden column-mtime">
-				<a id="modified" class="columntitle" data-sort="mtime"><span><span class="sort-indicator"></span><?php p($l->t('Modified')); ?></span></a>
+				<a id="modified" class="columntitle" data-sort="mtime">
+					<span class="sort-indicator"></span>
+					<span><?php p($l->t('Modified')); ?></span>
+				</a>
 			</th>
 		</tr>
 	</thead>
