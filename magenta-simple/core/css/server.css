@@ -1084,10 +1084,14 @@ table th .sort-indicator {
 	display: none;
 }
 
-.icon-triangle-n {
+#filestable .icon-triangle-n {
     background-image: var(--icon-triangle-n-000);
 }
 
-.icon-triangle-s {
+#filestable .icon-triangle-s {
     background-image: var(--icon-triangle-s-000);
+}
+
+.zero-font{
+	font-size: 0;
 }
