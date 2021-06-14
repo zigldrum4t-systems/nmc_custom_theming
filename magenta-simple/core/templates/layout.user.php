@@ -211,9 +211,9 @@
 
             </div>
         </header>
-    </div>
-    <div class="breadcrumb-bar">
-        <div class="container-fixed">
+         
+        <div class="breadcrumb-bar">
+         <div class="container-fixed">
             <div class="col-xs-3 left-part"></div>
             <div class="col-xs-9 right-part">
                 <ul class="breadcrumb-style">
@@ -227,38 +227,28 @@
                     <li><a href="#">Scans</a></li>
                 </ul>
             </div>
+         </div>
         </div>
 
 
-
-
-
-
-    </div>
-
-
-
-
-
-
-    <div id="sudo-login-background" class="hidden"></div>
-    <form id="sudo-login-form" class="hidden" method="POST">
-        <label>
+       <div id="sudo-login-background" class="hidden"></div>
+       <form id="sudo-login-form" class="hidden" method="POST">
+         <label>
             <?php p($l->t('This action requires you to confirm your password')); ?><br />
             <input type="password" class="question" autocomplete="new-password" name="question"
                 value=" <?php /* Hack against browsers ignoring autocomplete="off" */ ?>"
                 placeholder="<?php p($l->t('Confirm your password')); ?>" />
-        </label>
+         </label>
         <input class="confirm" value="<?php p($l->t('Confirm')); ?>" type="submit">
-    </form>
+       </form>
 
-    <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
+       <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
         <div class="container-fixed">
             <?php print_unescaped($_['content']); ?>
         </div>
-    </div>
+       </div>
 
-    <footer class="brand-footer">
+       <footer class="brand-footer">
         <div class="container-fixed">
             <div class="row brand-footer-bar">
                 <div class="col-l-4 col-s-12 text-muted">
@@ -276,7 +266,9 @@
                 </div>
             </div>
         </div>
-    </footer>
+       </footer>
+    </div>
+    
 </body>
 
 </html>
