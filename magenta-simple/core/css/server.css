@@ -102,7 +102,9 @@ body {
 #app-navigation > ul{
 	padding-top:64px;
 }
-
+#app-navigation > ul > li{
+	height:48px;
+}
 #app-navigation > ul > li.active,
 #app-navigation > ul > li.active > a,
 #app-navigation > ul > li a:active,
