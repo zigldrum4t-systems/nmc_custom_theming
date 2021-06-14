@@ -44,6 +44,7 @@
 			<th id='headerName' class="hidden column-name">
 				<div id="headerName-container">
 					<a class="name sort columntitle" data-sort="name">
+						<span class="span-visibility"></span>
 						<span class="sort-indicator"></span>
                         <span><?php p($l->t('Name')); ?></span>
                     </a>
@@ -57,12 +58,14 @@
 			</th>
 			<th id="headerSize" class="hidden column-size">
 				<a class="size sort columntitle" data-sort="size">
+					<span class="span-visibility"></span>
 					<span class="sort-indicator"></span>
 					<span><?php p($l->t('Size')); ?></span>
 				</a>
 			</th>
 			<th id="headerDate" class="hidden column-mtime">
 				<a id="modified" class="columntitle" data-sort="mtime">
+					<span class="span-visibility"></span>	
 					<span class="sort-indicator"></span>
 					<span><?php p($l->t('Modified')); ?></span>
 				</a>

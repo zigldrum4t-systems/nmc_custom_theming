@@ -1076,3 +1076,7 @@ table th .sort-indicator {
     vertical-align: text-bottom;
     opacity: 0.3;
 }
+
+.span-visibility{
+	display: none;
+}
