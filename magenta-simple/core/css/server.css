@@ -1095,11 +1095,11 @@ table th .sort-indicator {
 }
 
 #filestable .icon-triangle-n {
-    background-image: var(--icon-triangle-n-000);
+    background-image: var(--icon-triangle-n-e20074);
 }
 
 #filestable .icon-triangle-s {
-    background-image: var(--icon-triangle-s-000);
+    background-image: var(--icon-triangle-s-e20074);
 }
 
 .zero-font{
