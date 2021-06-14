@@ -93,9 +93,9 @@ body {
 	/* top: 122px !important; */
 	z-index: 10 !important;
 	left: unset !important;
-	position: fixed !important;
-	top: 172px !important;
-    height: 483px !important;
+	position: absolute !important;
+	top: 102px !important;
+    height: 554px !important;
 	/* top: 162px !important; */
 }
 
