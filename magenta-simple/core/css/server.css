@@ -1071,7 +1071,7 @@ input[type="checkbox"].checkbox:checked + label:before {
 table th .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-right: 4px;
+    margin-right: -60px; 
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
@@ -1079,4 +1079,12 @@ table th .sort-indicator {
 
 .span-visibility{
 	display: none;
+}
+
+.icon-triangle-n {
+    background-image: var(--icon-triangle-n-000);
+}
+
+.icon-triangle-s {
+    background-image: var(--icon-triangle-s-000);
 }
