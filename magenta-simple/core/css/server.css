@@ -93,9 +93,9 @@ body {
 	/* top: 122px !important; */
 	z-index: 10 !important;
 	left: unset !important;
-	position: fixed !important;
-	top: 103px !important;
-	height: 560px !important;
+	position: absolute !important;
+	/* top: -13px !important; */
+    height: 473px !important;
 	/* top: 162px !important; */
 }
 
@@ -592,9 +592,7 @@ min-height:unset;
 	width: 73px;
 }
 
-#app-settings-header button{
-	margin-bottom:10px !important;
-}
+
 .brandbar > .container-fixed > .header-brandbar > p.header-brandbar-claim {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
@@ -987,6 +985,7 @@ input[type="checkbox"].checkbox + label:before:hover {
 .Memory-consumed{
 	margin-left:14px;
 	margin-bottom:8px;
+	margin-top:0px !important;
 }
 .Memory-consumed .left-logo{
 	width:30%;
