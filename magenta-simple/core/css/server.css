@@ -95,8 +95,12 @@ body {
 	left: unset !important;
 	position: absolute !important;
 	top: -13px !important;
-    height: 473px !important;
+    height: 698px !important;
 	/* top: 162px !important; */
+}
+
+#app-navigation > ul{
+	padding-top:64px;
 }
 
 #app-navigation > ul > li.active,
@@ -935,6 +939,13 @@ min-height:unset;
 		display: none;
 	}
 }
+
+
+@media only screen and (max-height: 926px) {
+	#app-navigation {
+	  height:auto;
+	}
+  }
 
 /*---------------------------LeftNav-----------------------------------*/
 input[type="checkbox"].checkbox + label:before {
