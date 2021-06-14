@@ -94,8 +94,8 @@ body {
 	z-index: 10 !important;
 	left: unset !important;
 	position: fixed !important;
-	top: 170px !important;
-	height: 485px !important;
+	top: 103px !important;
+	height: 560px !important;
 	/* top: 162px !important; */
 }
 
@@ -592,6 +592,9 @@ min-height:unset;
 	width: 73px;
 }
 
+#app-settings-header button{
+	margin-bottom:10px !important;
+}
 .brandbar > .container-fixed > .header-brandbar > p.header-brandbar-claim {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
