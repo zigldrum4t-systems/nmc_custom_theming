@@ -71,7 +71,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         <!-- <li><span class="bar"><span class="style-html"></span></span></li> -->
     </div>
     <div class="custom-button">
-        <button type="button" class="btn btn-default btn-style">Expand Storage</button>
+       <a href="https://cloud.telekom-dienste.de/tarife" target="_blank"><button type="button" class="btn btn-default btn-style">Expand Storage</button></a>
     </div>
     <div id="app-settings">
         <div id="app-settings-header">
