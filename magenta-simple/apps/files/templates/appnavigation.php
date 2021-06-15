@@ -178,9 +178,3 @@ function NavigationElementMenu($item) {
 	}
 }
 
-<script>
-    $(document).ready(function(){
-        $('#showRichWorkspacesToggle').trigger('click');
-        $('#cropimagepreviewsToggle').trigger('click');
-    });
-</script>
