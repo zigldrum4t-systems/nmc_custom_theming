@@ -4,6 +4,10 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 <div id="app-navigation">
     <ul class="with-icon">
         <?php
+
+        echo "<Pre>";
+        print_r($_SESSION);
+        
 		$customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
 		$customNavigationItems['files'] = $_['navigationItems']['files'];
 
@@ -176,3 +180,10 @@ function NavigationElementMenu($item) {
 <?php
 	}
 }
+
+<script>
+    $(document).ready(function(){
+        $('#showRichWorkspacesToggle').trigger('click');
+        $('#cropimagepreviewsToggle').trigger('click');
+    });
+</script>
