@@ -6,8 +6,8 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         <?php
 
         echo "<Pre>";
-        print_r($_SESSION);
-        
+        p($_SESSION);
+
 		$customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
 		$customNavigationItems['files'] = $_['navigationItems']['files'];
 
