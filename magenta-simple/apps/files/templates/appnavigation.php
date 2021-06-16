@@ -88,7 +88,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
             </div>
             <div id="files-setting-cropimagepreviews">
                 <input class="checkbox" id="cropimagepreviewsToggle" checked="checked" type="checkbox">
-                <label for="cropimagepreviewsToggle"><?php p($l->t('Crop image previews')); ?></label>
+                <label for="cropimagepreviewsToggle"><?php p($l->t('Full screen for image preview')); ?></label>
             </div>
             <!-- <label for="webdavurl"><?php p($l->t('WebDAV')); ?></label>
 			<input id="webdavurl" type="text" readonly="readonly"
