@@ -1136,17 +1136,25 @@ table th .sort-indicator {
 #headerName .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -64px;
+    margin-left: -59px;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
 }
 
+#headerSize .sort-indicator {
+    width: 10px;
+    height: 8px;
+    margin-right: 0px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    opacity: 0.3;
+}
 
 #headerDate .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -80px;
+    margin-left: -78px;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
@@ -1155,7 +1163,7 @@ table th .sort-indicator {
 #app-content-sharingout #headerDate .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -89px;
+    margin-left: -87px;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
