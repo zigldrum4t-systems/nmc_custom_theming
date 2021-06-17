@@ -63,7 +63,7 @@
 			</th>
 			<th id="headerDate" class="hidden column-mtime">
 				<a id="modified" class="columntitle" data-sort="mtime">	
-					<span class="sort-indicator zero-font"></span>
+					<span class="sort-indicator"></span>
 					<span><?php p($l->t('Modified')); ?></span>
 				</a>
 			</th>
