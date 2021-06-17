@@ -1146,7 +1146,7 @@ table th .sort-indicator {
 #headerDate .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -80px;
+    margin-left: -79px;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
