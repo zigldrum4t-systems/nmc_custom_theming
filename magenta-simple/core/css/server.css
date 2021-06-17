@@ -1126,9 +1126,28 @@ table th .sort-indicator {
 }
 
 #filestable .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
-}
+		background-image: var(--icon-triangle-s-e20074);
+	}
 
 .zero-font{
 	font-size: 0;
+}
+
+#headerName .sort-indicator {
+    width: 10px;
+    height: 8px;
+    margin-left: -64px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    opacity: 0.3;
+}
+
+
+#headerDate .sort-indicator {
+    width: 10px;
+    height: 8px;
+    margin-left: -78px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    opacity: 0.3;
 }

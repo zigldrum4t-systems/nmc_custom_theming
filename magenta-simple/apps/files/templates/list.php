@@ -44,8 +44,8 @@
 			<th id='headerName' class="hidden column-name">
 				<div id="headerName-container">
 					<a class="name sort columntitle" data-sort="name">
-						<span class="sort-indicator zero-font"></span>
 						<span><?php p($l->t('Name')); ?></span>
+						<span class="sort-indicator"></span>
                     </a>
                     <span id="selectedActionsList" class="selectedActions">
                         <a href="" class="actions-selected">
