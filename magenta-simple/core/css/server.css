@@ -103,7 +103,8 @@ body {
 	padding-top:64px;
 }
 #app-navigation > ul > li{
-	height:48px;
+	line-height: 44px;
+    min-height: 44px;
 }
 #app-navigation > ul > li.active,
 #app-navigation > ul > li.active > a,
@@ -116,6 +117,7 @@ body {
 	background-color: #f2f2f2 !important;
 	color:#e20074;
 	text-decoration: none;
+	height:48px;
 }
 
 /* #app-navigation .with-icon ul li.active,
@@ -943,9 +945,9 @@ min-height:unset;
 }
 
 
-@media only screen and (max-height: 926px) {
+@media screen and (min-height: 375px) and (max-height: 600px) {
 	#app-navigation {
-	  height:auto;
+	  height: 400px;
 	}
   }
 
@@ -1010,6 +1012,12 @@ input[type="checkbox"].checkbox + label:before:hover {
 	display: inline;
 	padding-left:8px;
 }
+
+
+#app-settings-header .settings-button:hover{
+	color:#e20074 !important;
+}
+
 
 /*
 .Memory-consumed .logo-right-text span{
