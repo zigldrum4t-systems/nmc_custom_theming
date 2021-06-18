@@ -962,12 +962,20 @@ min-height:unset;
 	  height: 485px !important;
 	}
   }
-  @media screen and (min-height:701px) and (max-height: 800px) {
+  @media screen and (min-height:701px) and (max-height: 742px) {
 	#app-navigation > ul {
 		padding-top: 0px !important;
 	}
 	#app-navigation {
-	  height: 485px !important;
+	  height: 533px !important;
+	}
+  }
+  @media screen and (min-height:742px) and (max-height: 800px) {
+	#app-navigation > ul {
+		padding-top: 0px !important;
+	}
+	#app-navigation {
+	  height: 533px !important;
 	}
   }
 
