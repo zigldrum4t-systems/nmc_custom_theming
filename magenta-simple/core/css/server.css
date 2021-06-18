@@ -945,12 +945,21 @@ min-height:unset;
 }
 
 
-@media screen and (min-height:618px) and (max-height: 850px) {
+@media screen and (min-height:640px) and (max-height: 690px) {
 	#app-navigation > ul {
 		padding-top: 0px !important;
 	}
 	#app-navigation {
-	  height: 630px !important;
+	  height: 469px !important;
+	}
+  }
+
+  @media screen and (min-height:691px) and (max-height: 700px) {
+	#app-navigation > ul {
+		padding-top: 0px !important;
+	}
+	#app-navigation {
+	  height: 524px !important;
 	}
   }
 
