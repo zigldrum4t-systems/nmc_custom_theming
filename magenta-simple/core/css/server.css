@@ -959,7 +959,15 @@ min-height:unset;
 		padding-top: 0px !important;
 	}
 	#app-navigation {
-	  height: 469px !important;
+	  height: 485px !important;
+	}
+  }
+  @media screen and (min-height:701px) and (max-height: 800px) {
+	#app-navigation > ul {
+		padding-top: 0px !important;
+	}
+	#app-navigation {
+	  height: 485px !important;
 	}
   }
 
