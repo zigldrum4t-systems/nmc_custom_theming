@@ -254,7 +254,7 @@
 	background-image: var(--icon-user-000);
 }
 
- #app-navigation > ul > li > ul > li > a.nav-icon-sharingout:hover {
+ #app-navigation > ul > li  > a.nav-icon-sharingout:hover {
 	 background-image: var(--icon-user-e20074);
  }
  
@@ -263,7 +263,7 @@
 }
 
 
-#app-navigation > ul > li > ul > li > a.nav-icon-sharingin:hover {
+#app-navigation > ul > li > a.nav-icon-sharingin:hover {
 	background-image: var(--icon-attachment-e20074);
 }
 
