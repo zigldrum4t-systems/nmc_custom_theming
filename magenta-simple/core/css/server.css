@@ -241,15 +241,27 @@
  }
  
  
+ #app-navigation > ul > li > .nav-icon-favorites.svg.active {
+	background-image: var(--icon-star-dark-e20074);
+}
+
+
  #app-navigation > ul > li > a.nav-icon-favorites:hover {
 	 background-image: var(--icon-star-dark-e20074);
  }
+
+ #app-navigation > ul > li > .nav-icon-files.svg.active {
+	background-image: var(--icon-files-folder-e20074);
+}
  
  #app-navigation > ul > li > a.nav-icon-files:hover {
 	background-image: var(--icon-files-folder-e20074);
 }
 
-
+#app-navigation > ul > li > .nav-icon-sharingout.svg.active {
+	background-image: var(--icon-user-e20074);
+}
+ 
 #app-navigation .nav-icon-sharingout {
 	background-image: var(--icon-user-000);
 }
@@ -258,10 +270,13 @@
 	 background-image: var(--icon-user-e20074);
  }
  
+ #app-navigation > ul > li > .nav-icon-sharingin.svg.active {
+	background-image: var(--icon-attachment-e20074);
+}
+
  #app-navigation .nav-icon-sharingin{
     background-image: var(--icon-attachment-000);
 }
-
 
 #app-navigation > ul > li > a.nav-icon-sharingin:hover {
 	background-image: var(--icon-attachment-e20074);
