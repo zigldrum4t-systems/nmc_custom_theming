@@ -249,14 +249,24 @@
 	background-image: var(--icon-files-folder-e20074);
 }
 
+
+#app-navigation .nav-icon-sharingout {
+	background-image: var(--icon-user-000);
+}
+
  #app-navigation > ul > li > ul > li > a.nav-icon-sharingout:hover {
-	 background-image: var(--icon-files-share-e20074);
+	 background-image: var(--icon-user-e20074);
  }
  
- #app-navigation > ul > li > ul > li > a.nav-icon-sharingin:hover {
-	 background-image: var(--icon-files-share-e20074);
- }
- 
+ #app-navigation .nav-icon-sharingin{
+    background-image: var(--icon-attachment-000);
+}
+
+
+#app-navigation > ul > li > ul > li > a.nav-icon-sharingin:hover {
+	background-image: var(--icon-attachment-e20074);
+}
+
  #app-navigation > ul > li > ul > li > a.nav-icon-sharinglinks:hover {
 	 background-image: var(--icon-files-public-e20074);
  }
