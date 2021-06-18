@@ -945,9 +945,9 @@ min-height:unset;
 }
 
 
-@media screen and (min-height: 375px) and (max-height: 600px) {
+@media screen and(max-height: 815px) {
 	#app-navigation {
-	  height: 400px;
+	  height: 679px !important;
 	}
   }
 
