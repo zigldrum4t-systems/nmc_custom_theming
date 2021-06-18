@@ -103,8 +103,8 @@ body {
 	padding-top:64px;
 }
 #app-navigation > ul > li{
-	line-height: 44px;
-    min-height: 44px;
+	line-height: 48px;
+    min-height: 48px;
 }
 #app-navigation > ul > li.active,
 #app-navigation > ul > li.active > a,
@@ -1039,7 +1039,7 @@ input[type="checkbox"].checkbox + label:before:hover {
 }
 
 
-#app-settings-header .settings-button:hover{
+#app-settings-header .settings-button{
 	color:#e20074 !important;
 }
 
