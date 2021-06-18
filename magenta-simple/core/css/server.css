@@ -974,6 +974,31 @@ input[type="checkbox"].checkbox + label:before:hover {
 #app-navigation:not(.vue) > ul > li.pinned.first-pinned {
 	margin-top: 0px !important;
 }
+
+#app-settings-header .settings-button {
+    display: block;
+    height: 44px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: var(--icon-triangle-n-e20074);
+    background-position: 14px center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    padding-left: 42px;
+    font-weight: normal;
+    color: var(--color-main-text);
+}
+
+#app-settings-header .settings-button.opened {
+    border-top: solid 1px var(--color-border);
+    background-color: var(--color-main-background);
+    background-image: var(--icon-triangle-s-e20074);
+}
+
 /*-------------------MemoryUsed Left Nav------------------------------*/
 .avlspace{
  	font-weight: 600;
@@ -1041,7 +1066,7 @@ table td.filename .thumbnail {
 	width: 44px !important;
 	height: 44px !important;
 	margin-top: 4px;
-	background-size: 42px;
+	background-size: 47px;
     border: none;
 }
 
@@ -1109,9 +1134,45 @@ table th .sort-indicator {
 }
 
 #filestable .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
-}
+		background-image: var(--icon-triangle-s-e20074);
+	}
 
 .zero-font{
 	font-size: 0;
+}
+
+#headerName .sort-indicator {
+    width: 10px;
+    height: 8px;
+    margin-left: -59px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    opacity: 0.3;
+}
+
+#headerSize .sort-indicator {
+    width: 10px;
+    height: 8px;
+    margin-right: 0px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    opacity: 0.3;
+}
+
+#headerDate .sort-indicator {
+    width: 10px;
+    height: 8px;
+    margin-left: -78px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    opacity: 0.3;
+}
+
+#app-content-sharingout #headerDate .sort-indicator {
+    width: 10px;
+    height: 8px;
+    margin-left: -87px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    opacity: 0.3;
 }
