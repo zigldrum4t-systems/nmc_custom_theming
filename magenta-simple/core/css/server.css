@@ -1188,3 +1188,8 @@ table th .sort-indicator {
     vertical-align: text-bottom;
     opacity: 0.3;
 }
+
+#filestable .filename .favorite-mark .icon-starred {
+    background-image: var(--icon-star-dark-FC0);
+    padding-top: 88px;
+}
