@@ -263,7 +263,7 @@
 }
  
 #app-navigation .nav-icon-sharingout {
-	background-image: var(--icon-user-000);
+	background-image: var(--icon-user-000-org);
 }
 
  #app-navigation > ul > li  > a.nav-icon-sharingout:hover {
