@@ -286,6 +286,7 @@
 	 background-image: var(--icon-files-public-e20074);
  }
  
+
  #app-navigation > ul > li > ul > li > a.nav-icon-deletedshares:hover {
 	 background-image: var(--icon-files-unshare-e20074);
  }
@@ -298,6 +299,10 @@
 	 background-image: var(--icon-tag-e20074);
  }
  
+ #app-navigation > ul > li > .nav-icon-trashbin.svg.active {
+	background-image: var(--icon-files-delete-e20074);
+}
+
  #app-navigation > ul > li > a.nav-icon-trashbin:hover {
 	 background-image: var(--icon-files-delete-e20074);
  }
