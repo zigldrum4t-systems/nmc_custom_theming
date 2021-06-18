@@ -240,10 +240,15 @@
 	 background-image: var(--icon-files-recent-e20074);
  }
  
+ 
  #app-navigation > ul > li > a.nav-icon-favorites:hover {
 	 background-image: var(--icon-star-dark-e20074);
  }
  
+ #app-navigation > ul > li > a.nav-icon-files:hover {
+	background-image: var(--icon-files-folder-e20074);
+}
+
  #app-navigation > ul > li > ul > li > a.nav-icon-sharingout:hover {
 	 background-image: var(--icon-files-share-e20074);
  }
