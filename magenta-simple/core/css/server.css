@@ -945,7 +945,7 @@ min-height:unset;
 }
 
 
-@media screen and(min-height:618) and (max-height: 799px) {
+@media screen and (min-height:618) and (max-height: 799px) {
 	#app-navigation > ul {
 		padding-top: 0px !important;
 	}
