@@ -240,17 +240,30 @@ min-height:unset;
 	background-image: var(--icon-files-recent-e20074);
 }
 
+
 #app-navigation > ul > li > a.nav-icon-favorites:hover {
 	background-image: var(--icon-star-dark-e20074);
 }
+
+#app-navigation > ul > li > a.nav-icon-files:hover {
+	background-image: var(--icon-files-folder-e20074);
+}
+
+
+#app-navigation > ul > li > ul > li > a.nav-icon-sharingin:hover {
+	background-image: var(--icon-files-share-e20074);
+}
+
+#app-navigation .nav-icon-sharingout{
+    background-image: var(--icon-attachment-000);
+}
+
 
 #app-navigation > ul > li > ul > li > a.nav-icon-sharingout:hover {
 	background-image: var(--icon-files-share-e20074);
 }
 
-#app-navigation > ul > li > ul > li > a.nav-icon-sharingin:hover {
-	background-image: var(--icon-files-share-e20074);
-}
+
 
 #app-navigation > ul > li > ul > li > a.nav-icon-sharinglinks:hover {
 	background-image: var(--icon-files-public-e20074);
@@ -945,7 +958,7 @@ min-height:unset;
 }
 
 
-@media screen and (min-height:520px) and (max-height: 650px) {
+@media screen and (min-height:560px) and (max-height: 650px) {
 	#app-navigation > ul {
 		padding-top: 0px !important;
 	}
@@ -959,31 +972,7 @@ min-height:unset;
 		padding-top: 0px !important;
 	}
 	#app-navigation {
-	  height: 485px !important;
-	}
-  }
-  @media screen and (min-height:701px) and (max-height: 742px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-	  height: 533px !important;
-	}
-  }
-  @media screen and (min-height:742px) and (max-height: 800px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-	  height: 582px !important;
-	}
-  }
-  @media screen and (min-height:630px) and (max-height: 920px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-	  height: 630px !important;
+	  height: 469px !important;
 	}
   }
 
@@ -1135,7 +1124,7 @@ table th .columntitle.name {
 }
 
 #filestable tbody {
-	height: 628px;
+	height: 400px;
 	display: table;
 	width: 100%;
 	display: block;
