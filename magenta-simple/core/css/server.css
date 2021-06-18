@@ -95,7 +95,7 @@ body {
 	left: unset !important;
 	position: absolute !important;
 	top: -13px !important;
-    height: 698px !important;
+    height: 768px !important;
 	/* top: 162px !important; */
 }
 
@@ -945,9 +945,12 @@ min-height:unset;
 }
 
 
-@media screen and(max-height: 815px) {
+@media screen and(min-height:618) and (max-height: 799px) {
+	#app-navigation > ul {
+		padding-top: 0px !important;
+	}
 	#app-navigation {
-	  height: 679px !important;
+	  height: 659px !important;
 	}
   }
 
