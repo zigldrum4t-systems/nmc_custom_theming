@@ -364,6 +364,11 @@
 	 opacity: 1 !important;
  }
  
+ .list-container .dragging {
+    color:#ffff; 
+    background: #248B31 !important; 
+}
+
  #controls > .breadcrumb > div.crumb.svg > a {
 	 color: var(--color-main-text) !important;
  }
@@ -1220,12 +1225,9 @@ table th .columntitle.name {
 	overflow: auto;
 }
 
-.selection input[type="checkbox"].checkbox:checked + label:before {
+input[type="checkbox"].checkbox:checked + label:before {
 	background-color: #248B31 !important;
 	border: 1px solid #248B31 !important;
-	height:20px;
-	width:20px;
-	border-radius: 50px !important;
 }
 
 #filelist-header{
