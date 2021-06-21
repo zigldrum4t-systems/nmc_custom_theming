@@ -1225,9 +1225,12 @@ table th .columntitle.name {
 	overflow: auto;
 }
 
-input[type="checkbox"].checkbox:checked + label:before {
+.selection input[type="checkbox"].checkbox:checked + label:before {
 	background-color: #248B31 !important;
 	border: 1px solid #248B31 !important;
+	width:20px;
+	height:20px;
+	border-radius: 50px !important;
 }
 
 #filelist-header{
