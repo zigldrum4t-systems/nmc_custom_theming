@@ -37,7 +37,6 @@
     <?php print_unescaped($_['headers']); ?>
 </head>
 
-
 <body id="<?php p($_['bodyid']);?>">
     <?php include 'layout.noscript.warning.php'; ?>
 
@@ -52,7 +51,6 @@
     <div id="notification-container">
         <div id="notification"></div>
     </div>
-
 
     <div class="MenuWrapperParent">
         <div class="brandbar">
@@ -82,7 +80,8 @@
                     <div class="logo-area">
                         <div class="logo-area__inner">
                             <a href="/en" title="Home" class="header-brandbar-logo">
-                                <svg id="brand-logo" class="brandbar-logo-magenta" viewBox="0 0 73 36" fill="currentColor">
+                                <svg id="brand-logo" class="brandbar-logo-magenta" viewBox="0 0 73 36"
+                                    fill="currentColor">
                                     <g>
                                         <path d="M0 24v-7h7v7H0zM22 24v-7h7v7h-7zM44 24v-7h7v7h-7zM66 24v-7h7v7h-7z">
                                         </path>
@@ -162,113 +161,67 @@
                                 <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
                             </svg><label>Menu</label></a>
                     </div>
-
-
                 </div>
-                <!-- <div id="unified-search"></div>
-                <div class="unified-search-title">Search</div>
-                <div id="contactsmenu">
-                    <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
-                        aria-controls="contactsmenu-menu" aria-expanded="false">
-                        <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
-                    </div>
-                    <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
-                </div>
-                <div class="contactsmenu-title">Email</div>
-
-                <div id="settings">
-                    <div id="expand" tabindex="0" role="button" class="menutoggle"
-                        aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
-                        aria-expanded="false">
-                        <div class="avatardiv<?php if ($_['userAvatarSet']) {
-				         print_unescaped(' avatardiv-shown');
-			              } else {
-				            print_unescaped('" style="display: none');
-			                 } ?>">
-                            <?php if ($_['userAvatarSet']): ?>
-                            <div class="icon-user-menu"></div>
-                            <div class="user-id-title"><?php p($_['user_uid']); ?></div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                        
-                </div>
-                    <nav class="settings-menu" id="expanddiv" style="display:none;"
-                        aria-label="<?php p($l->t('Settings menu'));?>">
-                        <ul>
-                            <?php foreach ($_['settingsnavigation'] as $entry):?>
-                            <li data-id="<?php p($entry['id']); ?>">
-                                <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
-                                    class="active" <?php endif; ?>>
-                                    <img alt=""
-                                        src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
-                                    <?php p($entry['name']) ?>
-                                </a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </nav> -->
-
             </div>
         </header>
-         
+
         <div class="breadcrumb-bar">
-         <div class="container-fixed">
-            <div class="col-xs-3 left-part"></div>
-            <div class="col-xs-9 right-part">
-                <ul class="breadcrumb-style">
-                    <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
-                                width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg></a></li>
-                    <li> > </li>
-                    <li><a href="#">Dokumente</a></li>
-                    <li> > </li>
-                    <li><a href="#">Scans</a></li>
-                </ul>
-            </div>
-         </div>
-        </div>
-
-
-       <div id="sudo-login-background" class="hidden"></div>
-       <form id="sudo-login-form" class="hidden" method="POST">
-         <label>
-            <?php p($l->t('This action requires you to confirm your password')); ?><br />
-            <input type="password" class="question" autocomplete="new-password" name="question"
-                value=" <?php /* Hack against browsers ignoring autocomplete="off" */ ?>"
-                placeholder="<?php p($l->t('Confirm your password')); ?>" />
-         </label>
-        <input class="confirm" value="<?php p($l->t('Confirm')); ?>" type="submit">
-       </form>
-
-       <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
-        <div class="container-fixed">
-            <?php print_unescaped($_['content']); ?>
-        </div>
-       </div>
-
-       <footer class="brand-footer">
-        <div class="container-fixed">
-            <div class="row brand-footer-bar">
-                <div class="col-l-4 col-s-12 text-muted">
-                    <div class="brand-footer-bar-text">
-                        © Telekom Deutschland GmbH
-                    </div>
-                </div>
-                <div class="col-l-8 col-s-12">
-                    <ul class="nav brand-footer-nav text-l-right">
-                        <li><a href="http://www.telekom.de/impressum" title="Impressum">Impressum</a></li>
-                        <li><a href="https://static.magentacloud.de/Datenschutz" title="Datenschutz">Datenschutz</a>
-                        </li>
-                        <li><a href="https://cloud.telekom-dienste.de/hilfe" title="HilfeAndFAQ">Hilfe & FAQ</a></li>
+            <div class="container-fixed">
+                <div class="col-xs-3 left-part"></div>
+                <div class="col-xs-9 right-part">
+                    <ul class="breadcrumb-style">
+                        <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
+                                    width="16">
+                                    <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                                </svg></a></li>
+                        <li> > </li>
+                        <li><a href="#">Dokumente</a></li>
+                        <li> > </li>
+                        <li><a href="#">Scans</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-       </footer>
+
+        <div id="sudo-login-background" class="hidden"></div>
+        <form id="sudo-login-form" class="hidden" method="POST">
+            <label>
+                <?php p($l->t('This action requires you to confirm your password')); ?><br />
+                <input type="password" class="question" autocomplete="new-password" name="question"
+                    value=" <?php /* Hack against browsers ignoring autocomplete="off" */ ?>"
+                    placeholder="<?php p($l->t('Confirm your password')); ?>" />
+            </label>
+            <input class="confirm" value="<?php p($l->t('Confirm')); ?>" type="submit">
+        </form>
+
+        <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
+            <div class="container-fixed">
+                <?php print_unescaped($_['content']); ?>
+            </div>
+        </div>
+
+        <footer class="brand-footer">
+            <div class="container-fixed">
+                <div class="row brand-footer-bar">
+                    <div class="col-l-4 col-s-12 text-muted">
+                        <div class="brand-footer-bar-text">
+                            © Telekom Deutschland GmbH
+                        </div>
+                    </div>
+                    <div class="col-l-8 col-s-12">
+                        <ul class="nav brand-footer-nav text-l-right">
+                            <li><a href="http://www.telekom.de/impressum" title="Impressum">Impressum</a></li>
+                            <li><a href="https://static.magentacloud.de/Datenschutz" title="Datenschutz">Datenschutz</a>
+                            </li>
+                            <li><a href="https://cloud.telekom-dienste.de/hilfe" title="HilfeAndFAQ">Hilfe & FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    
+
 </body>
 
 </html>

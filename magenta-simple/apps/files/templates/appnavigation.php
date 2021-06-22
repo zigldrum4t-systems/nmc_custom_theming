@@ -16,9 +16,6 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
 		 $customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
 		 $pinned = 0;
-	/*	foreach ($_['navigationItems'] as $item) {
-			$pinned = NavigationListElements($item, $l, $pinned);
-		}*/
 
 		 foreach ($customNavigationItems as $item) {
 			$pinned = NavigationListElements($item, $l, $pinned);
@@ -27,52 +24,35 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
     </ul>
 
-    <!-- <div class="memoryused">
-        <?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED): ?>
-        <div id="quota" class="pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>">
-            <a href="#" class="icon-image">
-                <img src='C:/Magenta cloud/themes/custom-theme/core/img/favicon.png'>
-                <p class="memorytext"><?php p($l->t('%s used', [$_['usage']])); ?></p>
-            </a>
+    <div class="Memory-consumed pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
+        title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
+        <div class="left-logo"><img
+                src='<?php print_unescaped(image_path('mya\OCA\Files\AppInfo\Application::APP_IDpp', 'CloudPink.png')); ?>'>
         </div>
-        <?php else: ?>
-        <div id="quota" class="has-tooltip pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
-            title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
-            <a href="#" class="icon-quota svg">
-                <p id="quotatext"><?php p($l->t('%1$s of %2$s used', [$_['usage'], $_['total_space']])); ?></p>
-                <div class="quota-container">
-                    <progress value="<?php p($_['usage_relative']); ?>" max="100"
-                        class="<?= ($_['usage_relative'] > 80) ? 'warn' : '' ?>"></progress>
-                </div>
-            </a>
-        </div>
-        <?php endif; ?>
-    </div> -->
-    
-    <div class="Memory-consumed pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>" title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
-		<div class="left-logo"><img src='<?php print_unescaped(image_path('mya\OCA\Files\AppInfo\Application::APP_IDpp', 'CloudPink.png')); ?>'></div>
-		<div class="logo-right-text">
-            <span class="avlspace"><?php p($l->t('%1$s', [$_['usage']])); ?></span><span class="outoftext"> <?php p($l->t('out of')); ?></span><span class="totalspace"><?php p($l->t('%1$s', [$_['total_space']])); ?></span>
+        <div class="logo-right-text">
+            <span class="avlspace"><?php p($l->t('%1$s', [$_['usage']])); ?></span><span class="outoftext">
+                <?php p($l->t('out of')); ?></span><span
+                class="totalspace"><?php p($l->t('%1$s', [$_['total_space']])); ?></span>
         </div>
     </div>
-	
 
-    <div class="NextCloudPorgressBar" title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
+    <div class="NextCloudPorgressBar"
+        title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
         <div class="progress customprogressbar">
             <div class="progress-bar styledbar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
                 aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
                 <span class="sr-only"><?php p($_['usage_relative']); ?>% Complete</span>
             </div>
         </div>
-        
+
         <span class="memory-ocup-message" data-extr="<?php echo $_['usage_relative']; ?>">
             <?php p($l->t('Memory occupied by %s%%', [$_['usage_relative']])); ?>
         </span>
 
-        <!-- <li><span class="bar"><span class="style-html"></span></span></li> -->
     </div>
     <div class="custom-button">
-       <a href="https://cloud.telekom-dienste.de/tarife" target="_blank"><button type="button" class="btn btn-default btn-style">Expand Storage</button></a>
+        <a href="https://cloud.telekom-dienste.de/tarife" target="_blank"><button type="button"
+                class="btn btn-default btn-style">Expand Storage</button></a>
     </div>
     <div id="app-settings">
         <div id="app-settings-header">
@@ -90,16 +70,11 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
                 <input class="checkbox" id="cropimagepreviewsToggle" checked="checked" type="checkbox">
                 <label for="cropimagepreviewsToggle"><?php p($l->t('Full screen for image preview')); ?></label>
             </div>
-            <!-- <label for="webdavurl"><?php p($l->t('WebDAV')); ?></label>
-			<input id="webdavurl" type="text" readonly="readonly"
-				   value="<?php p($_['webdav_url']); ?>"/>
-			<em><a href="<?php echo link_to_docs('user-webdav') ?>" target="_blank" rel="noreferrer noopener"><?php p($l->t('Use this address to access your Files via WebDAV')) ?> ↗</a></em> -->
+
         </div>
     </div>
 
-
 </div>
-
 
 <?php
 
@@ -128,7 +103,6 @@ function NavigationListElements($item, $l, $pinned) {
     <a href="<?php p(isset($item['href']) ? $item['href'] : '#') ?>"
         class="nav-icon-<?php p(isset($item['icon']) && $item['icon'] !== '' ? $item['icon'] : $item['id']) ?> svg"><?php p($item['name']); ?></a>
 
-
     <?php
 		NavigationElementMenu($item);
 	if (isset($item['sublist'])) {
@@ -144,7 +118,6 @@ function NavigationListElements($item, $l, $pinned) {
     <?php
 	} ?>
 </li>
-
 
 <?php
 	return $pinned;
@@ -177,4 +150,3 @@ function NavigationElementMenu($item) {
 <?php
 	}
 }
-
