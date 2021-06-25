@@ -881,6 +881,15 @@ body {
 	#app-sidebar-vue {
 		width: 288px !important;
 	}
+	.header-right .smallscreenSize{
+		display:none;
+	}
+}
+
+@media screen and (min-width: 1599px) {
+	.header-right .smallscreenSize{
+		display:none;
+	}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
