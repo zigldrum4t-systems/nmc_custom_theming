@@ -903,6 +903,9 @@ body {
 	#app-sidebar-vue {
 		width: 288px !important;
 	}
+	#header .container-fixed .header-right .navbar-icons a {
+		display: block !important;
+	}
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -929,6 +932,9 @@ body {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	#header .container-fixed .header-right .navbar-icons a {
+		display: block !important;
+	}
 }
 
 @media screen and (max-width: 375px) {
@@ -939,12 +945,19 @@ body {
 	#nextcloud {
 		display: none;
 	}
+	#header .container-fixed .header-right .navbar-icons a {
+		display: block !important;
+	}
 }
 
 @media screen and (max-width: 1023px) {
 	#header .container-fixed .header-right .navbar-icons a {
 		display: block !important;
 	}
+	#header .container-fixed .header-left .logo-area{
+		display:none !important;
+	}
+
 }
 @media screen and (max-width: 1299px) {
 	#appmenu {
