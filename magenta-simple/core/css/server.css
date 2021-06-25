@@ -881,14 +881,14 @@ body {
 	#app-sidebar-vue {
 		width: 288px !important;
 	}
-	.header-right .smallscreenSize{
-		display:none !important;
+	.header-right .smallscreenSize {
+		display: none !important;
 	}
 }
 
 @media screen and (min-width: 1599px) {
-	.header-right .smallscreenSize{
-		display:none !important;
+	.header-right .smallscreenSize {
+		display: none !important;
 	}
 }
 
@@ -903,7 +903,6 @@ body {
 	#app-sidebar-vue {
 		width: 288px !important;
 	}
-
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -930,7 +929,6 @@ body {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	
 }
 
 @media screen and (max-width: 375px) {
@@ -941,17 +939,12 @@ body {
 	#nextcloud {
 		display: none;
 	}
-	
 }
 
 @media screen and (max-width: 1023px) {
 	#header .container-fixed .header-right .navbar-icons a {
 		display: block !important;
 	}
-	#header .container-fixed .header-left .logo-area{
-		display:none !important;
-	}
-
 }
 @media screen and (max-width: 1299px) {
 	#appmenu {
@@ -1139,7 +1132,7 @@ input[type="checkbox"].checkbox + label:before:hover {
 
 #app-settings-header .settings-button {
 	color: #e20074 !important;
-	font-size:16px !important;
+	font-size: 16px !important;
 }
 
 /*---------------------------RightContent-----------------------------------*/
