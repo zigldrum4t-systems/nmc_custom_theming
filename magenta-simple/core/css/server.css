@@ -882,13 +882,13 @@ body {
 		width: 288px !important;
 	}
 	.header-right .smallscreenSize{
-		display:none;
+		display:none !important;
 	}
 }
 
 @media screen and (min-width: 1599px) {
 	.header-right .smallscreenSize{
-		display:none;
+		display:none !important;
 	}
 }
 
