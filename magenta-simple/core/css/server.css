@@ -286,9 +286,10 @@ body {
 	background-image: var(--icon-quota-e20074);
 }
 
+/*
 #controls {
 	display: none;
-}
+}*/
 
 #controls > div.breadcrumb {
 	background: transparent !important;
@@ -349,6 +350,7 @@ body {
 	opacity: 0.7 !important;
 }
 
+/*
 #controls > div.actions.creatable > a.button {
 	justify-content: left !important;
 	width: 75px !important;
@@ -377,7 +379,7 @@ body {
 #controls .breadcrumb {
 	display: none;
 }
-
+*/
 #controls > div.actions.creatable > a:hover {
 	color: var(--scl-color-magenta);
 	text-decoration: underline;
