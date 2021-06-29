@@ -929,8 +929,8 @@ body {
 		font-size: 14px !important;
 		padding-left: 0px !important;
 	}
-	.header-left #nextcloud h5 span{
-		font-size: 14px !important;
+	#header .container-fixed .header-left #nextcloud span {
+		font-size:14px;
 	}
 	.header-right .navbar-icons a {
 		font-size: 6px !important;
@@ -940,7 +940,7 @@ body {
 		padding-right: 0px;
 	}
 	#header .container-fixed .header-right .navbar-icons a {
-		padding: 14px 2px;
+		padding: 14px 0px !important;
 	}
 	#header .container-fixed .header-right .navbar-icons a label{
 		font-size:10px;
