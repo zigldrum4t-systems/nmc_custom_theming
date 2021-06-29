@@ -915,6 +915,9 @@ body {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
+	#header .container-fixed .header-right .navbar-icons a label{
+		font-size:12px;
+	}
 }
 
 @media screen and (min-width: 375px) and (max-width: 639px) {
@@ -926,13 +929,21 @@ body {
 		font-size: 14px !important;
 		padding-left: 0px !important;
 	}
+	.header-left #nextcloud h5 span{
+		font-size: 14px !important;
+	}
 	.header-right .navbar-icons a {
 		font-size: 6px !important;
 	}
-
 	.breadcrumb-bar .right-part {
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+	#header .container-fixed .header-right .navbar-icons a {
+		padding: 14px 2px;
+	}
+	#header .container-fixed .header-right .navbar-icons a label{
+		font-size:10px;
 	}
 }
 
@@ -943,6 +954,9 @@ body {
 	}
 	#nextcloud {
 		display: none;
+	}
+	#header .container-fixed .header-left .logo-area{
+		display:none;
 	}
 }
 
@@ -962,9 +976,7 @@ body {
 	#header .container-fixed .header-right .navbar-icons a{
 		padding:10px 5px;
 	}
-	#header .container-fixed .header-left .logo-area{
-		display:none;
-	}
+	
 }
 
 @media screen and (min-height: 520px) and (max-height: 629px) {
