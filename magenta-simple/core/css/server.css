@@ -965,6 +965,9 @@ body {
 	#header .container-fixed .header-right .navbar-icons a label{
 		font-size:9px;
 	}
+	#header .container-fixed .header-right .navbar-icons a {
+		padding: 14px 0px !important;
+	}
 }
 
 @media screen and (max-width: 1299px) {
@@ -981,7 +984,7 @@ body {
 		display:block;
 	}
 	#header .container-fixed .header-right .navbar-icons a{
-		padding:10px 5px;
+		padding:14px 5px;
 	}
 	
 }
