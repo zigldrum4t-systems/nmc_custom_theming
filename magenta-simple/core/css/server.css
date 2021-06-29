@@ -833,6 +833,9 @@ body {
 	padding-top: 0 !important;
 }
 
+#header .container-fixed .header-right .navbar-icons a{
+	display:inline;
+}
 @media screen and (max-width: 640px) {
 	.button.new .hidden-visually {
 		display: none;
@@ -941,11 +944,6 @@ body {
 	}
 }
 
-@media screen and (max-width: 1023px) {
-	#header .container-fixed .header-right .navbar-icons a {
-		display: block !important;
-	}
-}
 @media screen and (max-width: 1299px) {
 	#appmenu {
 		display: none;
@@ -955,6 +953,9 @@ body {
 	}
 	.breadcrumb-bar .left-part {
 		display: none;
+	}
+	#header .container-fixed .header-right .navbar-icons a label{
+		display:block;
 	}
 }
 
