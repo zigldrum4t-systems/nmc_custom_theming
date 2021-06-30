@@ -166,16 +166,27 @@
         <div class="container-fixed">
             <div class="col-xs-3 left-part"></div>
             <div class="col-xs-9 right-part">
-                <ul class="breadcrumb-style">
-                    <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
-                                width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg></a></li>
-                    <li> > </li>
-                    <li><a href="#">Dokumente</a></li>
-                    <li> > </li>
-                    <li><a href="#">Scans</a></li>
-                </ul>
+                <div id="controls">
+                    <div class="actions creatable hidden">
+                        <div id="uploadprogresswrapper">
+                        </div>
+                    </div>
+                    <div id="file_action_panel"></div>
+                    <div class="notCreatable notPublic hidden">
+                        <?php p($l->t('You don’t have permission to upload or create files here'))?>
+                    </div>
+                    <?php /* Note: the template attributes are here only for the public page. These are normally loaded
+                            through ajax instead (updateStorageStatistics).
+                    */ ?>
+                    <input type="hidden" name="permissions" value="" id="permissions">
+                    <input type="hidden" id="free_space" value="<?php isset($_['freeSpace']) ? p($_['freeSpace']) : '' ?>">
+                    <?php if (isset($_['dirToken'])):?>
+                    <input type="hidden" id="publicUploadRequestToken" name="requesttoken" value="<?php p($_['requesttoken']) ?>" />
+                    <input type="hidden" id="dirToken" name="dirToken" value="<?php p($_['dirToken']) ?>" />
+                    <?php endif;?>
+                    <input type="hidden" class="max_human_file_size"
+                        value="(max <?php isset($_['uploadMaxHumanFilesize']) ? p($_['uploadMaxHumanFilesize']) : ''; ?>)">
+                </div>
             </div>
         </div>
     </div>

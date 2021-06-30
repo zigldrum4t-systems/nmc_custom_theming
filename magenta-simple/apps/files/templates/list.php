@@ -1,4 +1,3 @@
-
 <div id="filelist-header"></div>
 
 <div id="emptycontent" class="hidden">
