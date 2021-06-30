@@ -1319,3 +1319,7 @@ table th .sort-indicator {
 	padding-top: 88px;
 	background-size: 20px;
 }
+
+.app-content-files table{
+	margin-top:30px;
+}
