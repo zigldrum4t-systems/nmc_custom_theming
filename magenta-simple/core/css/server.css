@@ -92,6 +92,8 @@ body {
 	/* height: calc(100vh - 100px - 75px) !important;
 	position: absolute !important;
 	top:0px !important; */
+	height:768px !important;
+	top:-13px !important
 }
 
 #app-navigation > ul {
