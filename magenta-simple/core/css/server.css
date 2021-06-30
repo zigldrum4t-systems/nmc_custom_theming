@@ -987,6 +987,9 @@ body {
 		padding:14px 5px;
 	}
 	
+	#app-navigation{
+		width:auto !important;
+	}
 }
 
 @media screen and (max-height: 850px) {
