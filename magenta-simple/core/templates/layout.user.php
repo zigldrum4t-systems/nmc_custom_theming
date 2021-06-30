@@ -163,7 +163,7 @@
             </div>
         </header>
     </div>
-    <div class="breadcrumb-bar" style="display:none">
+    <div class="breadcrumb-bar">
         <div class="container-fixed">
             <div class="col-xs-3 left-part"></div>
             <div class="col-xs-9 right-part">
