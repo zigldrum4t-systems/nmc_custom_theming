@@ -89,9 +89,10 @@ body {
 	height: calc(100% - 108px) !important;
 	z-index: 10 !important;
 	left: unset !important;
-	/* /* height: calc(100vh - 100px - 75px) !important; */
+    /* height: calc(100vh - 100px - 75px) !important; */
 	position: absolute !important;
 	top:0px !important;
+	height: calc(100% - 250px) !important;
 	}
 
 #app-navigation > ul {
