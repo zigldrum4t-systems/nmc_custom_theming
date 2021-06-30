@@ -89,7 +89,7 @@ body {
 	height: calc(100% - 108px) !important;
 	z-index: 10 !important;
 	left: unset !important;
-	/* height: calc(100vh - 100px - 150px) !important; */
+	height: calc(100vh - 100px - 75px) !important;
 	position: absolute !important;
 	top:0px !important;
 }
@@ -992,11 +992,11 @@ body {
 	}
 }
 
-/* @media screen and (max-height: 850px) {
+@media screen and (max-height: 850px) {
 	#app-navigation > ul {
 		padding-top: 0px !important;
 	}
-} */
+}
 
 /* @media screen and (min-height: 520px) and (max-height: 629px) {
 	#app-navigation > ul {
