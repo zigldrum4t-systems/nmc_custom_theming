@@ -1,3 +1,17 @@
+<div id="filelist-header"></div>
+
+<div id="emptycontent" class="hidden">
+    <div class="icon-folder"></div>
+    <h2><?php p($l->t('No files in here')); ?></h2>
+    <p class="uploadmessage hidden"><?php p($l->t('Upload some content or sync with your devices!')); ?></p>
+</div>
+
+<div class="nofilterresults emptycontent hidden">
+    <div class="icon-search"></div>
+    <h2><?php p($l->t('No entries found in this folder')); ?></h2>
+    <p></p>
+</div>
+
 <div id="controls">
     <div class="actions creatable hidden">
         <div id="uploadprogresswrapper">
@@ -19,19 +33,7 @@
     <input type="hidden" class="max_human_file_size"
         value="(max <?php isset($_['uploadMaxHumanFilesize']) ? p($_['uploadMaxHumanFilesize']) : ''; ?>)">
 </div>
-<div id="filelist-header"></div>
 
-<div id="emptycontent" class="hidden">
-    <div class="icon-folder"></div>
-    <h2><?php p($l->t('No files in here')); ?></h2>
-    <p class="uploadmessage hidden"><?php p($l->t('Upload some content or sync with your devices!')); ?></p>
-</div>
-
-<div class="nofilterresults emptycontent hidden">
-    <div class="icon-search"></div>
-    <h2><?php p($l->t('No entries found in this folder')); ?></h2>
-    <p></p>
-</div>
 <table id="filestable" class="list-container <?php p($_['showgridview'] ? 'view-grid' : '') ?>"
     data-allow-public-upload="<?php p($_['publicUploadEnabled'])?>" data-preview-x="250" data-preview-y="250">
     <thead>
