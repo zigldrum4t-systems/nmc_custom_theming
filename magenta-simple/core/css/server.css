@@ -998,7 +998,7 @@ body {
 	}
 } */
 
-/* @media screen and (min-height: 520px) and (max-height: 629px) {
+@media screen and (min-height: 520px) and (max-height: 629px) {
 	#app-navigation > ul {
 		padding-top: 0px !important;
 	}
@@ -1081,7 +1081,7 @@ body {
 	#app-navigation {
 		height: 637px !important;
 	}
-} */
+}
 
 /*---------------------------LeftNav-----------------------------------*/
 input[type="checkbox"].checkbox + label:before {
