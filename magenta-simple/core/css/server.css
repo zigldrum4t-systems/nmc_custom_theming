@@ -940,7 +940,7 @@ body {
 		padding-right: 0px;
 	}
 	#header .container-fixed .header-right .navbar-icons a {
-		padding: 14px 0px !important;
+		padding: 14px 2px !important;
 	}
 	#header .container-fixed .header-right .navbar-icons a label{
 		font-size:10px;
