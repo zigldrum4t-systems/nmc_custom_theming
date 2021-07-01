@@ -399,6 +399,16 @@ body {
 	position: relative;
 }
 
+.MenuWrapperParent span{
+	position: relative;
+	animation:  BrandbarAnimate 5s infinite;
+}
+
+@keyframes BrandbarAnimate {
+	from{transform: translateY(0px);}
+	to{transform: translateY(3px);}
+  }
+
 #header {
 	height: 63px !important;
 	background-image: unset !important;
