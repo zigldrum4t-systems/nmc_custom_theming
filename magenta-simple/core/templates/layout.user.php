@@ -189,6 +189,21 @@
                             </ul>
                         </nav>
                     </div>
+                    <div class="menusidenav">
+                        <img alt="" src="/apps/settings/img/admin.svg?v=60c496a4">
+                        <div class="menusidenavcolapsed" style="display:none;">
+                            <ul id="menusidenavul">
+                                <?php foreach ($_['navigation'] as $entry): ?>
+                                <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
+                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
+                                        class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+                                        <?php p($entry['name']); ?>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
