@@ -143,21 +143,47 @@
                 </div>
 
                 <div class="header-right">
-                    <div class="navbar-icons">
-                        <div id="unified-search"></div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16"
-                                height="16" width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg><label>Mail</label></a>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16"
-                                height="16" width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg><label>Jens Weidemann</label></a>
-
-                        <a href="#" class="smallscreenSize"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                viewBox="0 0 16 16" height="16" width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg><label>Menu</label></a>
+                    <div id="unified-search"></div>
+                    <div id="notifications"></div>
+                    <div id="contactsmenu">
+                        <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
+                            aria-controls="contactsmenu-menu" aria-expanded="false">
+                            <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
+                        </div>
+                        <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
+                    </div>
+                    <div id="settings">
+                        <div id="expand" tabindex="0" role="button" class="menutoggle"
+                            aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
+                            aria-expanded="false">
+                            <div class="avatardiv<?php if ($_['userAvatarSet']) {
+				print_unescaped(' avatardiv-shown');
+			} else {
+				print_unescaped('" style="display: none');
+			} ?>">
+                                <?php if ($_['userAvatarSet']): ?>
+                                <img alt="" width="32" height="32"
+                                    src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32, 'v' => $_['userAvatarVersion']]));?>"
+                                    srcset="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 64, 'v' => $_['userAvatarVersion']]));?> 2x, <?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 128, 'v' => $_['userAvatarVersion']]));?> 4x">
+                                <?php endif; ?>
+                            </div>
+                            <div id="expandDisplayName" class="icon-settings-white"></div>
+                        </div>
+                        <nav class="settings-menu" id="expanddiv" style="display:none;"
+                            aria-label="<?php p($l->t('Settings menu'));?>">
+                            <ul>
+                                <?php foreach ($_['settingsnavigation'] as $entry):?>
+                                <li data-id="<?php p($entry['id']); ?>">
+                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
+                                        class="active" <?php endif; ?>>
+                                        <img alt=""
+                                            src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
+                                        <?php p($entry['name']) ?>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
