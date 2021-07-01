@@ -1320,6 +1320,6 @@ table th .sort-indicator {
 	background-size: 20px;
 }
 
-.app-content-files table{
+#app-content-files #filestable{
 	margin-top:30px;
 }
