@@ -143,37 +143,57 @@
                 </div>
 
                 <div class="header-right">
-                    <div class="navbar-icons">
-                        <a data-v-a58f012a="" href="#" aria-controls="header-menu-unified-search" aria-haspopup="true"
-                            class="header-menu__trigger"><span data-v-209d66c1="" data-v-a58f012a=""
-                                aria-label="Magnify icon" role="img"
-                                class="material-design-icon magnify-icon unified-search__trigger"><svg
-                                    data-v-209d66c1="" data-v-a58f012a="" fill="var(--color-primary-text)" width="20"
-                                    height="20" viewBox="0 0 24 24" class="material-design-icon__svg">
-                                    <path data-v-209d66c1="" data-v-a58f012a=""
-                                        d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z">
-                                        <title data-v-209d66c1="" data-v-a58f012a="">Magnify icon</title>
-                                    </path>
-                                </svg></span></a>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16"
-                                height="16" width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg><label>Mail</label></a>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16"
-                                height="16" width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg><label>Jens Weidemann</label></a>
-
-                        <a href="#" class="smallscreenSize"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                viewBox="0 0 16 16" height="16" width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg><label>Menu</label></a>
+                    <div id="unified-search"></div><label>Search</label>
+                    <div id="contactsmenu">
+                        <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
+                            aria-controls="contactsmenu-menu" aria-expanded="false">
+                            <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
+                        </div>
+                        <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
+                    </div>
+                    <label>Mail</label>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
+                            width="16">
+                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
+                        </svg><label><?php p($entry['name']) ?></label></a>
+                    <div id="settings">
+                        <div id="expand" tabindex="0" role="button" class="menutoggle"
+                            aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
+                            aria-expanded="false">
+                            <div class="avatardiv<?php if ($_['userAvatarSet']) {
+				print_unescaped(' avatardiv-shown');
+			} else {
+				print_unescaped('" style="display: none');
+			} ?>">
+                                <?php if ($_['userAvatarSet']): ?>
+                                <img alt="" width="32" height="32"
+                                    src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32, 'v' => $_['userAvatarVersion']]));?>"
+                                    srcset="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 64, 'v' => $_['userAvatarVersion']]));?> 2x, <?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 128, 'v' => $_['userAvatarVersion']]));?> 4x">
+                                <?php endif; ?>
+                            </div>
+                            <div id="expandDisplayName" class="icon-settings-white"></div>
+                        </div>
+                        <nav class="settings-menu" id="expanddiv" style="display:none;"
+                            aria-label="<?php p($l->t('Settings menu'));?>">
+                            <ul>
+                                <?php foreach ($_['settingsnavigation'] as $entry):?>
+                                <li data-id="<?php p($entry['id']); ?>">
+                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
+                                        class="active" <?php endif; ?>>
+                                        <img alt=""
+                                            src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
+                                        <?php p($entry['name']) ?>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </header>
     </div>
-    <div class="breadcrumb-bar" style="display:none">
+    <div class="breadcrumb-bar">
         <div class="container-fixed">
             <div class="col-xs-3 left-part"></div>
             <div class="col-xs-9 right-part">

@@ -1323,3 +1323,15 @@ table th .sort-indicator {
 #app-content-files #filestable{
 	margin-top:30px;
 }
+
+#view-toggle {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 22px;
+    opacity: 0.5;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    margin-top: 48px;
+}
