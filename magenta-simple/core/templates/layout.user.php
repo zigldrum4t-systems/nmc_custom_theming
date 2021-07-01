@@ -175,6 +175,11 @@
                         </div>
                         <nav class="settings-menu" id="expanddiv" style="display:none;"
                             aria-label="<?php p($l->t('Settings menu'));?>">
+                            <?php
+                            echo "<Pre>";
+                            print_r($_['settingsnavigation']);
+
+                            ?>
                             <ul>
                                 <?php foreach ($_['settingsnavigation'] as $entry):?>
                                 <li data-id="<?php p($entry['id']); ?>">
