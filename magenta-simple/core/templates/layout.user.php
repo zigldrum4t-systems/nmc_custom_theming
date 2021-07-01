@@ -143,7 +143,7 @@
                 </div>
 
                 <div class="header-right">
-                    <div id="unified-search"></div><label>Search</label>
+                    <div id="unified-search"><label>Search</label></div>
                     <div id="contactsmenu">
                         <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">
