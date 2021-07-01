@@ -155,7 +155,7 @@
                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
                             width="16">
                             <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><label><?php p($entry['name']) ?></label></a>
+                        </svg><label><?php p($_['user_uid']); ?></label></a>
                     <div id="settings">
                         <div id="expand" tabindex="0" role="button" class="menutoggle"
                             aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
