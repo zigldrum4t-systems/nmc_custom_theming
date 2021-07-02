@@ -1345,3 +1345,9 @@ table th .sort-indicator {
     z-index: 100;
     margin-top: 48px;
 }
+
+.bradcrum-nav{
+	background-color:#f2f2f2;
+	height: 103px;
+	border-right:none	
+}
