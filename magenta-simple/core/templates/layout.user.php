@@ -160,11 +160,7 @@
                         <div id="expand" tabindex="0" role="button" class="menutoggle"
                             aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
                             aria-expanded="false">
-                            <div class="avatardiv<?php if ($_['userAvatarSet']) {
-				print_unescaped(' avatardiv-shown');
-			} else {
-				print_unescaped('" style="display: none');
-			} ?>">
+                            <div class="settingsdiv">
                                 <img alt="" src="/apps/settings/img/admin.svg?v=60c496a4">
                             </div>
                             <div id="expandDisplayName" class="icon-settings-white"></div>
