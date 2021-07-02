@@ -165,11 +165,7 @@
 			} else {
 				print_unescaped('" style="display: none');
 			} ?>">
-                                <?php if ($_['userAvatarSet']): ?>
-                                <img alt="" width="32" height="32"
-                                    src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32, 'v' => $_['userAvatarVersion']]));?>"
-                                    srcset="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 64, 'v' => $_['userAvatarVersion']]));?> 2x, <?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 128, 'v' => $_['userAvatarVersion']]));?> 4x">
-                                <?php endif; ?>
+                                <img alt="" src="/apps/settings/img/admin.svg?v=60c496a4">
                             </div>
                             <div id="expandDisplayName" class="icon-settings-white"></div>
                         </div>
@@ -188,21 +184,6 @@
                                 <?php endforeach; ?>
                             </ul>
                         </nav>
-                    </div>
-                    <div class="menusidenav">
-                        <img alt="" src="/apps/settings/img/admin.svg?v=60c496a4">
-                        <div class="menusidenavcolapsed" style="display:none;">
-                            <ul id="menusidenavul">
-                                <?php foreach ($_['navigation'] as $entry): ?>
-                                <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
-                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
-                                        class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
-                                        <?php p($entry['name']); ?>
-                                    </a>
-                                </li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
