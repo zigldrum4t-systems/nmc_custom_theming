@@ -147,10 +147,11 @@
                     <div id="contactsmenu">
                         <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">
-                            <img src="/themes/magenta-simple/core/img/email.png" height="50" />
+                            <img src="/themes/magenta-simple/core/img/email.png" width="24" alt="Email"/>
                         </div>
                         <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
                     </div>
+                    <div class="emailmenu"><label>Email</label></div>
                     <div class="profilePicture">
                         <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" stroke="#212b36" stroke-width="2"       stroke-linecap="round" stroke-linejoin="round" fill="none">
                             <circle cx="12" cy="8" r="5" />
