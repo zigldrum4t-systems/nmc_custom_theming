@@ -868,9 +868,7 @@ body {
 	.breadcrumb {
 		padding: 10px 0px;
 	}
-	#view-toggle {
-		margin-top: 10px;
-	}
+
 	.actions.creatable {
 		margin-top: 5px;
 	}
@@ -1349,7 +1347,8 @@ table th .sort-indicator {
     position: fixed;
     right: 0;
     z-index: 100;
-    margin-top: 48px;
+    margin-top: 5px;
+    margin-right: 202px;
 }
 
 .bradcrum-nav{
