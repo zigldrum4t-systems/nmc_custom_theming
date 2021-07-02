@@ -295,7 +295,7 @@ body {
 #controls{
 	background-color:none
 	height:50px;
-	margin-left:-13px;
+	margin-left:0px; 
 	width:1427px;
 }
 
