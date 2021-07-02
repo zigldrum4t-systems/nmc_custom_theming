@@ -292,6 +292,11 @@ body {
 	display: none;
 }*/
 
+#controls{
+	background-color:#f2f2f2;
+	height:50px;
+}
+
 #controls > div.breadcrumb {
 	background: transparent !important;
 }
@@ -1348,6 +1353,6 @@ table th .sort-indicator {
 
 .bradcrum-nav{
 	background-color:#f2f2f2;
-	height: 103px;
+	height: 76px;
 	border-right:none	
 }
