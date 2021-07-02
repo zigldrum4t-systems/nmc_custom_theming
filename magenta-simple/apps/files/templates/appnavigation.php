@@ -2,7 +2,7 @@
 script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 ?>
 <div id="app-navigation">
-    <div class="bradcrum-nav">&nbsp;</div>
+    <div class="bradcrum-nav" style="display:none">&nbsp;</div>
     <ul class="with-icon">
         <?php
 
