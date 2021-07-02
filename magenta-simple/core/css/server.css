@@ -293,7 +293,7 @@ body {
 }*/
 
 #controls{
-	background-color:#f2f2f2;
+	background-color:none
 	height:50px;
 	margin-left:-13px;
 	width:1427px;
@@ -1353,7 +1353,7 @@ table th .sort-indicator {
 }
 
 .bradcrum-nav{
-	background-color:#f2f2f2;
+	background-color:none;
 	height: 78px;
 	border-right:none	
 }
