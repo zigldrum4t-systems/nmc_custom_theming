@@ -573,6 +573,12 @@ body {
 	filter: invert(1);
 }
 
+.header-brandbar.minified{
+	-webkit-transform: translateY(18px); 
+	 transform: translateY(18px); 
+	 opacity: 0;
+}
+
 .sticky {
 	position: fixed;
 	top: 5px;
