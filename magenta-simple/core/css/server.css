@@ -617,6 +617,12 @@ body {
 .brandbar > .container-fixed > .header-brandbar {
 	z-index: 4999 !important;
 	display: flex;
+	transform: translateY(0);
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-out,-webkit-transform .4s ease-out;
+    transition: opacity .4s ease-out,-webkit-transform .4s ease-out;
+    transition: transform .4s ease-out,opacity .4s ease-out;
+    transition: transform .4s ease-out,opacity .4s ease-out,-webkit-transform .4s ease-out;
 }
 
 .brandbar > .container-fixed > .header-brandbar > .header-brandbar-logo {
