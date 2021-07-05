@@ -578,8 +578,8 @@ body {
 }
 
 .header-brandbar.translate-effect{
-	-webkit-transform: translateY(18px); 
-	 transform: translateY(18px); 
+	-webkit-transform: translateY(18px) !important;; 
+	 transform: translateY(18px) !important;
 }
 
 .sticky {
