@@ -522,6 +522,10 @@ body {
 #header .container-fixed .header-right .navbar-icons a:hover {
 	color: #e20074;
 }
+
+#header > .container-fixed > .header-right > label{
+	padding-left:20px;
+}
 #header > .container-fixed > .header-right > .unified-search-title {
 	padding-top: 22px;
 	font-size: 12px;
