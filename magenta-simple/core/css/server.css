@@ -1362,3 +1362,7 @@ table th .sort-indicator {
 	background-color:none;
 	height: 78px;
 }
+/** New css for EMail and Profile Picture **/
+.header-right .emailmenu, .header-right .profilePicture{
+	height:auto !important;
+}

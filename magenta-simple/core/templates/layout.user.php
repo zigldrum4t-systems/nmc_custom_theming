@@ -145,17 +145,21 @@
                 <div class="header-right">
                     <div id="unified-search"><label>Search</label></div>
                     <div id="contactsmenu">
-                        <div class="icon-contacts menutoggle" tabindex="0" role="button" aria-haspopup="true"
+                        <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">
-                            <span class="hidden-visually"><?php p($l->t('Contacts'));?></span>
+                            <img src="/themes/magenta-simple/core/img/email.png" width="24" alt="Email"/>
                         </div>
                         <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
                     </div>
-                    <label>Mail</label>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
-                            width="16">
-                            <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                        </svg><label><?php p($_['user_uid']); ?></label></a>
+                    <div class="emailmenu"><label>Email</label></div>
+                    <div class="profilePicture">
+                        <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" stroke="#212b36" stroke-width="2"       stroke-linecap="round" stroke-linejoin="round" fill="none">
+                            <circle cx="12" cy="8" r="5" />
+                            <path d="M3,21 h18 C 21,12 3,12 3,21"/>
+                            </svg>
+                            <label><?php p($_['user_uid']); ?></label>
+                        </a>
+                    </div>
                     <div id="settings">
                         <div id="expand" tabindex="0" role="button" class="menutoggle"
                             aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
