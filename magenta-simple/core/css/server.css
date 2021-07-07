@@ -590,10 +590,15 @@ body {
 	transition: max-height .4s ease-out;
 }
 
-.header-brandbar.minified{
-	-webkit-transform: translateY(18px); 
-	 transform: translateY(18px); 
-	 opacity: 0;
+.header-brandbar-translate{
+	-webkit-transform: translateY(18px) !important;
+	 transform: translateY(18px) !important; 
+
+}
+
+.brandbar-logo-minified{
+    max-width: 80px !important;
+    opacity: 1 !important;
 }
 
 .sticky {
