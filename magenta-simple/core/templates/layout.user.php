@@ -94,7 +94,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="header-menu-content">
+                    
                      <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
                         <div>
                             <h5>Magenta<span class="logo-title">CLOUD</span></h5>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                      </nav>
-                    </div>
+                   
                  
                 </div>
 
