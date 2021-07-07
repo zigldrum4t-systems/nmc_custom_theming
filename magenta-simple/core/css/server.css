@@ -578,7 +578,7 @@ body {
 }
 
 
-#header > .container-fixed > .header-left > .logo-area__inner {
+#header  .container-fixed  .header-left .logo-area .logo-area__inner {
     opacity: 0;
     max-width: 0;
     overflow: hidden;
