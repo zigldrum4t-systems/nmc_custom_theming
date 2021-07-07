@@ -597,8 +597,8 @@ body {
 }
 
 .brandbar-logo-minified{
-    max-width: 80px;
-    opacity: 1;
+    max-width: 80px !important;
+    opacity: 1 !important;
 }
 
 .sticky {
