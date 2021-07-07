@@ -146,11 +146,8 @@
                 </div>
 
                 <div class="header-right">
-                    <a>
-                        <div id="unified-search"><label></label></div>
-                        <span><?php p($l->t('Search'));?></span>                        
-                    </a>
-
+                    <div id="unified-search"></div>
+                    
                     <div id="contactsmenu">
                         <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">
