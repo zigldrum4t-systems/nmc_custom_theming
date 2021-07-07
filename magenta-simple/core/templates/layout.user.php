@@ -94,7 +94,8 @@
                             </a>
                         </div>
                     </div>
-                    <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
+                    <div class="header-menu-content">
+                     <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
                         <div>
                             <h5>Magenta<span class="logo-title">CLOUD</span></h5>
                             <h1 class="hidden-visually">
@@ -102,9 +103,9 @@
                                 <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
                             </h1>
                         </div>
-                    </a>
+                     </a>
 
-                    <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
+                     <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
                         <?php foreach ($_['navigation'] as $entry): ?>
                         <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
                             <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
@@ -120,9 +121,9 @@
                                 <span><?php p($l->t('More')); ?></span>
                             </a>
                         </li>
-                    </ul>
+                     </ul>
 
-                    <nav role="navigation">
+                     <nav role="navigation">
                         <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
                             <div id="apps">
                                 <ul>
@@ -139,7 +140,9 @@
                                 </ul>
                             </div>
                         </div>
-                    </nav>
+                     </nav>
+                    </div>
+                 
                 </div>
 
                 <div class="header-right">
