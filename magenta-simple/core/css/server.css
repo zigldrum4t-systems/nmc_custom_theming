@@ -591,9 +591,8 @@ body {
 }
 
 .header-brandbar.minified{
-	-webkit-transform: translateY(18px); 
-	 transform: translateY(18px); 
-	 opacity: 0;
+	-webkit-transform: translateY(18px) !important;
+	 transform: translateY(18px) !important; 
 }
 
 .brandbar-logo-minified{
