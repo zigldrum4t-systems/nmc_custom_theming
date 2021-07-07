@@ -590,9 +590,10 @@ body {
 	transition: max-height .4s ease-out;
 }
 
-.header-brandbar.minified{
+.header-brandbar-translate{
 	-webkit-transform: translateY(18px) !important;
 	 transform: translateY(18px) !important; 
+
 }
 
 .brandbar-logo-minified{
