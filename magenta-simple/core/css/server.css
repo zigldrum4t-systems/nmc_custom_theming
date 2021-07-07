@@ -577,14 +577,14 @@ body {
 	filter: invert(1);
 }
 
-/* 
-#header > .container-fixed > .header-right > .logo-area__inner {
+
+#header > .container-fixed > .header-left > .logo-area__inner {
     opacity: 0;
     max-width: 0;
     overflow: hidden;
     -webkit-transition: max-width .3s ease-out,opacity .4s ease-out;
     transition: max-width .3s ease-out,opacity .4s ease-out;
-} */
+}
 
 .header-brandbar{
 	transition: max-height .4s ease-out;
