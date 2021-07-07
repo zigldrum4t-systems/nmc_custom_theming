@@ -577,8 +577,7 @@ body {
 	filter: invert(1);
 }
 
-<<<<<<< HEAD
-
+/* 
 #header > .container-fixed > .header-right > .logo-area__inner {
     opacity: 0;
     max-width: 0;
@@ -589,17 +588,12 @@ body {
 
 .header-brandbar{
 	transition: max-height .4s ease-out;
-}
+} */
 
 .header-brandbar.minified{
 	-webkit-transform: translateY(18px); 
 	 transform: translateY(18px); 
 	 opacity: 0;
-=======
-.header-brandbar.translate-effect{
-	-webkit-transform: translateY(18px) !important;; 
-	 transform: translateY(18px) !important;
->>>>>>> 479f2d450c32ed7ddabc080be371e1544055d434
 }
 
 .sticky {
