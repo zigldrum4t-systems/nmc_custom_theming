@@ -1,12 +1,12 @@
 
-+<input type="hidden" name="permissions" value="" id="permissions">
-+<input type="hidden" id="free_space" value="<?php isset($_['freeSpace']) ? p($_['freeSpace']) : '' ?>">
-+<?php if (isset($_['dirToken'])):?>
+<input type="hidden" name="permissions" value="" id="permissions">
+<input type="hidden" id="free_space" value="<?php isset($_['freeSpace']) ? p($_['freeSpace']) : '' ?>">
+<?php if (isset($_['dirToken'])):?>
  	<input type="hidden" id="publicUploadRequestToken" name="requesttoken" value="<?php p($_['requesttoken']) ?>" />
  	<input type="hidden" id="dirToken" name="dirToken" value="<?php p($_['dirToken']) ?>" />
 
-     +<?php endif;?>
-+<input type="hidden" class="max_human_file_size" value="(max <?php isset($_['uploadMaxHumanFilesize']) ? p($_['uploadMaxHumanFilesize']) : ''; ?>)">
+     <?php endif;?>
+<input type="hidden" class="max_human_file_size" value="(max <?php isset($_['uploadMaxHumanFilesize']) ? p($_['uploadMaxHumanFilesize']) : ''; ?>)">
  <div id="filelist-header"></div>
  
  <div id="emptycontent" class="hidden">
