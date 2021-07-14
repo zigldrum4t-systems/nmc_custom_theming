@@ -31,7 +31,7 @@
     <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>"
         color="<?php p($theme->getColorPrimary()); ?>">
     <link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
-    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+  
     <?php emit_css_loading_tags($_); ?>
     <?php emit_script_loading_tags($_); ?>
     <?php print_unescaped($_['headers']); ?>
