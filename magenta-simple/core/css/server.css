@@ -1398,10 +1398,13 @@ table th .sort-indicator {
 }
 
 /***************************************** File List Toggle View ******************************************************************/
+#fileList tr{
+	height:172px;
+}
 #fileList .thumbnail-wrapper{
     width: 128px;
     height: 128px;
-    margin: 20px 15px;
+    margin: 20px 0px;
     padding: 0px !important;
 }
 
@@ -1412,12 +1415,14 @@ table th .sort-indicator {
     border-radius: 2px !important;
 }
 
-#fileList .selection{
-top: -4px;
-/* left: -8px; */
+#fileList td .selection{
+top: -4px !important;
+left: unset !important;
 right: -4px;
 }
-
+#fileList .filename a .name{
+	overflow: unset !important;
+}
 #fileList .filename .fileactions a{
 display: none !important;
 }
