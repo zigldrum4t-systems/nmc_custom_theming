@@ -1229,7 +1229,7 @@ input[type="checkbox"].checkbox + label:before:hover {
 
 /*---------------------------RightContent-----------------------------------*/
 #filestable tbody tr {
-	height: 68px !important;
+	/* height: 68px !important; */
 	border-bottom: 1px solid #f2f2f2;
 }
 
@@ -1395,4 +1395,29 @@ table th .sort-indicator {
 /** New css for EMail and Profile Picture **/
 .header-right .emailmenu, .header-right .profilePicture{
 	height:auto !important;
+}
+
+/***************************************** File List Toggle View ******************************************************************/
+#fileList .thumbnail-wrapper{
+    width: 128px;
+    height: 128px;
+    margin: 20px 15px;
+    padding: 0px !important;
+}
+
+#fileList .thumbnail-wrapper .thumbnail{
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover;
+    border-radius: 2px !important;
+}
+
+#fileList .selection{
+top: -4px;
+/* left: -8px; */
+right: -4px;
+}
+
+#fileList .filename .fileactions a{
+display: none !important;
 }
