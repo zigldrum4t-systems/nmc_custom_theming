@@ -51,6 +51,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         </span>
 
     </div>
+    
     <div class="custom-button">
         <a href="https://cloud.telekom-dienste.de/tarife" target="_blank"><button type="button"
                 class="btn btn-default btn-style">Expand Storage</button></a>

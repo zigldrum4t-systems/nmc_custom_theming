@@ -28,6 +28,7 @@
 	 * @param {boolean} [options.enableUpload=false] whether to enable uploader
 	 * @param {OC.Files.Client} [options.filesClient] files client to use
 	 */
+	alert("in filelistjs");
 	var FileList = function($el, options) {
 		this.initialize($el, options);
 	};
