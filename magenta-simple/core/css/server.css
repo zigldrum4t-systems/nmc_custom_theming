@@ -1399,13 +1399,13 @@ table th .sort-indicator {
 
 /***************************************** File List Toggle View ******************************************************************/
 #fileList tr{
-	height:200px !important;
+	height:180px !important;
 }
 
 #filestable tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 128px !important;
-    margin: 20px 15px;
+    margin: 15px 15px;
     padding: 0px !important;
 }
 
@@ -1430,7 +1430,7 @@ display: none !important;
 }
 
 table td.filename .nametext .innernametext{
-	padding-top: 8px !important;
+	padding-top: 6px !important;
 	padding-left:0px !important;
 }
 
