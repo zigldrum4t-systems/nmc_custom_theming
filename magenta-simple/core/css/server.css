@@ -1405,7 +1405,7 @@ table th .sort-indicator {
 #filestable tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 128px !important;
-    margin: 20px 0px;
+    margin: 20px 15px;
     padding: 0px !important;
 }
 
@@ -1431,6 +1431,7 @@ display: none !important;
 
 table td.filename .nametext .innernametext{
 	padding-top: 8px !important;
+	padding-left:0px !important;
 }
 
 #filestable tbody tr:hover .nametext{
@@ -1442,5 +1443,5 @@ table td.filename .nametext .innernametext{
 }
 
 #filestable > tbody > tr > td > a:hover {
-    background-color:#ededed;
+	background-color: rgb(242 242 242 / 50%) !important;
 }
