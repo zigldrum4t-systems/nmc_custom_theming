@@ -1399,11 +1399,12 @@ table th .sort-indicator {
 
 /***************************************** File List Toggle View ******************************************************************/
 #fileList tr{
-	height:172px;
+	height:200px !important;
 }
-#fileList .thumbnail-wrapper{
-    width: 128px;
-    height: 128px;
+
+#filestable tbody td.filename .thumbnail-wrapper {
+    width: 128px !important;
+    height: 128px !important;
     margin: 20px 0px;
     padding: 0px !important;
 }
@@ -1416,9 +1417,9 @@ table th .sort-indicator {
 }
 
 #filestable tbody td.selection{
-top: -4px !important;
+top: 12px !important;
 left: unset !important;
-right: -4px;
+right: 10px;
 }
 
 #fileList .filename a .name{
@@ -1426,4 +1427,20 @@ right: -4px;
 }
 #fileList .filename .fileactions a{
 display: none !important;
+}
+
+table td.filename .nametext .innernametext{
+	padding-top: 8px !important;
+}
+
+#filestable tbody tr:hover .nametext{
+	background-color: unset !important;
+}
+
+#filestable tbody tr:hover{
+	background-color: unset !important;
+}
+
+#filestable > tbody > tr > td > a:hover {
+    background-color:#ededed;
 }
