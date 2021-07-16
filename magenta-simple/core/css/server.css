@@ -1445,3 +1445,10 @@ table td.filename .nametext .innernametext{
 #filestable > tbody > tr > td > a:hover {
 	background-color: rgb(242 242 242 / 50%) !important;
 }
+
+#filestable tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
+	padding: 14px;
+    left: 42px;
+    top: 67px;
+    right: unset !important;
+}
