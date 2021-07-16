@@ -1415,11 +1415,12 @@ table th .sort-indicator {
     border-radius: 2px !important;
 }
 
-#fileList td .selection{
+#filestable tbody td.selection{
 top: -4px !important;
 left: unset !important;
 right: -4px;
 }
+
 #fileList .filename a .name{
 	overflow: unset !important;
 }
