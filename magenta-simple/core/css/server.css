@@ -1398,7 +1398,7 @@ table th .sort-indicator {
 }
 
 /***************************************** File List Toggle View ******************************************************************/
-/* #fileList tr{
+ #fileList tr{
 	height:172px !important;
 }
 
@@ -1409,8 +1409,8 @@ table th .sort-indicator {
 
 #filestable tbody tr {
     /* height: 68px !important; */
-    /* border-bottom:unset !important; */
-/* }
+     border-bottom:unset !important; 
+}
 #filestable tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 108px !important;
@@ -1463,12 +1463,12 @@ table td.filename .nametext .innernametext{
     left: 42px !important;
     top: 47px !important;
     right: unset !important;
-} */
+} 
 /*flexbox-change-properties-for-thumbnail-labels*/
-/* #filestable tbody td.filename .name .nametext{
+ #filestable tbody td.filename .name .nametext{
 	display:unset !important;
 }
 
 table td.filename .nametext {
 	display:unset !important;
-} */ */
+}
