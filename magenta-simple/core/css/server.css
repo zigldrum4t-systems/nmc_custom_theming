@@ -1461,7 +1461,7 @@ table td.filename .nametext .innernametext{
 #filestable tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
 	padding: 14px;
     left: 42px !important;
-    top: 67px !important;
+    top: 47px !important;
     right: unset !important;
 }
 /*flexbox-change-properties-for-thumbnail-labels*/
