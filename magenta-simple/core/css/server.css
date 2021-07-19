@@ -1407,6 +1407,10 @@ table th .sort-indicator {
 	row-gap: 15px !important;
 }
 
+#filestable tbody tr {
+    /* height: 68px !important; */
+    border-bottom:unset !important;
+}
 #filestable tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 128px !important;
