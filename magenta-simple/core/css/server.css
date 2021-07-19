@@ -1402,6 +1402,11 @@ table th .sort-indicator {
 	height:180px !important;
 }
 
+#filestable tbody{
+	height:unset !important;
+	row-gap: 15px !important;
+}
+
 #filestable tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 128px !important;
@@ -1452,3 +1457,4 @@ table td.filename .nametext .innernametext{
     top: 67px !important;
     right: unset !important;
 }
+
