@@ -1414,8 +1414,12 @@ table th .sort-indicator {
 #filestable tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 108px !important;
-    margin: 15px 15px;
+    margin: 15px 15px 15px 9px;
     padding: 0px !important;
+}
+
+#filestable > tbody > tr > td > a {
+    width: 145px;
 }
 
 #fileList .thumbnail-wrapper .thumbnail{
@@ -1426,9 +1430,9 @@ table th .sort-indicator {
 }
 
 #filestable tbody td.selection{
-top: 12px !important;
+top: 10px !important;
 left: unset !important;
-right: 18px;
+right: 25px;
 }
 
 #fileList .filename a .name{
