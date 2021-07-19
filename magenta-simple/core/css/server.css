@@ -1399,7 +1399,7 @@ table th .sort-indicator {
 
 /***************************************** File List Toggle View ******************************************************************/
 #fileList tr{
-	height:180px !important;
+	height:172px !important;
 }
 
 #filestable tbody{
@@ -1413,7 +1413,7 @@ table th .sort-indicator {
 }
 #filestable tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
-    height: 128px !important;
+    height: 108px !important;
     margin: 15px 15px;
     padding: 0px !important;
 }
@@ -1428,7 +1428,7 @@ table th .sort-indicator {
 #filestable tbody td.selection{
 top: 12px !important;
 left: unset !important;
-right: 10px;
+right: 18px;
 }
 
 #fileList .filename a .name{
@@ -1438,6 +1438,9 @@ right: 10px;
 display: none !important;
 }
 
+#filestable tbody td.filename .name .nametext{
+	margin-top:133px !important;
+}
 table td.filename .nametext .innernametext{
 	padding-top: 6px !important;
 	padding-left:0px !important;
@@ -1461,4 +1464,11 @@ table td.filename .nametext .innernametext{
     top: 67px !important;
     right: unset !important;
 }
+/*flexbox-change-properties-for-thumbnail-labels*/
+#filestable tbody td.filename .name .nametext{
+	display:unset !important;
+}
 
+table td.filename .nametext {
+	display:unset !important;
+}
