@@ -928,6 +928,10 @@ body {
 	}
 }
 
+.app-files #app-content {
+    width: calc(100% - 288px) !important;
+}
+
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
 	.container-fixed {
 		width: 1280px !important;
