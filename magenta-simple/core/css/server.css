@@ -930,6 +930,14 @@ body {
 	.app-sidebar-header__info {
 		width: 352px !important;
 	}
+	#filestable.view-grid tbody{
+		row-gap:15px !important;
+	}
+	#filestable.view-grid tbody td.selection{
+		top: 8px !important;
+		left: unset !important;
+		right: 25px;
+		}
 }
 
 .app-files #app-content {
@@ -1423,7 +1431,6 @@ table th .sort-indicator {
 
 #filestable.view-grid tbody{
 	height:unset !important;
-	row-gap: 15px !important;
 	justify-content: unset !important;
 } 
 
@@ -1449,11 +1456,6 @@ table th .sort-indicator {
     border-radius: 2px !important;
 }
 
-#filestable.view-grid tbody td.selection{
-top: 8px !important;
-left: unset !important;
-right: 25px;
-}
 
 #filestable.view-grid .filename a .name{
 	overflow: unset !important;
