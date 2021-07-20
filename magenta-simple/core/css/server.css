@@ -99,6 +99,10 @@ body {
 	padding-top: 64px;
 }
 
+#app-navigation #app-content {
+    margin-left: 320px !important;
+}
+
 #app-navigation > ul > li.active,
 #app-navigation > ul > li.active > a,
 #app-navigation > ul > li a:active,
@@ -1058,8 +1062,11 @@ body {
     row-gap: unset !important;
     margin: 15px 0;
 }
-
+#filestable tbody {
+    row-gap: 15px !important;
 }
+}
+
 @media screen and (max-height: 850px) {
 	#app-navigation > ul {
 		padding-top: 0px !important;
