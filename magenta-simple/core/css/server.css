@@ -1425,7 +1425,7 @@ table th .sort-indicator {
 }
 
 /***************************************** File List Toggle View ******************************************************************/
- #filestable.view-grid tr{
+ #filestable.view-grid tbody tr{
 	height:172px !important;
 }
 
@@ -1479,8 +1479,9 @@ table td.filename .nametext .innernametext{
 #filestable > tbody > tr > td > a:hover{
 	background-color: rgb(242 242 242 / 50%) !important;
 }
-#filestable > tbody > tr > td > a::selection{
-	background-color: rgb(242 242 242 / 50%) !important;
+
+#filestable tbody tr.selected .filename a{
+		background-color: rgb(242 242 242 / 50%) !important;
 }
 
 #filestable.view-grid tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
