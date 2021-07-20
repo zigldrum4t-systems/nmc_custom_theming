@@ -1271,10 +1271,6 @@ table td.filename .thumbnail {
 	border: none;
 }
 
-#filestable tbody tr:hover {
-	background-color: rgb(242 242 242 / 50%) !important;
-}
-
 span.extension {
 	padding-top: 11px !important;
 }
@@ -1478,8 +1474,8 @@ table td.filename .nametext .innernametext{
 	background-color: unset !important;
 }
 
-#filestable.view-grid tbody  td a:hover,
-#filestable.view-grid tbody  td a:selected{
+#filestable.view-grid tbody tr td a:hover,
+#filestable.view-grid tbody tr td a:selected{
 	background-color: rgb(242 242 242 / 50%) !important;
 }
 
