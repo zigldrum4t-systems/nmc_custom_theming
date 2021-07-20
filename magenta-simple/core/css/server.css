@@ -1026,7 +1026,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1599px) {
 	#appmenu {
 		display: none;
 	}
@@ -1046,6 +1046,12 @@ body {
 	#app-navigation{
 		width:auto !important;
 	}
+}
+
+@media screen and (max-width: 1299px) {
+#filestable tbody {
+    row-gap: 0px !important;
+}
 }
 
 @media screen and (max-height: 850px) {
