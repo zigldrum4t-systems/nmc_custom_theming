@@ -1421,52 +1421,52 @@ table th .sort-indicator {
 }
 
 /***************************************** File List Toggle View ******************************************************************/
- /* #fileList tr{
+ #filestable .view-grid tr{
 	height:172px !important;
 }
 
-#filestable tbody{
+#filestable .view-grid tbody{
 	height:unset !important;
 	row-gap: 15px !important;
 	justify-content: unset !important;
-} */
+} 
 
-/* #filestable tbody tr {
+ #filestable .view-grid tbody tr {
     /* height: 68px !important; */
-     /* border-bottom:unset !important;  */
-} */
-/* #filestable tbody td.filename .thumbnail-wrapper {
+     border-bottom:unset !important; 
+}
+#filestable .view-grid tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 108px !important;
     margin: 15px 15px 15px 9px;
     padding: 0px !important;
 }
 
-#filestable > tbody > tr > td > a {
+#filestable > view-grid > tbody > tr > td > a {
     width: 145px;
 }
 
-#fileList .thumbnail-wrapper .thumbnail{
+#filestable .view-grid .thumbnail-wrapper .thumbnail{
     width: 100% !important;
     height: 100% !important;
     background-size: cover;
     border-radius: 2px !important;
 }
 
-#filestable tbody td.selection{
+#filestable .view-grid tbody td.selection{
 top: 8px !important;
 left: unset !important;
 right: 25px;
 }
 
-#fileList .filename a .name{
+#filestable .view-grid .filename a .name{
 	overflow: unset !important;
 }
 #fileList .filename .fileactions a{
 display: none !important;
 }
 
-#filestable tbody td.filename .name .nametext{
+#filestable .view-grid tbody td.filename .name .nametext{
 	margin-top:133px !important;
 }
 table td.filename .nametext .innernametext{
@@ -1474,29 +1474,29 @@ table td.filename .nametext .innernametext{
 	padding-left:0px !important;
 }
 
-#filestable tbody tr:hover .nametext{
+#filestable .view-grid tbody tr:hover .nametext{
 	background-color: unset !important;
 }
 
-#filestable tbody tr:hover{
+#filestable .view-grid tbody tr:hover{
 	background-color: unset !important;
 }
 
-#filestable > tbody > tr > td > a:hover {
+#filestable > view-grid > tbody > tr > td > a:hover {
 	background-color: rgb(242 242 242 / 50%) !important;
 }
 
-#filestable tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
+#filestable .view-grid tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
 	padding: 14px;
     left: 42px !important;
     top: 47px !important;
     right: unset !important;
-}  */
+} 
 /*flexbox-change-properties-for-thumbnail-labels*/
- /* #filestable tbody td.filename .name .nametext{
+ #filestable .view-grid tbody td.filename .name .nametext{
 	display:unset !important;
 }
 
-table td.filename .nametext {
+table .view-grid td.filename .nametext {
 	display:unset !important;
-} */
+}
