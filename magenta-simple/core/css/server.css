@@ -1054,16 +1054,16 @@ body {
 
 @media screen and (max-width: 1599px) {
 #filestable tbody {
-    row-gap: 15px !important;
-}
-#filestable tbody {
     display: grid;
     grid-template-columns: repeat(auto-fill, 145px) !important;
     row-gap: unset !important;
     margin: 15px 0;
+	row-gap: 15px !important;
 }
-#filestable tbody {
-    row-gap: 15px !important;
+#filestable.view-grid tbody td.selection {
+    top: 8px !important;
+    left: unset !important;
+    right: 12px;
 }
 }
 
