@@ -1,8 +1,7 @@
 
     <div class="breadcrumb-bar">
         <div class="container-fixed">
-            <div class="col-xs-3 left-part"></div>
-            <div class="col-xs-9 right-part">
+          
                 <ul class="breadcrumb-style">
                     <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
                                 width="16">
@@ -13,7 +12,7 @@
                     <li> > </li>
                     <li><a href="#">Scans</a></li>
                 </ul>
-            </div>
+            
         </div>
     </div>
 
