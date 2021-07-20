@@ -1478,16 +1478,11 @@ table td.filename .nametext .innernametext{
 	background-color: unset !important;
 }
 
-#filestable.view-grid tbody tr:hover{
-	background-color: unset !important;
-}
-
-#filestable.view-grid tbody tr.selected{
+#filestable.view-grid tbody tr td a::selection{
 	background-color: rgb(242 242 242 / 50%) !important;
 }
 
-}
-#filestable.view-grid tbody tr td a:hover {
+#filestable.view-grid tbody tr td a:hover{
 	background-color: rgb(242 242 242 / 50%) !important;
 }
 
