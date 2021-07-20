@@ -1026,7 +1026,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1299px) {
 	#appmenu {
 		display: none;
 	}
@@ -1048,12 +1048,18 @@ body {
 	}
 }
 
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1599px) {
 #filestable tbody {
-    row-gap: 0px !important;
+    row-gap: 15px !important;
 }
+#filestable tbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 145px) !important;
+    row-gap: unset !important;
+    margin: 15px 0;
 }
 
+}
 @media screen and (max-height: 850px) {
 	#app-navigation > ul {
 		padding-top: 0px !important;
@@ -1415,6 +1421,7 @@ table th .sort-indicator {
 #filestable tbody{
 	height:unset !important;
 	row-gap: 15px !important;
+	justify-content: unset !important;
 }
 
 #filestable tbody tr {
