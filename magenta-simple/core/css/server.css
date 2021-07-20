@@ -1403,7 +1403,6 @@ table th .sort-indicator {
 }
 
 #headerName .sort-indicator {
-<<<<<<< HEAD
 	width: 10px;
 	height: 8px;
 	margin-left: -65px;
@@ -1411,14 +1410,6 @@ table th .sort-indicator {
 	display: inline-block;
 	vertical-align: text-bottom;
 	opacity: 0.3;
-=======
-    width: 10px;
-    height: 8px;
-    margin-left: -65px;
-    display: inline-block;
-    vertical-align: text-bottom;
-    opacity: 0.3;
->>>>>>> aad884f4f6be04fff6000df9e048a77858721aae
 }
 
 #headerSize .sort-indicator {
