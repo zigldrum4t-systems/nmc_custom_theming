@@ -1360,6 +1360,7 @@ table th .sort-indicator {
 	width: 10px;
 	height: 8px;
 	margin-left: -65px;
+	margin-right:65px;
 	display: inline-block;
 	vertical-align: text-bottom;
 	opacity: 0.3;
