@@ -1474,8 +1474,10 @@ table td.filename .nametext .innernametext{
 	background-color: unset !important;
 }
 
-#filestable tbody tr td a:hover,
-#filestable tbody tr td a:selected{
+#filestable > tbody > tr > td > a:hover{
+	background-color: rgb(242 242 242 / 50%) !important;
+}
+#filestable > tbody > tr > td > a::selection{
 	background-color: rgb(242 242 242 / 50%) !important;
 }
 
