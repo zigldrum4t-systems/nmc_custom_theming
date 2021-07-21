@@ -1,21 +1,24 @@
+<div class="breadcrumb-bar">
+	<div class="container-fixed">
+		<ul class="breadcrumb-style">
+			<div id="controls">
+				<div class="actions creatable hidden">
+				<div id="uploadprogresswrapper">
+				</div>
+				</div>
+				<div id="file_action_panel"></div>
+				<div class="notCreatable notPublic hidden">
+				<?php p($l->t('You don’t have permission to upload or create files here'))?>
+				</div>
+				<?php /* Note: the template attributes are here only for the public page. These are normally loaded
+				+			 through ajax instead (updateStorageStatistics).
+				+	*/ ?>
+			</div>
+		</ul>
+	</div>
+</div>
 
-    <div class="breadcrumb-bar">
-        <div class="container-fixed">
-          
-                <ul class="breadcrumb-style">
-                    <li><a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" height="16"
-                                width="16">
-                                <path d="m8 1l-8 8h3v6h10v-6h3l-3-3v-4h-3v1l-2-2z" />
-                            </svg></a></li>
-                    <li> > </li>
-                    <li><a href="#">Dokumente</a></li>
-                    <li> > </li>
-                    <li><a href="#">Scans</a></li>
-                </ul>
-            
-        </div>
-    </div>
-
+<div style="clear:both">&nbsp;</div>
 <?php /** @var \OCP\IL10N $l */ ?>
 
  <?php $_['appNavigation']->printPage(); ?>
