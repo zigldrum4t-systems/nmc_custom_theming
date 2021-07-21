@@ -1542,6 +1542,9 @@ table th .sort-indicator {
 #filestable.view-grid tbody tr:hover .nametext {
     background-color: unset !important;
 }
+#fileList td a a.action:hover, #fileList td a a.action:focus {
+     opacity:unset !important;
+}
 
 
 #filestable tbody tr.selected .filename a {
