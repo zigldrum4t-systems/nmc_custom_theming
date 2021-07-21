@@ -1491,20 +1491,20 @@ table th .sort-indicator {
 }
 
 #filestable.view-grid tbody td.selection {
-    top: 10px !important;
+    top: 9px !important;
     left: unset !important;
-    right: 10px;
+    right: 9px;
 }
 
 #filestable.view-grid tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 108px !important;
-    margin: 15px;
+    margin: 16px;
     padding: 0px !important;
 }
 
 #filestable.view-grid tbody tr td a {
-    width: 158px;
+    width: 160px;
 }
 
 #filestable.view-grid .thumbnail-wrapper .thumbnail {
