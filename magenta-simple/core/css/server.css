@@ -350,11 +350,6 @@ body {
     opacity: 1 !important;
 }
 
-.list-container .dragging {
-    color: #ffff;
-    background: #248b31 !important;
-}
-
 #controls>.breadcrumb>div.crumb.svg>a {
     color: var(--color-main-text) !important;
 }
@@ -1299,6 +1294,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 #filestable tbody tr {
     height: 68px !important;
     border-bottom: 1px solid #cccccc;
+}
+
+#filestable tbody tr.canDrop {
+    background-color: #73C354 !important;
 }
 
 #filestable td.filename .nametext .innernametext {
