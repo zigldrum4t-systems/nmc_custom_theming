@@ -1290,7 +1290,6 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 
 /*---------------------------RightContent-----------------------------------*/
-
 #filestable tbody tr {
     height: 68px !important;
     border-bottom: 1px solid #cccccc;
@@ -1544,9 +1543,6 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
-#filestable>tbody>tr>td>a:hover {
-    background-color: rgb(242 242 242 / 50%) !important;
-}
 
 #filestable tbody tr.selected .filename a {
     background-color: rgb(242 242 242 / 50%) !important;
