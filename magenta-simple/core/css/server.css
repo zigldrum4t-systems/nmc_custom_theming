@@ -1306,22 +1306,22 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-bottom: 1px solid #cccccc;
 }
 
-table td.filename .nametext .innernametext {
+#filestable td.filename .nametext .innernametext {
     font-size: 16px !important;
     color: #191919 !important;
     padding-left: 20px;
     padding-top: 14px;
 }
 
-table td.filename .thumbnail {
+#filestable td.filename .thumbnail {
     width: 44px !important;
     height: 44px !important;
     margin-top: 4px;
-    background-size: 47px;
+    background-size: cover;
     border: none;
 }
 
-span.extension {
+#filestable span.extension {
     padding-top: 13px !important;
 }
 
@@ -1342,7 +1342,7 @@ span.extension {
     color: #f2f2f2 !important;
 }
 
-table th .columntitle.name {
+#filestable table th .columntitle.name {
     margin-left: 65px !important;
 }
 
@@ -1354,7 +1354,7 @@ table th .columntitle.name {
     overflow: auto;
 }
 
-.column-selection input[type="checkbox"].checkbox:checked+label:before {
+#filestable .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #248b31 !important;
     border: 1px solid #248b31 !important;
     width: 20px;
@@ -1362,7 +1362,7 @@ table th .columntitle.name {
     border-radius: 50px !important;
 }
 
-.selection input[type="checkbox"].checkbox:checked+label:before {
+#filestable.selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #248b31 !important;
     border: 1px solid #248b31 !important;
     width: 20px;
