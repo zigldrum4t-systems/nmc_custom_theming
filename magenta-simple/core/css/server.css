@@ -1302,15 +1302,15 @@ input[type="checkbox"].checkbox+label:before:hover {
 /*---------------------------RightContent-----------------------------------*/
 
 #filestable tbody tr {
-    /* height: 68px !important; */
-    border-bottom: 1px solid #f2f2f2;
+    height: 68px !important;
+    border-bottom: 1px solid #cccccc;
 }
 
 table td.filename .nametext .innernametext {
     font-size: 16px !important;
     color: #191919 !important;
     padding-left: 20px;
-    padding-top: 12px;
+    padding-top: 14px;
 }
 
 table td.filename .thumbnail {
@@ -1322,7 +1322,7 @@ table td.filename .thumbnail {
 }
 
 span.extension {
-    padding-top: 11px !important;
+    padding-top: 13px !important;
 }
 
 #filestable>thead>tr>th>div>a {
@@ -1513,7 +1513,7 @@ table th .sort-indicator {
     overflow: unset !important;
 }
 
-#fileList .filename .fileactions a {
+#filestable.view-grid .filename .fileactions a {
     display: none !important;
 }
 
@@ -1521,7 +1521,7 @@ table th .sort-indicator {
     margin-top: 133px !important;
 }
 
-table td.filename .nametext .innernametext {
+#filestable.view-grid td.filename .nametext .innernametext {
     padding-top: 6px !important;
     padding-left: 0px !important;
 }
@@ -1555,3 +1555,4 @@ table td.filename .nametext .innernametext {
 table.view-grid td.filename .nametext {
     display: unset !important;
 }
+
