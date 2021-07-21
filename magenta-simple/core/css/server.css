@@ -1088,6 +1088,11 @@ body {
     }
 }
 
+@media screen and (max-width: 1599px) {
+    #filestable tbody {
+        row-gap: unset !important;
+    }
+}
 
 @media screen and (max-height: 850px) {
     #app-navigation>ul {
