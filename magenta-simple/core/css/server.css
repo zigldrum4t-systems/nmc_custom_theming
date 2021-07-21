@@ -1086,6 +1086,10 @@ body {
     #app-navigation {
         width: auto !important;
     }
+    #filestable tbody {
+        row-gap: unset !important;
+        justify-content: unset !important;
+    }
 }
 
 @media screen and (max-width: 1599px) {
