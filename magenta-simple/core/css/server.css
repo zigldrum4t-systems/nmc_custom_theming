@@ -1483,7 +1483,6 @@ table th .sort-indicator {
 
 #filestable.view-grid tbody {
     height: unset !important;
-    justify-content: unset !important;
 }
 
 #filestable.view-grid tbody tr {
@@ -1491,21 +1490,27 @@ table th .sort-indicator {
     border-bottom: unset !important;
 }
 
+#filestable.view-grid tbody td.selection {
+    top: 10px !important;
+    left: unset !important;
+    right: 10px;
+}
+
 #filestable.view-grid tbody td.filename .thumbnail-wrapper {
     width: 128px !important;
     height: 108px !important;
-    margin: 15px 15px 15px 9px;
+    margin: 15px;
     padding: 0px !important;
 }
 
 #filestable.view-grid tbody tr td a {
-    width: 145px;
+    width: 158px;
 }
 
 #filestable.view-grid .thumbnail-wrapper .thumbnail {
     width: 100% !important;
     height: 100% !important;
-    background-size: cover;
+    background-size: cover !important;
     border-radius: 2px !important;
 }
 
