@@ -1315,6 +1315,9 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-size: cover;
     border: none;
 }
+#fileList td a a.action.action-menu {
+    display:none;
+}
 
 #filestable span.extension {
     padding-top: 13px !important;
@@ -1342,14 +1345,13 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody {
-    height: 628px;
     display: table;
     width: 100%;
     display: block;
     overflow: auto;
 }
 
-#filestable .column-selection input[type="checkbox"].checkbox:checked+label:before {
+ .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #248b31 !important;
     border: 1px solid #248b31 !important;
     width: 20px;
@@ -1357,7 +1359,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-radius: 50px !important;
 }
 
-#filestable.selection input[type="checkbox"].checkbox:checked+label:before {
+.selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #248b31 !important;
     border: 1px solid #248b31 !important;
     width: 20px;
@@ -1369,6 +1371,23 @@ input[type="checkbox"].checkbox+label:before:hover {
     display: none;
 }
 
+#filestable .date{
+    color:#191919 !important;
+}
+
+#filestable .filesize{
+    color:#191919  !important;
+}
+
+#fileList td a a.action.action-menu{
+    display: none;
+}
+
+#filestable tfoot .filesummary{
+    font-size:14px !important;
+    color:#666666 !important;
+    font-weight: normal;
+}
 
 /***************************************** List view sorting ******************************************************************/
 
@@ -1438,10 +1457,6 @@ table th .sort-indicator {
     background-image: var(--icon-star-dark-FC0);
     padding-top: 88px;
     background-size: 20px;
-}
-
-#app-content-files #filestable {
-    margin-top: 30px;
 }
 
 #view-toggle {
