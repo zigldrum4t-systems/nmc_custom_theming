@@ -352,11 +352,6 @@ body {
     opacity: 1 !important;
 }
 
-.list-container .dragging {
-    color: #ffff;
-    background: #248b31 !important;
-}
-
 #controls>.breadcrumb>div.crumb.svg>a {
     color: var(--color-main-text) !important;
 }
@@ -1297,10 +1292,13 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 
 /*---------------------------RightContent-----------------------------------*/
-
 #filestable tbody tr {
     height: 68px !important;
     border-bottom: 1px solid #cccccc;
+}
+
+#filestable tbody tr.canDrop {
+    background-color: #73C354 !important;
 }
 
 #filestable td.filename .nametext .innernametext {
@@ -1548,10 +1546,10 @@ table th .sort-indicator {
 #filestable.view-grid tbody tr:hover .nametext {
     background-color: unset !important;
 }
-
-#filestable>tbody>tr>td>a:hover {
-    background-color: rgb(242 242 242 / 50%) !important;
+#fileList td a a.action:hover, #fileList td a a.action:focus {
+     opacity:unset !important;
 }
+
 
 #filestable tbody tr.selected .filename a {
     background-color: rgb(242 242 242 / 50%) !important;
