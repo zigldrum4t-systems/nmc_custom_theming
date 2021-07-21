@@ -1088,20 +1088,6 @@ body {
     }
 }
 
-@media screen and (max-width: 1599px) {
-    #filestable tbody {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 145px) !important;
-        row-gap: unset !important;
-        margin: 15px 0;
-        row-gap: 0px !important;
-    }
-    #filestable.view-grid tbody td.selection {
-        top: 8px !important;
-        left: unset !important;
-        right: 12px;
-    }
-}
 
 @media screen and (max-height: 850px) {
     #app-navigation>ul {
