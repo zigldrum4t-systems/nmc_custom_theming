@@ -450,13 +450,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: inline-flex;
-    position: relative;
 }
 
 aside{
     position: absolute !important;
     top:94px !important;
-    width:288px !important;
+    min-width:unset !important;
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
@@ -652,6 +651,7 @@ aside{
 #content>.container-fixed {
     margin-left: auto;
     margin-right: auto;
+    position:relative;
 }
 
 .brandbar {
@@ -725,6 +725,9 @@ aside{
     }
     .header-right .navbar-icons .smallscreenSize {
         display: none !important;
+    }
+    aside{
+        width:288px !important;
     }
 }
 
@@ -972,6 +975,9 @@ aside{
         left: unset !important;
         right: 25px;
     }
+    aside{
+        width:352px !important;
+    }
 }
 
 .app-files #app-content {
@@ -1008,6 +1014,9 @@ aside{
     #app-navigation,
     #app-sidebar-vue {
         width: 288px !important;
+    }
+    aside{
+        width:288px !important;
     }
 }
 
@@ -1439,7 +1448,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 56px;
+    margin-left: 65px;
 }
 
 /***************************************** List view sorting ******************************************************************/
