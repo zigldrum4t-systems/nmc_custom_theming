@@ -209,7 +209,9 @@
     <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
         <div class="container-fixed">
             <?php print_unescaped($_['content']); ?>
+            <div id="app-sidebar"></div>
         </div>
+       
     </div>
 
     <footer class="brand-footer">
