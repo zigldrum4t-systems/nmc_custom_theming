@@ -642,7 +642,7 @@ body {
     width: 1236px;
 }
 
-#content.container-fixed {
+#content>.container-fixed {
     margin-left: auto;
     margin-right: auto;
 }
@@ -1292,6 +1292,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 
 /*---------------------------RightContent-----------------------------------*/
+
 #filestable tbody tr {
     height: 68px !important;
     border-bottom: 1px solid #cccccc;
@@ -1546,10 +1547,11 @@ table th .sort-indicator {
 #filestable.view-grid tbody tr:hover .nametext {
     background-color: unset !important;
 }
-#fileList td a a.action:hover, #fileList td a a.action:focus {
-     opacity:unset !important;
-}
 
+#fileList td a a.action:hover,
+#fileList td a a.action:focus {
+    opacity: unset !important;
+}
 
 #filestable tbody tr.selected .filename a {
     background-color: rgb(242 242 242 / 50%) !important;
