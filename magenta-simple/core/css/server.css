@@ -450,6 +450,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: inline-flex;
+    position: relative;
+}
+
+aside{
+    position: absolute !important;
+    top:94px !important;
+    width:288px !important;
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
