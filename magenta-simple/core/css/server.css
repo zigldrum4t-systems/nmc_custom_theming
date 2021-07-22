@@ -1351,10 +1351,9 @@ input[type="checkbox"].checkbox+label:before:hover {
     color: #f2f2f2 !important;
 }
 
-#filestable table th .columntitle.name {
+#filestable th .columntitle.name {
     margin-left: 63px !important;
 }
-
 
 
 #filestable tbody {
