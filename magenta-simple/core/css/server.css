@@ -1298,8 +1298,12 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-bottom: 1px solid #cccccc;
 }
 
+#filestable tbody tr:active{
+    background-color: #f0f7e0 !important;
+}
+
 #filestable tbody tr.canDrop {
-    background-color: #73C354 !important;
+    background-color: #cfe8af !important;
 }
 
 #filestable td.filename .nametext .innernametext {
@@ -1334,9 +1338,9 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-decoration: none !important;
 }
 
-#filestable>thead>tr>th>div>a:hover {
+/* #filestable>thead>tr>th>div>a:hover {
     opacity: unset !important;
-}
+} */
 
 #filestable>thead>tr>th>div>a {
     color: #f2f2f2 !important;
