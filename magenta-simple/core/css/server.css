@@ -1334,6 +1334,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: #cfe8af !important;
 }
 
+#filestable tbody tr:active, 
 #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
 #filestable tbody tr.selected,
