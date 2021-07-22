@@ -1318,6 +1318,12 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: #cfe8af !important;
 }
 
+#filestable tbody tr.highlighted, 
+#filestable tbody tr.highlighted .name:focus,
+ #filestable tbody tr.selected, #filestable tbody tr.searchresult {
+    background-color: unset !important;
+}
+
 #filestable td.filename .nametext .innernametext {
     font-size: 16px !important;
     color: #191919 !important;
