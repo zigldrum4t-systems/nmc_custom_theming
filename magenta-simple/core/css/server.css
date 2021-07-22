@@ -1404,6 +1404,10 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-radius: 50px !important;
 }
 
+#fileList tr td.selection>.selectCheckBox+label:before {
+    opacity: unset !important;
+}
+
 .selection label:after {
     border: 2px solid #fff;
     border-top: none;
