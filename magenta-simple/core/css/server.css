@@ -1335,7 +1335,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable>thead>tr>th>div>a:hover {
-    opacity: 1 !important;
+    opacity: unset !important;
 }
 
 #filestable>thead>tr>th>div>a {
