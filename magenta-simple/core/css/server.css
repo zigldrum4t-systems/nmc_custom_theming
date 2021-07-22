@@ -1298,6 +1298,10 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-bottom: 1px solid #cccccc;
 }
 
+#filestable tbody tr:focus{
+    background-color: unset !important;
+}
+
 #filestable tbody tr:active{
     background-color: #f0f7e0 !important;
 }
