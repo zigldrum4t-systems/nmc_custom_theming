@@ -1352,8 +1352,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable table th .columntitle.name {
-    margin-left: 65px !important;
+    margin-left: 63px !important;
 }
+
+
 
 #filestable tbody {
     display: table;
@@ -1361,7 +1363,9 @@ input[type="checkbox"].checkbox+label:before:hover {
     display: block;
     overflow: auto;
 }
-
+#fileList tr td.selection>.selectCheckBox+label, .select-all+label {
+    padding: 16px 8px !important;
+}
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
     border: 1px solid #73C354 !important;
@@ -1408,6 +1412,10 @@ input[type="checkbox"].checkbox+label:before:hover {
     display: none;
 }
 
+#fileList td a a.action {
+    opacity: 0.7 !important;
+}
+
 #filestable tfoot .filesummary {
     font-size: 14px !important;
     color: #666666 !important;
@@ -1415,7 +1423,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 73px;
+    margin-left: 56px;
 }
 
 /***************************************** List view sorting ******************************************************************/
@@ -1522,6 +1530,10 @@ table th .sort-indicator {
 
 #filestable.view-grid tbody {
     height: unset !important;
+}
+
+#filestable.view-grid table th .columntitle.name {
+    margin-left: 65px !important;
 }
 
 #filestable.view-grid tbody tr {
