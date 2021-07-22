@@ -453,10 +453,10 @@ body {
     position: relative;
 }
 
-aside{
+aside {
     position: absolute !important;
-    top:94px !important;
-    width:288px !important;
+    top: 94px !important;
+    width: 288px !important;
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
@@ -1306,21 +1306,23 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr:focus,
-#filestable tbody tr.selected{
+#filestable tbody tr.selected {
     background-color: unset !important;
 }
 
-#filestable tbody tr:active{
+
+/* #filestable tbody tr:active {
     background-color: #f0f7e0 !important;
-}
+} */
 
 #filestable tbody tr.canDrop {
     background-color: #cfe8af !important;
 }
 
-#filestable tbody tr.highlighted, 
+#filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
- #filestable tbody tr.selected, #filestable tbody tr.searchresult {
+#filestable tbody tr.selected,
+#filestable tbody tr.searchresult {
     background-color: unset !important;
 }
 
@@ -1356,6 +1358,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-decoration: none !important;
 }
 
+
 /* #filestable>thead>tr>th>div>a:hover {
     opacity: unset !important;
 } */
@@ -1368,16 +1371,24 @@ input[type="checkbox"].checkbox+label:before:hover {
     margin-left: 63px !important;
 }
 
-
 #filestable tbody {
     display: table;
     width: 100%;
     display: block;
     overflow: auto;
 }
-#fileList tr td.selection>.selectCheckBox+label, .select-all+label {
+
+#fileList tr td.selection>.selectCheckBox+label,
+.select-all+label {
+    width: 55px;
+    height: 55px;
     padding: 16px 12px !important;
 }
+
+#headerSelection label {
+    margin-left: 7px;
+}
+
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
     border: 1px solid #73C354 !important;
@@ -1406,7 +1417,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     top: 8px;
     transform: rotate(-45deg);
     width: 14px;
-  }
+}
 
 #filelist-header {
     display: none;
@@ -1441,6 +1452,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 #filestable tfoot .summary .info {
     margin-left: 56px;
 }
+
 
 /***************************************** List view sorting ******************************************************************/
 
