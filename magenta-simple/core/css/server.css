@@ -1299,7 +1299,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr.canDrop {
-    background-color: #E0EFC7 !important;
+    background-color: #73C354 !important;
 }
 
 #filestable td.filename .nametext .innernametext {
