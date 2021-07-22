@@ -1636,6 +1636,9 @@ table th .sort-indicator {
     right: unset !important;
 }
 
+#filestable.view-grid tbody tr.highlighted .nametext{
+    background-color: unset !important;
+}
 
 /*flexbox-change-properties-for-thumbnail-labels*/
 
