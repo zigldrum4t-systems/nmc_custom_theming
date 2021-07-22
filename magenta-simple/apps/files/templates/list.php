@@ -35,7 +35,7 @@
 <table id="filestable" class="list-container <?php p($_['showgridview'] ? 'view-grid' : '') ?>"
     data-allow-public-upload="<?php p($_['publicUploadEnabled'])?>" data-preview-x="250" data-preview-y="250">
     <thead>
-        <tr>
+        <tr> 
             <th id="headerSelection" class="hidden column-selection">
                 <input type="checkbox" id="select_all_files" class="select-all checkbox" />
                 <label for="select_all_files">
