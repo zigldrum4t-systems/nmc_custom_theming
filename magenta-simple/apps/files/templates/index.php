@@ -1,24 +1,4 @@
-<div class="breadcrumb-bar">
-	<div class="container-fixed">
-		<ul class="breadcrumb-style">
-			<div id="controls">
-				<div class="actions creatable hidden">
-				<div id="uploadprogresswrapper">
-				</div>
-				</div>
-				<div id="file_action_panel"></div>
-				<div class="notCreatable notPublic hidden">
-				<?php p($l->t('You don’t have permission to upload or create files here'))?>
-				</div>
-				<?php /* Note: the template attributes are here only for the public page. These are normally loaded
-				+			 through ajax instead (updateStorageStatistics).
-				+	*/ ?>
-			</div>
-		</ul>
-	</div>
-</div>
 
-<div style="clear:both">&nbsp;</div>
 <?php /** @var \OCP\IL10N $l */ ?>
 
  <?php $_['appNavigation']->printPage(); ?>
