@@ -206,8 +206,10 @@
         <input class="confirm" value="<?php p($l->t('Confirm')); ?>" type="submit">
     </form>
 
-    <div id="content" class="app-<?php p($_['appid']) ?> container-fixed" role="main">
-            <?php print_unescaped($_['content']); ?>       
+    <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
+        <div class="container-fixed">
+            <?php print_unescaped($_['content']); ?>
+        </div>
     </div>
 
     <footer class="brand-footer">
