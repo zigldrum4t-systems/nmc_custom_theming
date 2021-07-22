@@ -1364,7 +1364,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     overflow: auto;
 }
 #fileList tr td.selection>.selectCheckBox+label, .select-all+label {
-    padding: 16px 8px !important;
+    padding: 16px 12px !important;
 }
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
@@ -1410,6 +1410,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #fileList td a a.action.action-menu {
     display: none;
+}
+
+#fileList td a a.action.action-share.shared-style {
+    opacity: 0.7!important;
 }
 
 #fileList td a a.action {
