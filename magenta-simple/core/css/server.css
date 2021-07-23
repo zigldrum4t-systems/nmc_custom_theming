@@ -1326,14 +1326,18 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 
- #filestable tbody tr:active {
+ /* #filestable tbody tr:active {
     background-color: #f0f7e0 !important;
-} 
+}  */
 
 #filestable tbody tr.canDrop {
-    background-color: #cfe8af !important;
+    background-color: #f0f7e0 !important;
 }
 
+#filestable .headerSelection input[type='checkbox'].checkbox+label:before{
+    margin: 0 3px 3px 3px;
+    }
+    
 #filestable tbody tr:active, 
 #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
@@ -1384,7 +1388,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable th .columntitle.name {
-    margin-left: 63px !important;
+    margin-left: 68px !important;
 }
 
 #filestable tbody {
@@ -1394,12 +1398,11 @@ input[type="checkbox"].checkbox+label:before:hover {
     overflow: auto;
 }
 
-#fileList tr td.selection>.selectCheckBox+label,
+/* #fileList tr td.selection>.selectCheckBox+label,
 .select-all+label {
     width: 55px;
     height: 55px;
-    padding: 16px 12px !important;
-}
+} */
 
 #headerSelection label {
     margin-left: 7px;
@@ -1470,7 +1473,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 65px;
+    margin-left: 73px;
 }
 
 
