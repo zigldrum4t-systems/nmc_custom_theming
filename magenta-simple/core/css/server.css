@@ -1653,10 +1653,7 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
-#fileList td a a.action:hover,
-#fileList td a a.action:focus {
-    opacity: unset !important;
-}
+
 
 #filestable.view-grid tbody tr.selected .filename a {
     background-color: rgb(242 242 242 / 50%) !important;
