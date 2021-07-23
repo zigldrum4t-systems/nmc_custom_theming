@@ -1338,6 +1338,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 #filestable .headerSelection input[type='checkbox'].checkbox+label:before{
     margin: 0 3px 3px 3px;
     }
+
+ #filestable .headerSelection label{
+     margin-left: 7px;
+ }
     
 #filestable tbody tr:active, 
 #filestable tbody tr:active,
