@@ -1400,11 +1400,13 @@ input[type="checkbox"].checkbox+label:before:hover {
     overflow: auto;
 }
 
-/* #fileList tr td.selection>.selectCheckBox+label,
+
+#fileList tr td.selection>.selectCheckBox+label,
 .select-all+label {
     width: 55px;
     height: 55px;
-} */
+    padding:16px 12px !important;
+}
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
@@ -1683,5 +1685,4 @@ table.view-grid td.filename .nametext {
 
 .icon-shared, .icon-share {
     background-image:  'url("./img/deafault.png")' !important;
-   
 }
