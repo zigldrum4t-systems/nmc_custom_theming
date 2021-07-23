@@ -1680,3 +1680,8 @@ table.view-grid td.filename .nametext {
         width: 100% !important;
     }
 }
+
+.icon-shared, .icon-share {
+    background-image:  'url("./img/deafault.png")' !important;
+   
+}
