@@ -1367,6 +1367,10 @@ input[type="checkbox"].checkbox+label:before:hover {
     border: none;
 }
 
+#filestable .icon-shared {
+    background-image: var(--icon-user-000-org);
+    }
+    
 #fileList td a a.action.action-menu {
     display: none;
 }
@@ -1687,6 +1691,3 @@ table.view-grid td.filename .nametext {
     }
 }
 
-.icon-shared, .icon-share {
-    background-image:  'url("./img/default.png")' !important;
-}
