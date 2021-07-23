@@ -452,6 +452,12 @@ body {
     display: inline-flex;
 }
 
+aside {
+    position: absolute !important;
+    top: 94px !important;
+    width: 288px !important;
+}
+
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
     margin-left: 16px;
 }
@@ -630,6 +636,12 @@ body {
 
 #app-dashboard {
     height: 100%;
+    <<<<<<< HEAD=======
+}
+
+#content {
+    margin-top: 15px;
+    >>>>>>>f7f0de433e09a81789eeee05f738eb4ba3db53e2
 }
 
 .content {
@@ -641,6 +653,8 @@ body {
 #content>.container-fixed {
     margin-left: auto;
     margin-right: auto;
+    <<<<<<< HEAD=======position: relative;
+    >>>>>>>f7f0de433e09a81789eeee05f738eb4ba3db53e2
 }
 
 .brandbar {
@@ -715,6 +729,10 @@ body {
     .header-right .navbar-icons .smallscreenSize {
         display: none !important;
     }
+    <<<<<<< HEAD=======aside {
+        width: 288px !important;
+    }
+    >>>>>>>f7f0de433e09a81789eeee05f738eb4ba3db53e2
 }
 
 @media screen and (max-width: 1499px) and (min-width: 1236px) {
@@ -961,6 +979,10 @@ body {
         left: unset !important;
         right: 25px;
     }
+    <<<<<<< HEAD=======aside {
+        width: 352px !important;
+    }
+    >>>>>>>f7f0de433e09a81789eeee05f738eb4ba3db53e2
 }
 
 .app-files #app-content {
@@ -998,6 +1020,10 @@ body {
     #app-sidebar-vue {
         width: 288px !important;
     }
+    <<<<<<< HEAD=======aside {
+        width: 288px !important;
+    }
+    >>>>>>>f7f0de433e09a81789eeee05f738eb4ba3db53e2
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -1295,16 +1321,24 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr:focus,
-#filestable tbody tr.selected{
+#filestable tbody tr.selected {
     background-color: unset !important;
 }
 
-#filestable tbody tr:active{
+#filestable tbody tr:active {
     background-color: #f0f7e0 !important;
 }
 
 #filestable tbody tr.canDrop {
     background-color: #cfe8af !important;
+}
+
+#filestable tbody tr:active,
+#filestable tbody tr.highlighted,
+#filestable tbody tr.highlighted .name:focus,
+#filestable tbody tr.selected,
+#filestable tbody tr.searchresult {
+    background-color: unset !important;
 }
 
 #filestable td.filename .nametext .innernametext {
@@ -1339,6 +1373,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-decoration: none !important;
 }
 
+
 /* #filestable>thead>tr>th>div>a:hover {
     opacity: unset !important;
 } */
@@ -1347,8 +1382,8 @@ input[type="checkbox"].checkbox+label:before:hover {
     color: #f2f2f2 !important;
 }
 
-#filestable table th .columntitle.name {
-    margin-left: 65px !important;
+#filestable th .columntitle.name {
+    margin-left: 63px !important;
 }
 
 #filestable tbody {
@@ -1358,11 +1393,22 @@ input[type="checkbox"].checkbox+label:before:hover {
     overflow: auto;
 }
 
+#fileList tr td.selection>.selectCheckBox+label,
+.select-all+label {
+    width: 55px;
+    height: 55px;
+    padding: 16px 12px !important;
+}
+
+#headerSelection label {
+    margin-left: 7px;
+}
+
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
     border: 1px solid #73C354 !important;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     border-radius: 50px !important;
 }
 
@@ -1372,6 +1418,10 @@ input[type="checkbox"].checkbox+label:before:hover {
     width: 24px;
     height: 24px;
     border-radius: 50px !important;
+}
+
+#fileList tr td.selection>.selectCheckBox+label:before {
+    opacity: unset !important;
 }
 
 .selection label:after {
@@ -1386,7 +1436,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     top: 8px;
     transform: rotate(-45deg);
     width: 14px;
-  }
+}
 
 #filelist-header {
     display: none;
@@ -1404,6 +1454,14 @@ input[type="checkbox"].checkbox+label:before:hover {
     display: none;
 }
 
+#fileList td a a.action.action-share.shared-style {
+    opacity: 0.7!important;
+}
+
+#fileList td a a.action {
+    opacity: 0.7 !important;
+}
+
 #filestable tfoot .filesummary {
     font-size: 14px !important;
     color: #666666 !important;
@@ -1411,8 +1469,9 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 73px;
+    margin-left: 65px;
 }
+
 
 /***************************************** List view sorting ******************************************************************/
 
@@ -1520,6 +1579,10 @@ table th .sort-indicator {
     height: unset !important;
 }
 
+#filestable.view-grid table th .columntitle.name {
+    margin-left: 65px !important;
+}
+
 #filestable.view-grid tbody tr {
     /* height: 68px !important; */
     border-bottom: unset !important;
@@ -1547,6 +1610,11 @@ table th .sort-indicator {
     height: 100% !important;
     background-size: cover !important;
     border-radius: 2px !important;
+}
+
+#filestable.view-grid tbody tr td a:hover {
+    opacity: 1 !important;
+    background-color: rgb(242 242 242 / 50%) !important;
 }
 
 #filestable.view-grid .filename a .name {
@@ -1590,6 +1658,10 @@ table th .sort-indicator {
     right: unset !important;
 }
 
+#filestable.view-grid tbody tr.highlighted .nametext {
+    background-color: unset !important;
+}
+
 
 /*flexbox-change-properties-for-thumbnail-labels*/
 
@@ -1603,36 +1675,47 @@ table.view-grid td.filename .nametext {
 
 
 /**** Breadcrumb changes ********/
+
 @media only screen and (max-width: 1024px) {
-    #app-navigation + #app-content #controls {
-      padding-left: 0px;
+    #app-navigation+#app-content #controls {
+        padding-left: 0px;
     }
-  }
- 
-  #content {
+}
+
+#content {
     margin-top: 15px;
-    padding-top: 100px; 
-  }
+    padding-top: 100px;
+}
 
-
-  #controls {
+#controls {
     position: fixed;
     top: 150px;
     left: 0;
     width: 100vw;
     z-index: 100;
-  }
-  
-  /** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
+}
+
+
+/** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
+
 .snapjs-left #controls {
     position: fixed;
     left: -300px !important;
     top: -50px !important;
 }
 
+
 /* needs adjustments based on your header height + breadcrumbs */
+
 #app-navigation:not(.vue) {
-    top: 100px; 
+    top: 100px;
     height: calc(100% - 100px);
 }
 
+
+}
+@media screen and (max-width: 1024px) {
+    .app-files #app-content {
+        width: 100% !important;
+    }
+}

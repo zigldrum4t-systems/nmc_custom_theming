@@ -32,7 +32,7 @@
     <div class="icon-search"></div>
     <h2><?php p($l->t('No entries found in this folder')); ?></h2>
     <p></p>
-</div>
+</div> 
 <table id="filestable" class="list-container <?php p($_['showgridview'] ? 'view-grid' : '') ?>"
     data-allow-public-upload="<?php p($_['publicUploadEnabled'])?>" data-preview-x="250" data-preview-y="250">
     <thead>
