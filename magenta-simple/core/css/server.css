@@ -1389,6 +1389,14 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 
+#filestable tbody tr:hover,
+ #filestable tbody tr:focus, 
+ #filestable tbody .name:focus, 
+ #filestable tbody tr:hover .filename form, 
+ table tr.mouseOver td {
+    background-color: unset !important;
+}
+
 /* #filestable>thead>tr>th>div>a:hover {
     opacity: unset !important;
 } */
