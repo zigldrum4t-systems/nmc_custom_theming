@@ -454,13 +454,11 @@ body {
 
 aside {
     position: absolute !important;
-<<<<<<< HEAD
-    top:94px !important;
-    min-width:unset !important;
-=======
-    top: 94px !important;
+    <<<<<<< HEAD top: 94px !important;
+    min-width: unset !important;
+    =======top: 94px !important;
     width: 288px !important;
->>>>>>> d19b50d30dc163b38640c96f383fec98211db29c
+    >>>>>>>d19b50d30dc163b38640c96f383fec98211db29c
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
@@ -656,7 +654,7 @@ aside {
 #content>.container-fixed {
     margin-left: auto;
     margin-right: auto;
-    position:relative;
+    position: relative;
 }
 
 .brandbar {
@@ -731,10 +729,9 @@ aside {
     .header-right .navbar-icons .smallscreenSize {
         display: none !important;
     }
-    aside{
-        width:288px !important;
+    aside {
+        width: 288px !important;
     }
-    
 }
 
 @media screen and (max-width: 1499px) and (min-width: 1236px) {
@@ -981,8 +978,8 @@ aside {
         left: unset !important;
         right: 25px;
     }
-    aside{
-        width:352px !important;
+    aside {
+        width: 352px !important;
     }
 }
 
@@ -1021,8 +1018,8 @@ aside {
     #app-sidebar-vue {
         width: 288px !important;
     }
-    aside{
-        width:288px !important;
+    aside {
+        width: 288px !important;
     }
 }
 
@@ -1325,20 +1322,30 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: unset !important;
 }
 
+<<<<<<< HEAD
 
  /* #filestable tbody tr:active {
     background-color: #f0f7e0 !important;
 }  */
+=======
+#filestable tbody tr:active {
+    background-color: #f0f7e0 !important;
+}
+>>>>>>> f7f0de433e09a81789eeee05f738eb4ba3db53e2
 
 #filestable tbody tr.canDrop {
     background-color: #f0f7e0 !important;
 }
 
+<<<<<<< HEAD
 #filestable .headerSelection input[type='checkbox'].checkbox+label:before{
     margin: 0 3px 3px 3px;
     }
     
 #filestable tbody tr:active, 
+=======
+#filestable tbody tr:active,
+>>>>>>> f7f0de433e09a81789eeee05f738eb4ba3db53e2
 #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
 #filestable tbody tr.selected,
@@ -1620,6 +1627,7 @@ table th .sort-indicator {
     opacity: 1 !important;
     background-color: rgb(242 242 242 / 50%) !important;
 }
+
 #filestable.view-grid .filename a .name {
     overflow: unset !important;
 }
@@ -1661,9 +1669,10 @@ table th .sort-indicator {
     right: unset !important;
 }
 
-#filestable.view-grid tbody tr.highlighted .nametext{
+#filestable.view-grid tbody tr.highlighted .nametext {
     background-color: unset !important;
 }
+
 
 /*flexbox-change-properties-for-thumbnail-labels*/
 
@@ -1673,4 +1682,10 @@ table th .sort-indicator {
 
 table.view-grid td.filename .nametext {
     display: unset !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .app-files #app-content {
+        width: 100% !important;
+    }
 }
