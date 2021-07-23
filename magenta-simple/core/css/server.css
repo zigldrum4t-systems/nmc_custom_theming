@@ -1388,8 +1388,6 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-decoration: none !important;
 }
 
-
-#filestable tbody tr:hover,
  #filestable tbody tr:focus, 
  #filestable tbody .name:focus, 
  #filestable tbody tr:hover .filename form, 
