@@ -1345,11 +1345,14 @@ input[type="checkbox"].checkbox+label:before:hover {
     margin: 0 3px 3px 3px;
     }
 
-#headerName-container,
-#headerDate,
-#headerSize{
+#headerName-container{
     height:34px !important;
 }
+
+#filestable th .columntitle{
+    height:34px !important;
+}
+
 
 #headerDate
 #headerSelection label{
@@ -1427,7 +1430,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-size: unset !important;
 }
 
-#filestable  .fileactions a span .icon{
+#filestable [class*=' icon-']{
     min-width: 24px !important;
     min-height: 24px !important;
 }
