@@ -1308,7 +1308,8 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr:focus,
-#filestable tbody tr.selected {
+#filestable tbody tr.selected,
+#filestable tbody tr:active{
     background-color: #f5f5f5 !important;
 }
 
@@ -1320,15 +1321,6 @@ input[type="checkbox"].checkbox+label:before:hover {
 table th#headerDate{
     text-align: right !important;
 }
-
-/* #filestable tbody tr:active {
-     background-color: #f0f7e0 !important;
- }  */
-
-
-/* #filestable tbody tr:active {
-     background-color: #f0f7e0 !important;
- } */
 
 #filestable tbody tr.canDrop {
     background-color: #f0f7e0 !important;
