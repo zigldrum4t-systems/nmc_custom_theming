@@ -312,14 +312,6 @@ body {
     background: transparent !important;
 }
 
-#controls>div.actions.creatable {
-    padding-top: 10px !important;
-}
-
-#filelist-header {}
-
-#filestable>thead {}
-
 #filestable>thead>tr>th>a {
     color: var(--color-main-text) !important;
 }
@@ -763,6 +755,11 @@ aside {
 
 /*---------------------------BREADCRUMNB-BAR-----------------------------------*/
 
+.breadcrumb {
+    padding: 0 !important;
+    margin: 0;
+}
+
 .breadcrumb-bar {
     height: 38px;
     background-color: #f2f2f2;
@@ -947,12 +944,6 @@ aside {
     }
     .breadcrumb {
         padding: 10px 0px;
-    }
-    .actions.creatable {
-        margin-top: 5px;
-    }
-    #controls>div.actions.creatable {
-        padding-top: 7px;
     }
 }
 
@@ -1560,13 +1551,11 @@ table th .sort-indicator {
 #view-toggle {
     background-color: transparent;
     border: none;
-    margin: 0;
-    padding: 22px;
-    opacity: 0.5;
     position: absolute;
+    top: -3em;
     right: 0;
-    z-index: 100;
-    margin-top: 5px;
+    z-index: 999;
+    opacity: 1;
 }
 
 .bradcrum-nav {
@@ -1680,10 +1669,10 @@ table th .sort-indicator {
     position: fixed;
     top: 150px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 100;
-    padding: 0 30em;
-    background-color: #cccccc;
+    padding: 0 15em 0 32.2em;
+    background-color: #f2f2f2;
 }
 
 
@@ -1713,6 +1702,57 @@ table th .sort-indicator {
 table.view-grid td.filename .nametext {
     display: unset !important;
 }
+
+
+/*breadcrumb*/
+
+.icon-home {
+    background-image: var(--icon-home-custom);
+    margin-right: 15px;
+}
+
+div.crumb {
+    background-image: var(--icon-breadcrumb-custom);
+}
+
+.icon-add {
+    background-image: var(--icon-breadcrumb-add-custom);
+    opacity: 1 !important;
+}
+
+.actions {
+    padding: 8px;
+}
+
+.actions.creatable a {
+    min-height: 30px !important;
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 1;
+    border-color: var(--scl-color-magenta);
+}
+
+div.crumb>a,
+div.crumb>span {
+    opacity: 1;
+}
+
+div.crumb:last-child {
+    margin-right: 0 !important;
+}
+
+.icon-toggle-pictures {
+    background-image: var(--icon-view-toggle-custom) !important;
+}
+
+#emptycontent,
+.emptycontent {
+    padding-top: 30vh !important;
+    margin-top: 0 !important;
+}
+
+
+/*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
     .app-files #app-content {
