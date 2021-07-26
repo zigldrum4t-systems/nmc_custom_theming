@@ -1333,9 +1333,9 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: #f0f7e0 !important;
 }  */
 
-#filestable tbody tr:active {
+/* #filestable tbody tr:active {
     background-color: #f0f7e0 !important;
-}
+} */
 
 #filestable tbody tr.canDrop {
     background-color: #f0f7e0 !important;
