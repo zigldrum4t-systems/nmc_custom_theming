@@ -108,9 +108,9 @@ body {
 
 
 /* 
-#app-navigation+#app-content {
-    margin-left: 320px !important;
-} */
+ #app-navigation+#app-content {
+     margin-left: 320px !important;
+ } */
 
 #app-navigation>ul>li.active,
 #app-navigation>ul>li.active>a,
@@ -304,21 +304,13 @@ body {
 
 
 /*
-#controls {
-	display: none;
-}*/
+ #controls {
+     display: none;
+ }*/
 
 #controls>div.breadcrumb {
     background: transparent !important;
 }
-
-#controls>div.actions.creatable {
-    padding-top: 10px !important;
-}
-
-#filelist-header {}
-
-#filestable>thead {}
 
 #filestable>thead>tr>th>a {
     color: var(--color-main-text) !important;
@@ -362,35 +354,35 @@ body {
 
 
 /*
-#controls > div.actions.creatable > a.button {
-	justify-content: left !important;
-	width: 75px !important;
-	border: none !important;
-	background: transparent !important;
-}
-
-#controls > div.actions.creatable > a.button > span.icon.icon-add {
-	border: 1px solid var(--color-border-dark) !important;
-	border-radius: 50px !important;
-	padding: 15px !important;
-	display: none;
-}
-
-#controls > div.actions.creatable > a > span.hidden-visually {
-	height: auto !important;
-	width: 50px !important;
-	left: 45px !important;
-	top: 5px !important;
-	color: var(--color-main-text);
-	text-decoration: none;
-	padding-top: 4px !important;
-	display: none;
-}
-
-#controls .breadcrumb {
-	display: none;
-}
-*/
+ #controls > div.actions.creatable > a.button {
+     justify-content: left !important;
+     width: 75px !important;
+     border: none !important;
+     background: transparent !important;
+ }
+ 
+ #controls > div.actions.creatable > a.button > span.icon.icon-add {
+     border: 1px solid var(--color-border-dark) !important;
+     border-radius: 50px !important;
+     padding: 15px !important;
+     display: none;
+ }
+ 
+ #controls > div.actions.creatable > a > span.hidden-visually {
+     height: auto !important;
+     width: 50px !important;
+     left: 45px !important;
+     top: 5px !important;
+     color: var(--color-main-text);
+     text-decoration: none;
+     padding-top: 4px !important;
+     display: none;
+ }
+ 
+ #controls .breadcrumb {
+     display: none;
+ }
+ */
 
 #controls>div.actions.creatable>a:hover {
     color: var(--scl-color-magenta);
@@ -454,11 +446,9 @@ body {
 
 aside {
     position: absolute !important;
-    <<<<<<< HEAD top: 94px !important;
+    top: 94px !important;
     min-width: unset !important;
-    =======top: 94px !important;
     width: 288px !important;
-    >>>>>>>d19b50d30dc163b38640c96f383fec98211db29c
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
@@ -765,6 +755,11 @@ aside {
 
 /*---------------------------BREADCRUMNB-BAR-----------------------------------*/
 
+.breadcrumb {
+    padding: 0 !important;
+    margin: 0;
+}
+
 .breadcrumb-bar {
     height: 38px;
     background-color: #f2f2f2;
@@ -950,12 +945,6 @@ aside {
     .breadcrumb {
         padding: 10px 0px;
     }
-    .actions.creatable {
-        margin-top: 5px;
-    }
-    #controls>div.actions.creatable {
-        padding-top: 7px;
-    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -985,6 +974,7 @@ aside {
 
 .app-files #app-content {
     width: calc(100% - 288px) !important;
+    top: 96px;
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -1122,89 +1112,89 @@ aside {
 
 
 /* @media screen and (min-height: 520px) and (max-height: 629px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 440px !important;
-	}
-}
-
-@media screen and (min-height: 629px) and (max-height: 650px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 462px !important;
-	}
-}
-
-@media screen and (min-height: 651px) and (max-height: 700px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 485px !important;
-	}
-}
-@media screen and (min-height: 701px) and (max-height: 742px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 533px !important;
-	}
-}
-@media screen and (min-height: 742px) and (max-height: 800px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 582px !important;
-	}
-}
-
-@media screen and (min-height: 629px) and (max-height: 650px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 462px !important;
-	}
-}
-
-@media screen and (min-height: 651px) and (max-height: 700px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 485px !important;
-	}
-}
-@media screen and (min-height: 701px) and (max-height: 742px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 533px !important;
-	}
-}
-@media screen and (min-height: 742px) and (max-height: 800px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 582px !important;
-	}
-}
-@media screen and (min-height: 801px) and (max-height: 915px) {
-	#app-navigation > ul {
-		padding-top: 0px !important;
-	}
-	#app-navigation {
-		height: 637px !important;
-	}
-} */
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 440px !important;
+     }
+ }
+ 
+ @media screen and (min-height: 629px) and (max-height: 650px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 462px !important;
+     }
+ }
+ 
+ @media screen and (min-height: 651px) and (max-height: 700px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 485px !important;
+     }
+ }
+ @media screen and (min-height: 701px) and (max-height: 742px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 533px !important;
+     }
+ }
+ @media screen and (min-height: 742px) and (max-height: 800px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 582px !important;
+     }
+ }
+ 
+ @media screen and (min-height: 629px) and (max-height: 650px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 462px !important;
+     }
+ }
+ 
+ @media screen and (min-height: 651px) and (max-height: 700px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 485px !important;
+     }
+ }
+ @media screen and (min-height: 701px) and (max-height: 742px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 533px !important;
+     }
+ }
+ @media screen and (min-height: 742px) and (max-height: 800px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 582px !important;
+     }
+ }
+ @media screen and (min-height: 801px) and (max-height: 915px) {
+     #app-navigation > ul {
+         padding-top: 0px !important;
+     }
+     #app-navigation {
+         height: 637px !important;
+     }
+ } */
 
 
 /*---------------------------LeftNav-----------------------------------*/
@@ -1323,16 +1313,21 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr td.filesize,
+<<<<<<< HEAD
 #filestable tbody tr td.date,
 #filestable tbody tr th.headerDate{
     text-align:right !important;
+=======
+#filestable tbody tr td.date {
+    text-align: right !important;
+>>>>>>> 04b510fbd60a20dab25f6560b96b1686a5fdfa30
 }
 
 
-
- /* #filestable tbody tr:active {
+/* #filestable tbody tr:active {
     background-color: #f0f7e0 !important;
 }  */
+
 
 /* #filestable tbody tr:active {
     background-color: #f0f7e0 !important;
@@ -1342,24 +1337,36 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: #f0f7e0 !important;
 }
 
-#filestable .headerSelection input[type='checkbox'].checkbox+label:before{
+#filestable .headerSelection input[type='checkbox'].checkbox+label:before {
     margin: 0 3px 3px 3px;
-    }
-
-#headerName-container{
-    height:34px !important;
 }
 
-#filestable th .columntitle{
-    height:34px !important;
+#headerSelection label {
+    margin-left: 7px;
 }
 
+#headerName-container {
+    height: 34px !important;
+}
 
+#filestable th .columntitle {
+    height: 34px !important;
+}
+
+<<<<<<< HEAD
 #headerDate
 #headerSelection label{
      margin-left: 7px;
  }
 
+=======
+#headerDate #headerSelection label {
+    margin-left: 7px;
+}
+
+#filestable tbody tr:active,
+#filestable tbody tr:active,
+>>>>>>> 04b510fbd60a20dab25f6560b96b1686a5fdfa30
 #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
 #filestable tbody tr.searchresult {
@@ -1383,7 +1390,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #filestable .icon-shared {
     background-image: var(--icon-user-000-org);
-    }
+}
 
 #fileList td a a.action.action-menu {
     display: none;
@@ -1402,16 +1409,24 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-decoration: none !important;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 04b510fbd60a20dab25f6560b96b1686a5fdfa30
 /* #filestable>thead>tr>th>div>a:hover {
-    opacity: unset !important;
-} */
+     opacity: unset !important;
+ } */
 
 #filestable>thead>tr>th>div>a {
     color: #f2f2f2 !important;
 }
 
 #filestable th .columntitle.name {
+<<<<<<< HEAD
     margin-left: 70px !important;
+=======
+    margin-left: 68px !important;
+>>>>>>> 04b510fbd60a20dab25f6560b96b1686a5fdfa30
 }
 
 #filestable tbody {
@@ -1421,12 +1436,12 @@ input[type="checkbox"].checkbox+label:before:hover {
     overflow: auto;
 }
 
-#filestable .filename .action .icon{
+#filestable .filename .action .icon {
     vertical-align: sub !important;
     background-size: unset !important;
 }
 
-#filestable [class*=' icon-']{
+#filestable [class*=' icon-'] {
     min-width: 24px !important;
     min-height: 24px !important;
 }
@@ -1435,7 +1450,11 @@ input[type="checkbox"].checkbox+label:before:hover {
 .select-all+label {
     width: 55px;
     height: 55px;
-    padding:16px 12px !important;
+    padding: 16px 12px !important;
+}
+
+#headerSelection label {
+    margin-left: 7px;
 }
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
@@ -1525,6 +1544,7 @@ table th .sort-indicator {
 #filestable .icon-triangle-n {
     background-image: var(--icon-triangle-n-e20074);
 }
+
 #filestable .icon-public {
     background-image: var(--icon-user-e20074);
 }
@@ -1583,13 +1603,11 @@ table th .sort-indicator {
 #view-toggle {
     background-color: transparent;
     border: none;
-    margin: 0;
-    padding: 22px;
-    opacity: 0.5;
     position: absolute;
+    top: -3em;
     right: 0;
-    z-index: 100;
-    margin-top: 5px;
+    z-index: 999;
+    opacity: 1;
 }
 
 .bradcrum-nav {
@@ -1629,11 +1647,11 @@ table th .sort-indicator {
     top: 9px !important;
     left: unset !important;
     right: 9px;
-    opacity:0;
+    opacity: 0;
 }
 
-#filestable.view-grid tbody td.selection:hover{
-    opacity:1;
+#filestable.view-grid tbody td.selection:hover {
+    opacity: 1;
 }
 
 #filestable.view-grid tbody td.filename .thumbnail-wrapper {
@@ -1680,8 +1698,6 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
-
-
 #filestable.view-grid tbody tr.selected .filename a {
     background-color: rgb(242 242 242 / 50%) !important;
 }
@@ -1701,6 +1717,38 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
+#content {
+    margin-top: 15px;
+    padding-top: 100px;
+}
+
+#controls {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 0 15em 0 32.2em;
+    background-color: #f2f2f2;
+}
+
+
+/** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
+
+.snapjs-left #controls {
+    position: fixed;
+    left: -300px !important;
+    top: -50px !important;
+}
+
+
+/* needs adjustments based on your header height + breadcrumbs */
+
+#app-navigation:not(.vue) {
+    top: 100px;
+    height: calc(100% - 100px);
+}
+
 
 /*flexbox-change-properties-for-thumbnail-labels*/
 
@@ -1713,12 +1761,65 @@ table.view-grid td.filename .nametext {
 }
 
 #filestable.view-grid tfoot .summary {
- margin-left:0px !important;
+    margin-left: 0px !important;
 }
+
+
+/*breadcrumb*/
+
+.icon-home {
+    background-image: var(--icon-home-custom);
+    margin-right: 15px;
+}
+
+div.crumb {
+    background-image: var(--icon-breadcrumb-custom);
+}
+
+.icon-add {
+    background-image: var(--icon-breadcrumb-add-custom);
+    opacity: 1 !important;
+}
+
+.actions {
+    padding: 8px;
+}
+
+.actions.creatable a {
+    min-height: 30px !important;
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 1;
+    border-color: var(--scl-color-magenta);
+}
+
+div.crumb>a,
+div.crumb>span {
+    opacity: 1;
+}
+
+div.crumb:last-child {
+    margin-right: 0 !important;
+}
+
+.icon-toggle-pictures {
+    background-image: var(--icon-view-toggle-custom) !important;
+}
+
+#emptycontent,
+.emptycontent {
+    padding-top: 30vh !important;
+    margin-top: 0 !important;
+}
+
+
+/*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
     .app-files #app-content {
         width: 100% !important;
     }
+    #app-navigation+#app-content #controls {
+        padding-left: 0px;
+    }
 }
-
