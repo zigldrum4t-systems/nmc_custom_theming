@@ -1317,6 +1317,9 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-align: right !important;
 }
 
+table th#headerDate{
+    text-align: right !important;
+}
 
 /* #filestable tbody tr:active {
      background-color: #f0f7e0 !important;
@@ -1351,9 +1354,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     margin-left: 7px;
 }
 
-#filestable tbody tr:active,
-#filestable tbody tr:active,
-#filestable tbody tr.highlighted,
+
 #filestable tbody tr.highlighted .name:focus,
 #filestable tbody tr.selected,
 #filestable tbody tr.searchresult {
@@ -1406,7 +1407,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable th .columntitle.name {
-    margin-left: 68px !important;
+    margin-left: 70px !important;
 }
 
 #filestable tbody {
@@ -1421,7 +1422,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-size: unset !important;
 }
 
-#filestable [class*=' icon-'] {
+#filestable .fileactions [class*=' icon-'] {
     min-width: 24px !important;
     min-height: 24px !important;
 }
@@ -1502,7 +1503,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 73px;
+    margin-left: 80px;
 }
 
 
