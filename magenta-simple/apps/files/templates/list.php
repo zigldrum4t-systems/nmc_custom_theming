@@ -1,3 +1,4 @@
+
 <div id="controls">
 		<div class="actions creatable hidden">
 			<div id="uploadprogresswrapper">
