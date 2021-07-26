@@ -1356,7 +1356,6 @@ table th#headerDate{
 
 
 #filestable tbody tr.highlighted .name:focus,
-#filestable tbody tr.selected,
 #filestable tbody tr.searchresult {
     background-color: unset !important;
 }
@@ -1385,7 +1384,7 @@ table th#headerDate{
 }
 
 #filestable span.extension {
-    padding-top: 13px !important;
+    padding-top: 14px !important;
 }
 
 #filestable>thead>tr>th>div>a {
