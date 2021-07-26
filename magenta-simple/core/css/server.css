@@ -1323,7 +1323,8 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr td.filesize,
-#filestable tbody tr td.date{
+#filestable tbody tr td.date,
+#filestable tbody tr th.headerDate{
     text-align:right !important;
 }
 
@@ -1358,12 +1359,9 @@ input[type="checkbox"].checkbox+label:before:hover {
 #headerSelection label{
      margin-left: 7px;
  }
-    
-#filestable tbody tr:active, 
-#filestable tbody tr:active,
+
 #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
-#filestable tbody tr.selected,
 #filestable tbody tr.searchresult {
     background-color: unset !important;
 }
@@ -1404,8 +1402,6 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-decoration: none !important;
 }
 
-
-
 /* #filestable>thead>tr>th>div>a:hover {
     opacity: unset !important;
 } */
@@ -1415,7 +1411,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable th .columntitle.name {
-    margin-left: 65px !important;
+    margin-left: 70px !important;
 }
 
 #filestable tbody {
@@ -1507,7 +1503,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 73px;
+    margin-left: 78px;
 }
 
 
