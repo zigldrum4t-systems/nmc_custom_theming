@@ -454,11 +454,9 @@ body {
 
 aside {
     position: absolute !important;
-    <<<<<<< HEAD top: 94px !important;
+    top: 94px !important;
     min-width: unset !important;
-    =======top: 94px !important;
     width: 288px !important;
-    >>>>>>>d19b50d30dc163b38640c96f383fec98211db29c
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
@@ -1325,8 +1323,8 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 
 /* #filestable tbody tr:active {
-     background-color: #f0f7e0 !important;
- }  */
+    background-color: #f0f7e0 !important;
+}  */
 
 #filestable tbody tr:active {
     background-color: #f0f7e0 !important;
@@ -1338,6 +1336,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #filestable .headerSelection input[type='checkbox'].checkbox+label:before {
     margin: 0 3px 3px 3px;
+}
+
+#headerSelection label {
+    margin-left: 7px;
 }
 
 #filestable tbody tr:active,
@@ -1362,6 +1364,10 @@ input[type="checkbox"].checkbox+label:before:hover {
     margin-top: 4px;
     background-size: cover;
     border: none;
+}
+
+#filestable .icon-shared {
+    background-image: var(--icon-user-000-org);
 }
 
 #fileList td a a.action.action-menu {
@@ -1391,7 +1397,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable th .columntitle.name {
-    margin-left: 68px !important;
+    margin-left: 65px !important;
 }
 
 #filestable tbody {
@@ -1401,15 +1407,11 @@ input[type="checkbox"].checkbox+label:before:hover {
     overflow: auto;
 }
 
-
-/* #fileList tr td.selection>.selectCheckBox+label,
- .select-all+label {
-     width: 55px;
-     height: 55px;
- } */
-
-#headerSelection label {
-    margin-left: 7px;
+#fileList tr td.selection>.selectCheckBox+label,
+.select-all+label {
+    width: 55px;
+    height: 55px;
+    padding: 16px 12px !important;
 }
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
@@ -1498,6 +1500,10 @@ table th .sort-indicator {
 
 #filestable .icon-triangle-n {
     background-image: var(--icon-triangle-n-e20074);
+}
+
+#filestable .icon-public {
+    background-image: var(--icon-user-e20074);
 }
 
 #filestable .icon-triangle-s {
@@ -1644,11 +1650,6 @@ table th .sort-indicator {
 
 #filestable.view-grid tbody tr:hover .nametext {
     background-color: unset !important;
-}
-
-#fileList td a a.action:hover,
-#fileList td a a.action:focus {
-    opacity: unset !important;
 }
 
 #filestable.view-grid tbody tr.selected .filename a {
