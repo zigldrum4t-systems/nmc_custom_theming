@@ -1322,8 +1322,8 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: #f5f5f5 !important;
 }
 
-#filestable tbody tr td .filesize,
-#filestable tbody tr td .date{
+#filestable tbody tr td.filesize,
+#filestable tbody tr td.date{
     text-align:right !important;
 }
 
