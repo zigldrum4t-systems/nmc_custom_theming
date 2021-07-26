@@ -108,9 +108,9 @@ body {
 
 
 /* 
- #app-navigation+#app-content {
-     margin-left: 320px !important;
- } */
+  #app-navigation+#app-content {
+      margin-left: 320px !important;
+  } */
 
 #app-navigation>ul>li.active,
 #app-navigation>ul>li.active>a,
@@ -304,9 +304,9 @@ body {
 
 
 /*
- #controls {
-     display: none;
- }*/
+  #controls {
+      display: none;
+  }*/
 
 #controls>div.breadcrumb {
     background: transparent !important;
@@ -354,35 +354,35 @@ body {
 
 
 /*
- #controls > div.actions.creatable > a.button {
-     justify-content: left !important;
-     width: 75px !important;
-     border: none !important;
-     background: transparent !important;
- }
- 
- #controls > div.actions.creatable > a.button > span.icon.icon-add {
-     border: 1px solid var(--color-border-dark) !important;
-     border-radius: 50px !important;
-     padding: 15px !important;
-     display: none;
- }
- 
- #controls > div.actions.creatable > a > span.hidden-visually {
-     height: auto !important;
-     width: 50px !important;
-     left: 45px !important;
-     top: 5px !important;
-     color: var(--color-main-text);
-     text-decoration: none;
-     padding-top: 4px !important;
-     display: none;
- }
- 
- #controls .breadcrumb {
-     display: none;
- }
- */
+  #controls > div.actions.creatable > a.button {
+      justify-content: left !important;
+      width: 75px !important;
+      border: none !important;
+      background: transparent !important;
+  }
+  
+  #controls > div.actions.creatable > a.button > span.icon.icon-add {
+      border: 1px solid var(--color-border-dark) !important;
+      border-radius: 50px !important;
+      padding: 15px !important;
+      display: none;
+  }
+  
+  #controls > div.actions.creatable > a > span.hidden-visually {
+      height: auto !important;
+      width: 50px !important;
+      left: 45px !important;
+      top: 5px !important;
+      color: var(--color-main-text);
+      text-decoration: none;
+      padding-top: 4px !important;
+      display: none;
+  }
+  
+  #controls .breadcrumb {
+      display: none;
+  }
+  */
 
 #controls>div.actions.creatable>a:hover {
     color: var(--scl-color-magenta);
@@ -1112,89 +1112,89 @@ aside {
 
 
 /* @media screen and (min-height: 520px) and (max-height: 629px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 440px !important;
-     }
- }
- 
- @media screen and (min-height: 629px) and (max-height: 650px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 462px !important;
-     }
- }
- 
- @media screen and (min-height: 651px) and (max-height: 700px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 485px !important;
-     }
- }
- @media screen and (min-height: 701px) and (max-height: 742px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 533px !important;
-     }
- }
- @media screen and (min-height: 742px) and (max-height: 800px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 582px !important;
-     }
- }
- 
- @media screen and (min-height: 629px) and (max-height: 650px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 462px !important;
-     }
- }
- 
- @media screen and (min-height: 651px) and (max-height: 700px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 485px !important;
-     }
- }
- @media screen and (min-height: 701px) and (max-height: 742px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 533px !important;
-     }
- }
- @media screen and (min-height: 742px) and (max-height: 800px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 582px !important;
-     }
- }
- @media screen and (min-height: 801px) and (max-height: 915px) {
-     #app-navigation > ul {
-         padding-top: 0px !important;
-     }
-     #app-navigation {
-         height: 637px !important;
-     }
- } */
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 440px !important;
+      }
+  }
+  
+  @media screen and (min-height: 629px) and (max-height: 650px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 462px !important;
+      }
+  }
+  
+  @media screen and (min-height: 651px) and (max-height: 700px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 485px !important;
+      }
+  }
+  @media screen and (min-height: 701px) and (max-height: 742px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 533px !important;
+      }
+  }
+  @media screen and (min-height: 742px) and (max-height: 800px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 582px !important;
+      }
+  }
+  
+  @media screen and (min-height: 629px) and (max-height: 650px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 462px !important;
+      }
+  }
+  
+  @media screen and (min-height: 651px) and (max-height: 700px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 485px !important;
+      }
+  }
+  @media screen and (min-height: 701px) and (max-height: 742px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 533px !important;
+      }
+  }
+  @media screen and (min-height: 742px) and (max-height: 800px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 582px !important;
+      }
+  }
+  @media screen and (min-height: 801px) and (max-height: 915px) {
+      #app-navigation > ul {
+          padding-top: 0px !important;
+      }
+      #app-navigation {
+          height: 637px !important;
+      }
+  } */
 
 
 /*---------------------------LeftNav-----------------------------------*/
@@ -1313,25 +1313,19 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr td.filesize,
-<<<<<<< HEAD
-#filestable tbody tr td.date,
-#filestable tbody tr th.headerDate{
-    text-align:right !important;
-=======
 #filestable tbody tr td.date {
     text-align: right !important;
->>>>>>> 04b510fbd60a20dab25f6560b96b1686a5fdfa30
 }
 
 
 /* #filestable tbody tr:active {
-    background-color: #f0f7e0 !important;
-}  */
+     background-color: #f0f7e0 !important;
+ }  */
 
 
 /* #filestable tbody tr:active {
-    background-color: #f0f7e0 !important;
-} */
+     background-color: #f0f7e0 !important;
+ } */
 
 #filestable tbody tr.canDrop {
     background-color: #f0f7e0 !important;
@@ -1353,22 +1347,15 @@ input[type="checkbox"].checkbox+label:before:hover {
     height: 34px !important;
 }
 
-<<<<<<< HEAD
-#headerDate
-#headerSelection label{
-     margin-left: 7px;
- }
-
-=======
 #headerDate #headerSelection label {
     margin-left: 7px;
 }
 
 #filestable tbody tr:active,
 #filestable tbody tr:active,
->>>>>>> 04b510fbd60a20dab25f6560b96b1686a5fdfa30
 #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
+#filestable tbody tr.selected,
 #filestable tbody tr.searchresult {
     background-color: unset !important;
 }
@@ -1409,24 +1396,17 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-decoration: none !important;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 04b510fbd60a20dab25f6560b96b1686a5fdfa30
 /* #filestable>thead>tr>th>div>a:hover {
-     opacity: unset !important;
- } */
+      opacity: unset !important;
+  } */
 
 #filestable>thead>tr>th>div>a {
     color: #f2f2f2 !important;
 }
 
 #filestable th .columntitle.name {
-<<<<<<< HEAD
-    margin-left: 70px !important;
-=======
     margin-left: 68px !important;
->>>>>>> 04b510fbd60a20dab25f6560b96b1686a5fdfa30
 }
 
 #filestable tbody {
@@ -1522,7 +1502,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 78px;
+    margin-left: 73px;
 }
 
 
