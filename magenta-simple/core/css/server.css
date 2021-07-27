@@ -990,11 +990,17 @@ aside {
     .header-right .smallscreenSize {
         display: none !important;
     }
+    #fileList td a a.action.action-menu {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1599px) {
     .header-right .smallscreenSize {
         display: none !important;
+    }
+    #fileList td a a.action.action-menu {
+        display: none;
     }
 }
 
@@ -1371,9 +1377,7 @@ table th#headerDate{
     background-image: var(--icon-user-000-org);
 }
 
-#fileList td a a.action.action-menu {
-    display: none;
-}
+
 
 #filestable span.extension {
     padding-top: 14px !important;
@@ -1473,10 +1477,6 @@ table th#headerDate{
 
 #filestable .filesize {
     color: #191919 !important;
-}
-
-#fileList td a a.action.action-menu {
-    display: none;
 }
 
 #fileList td a a.action.action-share.shared-style {
@@ -1793,6 +1793,7 @@ div.crumb:last-child {
     color: #191919 !important;
     padding:16px;
     font-family: TeleNeo, sans-serif;
+    max-width: 100%;
 }
 
 /*breadcrumb*/
