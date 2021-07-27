@@ -1740,7 +1740,6 @@ table.view-grid td.filename .nametext {
 
 .icon-home {
     background-image: var(--icon-home-custom);
-    margin-right: 15px;
 }
 
 div.crumb {
@@ -1750,6 +1749,10 @@ div.crumb {
 .icon-add {
     background-image: var(--icon-breadcrumb-add-custom);
     opacity: 1 !important;
+}
+
+.icon-toggle-filelist {
+    background-image: var(--icon-view-toggle-list-custom);
 }
 
 .actions {
@@ -1766,7 +1769,7 @@ div.crumb {
 
 div.crumb>a,
 div.crumb>span {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 div.crumb:last-child {
@@ -1783,6 +1786,17 @@ div.crumb:last-child {
     margin-top: 0 !important;
 }
 
+.crumb .icon-shared {
+    display: none !important;
+}
+
+.crumb a {
+    margin-right: 15px;
+}
+
+
+/*breadcrumb*/
+
 .tooltip {
     box-shadow: 0px 4px 16px 0px hsla(0, 0%, 0%, 0.1);
 }
@@ -1793,9 +1807,6 @@ div.crumb:last-child {
     padding: 16px;
     font-family: TeleNeo, sans-serif;
 }
-
-
-/*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
     .app-files #app-content {
