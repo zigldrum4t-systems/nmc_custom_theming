@@ -1340,13 +1340,7 @@ table th#headerDate{
     margin-left: 7px;
 }
 
-#headerName-container {
-    height: 34px !important;
-}
 
-#filestable th .columntitle {
-    height: 34px !important;
-}
 
 #headerDate #headerSelection label {
     margin-left: 7px;
