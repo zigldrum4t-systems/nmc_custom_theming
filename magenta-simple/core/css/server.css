@@ -1443,8 +1443,8 @@ table th#headerDate{
     border-radius: 50px !important;
 }
 
-input[type='checkbox'].checkbox:checked+label:before {
-    background-image: url('/core/css/../img/checkmarktick.svg') !important;
+#filestable input[type='checkbox'].checkbox:checked+label:before {
+    background-image: var(--icon-checkbox-checkmark) !important;
 }
 
 #fileList tr td.selection>.selectCheckBox+label:before {
