@@ -1445,6 +1445,8 @@ table th#headerDate{
 
 #filestable input[type='checkbox'].checkbox:checked+label:before {
     background-image: var(--icon-checkbox-checkmark) !important;
+    background-position: 13% -74%;
+    box-sizing: border-box;
 }
 
 #fileList tr td.selection>.selectCheckBox+label:before {
