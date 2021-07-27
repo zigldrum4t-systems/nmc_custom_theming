@@ -1396,7 +1396,7 @@ table th#headerDate{
 }
 
 #filestable th .columntitle.name {
-    margin-left: 56px !important;
+    margin-left: 65px !important;
 }
 
 #filestable tbody {
@@ -1495,7 +1495,7 @@ table th#headerDate{
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 65px;
+    margin-left: 78px;
 }
 
 
