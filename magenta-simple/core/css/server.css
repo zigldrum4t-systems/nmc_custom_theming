@@ -1338,11 +1338,14 @@ table th#headerDate{
 
 
 #filestable #headerName-container{
-    height:40px !important;
+    height:42px !important;
 }
 
+#filestable #selectedActionsList{
+    height:42px !important
+}
 #filestable th .columntitle {
-    height: 40px !important;
+    height: 42px !important;
 }
 #headerSelection label {
     margin-left: 7px;
