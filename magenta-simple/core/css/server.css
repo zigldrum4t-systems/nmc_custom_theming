@@ -1817,7 +1817,7 @@ div.crumb:last-child {
 
 /** Grid Icons ***********************************/
 #filestable [data-mime="text/plain"] .thumbnail,
-#filestable [data-mime="text/markdown"] .thumbnail 
+#filestable [data-mime="text/markdown"] .thumbnail,
 #filestable [data-mime="application/octet-stream"] .thumbnail,
 #filestable [data-mime="application/msword"] .thumbnail,
 #filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
