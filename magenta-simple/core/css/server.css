@@ -1450,7 +1450,7 @@ table th#headerDate{
 }
 
 input[type='checkbox'].checkbox:checked+label:before {
-    background-image: url(/core/css/../img/success.svg) !important;
+    background-image: url('/core/css/../img/success.svg') !important;
 }
 
 #fileList tr td.selection>.selectCheckBox+label:before {
