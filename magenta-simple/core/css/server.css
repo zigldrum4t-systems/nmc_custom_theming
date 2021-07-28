@@ -1860,6 +1860,12 @@ div.crumb:last-child {
     background-image: var(--grid-file-audio-icon) !important
 }
 
+#filestable [data-mime="application/vnd.ms-powerpoint"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"] .thumbnail
+{
+    background-image: var(--grid-present-icon) !important
+}
+
 /*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
