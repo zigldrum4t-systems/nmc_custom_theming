@@ -1413,6 +1413,7 @@ table th#headerDate {
 #filestable .filename .action .icon {
     vertical-align: sub !important;
     background-size: unset !important;
+    margin-left: 10px;
 }
 
 #filestable .fileactions [class*=' icon-'] {
@@ -1490,6 +1491,7 @@ table th#headerDate {
     width: 130px;
     height: 50px;
     flex-direction: row-reverse;
+    align-items: flex-end;
 }
 
 #fileList td a a.action {
@@ -1805,23 +1807,6 @@ div.crumb:last-child {
     margin-top: 0 !important;
 }
 
-.crumb .icon-shared {
-    display: none !important;
-}
-
-.crumb a {
-    margin-right: 16px;
-}
-
-#app-navigation-toggle {
-    top: 8.5em;
-    margin-left: 1.4em;
-    z-index: 9999;
-}
-
-
-/*breadcrumb*/
-
 .tooltip {
     box-shadow: var(--scl-shadow-level-1);
 }
@@ -1834,6 +1819,9 @@ div.crumb:last-child {
     max-width: 100%;
     border-radius: 8px;
 }
+
+
+/*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
     .app-files #app-content {
