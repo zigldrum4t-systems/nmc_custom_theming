@@ -1851,6 +1851,15 @@ div.crumb:last-child {
     background-image: var(--grid-file-code-icon) !important
 }
 
+#filestable [data-mime="application/octet-stream"] .thumbnail,
+#filestable [data-mime="audio/mpeg"] .thumbnail,
+#filestable [data-mime="audio/ogg"] .thumbnail,
+#filestable [data-mime="audio/mp4"] .thumbnail,
+#filestable [data-mime="audio/wav"] .thumbnail
+{
+    background-image: var(--grid-file-audio-icon) !important
+}
+
 /*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
