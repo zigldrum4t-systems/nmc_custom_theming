@@ -1836,6 +1836,13 @@ div.crumb:last-child {
     background-image: var(--grid-file-calculation-icon) !important
 }
 
+#filestable [data-mime="application/zip"] .thumbnail,
+#filestable [data-mime="application/x-rar-compressed"] .thumbnail
+{
+    background-image: var(--grid-zip-icon) !important
+}
+
+
 /*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
