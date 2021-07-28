@@ -1819,7 +1819,17 @@ div.crumb:last-child {
     border-radius: 8px;
 }
 
-<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
 /** Grid Icons ***********************************/
 #filestable [data-mime="text/plain"] .thumbnail,
 #filestable [data-mime="text/markdown"] .thumbnail,
@@ -1877,9 +1887,24 @@ div.crumb:last-child {
 {
     background-image: var(--grid-file-web-icon) !important
 }
-=======
 
->>>>>>> 0d7ca36937e581700cf652a3703bf2685181ae14
+#filestable [data-mime="video/x-ms-wmv"] .thumbnail,
+#filestable [data-mime="video/mpeg"] .thumbnail,
+#filestable [data-mime="video/x-msvideo"] .thumbnail,
+#filestable [data-mime="video/x-matroska"] .thumbnail,
+#filestable [data-mime="video/quicktime"] .thumbnail,
+#filestable [data-mime="video/mp4"] .thumbnail
+{
+    background-image: var(--grid-file-video-icon) !important
+}
+
+
+
+
+
+
+
+
 /*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
