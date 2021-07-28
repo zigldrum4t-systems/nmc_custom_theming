@@ -1454,7 +1454,7 @@ table th#headerDate{
     border-radius: 50px !important;
 }
 
-#filestable input[type='checkbox'].checkbox:checked+label:before {
+#filestable.custom-fileList input[type='checkbox'].checkbox:checked+label:before {
     background-image: var(--icon-checkbox-checkmark) !important;
     background-position: 13% -74%;
     box-sizing: border-box;
