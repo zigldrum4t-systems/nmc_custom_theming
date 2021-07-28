@@ -1866,6 +1866,10 @@ div.crumb:last-child {
     background-image: var(--grid-present-icon) !important
 }
 
+#filestable [data-mime="application/pdf"] .thumbnail
+{
+    background-image: var(--grid-pdf-icon) !important
+}
 /*breadcrumb*/
 
 @media screen and (max-width: 1024px) {
