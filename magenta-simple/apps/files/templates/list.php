@@ -71,7 +71,7 @@
             </th>
         </tr>
     </thead>
-    <tbody id="fileList" class="custom-fileList">
+    <tbody id="fileList">
     </tbody>
     <tfoot>
     </tfoot>
