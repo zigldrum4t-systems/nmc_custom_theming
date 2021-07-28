@@ -1663,9 +1663,7 @@ table th .sort-indicator {
     border-radius: 2px !important;
 }
 
-#filestable.view-grid input[type='checkbox'].checkbox:checked+label:before {
-    background-image: var(--icon-checkbox-checkmark);
-}
+
 #filestable.view-grid tbody tr td a:hover {
     opacity: 1 !important;
     background-color: rgb(242 242 242 / 50%) !important;
