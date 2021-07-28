@@ -1807,15 +1807,16 @@ div.crumb:last-child {
 }
 
 .tooltip{
-    box-shadow:0px 4px 16px 0px hsla(0,0%,0%,0.1);
+    box-shadow: var(--scl-shadow-level-1);
 }
 
 .tooltip .tooltip-inner{
     background: #ffffff;
     color: #191919 !important;
-    padding:16px;
+    padding: 16px;
     font-family: TeleNeo, sans-serif;
     max-width: 100%;
+    border-radius: 8px;
 }
 
 /*breadcrumb*/
