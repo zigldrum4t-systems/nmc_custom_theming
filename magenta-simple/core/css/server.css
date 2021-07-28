@@ -939,9 +939,6 @@ aside {
     .app-files #app-content {
         width: 100%;
     }
-    #app-navigation-toggle {
-        margin-top: 10px;
-    }
     .breadcrumb {
         padding: 10px 0px;
     }
@@ -1575,7 +1572,7 @@ table th .sort-indicator {
     background-color: transparent;
     border: none;
     position: absolute;
-    top: -3em;
+    top: -4.2em;
     right: 0;
     z-index: 999;
     opacity: 1;
@@ -1695,7 +1692,7 @@ table th .sort-indicator {
 
 #controls {
     position: fixed;
-    top: 150px;
+    top: 8.5em;
     left: 0;
     width: 100%;
     z-index: 100;
@@ -1706,7 +1703,8 @@ table th .sort-indicator {
 
 /** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
 
-.snapjs-left #controls {
+.snapjs-left #controls,
+.snapjs-left #app-navigation-toggle {
     position: fixed;
     left: -300px !important;
     top: -50px !important;
@@ -1791,7 +1789,13 @@ div.crumb:last-child {
 }
 
 .crumb a {
-    margin-right: 15px;
+    margin-right: 16px;
+}
+
+#app-navigation-toggle {
+    top: 8.5em;
+    margin-left: 1.4em;
+    z-index: 9999;
 }
 
 
@@ -1814,6 +1818,6 @@ div.crumb:last-child {
         width: 100% !important;
     }
     #app-navigation+#app-content #controls {
-        padding-left: 0px;
+        padding-left: 70px;
     }
 }
