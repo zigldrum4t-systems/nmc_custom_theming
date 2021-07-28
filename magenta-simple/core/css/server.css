@@ -1826,7 +1826,7 @@ div.crumb:last-child {
     .app-files #app-content {
         width: 100% !important;
     }
-    /* #app-navigation+#app-content #controls {
+    #app-navigation+#app-content #controls {
         padding-left: 0px;
-    } */
+    }
 }
