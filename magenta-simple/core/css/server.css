@@ -1456,7 +1456,7 @@ table th#headerDate{
 
 #filestable input[type='checkbox'].checkbox:checked+label:before {
     background-image: var(--icon-checkbox-checkmark) !important;
-    background-position: 13% -74%;
+    background-position: -25% 13%;
     box-sizing: border-box;
 }
 
@@ -1493,6 +1493,10 @@ table th#headerDate{
 
 #fileList td a a.action.action-share.shared-style {
     opacity: 0.7!important;
+    display: flex;
+    width: 130px;
+    height: 50px;
+    flex-direction: row-reverse;
 }
 
 #fileList td a a.action {
