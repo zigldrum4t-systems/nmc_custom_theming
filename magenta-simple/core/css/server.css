@@ -302,12 +302,6 @@ body {
     background-image: var(--icon-quota-e20074);
 }
 
-
-/*
-   #controls {
-       display: none;
-   }*/
-
 #controls>div.breadcrumb {
     background: transparent !important;
 }
@@ -1719,6 +1713,7 @@ table th .sort-indicator {
     left: 0;
     width: 100%;
     z-index: 100;
+    height: 48px;
     padding-top: 2px;
     padding-left: 26.8vw;
     background-color: #f2f2f2;
