@@ -302,6 +302,12 @@ body {
     background-image: var(--icon-quota-e20074);
 }
 
+
+/*
+   #controls {
+       display: none;
+   }*/
+
 #controls>div.breadcrumb {
     background: transparent !important;
 }
@@ -1328,19 +1334,15 @@ table th#headerDate {
 }
 
 #filestable #headerName-container {
-    height: 42px !important;
+    height: 40px !important;
 }
 
 #filestable #selectedActionsList {
-    height: 42px !important
+    height: 40px !important
 }
 
 #filestable th .columntitle {
-    height: 42px !important;
-}
-
-#headerSelection label {
-    margin-left: 7px;
+    height: 40px !important;
 }
 
 #headerDate #headerSelection label {
@@ -1394,7 +1396,7 @@ table th#headerDate {
 }
 
 #filestable th .columntitle.name {
-    margin-left: 65px !important;
+    margin-left: 70px !important;
 }
 
 #filestable tbody {
@@ -1402,6 +1404,10 @@ table th#headerDate {
     width: 100%;
     display: block;
     overflow: auto;
+}
+
+#filestable input[type='checkbox'].checkbox+label:before {
+    margin: 0px 0px 0px 3px;
 }
 
 #filestable .filename .action .icon {
@@ -1419,11 +1425,8 @@ table th#headerDate {
 .select-all+label {
     width: 55px;
     height: 55px;
-    padding: 16px 12px !important;
-}
-
-#headerSelection label {
-    margin-left: 7px;
+    padding: 16px 20px !important;
+    display: inline-block;
 }
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
@@ -1442,7 +1445,7 @@ table th#headerDate {
     border-radius: 50px !important;
 }
 
-#filestable input[type='checkbox'].checkbox:checked+label:before {
+#filestable:not(.view-grid) input[type='checkbox'].checkbox:checked+label:before {
     background-image: var(--icon-checkbox-checkmark) !important;
     background-position: -25% 13%;
     box-sizing: border-box;
@@ -1468,6 +1471,10 @@ table th#headerDate {
 
 #filelist-header {
     display: none;
+}
+
+#fileList .action.action-share.permanent.shared-style span:not(.icon) {
+    color: #E20074 !important;
 }
 
 #filestable .date span {
@@ -1812,7 +1819,7 @@ div.crumb:last-child {
 }
 
 #app-navigation-toggle {
-    top: 8.5em;
+    top: 8.7em;
     margin-left: 1.4em;
     z-index: 9999;
 }
@@ -1834,7 +1841,88 @@ div.crumb:last-child {
 }
 
 
-/*breadcrumb*/
+/** Grid Icons ***********************************/
+
+#filestable [data-mime="text/plain"] .thumbnail,
+#filestable [data-mime="text/markdown"] .thumbnail,
+#filestable [data-mime="application/octet-stream"] .thumbnail,
+#filestable [data-mime="application/msword"] .thumbnail,
+#filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail {
+    background-image: var(--grid-text-files-icon) !important;
+}
+
+#filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
+#filestable [data-mime="text/csv"] .thumbnail {
+    background-image: var(--grid-file-calculation-icon) !important;
+}
+
+#filestable [data-mime="application/zip"] .thumbnail,
+#filestable [data-mime="application/x-rar-compressed"] .thumbnail {
+    background-image: var(--grid-zip-icon) !important;
+}
+
+#filestable [data-mime="application/xml"] .thumbnail,
+#filestable [data-mime="application/x-php"] .thumbnail,
+#filestable [data-mime="application/json"] .thumbnail,
+#filestable [data-mime="application/javascript"] .thumbnail,
+#filestable [data-mime="text/css"] .thumbnail {
+    background-image: var(--grid-file-code-icon) !important;
+}
+
+#filestable [data-mime="audio/mpeg"] .thumbnail,
+#filestable [data-mime="audio/ogg"] .thumbnail,
+#filestable [data-mime="audio/mp4"] .thumbnail,
+#filestable [data-mime="audio/wav"] .thumbnail {
+    background-image: var(--grid-file-audio-icon) !important;
+}
+
+#filestable [data-mime="application/vnd.ms-powerpoint"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"] .thumbnail {
+    background-image: var(--grid-present-icon) !important;
+}
+
+#filestable [data-mime="application/pdf"] .thumbnail {
+    background-image: var(--grid-pdf-icon) !important;
+}
+
+#filestable [data-mime="text/html"] .thumbnail {
+    background-image: var(--grid-file-web-icon) !important;
+}
+
+#filestable [data-mime="video/x-ms-wmv"] .thumbnail,
+#filestable [data-mime="video/mpeg"] .thumbnail,
+#filestable [data-mime="video/x-msvideo"] .thumbnail,
+#filestable [data-mime="video/x-matroska"] .thumbnail,
+#filestable [data-mime="video/quicktime"] .thumbnail,
+#filestable [data-mime="video/mp4"] .thumbnail {
+    background-image: var(--grid-file-video-icon) !important;
+}
+
+#filestable [data-mime="image/webp"] .thumbnail,
+#filestable [data-mime="image/bmp"] .thumbnail,
+#filestable [data-mime="image/png"] .thumbnail,
+#filestable [data-mime="image/heic"] .thumbnail,
+#filestable [data-mime="image/jpeg"] .thumbnail,
+#filestable [data-mime="image/gif"] .thumbnail,
+#filestable [data-mime="image/svg+xml"] .thumbnail,
+#filestable [data-mime="application/postscript"] .thumbnail,
+#filestable [data-mime="image/x-dcraw"] .thumbnail {
+    background-image: var(--grid-file-img-icon) !important;
+}
+
+#filestable [data-mime="httpd/unix-directory"] .thumbnail {
+    background-image: var(--grid-folder-icon) !important;
+}
+
+#filestable [data-e2eencrypted="true"] .thumbnail {
+    background-image: var(--grid-folder-enc-icon) !important;
+}
+
+#filestable [data-icon] .thumbnail {
+    background-image: var(--grid-folder-shared-icon) !important;
+}
 
 
 /*Responsive Styling*/
