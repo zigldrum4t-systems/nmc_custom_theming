@@ -920,6 +920,7 @@ aside {
 /* (max-width: 768px) */
 
 .MenuWrapperParent {
+    top: 0;
     z-index: 9999 !important;
     width: 100%;
 }
@@ -971,7 +972,8 @@ aside {
 
 .app-files #app-content {
     width: calc(100% - 288px) !important;
-    top: 96px;
+    /* top: 96px; */
+    margin-top: 3em;
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -1729,8 +1731,7 @@ table th .sort-indicator {
 
 /** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
 
-.snapjs-left #controls,
-.snapjs-left #app-navigation-toggle {
+.snapjs-left #controls {
     position: fixed;
     left: -300px !important;
     top: -50px !important;
@@ -1822,6 +1823,22 @@ div.crumb:last-child {
     top: 8.7em;
     margin-left: 1.4em;
     z-index: 9999;
+}
+
+#controls.controls-translation {
+    top: 4em;
+}
+
+#view-toggle.view-toggle-translation {
+    top: -9.6em
+}
+
+#app-navigation-toggle.app-navigation-translation {
+    top: 4.2em;
+}
+
+.translation {
+    transition: all 700ms;
 }
 
 
@@ -1922,6 +1939,10 @@ div.crumb:last-child {
 
 #filestable [data-icon] .thumbnail {
     background-image: var(--grid-folder-shared-icon) !important;
+}
+
+.brand-bar-translation {
+    top: -69px;
 }
 
 
