@@ -430,8 +430,8 @@ body {
     border-bottom: 1px solid #e5e5e5;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    position: absolute !important;
-    top: 73px !important;
+    position: relative !important;
+    /* top: 73px !important; */
 }
 
 #body-user #header {
@@ -1594,7 +1594,7 @@ table th .sort-indicator {
     background-color: transparent;
     border: none;
     position: absolute;
-    top: -4.2em;
+    top: -5em;
     right: 0;
     z-index: 999;
     opacity: 1;
@@ -1723,7 +1723,7 @@ table th .sort-indicator {
     width: 100%;
     z-index: 100;
     height: 48px;
-    padding-top: 2px;
+    padding-top: 4px;
     padding-left: 26.8vw;
     background-color: #f2f2f2;
 }
@@ -1826,15 +1826,15 @@ div.crumb:last-child {
 }
 
 #controls.controls-translation {
-    top: 4em;
+    top: 4.5em;
 }
 
 #view-toggle.view-toggle-translation {
-    top: -9.6em
+    top: -4.9em
 }
 
 #app-navigation-toggle.app-navigation-translation {
-    top: 4.2em;
+    top: 4.6em;
 }
 
 .translation {
@@ -1942,7 +1942,7 @@ div.crumb:last-child {
 }
 
 .brand-bar-translation {
-    top: -69px;
+    height: 10px;
 }
 
 

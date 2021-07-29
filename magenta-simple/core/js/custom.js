@@ -6,7 +6,7 @@ window.onload = function() {
 
 function brandBarAnimation() {
     setTimeout(function() {
-            document.getElementsByClassName('MenuWrapperParent')[0].classList.add('brand-bar-translation', 'translation');
+            document.getElementsByClassName('brandbar')[0].classList.add('brand-bar-translation', 'translation');
             document.getElementById('controls').classList.add('controls-translation', 'translation');
             document.getElementById('view-toggle').classList.add('view-toggle-translation', 'translation');
             document.getElementById('app-navigation-toggle').classList.add('app-navigation-translation', 'translation');
@@ -20,7 +20,7 @@ function brandBarAnimation() {
     setTimeout(function() {
         document.getElementsByClassName('header-brandbar')[0].classList.add('header-brandbar-translate', 'translation');
         document.getElementsByClassName('logo-area__inner')[0].classList.add('brandbar-logo-minified', 'translation');
-    }, 6500);
+    }, 6200);
 
 }
 
