@@ -939,9 +939,6 @@ aside {
     .app-files #app-content {
         width: 100%;
     }
-    #app-navigation-toggle {
-        margin-top: 10px;
-    }
     .breadcrumb {
         padding: 10px 0px;
     }
@@ -1594,7 +1591,7 @@ table th .sort-indicator {
     background-color: transparent;
     border: none;
     position: absolute;
-    top: -3em;
+    top: -4.2em;
     right: 0;
     z-index: 999;
     opacity: 1;
@@ -1718,18 +1715,21 @@ table th .sort-indicator {
 
 #controls {
     position: fixed;
-    top: 150px;
+    top: 8.5em;
     left: 0;
     width: 100%;
     z-index: 100;
-    padding: 0 15em 0 32.2em;
+    height: 48px;
+    padding-top: 2px;
+    padding-left: 26.8vw;
     background-color: #f2f2f2;
 }
 
 
 /** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
 
-.snapjs-left #controls {
+.snapjs-left #controls,
+.snapjs-left #app-navigation-toggle {
     position: fixed;
     left: -300px !important;
     top: -50px !important;
@@ -1763,7 +1763,6 @@ table.view-grid td.filename .nametext {
 
 .icon-home {
     background-image: var(--icon-home-custom);
-    margin-right: 15px;
 }
 
 div.crumb {
@@ -1773,6 +1772,10 @@ div.crumb {
 .icon-add {
     background-image: var(--icon-breadcrumb-add-custom);
     opacity: 1 !important;
+}
+
+.icon-toggle-filelist {
+    background-image: var(--icon-view-toggle-list-custom);
 }
 
 .actions {
@@ -1789,7 +1792,7 @@ div.crumb {
 
 div.crumb>a,
 div.crumb>span {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 div.crumb:last-child {
@@ -1806,6 +1809,23 @@ div.crumb:last-child {
     margin-top: 0 !important;
 }
 
+.crumb .icon-shared {
+    display: none !important;
+}
+
+.crumb a {
+    margin-right: 16px;
+}
+
+#app-navigation-toggle {
+    top: 8.7em;
+    margin-left: 1.4em;
+    z-index: 9999;
+}
+
+
+/*breadcrumb*/
+
 .tooltip {
     box-shadow: var(--scl-shadow-level-1);
 }
@@ -1820,13 +1840,34 @@ div.crumb:last-child {
 }
 
 
-/*breadcrumb*/
+/*Responsive Styling*/
 
 @media screen and (max-width: 1024px) {
     .app-files #app-content {
         width: 100% !important;
     }
     #app-navigation+#app-content #controls {
-        padding-left: 0px;
+        padding-left: 70px;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+    #controls {
+        padding-left: 31.5vw;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1599px) {
+    #controls {
+        padding-left: 25.5vw;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1799px) {
+    #controls {
+        padding-left: 22.2vw;
+    }
+}
+
+
+/*Responsive Styling*/
