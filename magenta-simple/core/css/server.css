@@ -1915,7 +1915,15 @@ div.crumb:last-child {
     background-image: var(--grid-folder-icon) !important
 }
 
+#filestable [data-file="photo folder"] .thumbnail
+{
+    background-image: var(--grid-folder-photo-icon) !important
+}
 
+#filestable [data-file="folder music"] .thumbnail
+{
+    background-image: var(--grid-folder-music-icon) !important
+}
 
 
 /*breadcrumb*/
