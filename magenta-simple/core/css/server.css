@@ -1840,8 +1840,106 @@ div.crumb:last-child {
 }
 
 
-/*Responsive Styling*/
+/** Grid Icons ***********************************/
+#filestable [data-mime="text/plain"] .thumbnail,
+#filestable [data-mime="text/markdown"] .thumbnail,
+#filestable [data-mime="application/octet-stream"] .thumbnail,
+#filestable [data-mime="application/msword"] .thumbnail,
+#filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail
+{
+    background-image: var(--grid-text-files-icon) !important;
+}
 
+
+#filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
+#filestable [data-mime="text/csv"] .thumbnail
+{
+    background-image: var(--grid-file-calculation-icon) !important;
+}
+
+#filestable [data-mime="application/zip"] .thumbnail,
+#filestable [data-mime="application/x-rar-compressed"] .thumbnail
+{
+    background-image: var(--grid-zip-icon) !important;
+}
+
+#filestable [data-mime="application/xml"] .thumbnail,
+#filestable [data-mime="application/x-php"] .thumbnail,
+#filestable [data-mime="application/json"] .thumbnail,
+#filestable [data-mime="application/javascript"] .thumbnail,
+#filestable [data-mime="text/css"] .thumbnail
+{
+    background-image: var(--grid-file-code-icon) !important;
+}
+
+#filestable [data-mime="audio/mpeg"] .thumbnail,
+#filestable [data-mime="audio/ogg"] .thumbnail,
+#filestable [data-mime="audio/mp4"] .thumbnail,
+#filestable [data-mime="audio/wav"] .thumbnail
+{
+    background-image: var(--grid-file-audio-icon) !important;
+}
+
+#filestable [data-mime="application/vnd.ms-powerpoint"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"] .thumbnail
+{
+    background-image: var(--grid-present-icon) !important;
+}
+
+#filestable [data-mime="application/pdf"] .thumbnail
+{
+    background-image: var(--grid-pdf-icon) !important;
+}
+
+#filestable [data-mime="text/html"] .thumbnail
+{
+    background-image: var(--grid-file-web-icon) !important;
+}
+
+#filestable [data-mime="video/x-ms-wmv"] .thumbnail,
+#filestable [data-mime="video/mpeg"] .thumbnail,
+#filestable [data-mime="video/x-msvideo"] .thumbnail,
+#filestable [data-mime="video/x-matroska"] .thumbnail,
+#filestable [data-mime="video/quicktime"] .thumbnail,
+#filestable [data-mime="video/mp4"] .thumbnail
+{
+    background-image: var(--grid-file-video-icon) !important;
+}
+
+#filestable [data-mime="image/webp"] .thumbnail,
+#filestable [data-mime="image/bmp"] .thumbnail,
+#filestable [data-mime="image/png"] .thumbnail,
+#filestable [data-mime="image/heic"] .thumbnail,
+#filestable [data-mime="image/jpeg"] .thumbnail,
+#filestable [data-mime="image/gif"] .thumbnail,
+#filestable [data-mime="image/svg+xml"] .thumbnail,
+#filestable [data-mime="application/postscript"] .thumbnail,
+#filestable [data-mime="image/x-dcraw"] .thumbnail
+{
+    background-image: var(--grid-file-img-icon) !important;
+}
+
+#filestable [data-mime="httpd/unix-directory"] .thumbnail
+{
+    background-image: var(--grid-folder-icon) !important;
+}
+
+#filestable [data-e2eencrypted="true"] .thumbnail
+{
+    background-image: var(--grid-folder-enc-icon) !important;
+}
+
+#filestable [data-icon="/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=0"] .thumbnail"] .thumbnail
+{
+    background-image: var(--grid-folder-shared-icon) !important;
+}
+
+
+
+/*breadcrumb*/
+/*Responsive Styling*/
 @media screen and (max-width: 1024px) {
     .app-files #app-content {
         width: 100% !important;
