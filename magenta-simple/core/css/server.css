@@ -1910,7 +1910,10 @@ div.crumb:last-child {
     background-image: var(--grid-file-img-icon) !important
 }
 
-
+#filestable [data-mime="httpd/unix-directory"] .thumbnail
+{
+    background-image: var(--grid-folder-icon) !important
+}
 
 
 
