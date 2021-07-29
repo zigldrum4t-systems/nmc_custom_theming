@@ -1841,6 +1841,7 @@ div.crumb:last-child {
     background-image: var(--grid-text-files-icon) !important;
 }
 
+
 #filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
 #filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
 #filestable [data-mime="text/csv"] .thumbnail
@@ -1915,7 +1916,7 @@ div.crumb:last-child {
     background-image: var(--grid-folder-icon) !important;
 }
 
-#filestable [data-file="photo folder"] .thumbnail
+/*#filestable [data-file="photo folder"] .thumbnail
 {
     background-image: var(--grid-folder-photo-icon) !important;
 }
@@ -1923,7 +1924,7 @@ div.crumb:last-child {
 #filestable [data-file="folder music"] .thumbnail
 {
     background-image: var(--grid-folder-music-icon) !important;
-}
+}*/
 
 #filestable [data-e2eencrypted="true"] .thumbnail
 {
