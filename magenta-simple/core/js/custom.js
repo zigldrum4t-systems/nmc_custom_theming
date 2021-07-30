@@ -25,7 +25,7 @@ function brandBarAnimation() {
 }
 
 
-/* To resolved lafet nav issue on mobile*/
+/* To resolved left nav issue on mobile*/
 // function breadcrumb() {
 //     document.getElementById('app-navigation-toggle').onclick = function() {
 //         setTimeout(function() {
