@@ -107,9 +107,9 @@ body {
 
 
 /* 
-   #app-navigation+#app-content {
-       margin-left: 320px !important;
-   } */
+    #app-navigation+#app-content {
+        margin-left: 320px !important;
+    } */
 
 #app-navigation>ul>li.active,
 #app-navigation>ul>li.active>a,
@@ -303,9 +303,9 @@ body {
 
 
 /*
-   #controls {
-       display: none;
-   }*/
+    #controls {
+        display: none;
+    }*/
 
 #controls>div.breadcrumb {
     background: transparent !important;
@@ -353,35 +353,35 @@ body {
 
 
 /*
-   #controls > div.actions.creatable > a.button {
-       justify-content: left !important;
-       width: 75px !important;
-       border: none !important;
-       background: transparent !important;
-   }
-   
-   #controls > div.actions.creatable > a.button > span.icon.icon-add {
-       border: 1px solid var(--color-border-dark) !important;
-       border-radius: 50px !important;
-       padding: 15px !important;
-       display: none;
-   }
-   
-   #controls > div.actions.creatable > a > span.hidden-visually {
-       height: auto !important;
-       width: 50px !important;
-       left: 45px !important;
-       top: 5px !important;
-       color: var(--color-main-text);
-       text-decoration: none;
-       padding-top: 4px !important;
-       display: none;
-   }
-   
-   #controls .breadcrumb {
-       display: none;
-   }
-   */
+    #controls > div.actions.creatable > a.button {
+        justify-content: left !important;
+        width: 75px !important;
+        border: none !important;
+        background: transparent !important;
+    }
+    
+    #controls > div.actions.creatable > a.button > span.icon.icon-add {
+        border: 1px solid var(--color-border-dark) !important;
+        border-radius: 50px !important;
+        padding: 15px !important;
+        display: none;
+    }
+    
+    #controls > div.actions.creatable > a > span.hidden-visually {
+        height: auto !important;
+        width: 50px !important;
+        left: 45px !important;
+        top: 5px !important;
+        color: var(--color-main-text);
+        text-decoration: none;
+        padding-top: 4px !important;
+        display: none;
+    }
+    
+    #controls .breadcrumb {
+        display: none;
+    }
+    */
 
 #controls>div.actions.creatable>a:hover {
     color: var(--scl-color-magenta);
@@ -604,20 +604,6 @@ aside {
     overflow: hidden;
     -webkit-transition: max-width .3s ease-out, opacity .4s ease-out;
     transition: max-width .3s ease-out, opacity .4s ease-out;
-}
-
-.header-brandbar {
-    transition: max-height .4s ease-out;
-}
-
-.header-brandbar-translate {
-    -webkit-transform: translateY(18px) !important;
-    transform: translateY(18px) !important;
-}
-
-.brandbar-logo-minified {
-    max-width: 80px !important;
-    opacity: 1 !important;
 }
 
 .sticky {
@@ -1116,89 +1102,89 @@ aside {
 
 
 /* @media screen and (min-height: 520px) and (max-height: 629px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 440px !important;
-       }
-   }
-   
-   @media screen and (min-height: 629px) and (max-height: 650px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 462px !important;
-       }
-   }
-   
-   @media screen and (min-height: 651px) and (max-height: 700px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 485px !important;
-       }
-   }
-   @media screen and (min-height: 701px) and (max-height: 742px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 533px !important;
-       }
-   }
-   @media screen and (min-height: 742px) and (max-height: 800px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 582px !important;
-       }
-   }
-   
-   @media screen and (min-height: 629px) and (max-height: 650px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 462px !important;
-       }
-   }
-   
-   @media screen and (min-height: 651px) and (max-height: 700px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 485px !important;
-       }
-   }
-   @media screen and (min-height: 701px) and (max-height: 742px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 533px !important;
-       }
-   }
-   @media screen and (min-height: 742px) and (max-height: 800px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 582px !important;
-       }
-   }
-   @media screen and (min-height: 801px) and (max-height: 915px) {
-       #app-navigation > ul {
-           padding-top: 0px !important;
-       }
-       #app-navigation {
-           height: 637px !important;
-       }
-   } */
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 440px !important;
+        }
+    }
+    
+    @media screen and (min-height: 629px) and (max-height: 650px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 462px !important;
+        }
+    }
+    
+    @media screen and (min-height: 651px) and (max-height: 700px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 485px !important;
+        }
+    }
+    @media screen and (min-height: 701px) and (max-height: 742px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 533px !important;
+        }
+    }
+    @media screen and (min-height: 742px) and (max-height: 800px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 582px !important;
+        }
+    }
+    
+    @media screen and (min-height: 629px) and (max-height: 650px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 462px !important;
+        }
+    }
+    
+    @media screen and (min-height: 651px) and (max-height: 700px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 485px !important;
+        }
+    }
+    @media screen and (min-height: 701px) and (max-height: 742px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 533px !important;
+        }
+    }
+    @media screen and (min-height: 742px) and (max-height: 800px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 582px !important;
+        }
+    }
+    @media screen and (min-height: 801px) and (max-height: 915px) {
+        #app-navigation > ul {
+            padding-top: 0px !important;
+        }
+        #app-navigation {
+            height: 637px !important;
+        }
+    } */
 
 
 /*---------------------------LeftNav-----------------------------------*/
@@ -1389,8 +1375,8 @@ table th#headerDate {
 
 
 /* #filestable>thead>tr>th>div>a:hover {
-       opacity: unset !important;
-   } */
+        opacity: unset !important;
+    } */
 
 #filestable>thead>tr>th>div>a {
     color: #f2f2f2 !important;
@@ -1427,7 +1413,7 @@ table th#headerDate {
     width: 55px;
     height: 55px;
     padding: 16px 20px !important;
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
@@ -1448,7 +1434,7 @@ table th#headerDate {
 
 #filestable:not(.view-grid) input[type='checkbox'].checkbox:checked+label:before {
     background-image: var(--icon-checkbox-checkmark) !important;
-    background-position: -25% 13%;
+    background-position: 0% 13%;
     box-sizing: border-box;
 }
 
@@ -1841,8 +1827,20 @@ div.crumb:last-child {
     transition: all 1000ms;
 }
 
+.header-brandbar {
+    transition: max-height .4s ease-out;
+}
 
-/*breadcrumb*/
+.header-brandbar-translate {
+    -webkit-transform: translateY(18px) !important;
+    transform: translateY(18px) !important;
+    opacity: 0 !important;
+}
+
+.brandbar-logo-minified {
+    max-width: 80px !important;
+    opacity: 1 !important;
+}
 
 .tooltip {
     box-shadow: var(--scl-shadow-level-1);
