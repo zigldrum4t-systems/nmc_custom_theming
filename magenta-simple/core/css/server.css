@@ -93,12 +93,11 @@ body {
 /* ---------------------------------------------------------------------------- */
 
 #app-navigation {
-    height: calc(100% - 108px) !important;
+    /* height: calc(100% - 108px) !important; */
     z-index: 10 !important;
     left: unset !important;
-    /* height: calc(100vh - 100px - 75px) !important; */
     position: absolute !important;
-    top: 94px !important;
+    top: 50px !important;
     height: calc(100vh - 173px) !important;
 }
 
@@ -1731,7 +1730,8 @@ table th .sort-indicator {
 
 /** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
 
-.snapjs-left #controls {
+.snapjs-left #controls,
+.snapjs-left #app-navigation-toggle {
     position: fixed;
     left: -300px !important;
     top: -50px !important;
