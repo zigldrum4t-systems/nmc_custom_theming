@@ -424,7 +424,7 @@ body {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     position: relative !important;
-    /* top: 73px !important; */
+    top: -5px !important;
 }
 
 #body-user #header {
@@ -1697,7 +1697,7 @@ table th .sort-indicator {
 
 #controls {
     position: fixed;
-    top: 8.5em;
+    top: 8.1em;
     left: 0;
     width: 100%;
     z-index: 100;
@@ -1800,7 +1800,7 @@ div.crumb:last-child {
 }
 
 #app-navigation-toggle {
-    top: 8.7em;
+    top: 8.2em;
     margin-left: 1.4em;
     z-index: 9999;
 }
@@ -1810,7 +1810,7 @@ div.crumb:last-child {
 }
 
 #view-toggle.view-toggle-translation {
-    top: -4.8em
+    top: -5.2em
 }
 
 #app-navigation-toggle.app-navigation-translation {
@@ -1934,7 +1934,7 @@ div.crumb:last-child {
 }
 
 .brand-bar-translation {
-    height: 4px;
+    height: 9px;
 }
 
 
