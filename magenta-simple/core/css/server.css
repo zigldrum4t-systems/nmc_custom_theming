@@ -1722,7 +1722,7 @@ table th .sort-indicator {
     width: 100%;
     z-index: 100;
     height: 48px;
-    padding-top: 4px;
+    padding-top: 2px;
     padding-left: 26.8vw;
     background-color: #f2f2f2;
 }
@@ -1826,19 +1826,19 @@ div.crumb:last-child {
 }
 
 #controls.controls-translation {
-    top: 4.5em;
+    top: 4.1em;
 }
 
 #view-toggle.view-toggle-translation {
-    top: -4.9em
+    top: -4.8em
 }
 
 #app-navigation-toggle.app-navigation-translation {
-    top: 4.6em;
+    top: 4.3em;
 }
 
 .translation {
-    transition: all 700ms;
+    transition: all 1000ms;
 }
 
 
@@ -1942,7 +1942,7 @@ div.crumb:last-child {
 }
 
 .brand-bar-translation {
-    height: 10px;
+    height: 4px;
 }
 
 
