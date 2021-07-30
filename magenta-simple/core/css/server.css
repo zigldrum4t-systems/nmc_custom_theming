@@ -93,12 +93,11 @@ body {
 /* ---------------------------------------------------------------------------- */
 
 #app-navigation {
-    height: calc(100% - 108px) !important;
+    /* height: calc(100% - 108px) !important; */
     z-index: 10 !important;
     left: unset !important;
-    /* height: calc(100vh - 100px - 75px) !important; */
     position: absolute !important;
-    top: 94px !important;
+    top: 50px !important;
     height: calc(100vh - 173px) !important;
 }
 
@@ -430,8 +429,8 @@ body {
     border-bottom: 1px solid #e5e5e5;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    position: absolute !important;
-    top: 73px !important;
+    position: relative !important;
+    /* top: 73px !important; */
 }
 
 #body-user #header {
@@ -920,6 +919,7 @@ aside {
 /* (max-width: 768px) */
 
 .MenuWrapperParent {
+    top: 0;
     z-index: 9999 !important;
     width: 100%;
 }
@@ -971,7 +971,8 @@ aside {
 
 .app-files #app-content {
     width: calc(100% - 288px) !important;
-    top: 96px;
+    /* top: 96px; */
+    margin-top: 3em;
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -1592,7 +1593,7 @@ table th .sort-indicator {
     background-color: transparent;
     border: none;
     position: absolute;
-    top: -4.2em;
+    top: -5em;
     right: 0;
     z-index: 999;
     opacity: 1;
@@ -1824,6 +1825,22 @@ div.crumb:last-child {
     z-index: 9999;
 }
 
+#controls.controls-translation {
+    top: 4.1em;
+}
+
+#view-toggle.view-toggle-translation {
+    top: -4.8em
+}
+
+#app-navigation-toggle.app-navigation-translation {
+    top: 4.3em;
+}
+
+.translation {
+    transition: all 1000ms;
+}
+
 
 /*breadcrumb*/
 
@@ -1922,6 +1939,10 @@ div.crumb:last-child {
 
 #filestable [data-icon] .thumbnail {
     background-image: var(--grid-folder-shared-icon) !important;
+}
+
+.brand-bar-translation {
+    height: 4px;
 }
 
 
