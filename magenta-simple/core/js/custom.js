@@ -1,8 +1,7 @@
 window.onload = function() {
     brandBarAnimation();
-    breadcrumb();
+    // breadcrumb();
 };
-
 
 function brandBarAnimation() {
     setTimeout(function() {
@@ -18,10 +17,9 @@ function brandBarAnimation() {
         // document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
 
     setTimeout(function() {
-        document.getElementsByClassName('header-brandbar')[0].classList.add('header-brandbar-translate', 'translation');
-        document.getElementsByClassName('logo-area__inner')[0].classList.add('brandbar-logo-minified', 'translation');
+        document.getElementsByClassName('header-brandbar')[0].classList.add('header-brandbar-translate');
+        document.getElementsByClassName('logo-area__inner')[0].classList.add('brandbar-logo-minified');
     }, 3200);
-
 }
 
 

@@ -596,8 +596,8 @@ aside {
     opacity: 0;
     max-width: 0;
     overflow: hidden;
-    -webkit-transition: max-width .3s ease-out, opacity .4s ease-out;
-    transition: max-width .3s ease-out, opacity .4s ease-out;
+    -webkit-transition: max-width .6s ease-out, opacity .8s ease-out;
+    transition: max-width .6s ease-out, opacity .8s ease-out;
 }
 
 .sticky {
@@ -648,10 +648,8 @@ aside {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-    -webkit-transition: opacity .4s ease-out, -webkit-transform .4s ease-out;
-    /* transition: opacity .4s ease-out,-webkit-transform .4s ease-out; */
-    transition: transform .4s ease-out, opacity .4s ease-out;
-    transition: transform .4s ease-out, opacity .4s ease-out, -webkit-transform .4s ease-out;
+    -webkit-transition: opacity .6s ease-out, -webkit-transform .6s ease-out;
+    transition: transform .6s ease-out, opacity .6s ease-out, -webkit-transform .6s ease-out;
 }
 
 .brandbar>.container-fixed>.header-brandbar>.header-brandbar-logo {
