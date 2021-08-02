@@ -400,7 +400,7 @@ body {
     position: relative;
 }
 
-.MenuWrapperParent span {
+.header-brandbar-claim span {
     position: relative;
     animation: BrandbarAnimate 5s infinite;
 }
@@ -1936,6 +1936,20 @@ div.crumb:last-child {
 .brand-bar-translation {
     height: 9px;
 }
+
+
+/*** Right menuitems ***/
+
+.material-design-icon__svg {
+    display: none;
+}
+
+.unified-search__trigger {
+    background-image: var(--right-menu-search-icon) !important;
+}
+
+
+/***  Right menuitems       ***/
 
 
 /*Responsive Styling*/
