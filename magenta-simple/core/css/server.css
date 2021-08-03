@@ -1313,15 +1313,15 @@ table th#headerDate {
 }
 
 #filestable #headerName-container {
-    height: 40px !important;
+    height: 34px !important;
 }
 
 #filestable #selectedActionsList {
-    height: 40px !important
+    height: 34px !important
 }
 
 #filestable th .columntitle {
-    height: 40px !important;
+    height: 34px !important;
 }
 
 #headerDate #headerSelection label {
@@ -1400,11 +1400,16 @@ table th#headerDate {
     min-height: 24px !important;
 }
 
-#fileList tr td.selection>.selectCheckBox+label,
-.select-all+label {
+#fileList tr td.selection>.selectCheckBox+label{
     width: 55px;
     height: 55px;
     padding: 16px 20px !important;
+    display: inline-block !important;
+}
+.select-all+label {
+    width: 55px;
+    height: 55px;
+    padding: 24px 20px !important;
     display: inline-block !important;
 }
 
@@ -1426,7 +1431,7 @@ table th#headerDate {
 
 #filestable:not(.view-grid) input[type='checkbox'].checkbox:checked+label:before {
     background-image: var(--icon-checkbox-checkmark) !important;
-    background-position: 0% 13%;
+    background-position: -26% 13%;
     box-sizing: border-box;
 }
 
