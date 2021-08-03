@@ -603,8 +603,8 @@ aside {
     opacity: 0;
     max-width: 0;
     overflow: hidden;
-    -webkit-transition: max-width .6s ease-out, opacity .8s ease-out;
-    transition: max-width .6s ease-out, opacity .8s ease-out;
+    -webkit-transition: max-width .3s ease-out, opacity .4s ease-out;
+    transition: max-width .3s ease-out, opacity .4s ease-out;
 }
 
 .sticky {
@@ -639,6 +639,7 @@ aside {
     overflow: hidden;
     width: 100%;
     font-family: TeleNeo, sans-serif;
+    transition: height .4s ease-out;
 }
 
 .brandbar>.container-fixed>.header-brandbar {
@@ -647,8 +648,8 @@ aside {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-    -webkit-transition: opacity .6s ease-out, -webkit-transform .6s ease-out;
-    transition: transform .6s ease-out, opacity .6s ease-out, -webkit-transform .6s ease-out;
+    -webkit-transition: opacity .4s ease-out, -webkit-transform .4s ease-out;
+    transition: transform .4s ease-out, opacity .4s ease-out, -webkit-transform .4s ease-out;
 }
 
 .brandbar>.container-fixed>.header-brandbar>.header-brandbar-logo {
@@ -1002,6 +1003,9 @@ aside {
     #header .container-fixed .header-right .navbar-icons a label {
         font-size: 12px;
     }
+    .app-files #app-content{
+        margin-top: 2em !important;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 639px) {
@@ -1051,6 +1055,9 @@ aside {
     }
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 0px !important;
+    }
+    .app-files #app-content{
+        margin-top: 2em !important;
     }
 }
 
@@ -1821,7 +1828,7 @@ div.crumb:last-child {
 }
 
 .translation {
-    transition: all 1000ms;
+    transition: all 700ms;
 }
 
 .header-brandbar {
