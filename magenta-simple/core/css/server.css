@@ -1004,6 +1004,9 @@ aside {
     #header .container-fixed .header-right .navbar-icons a label {
         font-size: 12px;
     }
+    .app-files #app-content{
+        margin-top: 2em !important;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 639px) {
@@ -1053,6 +1056,9 @@ aside {
     }
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 0px !important;
+    }
+    .app-files #app-content{
+        margin-top: 2em !important;
     }
 }
 
