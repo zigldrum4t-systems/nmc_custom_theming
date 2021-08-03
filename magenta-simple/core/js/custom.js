@@ -5,21 +5,19 @@ window.onload = function() {
 
 function brandBarAnimation() {
     setTimeout(function() {
-            document.getElementsByClassName('brandbar')[0].classList.add('brand-bar-translation', 'translation');
-            document.getElementById('controls').classList.add('controls-translation', 'translation');
-            document.getElementById('view-toggle').classList.add('view-toggle-translation');
-            document.getElementById('app-navigation-toggle').classList.add('app-navigation-translation', 'translation');
-        }, 3000)
-        // let workSpaceelement = document.getElementById('showRichWorkspacesToggle');
-        // let workSpaceevent = new Event('change');
-        // workSpaceelement.dispatchEvent(workSpaceevent);
-        // document.getElementById('showRichWorkspacesToggle').checked = true;
-        // document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
-
-    setTimeout(function() {
         document.getElementsByClassName('header-brandbar')[0].classList.add('header-brandbar-translate');
         document.getElementsByClassName('logo-area__inner')[0].classList.add('brandbar-logo-minified');
-    }, 3200);
+        document.getElementsByClassName('brandbar')[0].classList.add('brand-bar-translation', 'translation');
+        document.getElementById('controls').classList.add('controls-translation', 'translation');
+        document.getElementById('view-toggle').classList.add('view-toggle-translation');
+        document.getElementById('app-navigation-toggle').classList.add('app-navigation-translation', 'translation');
+
+    }, 3000);
+    // let workSpaceelement = document.getElementById('showRichWorkspacesToggle');
+    // let workSpaceevent = new Event('change');
+    // workSpaceelement.dispatchEvent(workSpaceevent);
+    // document.getElementById('showRichWorkspacesToggle').checked = true;
+    // document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
 }
 
 
