@@ -17,7 +17,9 @@
  */
 
 @import url("design-tokens-telekom.css");
-@import url("bootstrap.min.css");
+
+/* @import url("bootstrap.min.css"); */
+
 
 /* ---------------------------------------------------------------------------- */
 
@@ -158,6 +160,13 @@ body {
 .NextCloudPorgressBar .styledbar {
     background-color: #e20074;
     border-radius: 4px;
+}
+
+.progress {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
 }
 
 #app-navigation .progress-bar-custom li {
@@ -432,8 +441,6 @@ body {
 }
 
 #header>.container-fixed {
-    margin-left: auto;
-    margin-right: auto;
     display: inline-flex;
 }
 
@@ -449,7 +456,7 @@ aside {
 }
 
 #header #appmenu {
-    padding-left: 62px;
+    padding-left: 48px;
 }
 
 #header .container-fixed .header-left #nextcloud {
@@ -621,8 +628,6 @@ aside {
 }
 
 #content>.container-fixed {
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
 }
 
@@ -634,12 +639,6 @@ aside {
     overflow: hidden;
     width: 100%;
     font-family: TeleNeo, sans-serif;
-}
-
-.brandbar>.container-fixed {
-    z-index: 4999 !important;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .brandbar>.container-fixed>.header-brandbar {
@@ -1400,12 +1399,13 @@ table th#headerDate {
     min-height: 24px !important;
 }
 
-#fileList tr td.selection>.selectCheckBox+label{
+#fileList tr td.selection>.selectCheckBox+label {
     width: 55px;
     height: 55px;
     padding: 16px 20px !important;
     display: inline-block !important;
 }
+
 .select-all+label {
     width: 55px;
     height: 55px;
@@ -1938,6 +1938,12 @@ div.crumb:last-child {
 
 .brand-bar-translation {
     height: 9px;
+}
+
+.container-fixed {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 
