@@ -1313,15 +1313,15 @@ table th#headerDate {
 }
 
 #filestable #headerName-container {
-    height: 34px !important;
+    height: 32px !important;
 }
 
 #filestable #selectedActionsList {
-    height: 34px !important
+    height: 32px !important
 }
 
 #filestable th .columntitle {
-    height: 34px !important;
+    height: 32px !important;
 }
 
 #headerDate #headerSelection label {
