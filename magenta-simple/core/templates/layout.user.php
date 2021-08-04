@@ -156,7 +156,7 @@
                         </div>
                         <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
                     </div>
-                    <div class="emailmenu"><label>Email</label></div>
+                    <div class="emailmenu"><label class="right-menu-text-padding">Email</label></div>
                     <div class="profilePicture" style="display:none;">
                         <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" stroke="#212b36" stroke-width="2"       stroke-linecap="round" stroke-linejoin="round" fill="none">
                             <circle cx="12" cy="8" r="5" />
@@ -175,7 +175,7 @@
                                 <path d="M3,21 h18 C 21,12 3,12 3,21"/>
                                 </svg>
                             </div>
-                            <span class="username">
+                            <span class="username right-menu-text-padding">
                                 <label class="username-lable"><?php p($_['user_uid']); ?></label>
                             </span> 
                         </div>

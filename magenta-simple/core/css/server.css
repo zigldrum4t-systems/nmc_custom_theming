@@ -1949,11 +1949,11 @@ div.crumb:last-child {
 }
 
 .profilePicture {
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 #settings {
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .username {
@@ -1964,10 +1964,6 @@ div.crumb:last-child {
     width: 100% !important;
 }
 
-.emailmenu {
-    padding-top: 2px;
-}
-
 #settings #expand {
     opacity: 1;
     padding-right: 0px;
@@ -1976,6 +1972,30 @@ div.crumb:last-child {
 .username-lable {
     margin-right: auto;
     margin-left: 10px;
+}
+
+.header-menu__trigger[data-v-18a8f26a] {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    opacity: .6;
+    margin-right: -6px !important;
+}
+
+.right-menu-text-padding {
+    padding-top: 1px;
+}
+
+#unified-search span {
+    padding-top: 1px;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif;
+    font-size: 16px;
+    color: var(--scl-color-grey-90);
 }
 
 
