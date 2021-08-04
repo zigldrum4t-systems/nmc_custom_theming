@@ -1968,8 +1968,7 @@ div.crumb:last-child {
 .username-lable {
     margin-right: auto;
     margin-left: 8px;
-    font-size: 12px;
-    font-weight: bold !important;
+    line-height: 0px !important;
 }
 
 .header-menu__trigger[data-v-18a8f26a] {
@@ -1986,12 +1985,33 @@ div.crumb:last-child {
 
 .email-menu-text {
     font-size: 12px;
+    padding-top: 5px;
+    line-height: 0px !important;
 }
 
 .menu-search-text {
     padding-left: 7px;
+}
+
+.right-menu-font {
     font-size: 12px;
     font-weight: bold !important;
+}
+
+.settingsdiv {
+    line-height: 15px !important;
+}
+
+.menu-search-text a:hover {
+    color: #E20074;
+}
+
+.email-menu-text a:hover {
+    color: #E20074;
+}
+
+.username-lable a:hover {
+    color: #E20074;
 }
 
 
