@@ -148,7 +148,7 @@
 
                 <div class="header-right">
                     <div id="unified-search"></div>
-                    <span>Search</span>
+                    <span class="menu-search-text">Search</span>
                     <div id="contactsmenu">
                         <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">

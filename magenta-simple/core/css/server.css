@@ -1972,6 +1972,7 @@ div.crumb:last-child {
 .username-lable {
     margin-right: auto;
     margin-left: 10px;
+    font-size: 12px;
 }
 
 .header-menu__trigger[data-v-18a8f26a] {
@@ -1989,13 +1990,13 @@ div.crumb:last-child {
 
 .right-menu-text-padding {
     padding-top: 1px;
+    font-size: 12px;
 }
 
-#unified-search span {
+.menu-search-text {
     padding-top: 1px;
-    font-family: TeleNeoWeb, TeleNeo, sans-serif;
-    font-size: 16px;
-    color: var(--scl-color-grey-90);
+    font-size: 12px;
+    font-weight: bold !important;
 }
 
 
