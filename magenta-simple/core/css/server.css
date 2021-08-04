@@ -1948,6 +1948,35 @@ div.crumb:last-child {
     background-image: var(--right-menu-search-icon) !important;
 }
 
+.profilePicture {
+    margin-left: 10px;
+}
+
+#settings {
+    margin-left: 10px;
+}
+
+.username {
+    padding-top: 2px;
+}
+
+#expand {
+    width: 100% !important;
+}
+
+.emailmenu {
+    padding-top: 2px;
+}
+
+#settings #expand {
+    opacity: 1;
+    padding-right: 0px;
+}
+
+.username-lable {
+    margin-right: auto;
+}
+
 
 /***  Right menuitems       ***/
 

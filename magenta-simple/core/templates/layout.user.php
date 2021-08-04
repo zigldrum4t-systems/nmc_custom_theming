@@ -148,7 +148,7 @@
 
                 <div class="header-right">
                     <div id="unified-search"></div>
-                    
+                    <span>Search</span>
                     <div id="contactsmenu">
                         <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">
@@ -157,7 +157,7 @@
                         <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
                     </div>
                     <div class="emailmenu"><label>Email</label></div>
-                    <div class="profilePicture">
+                    <div class="profilePicture" style="display:none;">
                         <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" stroke="#212b36" stroke-width="2"       stroke-linecap="round" stroke-linejoin="round" fill="none">
                             <circle cx="12" cy="8" r="5" />
                             <path d="M3,21 h18 C 21,12 3,12 3,21"/>
@@ -170,9 +170,14 @@
                             aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
                             aria-expanded="false">
                             <div class="settingsdiv">
-                                <img alt="" src="/apps/settings/img/admin.svg?v=60c496a4">
+                                <svg width="24" height="24" viewBox="0 0 24 24" stroke="#212b36" stroke-width="2"       stroke-linecap="round" stroke-linejoin="round" fill="none">
+                                <circle cx="12" cy="8" r="5" />
+                                <path d="M3,21 h18 C 21,12 3,12 3,21"/>
+                                </svg>
                             </div>
-                            <div id="expandDisplayName" class="icon-settings-white"></div>
+                            <span class="username">
+                                <label class="username-lable"><?php p($_['user_uid']); ?></label>
+                            </span> 
                         </div>
                         <nav class="settings-menu" id="expanddiv" style="display:none;"
                             aria-label="<?php p($l->t('Settings menu'));?>">
