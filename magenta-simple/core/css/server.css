@@ -1956,10 +1956,6 @@ div.crumb:last-child {
     margin-left: 8px;
 }
 
-.username {
-    padding-top: 2px;
-}
-
 #expand {
     width: 100% !important;
 }
@@ -1973,6 +1969,7 @@ div.crumb:last-child {
     margin-right: auto;
     margin-left: 8px;
     font-size: 12px;
+    font-weight: bold !important;
 }
 
 .header-menu__trigger[data-v-18a8f26a] {
@@ -1987,13 +1984,11 @@ div.crumb:last-child {
     margin-right: -8px !important;
 }
 
-.right-menu-text-padding {
-    padding-top: 1px;
+.email-menu-text {
     font-size: 12px;
 }
 
 .menu-search-text {
-    padding-top: 1px;
     padding-left: 7px;
     font-size: 12px;
     font-weight: bold !important;

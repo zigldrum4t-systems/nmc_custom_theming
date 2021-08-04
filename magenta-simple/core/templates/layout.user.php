@@ -154,17 +154,8 @@
                             aria-controls="contactsmenu-menu" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>email</title><g fill="#191919"><g><path d="M.5 3.5v14c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-14zM22 5v.95l-8.45 7.25c-.9.75-2.2.75-3.1 0L2 5.95V5zm-1.5 14h-17c-.85 0-1.5-.65-1.5-1.5V7.95l7.45 6.4c.75.65 1.65.95 2.55.95s1.8-.3 2.55-.95L22 7.95v9.55c0 .85-.65 1.5-1.5 1.5z" fill-rule="evenodd"></path></g></g></svg>                            
                         </div>
-                        <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
                     </div>
-                    <div class="emailmenu"><label class="right-menu-text-padding">Email</label></div>
-                    <div class="profilePicture" style="display:none;">
-                        <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" stroke="#212b36" stroke-width="2"       stroke-linecap="round" stroke-linejoin="round" fill="none">
-                            <circle cx="12" cy="8" r="5" />
-                            <path d="M3,21 h18 C 21,12 3,12 3,21"/>
-                            </svg>
-                            <label><?php p($_['user_uid']); ?></label>
-                        </a>
-                    </div>
+                    <div class="emailmenu"><label class="email-menu-text">Email</label></div>
                     <div id="settings">
                         <div id="expand" tabindex="0" role="button" class="menutoggle"
                             aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
@@ -175,8 +166,8 @@
                                 <path d="M3,21 h18 C 21,12 3,12 3,21"/>
                                 </svg>
                             </div>
-                            <span class="username right-menu-text-padding">
-                                <label class="username-lable"><?php p($_['user_uid']); ?></label>
+                            <span class="username-lable">
+                                 <?php p($_['user_uid']); ?>
                             </span> 
                         </div>
                         <nav class="settings-menu" id="expanddiv" style="display:none;"
