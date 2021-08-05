@@ -330,11 +330,6 @@ body {
     background-image: var(--icon-quota-e20074);
 }
 
-
-/* #controls>div.breadcrumb {
-     background: transparent !important;
- } */
-
 #filestable>thead>tr>th>a {
     color: var(--color-main-text) !important;
 }
