@@ -1576,7 +1576,7 @@ div.crumb:last-child {
 }
 
 .unified-search__result {
-    height: 68px !important;
+    height: 48px !important;
 }
 
 .unified-search__results::before {
@@ -1653,6 +1653,10 @@ div.crumb:last-child {
 .unified-search .empty-content {
     margin-top: 30px !important;
     margin-bottom: 34px !important;
+}
+
+.unified-search__result-content {
+    padding-bottom: 5px;
 }
 
 
@@ -1874,10 +1878,6 @@ div.crumb:last-child {
 
 .username-lable a:hover {
     color: #E20074;
-}
-
-.unified-search__result-content {
-    padding-bottom: 5px;
 }
 
 
