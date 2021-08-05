@@ -1214,6 +1214,58 @@ table th#headerDate {
 }
 
 
+/*----right-click-menu------*/
+#rightClickMenu  .icon-starred {
+    background-image: var(--icon-favourite-custom) !important;
+}
+#rightClickMenu  .icon-details {
+    background-image: var(--icon-user-000-org) !important;
+}
+#rightClickMenu .icon-rename {
+    background-image: var(--icon-edit-custom) !important;
+}
+#rightClickMenu .icon-external {
+    background-image: var(--icon-copy-paste-custom) !important;
+}
+#rightClickMenu .icon-download {
+    background-image: var(--icon-download-custom) !important;
+}
+#rightClickMenu .icon-delete {
+    background-image: var(--icon-delete-custom) !important;
+}
+#rightClickMenu {
+    padding:6px 2px;
+}
+#rightClickMenu span:hover{
+    color:#e20074 !important;
+}
+#rightClickMenu .bubble li>a{
+    align-items: center !important;
+}
+#rightClickMenu .bubble li>a:hover{
+    background-color: unset !important;
+}
+/* Hover icons */
+#rightClickMenu .icon-delete:hover, .icon-delete:focus {
+    background-image: var(--icon-delete-magenta) !important;
+    filter: initial;
+}
+#rightClickMenu .icon-download:hover{
+    background-image: var(--icon-download-magenta) !important;
+}
+#rightClickMenu  .icon-starred:hover {
+    background-image: var(--icon-fav-magenta) !important;
+}
+#rightClickMenu  .icon-details:hover {
+    background-image: var(--icon-user-e20074) !important;
+}
+#rightClickMenu .icon-rename:hover {
+    background-image: var(--icon-edit-magenta) !important;
+}
+#rightClickMenu .icon-external:hover {
+    background-image: var(--icon-copy-paste-magenta) !important;
+}
+
 /***************************************** List view sorting ******************************************************************/
 
 table th .sort-indicator {
