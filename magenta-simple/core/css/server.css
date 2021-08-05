@@ -1800,6 +1800,86 @@ div.crumb:last-child {
 /****footer*****/
 
 
+/*** Right menuitems ***/
+
+.material-design-icon__svg {
+    display: none;
+}
+
+.unified-search__trigger {
+    background-image: var(--right-menu-search-icon) !important;
+}
+
+.profilePicture {
+    margin-left: 8px;
+}
+
+#settings {
+    margin-left: 8px;
+}
+
+#expand {
+    width: 100% !important;
+}
+
+#settings #expand {
+    opacity: 1;
+    padding-right: 0px;
+}
+
+.username-lable {
+    margin-right: auto;
+    margin-left: 8px;
+    line-height: 0px !important;
+}
+
+.header-menu__trigger[data-v-18a8f26a] {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    height: 100%;
+    margin-left: 8px;
+    padding: 0;
+    cursor: pointer;
+    opacity: .6;
+    margin-right: -8px !important;
+}
+
+.email-menu-text {
+    font-size: 12px;
+    padding-top: 5px;
+    line-height: 0px !important;
+}
+
+.menu-search-text {
+    padding-left: 7px;
+}
+
+.right-menu-font {
+    font-size: 12px;
+    font-weight: bold !important;
+}
+
+.settingsdiv {
+    line-height: 15px !important;
+}
+
+.menu-search-text a:hover {
+    color: #E20074;
+}
+
+.email-menu-text a:hover {
+    color: #E20074;
+}
+
+.username-lable a:hover {
+    color: #E20074;
+}
+
+
+/***  Right menuitems       ***/
+
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
