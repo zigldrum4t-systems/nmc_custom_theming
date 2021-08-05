@@ -1842,7 +1842,7 @@ div.crumb:last-child {
     margin-left: 8px;
     padding: 0;
     cursor: pointer;
-    opacity: .6;
+    opacity: 1;
     margin-right: -8px !important;
 }
 
@@ -1875,6 +1875,10 @@ div.crumb:last-child {
 
 .username-lable a:hover {
     color: #E20074;
+}
+
+#contactsmenu .menutoggle {
+    opacity: 1 !important;
 }
 
 
