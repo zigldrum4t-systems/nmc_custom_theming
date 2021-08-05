@@ -133,52 +133,40 @@
                    
                  
                 </div>
-
-                <div class="header-right">
-                    <div id="unified-search"></div>
-                    
-                    <div id="contactsmenu">
-                        <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
-                            aria-controls="contactsmenu-menu" aria-expanded="false">
-                            <img src="/themes/magenta-simple/core/img/email.png" width="24" alt="Email"/>
-                        </div>
-                        <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
-                    </div>
-                    <div class="emailmenu"><label>Email</label></div>
-                    <div class="profilePicture">
-                        <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" stroke="#212b36" stroke-width="2"       stroke-linecap="round" stroke-linejoin="round" fill="none">
-                            <circle cx="12" cy="8" r="5" />
-                            <path d="M3,21 h18 C 21,12 3,12 3,21"/>
-                            </svg>
-                            <label><?php p($_['user_uid']); ?></label>
-                        </a>
-                    </div>
-                    <div id="settings">
-                        <div id="expand" tabindex="0" role="button" class="menutoggle"
-                            aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
-                            aria-expanded="false">
-                            <div class="settingsdiv">
-                                <img alt="" src="/apps/settings/img/admin.svg?v=60c496a4">
-                            </div>
-                            <div id="expandDisplayName" class="icon-settings-white"></div>
-                        </div>
-                        <nav class="settings-menu" id="expanddiv" style="display:none;"
-                            aria-label="<?php p($l->t('Settings menu'));?>">
-                            <ul>
-                                <?php foreach ($_['settingsnavigation'] as $entry):?>
-                                <li data-id="<?php p($entry['id']); ?>">
-                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
-                                        class="active" <?php endif; ?>>
-                                        <img alt=""
-                                            src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
-                                        <?php p($entry['name']) ?>
-                                    </a>
-                                </li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+					<?php
+					/** @var \OCP\AppFramework\Http\Template\PublicTemplateResponse $template */
+					if (isset($template) && $template->getActionCount() !== 0) {
+						$primary = $template->getPrimaryAction();
+						$others = $template->getOtherActions(); ?>
+					<div class="header-right">
+						<span id="header-primary-action" class="<?php if ($template->getActionCount() === 1) {
+							p($primary->getIcon());
+						} ?>">
+							<a href="<?php p($primary->getLink()); ?>" class="">
+								<span class="gust-download-svg">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>download</title><g fill="currentColor"><g><path fill-rule="evenodd" d="M21.25 20.5c.4 0 .75.35.75.75s-.35.75-.75.75H2.75c-.4 0-.75-.35-.75-.75s.35-.75.75-.75zM12 2c.4 0 .75.35.75.75V9.5h3.85l-4.6 7-4.6-7h3.85V2.75c0-.4.35-.75.75-.75z"></path></g></g></svg>
+								</span>	
+								<span class="gust-download-label"><?php p($primary->getLabel()) ?></span>
+							</a>
+						</span>
+						<?php if ($template->getActionCount() > 1) { ?>
+						<div id="header-secondary-action">
+							<button id="header-actions-toggle" class="menutoggle icon-more-white"></button>
+							<div id="header-actions-menu" class="popovermenu menu">
+								<ul>
+									<?php
+										/** @var \OCP\AppFramework\Http\Template\IMenuAction $action */
+										foreach ($others as $action) {
+											print_unescaped($action->render());
+										}
+									?>
+								</ul>
+							</div>
+						</div>
+						<?php } ?>
+				</div>
+				<?php
+				} ?>
             </div>
         </header>
     </div>
