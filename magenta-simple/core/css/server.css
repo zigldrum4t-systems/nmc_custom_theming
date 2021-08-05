@@ -1814,11 +1814,8 @@ div.crumb:last-child {
     background-image: var(--right-menu-search-icon) !important;
 }
 
+#settings,
 .profilePicture {
-    margin-left: 8px;
-}
-
-#settings {
     margin-left: 8px;
 }
 
