@@ -18,9 +18,6 @@
 
 @import url("design-tokens-telekom.css");
 
-/* @import url("bootstrap.min.css"); */
-
-
 /* ---------------------------------------------------------------------------- */
 
 
@@ -370,46 +367,9 @@ body {
     opacity: 1 !important;
 }
 
-
-/* #controls>.breadcrumb>div.crumb.svg>a {
-    color: var(--color-main-text) !important;
-} */
-
 #controls>.breadcrumb>div.crumb.svg>a:hover {
     opacity: 0.7 !important;
 }
-
-
-/*
-    #controls > div.actions.creatable > a.button {
-        justify-content: left !important;
-        width: 75px !important;
-        border: none !important;
-        background: transparent !important;
-    }
-    
-    #controls > div.actions.creatable > a.button > span.icon.icon-add {
-        border: 1px solid var(--color-border-dark) !important;
-        border-radius: 50px !important;
-        padding: 15px !important;
-        display: none;
-    }
-    
-    #controls > div.actions.creatable > a > span.hidden-visually {
-        height: auto !important;
-        width: 50px !important;
-        left: 45px !important;
-        top: 5px !important;
-        color: var(--color-main-text);
-        text-decoration: none;
-        padding-top: 4px !important;
-        display: none;
-    }
-    
-    #controls .breadcrumb {
-        display: none;
-    }
-    */
 
 #controls>div.actions.creatable>a:hover {
     color: var(--scl-color-magenta);
@@ -755,62 +715,6 @@ aside {
 }
 
 
-/*---------------------------BREADCRUMNB-BAR-----------------------------------*/
-
-
-/* .breadcrumb {
-    padding: 0 !important;
-    margin: 0;
-} */
-
-
-/* 
-.breadcrumb-bar {
-    height: 38px;
-    background-color: #f2f2f2;
-    margin-top: 51px;
-}
-
-.breadcrumb-bar .container-fixed {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.breadcrumb-bar ul.breadcrumb-style {
-    padding: 6px 4px;
-    list-style: none;
-} */
-
-
-/* Display list items side by side */
-
-
-/* 
-.breadcrumb-bar ul.breadcrumb-style li {
-    display: inline;
-    font-size: 12px;
-}
-
-.breadcrumb-bar ul.breadcrumb-style li .arrow-right {
-    transform: rotate(135deg);
-}
- */
-
-
-/* Add a color to all links inside the list */
-
-
-/* 
-.breadcrumb-bar ul.breadcrumb-style li a {
-    color: #191919;
-    text-decoration: none;
-}
-
-.breadcrumb-bar ul.breadcrumb-style li a:hover {
-    text-decoration: underline;
-} */
-
-
 /* UI chnages */
 
 .MenuWrapperParent {
@@ -831,9 +735,6 @@ aside {
     .button.new .hidden-visually {
         display: none;
     }
-    /* .breadcrumb {
-        padding: 10px 0px;
-    } */
 }
 
 @media screen and (min-width: 1600px) {
@@ -933,10 +834,6 @@ aside {
     .header-right .navbar-icons a {
         font-size: 6px !important;
     }
-    /* .breadcrumb-bar .right-part {
-        padding-left: 0px;
-        padding-right: 0px;
-    } */
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 2px !important;
     }
@@ -975,9 +872,6 @@ aside {
     .container-fixed {
         width: 100%;
     }
-    /* .breadcrumb-bar .left-part {
-        display: none;
-    } */
     #header .container-fixed .header-right .navbar-icons a label {
         display: block;
     }
@@ -1195,11 +1089,6 @@ table th#headerDate {
 #filestable>thead>tr>th>div>a:hover {
     text-decoration: none !important;
 }
-
-
-/* #filestable>thead>tr>th>div>a:hover {
-        opacity: unset !important;
-    } */
 
 #filestable>thead>tr>th>div>a {
     color: #f2f2f2 !important;
@@ -1550,15 +1439,6 @@ table th .sort-indicator {
     left: -300px !important;
     top: -50px !important;
 }
-
-
-/* needs adjustments based on your header height + breadcrumbs */
-
-
-/* #app-navigation:not(.vue) {
-    top: 100px;
-    height: calc(100% - 100px);
-} */
 
 
 /*flexbox-change-properties-for-thumbnail-labels*/
