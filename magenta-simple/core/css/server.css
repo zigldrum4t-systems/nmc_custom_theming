@@ -1876,6 +1876,10 @@ div.crumb:last-child {
     color: #E20074;
 }
 
+.unified-search__result-content {
+    padding-bottom: 5px;
+}
+
 
 /***  Right menuitems       ***/
 
