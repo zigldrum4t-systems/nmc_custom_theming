@@ -91,9 +91,20 @@ body {
     overflow-y: hidden;
 }
 
-* {
+#body-user>* {
     box-sizing: border-box !important;
     -webkit-box-sizing: border-box !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 
@@ -104,7 +115,7 @@ body {
     left: unset !important;
     position: absolute !important;
     top: 50px !important;
-    height: calc(100vh - 173px) !important;
+    height: calc(100vh - 270px) !important;
 }
 
 #app-navigation>ul>li.active,
@@ -169,6 +180,12 @@ body {
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
 }
 
+.progress-bar {
+    height: 100%;
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
 #app-navigation .progress-bar-custom li {
     list-style: none;
 }
@@ -218,9 +235,21 @@ body {
 #app-navigation .custom-button .btn-style {
     width: 70%;
     border: 1px solid #191919;
+    background-color: #fff;
     margin-left: 10px;
     color: #191919;
     margin-bottom: 12px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+#app-navigation .custom-button .btn-style:hover {
+    background-color: #f4f4f4;
 }
 
 #app-navigation>ul>li::selection {
@@ -419,7 +448,7 @@ body {
     }
 }
 
-#header {
+#body-user #header {
     height: 63px !important;
     background-image: unset !important;
     background-color: #ffffff !important;
@@ -1074,6 +1103,10 @@ input[type="checkbox"].checkbox+label:before:hover {
     padding-left: 8px;
 }
 
+.Memory-consumed img {
+    vertical-align: middle;
+}
+
 #app-settings-header .settings-button {
     color: #e20074 !important;
     font-size: 16px !important;
@@ -1359,7 +1392,7 @@ table th .sort-indicator {
 #app-content-sharingout #headerDate .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -87px;
+    margin-left: 0;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
@@ -1381,11 +1414,6 @@ table th .sort-indicator {
     opacity: 1;
 }
 
-.bradcrum-nav {
-    background-color: none;
-    height: 78px;
-}
-
 
 /** New css for EMail and Profile Picture **/
 
@@ -1396,6 +1424,11 @@ table th .sort-indicator {
 
 
 /***************************************** File List Toggle View ******************************************************************/
+
+#filestable th a#modified {
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 #filestable.view-grid tbody tr {
     height: 172px !important;
@@ -1410,7 +1443,6 @@ table th .sort-indicator {
 }
 
 #filestable.view-grid tbody tr {
-    /* height: 68px !important; */
     border-bottom: unset !important;
 }
 
@@ -1522,10 +1554,11 @@ table th .sort-indicator {
 
 /* needs adjustments based on your header height + breadcrumbs */
 
-#app-navigation:not(.vue) {
+
+/* #app-navigation:not(.vue) {
     top: 100px;
     height: calc(100% - 100px);
-}
+} */
 
 
 /*flexbox-change-properties-for-thumbnail-labels*/
@@ -1543,7 +1576,13 @@ table.view-grid td.filename .nametext {
 }
 
 
-/*breadcrumb*/
+/* new custom changes*/
+
+.container-fixed {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
 
 .icon-home {
     background-image: var(--icon-home-custom);
@@ -1638,10 +1677,6 @@ div.crumb:last-child {
     opacity: 1 !important;
 }
 
-.tooltip {
-    box-shadow: var(--scl-shadow-level-1);
-}
-
 .tooltip .tooltip-inner {
     background: #ffffff;
     color: #191919 !important;
@@ -1649,6 +1684,100 @@ div.crumb:last-child {
     font-family: TeleNeo, sans-serif;
     max-width: 100%;
     border-radius: 8px;
+    box-shadow: var(--scl-shadow-level-1);
+}
+
+#header-menu-unified-search {
+    width: 496px;
+    max-width: unset;
+    border-radius: 8px;
+    box-shadow: var(--scl-shadow-level-2);
+    padding: 14px;
+}
+
+#header-menu-unified-search .header-menu__content {
+    max-width: unset;
+    width: unset;
+}
+
+.unified-search__result {
+    height: 68px !important;
+}
+
+.unified-search__results::before {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: TeleNeo, sans-serif;
+    color: var(--scl-color-grey-90) !important;
+    margin-top: 14px !important;
+    margin-bottom: 8px !important;
+}
+
+.unified-search__result--focused,
+.unified-search__result:active,
+.unified-search__result:hover,
+.unified-search__result:focus {
+    background-color: var(--scl-color-grey-0) !important;
+}
+
+.empty-content__icon {
+    width: 84px !important;
+    height: 84px !important;
+    background-size: 84px !important;
+    opacity: unset !important;
+    margin-bottom: 0px !important;
+}
+
+.icon-search {
+    background-image: var(--icon-search-custom) !important;
+}
+
+.header-menu__carret {
+    right: 15px !important;
+}
+
+.header-menu__wrapper {
+    right: 0px !important;
+    filter: unset !important;
+}
+
+.unified-search__result-line-two {
+    font-size: 14px !important;
+    color: var(--scl-color-grey-90) !important;
+    opacity: unset !important;
+}
+
+.header-menu__content>ul>li:last-child>a:hover {
+    color: unset !important;
+    background-color: unset !important;
+    text-decoration: none !important;
+}
+
+.header-menu__content ul li:last-child span {
+    color: var(--scl-color-magenta);
+}
+
+.header-menu__content>ul>li:last-child>a>div {
+    display: none;
+}
+
+.header-menu__content>ul>li:last-child>a {
+    height: unset !important;
+}
+
+.unified-search__form-input,
+.unified-search__form-reset {
+    margin: 0px !important;
+}
+
+.unified-search .empty-content .empty-content__title {
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.unified-search .empty-content {
+    margin-top: 30px !important;
+    margin-bottom: 34px !important;
 }
 
 
@@ -1739,12 +1868,6 @@ div.crumb:last-child {
     height: 9px;
 }
 
-.container-fixed {
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-}
-
 
 /*****footer******/
 
@@ -1805,13 +1928,13 @@ div.crumb:last-child {
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
-    #app-content {
+    .app-files #app-content {
         margin-top: 2em;
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    #app-content {
+    .app-files #app-content {
         margin-top: 2em;
     }
 }
