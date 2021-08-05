@@ -597,10 +597,6 @@ aside {
     height: 100%;
 }
 
-#content {
-    margin-top: 15px;
-}
-
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -718,10 +714,6 @@ aside {
     width: 100%;
 }
 
-#content {
-    padding-top: 0 !important;
-}
-
 #header .container-fixed .header-right .navbar-icons a {
     display: inline;
 }
@@ -759,7 +751,7 @@ aside {
 
 .app-files #app-content {
     width: calc(100% - 288px);
-    margin-top: 3em;
+    margin-top: -5px;
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -1292,7 +1284,7 @@ table th .sort-indicator {
     background-color: transparent;
     border: none;
     position: absolute;
-    top: -5em;
+    top: 0;
     right: 0;
     z-index: 999;
     opacity: 1;
@@ -1408,31 +1400,16 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
-#content {
-    margin-top: 15px;
-    padding-top: 100px;
-}
-
 #controls {
-    position: fixed;
-    top: 8.1em;
-    left: 0;
+    position: sticky;
+    display: flex;
+    top: 0;
     width: 100%;
     z-index: 100;
     height: 48px;
-    padding-top: 2px;
-    padding-left: 26.8vw;
+    padding: 0;
+    margin-left: 10px;
     background-color: #f2f2f2;
-}
-
-
-/** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
-
-.snapjs-left #controls,
-.snapjs-left #app-navigation-toggle {
-    position: fixed;
-    left: -300px !important;
-    top: -50px !important;
 }
 
 
@@ -1452,6 +1429,19 @@ table.view-grid td.filename .nametext {
 
 
 /* new custom changes*/
+
+.full-width-breadcrumb {
+    background: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    left: 0;
+    z-index: -1;
+}
+
+#content {
+    padding-top: 0;
+}
 
 .container-fixed {
     margin-left: auto;
@@ -1518,19 +1508,17 @@ div.crumb:last-child {
 #app-navigation-toggle {
     top: 8.2em;
     margin-left: 1.4em;
-    z-index: 9999;
+    background-color: #f2f2f2;
+    height: 48px;
 }
 
-#controls.controls-translation {
-    top: 4.1em;
-}
-
-#view-toggle.view-toggle-translation {
-    top: -5.1em
+.snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
+    left: -57px;
+    top: 0;
 }
 
 #app-navigation-toggle.app-navigation-translation {
-    top: 4.3em;
+    top: 4.2em;
 }
 
 .translation {
@@ -1893,45 +1881,12 @@ div.crumb:last-child {
 
 /*Responsive Styling*/
 
-@media screen and (max-width: 375px) {
-    .app-files #app-content {
-        margin-top: 2em;
-    }
-}
-
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-    .app-files #app-content {
-        margin-top: 2em;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .app-files #app-content {
         width: 100%;
     }
-    #app-navigation+#app-content #controls {
-        padding-left: 70px;
-    }
     .brand-footer .brand-footer-bar {
         justify-content: center;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
-    #controls {
-        padding-left: 31.5vw;
-    }
-}
-
-@media screen and (min-width: 1300px) and (max-width: 1599px) {
-    #controls {
-        padding-left: 25.5vw;
-    }
-}
-
-@media screen and (min-width: 1600px) and (max-width: 1799px) {
-    #controls {
-        padding-left: 22.2vw;
     }
 }
 
