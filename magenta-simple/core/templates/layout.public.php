@@ -26,66 +26,164 @@
 	<?php emit_css_loading_tags($_); ?>
 	<?php emit_script_loading_tags($_); ?>
 	<?php print_unescaped($_['headers']); ?>
+    <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" defer src="/themes/magenta-simple/core/js/custom.js"></script>
+
 </head>
 <body id="<?php p($_['bodyid']);?>">
-<?php include('layout.noscript.warning.php'); ?>
-<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
-	<input type="hidden" id="initial-state-<?php p($app); ?>" value="<?php p(base64_encode($initialState)); ?>">
-<?php }?>
+	<?php include('layout.noscript.warning.php'); ?>
+	<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
+		<input type="hidden" id="initial-state-<?php p($app); ?>" value="<?php p(base64_encode($initialState)); ?>">
+	<?php }?>
+
+    <a href="#app-content"
+        class="button primary skip-navigation skip-content"><?php p($l->t('Skip to main content')); ?></a>
+    <a href="#app-navigation" class="button primary skip-navigation"><?php p($l->t('Skip to navigation of app')); ?></a>
+
 	<div id="notification-container">
 		<div id="notification"></div>
 	</div>
-	<header id="header">
-		<div class="header-left">
-			<span id="nextcloud">
-				<div class="logo logo-icon svg"></div>
-				<h1 class="header-appname">
-					<?php if (isset($template) && $template->getHeaderTitle() !== '') { ?>
-						<?php p($template->getHeaderTitle()); ?>
-					<?php } else { ?>
-						<?php	p($theme->getName()); ?>
-					<?php } ?>
-				</h1>
-				<?php if (isset($template) && $template->getHeaderDetails() !== '') { ?>
-				<div class="header-shared-by">
-					<?php p($template->getHeaderDetails()); ?>
-				</div>
-				<?php } ?>
-			</span>
-		</div>
 
-		<?php
-		/** @var \OCP\AppFramework\Http\Template\PublicTemplateResponse $template */
-		if (isset($template) && $template->getActionCount() !== 0) {
-			$primary = $template->getPrimaryAction();
-			$others = $template->getOtherActions(); ?>
-		<div class="header-right">
-			<span id="header-primary-action" class="<?php if ($template->getActionCount() === 1) {
-				p($primary->getIcon());
-			} ?>">
-				<a href="<?php p($primary->getLink()); ?>" class="primary button">
-					<span><?php p($primary->getLabel()) ?></span>
-				</a>
-			</span>
-			<?php if ($template->getActionCount() > 1) { ?>
-			<div id="header-secondary-action">
-				<button id="header-actions-toggle" class="menutoggle icon-more-white"></button>
-				<div id="header-actions-menu" class="popovermenu menu">
-					<ul>
-						<?php
-							/** @var \OCP\AppFramework\Http\Template\IMenuAction $action */
-							foreach ($others as $action) {
-								print_unescaped($action->render());
-							}
-						?>
-					</ul>
-				</div>
-			</div>
-			<?php } ?>
-		</div>
-		<?php
-		} ?>
-	</header>
+    <div class="MenuWrapperParent">
+        <div class="brandbar">
+            <div class="container-fixed">
+                <div class="header-brandbar">
+                    <a href="/en" title="Home" class="header-brandbar-logo">
+                        <svg id="brand-logo" viewBox="0 0 73 36" fill="currentColor">
+                            <g>
+                                <path d="M0 24v-7h7v7H0zM22 24v-7h7v7h-7zM44 24v-7h7v7h-7zM66 24v-7h7v7h-7z"></path>
+                                <path
+                                    d="M12 1.74c-2.94.09-5.56 1.09-7.22 2.98-1.57 1.8-2.55 4.6-2.91 8.32L0 12.71.36 0h28.29L29 12.71l-1.87.33c-.36-3.76-1.34-6.52-2.91-8.32-1.66-1.89-4.28-2.89-7.22-2.98V28.3c0 2.31.57 3.82 1.25 4.51.56.6 1.41.96 2.75 1.08.42.03 1.05.06 2 .06V36H6v-2.04c.95 0 1.58-.03 2-.06 1.34-.12 2.18-.48 2.75-1.08.68-.69 1.25-2.19 1.25-4.51V1.74z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class="header-brandbar-claim">
+                        <span>Life is for sharing.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <header role="banner" id="header" class="header-bar">
+            <div class="container-fixed">
+                <div class="header-left">
+                    <div class="logo-area">
+                        <div class="logo-area__inner">
+                            <a href="/en" title="Home" class="header-brandbar-logo">
+                                <svg id="brand-logo" class="brandbar-logo-magenta" viewBox="0 0 73 36"
+                                    fill="currentColor">
+                                    <g>
+                                        <path d="M0 24v-7h7v7H0zM22 24v-7h7v7h-7zM44 24v-7h7v7h-7zM66 24v-7h7v7h-7z">
+                                        </path>
+                                        <path
+                                            d="M12 1.74c-2.94.09-5.56 1.09-7.22 2.98-1.57 1.8-2.55 4.6-2.91 8.32L0 12.71.36 0h28.29L29 12.71l-1.87.33c-.36-3.76-1.34-6.52-2.91-8.32-1.66-1.89-4.28-2.89-7.22-2.98V28.3c0 2.31.57 3.82 1.25 4.51.56.6 1.41.96 2.75 1.08.42.03 1.05.06 2 .06V36H6v-2.04c.95 0 1.58-.03 2-.06 1.34-.12 2.18-.48 2.75-1.08.68-.69 1.25-2.19 1.25-4.51V1.74z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                     <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
+                        <div>
+                            <h5>Magenta<span class="logo-title">CLOUD</span></h5>
+                            <h1 class="hidden-visually">
+                                <?php p($theme->getName()); ?>
+                                <?php p(!empty($_['application'])?$_['application']: $l->t('Apps')); ?>
+                            </h1>
+                        </div>
+                     </a>
+
+                     <ul id="appmenu" <?php if ($_['themingInvertMenu']) { ?>class="inverted" <?php } ?>>
+                        <?php foreach ($_['navigation'] as $entry): ?>
+                        <li data-id="<?php p($entry['id']); ?>" class="hidden" tabindex="-1">
+                            <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry['active']): ?>
+                                class="active" <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+                                <?php p($entry['name']); ?>
+                            </a>
+                        </li>
+                        <?php endforeach; ?>
+                        <li id="more-apps" class="menutoggle" aria-haspopup="true" aria-controls="navigation"
+                            aria-expanded="false">
+                            <a href="#" aria-label="<?php p($l->t('More apps')); ?>">
+                                <div class="icon-more-white"></div>
+                                <span><?php p($l->t('More')); ?></span>
+                            </a>
+                        </li>
+                     </ul>
+
+                     <nav role="navigation">
+                        <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
+                            <div id="apps">
+                                <ul>
+                                    <?php foreach ($_['navigation'] as $entry): ?>
+                                    <li data-id="<?php p($entry['id']); ?>">
+                                        <a href="<?php print_unescaped($entry['href']); ?>"
+                                            <?php if ($entry['active']): ?> class="active nav-icon-files svg "
+                                            <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+
+                                            <span><?php p($entry['name']); ?></span>
+                                        </a>
+                                    </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                     </nav>
+                   
+                 
+                </div>
+
+                <div class="header-right">
+                    <div id="unified-search"></div>
+                    
+                    <div id="contactsmenu">
+                        <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
+                            aria-controls="contactsmenu-menu" aria-expanded="false">
+                            <img src="/themes/magenta-simple/core/img/email.png" width="24" alt="Email"/>
+                        </div>
+                        <div id="contactsmenu-menu" class="menu" aria-label="<?php p($l->t('Contacts menu'));?>"></div>
+                    </div>
+                    <div class="emailmenu"><label>Email</label></div>
+                    <div class="profilePicture">
+                        <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" stroke="#212b36" stroke-width="2"       stroke-linecap="round" stroke-linejoin="round" fill="none">
+                            <circle cx="12" cy="8" r="5" />
+                            <path d="M3,21 h18 C 21,12 3,12 3,21"/>
+                            </svg>
+                            <label><?php p($_['user_uid']); ?></label>
+                        </a>
+                    </div>
+                    <div id="settings">
+                        <div id="expand" tabindex="0" role="button" class="menutoggle"
+                            aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
+                            aria-expanded="false">
+                            <div class="settingsdiv">
+                                <img alt="" src="/apps/settings/img/admin.svg?v=60c496a4">
+                            </div>
+                            <div id="expandDisplayName" class="icon-settings-white"></div>
+                        </div>
+                        <nav class="settings-menu" id="expanddiv" style="display:none;"
+                            aria-label="<?php p($l->t('Settings menu'));?>">
+                            <ul>
+                                <?php foreach ($_['settingsnavigation'] as $entry):?>
+                                <li data-id="<?php p($entry['id']); ?>">
+                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
+                                        class="active" <?php endif; ?>>
+                                        <img alt=""
+                                            src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
+                                        <?php p($entry['name']) ?>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+	
+
 	<div id="content" class="app-<?php p($_['appid']) ?>" role="main">
 		<?php print_unescaped($_['content']); ?>
 	</div>
