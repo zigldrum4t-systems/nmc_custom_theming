@@ -2,7 +2,6 @@
 script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 ?>
 <div id="app-navigation">
-    <div class="bradcrum-nav" style="display:none">&nbsp;</div>
     <ul class="with-icon">
         <?php
 
@@ -24,7 +23,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 	?>
 
     </ul>
-
+     
     <div class="Memory-consumed pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>"
         title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
         <div class="left-logo"><img
