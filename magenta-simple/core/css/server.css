@@ -1807,7 +1807,7 @@ div.crumb:last-child {
     top: 0
 }
 
-.app-files #app-content {
+.viewcontainer {
     overflow-y: scroll;
     height: 100vh;
     min-height: auto !important;
