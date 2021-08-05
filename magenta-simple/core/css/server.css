@@ -1799,6 +1799,16 @@ div.crumb:last-child {
 
 /****footer*****/
 
+#app-content-files thead {
+    top: 0
+}
+
+.app-files #app-content {
+    overflow-y: scroll;
+    height: 100vh;
+    min-height: auto !important;
+}
+
 
 /*Responsive Styling*/
 
