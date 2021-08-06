@@ -1959,6 +1959,10 @@ div#contactsmenu:hover svg {
     padding-top: 20px;
 }
 
+.icon-loading-small {
+    display: none;
+}
+
 
 /***  Right menuitems ***/
 
