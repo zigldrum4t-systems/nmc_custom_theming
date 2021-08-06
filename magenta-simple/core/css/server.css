@@ -1936,28 +1936,35 @@ div.crumb:last-child {
     line-height: 15px !important;
 }
 
-.menu-search-text a:hover {
+#expand:hover span a,
+#expand:hover svg {
     color: #E20074;
-}
-
-div#expand:hover span a,
-.email-menu-text a:hover {
-    color: #E20074;
-}
-
-div#expand:hover svg,
-div#contactsmenu:hover svg {
     stroke: #E20074;
 }
 
-.menutoggle {
-    float: left;
-    opacity: 1 !important;
+#contactsmenu:hover svg g,
+#contactsmenu:hover a {
+    color: #E20074;
+    fill: #E20074;
 }
 
-.emailmenu {
-    float: left;
-    padding-top: 20px;
+.search-outer:hover span {
+    background: var();
+}
+
+.search-outer:hover a {
+    color: #E20074;
+}
+
+#contactsmenu,
+.search-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menutoggle {
+    opacity: 1 !important;
 }
 
 .icon-loading-small {

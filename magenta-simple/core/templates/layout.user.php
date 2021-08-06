@@ -147,8 +147,10 @@
                 </div>
 
                 <div class="header-right">
+                    <div class="search-outer">
                     <div id="unified-search"></div>
                     <span class="menu-search-text"><a class="right-menu-font"><?php p($l->t('Search'));?></a></span>
+                    </div>
                     <div id="contactsmenu">
                         <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">
