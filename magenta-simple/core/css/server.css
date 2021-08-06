@@ -1234,6 +1234,7 @@ table th#headerDate {
 
 #rightClickMenu {
     padding: 6px 2px;
+    box-shadow: var(--scl-shadow-level-2);
 }
 
 #rightClickMenu span:hover {
