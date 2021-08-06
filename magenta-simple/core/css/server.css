@@ -1508,6 +1508,7 @@ table.view-grid td.filename .nametext {
     position: fixed;
     width: 100%;
     height: 48px;
+    top: 4.2em;
     left: 0;
     z-index: -1;
 }
@@ -1621,6 +1622,10 @@ div.crumb:last-child {
     max-width: 100%;
     border-radius: 8px;
     box-shadow: var(--scl-shadow-level-1);
+}
+
+.popover__inner {
+    padding-right: 30px !important;
 }
 
 #header-menu-unified-search {
