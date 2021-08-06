@@ -597,10 +597,6 @@ aside {
     height: 100%;
 }
 
-#content {
-    margin-top: 15px;
-}
-
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -718,10 +714,6 @@ aside {
     width: 100%;
 }
 
-#content {
-    padding-top: 0 !important;
-}
-
 #header .container-fixed .header-right .navbar-icons a {
     display: inline;
 }
@@ -759,7 +751,7 @@ aside {
 
 .app-files #app-content {
     width: calc(100% - 288px);
-    margin-top: 3em;
+    margin-top: -5px;
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -1214,6 +1206,78 @@ table th#headerDate {
 }
 
 
+/*----right-click-menu------*/
+
+#rightClickMenu .icon-starred {
+    background-image: var(--icon-favourite-custom) !important;
+}
+
+#rightClickMenu .icon-details {
+    background-image: var(--icon-user-000-org) !important;
+}
+
+#rightClickMenu .icon-rename {
+    background-image: var(--icon-edit-custom) !important;
+}
+
+#rightClickMenu .icon-external {
+    background-image: var(--icon-copy-paste-custom) !important;
+}
+
+#rightClickMenu .icon-download {
+    background-image: var(--icon-download-custom) !important;
+}
+
+#rightClickMenu .icon-delete {
+    background-image: var(--icon-delete-custom) !important;
+}
+
+#rightClickMenu {
+    padding: 6px 2px;
+}
+
+#rightClickMenu span:hover {
+    color: #e20074 !important;
+}
+
+#rightClickMenu .bubble li>a {
+    align-items: center !important;
+}
+
+#rightClickMenu .bubble li>a:hover {
+    background-color: unset !important;
+}
+
+
+/* Hover icons */
+
+#rightClickMenu .icon-delete:hover,
+.icon-delete:focus {
+    background-image: var(--icon-delete-magenta) !important;
+    filter: initial;
+}
+
+#rightClickMenu .icon-download:hover {
+    background-image: var(--icon-download-magenta) !important;
+}
+
+#rightClickMenu .icon-starred:hover {
+    background-image: var(--icon-fav-magenta) !important;
+}
+
+#rightClickMenu .icon-details:hover {
+    background-image: var(--icon-user-e20074) !important;
+}
+
+#rightClickMenu .icon-rename:hover {
+    background-image: var(--icon-edit-magenta) !important;
+}
+
+#rightClickMenu .icon-external:hover {
+    background-image: var(--icon-copy-paste-magenta) !important;
+}
+
+
 /***************************************** List view sorting ******************************************************************/
 
 table th .sort-indicator {
@@ -1292,7 +1356,7 @@ table th .sort-indicator {
     background-color: transparent;
     border: none;
     position: absolute;
-    top: -5em;
+    top: 0;
     right: 0;
     z-index: 999;
     opacity: 1;
@@ -1408,31 +1472,16 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
-#content {
-    margin-top: 15px;
-    padding-top: 100px;
-}
-
 #controls {
-    position: fixed;
-    top: 8.1em;
-    left: 0;
+    position: sticky;
+    display: flex;
+    top: 0;
     width: 100%;
     z-index: 100;
     height: 48px;
-    padding-top: 2px;
-    padding-left: 26.8vw;
+    padding: 0;
+    margin-left: 10px;
     background-color: #f2f2f2;
-}
-
-
-/** Overwriting mobile behavior since the snap.js sidebar is appyling a transform which is breaking fixed positioning of child elements: https://bugs.chromium.org/p/chromium/issues/detail?id=20574 */
-
-.snapjs-left #controls,
-.snapjs-left #app-navigation-toggle {
-    position: fixed;
-    left: -300px !important;
-    top: -50px !important;
 }
 
 
@@ -1452,6 +1501,19 @@ table.view-grid td.filename .nametext {
 
 
 /* new custom changes*/
+
+.full-width-breadcrumb {
+    background: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    left: 0;
+    z-index: -1;
+}
+
+#content {
+    padding-top: 0;
+}
 
 .container-fixed {
     margin-left: auto;
@@ -1518,19 +1580,17 @@ div.crumb:last-child {
 #app-navigation-toggle {
     top: 8.2em;
     margin-left: 1.4em;
-    z-index: 9999;
+    background-color: #f2f2f2;
+    height: 48px;
 }
 
-#controls.controls-translation {
-    top: 4.1em;
-}
-
-#view-toggle.view-toggle-translation {
-    top: -5.1em
+.snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
+    left: -57px;
+    top: 0;
 }
 
 #app-navigation-toggle.app-navigation-translation {
-    top: 4.3em;
+    top: 4.2em;
 }
 
 .translation {
@@ -1803,6 +1863,16 @@ div.crumb:last-child {
 
 /****footer*****/
 
+#app-content-files thead {
+    top: 0
+}
+
+.viewcontainer {
+    overflow-y: scroll;
+    height: 100vh;
+    min-height: auto !important;
+}
+
 
 /*** Right menuitems ***/
 
@@ -1812,22 +1882,6 @@ div.crumb:last-child {
 
 .unified-search__trigger {
     background-image: var(--right-menu-search-icon) !important;
-}
-
-.icon-right-email-span {
-    background-image: var(--icon-email-right-menu) !important;
-    width: 100%;
-}
-
-#contactsmenu .menutoggle {
-    padding-top: 2px !important;
-}
-
-.icon-right-user-setting-span {
-    background-image: var(--icon-user-setting-right-menu) !important;
-    width: 2em !important;
-    height: 2em !important;
-    display: inline-block;
 }
 
 #settings,
@@ -1846,7 +1900,7 @@ div.crumb:last-child {
 
 .username-lable {
     margin-right: auto;
-    margin-left: 3px;
+    margin-left: 8px;
     line-height: 0px !important;
 }
 
@@ -1856,7 +1910,7 @@ div.crumb:last-child {
     justify-content: center;
     height: 100%;
     margin-left: 8px;
-    padding-top: 1px !important;
+    padding: 0;
     cursor: pointer;
     opacity: 1 !important;
     margin-right: -8px !important;
@@ -1869,7 +1923,7 @@ div.crumb:last-child {
 }
 
 .menu-search-text {
-    padding-left: 3px;
+    padding-left: 0px;
 }
 
 .right-menu-font {
@@ -1885,33 +1939,41 @@ div.crumb:last-child {
     color: #E20074;
 }
 
+div#expand:hover span a,
 .email-menu-text a:hover {
     color: #E20074;
 }
 
-.username-lable a:hover {
-    color: #E20074;
+div#expand:hover svg,
+div#contactsmenu:hover svg {
+    stroke: #E20074;
 }
 
-#contactsmenu .menutoggle {
+.menutoggle {
+    float: left;
     opacity: 1 !important;
 }
 
+.emailmenu {
+    float: left;
+    padding-top: 20px;
+}
 
-/***  Right menuitems       ***/
+
+/***  Right menuitems ***/
 
 
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
-    .app-files #app-content {
-        margin-top: 2em;
+    #controls {
+        margin-bottom: 2em;
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    .app-files #app-content {
-        margin-top: 2em;
+    #controls {
+        margin-bottom: 2em;
     }
 }
 
@@ -1919,29 +1981,8 @@ div.crumb:last-child {
     .app-files #app-content {
         width: 100%;
     }
-    #app-navigation+#app-content #controls {
-        padding-left: 70px;
-    }
     .brand-footer .brand-footer-bar {
         justify-content: center;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
-    #controls {
-        padding-left: 31.5vw;
-    }
-}
-
-@media screen and (min-width: 1300px) and (max-width: 1599px) {
-    #controls {
-        padding-left: 25.5vw;
-    }
-}
-
-@media screen and (min-width: 1600px) and (max-width: 1799px) {
-    #controls {
-        padding-left: 22.2vw;
     }
 }
 
