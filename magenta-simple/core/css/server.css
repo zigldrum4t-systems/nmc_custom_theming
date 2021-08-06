@@ -1814,6 +1814,21 @@ div.crumb:last-child {
     background-image: var(--right-menu-search-icon) !important;
 }
 
+.icon-right-email-span {
+    background-image: var(--icon-email-right-menu) !important;
+    width: 100%;
+}
+
+#contactsmenu .menutoggle {
+    padding-top: 2px !important;
+}
+
+.icon-right-user-setting-span {
+    background-image: var(--icon-user-setting-right-menu) !important;
+    width: 100% !important;
+    display: inline-block;
+}
+
 #settings,
 .profilePicture {
     margin-left: 8px;
