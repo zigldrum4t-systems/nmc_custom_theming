@@ -1948,8 +1948,8 @@ div.crumb:last-child {
     fill: #E20074;
 }
 
-.search-outer:hover span {
-    background: var();
+.search-outer:hover .unified-search__trigger {
+    background-image: var(--icon-search-magenta) !important;
 }
 
 .search-outer:hover a {
