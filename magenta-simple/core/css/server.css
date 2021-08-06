@@ -1234,17 +1234,18 @@ table th#headerDate {
 
 #rightClickMenu {
     padding: 6px 2px;
+    box-shadow: var(--scl-shadow-level-2);
 }
 
 #rightClickMenu span:hover {
     color: #e20074 !important;
 }
 
-#rightClickMenu .bubble li>a {
+#rightClickMenu.bubble li>a {
     align-items: center !important;
 }
 
-#rightClickMenu .bubble li>a:hover {
+#rightClickMenu.bubble li>a:hover {
     background-color: unset !important;
 }
 

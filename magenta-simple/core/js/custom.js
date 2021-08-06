@@ -1,6 +1,5 @@
 window.onload = function() {
     brandBarAnimation();
-    // breadcrumb();
 };
 
 function brandBarAnimation() {
@@ -10,7 +9,7 @@ function brandBarAnimation() {
         document.getElementsByClassName('brandbar')[0].classList.add('brand-bar-translation');
         document.getElementById('controls').classList.add('controls-translation', 'translation');
         document.getElementById('view-toggle').classList.add('view-toggle-translation');
-        document.getElementById('app-navigation-toggle').classList.add('app-navigation-translation', 'translation');
+        document.getElementById('app-navigation-toggle').classList.add('app-navigation-translation');
 
     }, 3000);
     // let workSpaceelement = document.getElementById('showRichWorkspacesToggle');
@@ -19,18 +18,3 @@ function brandBarAnimation() {
     // document.getElementById('showRichWorkspacesToggle').checked = true;
     // document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
 }
-
-
-/* To resolved left nav issue on mobile*/
-// function breadcrumb() {
-//     document.getElementById('app-navigation-toggle').onclick = function() {
-//         setTimeout(function() {
-//             var element = document.getElementById('app-content');
-//             if (element.getAttribute('style') === null) {
-//                 console.info('null');
-//             } else {
-//                 console.info('not null');
-//             }
-//         }, 100);
-//     }
-// }
