@@ -161,7 +161,7 @@
                             aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
                             aria-expanded="false">
                             <div class="settingsdiv">
-                                <span class="icon-right-user-setting-span">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>  
+                                <span class="icon-right-user-setting-span"></span>  
                             </div>
                             <span class="username-lable">
                                 <a class="right-menu-font"><?php p($_['user_uid']); ?></a>
