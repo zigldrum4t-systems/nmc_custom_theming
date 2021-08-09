@@ -147,15 +147,18 @@
                 </div>
 
                 <div class="header-right">
+                    <div class="search-outer">
                     <div id="unified-search"></div>
                     <span class="menu-search-text"><a class="right-menu-font"><?php p($l->t('Search'));?></a></span>
+                    </div>
                     <div id="contactsmenu">
                         <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>email</title><g fill="#191919"><g><path d="M.5 3.5v14c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-14zM22 5v.95l-8.45 7.25c-.9.75-2.2.75-3.1 0L2 5.95V5zm-1.5 14h-17c-.85 0-1.5-.65-1.5-1.5V7.95l7.45 6.4c.75.65 1.65.95 2.55.95s1.8-.3 2.55-.95L22 7.95v9.55c0 .85-.65 1.5-1.5 1.5z" fill-rule="evenodd"></path></g></g></svg>                            
                         </div>
+                        <div class="emailmenu"><label class="email-menu-text"><a class="right-menu-font"><?php p($l->t('Email'));?></a></label></div>                   
                     </div>
-                    <div class="emailmenu"><label class="email-menu-text"><a class="right-menu-font"><?php p($l->t('Email'));?></a></label></div>
+                    
                     <div id="settings">
                         <div id="expand" tabindex="0" role="button" class="menutoggle"
                             aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
