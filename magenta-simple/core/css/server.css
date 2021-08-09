@@ -1977,6 +1977,18 @@ div.crumb:last-child {
     display: none;
 }
 
+.header-menu__trigger[data-v-a58f012a] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    opacity: 1;
+}
+
 
 /***  Right menuitems ***/
 
