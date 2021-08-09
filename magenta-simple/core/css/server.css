@@ -1997,7 +1997,7 @@ div.crumb:last-child {
     margin-right: 24px;
 }
 
-.unified-search__trigger[data-v-86cb0f50] {
+.unified-search__trigger {
     width: 24px !important;
     height: 24px !important;
 }
