@@ -422,7 +422,6 @@ body {
 
 #header>.container-fixed {
     display: inline-flex;
-    padding-right: 16px;
 }
 
 aside {
@@ -1163,7 +1162,8 @@ table th#headerDate {
 }
 
 #filelist-header {
-    display: none;
+    display: block;
+    margin-top: 100px;
 }
 
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
