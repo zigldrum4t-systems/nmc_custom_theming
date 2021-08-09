@@ -1161,10 +1161,6 @@ table th#headerDate {
     width: 14px;
 }
 
-#filelist-header {
-    display: none;
-}
-
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
     color: #E20074 !important;
 }
@@ -1817,6 +1813,10 @@ div.crumb:last-child {
 
 .brand-bar-translation {
     height: 9px;
+}
+
+#rich-workspaceW {
+    padding: 0 10px;
 }
 
 
