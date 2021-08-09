@@ -1879,11 +1879,12 @@ div.crumb:last-child {
     top: 0
 }
 
-.viewcontainer {
+
+/* .viewcontainer {
     overflow-y: scroll;
     height: 100vh;
     min-height: auto !important;
-}
+} */
 
 
 /*** Right menuitems ***/
