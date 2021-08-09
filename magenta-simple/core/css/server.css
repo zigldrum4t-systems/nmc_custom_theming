@@ -1162,8 +1162,7 @@ table th#headerDate {
 }
 
 #filelist-header {
-    display: block;
-    margin-top: 100px;
+    display: none;
 }
 
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
