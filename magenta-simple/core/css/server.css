@@ -422,6 +422,7 @@ body {
 
 #header>.container-fixed {
     display: inline-flex;
+    padding-right: 16px;
 }
 
 aside {
