@@ -2011,6 +2011,22 @@ div.crumb:last-child {
 /***  Right menuitems ***/
 
 
+/*Guest layout*/
+
+.gust-download-svg {
+    margin-right: 5px;
+}
+
+.gust-download-label {
+    font-size: 20px;
+    font-style: 'TeleNeo';
+    font-weight: bold;
+}
+
+
+/*Guest layout*/
+
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
