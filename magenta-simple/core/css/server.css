@@ -2136,30 +2136,30 @@ button:not(:disabled):not(.primary).active,
 
 /* guest-layout-dialog*/
 
-.directDownload .icon-download {
+.content-button .directDownload .icon-download {
     background-image: var( --icon-magenta-cloud) !important;
 }
 
-.directDownload button>span[class^='icon-'],
-.directDownload button>span[class*=' icon-'],
-.directDownload .button>span[class^='icon-'],
-.directDownload .button>span[class*=' icon-'] {
+.content-button .directDownload button>span[class^='icon-'],
+.content-button .directDownload button>span[class*=' icon-'],
+.content-button .directDownload .button>span[class^='icon-'],
+.content-button .directDownload .button>span[class*=' icon-'] {
     opacity: unset !important;
 }
 
-.directDownload [class^='icon-'],
-.directDownload [class*=' icon-'] {
+.content-button .directDownload [class^='icon-'],
+.content-button .directDownload [class*=' icon-'] {
     background-repeat: no-repeat;
     background-position: center;
     min-width: 24px;
     min-height: 24px;
 }
 
-.directDownload button,
-.directDownload .button,
-.directDownload input[type='button'],
-.directDownload input[type='submit'],
-.directDownload input[type='reset'] {
+.content-button .directDownload button,
+.content-button .directDownload .button,
+.content-button .directDownload input[type='button'],
+.content-button .directDownload input[type='submit'],
+.content-button .directDownload input[type='reset'] {
     border-radius: 4px !important;
     background-color: unset !important;
     font-weight: normal !important;
