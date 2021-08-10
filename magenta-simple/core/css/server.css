@@ -576,6 +576,10 @@ aside {
     transition: max-width .3s ease-out, opacity .4s ease-out;
 }
 
+#header:before {
+    background: none;
+}
+
 .sticky {
     position: fixed;
     top: 5px;
@@ -1472,6 +1476,7 @@ table th .sort-indicator {
     height: 48px;
     padding: 0;
     margin-left: 10px;
+    margin-bottom: 2em;
     background-color: #f2f2f2;
 }
 
@@ -1581,9 +1586,11 @@ div.crumb:last-child {
     height: 48px;
 }
 
-.snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
+.snapjs-left #app-content:not([style=''])>#app-navigation-toggle,
+.snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
     left: -57px;
     top: 0;
+    transition: none;
 }
 
 #app-navigation-toggle.app-navigation-translation {
@@ -1810,6 +1817,10 @@ div.crumb:last-child {
 
 #rich-workspaceW {
     padding: 0 10px;
+}
+
+#filestable {
+    padding-top: 16px;
 }
 
 
@@ -2167,18 +2178,16 @@ button:not(:disabled):not(.primary).active,
 }
 
 .content-dialog {
-    margin-bottom: 24px;
-    margin: 0px 310px;
+    text-align: center;
 }
 
 .content-dialog .content-para {
     max-width: 850px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .content-dialog .content-button {
     padding-top: 16px;
-    margin: 0px 350px;
 }
 
 .content-dialog .directDownload #downloadFile {
