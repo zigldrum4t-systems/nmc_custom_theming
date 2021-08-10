@@ -1242,6 +1242,10 @@ table th#headerDate {
     filter: unset !important;
 }
 
+#rightClickMenu span::first-letter {
+    text-transform: capitalize;
+}
+
 #rightClickMenu span:hover {
     color: #e20074 !important;
 }
@@ -2087,6 +2091,18 @@ div.crumb:last-child {
     border: 1px solid #191919;
 }
 
+.directDownload button,
+.directDownload .button,
+.directDownload input[type='button'],
+.directDownload input[type='submit'],
+.directDownload input[type='reset'] {
+    border-radius: 4px !important;
+    background-color: #e20074 !important;
+    font-weight: normal !important;
+    border: 1px solid #e20074;
+    color: #e5e5e5 !important
+}
+
 .content-dialog {
     margin-bottom: 24px;
     margin: 0px 310px;
@@ -2115,8 +2131,29 @@ div.crumb:last-child {
     border-color: #e0dcdc !important;
 }
 
+button:not(:disabled):not(.primary):hover,
+button:not(:disabled):not(.primary):focus,
+button:not(:disabled):not(.primary).active,
+.button:not(:disabled):not(.primary):hover,
+.button:not(:disabled):not(.primary):focus,
+.button:not(:disabled):not(.primary).active {
+    border-color: #e20074 !important;
+}
+
 .content-dialog .content-para span {
     font-weight: bold;
+}
+
+
+/* video*/
+
+.video-js.vjs-big-play-centered .vjs-big-play-button {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.video-js .vjs-big-play-button {
+    border: unset !important;
+    background-color: unset !important;
 }
 
 
