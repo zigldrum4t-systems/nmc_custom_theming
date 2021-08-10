@@ -404,19 +404,6 @@ body {
 }
 
 #body-user #header {
-    height: 63px !important;
-    background-image: unset !important;
-    background-color: #ffffff !important;
-    --color-header: transparent !important;
-    top: unset !important;
-    border-bottom: 1px solid #e5e5e5;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    position: relative !important;
-    top: -5px !important;
-}
-
-#body-user #header {
     position: unset;
 }
 
@@ -714,6 +701,7 @@ aside {
     top: 0;
     z-index: 9999 !important;
     width: 100%;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #header .container-fixed .header-right .navbar-icons a {
@@ -753,7 +741,6 @@ aside {
 
 .app-files #app-content {
     width: calc(100% - 288px);
-    margin-top: -5px;
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -1163,10 +1150,6 @@ table th#headerDate {
     width: 14px;
 }
 
-#filelist-header {
-    display: none;
-}
-
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
     color: #E20074 !important;
 }
@@ -1515,13 +1498,13 @@ table.view-grid td.filename .nametext {
     position: fixed;
     width: 100%;
     height: 48px;
-    top: 8.1em;
+    top: 8.5em;
     left: 0;
     z-index: -1;
 }
 
 .breadcrumb-translation {
-    top: 4.2em;
+    top: 4.6em;
     transition: top .4s ease-out;
 }
 
@@ -1604,7 +1587,7 @@ div.crumb:last-child {
 }
 
 #app-navigation-toggle.app-navigation-translation {
-    top: 4.2em;
+    top: 4.5em;
 }
 
 .translation {
@@ -1823,6 +1806,10 @@ div.crumb:last-child {
 
 .brand-bar-translation {
     height: 9px;
+}
+
+#rich-workspaceW {
+    padding: 0 10px;
 }
 
 
@@ -2127,10 +2114,13 @@ button:not(:disabled):not(.primary).active,
 #body-user #header,
 #body-settings #header,
 #body-public #header {
+    position: relative;
+    top: -5px !important;
     background-color: #ffffff !important;
     background-image: unset !important;
-    border-bottom: 1px solid #e5e5e5;
     height: 63px !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 #body-public #header .header-right {
