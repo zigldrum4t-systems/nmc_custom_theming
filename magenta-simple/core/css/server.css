@@ -137,6 +137,7 @@ body {
 #app-navigation>ul {
     overflow-y: unset;
     overflow-x: unset;
+    margin-top: 4em;
 }
 
 #app-navigation>ul>li>a:hover {
@@ -574,6 +575,10 @@ aside {
     overflow: hidden;
     -webkit-transition: max-width .3s ease-out, opacity .4s ease-out;
     transition: max-width .3s ease-out, opacity .4s ease-out;
+}
+
+#header:before {
+    background: none;
 }
 
 .sticky {
@@ -1472,6 +1477,7 @@ table th .sort-indicator {
     height: 48px;
     padding: 0;
     margin-left: 10px;
+    margin-bottom: 2em;
     background-color: #f2f2f2;
 }
 
@@ -1581,9 +1587,11 @@ div.crumb:last-child {
     height: 48px;
 }
 
-.snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
+.snapjs-left #app-content:not([style=''])>#app-navigation-toggle,
+.snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
     left: -57px;
     top: 0;
+    transition: none;
 }
 
 #app-navigation-toggle.app-navigation-translation {
@@ -1810,6 +1818,10 @@ div.crumb:last-child {
 
 #rich-workspaceW {
     padding: 0 10px;
+}
+
+#filestable {
+    padding-top: 16px;
 }
 
 
@@ -2167,22 +2179,25 @@ button:not(:disabled):not(.primary).active,
 }
 
 .content-dialog {
-    margin-bottom: 24px;
-    margin: 0px 310px;
+    text-align: center;
 }
 
 .content-dialog .content-para {
     max-width: 850px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .content-dialog .content-button {
     padding-top: 16px;
-    margin: 0px 350px;
 }
 
 .content-dialog .directDownload #downloadFile {
     transition: all 0.5s ease-in-out;
+}
+
+.content-dialog #downloadFile span {
+    vertical-align: middle;
+    margin: 0 4px;
 }
 
 .content-dialog button:not(:disabled):not(.primary):hover,
@@ -2228,13 +2243,13 @@ button:not(:disabled):not(.primary).active,
 
 @media screen and (max-width: 375px) {
     #controls {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     #controls {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 }
 
