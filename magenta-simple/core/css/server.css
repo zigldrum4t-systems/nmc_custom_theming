@@ -2027,7 +2027,7 @@ div.crumb:last-child {
 .newFileMenu {
     padding: 16px 16px 24px 16px;
     box-shadow: var(--scl-shadow-level-2);
-    width: 230px !important;
+    width: 235px !important;
 }
 
 .newFileMenu .icon-upload {
@@ -2052,7 +2052,7 @@ div.crumb:last-child {
 }
 
 .newFileMenu .icon-filetype-text:hover {
-    background-image: var(--icon-text-custom) !important;
+    background-image: var(--icon-text-magenta) !important;
 }
 
 .bubble li>button:hover,
@@ -2196,6 +2196,31 @@ button:not(:disabled):not(.primary).active,
 
 .content-dialog .content-para span {
     font-weight: bold;
+}
+
+.rich-workspace .menubar button {
+    opacity: unset;
+}
+
+.rich-workspace .menubar button.icon-undo,
+.menubar button.icon-redo {
+    opacity: unset;
+}
+
+.icon-quote {
+    background-image: var(--icon-quote-custom) !important;
+}
+
+.icon-code {
+    background-image: var(--icon-code-custom) !important;
+}
+
+.icon-ul {
+    background-image: var(--icon-ul-custom) !important;
+}
+
+.icon-ol {
+    background-image: var(--icon-ol-custom) !important;
 }
 
 
