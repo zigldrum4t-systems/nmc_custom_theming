@@ -484,7 +484,12 @@ aside {
 #header>.container-fixed>.header-left>#appmenu li a.active {
     color: #e20074 !important;
     text-decoration: none;
-    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+#header>.container-fixed>.header-left>#appmenu li a:hover {
+    color: #e20074 !important;
+    text-decoration: none;
     font-weight: 600 !important;
 }
 
