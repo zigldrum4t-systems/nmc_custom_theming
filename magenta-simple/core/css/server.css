@@ -2028,6 +2028,93 @@ div.crumb:last-child {
 /*Guest layout*/
 
 
+/* Add Button*/
+
+.newFileMenu {
+    padding: 16px 16px 24px 16px;
+    box-shadow: var(--scl-shadow-level-2);
+    width: 230px !important;
+}
+
+.newFileMenu .icon-upload {
+    background-image: var(--icon-upload-custom) !important;
+    background-size: 24px !important;
+}
+
+.newFileMenu .icon-folder,
+.icon-filetype-folder {
+    background-image: var(--icon-new-folder) !important;
+    background-size: 24px !important;
+}
+
+.newFileMenu .icon-folder:hover,
+.icon-filetype-folder:hover {
+    background-image: var(--icon-new-folder-magenta) !important;
+}
+
+.newFileMenu .icon-filetype-text {
+    background-image: var(--icon-text-custom) !important;
+    background-size: 24px !important;
+}
+
+.newFileMenu .icon-filetype-text:hover {
+    background-image: var(--icon-text-custom) !important;
+}
+
+.bubble li>button:hover,
+.bubble li>button:focus,
+.bubble li>a:hover,
+.bubble li>a:focus,
+.bubble li>.menuitem:hover,
+.bubble li>.menuitem:focus,
+.popovermenu li>button:hover,
+.popovermenu li>button:focus,
+.popovermenu li>a:hover,
+.popovermenu li>a:focus,
+.popovermenu li>.menuitem:hover,
+.popovermenu li>.menuitem:focus {
+    background-color: unset !important;
+}
+
+.newFileMenu .menuitem .icon-upload:hover {
+    background-image: var(--icon-upload-magenta) !important;
+}
+
+.newFileMenu .menuitem .displayname:hover {
+    color: #E20074;
+}
+
+.newFileMenu .menuitem .displayname {
+    padding-left: 8px;
+    padding-top: 12px;
+}
+
+.actions.creatable .popovermenu.menu-left a {
+    width: unset !important;
+    height: unset !important;
+}
+
+.newFileMenu ul>li:last-child {
+    display: none;
+}
+
+actions.creatable a:active {
+    border-color: var(--scl-color-magenta) !important;
+}
+
+button:not(:disabled):not(.primary):hover,
+button:not(:disabled):not(.primary):focus,
+button:not(:disabled):not(.primary).active,
+.button:not(:disabled):not(.primary):hover,
+.button:not(:disabled):not(.primary):focus,
+.button:not(:disabled):not(.primary).active,
+.pager li a:not(:disabled):not(.primary):hover,
+.pager li a:not(:disabled):not(.primary):focus,
+.pager li a:not(:disabled):not(.primary).active {
+    border-color: var(--scl-color-magenta) !important;
+}
+
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
