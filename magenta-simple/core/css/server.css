@@ -473,7 +473,7 @@ aside {
 #header>.container-fixed>.header-left>#appmenu li a {
     opacity: 1 !important;
     padding: 4px 15px 0px 0px;
-    font-size: 16px !important;
+    font-size: 20px !important;
     color: #161616;
     font-weight: 600 !important;
     width: auto;
@@ -497,6 +497,10 @@ aside {
 
 #header .container-fixed .header-right .navbar-icons {
     width: 100%;
+}
+
+#appmenu li {
+    margin-right: 32px !important;
 }
 
 
@@ -1951,9 +1955,9 @@ div.crumb:last-child {
 }
 
 #expand:hover span a,
-#expand:hover svg {
+#expand:hover svg g path {
     color: #E20074;
-    stroke: #E20074;
+    fill: #E20074;
 }
 
 #contactsmenu:hover svg g,
