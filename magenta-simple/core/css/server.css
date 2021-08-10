@@ -1498,13 +1498,13 @@ table.view-grid td.filename .nametext {
     position: fixed;
     width: 100%;
     height: 48px;
-    top: 8.1em;
+    top: 8.5em;
     left: 0;
     z-index: -1;
 }
 
 .breadcrumb-translation {
-    top: 4.2em;
+    top: 4.6em;
     transition: top .4s ease-out;
 }
 
@@ -1587,7 +1587,7 @@ div.crumb:last-child {
 }
 
 #app-navigation-toggle.app-navigation-translation {
-    top: 4.2em;
+    top: 4.5em;
 }
 
 .translation {
