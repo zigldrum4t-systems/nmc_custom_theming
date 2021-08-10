@@ -473,7 +473,7 @@ aside {
 #header>.container-fixed>.header-left>#appmenu li a {
     opacity: 1 !important;
     padding: 4px 15px 0px 0px;
-    font-size: 16px !important;
+    font-size: 20px !important;
     color: #161616;
     font-weight: 600 !important;
     width: auto;
@@ -497,6 +497,10 @@ aside {
 
 #header .container-fixed .header-right .navbar-icons {
     width: 100%;
+}
+
+#appmenu li {
+    margin-right: 32px !important;
 }
 
 
@@ -1206,6 +1210,10 @@ table th#headerDate {
 
 #rightClickMenu .icon-starred {
     background-image: var(--icon-favourite-custom) !important;
+}
+
+#rightClickMenu .icon-star-dark {
+    background-image: var( --icon-yellow-fav) !important;
 }
 
 #rightClickMenu .icon-details {
@@ -1947,9 +1955,9 @@ div.crumb:last-child {
 }
 
 #expand:hover span a,
-#expand:hover svg {
+#expand:hover svg g path {
     color: #E20074;
-    stroke: #E20074;
+    fill: #E20074;
 }
 
 #contactsmenu:hover svg g,
@@ -2022,10 +2030,98 @@ div.crumb:last-child {
     font-size: 20px;
     font-style: 'TeleNeo';
     font-weight: bold;
+    vertical-align: super !important;
 }
 
 
 /*Guest layout*/
+
+
+/*Guest layout header*/
+
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+    background-color: #ffffff !important;
+    background-image: unset !important;
+    border-bottom: 1px solid #e5e5e5;
+    height: 63px !important;
+}
+
+#body-public #header .header-right {
+    padding-left: 5px;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+#files-public-content #imgframe {
+    padding: 24px 0px 16px 0px !important;
+}
+
+
+/* guest-layout-dialog*/
+
+.directDownload .icon-download {
+    background-image: var( --icon-magenta-cloud) !important;
+}
+
+.directDownload button>span[class^='icon-'],
+.directDownload button>span[class*=' icon-'],
+.directDownload .button>span[class^='icon-'],
+.directDownload .button>span[class*=' icon-'] {
+    opacity: unset !important;
+}
+
+.directDownload [class^='icon-'],
+.directDownload [class*=' icon-'] {
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.directDownload button,
+.directDownload .button,
+.directDownload input[type='button'],
+.directDownload input[type='submit'],
+.directDownload input[type='reset'] {
+    border-radius: 4px !important;
+    background-color: unset !important;
+    font-weight: normal !important;
+    border: 1px solid #191919;
+}
+
+.content-dialog {
+    margin-bottom: 24px;
+    margin: 0px 480px;
+}
+
+.content-dialog .content-para {
+    max-width: 850px;
+    text-align: center;
+}
+
+.content-dialog .content-button {
+    padding-top: 16px;
+    margin: 0px 350px;
+}
+
+.content-dialog .directDownload #downloadFile {
+    transition: all 0.5s ease-in-out;
+}
+
+.content-dialog button:not(:disabled):not(.primary):hover,
+.content-dialog button:not(:disabled):not(.primary):focus,
+.content-dialog button:not(:disabled):not(.primary).active,
+.content-dialog .button:not(:disabled):not(.primary):hover,
+.content-dialog .button:not(:disabled):not(.primary):focus,
+.content-dialog .button:not(:disabled):not(.primary).active {
+    border-color: #e0dcdc !important;
+}
+
+.content-dialog .content-para span {
+    font-weight: bold;
+}
 
 
 /*Responsive Styling*/
