@@ -28,10 +28,10 @@
 		<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
 			<input type="hidden" id="initial-state-<?php p($app); ?>" value="<?php p(base64_encode($initialState)); ?>">
 		<?php }?>
-		<div class="wrapper">
+		<div class="container-fixed">
 			<div class="v-align">
 				<?php if ($_['bodyid'] === 'body-login'): ?>
-					<header role="banner">
+					<!-- <header role="banner">
 						<div id="header">
 							<div class="logo">
 								<h1 class="hidden-visually">
@@ -42,11 +42,38 @@
 									<img src="<?php p($theme->getLogo()); ?>"/>
 								<?php endif; ?>
 							</div>
+							<h5>Magenta<span class="logo-title">CLOUD</span></h5>
 						</div>
-					</header>
+					</header> -->
+
+					<div class="login-header">
+						<div class="app-logo brand">
+						<img src="/themes/magenta-simple/core/img/1-T-3-logo.svg">
+						</div>
+						<div class="app-claim brand">
+							<img src="/themes/magenta-simple/core/img/app-claim-logo.svg">
+						</div>
+					</div>
+
 				<?php endif; ?>
 				<main>
+					<div class="login-main">
+					<div class="login-section">
+					<div class="logo">
+								<h1 class="hidden-visually">
+									<?php p($theme->getName()); ?>
+								</h1>
+								<?php if (\OC::$server->getConfig()->getSystemValue('installed', false)
+									&& \OC::$server->getConfig()->getAppValue('theming', 'logoMime', false)): ?>
+									<img src="<?php p($theme->getLogo()); ?>"/>
+								<?php endif; ?>
+								<img src="/themes/magenta-simple/core/img/app-logo.svg"/>
+							</div>
+							
+							<h1>Magenta<span class="logo-title">CLOUD</span></h1>
 					<?php print_unescaped($_['content']); ?>
+					</div>
+					</div>
 				</main>
 			</div>
 		</div>

@@ -1500,6 +1500,10 @@ table.view-grid td.filename .nametext {
 
 /* new custom changes*/
 
+.hide {
+    display: none !important;
+}
+
 .full-width-breadcrumb {
     background: #f2f2f2;
     position: fixed;
@@ -2280,6 +2284,56 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     background-color: unset !important;
 }
 
+.login-main {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+}
+
+.login-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.login-header .brand {
+    display: inherit;
+    vertical-align: middle;
+}
+
+.login-section {
+    background: rgba(0, 0, 0, .3);
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.login-section .logo {
+    margin: 1.5em auto 1em auto;
+}
+
+.login-section h1 {
+    font-family: TeleNeoWeb, TeleNeo, sans-serif;
+    color: #fff;
+    font-size: 1.5625em;
+    font-weight: bold;
+    margin-bottom: 3em;
+}
+
+.login-section .logo-title {
+    font-size: 1em;
+    font-weight: normal !important;
+}
+
+.login-section fieldset {
+    background: none;
+}
+
+.login-section .warning-info {
+    margin-bottom: 0.5em;
+}
+
 
 /**Login Screen**/
 
@@ -2354,6 +2408,12 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 @media screen and (max-width: 375px) {
     #controls {
         margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .login-section {
+        width: 100%;
     }
 }
 
