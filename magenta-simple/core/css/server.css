@@ -1232,6 +1232,10 @@ table th#headerDate {
     filter: unset !important;
 }
 
+#rightClickMenu span::first-letter {
+    text-transform: capitalize;
+}
+
 #rightClickMenu span:hover {
     color: #e20074 !important;
 }
@@ -2101,7 +2105,7 @@ div.crumb:last-child {
     display: none;
 }
 
-actions.creatable a:active {
+.actions.creatable a:active {
     border-color: var(--scl-color-magenta) !important;
 }
 
@@ -2175,6 +2179,18 @@ button:not(:disabled):not(.primary).active,
     border: 1px solid #191919;
 }
 
+.directDownload button,
+.directDownload .button,
+.directDownload input[type='button'],
+.directDownload input[type='submit'],
+.directDownload input[type='reset'] {
+    border-radius: 4px !important;
+    background-color: #e20074 !important;
+    font-weight: normal !important;
+    border: 1px solid #e20074;
+    color: #e5e5e5 !important
+}
+
 .content-dialog {
     text-align: center;
 }
@@ -2185,7 +2201,7 @@ button:not(:disabled):not(.primary).active,
 }
 
 .content-dialog .content-button {
-    padding-top: 16px;
+    padding-top: 1em;
 }
 
 .content-dialog .directDownload #downloadFile {
@@ -2204,6 +2220,25 @@ button:not(:disabled):not(.primary).active,
 .content-dialog .button:not(:disabled):not(.primary):focus,
 .content-dialog .button:not(:disabled):not(.primary).active {
     border-color: #e0dcdc !important;
+}
+
+button:not(:disabled):not(.primary):hover,
+button:not(:disabled):not(.primary):focus,
+button:not(:disabled):not(.primary).active,
+.button:not(:disabled):not(.primary):hover,
+.button:not(:disabled):not(.primary):focus,
+.button:not(:disabled):not(.primary).active {
+    border-color: #e20074 !important;
+}
+
+div[contenteditable=true]:not(:disabled):not(.primary):hover,
+div[contenteditable=true]:not(:disabled):not(.primary):focus,
+div[contenteditable=true]:not(:disabled):not(.primary).active,
+.pager li a:not(:disabled):not(.primary):hover,
+.pager li a:not(:disabled):not(.primary):focus,
+.pager li a:not(:disabled):not(.primary).active {
+    border-color: unset !important;
+    outline: none;
 }
 
 .content-dialog .content-para span {
@@ -2247,6 +2282,71 @@ button:not(:disabled):not(.primary).active,
 
 
 /**Login Screen**/
+
+
+/* video*/
+
+.video-js.vjs-big-play-centered .vjs-big-play-button {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.video-js .vjs-big-play-button {
+    border: unset !important;
+    background-color: unset !important;
+}
+
+.video-file-details {
+    padding-top: 1em;
+    padding-bottom: 4em;
+    font-size: 1.25em !important;
+}
+
+.directDownload a {
+    color: #ffffff !important;
+}
+
+
+/* pdf */
+
+.files-public-content iframe {
+    padding-top: 1em !important;
+}
+
+
+/*Pop-up*/
+
+.closePopup {
+    display: inline;
+    float: right;
+    margin-right: 25px;
+}
+
+.closePopup button,
+.closePopup .button,
+.closePopup input[type='button'],
+.closePopup input[type='submit'],
+.closePopup input[type='reset'] {
+    font-weight: unset !important;
+    border-radius: unset !important;
+}
+
+.closePopup select,
+.closePopup button,
+.closePopup .button,
+.closePopup input[type='button'],
+.closePopup input[type='submit'],
+.closePopup input[type='reset'] {
+    background-color: unset !important;
+}
+
+.closePopup button,
+.closePopup .button {
+    border: unset !important;
+}
+
+.closePopup .icon-download {
+    background-image: var( --icon-close-mark) !important;
+}
 
 
 /*Responsive Styling*/
