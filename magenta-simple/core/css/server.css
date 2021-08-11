@@ -137,6 +137,7 @@ body {
 #app-navigation>ul {
     overflow-y: unset;
     overflow-x: unset;
+    margin-top: 4em;
 }
 
 #app-navigation>ul>li>a:hover {
@@ -404,19 +405,6 @@ body {
 }
 
 #body-user #header {
-    height: 63px !important;
-    background-image: unset !important;
-    background-color: #ffffff !important;
-    --color-header: transparent !important;
-    top: unset !important;
-    border-bottom: 1px solid #e5e5e5;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    position: relative !important;
-    top: -5px !important;
-}
-
-#body-user #header {
     position: unset;
 }
 
@@ -473,7 +461,7 @@ aside {
 #header>.container-fixed>.header-left>#appmenu li a {
     opacity: 1 !important;
     padding: 4px 15px 0px 0px;
-    font-size: 16px !important;
+    font-size: 20px !important;
     color: #161616;
     font-weight: 600 !important;
     width: auto;
@@ -484,19 +472,21 @@ aside {
 #header>.container-fixed>.header-left>#appmenu li a.active {
     color: #e20074 !important;
     text-decoration: none;
-    font-size: 16px !important;
     font-weight: 600 !important;
 }
 
 #header>.container-fixed>.header-left>#appmenu li a:hover {
     color: #e20074 !important;
     text-decoration: none;
-    font-size: 16px !important;
     font-weight: 600 !important;
 }
 
 #header .container-fixed .header-right .navbar-icons {
     width: 100%;
+}
+
+#appmenu li {
+    margin-right: 32px !important;
 }
 
 
@@ -585,6 +575,10 @@ aside {
     overflow: hidden;
     -webkit-transition: max-width .3s ease-out, opacity .4s ease-out;
     transition: max-width .3s ease-out, opacity .4s ease-out;
+}
+
+#header:before {
+    background: none;
 }
 
 .sticky {
@@ -712,6 +706,7 @@ aside {
     top: 0;
     z-index: 9999 !important;
     width: 100%;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #header .container-fixed .header-right .navbar-icons a {
@@ -751,7 +746,6 @@ aside {
 
 .app-files #app-content {
     width: calc(100% - 288px);
-    margin-top: -5px;
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -1161,10 +1155,6 @@ table th#headerDate {
     width: 14px;
 }
 
-#filelist-header {
-    display: none;
-}
-
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
     color: #E20074 !important;
 }
@@ -1491,6 +1481,7 @@ table th .sort-indicator {
     height: 48px;
     padding: 0;
     margin-left: 10px;
+    margin-bottom: 2em;
     background-color: #f2f2f2;
 }
 
@@ -1517,13 +1508,13 @@ table.view-grid td.filename .nametext {
     position: fixed;
     width: 100%;
     height: 48px;
-    top: 8.1em;
+    top: 8.5em;
     left: 0;
     z-index: -1;
 }
 
 .breadcrumb-translation {
-    top: 4.2em;
+    top: 4.6em;
     transition: top .4s ease-out;
 }
 
@@ -1600,13 +1591,15 @@ div.crumb:last-child {
     height: 48px;
 }
 
-.snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
+.snapjs-left #app-content:not([style=''])>#app-navigation-toggle,
+.snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
     left: -57px;
     top: 0;
+    transition: none;
 }
 
 #app-navigation-toggle.app-navigation-translation {
-    top: 4.2em;
+    top: 4.5em;
 }
 
 .translation {
@@ -1827,6 +1820,14 @@ div.crumb:last-child {
     height: 9px;
 }
 
+#rich-workspaceW {
+    padding: 0 10px;
+}
+
+#filestable {
+    padding-top: 16px;
+}
+
 
 /*****footer******/
 
@@ -1955,9 +1956,9 @@ div.crumb:last-child {
 }
 
 #expand:hover span a,
-#expand:hover svg {
+#expand:hover svg g path {
     color: #E20074;
-    stroke: #E20074;
+    fill: #E20074;
 }
 
 #contactsmenu:hover svg g,
@@ -2037,15 +2038,105 @@ div.crumb:last-child {
 /*Guest layout*/
 
 
+/* Add Button*/
+
+.newFileMenu {
+    padding: 16px 16px 24px 16px;
+    box-shadow: var(--scl-shadow-level-2);
+    width: 235px !important;
+}
+
+.newFileMenu .icon-upload {
+    background-image: var(--icon-upload-custom) !important;
+    background-size: 24px !important;
+}
+
+.newFileMenu .icon-folder,
+.icon-filetype-folder {
+    background-image: var(--icon-new-folder) !important;
+    background-size: 24px !important;
+}
+
+.newFileMenu .icon-folder:hover,
+.icon-filetype-folder:hover {
+    background-image: var(--icon-new-folder-magenta) !important;
+}
+
+.newFileMenu .icon-filetype-text {
+    background-image: var(--icon-text-custom) !important;
+    background-size: 24px !important;
+}
+
+.newFileMenu .icon-filetype-text:hover {
+    background-image: var(--icon-text-magenta) !important;
+}
+
+.bubble li>button:hover,
+.bubble li>button:focus,
+.bubble li>a:hover,
+.bubble li>a:focus,
+.bubble li>.menuitem:hover,
+.bubble li>.menuitem:focus,
+.popovermenu li>button:hover,
+.popovermenu li>button:focus,
+.popovermenu li>a:hover,
+.popovermenu li>a:focus,
+.popovermenu li>.menuitem:hover,
+.popovermenu li>.menuitem:focus {
+    background-color: unset !important;
+}
+
+.newFileMenu .menuitem .icon-upload:hover {
+    background-image: var(--icon-upload-magenta) !important;
+}
+
+.newFileMenu .menuitem .displayname:hover {
+    color: #E20074;
+}
+
+.newFileMenu .menuitem .displayname {
+    padding-left: 8px;
+    padding-top: 12px;
+}
+
+.actions.creatable .popovermenu.menu-left a {
+    width: unset !important;
+    height: unset !important;
+}
+
+.newFileMenu ul>li:last-child {
+    display: none;
+}
+
+actions.creatable a:active {
+    border-color: var(--scl-color-magenta) !important;
+}
+
+button:not(:disabled):not(.primary):hover,
+button:not(:disabled):not(.primary):focus,
+button:not(:disabled):not(.primary).active,
+.button:not(:disabled):not(.primary):hover,
+.button:not(:disabled):not(.primary):focus,
+.button:not(:disabled):not(.primary).active,
+.pager li a:not(:disabled):not(.primary):hover,
+.pager li a:not(:disabled):not(.primary):focus,
+.pager li a:not(:disabled):not(.primary).active {
+    border-color: var(--scl-color-magenta) !important;
+}
+
+
 /*Guest layout header*/
 
 #body-user #header,
 #body-settings #header,
 #body-public #header {
+    position: relative;
+    top: -5px !important;
     background-color: #ffffff !important;
     background-image: unset !important;
-    border-bottom: 1px solid #e5e5e5;
     height: 63px !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 #body-public #header .header-right {
@@ -2120,6 +2211,11 @@ div.crumb:last-child {
     transition: all 0.5s ease-in-out;
 }
 
+.content-dialog #downloadFile span {
+    vertical-align: middle;
+    margin: 0 4px;
+}
+
 .content-dialog button:not(:disabled):not(.primary):hover,
 .content-dialog button:not(:disabled):not(.primary):focus,
 .content-dialog button:not(:disabled):not(.primary).active,
@@ -2150,6 +2246,31 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .content-dialog .content-para span {
     font-weight: bold;
+}
+
+.rich-workspace .menubar button {
+    opacity: unset;
+}
+
+.rich-workspace .menubar button.icon-undo,
+.menubar button.icon-redo {
+    opacity: unset;
+}
+
+.icon-quote {
+    background-image: var(--icon-quote-custom) !important;
+}
+
+.icon-code {
+    background-image: var(--icon-code-custom) !important;
+}
+
+.icon-ul {
+    background-image: var(--icon-ul-custom) !important;
+}
+
+.icon-ol {
+    background-image: var(--icon-ol-custom) !important;
 }
 
 
@@ -2222,13 +2343,13 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 @media screen and (max-width: 375px) {
     #controls {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     #controls {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 }
 

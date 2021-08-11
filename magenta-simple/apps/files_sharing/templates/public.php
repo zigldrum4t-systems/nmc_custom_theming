@@ -85,7 +85,9 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 			<?php endif; ?>
 		</div>
 		<div class="content-dialog">
-		     <div class="closePopup">
+		     
+			<div class="container-fixed">
+			<div class="closePopup">
                         <a href="" id="closePopUp" class="button">
                             <span class="icon icon-download"></span>
                         </a>
@@ -101,6 +103,7 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
                         </a>
               </div>
             </div>
+			</div>
         </div>
 	</div>
 	
