@@ -2108,7 +2108,7 @@ div.crumb:last-child {
     display: none;
 }
 
-actions.creatable a:active {
+.actions.creatable a:active {
     border-color: var(--scl-color-magenta) !important;
 }
 
@@ -2204,7 +2204,7 @@ button:not(:disabled):not(.primary).active,
 }
 
 .content-dialog .content-button {
-    padding-top: 16px;
+    padding-top: 1em;
 }
 
 .content-dialog .directDownload #downloadFile {
@@ -2286,9 +2286,9 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 }
 
 .video-file-details {
-    padding-top: 16px;
-    padding-bottom: 64px;
-    font-size: 20px !important;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    font-size: 1.25em !important;
 }
 
 .directDownload a {
@@ -2299,7 +2299,7 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 /* pdf */
 
 .files-public-content iframe {
-    padding-top: 16px !important;
+    padding-top: 1em !important;
 }
 
 
