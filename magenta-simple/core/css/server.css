@@ -995,9 +995,11 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-bottom: 1px solid #cccccc;
 }
 
-#filestable tbody tr:focus,
+#filestable tbody tr:active,
+#filestable tbody tr.highlighted,
+#filestable tbody tr.highlighted .name:focus,
 #filestable tbody tr.selected,
-#filestable tbody tr:active {
+#filestable tbody tr.searchresult {
     background-color: rgb(242 242 242 / 50%) !important;
 }
 
@@ -2169,6 +2171,7 @@ button:not(:disabled):not(.primary).active,
     background-position: center;
     min-width: 24px;
     min-height: 24px;
+    background-size: 24px;
 }
 
 .content-button .directDownload button,
@@ -2191,7 +2194,7 @@ button:not(:disabled):not(.primary).active,
     background-color: #e20074 !important;
     font-weight: normal !important;
     border: 1px solid #e20074;
-    color: #e5e5e5 !important
+    font-size: 16px;
 }
 
 .content-dialog {
@@ -2213,7 +2216,7 @@ button:not(:disabled):not(.primary).active,
 
 .content-dialog #downloadFile span {
     vertical-align: middle;
-    margin: 0 4px;
+    margin: 0 2px;
 }
 
 .content-dialog button:not(:disabled):not(.primary):hover,
@@ -2282,13 +2285,15 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .video-js .vjs-big-play-button {
     border: unset !important;
-    background-color: unset !important;
 }
 
 .video-file-details {
-    padding-top: 1em;
-    padding-bottom: 4em;
     font-size: 1.25em !important;
+}
+
+.directDownload #downloadFile {
+    margin-top: 1em;
+    margin-bottom: 4em;
 }
 
 .directDownload a {
@@ -2308,7 +2313,7 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 .closePopup {
     display: inline;
     float: right;
-    margin-right: 25px;
+    margin-right: 3em;
 }
 
 .closePopup button,
@@ -2359,6 +2364,9 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     }
     .brand-footer .brand-footer-bar {
         justify-content: center;
+    }
+    .closePopup {
+        margin-right: 0px;
     }
 }
 
