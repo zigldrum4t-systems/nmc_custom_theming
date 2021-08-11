@@ -1,5 +1,6 @@
 window.onload = function() {
     brandBarAnimation();
+    guestInfoText();
 };
 
 function brandBarAnimation() {
@@ -15,4 +16,17 @@ function brandBarAnimation() {
     // workSpaceelement.dispatchEvent(workSpaceevent);
     // document.getElementById('showRichWorkspacesToggle').checked = true;
     // document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
+}
+
+
+function guestInfoText() {
+    var ele = document.getElementById('closePopUp');
+    if (ele) {
+        ele.onclick = function() {
+            document.getElementsByClassName('content-dialog') ?
+                document.getElementsByClassName('content-dialog')[0].classList.add('hide') : null;
+            return false;
+        }
+    }
+
 }
