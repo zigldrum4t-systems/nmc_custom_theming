@@ -995,9 +995,11 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-bottom: 1px solid #cccccc;
 }
 
-#filestable tbody tr:focus,
+#filestable tbody tr:active,
+#filestable tbody tr.highlighted,
+#filestable tbody tr.highlighted .name:focus,
 #filestable tbody tr.selected,
-#filestable tbody tr:active {
+#filestable tbody tr.searchresult {
     background-color: rgb(242 242 242 / 50%) !important;
 }
 
