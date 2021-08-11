@@ -85,6 +85,11 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 			<?php endif; ?>
 		</div>
 		<div class="content-dialog">
+		     <div class="closePopup">
+                        <a href="" id="closePopUp" class="button">
+                            <span class="icon icon-download"></span>
+                        </a>
+              </div>
             <div class="content-para">
              The <span>MagentaCLOUD</span> is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.
             </div>

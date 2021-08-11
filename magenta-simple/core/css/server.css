@@ -2175,6 +2175,49 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 }
 
 
+/* pdf */
+
+.files-public-content iframe {
+    padding-top: 16px !important;
+}
+
+
+/*Pop-up*/
+
+.closePopup {
+    display: inline;
+    float: right;
+    margin-right: 25px;
+}
+
+.closePopup button,
+.closePopup .button,
+.closePopup input[type='button'],
+.closePopup input[type='submit'],
+.closePopup input[type='reset'] {
+    font-weight: unset !important;
+    border-radius: unset !important;
+}
+
+.closePopup select,
+.closePopup button,
+.closePopup .button,
+.closePopup input[type='button'],
+.closePopup input[type='submit'],
+.closePopup input[type='reset'] {
+    background-color: unset !important;
+}
+
+.closePopup button,
+.closePopup .button {
+    border: unset !important;
+}
+
+.closePopup .icon-download {
+    background-image: var( --icon-close-mark) !important;
+}
+
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
