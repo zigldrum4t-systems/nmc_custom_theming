@@ -2104,18 +2104,16 @@ div.crumb:last-child {
 }
 
 .content-dialog {
-    margin-bottom: 24px;
-    margin: 0px 310px;
+    text-align: center;
 }
 
 .content-dialog .content-para {
     max-width: 850px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .content-dialog .content-button {
     padding-top: 16px;
-    margin: 0px 350px;
 }
 
 .content-dialog .directDownload #downloadFile {
@@ -2140,6 +2138,16 @@ button:not(:disabled):not(.primary).active,
     border-color: #e20074 !important;
 }
 
+div[contenteditable=true]:not(:disabled):not(.primary):hover,
+div[contenteditable=true]:not(:disabled):not(.primary):focus,
+div[contenteditable=true]:not(:disabled):not(.primary).active,
+.pager li a:not(:disabled):not(.primary):hover,
+.pager li a:not(:disabled):not(.primary):focus,
+.pager li a:not(:disabled):not(.primary).active {
+    border-color: unset !important;
+    outline: none;
+}
+
 .content-dialog .content-para span {
     font-weight: bold;
 }
@@ -2154,6 +2162,16 @@ button:not(:disabled):not(.primary).active,
 .video-js .vjs-big-play-button {
     border: unset !important;
     background-color: unset !important;
+}
+
+.video-file-details {
+    padding-top: 16px;
+    padding-bottom: 64px;
+    font-size: 20px !important;
+}
+
+.directDownload a {
+    color: #ffffff !important;
 }
 
 
