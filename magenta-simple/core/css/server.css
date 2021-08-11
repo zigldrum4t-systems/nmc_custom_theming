@@ -770,7 +770,7 @@ aside {
     .header-right .smallscreenSize {
         display: none !important;
     }
-    #fileList td a a.action.action-menu {
+    #app-content-files #fileList td a a.action.action-menu {
         display: none;
     }
 }
@@ -1469,11 +1469,8 @@ table th .sort-indicator {
 }
 
 #controls {
-    position: sticky;
-    display: flex;
     top: 0;
     width: 100%;
-    z-index: 100;
     height: 48px;
     padding: 0;
     margin-left: 10px;
@@ -2237,6 +2234,19 @@ button:not(:disabled):not(.primary).active,
 .icon-ol {
     background-image: var(--icon-ol-custom) !important;
 }
+
+
+/**Login Screen**/
+
+#body-login,
+#firstrunwizard .firstrunwizard-header,
+#theming-preview {
+    background-image: url('/themes/magenta-simple/core/img/dt_background.jpg') !important;
+    background-color: unset !important;
+}
+
+
+/**Login Screen**/
 
 
 /*Responsive Styling*/
