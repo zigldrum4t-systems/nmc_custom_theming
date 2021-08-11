@@ -2046,6 +2046,7 @@ div.crumb:last-child {
     padding: 16px 16px 24px 16px;
     box-shadow: var(--scl-shadow-level-2);
     width: 235px !important;
+    border-radius: 8px;
 }
 
 .newFileMenu .icon-upload {
@@ -2059,18 +2060,9 @@ div.crumb:last-child {
     background-size: 24px !important;
 }
 
-.newFileMenu .icon-folder:hover,
-.icon-filetype-folder:hover {
-    background-image: var(--icon-new-folder-magenta) !important;
-}
-
 .newFileMenu .icon-filetype-text {
     background-image: var(--icon-text-custom) !important;
     background-size: 24px !important;
-}
-
-.newFileMenu .icon-filetype-text:hover {
-    background-image: var(--icon-text-magenta) !important;
 }
 
 .bubble li>button:hover,
@@ -2086,10 +2078,6 @@ div.crumb:last-child {
 .popovermenu li>.menuitem:hover,
 .popovermenu li>.menuitem:focus {
     background-color: unset !important;
-}
-
-.newFileMenu .menuitem .icon-upload:hover {
-    background-image: var(--icon-upload-magenta) !important;
 }
 
 .newFileMenu .menuitem .displayname:hover {
@@ -2112,6 +2100,28 @@ div.crumb:last-child {
 
 .actions.creatable a:active {
     border-color: var(--scl-color-magenta) !important;
+}
+
+.bubble,
+.app-navigation-entry-menu,
+.popovermenu {
+    filter: none !important;
+}
+
+.menuitem:hover span {
+    color: #E20074 !important;
+}
+
+.newFileMenu li:nth-child(1) .menuitem:hover .svg {
+    background-image: var(--icon-upload-magenta) !important;
+}
+
+.newFileMenu li:nth-child(2) .menuitem:hover .svg {
+    background-image: var(--icon-new-folder-magenta) !important;
+}
+
+.newFileMenu li:nth-child(3) .menuitem:hover .svg {
+    background-image: var(--icon-text-magenta) !important;
 }
 
 button:not(:disabled):not(.primary):hover,
@@ -2251,11 +2261,7 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     font-weight: bold;
 }
 
-.rich-workspace .menubar button {
-    opacity: unset;
-}
-
-.rich-workspace .menubar button.icon-undo,
+.menubar button.icon-undo,
 .menubar button.icon-redo {
     opacity: unset;
 }
@@ -2274,6 +2280,45 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .icon-ol {
     background-image: var(--icon-ol-custom) !important;
+}
+
+.icon-undo {
+    background-image: var(--icon-backward-custom) !important;
+}
+
+.icon-redo {
+    background-image: var(--icon-forward-custom) !important;
+}
+
+.icon-bold {
+    background-image: var(--icon-bold-custom) !important;
+}
+
+.icon-h1 {
+    background-image: var(--icon-h1-custom) !important;
+}
+
+.icon-checkmark {
+    background-image: var( --icon-checkbox-custom) !important;
+}
+
+.icon-italic {
+    background-image: var(--icon-italic-custom) !important;
+}
+
+.icon-image {
+    background-image: var(--icon-image-custom) !important;
+}
+
+.icon-strike {
+    background-image: var(--icon-strike-custom) !important;
+}
+
+.menubar button {
+    width: 24px !important;
+    height: 24px !important;
+    background-size: unset !important;
+    opacity: unset !important;
 }
 
 
