@@ -2210,6 +2210,7 @@ button:not(:disabled):not(.primary).active,
 
 .content-dialog {
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .content-dialog .content-para {
@@ -2228,6 +2229,11 @@ button:not(:disabled):not(.primary).active,
 .content-dialog #downloadFile span {
     vertical-align: middle;
     margin: 0 2px;
+}
+
+.directDownload .icon-download {
+    background-image: var(--icon-white-download) !important;
+    opacity: unset !important;
 }
 
 .content-dialog button:not(:disabled):not(.primary):hover,
@@ -2398,11 +2404,24 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 /* video*/
 
 .video-js.vjs-big-play-centered .vjs-big-play-button {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.video-js:hover .vjs-big-play-button,
+.video-js .vjs-big-play-button:focus,
+.video-js .vjs-big-play-button:active {
+    background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .video-js .vjs-big-play-button {
     border: unset !important;
+}
+
+.vjs-icon-play:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before,
+.video-js .vjs-play-control .vjs-icon-placeholder:before {
+    font-size: 1.87em !important;
+    top: 10px !important;
 }
 
 .video-file-details {
@@ -2459,6 +2478,22 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .closePopup .icon-download {
     background-image: var( --icon-close-mark) !important;
+}
+
+
+/*single files guest view*/
+
+.file-preview {
+    height: 192px !important;
+    width: 192px !important;
+    padding-top: 2em;
+}
+
+#files-public-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
 }
 
 
