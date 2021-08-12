@@ -78,15 +78,40 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 				<?php endif; ?>
 				<?php if ($_['previewURL'] === $_['downloadURL'] && !$_['hideDownload']): ?>
 					<div class="directDownload">
+						<div class="video-file-details">
+							<?php p($l->t('%s', [$_['filename']]))?> (<?php p($_['fileSize']) ?>)
+						</div>
 						<a href="<?php p($_['downloadURL']); ?>" id="downloadFile" class="button">
 							<span class="icon icon-download"></span>
-							<?php p($l->t('Download %s', [$_['filename']]))?> (<?php p($_['fileSize']) ?>)
+							<?php p($l->t('Download'))?>
 						</a>
 					</div>
 				<?php endif; ?>
 			<?php endif; ?>
 		</div>
+		<div class="content-dialog">
+		     
+			<div class="container-fixed">
+			<div class="closePopup">
+                        <a href="" id="closePopUp" class="button">
+                            <span class="icon icon-download"></span>
+                        </a>
+              </div>
+            <div class="content-para">
+             The <span>MagentaCLOUD</span> is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.
+            </div>
+            <div class="content-button">
+              <div class="directDownload">
+                        <a href="https://www.magentacloud.de" id="downloadFile" class="button">
+                            <span class="icon icon-download"></span>
+                             <span class="text">Inform Now</span>
+                        </a>
+              </div>
+            </div>
+			</div>
+        </div>
 	</div>
+	
 <?php } else { ?>
 	<input type="hidden" id="upload-only-interface" value="1"/>
 	<div id="public-upload">

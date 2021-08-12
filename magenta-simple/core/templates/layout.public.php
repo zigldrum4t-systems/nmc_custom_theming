@@ -173,7 +173,9 @@
 	
 
 	<div id="content" class="app-<?php p($_['appid']) ?>" role="main">
+    <div class="container-fixed">
 		<?php print_unescaped($_['content']); ?>
+    </div>
 	</div>
 	<?php if (isset($template) && $template->getFooterVisible()) { ?>
 
