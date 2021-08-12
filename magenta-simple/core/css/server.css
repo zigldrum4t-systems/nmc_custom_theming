@@ -2287,8 +2287,10 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     background-image: var(--icon-backward-custom) !important;
 }
 
-.icon-redo {
+.icon-redo,
+.icon-confirm {
     background-image: var(--icon-forward-custom) !important;
+    opacity: 1 !important;
 }
 
 .icon-bold {
@@ -2351,14 +2353,14 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 }
 
 .login-section {
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .4);
     width: 400px;
     margin: 0 auto;
     border-radius: 8px;
 }
 
 .login-section .logo {
-    margin: 1.5em auto 1em auto;
+    margin: 1.5rem auto 1rem auto;
 }
 
 .login-section h1 {
@@ -2366,12 +2368,13 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     color: #fff;
     font-size: 1.5625em;
     font-weight: bold;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
 
 .login-section .logo-title {
     font-size: 1em;
     font-weight: normal !important;
+    color: #fff;
 }
 
 .login-section fieldset {
@@ -2379,7 +2382,13 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 }
 
 .login-section .warning-info {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
+}
+
+.login-section fieldset {
+    width: auto;
+    margin: .5rem 1.5rem 1.5rem 1.5rem;
+    padding: 0;
 }
 
 
