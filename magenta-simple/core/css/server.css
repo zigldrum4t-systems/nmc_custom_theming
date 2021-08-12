@@ -2210,6 +2210,7 @@ button:not(:disabled):not(.primary).active,
 
 .content-dialog {
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .content-dialog .content-para {
@@ -2389,7 +2390,7 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 /* video*/
 
 .video-js.vjs-big-play-centered .vjs-big-play-button {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .video-js .vjs-big-play-button {
@@ -2450,6 +2451,22 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .closePopup .icon-download {
     background-image: var( --icon-close-mark) !important;
+}
+
+
+/*single files guest view*/
+
+
+/* #imgframe img {
+    height: 192px !important;
+    width: 192px !important;
+} */
+
+#files-public-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
 }
 
 
