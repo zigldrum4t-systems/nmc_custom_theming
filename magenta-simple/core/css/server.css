@@ -2397,6 +2397,13 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     border: unset !important;
 }
 
+.vjs-icon-play:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before,
+.video-js .vjs-play-control .vjs-icon-placeholder:before {
+    font-size: 1.87em !important;
+    top: 10px !important;
+}
+
 .video-file-details {
     font-size: 1.25em !important;
 }
@@ -2456,11 +2463,11 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 /*single files guest view*/
 
-
-/* #imgframe img {
+.file-preview {
     height: 192px !important;
     width: 192px !important;
-} */
+    padding-top: 2em;
+}
 
 #files-public-content {
     display: flex;
