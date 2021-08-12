@@ -2483,7 +2483,7 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 /*single files guest view*/
 
-.file-preview {
+.file-preview img {
     height: 192px !important;
     width: 192px !important;
     padding-top: 2em;

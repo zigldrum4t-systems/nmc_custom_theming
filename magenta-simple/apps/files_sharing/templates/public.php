@@ -69,11 +69,11 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 						</audio>
 					</div>
 				<?php else: ?>
-					<?php if ($_['previewEnabled'] && substr($_['mimetype'], 0, strpos($_['mimetype'], '/')) == 'image'): ?>
-						<div id="imgframe" class="img-preview"></div>
+					<?php  if ($_['previewEnabled'] && substr($_['mimetype'], 0, strpos($_['mimetype'], '/')) == 'application'): ?>
+						<div id="imgframe" class="file-preview"></div>
 					<?php else:?>
 					<!-- Preview frame is filled via JS to support SVG images for modern browsers -->
-					<div id="imgframe" class="file-preview"></div>
+					<div id="imgframe"></div>
 					<?php endif; ?>
 				<?php endif; ?>
 				<?php if ($_['previewURL'] === $_['downloadURL'] && !$_['hideDownload']): ?>
