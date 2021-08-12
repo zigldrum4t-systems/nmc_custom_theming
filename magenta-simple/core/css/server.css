@@ -2277,20 +2277,40 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     background-image: var(--icon-quote-custom) !important;
 }
 
+.icon-quote:hover {
+    background-image: var(--icon-quote-magenta) !important;
+}
+
 .icon-code {
     background-image: var(--icon-code-custom) !important;
+}
+
+.icon-code:hover {
+    background-image: var(--icon-code-magenta) !important;
 }
 
 .icon-ul {
     background-image: var(--icon-ul-custom) !important;
 }
 
+.icon-ul:hover {
+    background-image: var(--icon-ul-magenta) !important;
+}
+
 .icon-ol {
     background-image: var(--icon-ol-custom) !important;
 }
 
+.icon-ol:hover {
+    background-image: var(--icon-ol-magenta) !important;
+}
+
 .icon-undo {
     background-image: var(--icon-backward-custom) !important;
+}
+
+.icon-undo:hover {
+    background-image: var(--icon-backward-magenta) !important;
 }
 
 .icon-redo,
@@ -2299,28 +2319,76 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     opacity: 1 !important;
 }
 
+.icon-redo:hover {
+    background-image: var(--icon-forward-magenta) !important;
+}
+
 .icon-bold {
     background-image: var(--icon-bold-custom) !important;
+}
+
+.icon-bold:hover {
+    background-image: var(--icon-bold-magenta) !important;
 }
 
 .icon-h1 {
     background-image: var(--icon-h1-custom) !important;
 }
 
+.icon-h1:hover {
+    background-image: var(--icon-h1-magenta) !important;
+}
+
 .icon-checkmark {
     background-image: var( --icon-checkbox-custom) !important;
+}
+
+.icon-checkmark:hover {
+    background-image: var( --icon-checkbox-magenta) !important;
 }
 
 .icon-italic {
     background-image: var(--icon-italic-custom) !important;
 }
 
+.icon-italic:hover {
+    background-image: var(--icon-italic-magenta) !important;
+}
+
 .icon-image {
     background-image: var(--icon-image-custom) !important;
 }
 
+.icon-image:hover {
+    background-image: var(--icon-image-magenta) !important;
+}
+
 .icon-strike {
     background-image: var(--icon-strike-custom) !important;
+}
+
+.icon-strike:hover {
+    background-image: var(--icon-strike-magenta) !important;
+}
+
+.icon-h2 {
+    background-image: var(--icon-h2-custom) !important;
+}
+
+.icon-h3 {
+    background-image: var(--icon-h3-custom) !important;
+}
+
+.icon-h4 {
+    background-image: var(--icon-h4-custom) !important;
+}
+
+.icon-h5 {
+    background-image: var(--icon-h5-custom) !important;
+}
+
+.icon-h6 {
+    background-image: var(--icon-h6-custom) !important;
 }
 
 .menubar button {
@@ -2328,6 +2396,88 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     height: 24px !important;
     background-size: unset !important;
     opacity: unset !important;
+    margin-right: 16px !important;
+    padding: 0px !important;
+}
+
+.menubar button.icon-redo {
+    margin-right: 32px !important;
+}
+
+.menubar button.icon-ul {
+    margin-left: 16px !important;
+}
+
+.menubar button:hover,
+.menubar button:focus,
+.menubar button:active {
+    background-color: unset !important;
+}
+
+.submenu .popovermenu {
+    box-shadow: var(--scl-shadow-level-2);
+}
+
+#editor-wrapper div.ProseMirror h1 span {
+    font-size: 56px !important;
+    line-height: 100% !important;
+}
+
+#editor-wrapper div.ProseMirror h2 span {
+    font-size: 40px !important;
+    line-height: 100% !important;
+}
+
+#editor-wrapper div.ProseMirror h3 span {
+    font-size: 32px !important;
+    line-height: 100% !important;
+}
+
+#editor-wrapper div.ProseMirror h4 span {
+    font-size: 24px !important;
+    line-height: 120% !important;
+}
+
+#editor-wrapper div.ProseMirror h5 span {
+    font-size: 20px !important;
+    line-height: 120% !important;
+}
+
+#editor-wrapper div.ProseMirror h6 span {
+    font-size: 16px !important;
+    line-height: 120% !important;
+}
+
+#editor-session-list .v-popover {
+    display: none !important;
+}
+
+.menubar button.is-active::before {
+    background: none !important;
+}
+
+.menubar button.is-active.icon-italic {
+    background-image: var(--icon-italic-magenta) !important;
+}
+
+.menubar button.is-active.icon-strike {
+    background-image: var(--icon-strike-magenta) !important;
+}
+
+.menubar button.is-active.icon-bold {
+    background-image: var(--icon-bold-magenta) !important;
+}
+
+.menubar button.is-active.icon-ol {
+    background-image: var(--icon-ol-magenta) !important;
+}
+
+.menubar button.is-active.icon-ul {
+    background-image: var(--icon-ul-magenta) !important;
+}
+
+.save-status {
+    align-items: flex-start !important;
 }
 
 
