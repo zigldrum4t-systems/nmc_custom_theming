@@ -58,7 +58,8 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 	<!-- files listing -->
 	<div id="files-public-content">
 		<div id="preview">
-			<?php if (isset($_['folder'])): ?>
+			<?php  
+			if (isset($_['folder'])): ?>
 				<?php print_unescaped($_['folder']); ?>
 			<?php else: ?>
 				<?php if ($_['previewEnabled'] && substr($_['mimetype'], 0, strpos($_['mimetype'], '/')) == 'audio'): ?>
@@ -68,8 +69,12 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 						</audio>
 					</div>
 				<?php else: ?>
+					<?php if ($_['previewEnabled'] && substr($_['mimetype'], 0, strpos($_['mimetype'], '/')) == 'image'): ?>
+						<div id="imgframe" class="img-preview"></div>
+					<?php else:?>
 					<!-- Preview frame is filled via JS to support SVG images for modern browsers -->
-					<div id="imgframe"></div>
+					<div id="imgframe" class="file-preview"></div>
+					<?php endif; ?>
 				<?php endif; ?>
 				<?php if ($_['previewURL'] === $_['downloadURL'] && !$_['hideDownload']): ?>
 					<div class="directDownload">
