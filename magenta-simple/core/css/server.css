@@ -2231,6 +2231,11 @@ button:not(:disabled):not(.primary).active,
     margin: 0 2px;
 }
 
+.directDownload .icon-download {
+    background-image: var(--icon-white-download) !important;
+    opacity: unset !important;
+}
+
 .content-dialog button:not(:disabled):not(.primary):hover,
 .content-dialog button:not(:disabled):not(.primary):focus,
 .content-dialog button:not(:disabled):not(.primary).active,
@@ -2391,6 +2396,12 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .video-js.vjs-big-play-centered .vjs-big-play-button {
     background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.video-js:hover .vjs-big-play-button,
+.video-js .vjs-big-play-button:focus,
+.video-js .vjs-big-play-button:active {
+    background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .video-js .vjs-big-play-button {
