@@ -2489,13 +2489,6 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     padding-top: 2em;
 }
 
-#files-public-content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100vh;
-}
-
 
 /*Responsive Styling*/
 
