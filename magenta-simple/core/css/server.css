@@ -2347,7 +2347,7 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 #body-login,
 #firstrunwizard .firstrunwizard-header,
 #theming-preview {
-    background-image: url('/themes/magenta-simple/core/img/dt_background.jpg') !important;
+    background: url('/themes/magenta-simple/core/img/dt_background.jpg') no-repeat !important;
     background-color: unset !important;
 }
 
@@ -2407,6 +2407,10 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     width: auto;
     margin: .5rem 1.5rem 1.5rem 1.5rem;
     padding: 0;
+}
+
+.login-footer .brand-footer-nav a {
+    font-weight: 400 !important;
 }
 
 
