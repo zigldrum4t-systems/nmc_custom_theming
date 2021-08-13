@@ -246,6 +246,11 @@ body {
     font-weight: 400;
 }
 
+#app-navigation .collapsible:before {
+    background-image: unset !important;
+    background-color: unset !important;
+}
+
 #app-navigation .custom-button .btn-style:hover {
     background-color: #f4f4f4;
 }
@@ -2232,11 +2237,11 @@ button:not(:disabled):not(.primary).active,
 }
 
 .content-dialog .informNow {
-    margin-top: 24px;
+    margin-top: 1.5em;
 }
 
 .content-dialog .informNow #downloadFile {
-    padding: 10px 24px 14px 24px;
+    padding: 0.625em 1.5em 0.875em 1.5em;
     border-radius: 8px !important;
 }
 
