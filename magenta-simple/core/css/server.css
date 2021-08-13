@@ -2171,13 +2171,15 @@ button:not(:disabled):not(.primary).active,
 
 #files-public-content #imgframe {
     padding: 24px 0px 16px 0px !important;
+    /* height: 778px !important; */
 }
 
 
 /* guest-layout-dialog*/
 
-.content-button .directDownload .icon-download {
+.content-button .informNow .icon-download {
     background-image: var( --icon-magenta-cloud) !important;
+    opacity: unset !important;
 }
 
 .content-button .directDownload button>span[class^='icon-'],
@@ -2187,20 +2189,20 @@ button:not(:disabled):not(.primary).active,
     opacity: unset !important;
 }
 
-.content-button .directDownload [class^='icon-'],
-.content-button .directDownload [class*=' icon-'] {
+.content-button .informNow [class^='icon-'],
+.content-button .informNow [class*=' icon-'] {
     background-repeat: no-repeat;
     background-position: center;
     min-width: 24px;
     min-height: 24px;
-    background-size: 24px;
+    background-size: 22px;
 }
 
-.content-button .directDownload button,
-.content-button .directDownload .button,
-.content-button .directDownload input[type='button'],
-.content-button .directDownload input[type='submit'],
-.content-button .directDownload input[type='reset'] {
+.content-button .informNow button,
+.content-button .informNow .button,
+.content-button .informNow input[type='button'],
+.content-button .informNow input[type='submit'],
+.content-button .informNow input[type='reset'] {
     border-radius: 4px !important;
     background-color: unset !important;
     font-weight: normal !important;
@@ -2229,17 +2231,22 @@ button:not(:disabled):not(.primary).active,
     margin: 0 auto;
 }
 
-.content-dialog .content-button {
-    padding-top: 1em;
+.content-dialog .informNow {
+    margin-top: 24px;
 }
 
-.content-dialog .directDownload #downloadFile {
-    transition: all 0.5s ease-in-out;
+.content-dialog .informNow #downloadFile {
+    padding: 10px 24px 14px 24px;
+    border-radius: 8px !important;
 }
 
-.content-dialog #downloadFile span {
+.content-dialog .informNow span {
     vertical-align: middle;
     margin: 0 2px;
+}
+
+.content-dialog .informNow span:hover {
+    color: #e20074 !important;
 }
 
 .directDownload .icon-download {
@@ -2247,13 +2254,12 @@ button:not(:disabled):not(.primary).active,
     opacity: unset !important;
 }
 
-.content-dialog button:not(:disabled):not(.primary):hover,
-.content-dialog button:not(:disabled):not(.primary):focus,
-.content-dialog button:not(:disabled):not(.primary).active,
-.content-dialog .button:not(:disabled):not(.primary):hover,
-.content-dialog .button:not(:disabled):not(.primary):focus,
-.content-dialog .button:not(:disabled):not(.primary).active {
-    border-color: #e0dcdc !important;
+.informNow a:hover .icon-download {
+    background-image: var(--icon-cloud-btn-magenta) !important;
+}
+
+.informNow a:hover span {
+    color: #e20074 !important;
 }
 
 button:not(:disabled):not(.primary):hover,
@@ -2566,13 +2572,13 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 /* video*/
 
 .video-js.vjs-big-play-centered .vjs-big-play-button {
-    background-color: rgba(255, 255, 255, 0.8) !important;
+    background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .video-js:hover .vjs-big-play-button,
 .video-js .vjs-big-play-button:focus,
 .video-js .vjs-big-play-button:active {
-    background-color: rgba(255, 255, 255, 0.4) !important;
+    background-color: rgba(255, 255, 255, 1) !important;
 }
 
 .video-js .vjs-big-play-button {
@@ -2582,8 +2588,8 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 .vjs-icon-play:before,
 .video-js .vjs-big-play-button .vjs-icon-placeholder:before,
 .video-js .vjs-play-control .vjs-icon-placeholder:before {
-    font-size: 1.87em !important;
-    top: 10px !important;
+    font-size: 40px !important;
+    top: 5px !important;
 }
 
 .video-file-details {
@@ -2593,6 +2599,8 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 .directDownload #downloadFile {
     margin-top: 1em;
     margin-bottom: 4em;
+    padding: 10px 24px !important;
+    border-radius: 8px !important;
 }
 
 .directDownload a {
