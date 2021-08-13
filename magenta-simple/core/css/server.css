@@ -2246,7 +2246,7 @@ button:not(:disabled):not(.primary).active,
 
 .content-dialog .informNow span {
     vertical-align: middle;
-    margin: 0 2px;
+    margin: 0em 0.125em;
 }
 
 .content-dialog .informNow span:hover {
