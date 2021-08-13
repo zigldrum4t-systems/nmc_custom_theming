@@ -1884,6 +1884,17 @@ div.crumb:last-child {
     text-decoration: underline;
 }
 
+.login-footer {
+    background: no-repeat;
+    color: #fff;
+    border: none;
+    position: relative;
+}
+
+.login-footer .brand-footer-bar-text {
+    color: #fff !important;
+}
+
 
 /****footer*****/
 
@@ -2503,8 +2514,9 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     margin-top: 1em;
 }
 
-.login-header .brand {
-    display: inherit;
+.login-header .app-claim img {
+    width: 182px;
+    height: 40px;
     vertical-align: middle;
 }
 
