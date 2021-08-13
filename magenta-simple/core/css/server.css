@@ -709,7 +709,6 @@ aside {
 
 .MenuWrapperParent {
     top: 0;
-    z-index: 9999 !important;
     width: 100%;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -1900,6 +1899,10 @@ div.crumb:last-child {
     color: #fff !important;
 }
 
+.login-footer .brand-footer-nav a {
+    font-weight: 400 !important;
+}
+
 
 /****footer*****/
 
@@ -2507,7 +2510,7 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 #body-login,
 #firstrunwizard .firstrunwizard-header,
 #theming-preview {
-    background-image: url('/themes/magenta-simple/core/img/dt_background.jpg') !important;
+    background: url('/themes/magenta-simple/core/img/dt_background.jpg') no-repeat !important;
     background-color: unset !important;
 }
 
@@ -2567,6 +2570,16 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     width: auto;
     margin: .5rem 1.5rem 1.5rem 1.5rem;
     padding: 0;
+}
+
+.login-section .body-login-container a {
+    background: none;
+    border-radius: 8px;
+}
+
+.login-section .infogroup {
+    background: none;
+    border-radius: 8px;
 }
 
 
