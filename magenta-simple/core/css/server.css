@@ -2175,8 +2175,7 @@ button:not(:disabled):not(.primary).active,
 }
 
 #files-public-content #imgframe {
-    padding: 24px 0px 16px 0px !important;
-    /* height: 778px !important; */
+    padding: 1.5em 0px 1em 0px !important;
 }
 
 
@@ -2198,9 +2197,9 @@ button:not(:disabled):not(.primary).active,
 .content-button .informNow [class*=' icon-'] {
     background-repeat: no-repeat;
     background-position: center;
-    min-width: 1.5em;
-    min-height: 1.5em;
-    background-size: 1.375em;
+    min-width: 24px;
+    min-height: 24px;
+    background-size: 22px;
 }
 
 .content-button .informNow button,
