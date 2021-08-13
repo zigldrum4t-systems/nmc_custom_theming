@@ -1894,6 +1894,10 @@ div.crumb:last-child {
     color: #fff !important;
 }
 
+.login-footer .brand-footer-nav a {
+    font-weight: 400 !important;
+}
+
 
 /****footer*****/
 
@@ -2408,8 +2412,14 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     padding: 0;
 }
 
-.login-footer .brand-footer-nav a {
-    font-weight: 400 !important;
+.login-section .body-login-container a {
+    background: none;
+    border-radius: 8px;
+}
+
+.login-section .infogroup {
+    background: none;
+    border-radius: 8px;
 }
 
 
