@@ -247,7 +247,7 @@ body {
 }
 
 #app-navigation .collapsible:before {
-    background-image: unset !important;
+    background-image: var( --icon-fav-magenta) !important;
     background-color: unset !important;
 }
 
