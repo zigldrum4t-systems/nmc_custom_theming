@@ -2357,7 +2357,6 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .icon-h1 {
     background-image: var(--icon-h1-custom) !important;
-    margin-right: 8px;
 }
 
 .icon-checkmark {
@@ -2394,27 +2393,26 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .icon-h2 {
     background-image: var(--icon-h2-custom) !important;
-    margin-right: 8px;
 }
 
 .icon-h3 {
     background-image: var(--icon-h3-custom) !important;
-    margin-right: 8px;
 }
 
 .icon-h4 {
     background-image: var(--icon-h4-custom) !important;
-    margin-right: 8px;
 }
 
 .icon-h5 {
     background-image: var(--icon-h5-custom) !important;
-    margin-right: 8px;
 }
 
 .icon-h6 {
     background-image: var(--icon-h6-custom) !important;
-    margin-right: 8px;
+}
+
+.submenu .menuitem span[class] {
+    margin-right: 0.5rem !important;
 }
 
 .menubar button {
@@ -2442,10 +2440,10 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .submenu .popovermenu {
     box-shadow: var(--scl-shadow-level-2);
-    padding: 16px 16px 24px 8px;
+    padding: 1rem 1rem 1.5rem 0.5rem;
     border-radius: 8px;
-    width: 160px;
-    margin-top: 5px;
+    width: 10rem;
+    margin-top: 0.3125rem;
 }
 
 .submenu .popovermenu li>button,
@@ -2767,11 +2765,11 @@ li>.menuitem[class*=' icon-'] {
         width: 100%;
     }
     .menubar button {
-        margin-right: unset !important;
+        margin-right: 0rem !important;
     }
     .menubar button.icon-redo {
-        margin-right: 8px !important;
-        margin-left: 8px !important;
+        margin-right: 0.5rem !important;
+        margin-left: 0.5rem !important;
     }
 }
 
