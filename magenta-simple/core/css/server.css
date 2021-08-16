@@ -2357,10 +2357,7 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .icon-h1 {
     background-image: var(--icon-h1-custom) !important;
-}
-
-.icon-h1:hover {
-    background-image: var(--icon-h1-magenta) !important;
+    margin-right: 8px;
 }
 
 .icon-checkmark {
@@ -2397,22 +2394,27 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .icon-h2 {
     background-image: var(--icon-h2-custom) !important;
+    margin-right: 8px;
 }
 
 .icon-h3 {
     background-image: var(--icon-h3-custom) !important;
+    margin-right: 8px;
 }
 
 .icon-h4 {
     background-image: var(--icon-h4-custom) !important;
+    margin-right: 8px;
 }
 
 .icon-h5 {
     background-image: var(--icon-h5-custom) !important;
+    margin-right: 8px;
 }
 
 .icon-h6 {
     background-image: var(--icon-h6-custom) !important;
+    margin-right: 8px;
 }
 
 .menubar button {
@@ -2440,6 +2442,51 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 
 .submenu .popovermenu {
     box-shadow: var(--scl-shadow-level-2);
+    padding: 16px 16px 24px 8px;
+    border-radius: 8px;
+    width: 160px;
+    margin-top: 5px;
+}
+
+.submenu .popovermenu li>button,
+.submenu .popovermenu li>a,
+.submenu .popovermenu li>.menuitem {
+    align-items: center !important;
+}
+
+li>button span[class^='icon-'],
+li>button span[class*=' icon-'],
+li>a span[class*=' icon-'],
+li>a[class^='icon-'],
+li>.menuitem span[class^='icon-'],
+li>.menuitem span[class*=' icon-'],
+li>.menuitem[class^='icon-'],
+li>.menuitem[class*=' icon-'] {
+    background-size: unset !important;
+}
+
+.submenu .popovermenu li:nth-child(1) .menuitem:hover .icon-h1 {
+    background-image: var(--icon-h1-magenta) !important;
+}
+
+.submenu .popovermenu li:nth-child(2) .menuitem:hover .icon-h2 {
+    background-image: var(--icon-h2-magenta) !important;
+}
+
+.submenu .popovermenu li:nth-child(3) .menuitem:hover .icon-h3 {
+    background-image: var(--icon-h3-magenta) !important;
+}
+
+.submenu .popovermenu li:nth-child(4) .menuitem:hover .icon-h4 {
+    background-image: var(--icon-h4-magenta) !important;
+}
+
+.submenu .popovermenu li:nth-child(5) .menuitem:hover .icon-h5 {
+    background-image: var(--icon-h5-magenta) !important;
+}
+
+.submenu .popovermenu li:nth-child(6) .menuitem:hover .icon-h6 {
+    background-image: var(--icon-h6-magenta) !important;
 }
 
 #editor-wrapper div.ProseMirror h1 span {
@@ -2500,8 +2547,38 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
     background-image: var(--icon-ul-magenta) !important;
 }
 
+.menubar button.is-active.icon-h1 {
+    background-image: var(--icon-h1-magenta) !important;
+}
+
+.menubar button.is-active.icon-h2 {
+    background-image: var(--icon-h2-magenta) !important;
+}
+
+.menubar button.is-active.icon-h3 {
+    background-image: var(--icon-h3-magenta) !important;
+}
+
+.menubar button.is-active.icon-h4 {
+    background-image: var(--icon-h4-magenta) !important;
+}
+
+.menubar button.is-active.icon-h5 {
+    background-image: var(--icon-h5-magenta) !important;
+}
+
+.menubar button.is-active.icon-h6 {
+    background-image: var(--icon-h6-magenta) !important;
+}
+
 .save-status {
     align-items: flex-start !important;
+}
+
+.submenu .popovermenu li>a.active,
+.submenu .popovermenu li>.menuitem.active {
+    background-color: unset !important;
+    box-shadow: unset !important;
 }
 
 
@@ -2688,6 +2765,13 @@ div[contenteditable=true]:not(:disabled):not(.primary).active,
 @media screen and (max-width: 640px) {
     .login-section {
         width: 100%;
+    }
+    .menubar button {
+        margin-right: unset !important;
+    }
+    .menubar button.icon-redo {
+        margin-right: 8px !important;
+        margin-left: 8px !important;
     }
 }
 
