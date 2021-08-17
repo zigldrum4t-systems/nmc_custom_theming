@@ -247,8 +247,7 @@ body {
 }
 
 #app-navigation .collapsible:before {
-    background-image: var( --icon-fav-magenta) !important;
-    background-color: unset !important;
+    content: unset !important;
 }
 
 #app-navigation .custom-button .btn-style:hover {
@@ -1165,6 +1164,10 @@ table th#headerDate {
     color: #E20074 !important;
 }
 
+#fileList .fileactions {
+    display: inline-flex;
+}
+
 #filestable .date span {
     color: #191919 !important;
     padding-right: 8px;
@@ -1181,6 +1184,20 @@ table th#headerDate {
     height: 50px;
     flex-direction: row-reverse;
     align-items: flex-end;
+}
+
+#fileList td a a.action.action-menu {
+    width: 60px;
+    height: 48px;
+    align-items: center;
+    display: flex;
+}
+
+#fileList td a a.action.action-share {
+    display: flex;
+    width: 60px;
+    height: 44px;
+    align-items: center;
 }
 
 #fileList td a a.action {
@@ -2228,6 +2245,18 @@ button:not(:disabled):not(.primary).active,
     font-size: 16px;
 }
 
+.directDownload button:hover,
+.directDownload .button:hover,
+.directDownload input[type='button']:hover,
+.directDownload input[type='submit']:hover,
+.directDownload input[type='reset']:hover {
+    border-radius: 4px !important;
+    background-color: #f90984 !important;
+    font-weight: normal !important;
+    border: 1px solid #e20074;
+    font-size: 1rem;
+}
+
 .content-dialog {
     text-align: center;
     margin-bottom: 24px;
@@ -2243,7 +2272,7 @@ button:not(:disabled):not(.primary).active,
 }
 
 .content-dialog .informNow #downloadFile {
-    padding: 0.625em 1.5em 0.875em 1.5em;
+    padding: 0.625rem 1.5rem 0.813rem 1.5rem;
     border-radius: 8px !important;
 }
 
