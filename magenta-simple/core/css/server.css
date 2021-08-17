@@ -247,7 +247,7 @@ body {
 }
 
 #app-navigation .collapsible:before {
-    background-image: var( --icon-fav-magenta) !important;
+    background-image: unset !important;
     background-color: unset !important;
 }
 
@@ -2223,6 +2223,18 @@ button:not(:disabled):not(.primary).active,
 .directDownload input[type='reset'] {
     border-radius: 4px !important;
     background-color: #e20074 !important;
+    font-weight: normal !important;
+    border: 1px solid #e20074;
+    font-size: 16px;
+}
+
+.directDownload button:hover,
+.directDownload .button:hover,
+.directDownload input[type='button']:hover,
+.directDownload input[type='submit']:hover,
+.directDownload input[type='reset']:hover {
+    border-radius: 4px !important;
+    background-color: #f90984 !important;
     font-weight: normal !important;
     border: 1px solid #e20074;
     font-size: 16px;
