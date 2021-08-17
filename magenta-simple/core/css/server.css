@@ -1165,6 +1165,10 @@ table th#headerDate {
     color: #E20074 !important;
 }
 
+#fileList .fileactions {
+    display: inline-flex;
+}
+
 #filestable .date span {
     color: #191919 !important;
     padding-right: 8px;
@@ -1181,6 +1185,20 @@ table th#headerDate {
     height: 50px;
     flex-direction: row-reverse;
     align-items: flex-end;
+}
+
+#fileList td a a.action.action-menu {
+    width: 60px;
+    height: 48px;
+    align-items: center;
+    display: flex;
+}
+
+#fileList td a a.action.action-share {
+    display: flex;
+    width: 60px;
+    height: 44px;
+    align-items: center;
 }
 
 #fileList td a a.action {
