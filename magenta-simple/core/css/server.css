@@ -247,8 +247,7 @@ body {
 }
 
 #app-navigation .collapsible:before {
-    background-image: unset !important;
-    background-color: unset !important;
+    content: unset !important;
 }
 
 #app-navigation .custom-button .btn-style:hover {
