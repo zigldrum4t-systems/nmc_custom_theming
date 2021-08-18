@@ -910,18 +910,18 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #app-settings-header .settings-button {
     display: block;
-    height: 44px;
+    height: 22px;
     width: 100%;
     padding: 0;
     margin: 0;
     background-image: var(--icon-triangle-n-e20074);
-    background-position: 14px center;
+    background-position: 8px center;
     background-repeat: no-repeat;
     box-shadow: none;
     border: 0;
     border-radius: 0;
     text-align: left;
-    padding-left: 42px;
+    padding-left: 24px;
     font-weight: normal;
     color: var(--color-main-text);
 }
@@ -2799,6 +2799,16 @@ li>.menuitem[class*=' icon-'] {
     opacity: 0.8;
     flex: 1 1 0px;
     z-index: 100;
+}
+
+.custom-button button {
+    height: 39px !important;
+    margin-bottom: 0px !important;
+}
+
+.custom-button {
+    margin-bottom: 16px;
+    height: 39px !important;
 }
 
 
