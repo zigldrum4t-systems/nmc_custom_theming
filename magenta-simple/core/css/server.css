@@ -2751,6 +2751,32 @@ li>.menuitem[class*=' icon-'] {
 }
 
 
+/* left menu */
+
+#app-navigation:not(.vue)>ul>li>a,
+#app-navigation:not(.vue)>ul>li>ul>li>a {
+    background-size: 24px 24px;
+    background-position: 14px center;
+    background-repeat: no-repeat;
+    display: block;
+    justify-content: space-between;
+    line-height: 44px;
+    min-height: 44px;
+    padding: 0 12px 0 44px;
+    overflow: hidden;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--color-main-text);
+    opacity: 0.8;
+    flex: 1 1 0px;
+    z-index: 100;
+}
+
+
+/* left menu */
+
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
