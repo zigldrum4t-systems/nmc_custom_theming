@@ -112,7 +112,8 @@ body {
     left: unset !important;
     position: absolute !important;
     top: 50px !important;
-    height: calc(100vh - 270px) !important;
+    height: calc(105vh - 270px) !important;
+    margin-bottom: 40px;
 }
 
 #app-navigation>ul>li.active,
