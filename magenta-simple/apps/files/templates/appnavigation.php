@@ -108,8 +108,10 @@ function NavigationListElements($item, $l, $pinned) {
 		NavigationElementMenu($item);
 	if (isset($item['sublist'])) {
 		?>
+   <?php if($item['id']!="favorites"){ ?>       
     <button class="collapse app-navigation-noclose" <?php if (sizeof($item['sublist']) == 0) { ?> style="display: none"
-        <?php } ?>></button>
+    <?php } ?>></button>
+<?php } ?>   
     <ul id="sublist-<?php p($item['id']); ?>">
         <?php
 				foreach ($item['sublist'] as $item) {
