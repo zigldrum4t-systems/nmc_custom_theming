@@ -2812,6 +2812,25 @@ body#body-login.nmc-guest {
     padding-top: 2em;
 }
 
+.icon-folder,
+.icon-filetype-folder {
+    background-image: var(--grid-folder-icon) !important;
+    background-size: cover !important;
+}
+
+.unified-search__result-icon--no-preview .icon-folder {
+    background-size: cover !important;
+}
+
+.unified-search__result-icon--no-preview {
+    background-size: 44px !important;
+}
+
+.unified-search__result-icon--with-thumbnail:not(.unified-search__result-icon--rounded) {
+    max-width: 2.75rem !important;
+    max-height: 2.75rem !important;
+}
+
 
 /*Responsive Styling*/
 
