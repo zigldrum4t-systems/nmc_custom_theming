@@ -2794,8 +2794,8 @@ li>.menuitem[class*=' icon-'] {
 }
 
 .unified-search__result-icon--with-thumbnail:not(.unified-search__result-icon--rounded) {
-    max-width: 44px !important;
-    max-height: 44px !important;
+    max-width: 2.75rem !important;
+    max-height: 2.75rem !important;
 }
 
 
