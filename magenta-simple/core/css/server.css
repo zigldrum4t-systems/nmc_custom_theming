@@ -416,6 +416,11 @@ body {
     display: inline-flex;
 }
 
+#app-navigation,
+#app-sidebar-vue {
+    width: 288px !important;
+}
+
 aside {
     position: absolute !important;
     top: 94px !important;
@@ -487,6 +492,11 @@ aside {
 
 #header .container-fixed .header-right .navbar-icons {
     width: 100%;
+}
+
+#header #header-right,
+#header .header-right {
+    padding-right: 16px;
 }
 
 #appmenu li {
@@ -673,6 +683,13 @@ aside {
     aside {
         width: 288px !important;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 288px !important;
+        padding-left: 2em;
+    }
+    .app-files #app-content {
+        width: calc(100% - 288px);
+    }
 }
 
 @media screen and (max-width: 1499px) and (min-width: 1236px) {
@@ -696,6 +713,13 @@ aside {
     }
     #content>.container-fixed {
         width: 1009px;
+    }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 288px !important;
+        padding-left: 2em;
+    }
+    .app-files #app-content {
+        width: calc(100% - 288px);
     }
 }
 
@@ -725,8 +749,6 @@ aside {
 @media screen and (min-width: 1600px) {
     .container-fixed {
         width: 1536px !important;
-        padding-left: 16px;
-        padding-right: 16px;
     }
     #app-navigation {
         width: 288px !important;
@@ -742,13 +764,16 @@ aside {
         left: unset !important;
         right: 25px;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 288px !important;
+        padding-left: 2em;
+    }
+    .app-files #app-content {
+        width: calc(100% - 288px);
+    }
     aside {
         width: 352px !important;
     }
-}
-
-.app-files #app-content {
-    width: calc(100% - 288px);
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -760,6 +785,9 @@ aside {
     #app-navigation,
     #app-sidebar-vue {
         width: 288px !important;
+    }
+    #app-navigation:not(.hidden)+#app-content {
+        padding-left: 2em;
     }
     .header-right .smallscreenSize {
         display: none !important;
@@ -773,6 +801,9 @@ aside {
     .header-right .smallscreenSize {
         display: none !important;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        padding-left: 2em;
+    }
     #app-content-files #fileList td a a.action.action-menu {
         display: none;
     }
@@ -781,8 +812,6 @@ aside {
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
     .container-fixed {
         width: 1024px !important;
-        padding-left: 16px;
-        padding-right: 16px;
     }
     #app-navigation,
     #app-sidebar-vue {
@@ -791,23 +820,24 @@ aside {
     aside {
         width: 288px !important;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        padding-left: 2em;
+    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    .container-fixed {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     #header .container-fixed .header-right .navbar-icons a label {
         font-size: 12px;
+    }
+    #app-navigation:not(.hidden)+#app-content {
+        padding-left: 1em;
+    }
+    .app-files #app-content {
+        width: 100% !important;
     }
 }
 
 @media screen and (min-width: 375px) and (max-width: 639px) {
-    .container-fixed {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     .header-left #nextcloud h5 {
         font-size: 14px !important;
         padding-left: 5px !important;
@@ -824,13 +854,15 @@ aside {
     #header .container-fixed .header-right .navbar-icons a label {
         font-size: 10px;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        padding-left: 1em;
+    }
+    .app-files #app-content {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 375px) {
-    .container-fixed {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     #header .container-fixed .header-left .logo-area {
         display: none;
     }
@@ -847,6 +879,12 @@ aside {
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 0px !important;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        padding-left: 1em;
+    }
+    .app-files #app-content {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 1299px) {
@@ -861,9 +899,6 @@ aside {
     }
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 5px;
-    }
-    #app-navigation {
-        width: auto !important;
     }
     #filestable tbody {
         row-gap: unset !important;
@@ -1092,7 +1127,7 @@ table th#headerDate {
 }
 
 #filestable input[type='checkbox'].checkbox+label:before {
-    margin: 0px 0px 0px 3px;
+    margin: 0px !important;
 }
 
 #filestable .filename .action .icon {
@@ -1107,17 +1142,17 @@ table th#headerDate {
 }
 
 #fileList tr td.selection>.selectCheckBox+label {
-    width: 55px;
-    height: 55px;
-    padding: 16px 20px !important;
-    display: inline-block !important;
+    /* width: 55px;
+    height: 55px; */
+    padding: 0px !important;
+    /* display: inline-block !important; */
 }
 
 .select-all+label {
-    width: 55px;
-    height: 55px;
-    padding: 24px 20px !important;
-    display: inline-block !important;
+    /* width: 55px;
+    height: 55px; */
+    padding: 0px !important;
+    /* display: inline-block !important; */
 }
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
@@ -1372,7 +1407,9 @@ table th .sort-indicator {
 #filestable .filename .favorite-mark .icon-starred {
     background-image: var(--icon-star-dark-FC0);
     padding-top: 88px;
-    background-size: 20px;
+    background-size: 24px;
+    min-width: 24px !important;
+    min-height: 24px !important;
 }
 
 #view-toggle {
@@ -1486,7 +1523,7 @@ table th .sort-indicator {
 
 #filestable.view-grid tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
     padding: 14px;
-    left: 42px !important;
+    left: 36px !important;
     top: 47px !important;
     right: unset !important;
 }
@@ -2801,6 +2838,30 @@ li>.menuitem[class*=' icon-'] {
     }
 }
 
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .fileactions {
+    background-color: unset !important;
+}
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     #controls {
         margin-bottom: 1em;
@@ -2808,9 +2869,6 @@ li>.menuitem[class*=' icon-'] {
 }
 
 @media screen and (max-width: 1024px) {
-    .app-files #app-content {
-        width: 100%;
-    }
     .brand-footer .brand-footer-bar {
         justify-content: center;
     }
