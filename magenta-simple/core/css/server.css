@@ -2696,6 +2696,26 @@ li>.menuitem[class*=' icon-'] {
 .login-section .body-login-container a {
     background: none;
     border-radius: 8px;
+    font-size: 1rem;
+}
+
+.login-section .body-login-container a svg {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.login-section .body-login-container a:hover {
+    color: #e20074 !important;
+    background: #fff !important;
+}
+
+.login-section .body-login-container img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.login-section .body-login-container a:hover img {
+    filter: invert(26%) sepia(93%) saturate(6250%) hue-rotate( 318deg) brightness(84%) contrast(114%);
 }
 
 .login-section .infogroup {
