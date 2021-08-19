@@ -436,7 +436,7 @@ aside {
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
-    height: 25px;
+    height: 50px;
     width: 50px;
     fill: #e20074;
 }
@@ -1379,10 +1379,14 @@ table th .sort-indicator {
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 0;
+    top: 0.6rem;
     right: 0;
     z-index: 999;
     opacity: 1;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 0;
 }
 
 
@@ -1495,12 +1499,13 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
-#controls {
+#controls,
+.controls-section {
     top: 0;
     width: 100%;
     height: 48px;
     padding: 0;
-    margin-left: 10px;
+    margin-left: 1rem;
     margin-bottom: 2em;
     background-color: #f2f2f2;
 }
@@ -1610,14 +1615,18 @@ div.crumb:last-child {
 
 #app-navigation-toggle {
     top: 8.2em;
-    margin-left: 1.4em;
     background-color: #f2f2f2;
     height: 48px;
 }
 
-.snapjs-left #app-content:not([style=''])>#app-navigation-toggle,
-.snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
+.snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
     left: -57px;
+    top: 0;
+    transition: none;
+}
+
+.snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
+    left: -92%;
     top: 0;
     transition: none;
 }
@@ -1759,6 +1768,8 @@ div.crumb:last-child {
 
 /** Grid Icons ***********************************/
 
+
+/*
 #filestable [data-mime="text/plain"] .thumbnail,
 #filestable [data-mime="text/markdown"] .thumbnail,
 #filestable [data-mime="application/octet-stream"] .thumbnail,
@@ -1838,7 +1849,7 @@ div.crumb:last-child {
 
 #filestable [data-icon] .thumbnail {
     background-image: var(--grid-folder-shared-icon) !important;
-}
+}*/
 
 .brand-bar-translation {
     height: 9px;
@@ -2532,7 +2543,7 @@ li>.menuitem[class*=' icon-'] {
 }
 
 #editor-wrapper div.ProseMirror h4 span {
-    font-size: 1.5px !important;
+    font-size: 1.5rem !important;
     line-height: 120% !important;
 }
 
@@ -2684,6 +2695,28 @@ li>.menuitem[class*=' icon-'] {
 .login-section .infogroup {
     background: none;
     border-radius: 8px;
+    color: #fff;
+}
+
+body#body-login.nmc-guest {
+    background: #e20074 !important;
+    background-image: none !important;
+}
+
+.nmc-guest .login-section {
+    background: none;
+    width: 460px;
+}
+
+.nmc-guest .body-login-container {
+    box-sizing: border-box;
+    margin-top: 5rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+.nmc-guest .body-login-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -2784,7 +2817,9 @@ li>.menuitem[class*=' icon-'] {
 
 @media screen and (max-width: 375px) {
     #controls {
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        padding: 0 !important;
     }
 }
 
@@ -2799,11 +2834,28 @@ li>.menuitem[class*=' icon-'] {
         margin-right: 0.5rem !important;
         margin-left: 0.5rem !important;
     }
+    .brand-footer {
+        padding: 1rem 0 1.5rem 0;
+        height: 135px;
+    }
+    .brand-footer .brand-footer-bar {
+        justify-content: center !important;
+    }
+    .brand-footer .brand-footer-nav li {
+        width: 100%;
+        text-align: center;
+    }
+    .brand-footer .brand-footer-bar-text {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     #controls {
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        padding: 0 !important;
     }
 }
 
@@ -2812,10 +2864,13 @@ li>.menuitem[class*=' icon-'] {
         width: 100%;
     }
     .brand-footer .brand-footer-bar {
-        justify-content: center;
+        justify-content: space-between;
     }
     .closePopup {
-        margin-right: 0px;
+        margin-right: 0;
+    }
+    #header .brandbar-logo-magenta {
+        margin-left: 0 !important;
     }
 }
 

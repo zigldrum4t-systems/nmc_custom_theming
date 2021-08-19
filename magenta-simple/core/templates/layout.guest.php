@@ -23,7 +23,20 @@
 		<?php emit_script_loading_tags($_); ?>
 		<?php print_unescaped($_['headers']); ?>
 	</head>
-	<body id="<?php p($_['bodyid']);?>">
+	<?php
+ 	$pathInfo = \OC::$server->getRequest()->getPathInfo();
+
+       $isLoginPage = $pathInfo === '/login';
+       $isShareAuth = preg_match("#^/s/\w+/authenticate#", $pathInfo) === 1;
+
+      $nmcBodyClassList = '';
+       if ($isLoginPage || $isShareAuth) {
+               $nmcBodyClassList = 'nmc-login';
+       } else {
+               $nmcBodyClassList = 'nmc-guest';
+       }
+       ?>
+       <body id="<?php p($_['bodyid']);?>" class="<?php p($nmcBodyClassList);?>">
 		<?php include 'layout.noscript.warning.php'; ?>
 		<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
 			<input type="hidden" id="initial-state-<?php p($app); ?>" value="<?php p(base64_encode($initialState)); ?>">
