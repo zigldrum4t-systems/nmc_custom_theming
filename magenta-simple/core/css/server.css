@@ -1561,13 +1561,17 @@ table.view-grid td.filename .nametext {
     background-image: var(--icon-home-custom);
 }
 
+.icon-home:hover {
+    background-image: var(--icon-home-magenta);
+}
+
 div.crumb {
     background-image: var(--icon-breadcrumb-custom);
 }
 
 .icon-add {
     background-image: var(--icon-breadcrumb-add-custom);
-    opacity: 1 !important;
+    opacity: 0.9 !important;
 }
 
 .icon-toggle-filelist {
@@ -1579,11 +1583,12 @@ div.crumb {
 }
 
 .actions.creatable a {
-    min-height: 30px !important;
-    width: 30px !important;
-    height: 30px !important;
+    width: 24px !important;
+    height: 24px !important;
+    min-height: 24px !important;
     opacity: 1;
     border-color: var(--scl-color-magenta);
+    margin-top: 2px
 }
 
 div.crumb>a,
@@ -1921,6 +1926,7 @@ div.crumb:last-child {
     color: #fff;
     border: none;
     position: relative;
+    height: auto;
 }
 
 .login-footer .brand-footer-bar-text {
@@ -2719,6 +2725,14 @@ body#body-login.nmc-guest {
     margin-bottom: 0.5rem;
 }
 
+.nmc-guest .icon-search {
+    background-image: var(--icon-search-white) !important;
+    width: 96px;
+    height: 96px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
 
 /**Login Screen**/
 
@@ -2843,7 +2857,8 @@ body#body-login.nmc-guest {
 }
 
 @media screen and (max-width: 640px) {
-    .login-section {
+    .nmc-login .login-section,
+    .nmc-guest .login-section {
         width: 100%;
     }
     .menubar button {
@@ -2855,10 +2870,10 @@ body#body-login.nmc-guest {
     }
     .brand-footer {
         padding: 1rem 0 1.5rem 0;
-        height: 135px;
     }
     .brand-footer .brand-footer-bar {
         justify-content: center !important;
+        height: auto;
     }
     .brand-footer .brand-footer-nav li {
         width: 100%;
