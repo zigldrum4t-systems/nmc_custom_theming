@@ -1596,7 +1596,9 @@ div.crumb:last-child {
 
 #emptycontent,
 .emptycontent {
-    padding-top: 30vh !important;
+    /* padding-top: 30vh !important; */
+    padding-top: 6vh !important;
+    padding-bottom: 40vh !important;
     margin-top: 0 !important;
 }
 
@@ -2777,6 +2779,29 @@ li>.menuitem[class*=' icon-'] {
     height: 192px !important;
     width: 192px !important;
     padding-top: 2em;
+}
+
+
+/*single folder guest view*/
+
+#emptycontent [class^='icon-'],
+#emptycontent [class*='icon-'],
+.emptycontent [class^='icon-'],
+.emptycontent [class*='icon-'] {
+    background-size: 192px;
+    height: 192px;
+    width: 192px;
+    margin: 0 auto !important;
+}
+
+#emptycontent h2,
+.emptycontent h2 {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+#emptycontent .hidden {
+    font-size: 1.25rem !important;
 }
 
 
