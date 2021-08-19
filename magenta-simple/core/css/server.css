@@ -161,9 +161,10 @@ body {
 .NextCloudPorgressBar .customprogressbar {
     margin-left: 9px;
     margin-right: 30px;
-    height: 7px;
+    height: 4px;
     border-radius: 4px;
     margin-bottom: 10px;
+    width: 240px;
 }
 
 .NextCloudPorgressBar .styledbar {
@@ -1817,11 +1818,7 @@ div.crumb:last-child {
 }
 
 #filestable [data-mime="image/webp"] .thumbnail,
-#filestable [data-mime="image/bmp"] .thumbnail,
-#filestable [data-mime="image/png"] .thumbnail,
 #filestable [data-mime="image/heic"] .thumbnail,
-#filestable [data-mime="image/jpeg"] .thumbnail,
-#filestable [data-mime="image/gif"] .thumbnail,
 #filestable [data-mime="image/svg+xml"] .thumbnail,
 #filestable [data-mime="application/postscript"] .thumbnail,
 #filestable [data-mime="image/x-dcraw"] .thumbnail {
