@@ -2095,6 +2095,11 @@ div.crumb:last-child {
     vertical-align: super !important;
 }
 
+#files-public-content #emptycontent h2,
+#emptycontent.hidden~.guest-emptycontent {
+    display: none;
+}
+
 
 /*Guest layout*/
 
@@ -2698,28 +2703,36 @@ li>.menuitem[class*=' icon-'] {
     padding: 0;
 }
 
-.login-section .body-login-container a {
+.login-section .body-login-container button {
     background: none;
     border-radius: 8px;
     font-size: 1rem;
+    margin: 0;
+    padding: 0 1.5rem;
+    min-height: 40px;
 }
 
-.login-section .body-login-container a svg {
+.login-section .body-login-container button svg {
     vertical-align: middle;
     margin-right: 5px;
 }
 
-.login-section .body-login-container a:hover {
+.login-section .body-login-container button:hover,
+.login-section .body-login-container button:active,
+.login-section .body-login-container button:focus {
     color: #e20074 !important;
     background: #fff !important;
 }
 
 .login-section .body-login-container img {
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 0.5rem;
+    margin-top: -5px;
 }
 
-.login-section .body-login-container a:hover img {
+.login-section .body-login-container button:hover img,
+.login-section .body-login-container button:active img,
+.login-section .body-login-container button:focus img {
     filter: invert(26%) sepia(93%) saturate(6250%) hue-rotate( 318deg) brightness(84%) contrast(114%);
 }
 
@@ -2727,6 +2740,7 @@ li>.menuitem[class*=' icon-'] {
     background: none;
     border-radius: 8px;
     color: #fff;
+    margin: 0.5rem 0 1.5rem 0 !important;
 }
 
 body#body-login.nmc-guest {
@@ -2879,6 +2893,22 @@ body#body-login.nmc-guest {
         margin-left: 1rem;
         padding: 0 !important;
     }
+    .login-section .logo {
+        margin: 5rem auto .5rem auto;
+    }
+    .nmc-guest .body-login-container {
+        margin-top: 0;
+    }
+    .login-section h1 {
+        display: none;
+    }
+    .nmc-guest .login-section {
+        margin-bottom: 5rem;
+    }
+    .login-section .body-login-container button {
+        margin: 0 -1rem;
+        padding: 0 0.5rem !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -2907,6 +2937,12 @@ body#body-login.nmc-guest {
     .brand-footer .brand-footer-bar-text {
         margin-left: 0;
         margin-bottom: 1rem;
+    }
+    .login-section .body-login-container button {
+        padding: 0 1rem;
+    }
+    .brand-footer ul li:nth-child(2n) {
+        margin: 8px 0;
     }
 }
 
