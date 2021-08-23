@@ -680,15 +680,14 @@ aside {
     .header-right .navbar-icons .smallscreenSize {
         display: none !important;
     }
-    aside {
-        width: 288px !important;
-    }
     #app-navigation:not(.hidden)+#app-content {
-        margin-left: 288px !important;
-        padding-left: 2em;
+        margin-left: 320px;
     }
     .app-files #app-content {
-        width: calc(100% - 288px);
+        width: calc(100% - 320px);
+    }
+    aside {
+        width: 288px !important;
     }
 }
 
@@ -715,11 +714,10 @@ aside {
         width: 1009px;
     }
     #app-navigation:not(.hidden)+#app-content {
-        margin-left: 288px !important;
-        padding-left: 2em;
+        margin-left: 320px;
     }
     .app-files #app-content {
-        width: calc(100% - 288px);
+        width: calc(100% - 320px);
     }
 }
 
@@ -744,6 +742,12 @@ aside {
     .button.new .hidden-visually {
         display: none;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 0 !important;
+    }
+    .app-files #app-content {
+        width: 100% !important;
+    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -765,11 +769,10 @@ aside {
         right: 25px;
     }
     #app-navigation:not(.hidden)+#app-content {
-        margin-left: 288px !important;
-        padding-left: 2em;
+        margin-left: 320px;
     }
     .app-files #app-content {
-        width: calc(100% - 288px);
+        width: calc(100% - 320px);
     }
     aside {
         width: 352px !important;
@@ -779,15 +782,10 @@ aside {
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
     .container-fixed {
         width: 1280px !important;
-        padding-left: 16px;
-        padding-right: 16px;
     }
     #app-navigation,
     #app-sidebar-vue {
         width: 288px !important;
-    }
-    #app-navigation:not(.hidden)+#app-content {
-        padding-left: 2em;
     }
     .header-right .smallscreenSize {
         display: none !important;
@@ -800,9 +798,6 @@ aside {
 @media screen and (min-width: 1599px) {
     .header-right .smallscreenSize {
         display: none !important;
-    }
-    #app-navigation:not(.hidden)+#app-content {
-        padding-left: 2em;
     }
     #app-content-files #fileList td a a.action.action-menu {
         display: none;
@@ -820,9 +815,6 @@ aside {
     aside {
         width: 288px !important;
     }
-    #app-navigation:not(.hidden)+#app-content {
-        padding-left: 2em;
-    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -830,7 +822,7 @@ aside {
         font-size: 12px;
     }
     #app-navigation:not(.hidden)+#app-content {
-        padding-left: 1em;
+        margin-left: 0 !important;
     }
     .app-files #app-content {
         width: 100% !important;
@@ -854,12 +846,6 @@ aside {
     #header .container-fixed .header-right .navbar-icons a label {
         font-size: 10px;
     }
-    #app-navigation:not(.hidden)+#app-content {
-        padding-left: 1em;
-    }
-    .app-files #app-content {
-        width: 100% !important;
-    }
 }
 
 @media screen and (max-width: 375px) {
@@ -878,12 +864,6 @@ aside {
     }
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 0px !important;
-    }
-    #app-navigation:not(.hidden)+#app-content {
-        padding-left: 1em;
-    }
-    .app-files #app-content {
-        width: 100% !important;
     }
 }
 
@@ -1034,6 +1014,8 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr:active,
+#filestable tbody tr:hover,
+#filestable tbody tr:focus,
 #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
 #filestable tbody tr.selected,
@@ -1059,15 +1041,15 @@ table th#headerDate {
 }
 
 #filestable #headerName-container {
-    height: 32px !important;
+    height: 40px !important;
 }
 
 #filestable #selectedActionsList {
-    height: 32px !important
+    height: 40px !important
 }
 
 #filestable th .columntitle {
-    height: 32px !important;
+    height: 40px !important;
 }
 
 #headerDate #headerSelection label {
@@ -1092,6 +1074,11 @@ table th#headerDate {
     margin-top: 4px;
     background-size: cover;
     border: none;
+}
+
+#fileList tr td.filename .favorite-mark {
+    top: 27px;
+    right: -11px;
 }
 
 #filestable .icon-shared {
@@ -1141,37 +1128,37 @@ table th#headerDate {
     min-height: 24px !important;
 }
 
-#fileList tr td.selection>.selectCheckBox+label {
-    /* width: 55px;
-    height: 55px; */
-    padding: 0px !important;
-    /* display: inline-block !important; */
+#filestable:not(.view-grid) tr td.selection>.selectCheckBox+label {
+    width: 54px;
+    padding: 16px 0px !important;
+    display: inline-block !important;
 }
 
 .select-all+label {
-    /* width: 55px;
-    height: 55px; */
-    padding: 0px !important;
-    /* display: inline-block !important; */
+    width: 54px;
+    height: 52px;
+    padding: 16px 0px !important;
+    display: inline-block !important;
+    text-align: center;
 }
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
     border: 1px solid #73C354 !important;
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
     border-radius: 50px !important;
 }
 
 .selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
     border: 1px solid #73C354 !important;
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
     border-radius: 50px !important;
 }
 
-#filestable:not(.view-grid) input[type='checkbox'].checkbox:checked+label:before {
+#filestable input[type='checkbox'].checkbox:checked+label:before {
     background-image: var(--icon-checkbox-checkmark) !important;
     background-position: -26% 13%;
     box-sizing: border-box;
@@ -1405,8 +1392,7 @@ table th .sort-indicator {
 }
 
 #filestable .filename .favorite-mark .icon-starred {
-    background-image: var(--icon-star-dark-FC0);
-    padding-top: 88px;
+    background-image: var( --icon-yellow-fav) !important;
     background-size: 24px;
     min-width: 24px !important;
     min-height: 24px !important;
@@ -1459,10 +1445,9 @@ table th .sort-indicator {
 }
 
 #filestable.view-grid tbody td.selection {
-    top: 9px !important;
+    top: 10px !important;
     left: unset !important;
-    right: 9px;
-    opacity: 0;
+    right: 10px;
 }
 
 #filestable.view-grid tbody tr.selected td.selection {
@@ -1496,24 +1481,20 @@ table th .sort-indicator {
     background-color: rgb(242 242 242 / 50%) !important;
 }
 
-#filestable.view-grid .filename a .name {
+
+/* #filestable.view-grid .filename a .name {
     overflow: unset !important;
 }
 
 #filestable.view-grid .filename .fileactions a {
     display: none !important;
-}
+} */
 
 #filestable.view-grid tbody td.filename .name .nametext {
     margin-top: 133px !important;
 }
 
-#filestable.view-grid td.filename .nametext .innernametext {
-    padding-top: 6px !important;
-    padding-left: 0px !important;
-}
-
-#filestable.view-grid tbody tr:hover .nametext {
+*/ #filestable.view-grid tbody tr:hover .nametext {
     background-color: unset !important;
 }
 
@@ -1528,7 +1509,7 @@ table th .sort-indicator {
 #filestable.view-grid tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
     padding: 14px;
     left: 36px !important;
-    top: 47px !important;
+    top: 79px !important;
     right: unset !important;
 }
 
@@ -1536,7 +1517,14 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
-#controls,
+#filestable.view-grid td.filename .nametext .innernametext {
+    padding: 8px 3px 16px 3px;
+}
+
+#filestable.view-grid:not(.hidden) tbody td.filename .name .nametext:after {
+    min-width: 6px !important;
+}
+
 .controls-section {
     top: 0;
     width: 100%;
@@ -1549,14 +1537,6 @@ table th .sort-indicator {
 
 
 /*flexbox-change-properties-for-thumbnail-labels*/
-
-#filestable.view-grid tbody td.filename .name .nametext {
-    display: unset !important;
-}
-
-table.view-grid td.filename .nametext {
-    display: unset !important;
-}
 
 #filestable.view-grid tfoot .summary {
     margin-left: 0px !important;
@@ -1811,7 +1791,7 @@ div.crumb:last-child {
 /** Grid Icons ***********************************/
 
 
-/*
+/* 
 #filestable [data-mime="text/plain"] .thumbnail,
 #filestable [data-mime="text/markdown"] .thumbnail,
 #filestable [data-mime="application/octet-stream"] .thumbnail,
@@ -1869,7 +1849,8 @@ div.crumb:last-child {
     background-image: var(--grid-file-video-icon) !important;
 }
 
-#filestable [data-mime="image/webp"] .thumbnail,
+
+/* #filestable [data-mime="image/webp"] .thumbnail,
 #filestable [data-mime="image/bmp"] .thumbnail,
 #filestable [data-mime="image/png"] .thumbnail,
 #filestable [data-mime="image/heic"] .thumbnail,
@@ -1879,9 +1860,10 @@ div.crumb:last-child {
 #filestable [data-mime="application/postscript"] .thumbnail,
 #filestable [data-mime="image/x-dcraw"] .thumbnail {
     background-image: var(--grid-file-img-icon) !important;
-}
+} */
 
-#filestable [data-mime="httpd/unix-directory"] .thumbnail {
+
+/* #filestable [data-mime="httpd/unix-directory"] .thumbnail {
     background-image: var(--grid-folder-icon) !important;
 }
 
@@ -1891,7 +1873,7 @@ div.crumb:last-child {
 
 #filestable [data-icon] .thumbnail {
     background-image: var(--grid-folder-shared-icon) !important;
-}*/
+} */
 
 .brand-bar-translation {
     height: 9px;
