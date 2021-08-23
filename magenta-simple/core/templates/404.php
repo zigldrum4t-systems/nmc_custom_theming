@@ -19,7 +19,10 @@ if (!isset($_)) {//standalone  page is not supported anymore - redirect to /
 		<div class="icon-big icon-search icon-white"></div>
 		<h2><?php p($l->t('File not found')); ?></h2>
 		<p class="infogroup"><?php p($l->t('The document could not be found on the server. Maybe the share was deleted or has expired?')); ?></p>
-		<p><a class="button primary" href="<?php p(\OC::$server->getURLGenerator()->linkTo('', 'index.php')) ?>">
+		<p>
+			<a class="button primary" href="<?php p(\OC::$server->getURLGenerator()->linkTo('', 'index.php')) ?>">
+			<img src="/themes/magenta-simple/core/img/app-logo-small.svg" />
+			
 			<?php p($l->t('Back to %s', [$theme->getName()])); ?>
 		</a></p>
 	</div>
