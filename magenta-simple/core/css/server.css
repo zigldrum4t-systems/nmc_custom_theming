@@ -416,6 +416,11 @@ body {
     display: inline-flex;
 }
 
+#app-navigation,
+#app-sidebar-vue {
+    width: 288px !important;
+}
+
 aside {
     position: absolute !important;
     top: 94px !important;
@@ -487,6 +492,11 @@ aside {
 
 #header .container-fixed .header-right .navbar-icons {
     width: 100%;
+}
+
+#header #header-right,
+#header .header-right {
+    padding-right: 1rem;
 }
 
 #appmenu li {
@@ -670,6 +680,12 @@ aside {
     .header-right .navbar-icons .smallscreenSize {
         display: none !important;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 320px;
+    }
+    .app-files #app-content {
+        width: calc(100% - 320px);
+    }
     aside {
         width: 288px !important;
     }
@@ -697,6 +713,12 @@ aside {
     #content>.container-fixed {
         width: 1009px;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 320px;
+    }
+    .app-files #app-content {
+        width: calc(100% - 320px);
+    }
 }
 
 .shrink {
@@ -720,13 +742,17 @@ aside {
     .button.new .hidden-visually {
         display: none;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 0 !important;
+    }
+    .app-files #app-content {
+        width: 100% !important;
+    }
 }
 
 @media screen and (min-width: 1600px) {
     .container-fixed {
         width: 1536px !important;
-        padding-left: 16px;
-        padding-right: 16px;
     }
     #app-navigation {
         width: 288px !important;
@@ -742,20 +768,20 @@ aside {
         left: unset !important;
         right: 25px;
     }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 320px;
+    }
+    .app-files #app-content {
+        width: calc(100% - 320px);
+    }
     aside {
         width: 352px !important;
     }
 }
 
-.app-files #app-content {
-    width: calc(100% - 288px);
-}
-
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
     .container-fixed {
         width: 1280px !important;
-        padding-left: 16px;
-        padding-right: 16px;
     }
     #app-navigation,
     #app-sidebar-vue {
@@ -781,8 +807,6 @@ aside {
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
     .container-fixed {
         width: 1024px !important;
-        padding-left: 16px;
-        padding-right: 16px;
     }
     #app-navigation,
     #app-sidebar-vue {
@@ -794,20 +818,18 @@ aside {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    .container-fixed {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     #header .container-fixed .header-right .navbar-icons a label {
         font-size: 12px;
+    }
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 0 !important;
+    }
+    .app-files #app-content {
+        width: 100% !important;
     }
 }
 
 @media screen and (min-width: 375px) and (max-width: 639px) {
-    .container-fixed {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     .header-left #nextcloud h5 {
         font-size: 14px !important;
         padding-left: 5px !important;
@@ -827,10 +849,6 @@ aside {
 }
 
 @media screen and (max-width: 375px) {
-    .container-fixed {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     #header .container-fixed .header-left .logo-area {
         display: none;
     }
@@ -861,9 +879,6 @@ aside {
     }
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 5px;
-    }
-    #app-navigation {
-        width: auto !important;
     }
     #filestable tbody {
         row-gap: unset !important;
@@ -999,6 +1014,8 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #filestable tbody tr:active,
+#filestable tbody tr:hover,
+#filestable tbody tr:focus,
 #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus,
 #filestable tbody tr.selected,
@@ -1024,15 +1041,15 @@ table th#headerDate {
 }
 
 #filestable #headerName-container {
-    height: 32px !important;
+    height: 40px !important;
 }
 
 #filestable #selectedActionsList {
-    height: 32px !important
+    height: 40px !important
 }
 
 #filestable th .columntitle {
-    height: 32px !important;
+    height: 40px !important;
 }
 
 #headerDate #headerSelection label {
@@ -1057,6 +1074,11 @@ table th#headerDate {
     margin-top: 4px;
     background-size: cover;
     border: none;
+}
+
+#fileList tr td.filename .favorite-mark {
+    top: 27px;
+    right: -11px;
 }
 
 #filestable .icon-shared {
@@ -1092,7 +1114,7 @@ table th#headerDate {
 }
 
 #filestable input[type='checkbox'].checkbox+label:before {
-    margin: 0px 0px 0px 3px;
+    margin: 0rem !important;
 }
 
 #filestable .filename .action .icon {
@@ -1106,37 +1128,37 @@ table th#headerDate {
     min-height: 24px !important;
 }
 
-#fileList tr td.selection>.selectCheckBox+label {
-    width: 55px;
-    height: 55px;
-    padding: 16px 20px !important;
+#filestable:not(.view-grid) tr td.selection>.selectCheckBox+label {
+    width: 54px;
+    padding: 1rem 0rem !important;
     display: inline-block !important;
 }
 
 .select-all+label {
-    width: 55px;
-    height: 55px;
-    padding: 24px 20px !important;
+    width: 54px;
+    height: 52px;
+    padding: 1rem 0rem !important;
     display: inline-block !important;
+    text-align: center;
 }
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
     border: 1px solid #73C354 !important;
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
     border-radius: 50px !important;
 }
 
 .selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
     border: 1px solid #73C354 !important;
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
     border-radius: 50px !important;
 }
 
-#filestable:not(.view-grid) input[type='checkbox'].checkbox:checked+label:before {
+#filestable input[type='checkbox'].checkbox:checked+label:before {
     background-image: var(--icon-checkbox-checkmark) !important;
     background-position: -26% 13%;
     box-sizing: border-box;
@@ -1216,6 +1238,30 @@ table th#headerDate {
 
 #filestable tfoot .summary .info {
     margin-left: 78px;
+}
+
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .fileactions {
+    background-color: unset !important;
 }
 
 
@@ -1370,9 +1416,10 @@ table th .sort-indicator {
 }
 
 #filestable .filename .favorite-mark .icon-starred {
-    background-image: var(--icon-star-dark-FC0);
-    padding-top: 88px;
-    background-size: 20px;
+    background-image: var( --icon-yellow-fav) !important;
+    background-size: 24px;
+    min-width: 24px !important;
+    min-height: 24px !important;
 }
 
 #view-toggle {
@@ -1426,10 +1473,9 @@ table th .sort-indicator {
 }
 
 #filestable.view-grid tbody td.selection {
-    top: 9px !important;
+    top: 10px !important;
     left: unset !important;
-    right: 9px;
-    opacity: 0;
+    right: 10px;
 }
 
 #filestable.view-grid tbody tr.selected td.selection {
@@ -1463,24 +1509,20 @@ table th .sort-indicator {
     background-color: rgb(242 242 242 / 50%) !important;
 }
 
-#filestable.view-grid .filename a .name {
+
+/* #filestable.view-grid .filename a .name {
     overflow: unset !important;
 }
 
 #filestable.view-grid .filename .fileactions a {
     display: none !important;
-}
+} */
 
 #filestable.view-grid tbody td.filename .name .nametext {
     margin-top: 133px !important;
 }
 
-#filestable.view-grid td.filename .nametext .innernametext {
-    padding-top: 6px !important;
-    padding-left: 0px !important;
-}
-
-#filestable.view-grid tbody tr:hover .nametext {
+*/ #filestable.view-grid tbody tr:hover .nametext {
     background-color: unset !important;
 }
 
@@ -1494,8 +1536,8 @@ table th .sort-indicator {
 
 #filestable.view-grid tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
     padding: 14px;
-    left: 42px !important;
-    top: 47px !important;
+    left: 36px !important;
+    top: 79px !important;
     right: unset !important;
 }
 
@@ -1503,7 +1545,14 @@ table th .sort-indicator {
     background-color: unset !important;
 }
 
-#controls,
+#filestable.view-grid td.filename .nametext .innernametext {
+    padding: 0.5rem 0.188rem 1rem 0.188rem;
+}
+
+#filestable.view-grid:not(.hidden) tbody td.filename .name .nametext:after {
+    min-width: 6px !important;
+}
+
 .controls-section {
     top: 0;
     width: 100%;
@@ -1516,14 +1565,6 @@ table th .sort-indicator {
 
 
 /*flexbox-change-properties-for-thumbnail-labels*/
-
-#filestable.view-grid tbody td.filename .name .nametext {
-    display: unset !important;
-}
-
-table.view-grid td.filename .nametext {
-    display: unset !important;
-}
 
 #filestable.view-grid tfoot .summary {
     margin-left: 0px !important;
@@ -1779,7 +1820,7 @@ div.crumb:last-child {
 /** Grid Icons ***********************************/
 
 
-/*
+/* 
 #filestable [data-mime="text/plain"] .thumbnail,
 #filestable [data-mime="text/markdown"] .thumbnail,
 #filestable [data-mime="application/octet-stream"] .thumbnail,
@@ -1837,7 +1878,8 @@ div.crumb:last-child {
     background-image: var(--grid-file-video-icon) !important;
 }
 
-#filestable [data-mime="image/webp"] .thumbnail,
+
+/* #filestable [data-mime="image/webp"] .thumbnail,
 #filestable [data-mime="image/bmp"] .thumbnail,
 #filestable [data-mime="image/png"] .thumbnail,
 #filestable [data-mime="image/heic"] .thumbnail,
@@ -1847,9 +1889,10 @@ div.crumb:last-child {
 #filestable [data-mime="application/postscript"] .thumbnail,
 #filestable [data-mime="image/x-dcraw"] .thumbnail {
     background-image: var(--grid-file-img-icon) !important;
-}
+} */
 
-#filestable [data-mime="httpd/unix-directory"] .thumbnail {
+
+/* #filestable [data-mime="httpd/unix-directory"] .thumbnail {
     background-image: var(--grid-folder-icon) !important;
 }
 
@@ -1859,7 +1902,7 @@ div.crumb:last-child {
 
 #filestable [data-icon] .thumbnail {
     background-image: var(--grid-folder-shared-icon) !important;
-}*/
+} */
 
 .brand-bar-translation {
     height: 9px;
@@ -2955,9 +2998,6 @@ body#body-login.nmc-guest {
 }
 
 @media screen and (max-width: 1024px) {
-    .app-files #app-content {
-        width: 100%;
-    }
     .brand-footer .brand-footer-bar {
         justify-content: space-between;
     }
