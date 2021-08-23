@@ -496,7 +496,7 @@ aside {
 
 #header #header-right,
 #header .header-right {
-    padding-right: 16px;
+    padding-right: 1rem;
 }
 
 #appmenu li {
@@ -1114,7 +1114,7 @@ table th#headerDate {
 }
 
 #filestable input[type='checkbox'].checkbox+label:before {
-    margin: 0px !important;
+    margin: 0rem !important;
 }
 
 #filestable .filename .action .icon {
@@ -1130,14 +1130,14 @@ table th#headerDate {
 
 #filestable:not(.view-grid) tr td.selection>.selectCheckBox+label {
     width: 54px;
-    padding: 16px 0px !important;
+    padding: 1rem 0rem !important;
     display: inline-block !important;
 }
 
 .select-all+label {
     width: 54px;
     height: 52px;
-    padding: 16px 0px !important;
+    padding: 1rem 0rem !important;
     display: inline-block !important;
     text-align: center;
 }
@@ -1238,6 +1238,30 @@ table th#headerDate {
 
 #filestable tfoot .summary .info {
     margin-left: 78px;
+}
+
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .fileactions,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .thumbnail-wrapper,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .nametext,
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .fileactions {
+    background-color: unset !important;
 }
 
 
@@ -1522,7 +1546,7 @@ table th .sort-indicator {
 }
 
 #filestable.view-grid td.filename .nametext .innernametext {
-    padding: 8px 3px 16px 3px;
+    padding: 0.5rem 0.188rem 1rem 0.188rem;
 }
 
 #filestable.view-grid:not(.hidden) tbody td.filename .name .nametext:after {
@@ -2927,30 +2951,6 @@ body#body-login.nmc-guest {
         margin-left: 0;
         margin-bottom: 1rem;
     }
-}
-
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .nametext,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .fileactions,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .nametext,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .fileactions,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .nametext,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active .fileactions,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .nametext,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected .fileactions,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .nametext,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult .fileactions,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .nametext,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) .name:focus .fileactions,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .thumbnail-wrapper,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .nametext,
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .fileactions {
-    background-color: unset !important;
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
