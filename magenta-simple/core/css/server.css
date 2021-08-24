@@ -1653,9 +1653,8 @@ div.crumb:last-child {
 #emptycontent,
 .emptycontent {
     /* padding-top: 30vh !important; */
-    padding-top: 6vh !important;
-    padding-bottom: 40vh !important;
-    margin-top: 0 !important;
+    padding-top: 8vh !important;
+    margin-top: 0 !important
 }
 
 .crumb .icon-shared {
@@ -2942,8 +2941,21 @@ body#body-login.nmc-guest {
     margin: 0 auto !important;
 }
 
-#emptycontent h2,
-.emptycontent h2 {
+.guest-emptycontent {
+    padding-bottom: 35vh;
+}
+
+.icon-folder,
+.icon-filetype-folder .guest-emptycontent h2:nth-child(1) {
+    margin: 1rem 0 !important;
+}
+
+.guest-emptycontent h2:nth-child(2) {
+    font-weight: normal !important;
+}
+
+.guest-emptycontent h2,
+.folder-name h2 {
     font-size: 1.25rem !important;
     margin-bottom: 0.5rem !important;
 }
