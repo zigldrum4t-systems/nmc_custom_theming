@@ -2910,21 +2910,22 @@ body#body-login.nmc-guest {
 
 .icon-folder,
 .icon-filetype-folder {
-    background-image: var(--grid-folder-icon) !important;
+    background-image: var(--icon-folder-custom) !important;
     background-size: cover !important;
-}
-
-.unified-search__result-icon--no-preview .icon-folder {
-    background-size: cover !important;
-}
-
-.unified-search__result-icon--no-preview {
-    background-size: 44px !important;
+    margin-top: 0.188rem !important;
 }
 
 .unified-search__result-icon--with-thumbnail:not(.unified-search__result-icon--rounded) {
     max-width: 2.75rem !important;
     max-height: 2.75rem !important;
+}
+
+.unified-search__filters {
+    display: none !important;
+}
+
+.icon-settings {
+    background-image: var( --icon-setting-custom) !important;
 }
 
 
