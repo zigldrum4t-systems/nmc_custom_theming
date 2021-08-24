@@ -1081,7 +1081,8 @@ table th#headerDate {
     width: 44px !important;
     height: 44px !important;
     margin-top: 4px;
-    background-size: cover;
+    background-position: center center;
+    background-size: 74px !important;
     border: none;
 }
 
