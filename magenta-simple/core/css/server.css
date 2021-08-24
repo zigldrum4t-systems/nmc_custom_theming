@@ -2918,21 +2918,40 @@ body#body-login.nmc-guest {
 
 .icon-folder,
 .icon-filetype-folder {
-    background-image: var(--grid-folder-icon) !important;
+    background-image: var(--icon-folder-custom) !important;
     background-size: cover !important;
-}
-
-.unified-search__result-icon--no-preview .icon-folder {
-    background-size: cover !important;
-}
-
-.unified-search__result-icon--no-preview {
-    background-size: 44px !important;
+    margin-top: 0.188rem !important;
 }
 
 .unified-search__result-icon--with-thumbnail:not(.unified-search__result-icon--rounded) {
     max-width: 2.75rem !important;
     max-height: 2.75rem !important;
+}
+
+.unified-search__filters {
+    display: none !important;
+}
+
+.icon-settings {
+    background-image: var( --icon-setting-custom) !important;
+}
+
+.breadcrumb .popovermenu {
+    padding: 1rem 0.5rem 1rem 0.5rem !important;
+    box-shadow: var(--scl-shadow-level-2);
+    border-radius: 8px;
+}
+
+.breadcrumb .popovermenu li>a {
+    align-items: center !important;
+}
+
+.breadcrumb .popovermenu li>a span[class] {
+    margin-right: 0.5rem !important;
+}
+
+div.crumb.crumbmenu .popovermenu ul {
+    padding-right: 0 !important;
 }
 
 
