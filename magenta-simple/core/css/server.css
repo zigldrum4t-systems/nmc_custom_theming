@@ -1561,10 +1561,11 @@ table th .sort-indicator {
     padding: 0px !important;
 }
 
-#fileList tr td.selection .selectCheckBox+label,
+
+/* #fileList tr td.selection .selectCheckBox+label,
 .select-all+label {
     padding: 16px !important;
-}
+} */
 
 .controls-section {
     top: 0;
