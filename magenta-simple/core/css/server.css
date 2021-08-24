@@ -2948,6 +2948,10 @@ body#body-login.nmc-guest {
     display: none !important;
 }
 
+.unified-search__result-icon--no-preview {
+    background-size: cover !important;
+}
+
 .icon-settings {
     background-image: var( --icon-setting-custom) !important;
 }
