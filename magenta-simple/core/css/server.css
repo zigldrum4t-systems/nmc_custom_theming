@@ -1433,6 +1433,7 @@ table th .sort-indicator {
     padding: 0;
     height: 24px;
     width: 24px;
+    margin-right: 1rem;
     border-radius: 0;
 }
 
@@ -1553,12 +1554,13 @@ table th .sort-indicator {
     min-width: 6px !important;
 }
 
+#controls,
 .controls-section {
     top: 0;
     width: 100%;
-    height: 48px;
+    height: 47px;
     padding: 0;
-    margin-left: 1rem;
+    margin-left: .2rem;
     margin-bottom: 2em;
     background-color: #f2f2f2;
 }
@@ -1590,7 +1592,7 @@ table th .sort-indicator {
 
 .breadcrumb-translation {
     top: 4.5em;
-    transition: top .4s ease-out;
+    border-top: 1px solid #e5e5e5;
 }
 
 #content {
@@ -1665,21 +1667,25 @@ div.crumb:last-child {
 }
 
 #app-navigation-toggle {
-    top: 8.2em;
-    background-color: #f2f2f2;
+    top: 8.5em;
     height: 48px;
 }
 
 .snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
-    left: -57px;
+    left: 0;
     top: 0;
     transition: none;
 }
 
 .snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
     left: -92%;
-    top: 0;
+    top: -1px;
     transition: none;
+}
+
+.snapjs-left #app-content:not([style=''])>.viewcontainer #controls {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #app-navigation-toggle.app-navigation-translation {
@@ -2932,9 +2938,8 @@ body#body-login.nmc-guest {
 
 @media screen and (max-width: 375px) {
     #controls {
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        padding: 0 !important;
+        margin: 0 0 1rem 0 !important;
+        padding: 0 0 0 2rem !important;
     }
     .login-section .logo {
         margin: 5rem auto .5rem auto;
@@ -2991,9 +2996,8 @@ body#body-login.nmc-guest {
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     #controls {
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-        padding: 0 !important;
+        margin: 0 0 1rem 0 !important;
+        padding: 0 0 0 3rem !important;
     }
 }
 
@@ -3007,6 +3011,15 @@ body#body-login.nmc-guest {
     #header .brandbar-logo-magenta {
         margin-left: 0 !important;
     }
+}
+
+@media screen and (min-width: 1025px) {
+    .breadcrumb-translation {
+        transition: top .4s ease-out;
+    }
+    /* .full-width-breadcrumb {
+        border-bottom: 1px solid #e5e5e5;
+    } */
 }
 
 
