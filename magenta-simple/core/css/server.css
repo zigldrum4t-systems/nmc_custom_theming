@@ -1477,7 +1477,7 @@ table th .sort-indicator {
 }
 
 #filestable.view-grid tbody td.selection {
-    top: 12px !important;
+    top: 20px !important;
     left: unset !important;
     right: 12px;
 }
@@ -1551,6 +1551,19 @@ table th .sort-indicator {
 
 #filestable.view-grid:not(.hidden) tbody td.filename .name .nametext:after {
     min-width: 6px !important;
+}
+
+#filestable.view-grid:not(.hidden) tbody td.selection label,
+#filestable.view-grid:not(.hidden) tbody td.filename .favorite-mark label {
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    padding: 0px !important;
+}
+
+#fileList tr td.selection .selectCheckBox+label,
+.select-all+label {
+    padding: 16px !important;
 }
 
 .controls-section {
