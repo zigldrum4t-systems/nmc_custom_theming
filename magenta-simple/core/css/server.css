@@ -721,6 +721,15 @@ aside {
     }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1499px) {
+    #app-navigation:not(.hidden)+#app-content {
+        margin-left: 320px;
+    }
+    .app-files #app-content {
+        width: calc(100% - 320px);
+    }
+}
+
 .shrink {
     height: 5px;
 }
