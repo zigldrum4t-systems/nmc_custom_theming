@@ -713,6 +713,9 @@ aside {
     #content>.container-fixed {
         width: 1009px;
     }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1499px) {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
@@ -1072,7 +1075,8 @@ table th#headerDate {
     width: 44px !important;
     height: 44px !important;
     margin-top: 4px;
-    background-size: cover;
+    background-position: center center;
+    background-size: 74px !important;
     border: none;
 }
 
@@ -1433,6 +1437,7 @@ table th .sort-indicator {
     padding: 0;
     height: 24px;
     width: 24px;
+    margin-right: 1rem;
     border-radius: 0;
 }
 
@@ -1473,9 +1478,9 @@ table th .sort-indicator {
 }
 
 #filestable.view-grid tbody td.selection {
-    top: 10px !important;
+    top: 20px !important;
     left: unset !important;
-    right: 10px;
+    right: 12px;
 }
 
 #filestable.view-grid tbody tr.selected td.selection {
@@ -1509,20 +1514,16 @@ table th .sort-indicator {
     background-color: rgb(242 242 242 / 50%) !important;
 }
 
-
-/* #filestable.view-grid .filename a .name {
-    overflow: unset !important;
+#filestable.view-grid:not(.hidden) tbody td.selection label,
+#filestable.view-grid:not(.hidden) tbody td.filename .favorite-mark label {
+    box-sizing: unset !important;
 }
-
-#filestable.view-grid .filename .fileactions a {
-    display: none !important;
-} */
 
 #filestable.view-grid tbody td.filename .name .nametext {
     margin-top: 133px !important;
 }
 
-*/ #filestable.view-grid tbody tr:hover .nametext {
+#filestable.view-grid tbody tr:hover .nametext {
     background-color: unset !important;
 }
 
@@ -1553,12 +1554,21 @@ table th .sort-indicator {
     min-width: 6px !important;
 }
 
+#filestable.view-grid:not(.hidden) tbody td.selection label,
+#filestable.view-grid:not(.hidden) tbody td.filename .favorite-mark label {
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    padding: 0px !important;
+}
+
+#controls,
 .controls-section {
     top: 0;
     width: 100%;
-    height: 48px;
+    height: 47px;
     padding: 0;
-    margin-left: 1rem;
+    margin-left: .2rem;
     margin-bottom: 2em;
     background-color: #f2f2f2;
 }
@@ -1590,7 +1600,7 @@ table th .sort-indicator {
 
 .breadcrumb-translation {
     top: 4.5em;
-    transition: top .4s ease-out;
+    border-top: 1px solid #e5e5e5;
 }
 
 #content {
@@ -1666,21 +1676,25 @@ div.crumb:last-child {
 }
 
 #app-navigation-toggle {
-    top: 8.2em;
-    background-color: #f2f2f2;
+    top: 8.5em;
     height: 48px;
 }
 
 .snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
-    left: -57px;
+    left: 0;
     top: 0;
     transition: none;
 }
 
 .snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
     left: -92%;
-    top: 0;
+    top: -1px;
     transition: none;
+}
+
+.snapjs-left #app-content:not([style=''])>.viewcontainer #controls {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #app-navigation-toggle.app-navigation-translation {
@@ -2687,6 +2701,7 @@ li>.menuitem[class*=' icon-'] {
 #theming-preview {
     background: url('/themes/magenta-simple/core/img/dt_background.jpg') no-repeat !important;
     background-color: unset !important;
+    background-size: cover !important;
 }
 
 .login-main {
@@ -2747,7 +2762,11 @@ li>.menuitem[class*=' icon-'] {
     padding: 0;
 }
 
-.login-section .body-login-container button {
+.login-section .body-login-container a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
     background: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -2756,14 +2775,14 @@ li>.menuitem[class*=' icon-'] {
     min-height: 40px;
 }
 
-.login-section .body-login-container button svg {
+.login-section .body-login-container a svg {
     vertical-align: middle;
     margin-right: 5px;
 }
 
-.login-section .body-login-container button:hover,
-.login-section .body-login-container button:active,
-.login-section .body-login-container button:focus {
+.login-section .body-login-container a:hover,
+.login-section .body-login-container a:active,
+.login-section .body-login-container a:focus {
     color: #e20074 !important;
     background: #fff !important;
 }
@@ -2771,12 +2790,12 @@ li>.menuitem[class*=' icon-'] {
 .login-section .body-login-container img {
     vertical-align: middle;
     margin-right: 0.5rem;
-    margin-top: -5px;
+    margin-top: -2px;
 }
 
-.login-section .body-login-container button:hover img,
-.login-section .body-login-container button:active img,
-.login-section .body-login-container button:focus img {
+.login-section .body-login-container a:hover img,
+.login-section .body-login-container a:active img,
+.login-section .body-login-container a:focus img {
     filter: invert(26%) sepia(93%) saturate(6250%) hue-rotate( 318deg) brightness(84%) contrast(114%);
 }
 
@@ -2814,6 +2833,11 @@ body#body-login.nmc-guest {
     height: 96px;
     background-size: 100% 100%;
     margin: 0 auto;
+}
+
+.nmc-guest .container-fixed,
+.nmc-login .container-fixed {
+    padding: 0 1rem;
 }
 
 
@@ -2911,21 +2935,40 @@ body#body-login.nmc-guest {
 
 .icon-folder,
 .icon-filetype-folder {
-    background-image: var(--grid-folder-icon) !important;
+    background-image: var(--icon-folder-custom) !important;
     background-size: cover !important;
-}
-
-.unified-search__result-icon--no-preview .icon-folder {
-    background-size: cover !important;
-}
-
-.unified-search__result-icon--no-preview {
-    background-size: 44px !important;
+    margin-top: 0.188rem !important;
 }
 
 .unified-search__result-icon--with-thumbnail:not(.unified-search__result-icon--rounded) {
     max-width: 2.75rem !important;
     max-height: 2.75rem !important;
+}
+
+.unified-search__filters {
+    display: none !important;
+}
+
+.icon-settings {
+    background-image: var( --icon-setting-custom) !important;
+}
+
+.breadcrumb .popovermenu {
+    padding: 1rem 0.5rem 1rem 0.5rem !important;
+    box-shadow: var(--scl-shadow-level-2);
+    border-radius: 8px;
+}
+
+.breadcrumb .popovermenu li>a {
+    align-items: center !important;
+}
+
+.breadcrumb .popovermenu li>a span[class] {
+    margin-right: 0.5rem !important;
+}
+
+div.crumb.crumbmenu .popovermenu ul {
+    padding-right: 0 !important;
 }
 
 
@@ -2969,11 +3012,10 @@ body#body-login.nmc-guest {
 
 @media screen and (max-width: 375px) {
     #controls {
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        padding: 0 !important;
+        margin: 0 0 1rem 0 !important;
+        padding: 0 0 0 2rem !important;
     }
-    .login-section .logo {
+    .nmc-guest .login-section .logo {
         margin: 5rem auto .5rem auto;
     }
     .nmc-guest .body-login-container {
@@ -2985,9 +3027,16 @@ body#body-login.nmc-guest {
     .nmc-guest .login-section {
         margin-bottom: 5rem;
     }
-    .login-section .body-login-container button {
+    .login-section .body-login-container a {
         margin: 0 -1rem;
         padding: 0 0.5rem !important;
+    }
+    .login-main {
+        height: 66vh;
+    }
+    .nmc-guest .body-login-container {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -3018,7 +3067,7 @@ body#body-login.nmc-guest {
         margin-left: 0;
         margin-bottom: 1rem;
     }
-    .login-section .body-login-container button {
+    .login-section .body-login-container a {
         padding: 0 1rem;
     }
     .brand-footer ul li:nth-child(2n) {
@@ -3028,9 +3077,8 @@ body#body-login.nmc-guest {
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     #controls {
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-        padding: 0 !important;
+        margin: 0 0 1rem 0 !important;
+        padding: 0 0 0 3rem !important;
     }
 }
 
@@ -3043,6 +3091,12 @@ body#body-login.nmc-guest {
     }
     #header .brandbar-logo-magenta {
         margin-left: 0 !important;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .breadcrumb-translation {
+        transition: top .4s ease-out;
     }
 }
 
