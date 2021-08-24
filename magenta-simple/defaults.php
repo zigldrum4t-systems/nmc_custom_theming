@@ -140,4 +140,9 @@ class OC_Theme {
 	public function addCustomScript() {
 		Util::addScript('brandbar');
 	}
+
+    public function __construct() {
+		\OCP\Util::addScript('core', 'customutils');
+	    \OCP\Util::addScript('core', 'mimetypelist');
+	 }
 }
