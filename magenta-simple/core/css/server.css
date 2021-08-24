@@ -1437,6 +1437,7 @@ table th .sort-indicator {
     padding: 0;
     height: 24px;
     width: 24px;
+    margin-right: 1rem;
     border-radius: 0;
 }
 
@@ -1522,7 +1523,7 @@ table th .sort-indicator {
     margin-top: 133px !important;
 }
 
-*/ #filestable.view-grid tbody tr:hover .nametext {
+#filestable.view-grid tbody tr:hover .nametext {
     background-color: unset !important;
 }
 
@@ -1561,12 +1562,13 @@ table th .sort-indicator {
     padding: 0px !important;
 }
 
+#controls,
 .controls-section {
     top: 0;
     width: 100%;
-    height: 48px;
+    height: 47px;
     padding: 0;
-    margin-left: 1rem;
+    margin-left: .2rem;
     margin-bottom: 2em;
     background-color: #f2f2f2;
 }
@@ -1598,7 +1600,7 @@ table th .sort-indicator {
 
 .breadcrumb-translation {
     top: 4.5em;
-    transition: top .4s ease-out;
+    border-top: 1px solid #e5e5e5;
 }
 
 #content {
@@ -1673,21 +1675,25 @@ div.crumb:last-child {
 }
 
 #app-navigation-toggle {
-    top: 8.2em;
-    background-color: #f2f2f2;
+    top: 8.5em;
     height: 48px;
 }
 
 .snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
-    left: -57px;
+    left: 0;
     top: 0;
     transition: none;
 }
 
 .snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
     left: -92%;
-    top: 0;
+    top: -1px;
     transition: none;
+}
+
+.snapjs-left #app-content:not([style=''])>.viewcontainer #controls {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #app-navigation-toggle.app-navigation-translation {
@@ -2694,6 +2700,7 @@ li>.menuitem[class*=' icon-'] {
 #theming-preview {
     background: url('/themes/magenta-simple/core/img/dt_background.jpg') no-repeat !important;
     background-color: unset !important;
+    background-size: cover !important;
 }
 
 .login-main {
@@ -2754,7 +2761,11 @@ li>.menuitem[class*=' icon-'] {
     padding: 0;
 }
 
-.login-section .body-login-container button {
+.login-section .body-login-container a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
     background: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -2763,14 +2774,14 @@ li>.menuitem[class*=' icon-'] {
     min-height: 40px;
 }
 
-.login-section .body-login-container button svg {
+.login-section .body-login-container a svg {
     vertical-align: middle;
     margin-right: 5px;
 }
 
-.login-section .body-login-container button:hover,
-.login-section .body-login-container button:active,
-.login-section .body-login-container button:focus {
+.login-section .body-login-container a:hover,
+.login-section .body-login-container a:active,
+.login-section .body-login-container a:focus {
     color: #e20074 !important;
     background: #fff !important;
 }
@@ -2778,12 +2789,12 @@ li>.menuitem[class*=' icon-'] {
 .login-section .body-login-container img {
     vertical-align: middle;
     margin-right: 0.5rem;
-    margin-top: -5px;
+    margin-top: -2px;
 }
 
-.login-section .body-login-container button:hover img,
-.login-section .body-login-container button:active img,
-.login-section .body-login-container button:focus img {
+.login-section .body-login-container a:hover img,
+.login-section .body-login-container a:active img,
+.login-section .body-login-container a:focus img {
     filter: invert(26%) sepia(93%) saturate(6250%) hue-rotate( 318deg) brightness(84%) contrast(114%);
 }
 
@@ -2821,6 +2832,11 @@ body#body-login.nmc-guest {
     height: 96px;
     background-size: 100% 100%;
     margin: 0 auto;
+}
+
+.nmc-guest .container-fixed,
+.nmc-login .container-fixed {
+    padding: 0 1rem;
 }
 
 
@@ -2959,11 +2975,10 @@ div.crumb.crumbmenu .popovermenu ul {
 
 @media screen and (max-width: 375px) {
     #controls {
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        padding: 0 !important;
+        margin: 0 0 1rem 0 !important;
+        padding: 0 0 0 2rem !important;
     }
-    .login-section .logo {
+    .nmc-guest .login-section .logo {
         margin: 5rem auto .5rem auto;
     }
     .nmc-guest .body-login-container {
@@ -2975,9 +2990,16 @@ div.crumb.crumbmenu .popovermenu ul {
     .nmc-guest .login-section {
         margin-bottom: 5rem;
     }
-    .login-section .body-login-container button {
+    .login-section .body-login-container a {
         margin: 0 -1rem;
         padding: 0 0.5rem !important;
+    }
+    .login-main {
+        height: 66vh;
+    }
+    .nmc-guest .body-login-container {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -3008,7 +3030,7 @@ div.crumb.crumbmenu .popovermenu ul {
         margin-left: 0;
         margin-bottom: 1rem;
     }
-    .login-section .body-login-container button {
+    .login-section .body-login-container a {
         padding: 0 1rem;
     }
     .brand-footer ul li:nth-child(2n) {
@@ -3018,9 +3040,8 @@ div.crumb.crumbmenu .popovermenu ul {
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     #controls {
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-        padding: 0 !important;
+        margin: 0 0 1rem 0 !important;
+        padding: 0 0 0 3rem !important;
     }
 }
 
@@ -3033,6 +3054,12 @@ div.crumb.crumbmenu .popovermenu ul {
     }
     #header .brandbar-logo-magenta {
         margin-left: 0 !important;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .breadcrumb-translation {
+        transition: top .4s ease-out;
     }
 }
 
