@@ -2929,7 +2929,7 @@ body#body-login.nmc-guest {
 }
 
 .breadcrumb .popovermenu {
-    padding: 16px 8px 16px 8px !important;
+    padding: 1rem 0.5rem 1rem 0.5rem !important;
     box-shadow: var(--scl-shadow-level-2);
     border-radius: 8px;
 }
@@ -2943,7 +2943,7 @@ body#body-login.nmc-guest {
 }
 
 div.crumb.crumbmenu .popovermenu ul {
-    padding-right: 0px !important;
+    padding-right: 0 !important;
 }
 
 
