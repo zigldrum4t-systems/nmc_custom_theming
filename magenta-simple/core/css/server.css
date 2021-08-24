@@ -2928,6 +2928,24 @@ body#body-login.nmc-guest {
     background-image: var( --icon-setting-custom) !important;
 }
 
+.breadcrumb .popovermenu {
+    padding: 16px 8px 16px 8px !important;
+    box-shadow: var(--scl-shadow-level-2);
+    border-radius: 8px;
+}
+
+.breadcrumb .popovermenu li>a {
+    align-items: center !important;
+}
+
+.breadcrumb .popovermenu li>a span[class] {
+    margin-right: 0.5rem !important;
+}
+
+div.crumb.crumbmenu .popovermenu ul {
+    padding-right: 0px !important;
+}
+
 
 /*Responsive Styling*/
 
