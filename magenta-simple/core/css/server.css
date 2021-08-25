@@ -1446,7 +1446,8 @@ table th .sort-indicator {
 
 #view-toggle:hover,
 .icon-delete:hover,
-a.menu-option:hover>span {
+a.menu-option:hover>span,
+.icon-home:hover {
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
@@ -1573,7 +1574,7 @@ a.menu-option:hover>span {
     width: 100%;
     height: 47px;
     padding: 0;
-    margin-left: .2rem;
+    /* margin-left: .2rem; */
     margin-bottom: 2em;
     background-color: #f2f2f2;
 }
@@ -1618,27 +1619,6 @@ a.menu-option:hover>span {
     box-sizing: border-box;
 }
 
-.icon-home {
-    background-image: var(--icon-home-custom);
-}
-
-.icon-home:hover {
-    background-image: var(--icon-home-magenta);
-}
-
-div.crumb {
-    background-image: var(--icon-breadcrumb-custom);
-}
-
-.icon-add {
-    background-image: var(--icon-breadcrumb-add-custom);
-    opacity: 0.9 !important;
-}
-
-.icon-toggle-filelist {
-    background-image: var(--icon-view-toggle-list-custom);
-}
-
 .actions {
     padding: 8px;
 }
@@ -1661,10 +1641,6 @@ div.crumb:last-child {
     margin-right: 0 !important;
 }
 
-.icon-toggle-pictures {
-    background-image: var(--icon-view-toggle-custom) !important;
-}
-
 #emptycontent,
 .emptycontent {
     padding-top: 30vh !important;
@@ -1681,7 +1657,9 @@ div.crumb:last-child {
 
 #app-navigation-toggle {
     top: 8.5em;
+    width: 24px;
     height: 48px;
+    margin-left: 1rem;
 }
 
 .snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
@@ -2969,10 +2947,19 @@ body#body-login.nmc-guest {
 
 .breadcrumb .popovermenu li>a {
     align-items: center !important;
+    margin-bottom: 1rem !important;
+    padding: 0 !important;
+}
+
+.breadcrumb .popovermenu li:last-child a {
+    margin-bottom: 0 !important;
 }
 
 .breadcrumb .popovermenu li>a span[class] {
-    margin-right: 0.5rem !important;
+    width: 24px !important;
+    height: 24px !important;
+    padding: 0;
+    margin-right: 1rem !important;
     background-position: unset;
 }
 
@@ -2984,18 +2971,50 @@ div.crumb.crumbmenu a {
     opacity: 1;
 }
 
+.breadcrumb {
+    margin-left: 1rem;
+}
+
 #app-content {
     position: static;
 }
 
 
+/** icons**/
+
+.icon-home {
+    background-image: var(--icon-home-custom);
+    width: 24px !important;
+}
+
+.icon-menu {
+    background-image: var(--icon-menu-custom) !important;
+}
+
+.icon-add {
+    background-image: var(--icon-breadcrumb-add-custom);
+    opacity: 0.9 !important;
+}
+
+.icon-toggle-filelist {
+    background-image: var(--icon-view-toggle-list-custom);
+}
+
+div.crumb {
+    background-image: var(--icon-breadcrumb-custom);
+}
+
+.icon-toggle-pictures {
+    background-image: var(--icon-view-toggle-custom) !important;
+}
+
+
+/** icons**/
+
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
-    #controls {
-        margin: 0 0 1rem 0 !important;
-        padding: 0 0 0 2rem !important;
-    }
     .nmc-guest .login-section .logo {
         margin: 5rem auto .5rem auto;
     }
@@ -3057,9 +3076,8 @@ div.crumb.crumbmenu a {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    #controls {
-        margin: 0 0 1rem 0 !important;
-        padding: 0 0 0 3rem !important;
+    .breadcrumb {
+        margin-left: 2rem;
     }
 }
 
@@ -3072,6 +3090,10 @@ div.crumb.crumbmenu a {
     }
     #header .brandbar-logo-magenta {
         margin-left: 0 !important;
+    }
+    #controls {
+        margin: 0 0 1rem 0 !important;
+        padding: 0 0 0 2.5rem !important;
     }
 }
 
