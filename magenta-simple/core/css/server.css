@@ -107,6 +107,11 @@ body {
 
 /* ---------------------------------------------------------------------------- */
 
+#app-navigation:not(.vue)>ul>li>a,
+#app-navigation:not(.vue)>ul>li>ul>li>a {
+    background-size: 24px 24px !important;
+}
+
 #app-navigation {
     z-index: 10 !important;
     left: unset !important;
@@ -131,20 +136,13 @@ body {
 #app-navigation>ul>li>a,
 #app-navigation>ul>li>ul {
     line-height: 48px;
-    padding: 3px 12px 0 44px !important;
+    padding: 0.188rem 0rem 0rem 3rem !important;
 }
 
 #app-navigation>ul {
     overflow-y: unset;
     overflow-x: unset;
     margin-top: 4em;
-}
-
-#app-navigation>ul>li>a:hover {
-    color: var(--scl-color-magenta) !important;
-    opacity: 1 !important;
-    text-decoration: none;
-    background-color: #f2f2f2 !important;
 }
 
 #app-navigation>ul>li>a:active,
@@ -231,16 +229,15 @@ body {
 }
 
 #app-navigation .custom-button .btn-style {
-    width: 70%;
+    padding: 0.563rem 1.5rem !important;
     border: 1px solid #191919;
     background-color: #fff;
     margin-left: 10px;
     color: #191919;
-    margin-bottom: 12px;
     display: inline-block;
     border-radius: 4px;
-    padding: 6px 12px;
-    font-size: 14px;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+    font-size: 16px;
     line-height: 1.42857143;
     cursor: pointer;
     font-weight: 400;
@@ -251,7 +248,7 @@ body {
 }
 
 #app-navigation .custom-button .btn-style:hover {
-    background-color: #f4f4f4;
+    color: #e20074 !important;
 }
 
 #app-navigation>ul>li::selection {
@@ -946,9 +943,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 #app-settings-header .settings-button.opened {
-    border-top: solid 1px var(--color-border);
-    background-color: var(--color-main-background);
-    background-image: var(--icon-triangle-s-e20074);
+    border-top: unset !important;
 }
 
 
@@ -983,9 +978,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 /*-------------------MemoryLogo------------------------------*/
 
 .Memory-consumed {
-    margin-left: 4px;
-    margin-bottom: 8px;
-    margin-top: 0px !important;
+    padding-left: 16px;
 }
 
 .Memory-consumed .left-logo {
@@ -1006,6 +999,12 @@ input[type="checkbox"].checkbox+label:before:hover {
 #app-settings-header .settings-button {
     color: #e20074 !important;
     font-size: 16px !important;
+}
+
+#app-settings-header .settings-button:hover,
+#app-settings-header .settings-button:focus {
+    background-color: unset !important;
+    text-decoration: underline !important;
 }
 
 
