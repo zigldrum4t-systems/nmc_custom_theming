@@ -2955,6 +2955,11 @@ body#body-login.nmc-guest {
 
 .icon-settings {
     background-image: var( --icon-setting-custom) !important;
+    background-size: cover !important;
+}
+
+.icon-confirm {
+    background-size: cover !important;
 }
 
 .breadcrumb .popovermenu {
