@@ -978,7 +978,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 /*-------------------MemoryLogo------------------------------*/
 
 .Memory-consumed {
-    padding-left: 16px;
+    padding-left: 1rem;
 }
 
 .Memory-consumed .left-logo {
