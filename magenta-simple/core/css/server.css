@@ -422,7 +422,7 @@ body {
 }
 
 aside {
-    position: absolute !important;
+    /* position: absolute !important; */
     top: 94px !important;
     min-width: unset !important;
     width: 288px !important;
@@ -613,6 +613,7 @@ aside {
 
 #content>.container-fixed {
     position: relative;
+    display: flex;
 }
 
 .brandbar {
@@ -1271,31 +1272,31 @@ table th#headerDate {
 
 /*----right-click-menu------*/
 
-#rightClickMenu .icon-starred {
+.icon-starred {
     background-image: var(--icon-favourite-custom) !important;
 }
 
-#rightClickMenu .icon-star-dark {
+.icon-star-dark {
     background-image: var( --icon-yellow-fav) !important;
 }
 
-#rightClickMenu .icon-details {
+.icon-details {
     background-image: var(--icon-user-000-org) !important;
 }
 
-#rightClickMenu .icon-rename {
+.icon-rename {
     background-image: var(--icon-edit-custom) !important;
 }
 
-#rightClickMenu .icon-external {
+.icon-external {
     background-image: var(--icon-copy-paste-custom) !important;
 }
 
-#rightClickMenu .icon-download {
+.icon-download {
     background-image: var(--icon-download-custom) !important;
 }
 
-#rightClickMenu .icon-delete {
+.icon-delete {
     background-image: var(--icon-delete-custom) !important;
 }
 
@@ -1309,9 +1310,10 @@ table th#headerDate {
     text-transform: capitalize;
 }
 
-#rightClickMenu span:hover {
+
+/* #rightClickMenu span:hover {
     color: #e20074 !important;
-}
+} */
 
 #rightClickMenu.bubble li>a {
     align-items: center !important;
@@ -1324,13 +1326,14 @@ table th#headerDate {
 
 /* Hover icons */
 
-#rightClickMenu .icon-delete:hover,
+
+/* #rightClickMenu .icon-delete:hover,
 .icon-delete:focus {
     background-image: var(--icon-delete-magenta) !important;
     filter: initial;
-}
+} 
 
-#rightClickMenu .icon-download:hover {
+.icon-download:hover {
     background-image: var(--icon-download-magenta) !important;
 }
 
@@ -1338,7 +1341,7 @@ table th#headerDate {
     background-image: var(--icon-fav-magenta) !important;
 }
 
-#rightClickMenu .icon-details:hover {
+.icon-details:hover {
     background-image: var(--icon-user-e20074) !important;
 }
 
@@ -1348,7 +1351,7 @@ table th#headerDate {
 
 #rightClickMenu .icon-external:hover {
     background-image: var(--icon-copy-paste-magenta) !important;
-}
+}*/
 
 
 /***************************************** List view sorting ******************************************************************/
@@ -1441,8 +1444,10 @@ table th .sort-indicator {
     border-radius: 0;
 }
 
-#view-toggle:hover {
-    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%)
+#view-toggle:hover,
+.icon-delete:hover,
+a.menu-option:hover>span {
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
 
@@ -2973,6 +2978,14 @@ body#body-login.nmc-guest {
 
 div.crumb.crumbmenu .popovermenu ul {
     padding-right: 0 !important;
+}
+
+div.crumb.crumbmenu a {
+    opacity: 1;
+}
+
+#app-content {
+    position: static;
 }
 
 
