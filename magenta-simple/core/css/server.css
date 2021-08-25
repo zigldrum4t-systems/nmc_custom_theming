@@ -2957,7 +2957,7 @@ body#body-login.nmc-guest {
 }
 
 .breadcrumb .popovermenu {
-    padding: 1rem 0.5rem 1rem 0.5rem !important;
+    padding: 1rem !important;
     box-shadow: var(--scl-shadow-level-2);
     border-radius: 8px;
 }
@@ -2968,6 +2968,7 @@ body#body-login.nmc-guest {
 
 .breadcrumb .popovermenu li>a span[class] {
     margin-right: 0.5rem !important;
+    background-position: unset;
 }
 
 div.crumb.crumbmenu .popovermenu ul {
