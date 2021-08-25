@@ -3003,6 +3003,11 @@ div.crumb.crumbmenu .popovermenu ul {
     margin-bottom: 0.5rem !important;
 }
 
+#emptycontent .icon-folder,
+.icon-filetype-folder {
+    background-image: var( --icon-folder-empty) !important;
+}
+
 #emptycontent .hidden {
     font-size: 1.25rem !important;
 }
