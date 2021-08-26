@@ -236,13 +236,6 @@ body {
     transition: width .6s ease;
 }
 
-.NextCloudPorgressBar .styledbar::after {
-    content: "";
-    width: 2px;
-    height: 2px;
-    background-color: #ffffff;
-}
-
 #app-navigation .progress-bar-custom li {
     list-style: none;
 }
