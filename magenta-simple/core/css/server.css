@@ -1810,7 +1810,8 @@ div.crumb:last-child {
 }
 
 .unified-search__result-content {
-    padding-bottom: 5px;
+    padding-left: 1rem !important;
+    align-items: center !important;
 }
 
 
@@ -2086,10 +2087,6 @@ div.crumb:last-child {
 .menutoggle {
     opacity: 1 !important;
     width: 24px !important;
-}
-
-.icon-loading-small {
-    display: none;
 }
 
 .header-menu__trigger {
@@ -2917,9 +2914,8 @@ body#body-login.nmc-guest {
 
 .icon-folder,
 .icon-filetype-folder {
-    background-image: var(--icon-folder-custom) !important;
+    background-image: url(/themes/magenta-simple/core/img/filetypes/folder.svg) !important;
     background-size: cover !important;
-    margin-top: 0.188rem !important;
 }
 
 .unified-search__result-icon--with-thumbnail:not(.unified-search__result-icon--rounded) {
@@ -2932,11 +2928,16 @@ body#body-login.nmc-guest {
 }
 
 .unified-search__result-icon--no-preview {
-    background-size: cover !important;
+    background-size: 150% 150% !important;
 }
 
 .icon-settings {
     background-image: var( --icon-setting-custom) !important;
+    background-size: cover !important;
+}
+
+.icon-confirm {
+    background-size: cover !important;
 }
 
 .breadcrumb .popovermenu {
