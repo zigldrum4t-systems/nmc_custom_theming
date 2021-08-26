@@ -153,15 +153,14 @@ body {
 }
 
 .NextCloudPorgressBar {
-    margin-bottom: 12px;
+    margin: 1rem 0rem;
+    padding: 0rem 2rem 0rem 1rem;
 }
 
 .NextCloudPorgressBar .customprogressbar {
-    margin-left: 9px;
-    margin-right: 30px;
     height: 7px;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .NextCloudPorgressBar .styledbar {
@@ -228,16 +227,19 @@ body {
     min-height: unset;
 }
 
+#app-navigation .custom-button {
+    padding-left: 1rem;
+}
+
 #app-navigation .custom-button .btn-style {
     padding: 0.563rem 1.5rem !important;
     border: 1px solid #191919;
     background-color: #fff;
-    margin-left: 10px;
     color: #191919;
     display: inline-block;
     border-radius: 4px;
     font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.42857143;
     cursor: pointer;
     font-weight: 400;
@@ -937,7 +939,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     border: 0;
     border-radius: 0;
     text-align: left;
-    padding-left: 42px;
+    padding-left: 2.5rem;
     font-weight: normal;
     color: var(--color-main-text);
 }
@@ -970,7 +972,6 @@ input[type="checkbox"].checkbox+label:before:hover {
 /*-------------------Memory Occupied Message Left Nav------------------------------*/
 
 .memory-ocup-message {
-    padding-left: 12px;
     font-size: 14px;
 }
 
