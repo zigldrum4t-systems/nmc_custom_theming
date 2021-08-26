@@ -1,6 +1,8 @@
 window.onload = function() {
     brandBarAnimation();
     guestInfoText();
+    searchIconLabel();
+    searchInputLabel();
 };
 
 function brandBarAnimation() {
@@ -34,5 +36,23 @@ function guestInfoText() {
             return false;
         }
     }
+}
 
+function searchIconLabel() {
+    var spanElement = document.createElement('span');
+    spanElement.className = 'menu-search-text';
+    spanElement.innerText = 'Search';
+    document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement);
+}
+
+function searchInputLabel() {
+    var ele = document.getElementsByClassName('header-menu__trigger')[0];
+    if (ele) {
+        ele.onclick = function() {
+            var spanElement = document.createElement('span');
+            spanElement.className = 'search-input-label';
+            spanElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
+            document.getElementsByClassName('unified-search__form')[0].appendChild(spanElement);
+        }
+    }
 }

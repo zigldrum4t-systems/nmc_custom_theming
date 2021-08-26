@@ -1,0 +1,30 @@
+/** icons**/
+
+.icon-home {
+    background-image: var(--icon-home-custom);
+    width: 24px !important;
+}
+
+.icon-menu {
+    background-image: var(--icon-menu-custom) !important;
+}
+
+.icon-add {
+    background-image: var(--icon-breadcrumb-add-custom);
+    opacity: 0.9 !important;
+}
+
+.icon-toggle-filelist {
+    background-image: var(--icon-view-toggle-list-custom);
+}
+
+div.crumb {
+    background-image: var(--icon-breadcrumb-custom);
+}
+
+.icon-toggle-pictures {
+    background-image: var(--icon-view-toggle-custom) !important;
+}
+
+
+/** icons**/
