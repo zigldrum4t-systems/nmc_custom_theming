@@ -116,8 +116,44 @@ body {
     z-index: 10 !important;
     left: unset !important;
     position: absolute !important;
-    top: 50px !important;
+    top: 47px !important;
     height: calc(100vh - 230px) !important;
+}
+
+#app-navigation .nav-icon-trashbin {
+    background-image: var(--icon-delete-custom) !important;
+}
+
+#app-navigation .nav-icon-trashbin:hover {
+    background-image: var(--icon-delete-magenta) !important;
+}
+
+#app-navigation ul li .nav-icon-trashbin.svg.active {
+    background-image: var(--icon-delete-magenta) !important;
+}
+
+#app-navigation .nav-icon-favorites {
+    background-image: var(--icon-favourite-custom) !important;
+}
+
+#app-navigation .nav-icon-favorites:hover {
+    background-image: var( --icon-fav-magenta) !important;
+}
+
+#app-navigation ul li .nav-icon-favorites.svg.active {
+    background-image: var(--icon-fav-magenta) !important;
+}
+
+#app-navigation .nav-icon-files {
+    background-image: var( --icon-folder-custom) !important;
+}
+
+#app-navigation .nav-icon-files:hover {
+    background-image: var( --icon-folder-magenta) !important;
+}
+
+#app-navigation ul li .nav-icon-files.svg.active {
+    background-image: var(--icon-folder-magenta) !important;
 }
 
 #app-navigation>ul>li.active,
@@ -138,6 +174,7 @@ body {
 #app-navigation:not(.vue)>ul>li a:focus,
 #app-navigation:not(.vue)>ul>li a:focus>a {
     background-color: #f2f2f2 !important;
+    color: #e20074;
 }
 
 #app-navigation>ul>li>a,
@@ -150,6 +187,10 @@ body {
     overflow-y: unset;
     overflow-x: unset;
     margin-top: 4em;
+}
+
+#sublist-favorites {
+    display: none !important;
 }
 
 #app-navigation>ul>li>a:active,
@@ -179,19 +220,27 @@ body {
 .NextCloudPorgressBar .styledbar {
     background-color: #e20074;
     border-radius: 4px;
+    box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.75);
 }
 
 .progress {
     overflow: hidden;
     background-color: #f2f2f2;
-    -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
-    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
 }
 
 .progress-bar {
     height: 100%;
     -webkit-transition: width .6s ease;
     transition: width .6s ease;
+}
+
+.NextCloudPorgressBar .styledbar::after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #ffffff;
 }
 
 #app-navigation .progress-bar-custom li {
@@ -435,7 +484,7 @@ body {
 
 aside {
     /* position: absolute !important; */
-    top: 94px !important;
+    top: 120px !important;
     min-width: unset !important;
     width: 288px !important;
 }
