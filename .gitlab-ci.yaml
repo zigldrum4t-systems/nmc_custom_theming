@@ -1,0 +1,10 @@
+---
+
+stages:
+  - build
+
+build image:
+  stage: build
+  trigger: nextmagentacloud/images
+  only:
+    - master  
