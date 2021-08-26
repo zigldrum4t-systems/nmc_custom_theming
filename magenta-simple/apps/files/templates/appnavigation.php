@@ -46,7 +46,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         </div>
 
         <span class="memory-ocup-message" data-extr="<?php echo $_['usage_relative']; ?>">
-            <?php p($l->t('Memory occupied by %s%%', [$_['usage_relative']])); ?>
+            <?php p($l->t('Memory used up to %s%%', [$_['usage_relative']])); ?>
         </span>
 
     </div>
