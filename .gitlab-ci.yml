@@ -9,4 +9,4 @@ build image:
     TARGET_DIR: 40_nextcloud-magenta
   trigger: nextmagentacloud/images
   only:
-    - master  
+    - master
