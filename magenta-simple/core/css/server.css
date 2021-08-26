@@ -133,6 +133,13 @@ body {
     text-decoration: none;
 }
 
+#app-navigation:not(.vue)>ul>li a:hover,
+#app-navigation:not(.vue)>ul>li a:hover>a,
+#app-navigation:not(.vue)>ul>li a:focus,
+#app-navigation:not(.vue)>ul>li a:focus>a {
+    background-color: #f2f2f2 !important;
+}
+
 #app-navigation>ul>li>a,
 #app-navigation>ul>li>ul {
     line-height: 48px;
@@ -1009,10 +1016,13 @@ input[type="checkbox"].checkbox+label:before:hover {
     font-size: 16px !important;
 }
 
-#app-settings-header .settings-button:hover,
-#app-settings-header .settings-button:focus {
+#app-settings-header .settings-button:hover {
     background-color: unset !important;
     text-decoration: underline !important;
+}
+
+#app-settings-header {
+    background-color: unset !important;
 }
 
 
