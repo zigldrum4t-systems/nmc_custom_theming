@@ -46,14 +46,14 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
         </div>
 
         <span class="memory-ocup-message" data-extr="<?php echo $_['usage_relative']; ?>">
-            <?php p($l->t('Memory occupied by %s%%', [$_['usage_relative']])); ?>
+            <?php p($l->t('Memory used up to %s%%', [$_['usage_relative']])); ?>
         </span>
 
     </div>
     
     <div class="custom-button">
         <a href="https://cloud.telekom-dienste.de/tarife" target="_blank"><button type="button"
-                class="btn btn-default btn-style">Expand storage</button></a>
+        class="btn btn-default btn-style"> <?php p($l->t('Expand storage')); ?></button></a>
     </div>
     <div id="app-settings">
         <div id="app-settings-header">

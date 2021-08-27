@@ -27,4 +27,43 @@ div.crumb {
 }
 
 
+/**navigation-icons**/
+
+.nav-icon-favorites {
+    background-image: var(--icon-favourite-custom) !important;
+}
+
+.nav-icon-favorites:hover {
+    background-image: var( --icon-fav-magenta) !important;
+}
+
+.nav-icon-favorites.svg.active {
+    background-image: var(--icon-fav-magenta) !important;
+}
+
+.nav-icon-files {
+    background-image: var( --icon-folder-custom-nav) !important;
+}
+
+.nav-icon-files:hover {
+    background-image: var( --icon-folder-magenta-nav) !important;
+}
+
+.nav-icon-files.svg.active {
+    background-image: var(--icon-folder-magenta-nav) !important;
+}
+
+.nav-icon-trashbin {
+    background-image: var(--icon-delete-custom) !important;
+}
+
+.nav-icon-trashbin:hover {
+    background-image: var(--icon-delete-magenta) !important;
+}
+
+.nav-icon-trashbin.svg.active {
+    background-image: var(--icon-delete-magenta) !important;
+}
+
+
 /** icons**/
