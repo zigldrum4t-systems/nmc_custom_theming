@@ -5,7 +5,7 @@
 }
 
 .unified-search__trigger {
-    background-image: var(--right-menu-search-icon) !important;
+    background-image: var(--right-menu-search-icon);
 }
 
 #expand {
@@ -201,4 +201,12 @@
 .unified-search__result-content {
     padding-left: 1rem !important;
     align-items: center !important;
+}
+
+.header-menu--opened .unified-search__trigger {
+    background-image: var(--icon-search-magenta) !important;
+}
+
+.header-menu--opened .menu-search-text {
+    color: #E20074 !important;
 }

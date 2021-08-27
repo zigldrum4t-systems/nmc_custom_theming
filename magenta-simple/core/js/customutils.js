@@ -2,7 +2,7 @@ window.onload = function() {
     brandBarAnimation();
     guestInfoText();
     searchIconLabel();
-    searchInputLabel();
+    // searchInputLabel();
 };
 
 function brandBarAnimation() {
