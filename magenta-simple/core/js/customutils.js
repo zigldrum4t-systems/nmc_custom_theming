@@ -1,6 +1,6 @@
 window.onload = function() {
     brandBarAnimation();
-    // guestInfoText();
+    guestInfoText();
     searchIconLabel();
     // searchInputLabel();
     appendFolderName();
