@@ -6,7 +6,8 @@ stages:
 build image:
   stage: build
   variables:
-    TARGET_DIR: 40_nextcloud-magenta
+    DEPLOY:     "true"
+    TARGET_DIR: "40_nextcloud-magenta"
   trigger: nextmagentacloud/images
   only:
     - master
