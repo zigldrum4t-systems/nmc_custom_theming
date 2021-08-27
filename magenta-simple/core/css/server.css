@@ -223,9 +223,9 @@ body {
 .NextCloudPorgressBar .styledbar {
     background-color: #e20074;
     border-radius: 4px;
-    box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 4px 0px 0px 0px rgba(255, 255, 255, 0.99);
+    -webkit-box-shadow: 4px 0px 0px 0px rgba(255, 255, 255, 0.99);
+    -moz-box-shadow: 4px 0px 0px 0px rgba(255, 255, 255, 0.99);
 }
 
 .progress {
