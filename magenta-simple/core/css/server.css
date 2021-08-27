@@ -123,42 +123,6 @@ body {
     height: calc(100vh - 230px) !important;
 }
 
-#app-navigation .nav-icon-trashbin {
-    background-image: var(--icon-delete-custom) !important;
-}
-
-#app-navigation .nav-icon-trashbin:hover {
-    background-image: var(--icon-delete-magenta) !important;
-}
-
-#app-navigation ul li .nav-icon-trashbin.svg.active {
-    background-image: var(--icon-delete-magenta) !important;
-}
-
-#app-navigation .nav-icon-favorites {
-    background-image: var(--icon-favourite-custom) !important;
-}
-
-#app-navigation .nav-icon-favorites:hover {
-    background-image: var( --icon-fav-magenta) !important;
-}
-
-#app-navigation ul li .nav-icon-favorites.svg.active {
-    background-image: var(--icon-fav-magenta) !important;
-}
-
-#app-navigation .nav-icon-files {
-    background-image: var( --icon-folder-custom-nav) !important;
-}
-
-#app-navigation .nav-icon-files:hover {
-    background-image: var( --icon-folder-magenta-nav) !important;
-}
-
-#app-navigation ul li .nav-icon-files.svg.active {
-    background-image: var(--icon-folder-magenta-nav) !important;
-}
-
 #app-navigation>ul>li.active,
 #app-navigation>ul>li.active>a,
 #app-navigation>ul>li a:active,
@@ -955,7 +919,7 @@ aside {
 
 @media screen and (max-height: 750px) {
     #app-navigation>ul {
-        margin-top: 0em !important;
+        margin-top: 0 !important;
     }
 }
 
