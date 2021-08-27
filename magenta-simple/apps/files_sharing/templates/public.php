@@ -62,8 +62,7 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 			if (isset($_['folder'])): ?>
 				<?php print_unescaped($_['folder']); ?>
 				<div class="guest-emptycontent">
-				<h2 class="folder-name"><?php p($l->t('%s', [$_['filename']]))?></h2>
-				<h2><?php p($l->t('No files in here')); ?></h2>
+				<span class="folder-name" data-value="<?php p($l->t('%s', [$_['filename']]))?>"></span>
 				</div>
 			<?php else: ?>
 				<?php if ($_['previewEnabled'] && substr($_['mimetype'], 0, strpos($_['mimetype'], '/')) == 'audio'): ?>

@@ -3,6 +3,7 @@ window.onload = function() {
     guestInfoText();
     searchIconLabel();
     // searchInputLabel();
+    appendFolderName();
 };
 
 function brandBarAnimation() {
@@ -42,7 +43,7 @@ function searchIconLabel() {
     var spanElement = document.createElement('span');
     spanElement.className = 'menu-search-text';
     spanElement.innerText = 'Search';
-    document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement);
+    document.getElementsByClassName('header-menu__trigger')[0] ? document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement) : null;
 }
 
 function searchInputLabel() {
@@ -54,5 +55,14 @@ function searchInputLabel() {
             spanElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
             document.getElementsByClassName('unified-search__form')[0].appendChild(spanElement);
         }
+    }
+}
+
+function appendFolderName() {
+    var ele = document.getElementsByClassName('guest-emptycontent')[0];
+    if (ele) {
+        var folderName = ele.firstElementChild.getAttribute('data-value');
+        var emptyElement = document.getElementById('emptycontent');
+        emptyElement.getElementsByClassName('folder-name')[0].innerText = folderName;
     }
 }

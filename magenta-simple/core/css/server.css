@@ -1341,11 +1341,13 @@ table th#headerDate {
     color: #e20074 !important;
 } */
 
-.bubble li>a {
+#rightClickMenu.bubble li>a,
+.fileActionsMenu.bubble li>a {
     align-items: center !important;
 }
 
-.bubble li>a:hover {
+#rightClickMenu.bubble li>a:hover,
+.fileActionsMenu.bubble li>a:hover {
     background-color: unset !important;
 }
 
@@ -1872,10 +1874,11 @@ div.crumb:last-child {
     vertical-align: super !important;
 }
 
-#files-public-content #emptycontent h2,
+
+/* #files-public-content #emptycontent h2,
 #emptycontent.hidden~.guest-emptycontent {
     display: none;
-}
+} */
 
 
 /*Guest layout*/
