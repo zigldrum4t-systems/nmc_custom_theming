@@ -1325,7 +1325,8 @@ table th#headerDate {
     background-image: var(--icon-delete-custom) !important;
 }
 
-#rightClickMenu {
+#rightClickMenu,
+.fileActionsMenu {
     padding: 6px 2px;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
@@ -1340,11 +1341,11 @@ table th#headerDate {
     color: #e20074 !important;
 } */
 
-#rightClickMenu.bubble li>a {
+.bubble li>a {
     align-items: center !important;
 }
 
-#rightClickMenu.bubble li>a:hover {
+.bubble li>a:hover {
     background-color: unset !important;
 }
 
@@ -1472,6 +1473,7 @@ table th .sort-indicator {
 #view-toggle:hover,
 .icon-delete:hover,
 a.menu-option:hover>span,
+a.menuitem.action:hover>span,
 .icon-home:hover {
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
