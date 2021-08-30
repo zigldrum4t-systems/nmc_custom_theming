@@ -19,6 +19,7 @@
 @import url("design-tokens-telekom.css");
 @import url("icons.css");
 @import url("menu-bar.css");
+@import url("guest-view.css");
 @import url("footer.css");
 
 /* ---------------------------------------------------------------------------- */
@@ -2703,6 +2704,9 @@ div.crumb.crumbmenu a {
     #controls {
         margin: 0 0 1rem 0 !important;
         padding: 0 0 0 2.5rem !important;
+    }
+    #rich-workspace {
+        padding: 0 1rem !important;
     }
 }
 

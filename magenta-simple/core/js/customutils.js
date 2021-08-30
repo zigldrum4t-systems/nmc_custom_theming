@@ -2,7 +2,7 @@ window.onload = function() {
     brandBarAnimation();
     guestInfoText();
     searchIconLabel();
-    // searchInputLabel();
+    searchInputLabel();
     appendFolderName();
 };
 
@@ -50,10 +50,11 @@ function searchInputLabel() {
     var ele = document.getElementsByClassName('header-menu__trigger')[0];
     if (ele) {
         ele.onclick = function() {
-            var spanElement = document.createElement('span');
-            spanElement.className = 'search-input-label';
-            spanElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
-            document.getElementsByClassName('unified-search__form')[0].appendChild(spanElement);
+            var labelElement = document.createElement('label');
+            labelElement.className = 'search-input-label';
+            labelElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
+            document.getElementsByClassName('unified-search__form-input')[0].required = true;
+            document.getElementsByClassName('unified-search__form')[0].appendChild(labelElement);
         }
     }
 }
