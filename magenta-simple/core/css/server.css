@@ -17,6 +17,10 @@
  */
 
 @import url("design-tokens-telekom.css");
+@import url("icons.css");
+@import url("menu-bar.css");
+@import url("guest-view.css");
+@import url("footer.css");
 
 /* ---------------------------------------------------------------------------- */
 
@@ -107,12 +111,17 @@ body {
 
 /* ---------------------------------------------------------------------------- */
 
+#app-navigation:not(.vue)>ul>li>a,
+#app-navigation:not(.vue)>ul>li>ul>li>a {
+    background-size: 24px 24px !important;
+}
+
 #app-navigation {
     z-index: 10 !important;
     left: unset !important;
     position: absolute !important;
-    top: 50px !important;
-    height: calc(100vh - 270px) !important;
+    top: 47px !important;
+    height: calc(100vh - 230px) !important;
 }
 
 #app-navigation>ul>li.active,
@@ -128,10 +137,18 @@ body {
     text-decoration: none;
 }
 
+#app-navigation:not(.vue)>ul>li a:hover,
+#app-navigation:not(.vue)>ul>li a:hover>a,
+#app-navigation:not(.vue)>ul>li a:focus,
+#app-navigation:not(.vue)>ul>li a:focus>a {
+    background-color: #f2f2f2 !important;
+    color: #e20074;
+}
+
 #app-navigation>ul>li>a,
 #app-navigation>ul>li>ul {
     line-height: 48px;
-    padding: 3px 12px 0 44px !important;
+    padding: 0.188rem 0rem 0rem 3rem !important;
 }
 
 #app-navigation>ul {
@@ -140,11 +157,8 @@ body {
     margin-top: 4em;
 }
 
-#app-navigation>ul>li>a:hover {
-    color: var(--scl-color-magenta) !important;
-    opacity: 1 !important;
-    text-decoration: none;
-    background-color: #f2f2f2 !important;
+#sublist-favorites {
+    display: none !important;
 }
 
 #app-navigation>ul>li>a:active,
@@ -154,28 +168,34 @@ body {
     text-decoration: none;
 }
 
+#app-navigation img {
+    margin-bottom: unset !important;
+    margin-right: unset !important;
+    width: 40px !important;
+}
+
 .NextCloudPorgressBar {
-    margin-bottom: 12px;
+    margin: 1rem 0rem;
+    padding: 0rem 2rem 0rem 1rem;
 }
 
 .NextCloudPorgressBar .customprogressbar {
-    margin-left: 9px;
-    margin-right: 30px;
-    height: 7px;
+    height: 4px;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .NextCloudPorgressBar .styledbar {
     background-color: #e20074;
     border-radius: 4px;
+    box-shadow: 4px 0px 0px 0px rgba(255, 255, 255, 0.99);
+    -webkit-box-shadow: 4px 0px 0px 0px rgba(255, 255, 255, 0.99);
+    -moz-box-shadow: 4px 0px 0px 0px rgba(255, 255, 255, 0.99);
 }
 
 .progress {
     overflow: hidden;
-    background-color: #f5f5f5;
-    -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
-    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    background-color: #f2f2f2;
 }
 
 .progress-bar {
@@ -230,17 +250,19 @@ body {
     min-height: unset;
 }
 
+#app-navigation .custom-button {
+    padding-left: 1rem;
+}
+
 #app-navigation .custom-button .btn-style {
-    width: 70%;
+    padding: 0.563rem 1.5rem !important;
     border: 1px solid #191919;
     background-color: #fff;
-    margin-left: 10px;
     color: #191919;
-    margin-bottom: 12px;
     display: inline-block;
     border-radius: 4px;
-    padding: 6px 12px;
-    font-size: 14px;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+    font-size: 1rem;
     line-height: 1.42857143;
     cursor: pointer;
     font-weight: 400;
@@ -251,7 +273,7 @@ body {
 }
 
 #app-navigation .custom-button .btn-style:hover {
-    background-color: #f4f4f4;
+    color: #e20074 !important;
 }
 
 #app-navigation>ul>li::selection {
@@ -423,7 +445,7 @@ body {
 
 aside {
     /* position: absolute !important; */
-    top: 94px !important;
+    top: 120px !important;
     min-width: unset !important;
     width: 288px !important;
 }
@@ -896,9 +918,9 @@ aside {
     }
 }
 
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 750px) {
     #app-navigation>ul {
-        padding-top: 0px !important;
+        margin-top: 0 !important;
     }
 }
 
@@ -941,15 +963,13 @@ input[type="checkbox"].checkbox+label:before:hover {
     border: 0;
     border-radius: 0;
     text-align: left;
-    padding-left: 42px;
+    padding-left: 2.5rem;
     font-weight: normal;
     color: var(--color-main-text);
 }
 
 #app-settings-header .settings-button.opened {
-    border-top: solid 1px var(--color-border);
-    background-color: var(--color-main-background);
-    background-image: var(--icon-triangle-s-e20074);
+    border-top: unset !important;
 }
 
 
@@ -976,7 +996,6 @@ input[type="checkbox"].checkbox+label:before:hover {
 /*-------------------Memory Occupied Message Left Nav------------------------------*/
 
 .memory-ocup-message {
-    padding-left: 12px;
     font-size: 14px;
 }
 
@@ -984,9 +1003,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 /*-------------------MemoryLogo------------------------------*/
 
 .Memory-consumed {
-    margin-left: 4px;
-    margin-bottom: 8px;
-    margin-top: 0px !important;
+    padding-left: 1rem;
 }
 
 .Memory-consumed .left-logo {
@@ -995,9 +1012,9 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 .Memory-consumed .logo-right-text {
-    width: 70%;
     display: inline;
-    padding-left: 8px;
+    vertical-align: middle;
+    padding-left: 0.375rem;
 }
 
 .Memory-consumed img {
@@ -1007,6 +1024,15 @@ input[type="checkbox"].checkbox+label:before:hover {
 #app-settings-header .settings-button {
     color: #e20074 !important;
     font-size: 16px !important;
+}
+
+#app-settings-header .settings-button:hover {
+    background-color: unset !important;
+    text-decoration: underline !important;
+}
+
+#app-settings-header {
+    background-color: unset !important;
 }
 
 
@@ -1300,7 +1326,8 @@ table th#headerDate {
     background-image: var(--icon-delete-custom) !important;
 }
 
-#rightClickMenu {
+#rightClickMenu,
+.fileActionsMenu {
     padding: 6px 2px;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
@@ -1315,11 +1342,13 @@ table th#headerDate {
     color: #e20074 !important;
 } */
 
-#rightClickMenu.bubble li>a {
+#rightClickMenu.bubble li>a,
+.fileActionsMenu.bubble li>a {
     align-items: center !important;
 }
 
-#rightClickMenu.bubble li>a:hover {
+#rightClickMenu.bubble li>a:hover,
+.fileActionsMenu.bubble li>a:hover {
     background-color: unset !important;
 }
 
@@ -1447,6 +1476,7 @@ table th .sort-indicator {
 #view-toggle:hover,
 .icon-delete:hover,
 a.menu-option:hover>span,
+a.menuitem.action:hover>span,
 .icon-home:hover {
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
@@ -1632,6 +1662,10 @@ a.menu-option:hover>span,
     margin-top: 2px
 }
 
+div.crumb {
+    padding: 0;
+}
+
 div.crumb>a,
 div.crumb>span {
     opacity: 1 !important;
@@ -1652,7 +1686,7 @@ div.crumb:last-child {
 }
 
 .crumb a {
-    margin-right: 16px;
+    margin-right: 1.5rem;
 }
 
 #app-navigation-toggle {
@@ -1714,103 +1748,6 @@ div.crumb:last-child {
 
 .popover__inner {
     padding-right: 30px !important;
-}
-
-#header-menu-unified-search {
-    width: 496px;
-    max-width: unset;
-    border-radius: 8px;
-    box-shadow: var(--scl-shadow-level-2);
-    padding: 14px;
-}
-
-#header-menu-unified-search .header-menu__content {
-    max-width: unset;
-    width: unset;
-}
-
-.unified-search__result {
-    height: 48px !important;
-}
-
-.unified-search__results::before {
-    font-weight: bold;
-    font-size: 14px;
-    font-family: TeleNeo, sans-serif;
-    color: var(--scl-color-grey-90) !important;
-    margin-top: 14px !important;
-    margin-bottom: 8px !important;
-}
-
-.unified-search__result--focused,
-.unified-search__result:active,
-.unified-search__result:hover,
-.unified-search__result:focus {
-    background-color: var(--scl-color-grey-0) !important;
-}
-
-.empty-content__icon {
-    width: 84px !important;
-    height: 84px !important;
-    background-size: 84px !important;
-    opacity: unset !important;
-    margin-bottom: 0px !important;
-}
-
-.icon-search {
-    background-image: var(--icon-search-custom) !important;
-}
-
-.header-menu__carret {
-    right: 15px !important;
-}
-
-.header-menu__wrapper {
-    right: 0px !important;
-    filter: unset !important;
-}
-
-.unified-search__result-line-two {
-    font-size: 14px !important;
-    color: var(--scl-color-grey-90) !important;
-    opacity: unset !important;
-}
-
-.header-menu__content>ul>li:last-child>a:hover {
-    color: unset !important;
-    background-color: unset !important;
-    text-decoration: none !important;
-}
-
-.header-menu__content ul li:last-child span {
-    color: var(--scl-color-magenta);
-}
-
-.header-menu__content>ul>li:last-child>a>div {
-    display: none;
-}
-
-.header-menu__content>ul>li:last-child>a {
-    height: unset !important;
-}
-
-.unified-search__form-input,
-.unified-search__form-reset {
-    margin: 0px !important;
-}
-
-.unified-search .empty-content .empty-content__title {
-    margin-top: 24px;
-    margin-bottom: 0px;
-}
-
-.unified-search .empty-content {
-    margin-top: 30px !important;
-    margin-bottom: 34px !important;
-}
-
-.unified-search__result-content {
-    padding-bottom: 5px;
 }
 
 
@@ -1913,78 +1850,6 @@ div.crumb:last-child {
     padding-top: 16px;
 }
 
-
-/*****footer******/
-
-.brand-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-family: TeleNeo, sans-serif;
-    font-size: 14px;
-    background-color: var(--scl-color-white);
-    color: var(--scl-color-grey-10);
-    z-index: 4999;
-    border-top: 2px solid var(--scl-color-grey-10);
-}
-
-.brand-footer .brand-footer-bar {
-    display: flex;
-    height: 64px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.brand-footer .brand-footer-bar-text {
-    color: #666666 !important;
-    margin-left: 15px;
-}
-
-.brand-footer .brand-footer-nav {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.brand-footer .brand-footer-nav li {
-    margin: 0 15px;
-}
-
-.brand-footer .brand-footer-nav li:last-child {
-    margin: 0
-}
-
-.brand-footer .brand-footer-nav a,
-.brand-footer .brand-footer-nav a:active,
-.brand-footer .brand-footer-nav a:focus,
-.brand-footer .brand-footer-nav a:hover {
-    color: #666666;
-    background: transparent;
-}
-
-.brand-footer .brand-footer-bar a:hover {
-    text-decoration: underline;
-}
-
-.login-footer {
-    background: no-repeat;
-    color: #fff;
-    border: none;
-    position: relative;
-    height: auto;
-}
-
-.login-footer .brand-footer-bar-text {
-    color: #fff !important;
-}
-
-.login-footer .brand-footer-nav a {
-    font-weight: 400 !important;
-}
-
-
-/****footer*****/
-
 #app-content-files thead {
     top: 0
 }
@@ -1995,131 +1860,6 @@ div.crumb:last-child {
     height: 100vh;
     min-height: auto !important;
 } */
-
-
-/*** Right menuitems ***/
-
-.material-design-icon__svg {
-    display: none;
-}
-
-.unified-search__trigger {
-    background-image: var(--right-menu-search-icon) !important;
-}
-
-#expand {
-    width: 100% !important;
-}
-
-#settings #expand {
-    opacity: 1;
-    padding-right: 0px;
-}
-
-.username-lable {
-    margin-right: auto;
-    margin-left: 8px;
-    line-height: 0px !important;
-}
-
-.header-menu__trigger[data-v-18a8f26a] {
-    display: flex;
-    align-items: right;
-    justify-content: center;
-    height: 100%;
-    margin-left: 8px;
-    padding: 0;
-    cursor: pointer;
-    opacity: 1 !important;
-    margin-right: -8px !important;
-}
-
-.email-menu-text {
-    font-size: 12px;
-    padding-top: 5px;
-    line-height: 0px !important;
-    margin-left: 8px;
-}
-
-.menu-search-text {
-    padding-left: 0px;
-    margin-right: 24px;
-}
-
-.right-menu-font {
-    font-size: 12px;
-    font-weight: bold !important;
-}
-
-.settingsdiv {
-    line-height: 15px !important;
-    padding-left: 0px !important;
-}
-
-#expand:hover span a,
-#expand:hover svg g path {
-    color: #E20074;
-    fill: #E20074;
-}
-
-#contactsmenu:hover svg g,
-#contactsmenu:hover a {
-    color: #E20074;
-    fill: #E20074;
-}
-
-.search-outer:hover .unified-search__trigger {
-    background-image: var(--icon-search-magenta) !important;
-}
-
-.search-outer:hover a {
-    color: #E20074;
-}
-
-#contactsmenu,
-.search-outer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menutoggle {
-    opacity: 1 !important;
-    width: 24px !important;
-}
-
-.icon-loading-small {
-    display: none;
-}
-
-.header-menu__trigger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px !important;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    opacity: 1 !important;
-}
-
-#contactsmenu {
-    margin-right: 24px;
-}
-
-.unified-search__trigger {
-    width: 24px !important;
-    height: 24px !important;
-}
-
-#unified-search {
-    margin-right: 8px;
-    width: 24px;
-}
-
-
-/***  Right menuitems ***/
 
 
 /*Guest layout*/
@@ -2135,10 +1875,11 @@ div.crumb:last-child {
     vertical-align: super !important;
 }
 
-#files-public-content #emptycontent h2,
+
+/* #files-public-content #emptycontent h2,
 #emptycontent.hidden~.guest-emptycontent {
     display: none;
-}
+} */
 
 
 /*Guest layout*/
@@ -2917,9 +2658,8 @@ body#body-login.nmc-guest {
 
 .icon-folder,
 .icon-filetype-folder {
-    background-image: var(--icon-folder-custom) !important;
+    background-image: url(/themes/magenta-simple/core/img/filetypes/folder.svg) !important;
     background-size: cover !important;
-    margin-top: 0.188rem !important;
 }
 
 .unified-search__result-icon--with-thumbnail:not(.unified-search__result-icon--rounded) {
@@ -2932,11 +2672,16 @@ body#body-login.nmc-guest {
 }
 
 .unified-search__result-icon--no-preview {
-    background-size: cover !important;
+    background-size: 150% 150% !important;
 }
 
 .icon-settings {
     background-image: var( --icon-setting-custom) !important;
+    background-size: cover !important;
+}
+
+.icon-confirm {
+    background-size: cover !important;
 }
 
 .breadcrumb .popovermenu {
@@ -2959,7 +2704,7 @@ body#body-login.nmc-guest {
     width: 24px !important;
     height: 24px !important;
     padding: 0;
-    margin-right: 1rem !important;
+    margin-right: 0.5rem !important;
     background-position: unset;
 }
 
@@ -2978,38 +2723,6 @@ div.crumb.crumbmenu a {
 #app-content {
     position: static;
 }
-
-
-/** icons**/
-
-.icon-home {
-    background-image: var(--icon-home-custom);
-    width: 24px !important;
-}
-
-.icon-menu {
-    background-image: var(--icon-menu-custom) !important;
-}
-
-.icon-add {
-    background-image: var(--icon-breadcrumb-add-custom);
-    opacity: 0.9 !important;
-}
-
-.icon-toggle-filelist {
-    background-image: var(--icon-view-toggle-list-custom);
-}
-
-div.crumb {
-    background-image: var(--icon-breadcrumb-custom);
-}
-
-.icon-toggle-pictures {
-    background-image: var(--icon-view-toggle-custom) !important;
-}
-
-
-/** icons**/
 
 
 /*Responsive Styling*/

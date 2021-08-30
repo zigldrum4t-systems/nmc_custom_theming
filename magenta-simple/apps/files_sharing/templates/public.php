@@ -62,8 +62,7 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 			if (isset($_['folder'])): ?>
 				<?php print_unescaped($_['folder']); ?>
 				<div class="guest-emptycontent">
-				<h2 class="folder-name"><?php p($l->t('%s', [$_['filename']]))?></h2>
-				<h2><?php p($l->t('No files in here')); ?></h2>
+				<span class="folder-name" data-value="<?php p($l->t('%s', [$_['filename']]))?>"></span>
 				</div>
 			<?php else: ?>
 				<?php if ($_['previewEnabled'] && substr($_['mimetype'], 0, strpos($_['mimetype'], '/')) == 'audio'): ?>
@@ -78,6 +77,19 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 					<?php else:?>
 					<!-- Preview frame is filled via JS to support SVG images for modern browsers -->
 					<div id="imgframe"></div>
+					<?php if(isset($_['mimetype'])){ ?>
+						 <?php	if (strpos($_['mimetype'], 'image') === 0) { ?>
+							<div class="directDownload">
+								<div class="video-file-details">
+									<?php p($l->t('%s', [$_['filename']]))?> (<?php p($_['fileSize']) ?>)
+								</div>
+								<a href="<?php p($_['downloadURL']); ?>" id="downloadFile" class="button">
+									<span class="icon icon-download"></span>
+									<?php p($l->t('Download'))?>
+								</a>
+							</div>							
+						 <?php 	} ?>						
+					<?php } ?>
 					<?php endif; ?>
 				<?php endif; ?>
 				<?php if ($_['previewURL'] === $_['downloadURL'] && !$_['hideDownload']): ?>
