@@ -8,6 +8,7 @@ build image:
   variables:
     DEPLOY:     "true"
     TARGET_DIR: 40_nextcloud-magenta
+    THEME_COMMIT: $CI_COMMIT_SHA
   trigger: nextmagentacloud/images
   only:
     - master
