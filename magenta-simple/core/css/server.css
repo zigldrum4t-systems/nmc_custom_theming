@@ -1239,11 +1239,10 @@ table th#headerDate {
 }
 
 #fileList td a a.action.action-menu {
-    width: 30px;
+    width: 24px;
     height: 48px;
     align-items: center;
     display: flex;
-    margin-right: 1rem;
 }
 
 #fileList td a a.action.action-share {
