@@ -787,7 +787,7 @@ aside {
         width: 352px !important;
     }
     #filestable.view-grid tbody {
-        row-gap: 15px !important;
+        row-gap: 13px !important;
     }
     #filestable.view-grid tbody td.selection {
         top: 8px !important;
@@ -907,14 +907,7 @@ aside {
         padding: 14px 5px;
     }
     #filestable tbody {
-        row-gap: unset !important;
-        justify-content: unset !important;
-    }
-}
-
-@media screen and (max-width: 1599px) {
-    #filestable tbody {
-        row-gap: unset !important;
+        row-gap: 16px !important;
     }
 }
 
@@ -1043,13 +1036,13 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-bottom: 1px solid #cccccc;
 }
 
-#filestable tbody tr:active,
-#filestable tbody tr:hover,
-#filestable tbody tr:focus,
-#filestable tbody tr.highlighted,
-#filestable tbody tr.highlighted .name:focus,
-#filestable tbody tr.selected,
-#filestable tbody tr.searchresult {
+#filestable:not(.view-grid) tbody tr:active,
+#filestable:not(.view-grid) tbody tr:hover,
+#filestable:not(.view-grid) tbody tr:focus,
+#filestable:not(.view-grid) tbody tr.highlighted,
+#filestable:not(.view-grid) tbody tr.highlighted .name:focus,
+#filestable:not(.view-grid) tbody tr.selected,
+#filestable:not(.view-grid) tbody tr.searchresult {
     background-color: rgb(242 242 242 / 50%) !important;
 }
 
@@ -1286,7 +1279,8 @@ table th#headerDate {
     padding: 1.063rem 1rem !important;
 }
 
-#filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .thumbnail-wrapper,
+
+/* #filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .thumbnail-wrapper,
 #filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .nametext,
 #filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .fileactions,
 #filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus .thumbnail-wrapper,
@@ -1308,7 +1302,7 @@ table th#headerDate {
 #filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .nametext,
 #filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted .fileactions {
     background-color: unset !important;
-}
+} */
 
 
 /*----right-click-menu------*/
@@ -1543,26 +1537,19 @@ a.menuitem.action:hover>span,
 }
 
 #filestable.view-grid tbody td.filename .thumbnail-wrapper {
-    width: 128px !important;
-    height: 108px !important;
-    margin: 16px;
     padding: 0px !important;
 }
 
-#filestable.view-grid tbody tr td a {
-    width: 160px;
-}
-
 #filestable.view-grid .thumbnail-wrapper .thumbnail {
-    width: 100% !important;
-    height: 100% !important;
+    width: 128px !important;
+    height: 108px !important;
+    margin: 16px !important;
     background-size: cover !important;
     border-radius: 2px !important;
 }
 
-#filestable.view-grid tbody tr td a:hover {
-    opacity: 1 !important;
-    background-color: rgb(242 242 242 / 50%) !important;
+#filestable.view-grid tbody tr td a {
+    width: 160px;
 }
 
 #filestable.view-grid:not(.hidden) tbody td.selection label,
@@ -1574,18 +1561,6 @@ a.menuitem.action:hover>span,
     margin-top: 133px !important;
 }
 
-#filestable.view-grid tbody tr:hover .nametext {
-    background-color: unset !important;
-}
-
-#filestable.view-grid tbody tr.selected .filename a {
-    background-color: rgb(242 242 242 / 50%) !important;
-}
-
-#filestable.view-grid tbody tr.selected .filename a:hover {
-    background-color: rgb(242 242 242 / 50%) !important;
-}
-
 #filestable.view-grid tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
     padding: 14px;
     left: 36px !important;
@@ -1593,16 +1568,12 @@ a.menuitem.action:hover>span,
     right: unset !important;
 }
 
-#filestable.view-grid tbody tr.highlighted .nametext {
-    background-color: unset !important;
-}
-
 #filestable.view-grid td.filename .nametext .innernametext {
     padding: 0.5rem 0.188rem 1rem 0.188rem;
 }
 
 #filestable.view-grid:not(.hidden) tbody td.filename .name .nametext:after {
-    min-width: 6px !important;
+    min-width: 30px !important;
 }
 
 #filestable.view-grid:not(.hidden) tbody td.selection label,
@@ -1612,6 +1583,15 @@ a.menuitem.action:hover>span,
     display: inline-block;
     padding: 0px !important;
 }
+
+#filestable.view-grid:not(.hidden) tbody td.filename .name .fileactions {
+    margin-top: 8.25rem !important;
+}
+
+
+/* .icon-more {
+    background-image: var(--icon-more-custom) !important;
+} */
 
 #controls,
 .controls-section {
