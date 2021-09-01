@@ -1148,10 +1148,9 @@ table th#headerDate {
     margin: 0rem !important;
 }
 
-#filestable .filename .action .icon {
+#filestable .filename .fileactions a span {
     vertical-align: sub !important;
     background-size: unset !important;
-    margin-left: 10px;
 }
 
 #filestable .fileactions [class*=' icon-'] {
@@ -1240,7 +1239,7 @@ table th#headerDate {
 }
 
 #fileList td a a.action.action-menu {
-    width: 60px;
+    width: 24px;
     height: 48px;
     align-items: center;
     display: flex;
@@ -1248,7 +1247,7 @@ table th#headerDate {
 
 #fileList td a a.action.action-share {
     display: flex;
-    width: 60px;
+    width: 55px;
     height: 44px;
     align-items: center;
 }
@@ -1271,10 +1270,6 @@ table th#headerDate {
     margin-left: 78px;
 }
 
-#fileList:not(.view-grid) td a a.action.action-share {
-    padding: 1.063rem 0 1.063rem 1rem !important;
-}
-
 #filestable:not(.view-grid) td.filesize {
     padding: 0 1rem !important;
 }
@@ -1283,8 +1278,12 @@ table th#headerDate {
     padding: 0 1rem !important;
 }
 
-#filestable:not(.view-grid) td.filename .nametext {
-    padding: 0 1rem 0 0 !important;
+#fileList td a a.action.action-menu {
+    padding: 1.063rem 0 !important;
+}
+
+#fileList td a a.action.action-share {
+    padding: 1.063rem 1rem !important;
 }
 
 #filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover .thumbnail-wrapper,

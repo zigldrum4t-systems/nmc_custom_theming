@@ -15,8 +15,8 @@
         margin-bottom: 31vh !important;
     }
     
-    .icon-folder,
-    .icon-filetype-folder .guest-emptycontent h2:nth-child(1) {
+    #emptycontent .icon-folder,
+    #emptycontent .icon-filetype-folder .guest-emptycontent h2:nth-child(1) {
         margin: 1rem 0 !important;
     }
     
