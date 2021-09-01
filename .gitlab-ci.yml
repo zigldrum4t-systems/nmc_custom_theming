@@ -13,6 +13,7 @@ build-image:
   trigger:
     project: nextmagentacloud/images
     branch: master
+    strategy: depend
   only:
     - master
 
@@ -26,5 +27,6 @@ deploy-dev1:
   trigger:
     project: nextmagentacloud/deployment
     branch: master
+    strategy: depend
   only:
     - master
