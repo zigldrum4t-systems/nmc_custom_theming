@@ -2,13 +2,27 @@
 
 stages:
   - build
+  - deploy
 
-build image:
+build-image:
   stage: build
   variables:
-    DEPLOY:     "true"
     TARGET_DIR: 40_nextcloud-magenta
     THEME_COMMIT: $CI_COMMIT_SHA
-  trigger: nextmagentacloud/images
+  trigger:
+    project: nextmagentacloud/images
+    branch: master
+  only:
+    - master
+
+deploy-dev1:
+  stage: deploy
+  needs:
+    - job: image-build
+  variables:
+    DEPLOY_STAGE: "dev1"
+  trigger:
+    project: nextmagentacloud/deployment
+    branch: master
   only:
     - master
