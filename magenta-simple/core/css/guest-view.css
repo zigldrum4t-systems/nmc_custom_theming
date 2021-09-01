@@ -11,8 +11,8 @@
     }
     
     #files-public-content #emptycontent {
-        padding-top: 8vh !important;
-        padding-bottom: 31vh !important;
+        margin-top: 8vh !important;
+        margin-bottom: 31vh !important;
     }
     
     #emptycontent .icon-folder,

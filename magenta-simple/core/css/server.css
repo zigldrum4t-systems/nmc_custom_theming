@@ -1337,7 +1337,8 @@ table th#headerDate {
 
 #rightClickMenu,
 .fileActionsMenu {
-    padding: 6px 2px;
+    margin: 0;
+    padding: 0.813rem 0.125rem;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
 }
@@ -1369,7 +1370,7 @@ table th#headerDate {
 .icon-delete:focus {
     background-image: var(--icon-delete-magenta) !important;
     filter: initial;
-} 
+}
 
 .icon-download:hover {
     background-image: var(--icon-download-magenta) !important;
@@ -1672,8 +1673,7 @@ div.crumb:last-child {
 
 #emptycontent,
 .emptycontent {
-    padding-top: 30vh !important;
-    margin-top: 0 !important;
+    margin-top: 20vh !important;
 }
 
 .crumb .icon-shared {
@@ -1749,7 +1749,7 @@ div.crumb:last-child {
 /** Grid Icons ***********************************/
 
 
-/* 
+/*
 #filestable [data-mime="text/plain"] .thumbnail,
 #filestable [data-mime="text/markdown"] .thumbnail,
 #filestable [data-mime="application/octet-stream"] .thumbnail,
