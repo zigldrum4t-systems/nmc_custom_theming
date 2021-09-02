@@ -516,7 +516,10 @@ aside {
     width: 100%;
 }
 
-#header #header-right,
+#header .header-left {
+    padding-left: 1rem;
+}
+
 #header .header-right {
     padding-right: 1rem;
 }
@@ -894,9 +897,6 @@ aside {
 }
 
 @media screen and (max-width: 1299px) {
-    #appmenu {
-        display: none;
-    }
     .container-fixed {
         width: 100%;
     }
@@ -2701,6 +2701,12 @@ div.crumb.crumbmenu a {
     }
 }
 
+@media screen and (max-width: 689px) {
+    #fileList td a a.action.action-share.shared-style {
+        width: 0 !important;
+    }
+}
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     .breadcrumb {
         margin-left: 2rem;
@@ -2732,9 +2738,19 @@ div.crumb.crumbmenu a {
     }
 }
 
-@media screen and (max-width: 689px) {
-    #fileList td a a.action.action-share.shared-style {
-        width: 0 !important;
+@media screen and (max-width: 1299px) {
+    #contactsmenu,
+    #settings .menutoggle,
+    .search-outer a.header-menu__trigger {
+        flex-direction: column;
+    }
+    #appmenu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 62px !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 

@@ -67,6 +67,7 @@
 }
 
 #contactsmenu,
+#settings,
 .search-outer {
     display: flex;
     justify-content: center;
@@ -74,8 +75,9 @@
 }
 
 .menutoggle {
-    opacity: 1 !important;
     width: 1.5rem !important;
+    height: auto !important;
+    opacity: 1 !important;
 }
 
 .header-menu__trigger {
@@ -257,4 +259,15 @@
 
 .unified-search__form input::placeholder {
     color: transparent;
+}
+
+nav[role='navigation'] {
+    position: fixed !important;
+    top: 63px;
+    left: 0;
+    width: 100% !important;
+    height: auto !important;
+    background: #fff;
+    margin: 0 !important;
+    padding: 20px;
 }
