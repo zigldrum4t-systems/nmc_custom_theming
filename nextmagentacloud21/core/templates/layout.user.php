@@ -31,7 +31,7 @@
     <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>"
         color="<?php p($theme->getColorPrimary()); ?>">
     <link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
-  
+
     <?php emit_css_loading_tags($_); ?>
     <?php emit_script_loading_tags($_); ?>
     <?php print_unescaped($_['headers']); ?>
@@ -95,7 +95,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                      <a href="<?php print_unescaped(link_to('', 'index.php')); ?>" id="nextcloud">
                         <div>
                             <h5>Magenta<span class="logo-title">CLOUD</span></h5>
@@ -119,11 +119,10 @@
                             aria-expanded="false">
                             <a href="#" aria-label="<?php p($l->t('More apps')); ?>">
                                 <div class="icon-more-white"></div>
-                                <span><?php p($l->t('More')); ?></span>
+                                <span><?php p($l->t('Menu')); ?></span>
                             </a>
                         </li>
                      </ul>
-
                      <nav role="navigation">
                         <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
                             <div id="apps">
@@ -142,22 +141,20 @@
                             </div>
                         </div>
                      </nav>
-                   
-                 
                 </div>
 
                 <div class="header-right">
                     <div  class="search-outer">
-                    <div id="unified-search"></div>                   
+                    <div id="unified-search"></div>
                     </div>
                     <div id="contactsmenu">
                         <div class="menutoggle" tabindex="0" role="button" aria-haspopup="true"
                             aria-controls="contactsmenu-menu" aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>email</title><g fill="#191919"><g><path d="M.5 3.5v14c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-14zM22 5v.95l-8.45 7.25c-.9.75-2.2.75-3.1 0L2 5.95V5zm-1.5 14h-17c-.85 0-1.5-.65-1.5-1.5V7.95l7.45 6.4c.75.65 1.65.95 2.55.95s1.8-.3 2.55-.95L22 7.95v9.55c0 .85-.65 1.5-1.5 1.5z" fill-rule="evenodd"></path></g></g></svg>                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>email</title><g fill="#191919"><g><path d="M.5 3.5v14c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-14zM22 5v.95l-8.45 7.25c-.9.75-2.2.75-3.1 0L2 5.95V5zm-1.5 14h-17c-.85 0-1.5-.65-1.5-1.5V7.95l7.45 6.4c.75.65 1.65.95 2.55.95s1.8-.3 2.55-.95L22 7.95v9.55c0 .85-.65 1.5-1.5 1.5z" fill-rule="evenodd"></path></g></g></svg>
                         </div>
-                        <div class="emailmenu"><label class="email-menu-text"><a class="right-menu-font"><?php p($l->t('Email'));?></a></label></div>                   
+                        <div class="emailmenu"><label class="email-menu-text"><a class="right-menu-font"><?php p($l->t('Email'));?></a></label></div>
                     </div>
-                    
+
                     <div id="settings">
                         <div id="expand" tabindex="0" role="button" class="menutoggle"
                             aria-label="<?php p($l->t('Settings'));?>" aria-haspopup="true" aria-controls="expanddiv"
@@ -168,11 +165,11 @@
                                     <g id="icon/user_file/user/default-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                      <path d="M8.89999999,16.5 L12,19.6 L15.1,16.5 L17.35,16.5 C19.7,16.5 21.65,18.15 22.05,20.45 L22.05,20.45 L22.25,21.5 L1.79999996,21.5 L1.94999996,20.45 C2.34999996,18.15 4.29999996,16.5 6.64999998,16.5 L6.64999998,16.5 L8.89999999,16.5 Z M12,1.99999996 C15.5,1.99999996 18,4.49999996 18,7.99999996 C18,11.4 15.6,15 12,15 C8.39999998,15 5.99999997,11.4 5.99999997,7.99999996 C5.99999997,4.49999996 8.49999997,1.99999996 12,1.99999996 Z M12,3.49999996 C9.39999999,3.49999996 7.49999998,5.39999997 7.49999998,7.99999996 C7.49999998,10.65 9.29999999,13.5 12,13.5 C14.7,13.5 16.5,10.65 16.5,7.99999996 C16.5,5.39999997 14.6,3.49999996 12,3.49999996 Z" id="Combined-Shape" fill="#191919"></path>
                                     </g>
-                                </svg>                                                                                                 
+                                </svg>
                             </div>
                             <span class="username-lable">
                                 <a class="right-menu-font"><?php p($_['user_uid']); ?></a>
-                            </span> 
+                            </span>
                         </div>
                         <nav class="settings-menu" id="expanddiv" style="display:none;"
                             aria-label="<?php p($l->t('Settings menu'));?>">
@@ -190,6 +187,24 @@
                             </ul>
                         </nav>
                     </div>
+                     <!-- <nav role="navigation">
+                        <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
+                            <div id="apps">
+                                <ul>
+                                <?php foreach ($_['navigation'] as $entry): ?>
+                                    <li data-id="<?php p($entry['id']); ?>">
+                                        <a href="<?php print_unescaped($entry['href']); ?>"
+                                            <?php if ($entry['active']): ?> class="active nav-icon-files svg "
+                                            <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+
+                                            <span><?php p($entry['name']); ?></span>
+                                        </a>
+                                    </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                     </nav> -->
                 </div>
             </div>
         </header>
@@ -212,7 +227,7 @@
             <?php print_unescaped($_['content']); ?>
             <div id="app-sidebar"></div>
         </div>
-       
+
     </div>
 
     <footer class="brand-footer">
