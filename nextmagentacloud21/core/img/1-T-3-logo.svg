@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="36" viewBox="0 0 71 36">
+  <defs>
+    <clipPath id="clip-_1-T-3_logo_guest_view">
+      <rect width="71" height="36"/>
+    </clipPath>
+  </defs>
+  <g id="_1-T-3_logo_guest_view" data-name="1-T-3 logo guest view" clip-path="url(#clip-_1-T-3_logo_guest_view)">
+    <g id="Gruppe_238" data-name="Gruppe 238" transform="translate(-176 -17.834)">
+      <path id="Fill_1" data-name="Fill 1" d="M3.855,0H0V7.357H7.35V0Z" transform="translate(176 34.547)" fill="#fefefe"/>
+      <path id="Fill_5" data-name="Fill 5" d="M29.4,0H.363L0,12.82l1.926.333Q2.463,7.487,4.9,4.744a9.366,9.366,0,0,1,7.08-3V28.562c0,2.343-.327,3.863-1.01,4.564a4.667,4.667,0,0,1-2.945,1.1q-.616.051-2.1.052v2.051H23.84V34.28q-1.485,0-2.1-.052a4.667,4.667,0,0,1-2.945-1.1c-.683-.7-1.014-2.222-1.014-4.564V1.744a9.378,9.378,0,0,1,7.085,3q2.434,2.744,2.971,8.409l1.926-.333Z" transform="translate(176 17.834)" fill="#fefefe"/>
+      <path id="Fill_2" data-name="Fill 2" d="M0,7.357V0H7.35V7.357Z" transform="translate(198.413 34.547)" fill="#fefefe"/>
+      <path id="Fill_3" data-name="Fill 3" d="M0,7.357V0H7.35V7.357Z" transform="translate(219.486 34.547)" fill="#fefefe"/>
+      <path id="Fill_4" data-name="Fill 4" d="M3.682,0H0V7.357H7.35V0Z" transform="translate(239.584 34.547)" fill="#fefefe"/>
+    </g>
+  </g>
+</svg>
