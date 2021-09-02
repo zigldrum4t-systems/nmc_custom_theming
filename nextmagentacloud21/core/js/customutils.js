@@ -43,7 +43,8 @@ function searchIconLabel() {
     var spanElement = document.createElement('span');
     spanElement.className = 'menu-search-text';
     spanElement.innerText = 'Search';
-    document.getElementsByClassName('header-menu__trigger')[0] ? document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement) : null;
+    document.getElementsByClassName('header-menu__trigger')[0] ?
+        document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement) : null;
 }
 
 function searchInputLabel() {
@@ -65,6 +66,7 @@ function appendFolderName() {
     if (ele) {
         var folderName = ele.firstElementChild.getAttribute('data-value');
         var emptyElement = document.getElementById('emptycontent');
-        emptyElement.getElementsByClassName('folder-name')[0].innerText = folderName;
+        emptyElement.getElementsByClassName('folder-name')[0] ?
+            emptyElement.getElementsByClassName('folder-name')[0].innerText = folderName : null;
     }
 }

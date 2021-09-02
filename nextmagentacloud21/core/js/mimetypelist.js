@@ -134,7 +134,7 @@ OC.MimeTypeList = {
         "x-office-spreadsheet"
     ],
     themes: {
-        "magenta-simple": [
+        "nextmagentacloud21": [
             "27 voice-recordings",
             "3 unknown file",
             "application-pdf",
