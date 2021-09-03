@@ -430,13 +430,7 @@ body {
     }
 }
 
-#body-user #header {
-    position: unset;
-}
 
-#header>.container-fixed {
-    display: inline-flex;
-}
 
 #app-navigation,
 #app-sidebar-vue {
@@ -444,177 +438,9 @@ body {
 }
 
 aside {
-    /* position: absolute !important; */
     top: 120px !important;
     min-width: unset !important;
     width: 288px !important;
-}
-
-#header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
-    margin-left: 15px;
-}
-
-#header #appmenu {
-    padding-left: 48px;
-}
-
-#header .container-fixed .header-left #nextcloud {
-    padding-left: 2px;
-}
-
-#header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
-    height: 25px;
-    width: 50px;
-    fill: #e20074;
-}
-
-#header .container-fixed .header-left #nextcloud h5 {
-    font-size: 25px;
-    color: #161616;
-    font-weight: bold;
-    padding-left: 12px;
-}
-
-#header .container-fixed .header-left #nextcloud span {
-    font-weight: normal;
-    font-size: 25px !important;
-}
-
-#header .container-fixed .header-left a:hover {
-    text-decoration: none;
-}
-
-#header>.container-fixed>.header-left>#nextcloud>.logo-title {
-    left: 0;
-    position: absolute;
-}
-
-#header>.container-fixed>.header-left>#appmenu li a {
-    opacity: 1 !important;
-    padding: 4px 15px 0px 0px;
-    font-size: 20px !important;
-    color: #161616;
-    font-weight: 600 !important;
-    width: auto;
-    transition: all 1s;
-    font-family: TeleNeo, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-#header>.container-fixed>.header-left>#appmenu li a.active {
-    color: #e20074 !important;
-    text-decoration: none;
-    font-weight: 600 !important;
-}
-
-#header>.container-fixed>.header-left>#appmenu li a:hover {
-    color: #e20074 !important;
-    text-decoration: none;
-    font-weight: 600 !important;
-}
-
-#header .container-fixed .header-right .navbar-icons {
-    width: 100%;
-}
-
-#header #header-right,
-#header .header-right {
-    padding-right: 1rem;
-}
-
-#appmenu li {
-    margin-right: 32px !important;
-}
-
-
-/* Navbar links */
-
-#header .container-fixed .header-right .navbar-icons a {
-    display: flex;
-    float: left;
-    text-align: center;
-    padding: 21px 6px;
-    color: #191919;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-#header .container-fixed .header-right .navbar-icons a label {
-    padding-left: 4px !important;
-}
-
-
-/* Navbar links on mouse-over */
-
-#header .container-fixed .header-right .navbar-icons a:hover {
-    color: #e20074;
-}
-
-#header>.container-fixed>.header-right>label {
-    padding-left: 20px;
-}
-
-#header>.container-fixed>.header-right>.unified-search-title {
-    padding-top: 22px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #161616 !important;
-}
-
-#header>.container-fixed>.header-right>.unified-search-title:hover {
-    color: #e20074 !important;
-}
-
-#header>.container-fixed>.header-right>.contactsmenu-title {
-    padding-top: 22px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #161616 !important;
-}
-
-#header>.container-fixed>.header-right>.contactsmenu-title:hover {
-    color: #e20074 !important;
-}
-
-#header>.container-fixed>.header-right>.header-menu>a>span>svg {
-    filter: invert(1);
-}
-
-#header>.container-fixed>.header-right>.header-menu>a:hover>span>svg {
-    filter: invert(0);
-    fill: #e20074;
-}
-
-#header>.container-fixed>.header-right>#contactsmenu>.icon-contacts {
-    background-image: var(--custom-icon-mail-000000);
-}
-
-#header>.container-fixed>.header-right>#contactsmenu>.icon-contacts:hover {
-    background-image: var(--custom-icon-mail-e20074);
-}
-
-#header>.container-fixed>.header-right>#settings>#expand>.avatardiv>.icon-user-menu {
-    background-image: var(--custom-icon-user-000000);
-}
-
-#header>.container-fixed>.header-right>#settings>#expand>.avatardiv>.icon-user-menu:hover {
-    background-image: var(--custom-icon-user-e20074);
-}
-
-#header>.container-fixed>.header-right>#settings>.menutoggle>.avatardiv>img {
-    filter: invert(1);
-}
-
-#header .container-fixed .header-left .logo-area .logo-area__inner {
-    opacity: 0;
-    max-width: 0;
-    overflow: hidden;
-    -webkit-transition: max-width .3s ease-out, opacity .4s ease-out;
-    transition: max-width .3s ease-out, opacity .4s ease-out;
-}
-
-#header:before {
-    background: none;
 }
 
 .sticky {
@@ -638,57 +464,7 @@ aside {
     display: flex;
 }
 
-.brandbar {
-    height: 72px;
-    z-index: 0 !important;
-    color: var(--scl-color-white) !important;
-    background: var(--scl-color-magenta);
-    overflow: hidden;
-    width: 100%;
-    font-family: TeleNeo, sans-serif;
-    transition: height .4s ease-out;
-}
 
-.brandbar>.container-fixed>.header-brandbar {
-    z-index: 4999 !important;
-    display: flex;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-    -webkit-transition: opacity .4s ease-out, -webkit-transform .4s ease-out;
-    transition: transform .4s ease-out, opacity .4s ease-out, -webkit-transform .4s ease-out;
-}
-
-.brandbar>.container-fixed>.header-brandbar>.header-brandbar-logo {
-    padding: 18px 12px 7px;
-}
-
-.brandbar>.container-fixed>.header-brandbar>.header-brandbar-logo>svg {
-    fill: white;
-    height: 36px;
-    width: 73px;
-}
-
-.brandbar>.container-fixed>.header-brandbar>p.header-brandbar-claim {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    margin: 0;
-    margin-top: 27px;
-    padding: 0 12px 0 18px;
-    display: block;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.035em;
-    line-height: 1;
-    font-size: 15px;
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
-}
-
-.brandbar>.container-fixed>.header-brandbar>p.header-brandbar-claim span {
-    color: white !important;
-}
 
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
     .brandbar>.container-fixed {
@@ -894,9 +670,6 @@ aside {
 }
 
 @media screen and (max-width: 1299px) {
-    #appmenu {
-        display: none;
-    }
     .container-fixed {
         width: 100%;
     }
@@ -2700,6 +2473,12 @@ div.crumb.crumbmenu a {
     }
 }
 
+@media screen and (max-width: 689px) {
+    #fileList td a a.action.action-share.shared-style {
+        width: 0 !important;
+    }
+}
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     .breadcrumb {
         margin-left: 2rem;
@@ -2713,9 +2492,7 @@ div.crumb.crumbmenu a {
     .closePopup {
         margin-right: 0;
     }
-    #header .brandbar-logo-magenta {
-        margin-left: 0 !important;
-    }
+
     #controls {
         margin: 0 0 1rem 0 !important;
         padding: 0 0 0 2.5rem !important;
@@ -2725,15 +2502,17 @@ div.crumb.crumbmenu a {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    .breadcrumb-translation {
-        transition: top .4s ease-out;
+@media screen and (max-width: 1299px) {
+    #contactsmenu,
+    #settings .menutoggle,
+    .search-outer a.header-menu__trigger {
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 689px) {
-    #fileList td a a.action.action-share.shared-style {
-        width: 0 !important;
+@media screen and (min-width: 1025px) {
+    .breadcrumb-translation {
+        transition: top .4s ease-out;
     }
 }
 
