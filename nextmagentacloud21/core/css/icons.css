@@ -5,7 +5,8 @@
     width: 24px !important;
 }
 
-.icon-menu {
+.icon-menu,
+.icon-more-white {
     background-image: var(--icon-menu-custom) !important;
 }
 
