@@ -2739,3 +2739,59 @@ div.crumb.crumbmenu a {
 
 
 /*Responsive Styling*/
+
+/*preview*/
+@media only screen and (min-width: 512px){
+.modal-header .modal-title {
+    text-align: left !important;
+}
+}
+
+.modal-mask .modal-header{
+    background-color: rgb(0, 0, 0,1) !important;
+    height:63px !important;
+    border-bottom:1px solid #ffffff;
+}
+.modal-mask .modal-header .modal-title {
+    padding: 0 170px !important;
+    font-size: 16px !important;  
+}
+
+.modal-mask .modal-header .icons-menu {
+    right: 158px !important;
+}
+
+.modal-mask .modal-mask--dark {
+       background-color: rgba(0,0,0,0.95) !important;  
+     
+}
+
+.popover__wrapper button:nth-child(1){
+    display: none;
+}
+.modal-mask .action-link {
+    align-items: center !important;
+}
+.modal-mask .modal-wrapper .modal-container{
+    box-shadow: unset !important;
+}
+.modal-mask .viewer__content img{
+margin-top:70px !important;
+}
+
+.modal-mask .icons-menu button.play-pause{
+    position: fixed !important;
+    left: 50%;
+    align-items: center;
+}
+
+.modal-mask .action-item--single:hover, 
+.modal-mask .action-item--single:focus, 
+.modal-mask .action-item--single:active,
+.modal-mask .action-item__menutoggle:hover, 
+.modal-mask .action-item__menutoggle:focus,
+.modal-mask .action-item__menutoggle:active {
+     background-color: unset !important;
+}
+
+
