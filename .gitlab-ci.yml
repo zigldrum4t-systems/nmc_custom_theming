@@ -10,6 +10,7 @@ build-image:
     TARGET_DIR: 40_nextcloud-magenta
     THEME_COMMIT: $CI_COMMIT_SHA
     DEPLOY: "true"
+    PKR_VAR_image_tag: "dev"
   trigger:
     project: nextmagentacloud/images
     branch: master
