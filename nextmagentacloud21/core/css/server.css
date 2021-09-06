@@ -2500,6 +2500,12 @@ div.crumb.crumbmenu a {
     #rich-workspace {
         padding: 0 1rem !important;
     }
+    #appmenu{
+      display: none;
+    }
+    #more-apps{
+      display:block !important;
+    }
 }
 
 @media screen and (max-width: 1299px) {
@@ -2508,6 +2514,12 @@ div.crumb.crumbmenu a {
     .search-outer a.header-menu__trigger {
         flex-direction: column;
     }
+}
+
+@media screen and (min-width: 1300px) {
+  .menu-search-text,.email-menu-text,.username-lable{
+    margin-left: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 1025px) {
