@@ -117,24 +117,6 @@
                         <?php endforeach; ?>
                        <li></li>
                      </ul>
-                     <nav role="navigation">
-                        <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
-                            <div id="apps">
-                                <ul>
-                                    <?php foreach ($_['navigation'] as $entry): ?>
-                                    <li data-id="<?php p($entry['id']); ?>">
-                                        <a href="<?php print_unescaped($entry['href']); ?>"
-                                            <?php if ($entry['active']): ?> class="active nav-icon-files svg "
-                                            <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
-
-                                            <span><?php p($entry['name']); ?></span>
-                                        </a>
-                                    </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
-                        </div>
-                     </nav>
                 </div>
 
                 <div class="header-right">
@@ -181,7 +163,23 @@
                             </ul>
                         </nav>
                     </div>
-                    <div id="more-apps" class="menutoggle" aria-haspopup="true" aria-controls="navigation"
+                        <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
+                            <div id="apps">
+                                <ul>
+                                    <?php foreach ($_['navigation'] as $entry): ?>
+                                    <li data-id="<?php p($entry['id']); ?>">
+                                        <a href="<?php print_unescaped($entry['href']); ?>"
+                                            <?php if ($entry['active']): ?> class="active nav-icon-files svg "
+                                            <?php endif; ?> aria-label="<?php p($entry['name']); ?>">
+
+                                            <span><?php p($entry['name']); ?></span>
+                                        </a>
+                                    </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    <div id="more-apps" style="display: none;" class="menutoggle" aria-haspopup="true" aria-controls="navigation"
                             aria-expanded="false">
                             <a href="#" aria-label="<?php p($l->t('More apps')); ?>">
                                 <div class="icon-more-white"></div>
