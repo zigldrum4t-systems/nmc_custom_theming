@@ -21,6 +21,7 @@
 @import url("menu-bar.css");
 @import url("guest-view.css");
 @import url("footer.css");
+@import url("breadcrumb.css");
 
 /* ---------------------------------------------------------------------------- */
 
@@ -2473,9 +2474,19 @@ div.crumb.crumbmenu a {
     }
 }
 
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 688px) {
     #fileList td a a.action.action-share.shared-style {
         width: 0 !important;
+    }
+    #uploadprogressbar {
+        width: 74px !important;
+    }
+    #uploadprogressbar .label {
+        top: -1px !important;
+        right: 14px !important;
+    }
+    #uploadprogresswrapper button.stop {
+        left:108px !important;
     }
 }
 
