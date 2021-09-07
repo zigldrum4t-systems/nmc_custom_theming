@@ -522,6 +522,9 @@ aside {
     .app-files #app-content {
         width: calc(100% - 320px);
     }
+    #app-content-files #fileList td a a.action.action-menu {
+        display: none;
+    }
 }
 
 .shrink {
