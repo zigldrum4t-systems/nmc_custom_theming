@@ -13,7 +13,13 @@
 
 #uploadprogressbar .ui-progressbar-value.ui-widget-header.ui-corner-left {
     background-color: #e20074 !important;
-    border-right:unset !important;
+}
+
+#uploadprogressbar .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
 }
 #uploadprogressbar .label {
      top: 5px !important;
