@@ -2409,6 +2409,33 @@ div.crumb.crumbmenu a {
     position: static;
 }
 
+/* preview css*/
+#viewer {
+  margin-top: 4px;
+}
+
+#viewer a.prev, #viewer a.next {
+  left: 40% !important;
+  height: auto !important;
+  width: auto !important;
+  position: fixed !important;
+  top: 0px !important;
+  display: inline-block !important;
+}
+#viewer a.next {
+  right: 30% !important;
+  left: unset !important;
+}
+
+.modal-header .modal-title{
+  text-align: left;
+}
+/* preview css*/
+
+.icon-loading-small{
+  display: none;
+}
+
 
 /*Responsive Styling*/
 
