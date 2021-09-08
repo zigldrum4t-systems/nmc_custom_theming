@@ -2482,8 +2482,9 @@ div.crumb.crumbmenu a {
         width: 74px !important;
     }
     #uploadprogressbar .label {
-        top: -1px !important;
-        right: 14px !important;
+        top: 1px !important;
+        left: -5px !important;
+        width: 74px !important;
     }
     #uploadprogresswrapper button.stop {
         left:108px !important;
