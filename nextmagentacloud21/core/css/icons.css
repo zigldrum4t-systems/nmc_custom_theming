@@ -186,6 +186,10 @@ div.crumb {
     background-repeat: no-repeat;
 }
 
+.icon-more {
+    background-image: var(--icon-more-custom) !important;
+}
+
 
 /**navigation-icons**/
 
