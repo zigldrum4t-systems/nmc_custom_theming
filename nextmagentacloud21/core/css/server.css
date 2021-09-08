@@ -476,9 +476,9 @@ aside {
     #content>.container-fixed {
         width: 1236px;
     }
-    .header-right .navbar-icons .smallscreenSize {
+    /* .header-right .navbar-icons .smallscreenSize {
         display: none !important;
-    }
+    } */
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
@@ -536,9 +536,9 @@ aside {
     border-bottom: 1px solid #e5e5e5;
 }
 
-#header .container-fixed .header-right .navbar-icons a {
+/* #header .container-fixed .header-right .navbar-icons a {
     display: inline;
-}
+} */
 
 @media screen and (max-width: 640px) {
     .button.new .hidden-visually {
@@ -620,9 +620,9 @@ aside {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    #header .container-fixed .header-right .navbar-icons a label {
+    /* #header .container-fixed .header-right .navbar-icons a label {
         font-size: 12px;
-    }
+    } */
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 0 !important;
     }
@@ -632,14 +632,7 @@ aside {
 }
 
 @media screen and (min-width: 375px) and (max-width: 639px) {
-    .header-left #nextcloud h5 {
-        font-size: 14px !important;
-        padding-left: 5px !important;
-    }
-    #header .container-fixed .header-left #nextcloud span {
-        font-size: 14px !important;
-    }
-    .header-right .navbar-icons a {
+    /* .header-right .navbar-icons a {
         font-size: 6px !important;
     }
     #header .container-fixed .header-right .navbar-icons a {
@@ -647,38 +640,26 @@ aside {
     }
     #header .container-fixed .header-right .navbar-icons a label {
         font-size: 10px;
-    }
-}
+     }
 
-@media screen and (max-width: 375px) {
-    #header .container-fixed .header-left .logo-area {
-        display: none;
-    }
-    .header-left #nextcloud h5 {
-        font-size: 12px !important;
-        padding-left: 2px !important;
-    }
-    #header .container-fixed .header-left #nextcloud span {
-        font-size: 12px !important;
-    }
     #header .container-fixed .header-right .navbar-icons a label {
         font-size: 9px;
     }
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 0px !important;
-    }
+    } */
 }
 
 @media screen and (max-width: 1299px) {
     .container-fixed {
         width: 100%;
     }
-    #header .container-fixed .header-right .navbar-icons a label {
+    /* #header .container-fixed .header-right .navbar-icons a label {
         display: block;
     }
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 5px;
-    }
+    } */
     #filestable tbody {
         row-gap: unset !important;
         justify-content: unset !important;
@@ -1126,6 +1107,9 @@ table th#headerDate {
     text-transform: capitalize;
 }
 
+.fileActionsMenu span:last-child,#rightClickMenu span:last-child{
+  margin-left: .5rem;
+}
 
 /* #rightClickMenu span:hover {
     color: #e20074 !important;
@@ -1715,10 +1699,6 @@ div.crumb:last-child {
     display: none;
 }
 
-.actions.creatable a:active {
-    border-color: var(--scl-color-magenta) !important;
-}
-
 .bubble,
 .app-navigation-entry-menu,
 .popovermenu {
@@ -1727,18 +1707,6 @@ div.crumb:last-child {
 
 .menuitem:hover span {
     color: #E20074 !important;
-}
-
-.newFileMenu li:nth-child(1) .menuitem:hover .svg {
-    background-image: var(--icon-upload-magenta) !important;
-}
-
-.newFileMenu li:nth-child(2) .menuitem:hover .svg {
-    background-image: var(--icon-new-folder-magenta) !important;
-}
-
-.newFileMenu li:nth-child(3) .menuitem:hover .svg {
-    background-image: var(--icon-text-magenta) !important;
 }
 
 button:not(:disabled):not(.primary):hover,
@@ -1870,10 +1838,6 @@ button:not(:disabled):not(.primary).active,
     opacity: unset !important;
 }
 
-.informNow a:hover .icon-download {
-    background-image: var(--icon-cloud-btn-magenta) !important;
-}
-
 .informNow a:hover span {
     color: #e20074 !important;
 }
@@ -1994,50 +1958,6 @@ li>.menuitem[class*=' icon-'] {
 
 .menubar button.is-active::before {
     background: none !important;
-}
-
-.menubar button.is-active.icon-italic {
-    background-image: var(--icon-italic-magenta) !important;
-}
-
-.menubar button.is-active.icon-strike {
-    background-image: var(--icon-strike-magenta) !important;
-}
-
-.menubar button.is-active.icon-bold {
-    background-image: var(--icon-bold-magenta) !important;
-}
-
-.menubar button.is-active.icon-ol {
-    background-image: var(--icon-ol-magenta) !important;
-}
-
-.menubar button.is-active.icon-ul {
-    background-image: var(--icon-ul-magenta) !important;
-}
-
-.menubar button.is-active.icon-h1 {
-    background-image: var(--icon-h1-magenta) !important;
-}
-
-.menubar button.is-active.icon-h2 {
-    background-image: var(--icon-h2-magenta) !important;
-}
-
-.menubar button.is-active.icon-h3 {
-    background-image: var(--icon-h3-magenta) !important;
-}
-
-.menubar button.is-active.icon-h4 {
-    background-image: var(--icon-h4-magenta) !important;
-}
-
-.menubar button.is-active.icon-h5 {
-    background-image: var(--icon-h5-magenta) !important;
-}
-
-.menubar button.is-active.icon-h6 {
-    background-image: var(--icon-h6-magenta) !important;
 }
 
 .save-status {
@@ -2236,7 +2156,6 @@ body#body-login.nmc-guest {
 }
 
 .nmc-guest .icon-search {
-    background-image: var(--icon-search-white) !important;
     width: 96px;
     height: 96px;
     background-size: 100% 100%;
@@ -2328,23 +2247,12 @@ body#body-login.nmc-guest {
     border: unset !important;
 }
 
-.closePopup .icon-download {
-    background-image: var( --icon-close-mark) !important;
-}
-
-
 /*single files guest view*/
 
 .file-preview img {
     height: 192px !important;
     width: 192px !important;
     padding-top: 2em;
-}
-
-.icon-folder,
-.icon-filetype-folder {
-    background-image: url(/themes/magenta-simple/core/img/filetypes/folder.svg) !important;
-    background-size: cover !important;
 }
 
 .unified-search__result-icon--with-thumbnail:not(.unified-search__result-icon--rounded) {
@@ -2358,11 +2266,6 @@ body#body-login.nmc-guest {
 
 .unified-search__result-icon--no-preview {
     background-size: 150% 150% !important;
-}
-
-.icon-settings {
-    background-image: var( --icon-setting-custom) !important;
-    background-size: cover !important;
 }
 
 .icon-confirm {
@@ -2389,7 +2292,7 @@ body#body-login.nmc-guest {
     width: 24px !important;
     height: 24px !important;
     padding: 0;
-    margin-right: 0.5rem !important;
+    margin-right: .5rem !important;
     background-position: unset;
 }
 
@@ -2419,7 +2322,7 @@ div.crumb.crumbmenu a {
   height: auto !important;
   width: auto !important;
   position: fixed !important;
-  top: 0px !important;
+  top: 0 !important;
   display: inline-block !important;
 }
 #viewer a.next {
@@ -2496,8 +2399,16 @@ div.crumb.crumbmenu a {
         padding: 0 1rem;
     }
     .brand-footer ul li:nth-child(2n) {
-        margin: 8px 0;
+        margin: .5rem 0;
     }
+    #nextcloud h5,#nextcloud span {
+      padding: 0 !important;
+      font-size: 1.25rem !important;
+  }
+  #header .logo-area {
+    display: none;
+}
+
 }
 
 @media screen and (max-width: 689px) {
@@ -2527,31 +2438,43 @@ div.crumb.crumbmenu a {
     #rich-workspace {
         padding: 0 1rem !important;
     }
-    #appmenu{
-      display: none;
-    }
-    #more-apps{
-      display:block !important;
-    }
-}
-
-@media screen and (max-width: 1299px) {
     #contactsmenu,
     #settings .menutoggle,
     .search-outer a.header-menu__trigger {
         flex-direction: column;
     }
-}
-
-@media screen and (min-width: 1300px) {
-  .menu-search-text,.email-menu-text,.username-lable{
-    margin-left: 0.5rem;
+    #appmenu{
+      display: none;
+    }
+    #more-apps{
+      display:block !important;
+      margin-left: 1rem;
+    }
+    .menu-search-text,.right-menu-font {
+      display: flex;
+      font-size: .625rem;
+      margin-top: 0.25rem;
+    }
+    #more-apps .right-menu-font,.menu-search-text,#contactsmenu .right-menu-font{
+      margin-top: .375rem;
+    }
+    #contactsmenu svg, #settings svg,
+    .unified-search__trigger,#more-apps .icon-more-white{
+      width: 20px !important;
+      height: 20px !important;
+      margin: 0 auto;
+    }
+    #contactsmenu,#unified-search {
+      margin-right: 1rem;
   }
 }
 
 @media screen and (min-width: 1025px) {
     .breadcrumb-translation {
         transition: top .4s ease-out;
+    }
+    .menu-search-text,.email-menu-text,.username-lable{
+      margin-left: 0.5rem;
     }
 }
 

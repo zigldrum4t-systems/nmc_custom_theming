@@ -15,14 +15,14 @@
   fill: #e20074;
 }
 
-#header .container-fixed .header-left #nextcloud h5 {
+#nextcloud h5 {
   font-size: 25px;
   color: #161616;
   font-weight: bold;
   padding-left: 12px;
 }
 
-#header .container-fixed .header-left #nextcloud span {
+#nextcloud span {
   font-weight: normal;
   font-size: 25px !important;
 }
@@ -261,7 +261,6 @@ padding-left: 1rem;
 .menu-search-text {
     font-size: .75rem;
     font-weight: bold !important;
-    margin-top: 1px;
 }
 
 .right-menu-font {
@@ -316,25 +315,13 @@ padding-left: 1rem;
     opacity: 1 !important;
 }
 
-#contactsmenu {
+#contactsmenu,#unified-search {
     margin-right: 1.5rem;
 }
 
 .unified-search__trigger {
     width: 24px !important;
     height: 24px !important;
-}
-
-#unified-search {
-    margin-right: 1.5rem;
-}
-
-#more-apps{
-  margin-left: 1.5rem;
-}
-#more-apps .icon-more-white{
-  width: 24px;
-  height: 24px;
 }
 
 /***  Right menuitems ***/
