@@ -186,6 +186,10 @@ div.crumb {
     background-repeat: no-repeat;
 }
 
+.icon-more {
+    background-image: var(--icon-more-custom) !important;
+}
+
 
 /**navigation-icons**/
 
@@ -227,8 +231,99 @@ div.crumb {
 
 #navigation[style=''] ~ #more-apps .icon-more-white{
   background-image: var(--icon-close-custom) !important;
+  background-size: cover;
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
+.closePopup .icon-download {
+  background-image: var( --icon-close-mark) !important;
+}
 
+.icon-folder,
+.icon-filetype-folder {
+    background-image: url(/themes/magenta-simple/core/img/filetypes/folder.svg) !important;
+    background-size: cover !important;
+}
+
+.icon-settings {
+  background-image: var( --icon-setting-custom) !important;
+  background-size: cover !important;
+}
+
+.nmc-guest .icon-search {
+  background-image: var(--icon-search-white) !important;
+}
+
+
+.menubar button.is-active.icon-italic {
+  background-image: var(--icon-italic-magenta) !important;
+}
+
+.menubar button.is-active.icon-strike {
+  background-image: var(--icon-strike-magenta) !important;
+}
+
+.menubar button.is-active.icon-bold {
+  background-image: var(--icon-bold-magenta) !important;
+}
+
+.menubar button.is-active.icon-ol {
+  background-image: var(--icon-ol-magenta) !important;
+}
+
+.menubar button.is-active.icon-ul {
+  background-image: var(--icon-ul-magenta) !important;
+}
+
+.menubar button.is-active.icon-h1 {
+  background-image: var(--icon-h1-magenta) !important;
+}
+
+.menubar button.is-active.icon-h2 {
+  background-image: var(--icon-h2-magenta) !important;
+}
+
+.menubar button.is-active.icon-h3 {
+  background-image: var(--icon-h3-magenta) !important;
+}
+
+.menubar button.is-active.icon-h4 {
+  background-image: var(--icon-h4-magenta) !important;
+}
+
+.menubar button.is-active.icon-h5 {
+  background-image: var(--icon-h5-magenta) !important;
+}
+
+.menubar button.is-active.icon-h6 {
+  background-image: var(--icon-h6-magenta) !important;
+}
+
+.informNow a:hover .icon-download {
+  background-image: var(--icon-cloud-btn-magenta) !important;
+}
+
+.newFileMenu li:nth-child(1) .menuitem:hover .svg {
+  background-image: var(--icon-upload-magenta) !important;
+}
+
+.newFileMenu li:nth-child(2) .menuitem:hover .svg {
+  background-image: var(--icon-new-folder-magenta) !important;
+}
+
+.newFileMenu li:nth-child(3) .menuitem:hover .svg {
+  background-image: var(--icon-text-magenta) !important;
+}
+
+.newFileMenu li:nth-child(1) .menuitem:hover .svg {
+  background-image: var(--icon-upload-magenta) !important;
+}
+
+.newFileMenu li:nth-child(2) .menuitem:hover .svg {
+  background-image: var(--icon-new-folder-magenta) !important;
+}
+
+.newFileMenu li:nth-child(3) .menuitem:hover .svg {
+  background-image: var(--icon-text-magenta) !important;
+}
 /** icons**/
