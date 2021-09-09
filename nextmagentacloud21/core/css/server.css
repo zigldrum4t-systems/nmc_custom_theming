@@ -569,11 +569,6 @@ aside {
     #filestable.view-grid tbody {
         row-gap: 13px !important;
     }
-    #filestable.view-grid tbody td.selection {
-        top: 8px !important;
-        left: unset !important;
-        right: 25px;
-    }
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
@@ -2013,6 +2008,9 @@ div.crumb.crumbmenu a {
     .breadcrumb-translation {
         transition: top .4s ease-out;
     }
+    .oc-dialog{
+        width:640px !important;
+    }
     .menu-search-text,.email-menu-text,.username-lable{
       margin-left: 0.5rem;
     }
@@ -2020,3 +2018,173 @@ div.crumb.crumbmenu a {
 
 
 /*Responsive Styling*/
+
+/*Copy-move-dialog*/
+.oc-dialog{
+    padding:1.5rem !important;
+}
+
+.oc-dialog .oc-dialog-title{
+    font-size:1.5rem !important;
+    margin-bottom:0.375rem !important;
+}
+
+.oc-dialog  .oc-dialog-close{
+    background: var(--icon-dialog-close) no-repeat center !important;
+    margin: 1.5rem !important;
+    padding: 0.938rem !important;
+    opacity: unset !important;
+}
+#oc-dialog-filepicker-content .dirtree{
+    padding-left:0.125px !important;
+}
+
+.oc-dialog-buttonrow button {
+    height: 40px !important;
+    min-width: 135px !important;
+    border-radius: 8px !important;
+    padding: 0 1.5rem !important;
+    background-color: #ffffff;
+    border-color: #191919;
+    margin:0px !important;
+}
+.oc-dialog-buttonrow button:hover{
+    border-color:#e20074 !important;
+    color: #e20074 !important;
+}
+
+.oc-dialog-buttonrow.onebutton, .oc-dialog-buttonrow.twobuttons.aside  .primary{
+    background-color:#e20074 !important;
+    border-color:#e20074 !important;
+    color:#ffffff !important;
+    margin:0 0 0 0.5rem !important;
+}
+
+.oc-dialog-buttonrow.onebutton, .oc-dialog-buttonrow.twobuttons.aside  .primary:hover{
+background-color: #f90984 !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist .filename {
+    background-size: 44px !important;
+    background-position: 5px 14px !important;
+}
+
+#picker-filestable thead tr{
+    height:32px !important;
+}
+
+#picker-filestable tr{
+    height:68px !important;
+}
+
+#picker-filestable  tbody tr:hover,
+#picker-filestable tbody tr:focus,
+#picker-filestable tbody tr:active{
+    background-color: rgb(242 242 242 / 50%) !important;;
+}
+
+.oc-dialog-buttonrow{
+    padding:0 !important;
+}
+#oc-dialog-filepicker-content .filelist-container {
+    margin-bottom:1.5rem;
+    margin-top:0.75rem;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist{
+    margin-bottom: 0 !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist td.filename{
+    width:200px !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist td.filesize{
+    padding:0.875rem 1rem !important;
+    width:50px !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist td.date{
+    padding:0.875rem 1rem !important;
+    text-align: right !important;
+    width:calc(100% - 250px) !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.name {
+    padding:1.25rem 1rem 1.25rem 0.313rem !important;
+    margin-left:2.688rem !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.size {
+    padding:1.25rem 1rem !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle#modified {
+    padding:1.25rem 1rem !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#oc-dialog-filepicker-content .dirtree div:first-child a {
+    background-image: var(--icon-home-custom) !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable{
+    background-color: unset !important;
+    border:unset !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable a{
+    background-color: unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
+    border:unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
+    border-bottom: 1px solid var(--color-border) !important;
+}
+
+.oc-dialog div.crumb{
+    background-size: auto 24px !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable{
+    left:6px !important;
+    top:10px !important;
+}
+
+#oc-dialog-filepicker-content #picker-view-toggle{
+    display: none;
+}
+
+#oc-dialog-filepicker-content .breadcrumb {
+    margin-left: 0 !important;
+}
+
+.oc-dialog-content{
+    max-width: unset !important;
+}
+
+#picker-filestable .view-grid tbody{
+    display:none !important;
+}
+
+.oc-dialog ::-webkit-scrollbar {
+    width: 4px !important;
+}
+
+.oc-dialog ::-webkit-scrollbar-thumb {
+    background: #cccccc !important;
+    border:unset !important;
+}
+
+.filelist-container .icon-triangle-s {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+.filelist-container .icon-triangle-n {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator  {
+  margin-left: -78px !important;
+}
+
