@@ -569,11 +569,6 @@ aside {
     #filestable.view-grid tbody {
         row-gap: 13px !important;
     }
-    #filestable.view-grid tbody td.selection {
-        top: 8px !important;
-        left: unset !important;
-        right: 25px;
-    }
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
