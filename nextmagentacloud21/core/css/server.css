@@ -2030,7 +2030,7 @@ div.crumb.crumbmenu a {
 }
 
 .oc-dialog  .oc-dialog-close{
-    background: var(--icon-dialog-close)no-repeat center !important;
+    background: var(--icon-dialog-close) no-repeat center !important;
     margin: 1.5rem !important;
     padding: 0.938rem !important;
     opacity: unset !important;
@@ -2055,7 +2055,7 @@ div.crumb.crumbmenu a {
 
 .oc-dialog-buttonrow.onebutton, .oc-dialog-buttonrow.twobuttons.aside  .primary{
     background-color:#e20074 !important;
-    border:#e20074 !important;
+    border-color:#e20074 !important;
     color:#ffffff !important;
     margin:0 0 0 0.5rem !important;
 }
@@ -2110,7 +2110,7 @@ background-color: #f90984 !important;
     margin-left:2.688rem !important;
 }
 #oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.size {
-    padding:1.25rem 1rem!important;
+    padding:1.25rem 1rem !important;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
