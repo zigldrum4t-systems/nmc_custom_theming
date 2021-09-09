@@ -2526,7 +2526,184 @@ div.crumb.crumbmenu a {
     .breadcrumb-translation {
         transition: top .4s ease-out;
     }
+    .oc-dialog{
+        width:640px !important;
+    }
 }
 
 
 /*Responsive Styling*/
+
+/*Copy-move-dialog*/
+.oc-dialog{
+    padding:24px !important;
+}
+
+.oc-dialog .oc-dialog-title{
+    font-size:24px !important;
+    margin-bottom:6px !important;
+}
+
+.oc-dialog  .oc-dialog-close{
+    background: var(--icon-dialog-close)no-repeat center !important;
+    margin: 24px !important;
+    padding: 15px !important;
+    opacity: unset !important;
+}
+#oc-dialog-filepicker-content .dirtree{
+    padding-left:2px !important;
+}
+
+.oc-dialog-buttonrow button {
+    height: 40px !important;
+    min-width: 135px !important;
+    border-radius: 8px !important;
+    padding: 0px 24px !important;
+    background-color: #ffffff;
+    border-color: #191919;
+    margin:0px !important;
+}
+.oc-dialog-buttonrow button:hover{
+    border-color:#e20074 !important;
+    color: #e20074 !important;
+}
+
+.oc-dialog-buttonrow.onebutton, .oc-dialog-buttonrow.twobuttons.aside  .primary{
+    background-color:#e20074 !important;
+    border:#e20074 !important;
+    color:#ffffff !important;
+    margin:0px 0px 0px 8px !important;
+}
+
+.oc-dialog-buttonrow.onebutton, .oc-dialog-buttonrow.twobuttons.aside  .primary:hover{
+background-color: #f90984 !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist .filename {
+    background-size: 44px !important;
+    background-position: 5px 14px !important;
+}
+
+#picker-filestable thead tr{
+    height:32px !important;
+}
+
+#picker-filestable tr{
+    height:68px !important;
+}
+
+#picker-filestable  tbody tr:hover, 
+#picker-filestable tbody tr:focus, 
+#picker-filestable tbody tr:active{
+    background-color: rgb(242 242 242 / 50%) !important;;
+}
+
+.oc-dialog-buttonrow{
+    padding:0px !important;
+}
+#oc-dialog-filepicker-content .filelist-container {
+    margin-bottom:24px;
+    margin-top:12px;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist{
+    margin-bottom: 0px !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist td.filename{
+    width:200px !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist td.filesize{
+    padding:14px 16px !important;
+    width:50px !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist td.date{
+    padding:14px 16px !important;
+    text-align: right !important;
+    width:calc(100% - 250px) !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.name {
+    padding:20px 16px 20px 5px !important;
+    margin-left:43px !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.size {
+    padding:20px 16px !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle#modified {
+    padding:20px 16px !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#oc-dialog-filepicker-content .dirtree div:first-child a {
+    background-image: var(--icon-home-custom) !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable{
+    background-color: unset !important;
+    border:unset !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable a{
+    background-color: unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
+    border:unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
+    border-bottom: 1px solid var(--color-border) !important;
+}
+
+.oc-dialog div.crumb{
+    background-size: auto 24px !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable{
+    left:6px !important;
+    top:10px !important;
+}
+
+#oc-dialog-filepicker-content #picker-view-toggle{
+    display: none;
+}
+
+#oc-dialog-filepicker-content .breadcrumb {
+    margin-left: 0 !important;
+}
+
+.oc-dialog-content{
+    max-width: unset !important;
+}
+
+#picker-filestable .view-grid tbody{
+    display:none !important;
+}
+
+.oc-dialog ::-webkit-scrollbar {
+    width: 4px !important;
+}
+
+.oc-dialog ::-webkit-scrollbar-thumb {
+    background: #cccccc !important;
+    border:unset !important;
+}
+
+.filelist-container .icon-triangle-s {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+.filelist-container .icon-triangle-n {
+    background-image: var(--icon-triangle-s-e20074);
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator  {
+    width: 10px !important;
+    height: 8px !important;  
+    margin-left: -78px !important;
+    margin-right: 65px !important;
+    display: inline-block !important;
+    vertical-align: text-bottom !important;
+    opacity: 0.3 !important;
+}
