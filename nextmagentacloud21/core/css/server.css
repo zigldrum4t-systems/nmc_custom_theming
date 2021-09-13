@@ -2022,6 +2022,7 @@ div.crumb.crumbmenu a {
 /*Copy-move-dialog*/
 .oc-dialog{
     padding:1.5rem !important;
+    box-shadow: var(--scl-shadow-level-2) !important;
 }
 
 .oc-dialog .oc-dialog-title{
@@ -2036,7 +2037,7 @@ div.crumb.crumbmenu a {
     opacity: unset !important;
 }
 #oc-dialog-filepicker-content .dirtree{
-    padding-left:0.125px !important;
+    padding-left:0.125rem !important;
 }
 
 .oc-dialog-buttonrow button {
@@ -2064,6 +2065,9 @@ div.crumb.crumbmenu a {
 background-color: #f90984 !important;
 }
 
+.oc-dialog-buttonrow button{
+    font-size: 1rem !important;
+}
 #oc-dialog-filepicker-content #picker-filestable.filelist .filename {
     background-size: 44px !important;
     background-position: 5px 14px !important;
