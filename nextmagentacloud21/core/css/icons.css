@@ -11,7 +11,7 @@
 }
 
 .icon-add {
-    background-image: var(--icon-breadcrumb-add-custom);
+    background-image: var(--icon-breadcrumb-add-custom) !important;
     opacity: 0.9 !important;
 }
 
