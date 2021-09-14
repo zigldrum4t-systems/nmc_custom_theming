@@ -4,6 +4,7 @@ window.onload = function() {
     searchIconLabel();
     searchInputLabel();
     appendFolderName();
+    domElementsobserver();
 };
 
 function brandBarAnimation() {
@@ -13,12 +14,9 @@ function brandBarAnimation() {
         document.getElementsByClassName('brandbar')[0] ? document.getElementsByClassName('brandbar')[0].classList.add('brand-bar-translation') : null;
         document.getElementById('app-navigation-toggle') ? document.getElementById('app-navigation-toggle').classList.add('app-navigation-translation') : null;
         var ele = document.getElementsByClassName('full-width-breadcrumb');
-
         for (let i = 0; i < ele.length; i++) {
             ele[i] ? ele[i].classList.add('breadcrumb-translation') : null;
         }
-
-
     }, 3000);
     // let workSpaceelement = document.getElementById('showRichWorkspacesToggle');
     // let workSpaceevent = new Event('change');
@@ -69,4 +67,24 @@ function appendFolderName() {
         emptyElement.getElementsByClassName('folder-name')[0] ?
             emptyElement.getElementsByClassName('folder-name')[0].innerText = folderName : null;
     }
+}
+
+function domElementsobserver(){
+    var domObserver = new MutationObserver(function(domMutations) {
+    domMutations.forEach(function(mutation) {
+        if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+            var ele = [].some.call(mutation.addedNodes, function(e) {
+                return e.classList.contains('oc-dialog');
+            });
+            if (ele) {
+                if(document.getElementById('picker-filestable')){
+                  document.getElementById('picker-filestable').classList ='';
+                  document.getElementById('picker-filestable').classList.add('filelist');
+              }
+            }
+        }
+    });
+});
+
+domObserver.observe(document.body, {attributes: true,childList: true, characterData: true});
 }
