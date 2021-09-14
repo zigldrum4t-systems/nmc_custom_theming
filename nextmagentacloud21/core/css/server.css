@@ -1962,8 +1962,14 @@ div.crumb.crumbmenu a {
     #fileList td a a.action.action-share.shared-style {
         width: 0 !important;
     }
+    #uploadprogressbar {
+      width: 80px !important;
+  }
+  #uploadprogressbar .label {
+    top: 2px !important;
+    width: 80px !important;
 }
-
+}
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     .breadcrumb {
         margin-left: 2rem;

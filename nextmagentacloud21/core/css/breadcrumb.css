@@ -1,7 +1,7 @@
 /*---progress-bar----*/
 #uploadprogresswrapper {
-  margin-left: 24px !important;
-  margin-top:3px;
+  margin-left: 1.5rem !important;
+  margin-top: 0.188rem !important;
 }
 #uploadprogressbar{
   width:160px !important;
@@ -14,19 +14,14 @@
   left:0px !important;
 }
 
-#uploadprogressbar .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
-  /* border-bottom-right-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important; */
-}
 #uploadprogressbar .label {
    top: 5px !important;
    font-weight:600;
    width:160px !important;
 }
+
 #uploadprogressbar .label span{
- font-size: 12px !important;
+ font-size: 0.75rem !important;
 }
 #uploadprogressbar .label.inner span{
   color:#ffffff !important;
@@ -45,7 +40,7 @@
 #controls .actions>div>.button, #controls .actions>div button, #controls .actions>.button, #controls .actions button {
   height:24px !important;
   width:24px !important;
-  padding:4px !important;
+  padding:0.25rem !important;
 }
 
 #uploadprogresswrapper button:not(:disabled):not(.primary):hover,
@@ -54,5 +49,5 @@
 #uploadprogresswrapper .button:not(:disabled):not(.primary):hover,
 #uploadprogresswrapper .button:not(:disabled):not(.primary):focus,
 #uploadprogresswrapper .button:not(:disabled):not(.primary).active{
-   border-color:#e5e5e5!important;
+   border-color:#e5e5e5 !important;
 }
