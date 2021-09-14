@@ -1853,21 +1853,32 @@ div.crumb.crumbmenu a {
 }
 
 #viewer a.prev, #viewer a.next {
-  left: 40% !important;
-  height: auto !important;
-  width: auto !important;
   position: fixed !important;
   top: 0 !important;
   display: inline-block !important;
+  left: 40% !important;
+  height: auto !important;
+  width: auto !important;
+  z-index: 9999;
+
 }
 #viewer a.next {
   right: 30% !important;
   left: unset !important;
 }
 
-.modal-header .modal-title{
-  text-align: left;
+.modal-header{
+  width: 1300px !important;
+  justify-content: space-between !important;
+  margin: 0 auto;
+
 }
+.modal-header .modal-title{
+  width: auto !important;
+  padding: 0 !important;
+  margin-left: 1rem;
+}
+
 /* preview css*/
 
 .icon-loading-small{

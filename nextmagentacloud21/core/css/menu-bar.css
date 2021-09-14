@@ -524,7 +524,6 @@ padding: 0 2rem;
   font-size: 1.5rem;
   max-width: 150px !important;
   white-space: nowrap;
-  font-weight: 800;
   text-overflow: ellipsis;
   overflow: hidden;
 }
