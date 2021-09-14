@@ -1,0 +1,58 @@
+/*---progress-bar----*/
+#uploadprogresswrapper {
+  margin-left: 24px !important;
+  margin-top:3px;
+}
+#uploadprogressbar{
+  width:160px !important;
+  height:24px !important;
+  border-radius:8px 0 0 8px !important;
+}
+
+#uploadprogressbar .ui-progressbar-value.ui-widget-header.ui-corner-left {
+  background-color: #e20074 !important;
+  left:0px !important;
+}
+
+#uploadprogressbar .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  /* border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important; */
+}
+#uploadprogressbar .label {
+   top: 5px !important;
+   font-weight:600;
+   width:160px !important;
+}
+#uploadprogressbar .label span{
+ font-size: 12px !important;
+}
+#uploadprogressbar .label.inner span{
+  color:#ffffff !important;
+}
+#uploadprogresswrapper .icon-close {
+  background-image: var(--icon-close-custom) !important;
+}
+
+#uploadprogresswrapper button.stop{
+  background-color: #ffffff !important;
+  background-position: center center !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+#controls .actions>div>.button, #controls .actions>div button, #controls .actions>.button, #controls .actions button {
+  height:24px !important;
+  width:24px !important;
+  padding:4px !important;
+}
+
+#uploadprogresswrapper button:not(:disabled):not(.primary):hover,
+#uploadprogresswrapper button:not(:disabled):not(.primary):focus,
+#uploadprogresswrapper button:not(:disabled):not(.primary).active,
+#uploadprogresswrapper .button:not(:disabled):not(.primary):hover,
+#uploadprogresswrapper .button:not(:disabled):not(.primary):focus,
+#uploadprogresswrapper .button:not(:disabled):not(.primary).active{
+   border-color:#e5e5e5!important;
+}
