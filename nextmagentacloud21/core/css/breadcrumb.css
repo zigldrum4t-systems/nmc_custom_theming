@@ -37,7 +37,10 @@
   border-bottom-right-radius: 8px !important;
 }
 
-#controls .actions>div>.button, #controls .actions>div button, #controls .actions>.button, #controls .actions button {
+#controls .actions>div>.button,
+#controls .actions>div button,
+#controls .actions>.button,
+#controls .actions button {
   height:24px !important;
   width:24px !important;
   padding:0.25rem !important;
@@ -51,3 +54,4 @@
 #uploadprogresswrapper .button:not(:disabled):not(.primary).active{
    border-color:#e5e5e5 !important;
 }
+
