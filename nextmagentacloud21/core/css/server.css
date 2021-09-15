@@ -2209,45 +2209,5 @@ background-color: #f90984 !important;
 #oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator  {
   margin-left: -78px !important;
 }
-/*Profile-button-dropdown*/
-#header .header-left nav .menu,
-#header .header-right div .menu{
-  padding:1.5rem 1rem;
-  min-width: 176px;
-  box-shadow: var(--scl-shadow-level-2);
-  filter:unset !important;
-}
-
-#header .header-left nav .menu #apps ul li a:hover,
-#header .header-left nav .menu #apps ul li a:focus,
-#header .header-left nav .menu.settings-menu ul li a:hover,
-#header .header-left nav .menu.settings-menu ul li a:focus,
-#header .header-right div .menu #apps ul li a:hover,
-#header .header-right div .menu #apps ul li a:focus,
-#header .header-right div .menu.settings-menu ul li a:hover,
-#header .header-right div .menu.settings-menu ul li a:focus {
-  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
-  background-color: unset !important;
-}
-
-.settings-menu li:nth-child(1),
-.settings-menu li:nth-child(3),
-.settings-menu li:nth-child(4)
-{
-  display:none !important;
-}
-
-#header .header-left nav .menu #apps ul li a img,
-#header .header-left nav .menu #apps ul li a svg,
-#header .header-left nav .menu.settings-menu ul li a img,
-#header .header-left nav .menu.settings-menu ul li a svg,
-#header .header-right div .menu #apps ul li a img,
-#header .header-right div .menu #apps ul li a svg,
-#header .header-right div .menu.settings-menu ul li a img,
-#header .header-right div .menu.settings-menu ul li a svg {
-  opacity: unset !important;
-  height: 20px !important;
-  width: 20px !important;
-}
 
 
