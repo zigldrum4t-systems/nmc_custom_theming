@@ -152,11 +152,15 @@
                             <ul>
                                 <?php foreach ($_['settingsnavigation'] as $entry):?>
                                 <li data-id="<?php p($entry['id']); ?>">
-                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
+                                    <a href="<?php $entry['id']=="help"?print_unescaped("https://cloud.telekom-dienste.de/hilfe"):print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
                                         class="active" <?php endif; ?>>
                                         <img alt=""
                                             src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
-                                        <?php p($entry['name']) ?>
+                                          <?php if($entry['id']=="help"){ ?>
+                                            <?php p($l->t('Help & FAQ'));?>
+                                          <?php }else{ ?>
+                                            <?php p($entry['name']) ?>
+                                          <?php } ?>
                                     </a>
                                 </li>
                                 <?php endforeach; ?>
