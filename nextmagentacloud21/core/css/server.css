@@ -432,8 +432,6 @@ body {
     }
 }
 
-
-
 #app-navigation,
 #app-sidebar-vue {
     width: 288px !important;
@@ -465,8 +463,6 @@ aside {
     position: relative;
     display: flex;
 }
-
-
 
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
     .brandbar>.container-fixed {
@@ -540,6 +536,7 @@ aside {
     width: 100%;
     border-bottom: 1px solid #e5e5e5;
 }
+
 
 /* #header .container-fixed .header-right .navbar-icons a {
     display: inline;
@@ -663,7 +660,6 @@ aside {
     #header .container-fixed .header-right .navbar-icons a {
         padding: 14px 5px;
     }*/
-
     #filestable.view-grid tbody {
         row-gap: 16px !important;
     }
@@ -835,9 +831,11 @@ input[type="checkbox"].checkbox+label:before:hover {
     text-transform: capitalize;
 }
 
-.fileActionsMenu span:last-child,#rightClickMenu span:last-child{
-  margin-left: .5rem;
+.fileActionsMenu span:last-child,
+#rightClickMenu span:last-child {
+    margin-left: .5rem;
 }
+
 
 /* #rightClickMenu span:hover {
     color: #e20074 !important;
@@ -883,7 +881,6 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-image: var(--icon-copy-paste-magenta) !important;
 }*/
 
-
 #view-toggle {
     background-color: transparent;
     border: none;
@@ -925,6 +922,7 @@ a.menuitem.action:hover>span,
     margin-bottom: 2em;
     background-color: #f2f2f2;
 }
+
 
 /* new custom changes*/
 
@@ -1529,7 +1527,6 @@ li>.menuitem[class*=' icon-'] {
 .popover__wrapper li.active {
     box-shadow: none !important;
     color: #E20074 !important;
-    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
 .popover {
@@ -1563,7 +1560,7 @@ li>.menuitem[class*=' icon-'] {
 #body-login,
 #firstrunwizard .firstrunwizard-header,
 #theming-preview {
-    background: url('/themes/magenta-simple/core/img/dt_background.jpg') no-repeat !important;
+    background: url('../../core/img/dt_background.jpg') no-repeat !important;
     background-color: unset !important;
     background-size: cover !important;
 }
@@ -1783,6 +1780,7 @@ body#body-login.nmc-guest {
     border: unset !important;
 }
 
+
 /*single files guest view*/
 
 .file-preview img {
@@ -1848,42 +1846,324 @@ div.crumb.crumbmenu a {
     position: static;
 }
 
+
 /* preview css*/
+
 #viewer {
-  margin-top: 4px;
+    margin-top: 4px;
 }
 
-#viewer a.prev, #viewer a.next {
-  position: fixed !important;
-  top: 0 !important;
-  display: inline-block !important;
-  left: 40% !important;
-  height: auto !important;
-  width: auto !important;
-  z-index: 9999;
-
-}
+#viewer a.prev,
 #viewer a.next {
-  right: 30% !important;
-  left: unset !important;
+    position: fixed !important;
+    top: 0 !important;
+    display: flex !important;
+    left: 44.5% !important;
+    height: 70px !important;
+    min-width: auto !important;
+    width: auto !important;
+    opacity: .7;
+    z-index: 99999;
+    visibility: visible !important;
+    margin: 0 2rem;
 }
 
-.modal-header{
-  width: 1300px !important;
-  justify-content: space-between !important;
-  margin: 0 auto;
+#viewer a.prev:hover,
+#viewer a.next:hover {
+    opacity: 1;
+}
 
+#viewer a.next {
+    right: 42.5% !important;
+    left: unset !important;
 }
-.modal-header .modal-title{
-  width: auto !important;
-  padding: 0 !important;
-  margin-left: 1rem;
+
+.modal-header {
+    position: relative !important;
+    /* width: 1536px !important; */
+    height: 63px !important;
+    margin: 0 auto;
+    background: #191919;
+    border-bottom: 1px solid #e5e5e5;
+    justify-content: space-between !important;
+    visibility: visible !important;
 }
+
+.modal-header .modal-title {
+    font-size: 1rem !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin-left: 1rem;
+    text-align: left !important;
+}
+
+#viewer .action-item.header-actions {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-right: 1.5rem !important;
+}
+
+#viewer .action-item__menutoggle--default-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(148deg) brightness(105%) contrast(101%);
+    min-width: 24px;
+    min-height: 24px;
+    height: 24px;
+    padding: 0 !important;
+    opacity: 1 !important;
+}
+
+#viewer .action-item.action-item--single.header-close {
+    background-image: unset !important;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+.icon-previous::before,
+.icon-next::before,
+.icon-play::before {
+    content: '' !important;
+}
+
+.icon-previous,
+.icon-next,
+.icon-play {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-size: cover;
+}
+
+#viewer .play-pause {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    width: auto;
+    height: 70px;
+}
+
+.popover .action-link {
+    align-items: center !important;
+}
+
+#viewer iframe {
+    top: 81px !important;
+}
+
+#viewer .viewer__content {
+    align-self: start;
+    height: auto !important;
+    margin-top: 1rem;
+}
+
+#viewer .modal-container {
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+#viewer #editor-container {
+    top: 64px !important
+}
+
 
 /* preview css*/
 
-.icon-loading-small{
-  display: none;
+.icon-loading-small {
+    display: none;
+}
+
+
+/*Copy-move-dialog*/
+
+.oc-dialog {
+    padding: 1.5rem !important;
+    box-shadow: var(--scl-shadow-level-2) !important;
+}
+
+.oc-dialog .oc-dialog-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.375rem !important;
+}
+
+.oc-dialog .oc-dialog-close {
+    background: var(--icon-dialog-close) no-repeat center !important;
+    margin: 1.5rem !important;
+    padding: 0.938rem !important;
+    opacity: unset !important;
+}
+
+#oc-dialog-filepicker-content .dirtree {
+    padding-left: 0.125rem !important;
+}
+
+.oc-dialog-buttonrow button {
+    height: 40px !important;
+    min-width: 135px !important;
+    border-radius: 8px !important;
+    padding: 0 1.5rem !important;
+    background-color: #ffffff;
+    border-color: #191919;
+    margin: 0px !important;
+}
+
+.oc-dialog-buttonrow button:hover {
+    border-color: #e20074 !important;
+    color: #e20074 !important;
+}
+
+.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.twobuttons.aside .primary {
+    background-color: #e20074 !important;
+    border-color: #e20074 !important;
+    color: #ffffff !important;
+    margin: 0 0 0 0.5rem !important;
+}
+
+.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.twobuttons.aside .primary:hover {
+    background-color: #f90984 !important;
+}
+
+.oc-dialog-buttonrow button {
+    font-size: 1rem !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist .filename {
+    background-size: 44px !important;
+    background-position: 5px 14px !important;
+}
+
+#picker-filestable thead tr {
+    height: 32px !important;
+}
+
+#picker-filestable tr {
+    height: 68px !important;
+}
+
+#picker-filestable tbody tr:hover,
+#picker-filestable tbody tr:focus,
+#picker-filestable tbody tr:active {
+    background-color: rgb(242 242 242 / 50%) !important;
+    ;
+}
+
+.oc-dialog-buttonrow {
+    padding: 0 !important;
+}
+
+#oc-dialog-filepicker-content .filelist-container {
+    margin-bottom: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist {
+    margin-bottom: 0 !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist td.filename {
+    width: 200px !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist td.filesize {
+    padding: 0.875rem 1rem !important;
+    width: 50px !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist td.date {
+    padding: 0.875rem 1rem !important;
+    text-align: right !important;
+    width: calc(100% - 250px) !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.name {
+    padding: 1.25rem 1rem 1.25rem 0.313rem !important;
+    margin-left: 2.688rem !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.size {
+    padding: 1.25rem 1rem !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle#modified {
+    padding: 1.25rem 1rem !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#oc-dialog-filepicker-content .dirtree div:first-child a {
+    background-image: var(--icon-home-custom) !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable {
+    background-color: unset !important;
+    border: unset !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable a {
+    background-color: unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
+    border: unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
+    border-bottom: 1px solid var(--color-border) !important;
+}
+
+.oc-dialog div.crumb {
+    background-size: auto 24px !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable {
+    left: 6px !important;
+    top: 10px !important;
+}
+
+#oc-dialog-filepicker-content #picker-view-toggle {
+    display: none;
+}
+
+#oc-dialog-filepicker-content .breadcrumb {
+    margin-left: 0 !important;
+}
+
+.oc-dialog-content {
+    max-width: unset !important;
+}
+
+#picker-filestable .view-grid tbody {
+    display: none !important;
+}
+
+.oc-dialog ::-webkit-scrollbar {
+    width: 4px !important;
+}
+
+.oc-dialog ::-webkit-scrollbar-thumb {
+    background: #cccccc !important;
+    border: unset !important;
+}
+
+.filelist-container .icon-triangle-s {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+.filelist-container .icon-triangle-n {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator {
+    margin-left: -78px !important;
 }
 
 
@@ -1948,14 +2228,32 @@ div.crumb.crumbmenu a {
     .brand-footer ul li:nth-child(2n) {
         margin: .5rem 0;
     }
-    #nextcloud h5,#nextcloud span {
-      padding: 0 !important;
-      font-size: 1.25rem !important;
-  }
-  #header .logo-area {
-    display: none;
-}
-
+    #nextcloud h5,
+    #nextcloud span {
+        padding: 0 !important;
+        font-size: 1.25rem !important;
+    }
+    #header .logo-area {
+        display: none;
+    }
+    #viewer .viewer__content {
+        margin: auto 1rem !important;
+    }
+    .icon-previous,
+    .icon-next,
+    .icon-play {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    #viewer .modal-wrapper a.prev {
+        left: 30.5% !important;
+    }
+    #viewer .modal-wrapper a.next {
+        right: 25% !important;
+    }
+    #viewer .modal-header .modal-title {
+        width: calc(50% - 70px)!important;
+    }
 }
 
 @media screen and (max-width: 688px) {
@@ -1963,16 +2261,23 @@ div.crumb.crumbmenu a {
         width: 0 !important;
     }
     #uploadprogressbar {
-      width: 80px !important;
-  }
-  #uploadprogressbar .label {
-    top: 2px !important;
-    width: 80px !important;
+        width: 80px !important;
+    }
+    #uploadprogressbar .label {
+        top: 2px !important;
+        width: 80px !important;
+    }
 }
-}
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     .breadcrumb {
         margin-left: 2rem;
+    }
+    #viewer .modal-wrapper a.prev {
+        left: 36.5% !important;
+    }
+    #viewer .modal-wrapper a.next {
+        right: 31% !important;
     }
 }
 
@@ -1983,7 +2288,6 @@ div.crumb.crumbmenu a {
     .closePopup {
         margin-right: 0;
     }
-
     #controls {
         margin: 0 0 1rem 0 !important;
         padding: 0 0 0 2.5rem !important;
@@ -1996,218 +2300,69 @@ div.crumb.crumbmenu a {
     .search-outer a.header-menu__trigger {
         flex-direction: column;
     }
-    #appmenu{
-      display: none;
+    #appmenu {
+        display: none;
     }
-    #more-apps{
-      display:block !important;
-      margin-left: 1rem;
+    #more-apps {
+        display: block !important;
+        margin-left: 1rem;
     }
-    .menu-search-text,.right-menu-font {
-      display: flex;
-      font-size: .625rem;
-      margin-top: 0.25rem;
+    .menu-search-text,
+    .right-menu-font {
+        display: flex;
+        font-size: .625rem;
+        margin-top: 0.25rem;
     }
-    #more-apps .right-menu-font,.menu-search-text,#contactsmenu .right-menu-font{
-      margin-top: .375rem;
+    #more-apps .right-menu-font,
+    .menu-search-text,
+    #contactsmenu .right-menu-font {
+        margin-top: .375rem;
     }
-    #contactsmenu svg, #settings svg,
-    .unified-search__trigger,#more-apps .icon-more-white{
-      width: 20px !important;
-      height: 20px !important;
-      margin: 0 auto;
+    #contactsmenu svg,
+    #settings svg,
+    .unified-search__trigger,
+    #more-apps .icon-more-white {
+        width: 20px !important;
+        height: 20px !important;
+        margin: 0 auto;
     }
-    #contactsmenu,#unified-search {
-      margin-right: 1rem;
-  }
+    #contactsmenu,
+    #unified-search {
+        margin-right: 1rem;
+    }
+    #viewer a.prev {
+        left: 39.5% !important;
+    }
+    #viewer a.next {
+        right: 36% !important;
+    }
+    .modal-header .modal-title {
+        width: calc(50% - 150px)!important;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+    #viewer a.prev {
+        left: 42% !important;
+    }
+    #viewer a.next {
+        right: 39.1% !important;
+    }
 }
 
 @media screen and (min-width: 1025px) {
     .breadcrumb-translation {
         transition: top .4s ease-out;
     }
-    .oc-dialog{
-        width:640px !important;
+    .oc-dialog {
+        width: 640px !important;
     }
-    .menu-search-text,.email-menu-text,.username-lable{
-      margin-left: 0.5rem;
+    .menu-search-text,
+    .email-menu-text,
+    .username-lable {
+        margin-left: 0.5rem;
     }
 }
 
 
 /*Responsive Styling*/
-
-/*Copy-move-dialog*/
-.oc-dialog{
-    padding:1.5rem !important;
-    box-shadow: var(--scl-shadow-level-2) !important;
-}
-
-.oc-dialog .oc-dialog-title{
-    font-size:1.5rem !important;
-    margin-bottom:0.375rem !important;
-}
-
-.oc-dialog  .oc-dialog-close{
-    background: var(--icon-dialog-close) no-repeat center !important;
-    margin: 1.5rem !important;
-    padding: 0.938rem !important;
-    opacity: unset !important;
-}
-#oc-dialog-filepicker-content .dirtree{
-    padding-left:0.125rem !important;
-}
-
-.oc-dialog-buttonrow button {
-    height: 40px !important;
-    min-width: 135px !important;
-    border-radius: 8px !important;
-    padding: 0 1.5rem !important;
-    background-color: #ffffff;
-    border-color: #191919;
-    margin:0px !important;
-}
-.oc-dialog-buttonrow button:hover{
-    border-color:#e20074 !important;
-    color: #e20074 !important;
-}
-
-.oc-dialog-buttonrow.onebutton, .oc-dialog-buttonrow.twobuttons.aside  .primary{
-    background-color:#e20074 !important;
-    border-color:#e20074 !important;
-    color:#ffffff !important;
-    margin:0 0 0 0.5rem !important;
-}
-
-.oc-dialog-buttonrow.onebutton, .oc-dialog-buttonrow.twobuttons.aside  .primary:hover{
-background-color: #f90984 !important;
-}
-
-.oc-dialog-buttonrow button{
-    font-size: 1rem !important;
-}
-#oc-dialog-filepicker-content #picker-filestable.filelist .filename {
-    background-size: 44px !important;
-    background-position: 5px 14px !important;
-}
-
-#picker-filestable thead tr{
-    height:32px !important;
-}
-
-#picker-filestable tr{
-    height:68px !important;
-}
-
-#picker-filestable  tbody tr:hover,
-#picker-filestable tbody tr:focus,
-#picker-filestable tbody tr:active{
-    background-color: rgb(242 242 242 / 50%) !important;;
-}
-
-.oc-dialog-buttonrow{
-    padding:0 !important;
-}
-#oc-dialog-filepicker-content .filelist-container {
-    margin-bottom:1.5rem;
-    margin-top:0.75rem;
-}
-#oc-dialog-filepicker-content #picker-filestable.filelist{
-    margin-bottom: 0 !important;
-}
-#oc-dialog-filepicker-content #picker-filestable.filelist td.filename{
-    width:200px !important;
-}
-#oc-dialog-filepicker-content #picker-filestable.filelist td.filesize{
-    padding:0.875rem 1rem !important;
-    width:50px !important;
-}
-#oc-dialog-filepicker-content #picker-filestable.filelist td.date{
-    padding:0.875rem 1rem !important;
-    text-align: right !important;
-    width:calc(100% - 250px) !important;
-}
-#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.name {
-    padding:1.25rem 1rem 1.25rem 0.313rem !important;
-    margin-left:2.688rem !important;
-}
-#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.size {
-    padding:1.25rem 1rem !important;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle#modified {
-    padding:1.25rem 1rem !important;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-#oc-dialog-filepicker-content .dirtree div:first-child a {
-    background-image: var(--icon-home-custom) !important;
-}
-
-#oc-dialog-filepicker-content .actions.creatable{
-    background-color: unset !important;
-    border:unset !important;
-}
-
-#oc-dialog-filepicker-content .actions.creatable a{
-    background-color: unset !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
-    border:unset !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
-    border-bottom: 1px solid var(--color-border) !important;
-}
-
-.oc-dialog div.crumb{
-    background-size: auto 24px !important;
-}
-
-#oc-dialog-filepicker-content .actions.creatable{
-    left:6px !important;
-    top:10px !important;
-}
-
-#oc-dialog-filepicker-content #picker-view-toggle{
-    display: none;
-}
-
-#oc-dialog-filepicker-content .breadcrumb {
-    margin-left: 0 !important;
-}
-
-.oc-dialog-content{
-    max-width: unset !important;
-}
-
-#picker-filestable .view-grid tbody{
-    display:none !important;
-}
-
-.oc-dialog ::-webkit-scrollbar {
-    width: 4px !important;
-}
-
-.oc-dialog ::-webkit-scrollbar-thumb {
-    background: #cccccc !important;
-    border:unset !important;
-}
-
-.filelist-container .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
-}
-
-.filelist-container .icon-triangle-n {
-    background-image: var(--icon-triangle-s-e20074);
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator  {
-  margin-left: -78px !important;
-}
-
-
