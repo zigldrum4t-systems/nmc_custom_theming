@@ -1896,22 +1896,22 @@ div.crumb.crumbmenu a {
 }
 
 .oc-conflict-pre-dlg-button {
-	width: 100%;
-	margin-bottom:8px ;
-	font-size: 16px;
-	font-weight: 400;
-	height: 40px;
-	background-color: #FFFFFF;
-	color:#000000;
-	border-radius: 8px;
-	text-overflow: ellipsis;
-    font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
-	border: 1px solid #191919;
+  width: 100%;
+  margin-bottom:8px ;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  background-color: #FFFFFF;
+  color:#000000;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+  border: 1px solid #191919;
 }
 
 .oc-conflict-pre-dlg-replace-button {
-	background-color: #E20074;
-	color:#FFFFFF;
+  background-color: #E20074;
+  color:#FFFFFF;
   border: 1px solid #E20074 !important;
 }
 
