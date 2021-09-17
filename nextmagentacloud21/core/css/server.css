@@ -1954,6 +1954,21 @@ div.crumb.crumbmenu a {
     top: 81px !important;
 }
 
+#viewer .viewer__content {
+    align-self: start;
+    height: auto !important;
+    margin-top: 1rem;
+}
+
+#viewer .modal-container {
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+#viewer #editor-container {
+    top: 64px !important
+}
+
 
 /* preview css*/
 
@@ -2046,7 +2061,7 @@ div.crumb.crumbmenu a {
     #viewer .modal-wrapper a.next {
         right: 25% !important;
     }
-    .modal-header .modal-title {
+    #viewer .modal-header .modal-title {
         width: calc(50% - 70px)!important;
     }
 }
@@ -2056,13 +2071,14 @@ div.crumb.crumbmenu a {
         width: 0 !important;
     }
     #uploadprogressbar {
-      width: 80px !important;
-  }
-  #uploadprogressbar .label {
-    top: 2px !important;
-    width: 80px !important;
+        width: 80px !important;
+    }
+    #uploadprogressbar .label {
+        top: 2px !important;
+        width: 80px !important;
+    }
 }
-}
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     .breadcrumb {
         margin-left: 2rem;
