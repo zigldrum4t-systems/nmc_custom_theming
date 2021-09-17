@@ -69,22 +69,24 @@ function appendFolderName() {
     }
 }
 
-function domElementsobserver(){
+function domElementsobserver() {
     var domObserver = new MutationObserver(function(domMutations) {
-    domMutations.forEach(function(mutation) {
-        if (mutation.addedNodes && mutation.addedNodes.length > 0) {
-            var ele = [].some.call(mutation.addedNodes, function(e) {
-                return e.classList.contains('oc-dialog');
-            });
-            if (ele) {
-                if(document.getElementById('picker-filestable')){
-                  document.getElementById('picker-filestable').classList ='';
-                  document.getElementById('picker-filestable').classList.add('filelist');
-              }
+        domMutations.forEach(function(mutation) {
+            if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+                var ele = [].some.call(mutation.addedNodes, function(e) {
+                    if (e && e.classList) {
+                        return e.classList.contains('oc-dialog');
+                    } else {
+                        return false;
+                    }
+                });
+                if (ele && document.getElementById('picker-filestable')) {
+                    document.getElementById('picker-filestable').classList = '';
+                    document.getElementById('picker-filestable').classList.add('filelist');
+                }
             }
-        }
+        });
     });
-});
 
-domObserver.observe(document.body, {attributes: true,childList: true, characterData: true});
+    domObserver.observe(document.body, { attributes: true, childList: true, characterData: true });
 }
