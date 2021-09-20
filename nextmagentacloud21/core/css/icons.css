@@ -1,8 +1,8 @@
 /** icons**/
 
-.icon-home {
+.icon-home,
+#oc-dialog-filepicker-content .dirtree div:first-child a {
     background-image: var(--icon-home-custom);
-    width: 24px !important;
 }
 
 .icon-menu,

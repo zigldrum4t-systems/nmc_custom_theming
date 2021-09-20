@@ -2108,10 +2108,6 @@ div.crumb.crumbmenu a {
     justify-content: space-between;
 }
 
-#oc-dialog-filepicker-content .dirtree div:first-child a {
-    background-image: var(--icon-home-custom) !important;
-}
-
 #oc-dialog-filepicker-content .actions.creatable {
     background-color: unset !important;
     border: unset !important;
