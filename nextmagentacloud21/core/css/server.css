@@ -552,6 +552,16 @@ aside {
     .app-files #app-content {
         width: 100% !important;
     }
+    #uploadprogressbar {
+        width: 80px !important;
+    }
+    #uploadprogressbar .label {
+        top: 2px !important;
+        width: 80px !important;
+    }
+    #uploadprogressbar .mobile {
+        display: block !important;
+    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -2251,17 +2261,17 @@ div.crumb.crumbmenu a {
     }
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 689px) {
     #fileList td a a.action.action-share.shared-style {
         width: 0 !important;
     }
-    #uploadprogressbar {
+    /* #uploadprogressbar {
         width: 80px !important;
     }
     #uploadprogressbar .label {
         top: 2px !important;
         width: 80px !important;
-    }
+    } */
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -2356,6 +2366,12 @@ div.crumb.crumbmenu a {
     .email-menu-text,
     .username-lable {
         margin-left: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    #uploadprogressbar .desktop {
+        display: block !important;
     }
 }
 
