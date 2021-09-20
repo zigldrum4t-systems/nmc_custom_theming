@@ -343,25 +343,21 @@ div.crumb {
 
 /*filelist-toggle-icons*/
 
-.filelist-container .icon-triangle-s {
+.filelist-container .icon-triangle-s,
+#filestable .icon-triangle-s {
     background-image: var(--icon-triangle-s-e20074);
 }
 
-.filelist-container .icon-triangle-n {
+.filelist-container .icon-triangle-n,
+#filestable .icon-triangle-n {
     background-image: var(--icon-triangle-s-e20074);
-}
-
-
-/*close-icon-small-16px*/
-
-#uploadprogresswrapper .icon-close {
-    background-image: var(--icon-close-custom) !important;
 }
 
 
 /*close-dialog-icons*/
 
-.oc-dialog .oc-dialog-close {
+.oc-dialog .oc-dialog-close,
+#uploadprogresswrapper .icon-close {
     background: var(--icon-dialog-close) !important;
 }
 

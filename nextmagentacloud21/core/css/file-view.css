@@ -247,9 +247,11 @@ table th#headerDate {
 #fileList td a a.action.action-share {
     padding: 1.063rem 1rem !important;
 }
+
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
     margin-right: 0.5rem !important;
 }
+
 
 /***************************************** List view sorting ******************************************************************/
 
@@ -266,16 +268,8 @@ table th .sort-indicator {
     display: none;
 }
 
-#filestable .icon-triangle-n {
-    background-image: var(--icon-triangle-n-e20074);
-}
-
 #filestable .icon-public {
     background-image: var(--icon-user-e20074);
-}
-
-#filestable .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
 }
 
 .zero-font {
