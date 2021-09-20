@@ -2049,7 +2049,6 @@ div.crumb.crumbmenu a {
 #picker-filestable tbody tr:focus,
 #picker-filestable tbody tr:active {
     background-color: rgb(242 242 242 / 50%) !important;
-    ;
 }
 
 .oc-dialog-buttonrow {
@@ -2152,10 +2151,6 @@ div.crumb.crumbmenu a {
 .oc-dialog ::-webkit-scrollbar-thumb {
     background: #cccccc !important;
     border: unset !important;
-}
-
-.filelist-container .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
 }
 
 .filelist-container .icon-triangle-n {

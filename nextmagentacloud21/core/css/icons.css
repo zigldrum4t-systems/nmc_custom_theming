@@ -341,4 +341,11 @@ div.crumb {
 }
 
 
+/*filelist-toggle-icons*/
+
+.filelist-container .icon-triangle-s {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+
 /** icons**/
