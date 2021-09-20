@@ -35,10 +35,6 @@
     color: #ffffff !important;
 }
 
-#uploadprogresswrapper .icon-close {
-    background-image: var(--icon-close-custom) !important;
-}
-
 #uploadprogresswrapper button.stop {
     background-color: #ffffff !important;
     background-position: center center !important;

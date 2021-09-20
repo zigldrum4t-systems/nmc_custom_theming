@@ -352,10 +352,17 @@ div.crumb {
 }
 
 
+/*close-icon-small-16px*/
+
+#uploadprogresswrapper .icon-close {
+    background-image: var(--icon-close-custom) !important;
+}
+
+
 /*close-dialog-icons*/
 
 .oc-dialog .oc-dialog-close {
-    background: var(--icon-dialog-close) no-repeat center !important;
+    background: var(--icon-dialog-close) !important;
 }
 
 
