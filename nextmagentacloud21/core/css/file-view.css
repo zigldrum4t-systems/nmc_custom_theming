@@ -233,7 +233,7 @@ table th#headerDate {
 }
 
 #filestable:not(.view-grid) td.filesize {
-    padding: 0 1rem !important;
+    padding: 1.25rem 1rem !important;
 }
 
 #filestable:not(.view-grid) td.date {
