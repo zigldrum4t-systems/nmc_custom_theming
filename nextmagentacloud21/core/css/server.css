@@ -2000,7 +2000,7 @@ div.crumb.crumbmenu a {
 }
 
 .oc-dialog .oc-dialog-close {
-    background: var(--icon-dialog-close) no-repeat center !important;
+    background: no-repeat center !important;
     margin: 1.5rem !important;
     padding: 0.938rem !important;
     opacity: unset !important;
@@ -2161,10 +2161,6 @@ div.crumb.crumbmenu a {
 .oc-dialog ::-webkit-scrollbar-thumb {
     background: #cccccc !important;
     border: unset !important;
-}
-
-.filelist-container .icon-triangle-n {
-    background-image: var(--icon-triangle-s-e20074);
 }
 
 #oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator {

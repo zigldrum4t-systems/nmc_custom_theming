@@ -347,5 +347,16 @@ div.crumb {
     background-image: var(--icon-triangle-s-e20074);
 }
 
+.filelist-container .icon-triangle-n {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+
+/*close-dialog-icons*/
+
+.oc-dialog .oc-dialog-close {
+    background: var(--icon-dialog-close) no-repeat center !important;
+}
+
 
 /** icons**/
