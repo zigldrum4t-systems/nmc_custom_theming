@@ -2427,9 +2427,14 @@ ul#collection-list {
     display: none;
 }
 
-.popover__inner li:nth-child(4) {
+li.sharing-entry__internal {
     display: none !important;
 }
+
+
+/* .popover__inner li:nth-child(4) {
+    display: none !important;
+} */
 
 .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__desc .app-sidebar-header__menu {
     display: none;
@@ -2471,11 +2476,17 @@ ul#collection-list {
     color: #666666 !important;
     padding: 0 !important;
     opacity: unset !important;
-    align-items: self-start !important;
+    margin-top: 8px;
+    align-items: flex-start !important;
 }
 
-.sharing-permissions .action-radio__label::before {
-    margin: 1px 8px 8px 4px !important;
+.action-input__form {
+    margin: 8px 0 !important;
+}
+
+#tab-sharing ul.sharing-permissions .action-radio__label::before,
+#tab-sharing ul.sharing-permissions span.action-checkbox .action-checkbox__label::before {
+    margin: 0 8px 0 0 !important;
 }
 
 #tab-sharing button.status-buttons__select {
@@ -2571,4 +2582,65 @@ li.share-link-password-talk-checkbox {
 
 #tab-sharing .mx-datepicker svg {
     fill: #e20074 !important;
+}
+
+#tab-sharing textarea {
+    height: 220px !important;
+    margin: 8px 3px 3px 0px !important;
+    width: 253px !important;
+}
+
+.app-sidebar-tabs__tab a.active {
+    color: unset !important;
+    box-shadow: unset !important;
+    border-bottom: unset !important;
+}
+
+#sharing .icon-shared,
+#sharing .icon-share {
+    background-image: unset !important;
+}
+
+.avatardiv--unknown {
+    background-color: unset !important;
+}
+
+.sharing-entry .avatar-link-share {
+    background-color: unset !important;
+}
+
+.avatar-class-icon {
+    background-color: unset !important;
+}
+
+.sharing-entry__desc select {
+    min-height: 16px !important;
+    border: unset !important;
+    padding: 0 24px 0 16px !important;
+    height: 16px !important;
+    color: #b2b2b2 !important;
+    font-weight: bold;
+    background: var(--icon-triangle-s-000) no-repeat left -2px center !important;
+}
+
+.action-item--single:hover,
+.action-item--single:focus,
+.action-item--single:active,
+.action-item__menutoggle:hover,
+.action-item__menutoggle:focus,
+.action-item__menutoggle:active {
+    background-color: unset !important;
+}
+
+.sharing-entry__desc select {
+    font-size: 14px !important;
+}
+
+.sharing-entry__desc select:hover {
+    color: #e20074 !important;
+}
+
+.popover__inner:hover li.active,
+.popover__inner:hover li.active {
+    background-color: unset !important;
 }

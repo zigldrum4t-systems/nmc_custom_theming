@@ -74,7 +74,9 @@ table th#headerDate {
     right: -11px;
 }
 
-#filestable .icon-shared {
+#filestable .icon-shared,
+.icon-public-white,
+.icon-public.icon-white {
     background-image: var(--icon-user-000-org);
 }
 
@@ -247,9 +249,11 @@ table th#headerDate {
 #fileList td a a.action.action-share {
     padding: 1.063rem 1rem !important;
 }
+
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
     margin-right: 0.5rem !important;
 }
+
 
 /***************************************** List view sorting ******************************************************************/
 
