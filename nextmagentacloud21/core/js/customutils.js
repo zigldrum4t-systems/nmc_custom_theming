@@ -52,7 +52,8 @@ function searchInputLabel() {
             var labelElement = document.createElement('label');
             labelElement.className = 'search-input-label';
             labelElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
-            document.getElementsByClassName('unified-search__form-input')[0].required = true;
+            document.getElementsByClassName('unified-search__form-input')[0] ?
+                document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
             document.getElementsByClassName('unified-search__form')[0] ?
                 document.getElementsByClassName('unified-search__form')[0].appendChild(labelElement) : null;
         }

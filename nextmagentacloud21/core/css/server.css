@@ -90,9 +90,10 @@ section {
     color: var(--scl-color-grey-90);
 }
 
-body {
+
+/* body {
     overflow-y: hidden;
-}
+}*/
 
 #body-user>* {
     box-sizing: border-box !important;
@@ -415,7 +416,9 @@ body {
 /* ---------------------------------------------------------------------------- */
 
 .MenuWrapperParent {
-    position: relative;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
 }
 
 .header-brandbar-claim span {
@@ -884,8 +887,8 @@ input[type="checkbox"].checkbox+label:before:hover {
 #view-toggle {
     background-color: transparent;
     border: none;
-    position: absolute;
-    top: 0.6rem;
+    position: fixed;
+    top: 5.2rem;
     right: 0;
     z-index: 999;
     opacity: 1;
@@ -914,11 +917,10 @@ a.menuitem.action:hover>span,
 
 #controls,
 .controls-section {
-    top: 0;
+    top: 72px;
     width: 100%;
     height: 47px;
     padding: 0;
-    /* margin-left: .2rem; */
     margin-bottom: 2em;
     background-color: #f2f2f2;
 }
@@ -948,6 +950,8 @@ a.menuitem.action:hover>span,
 
 #content {
     padding-top: 0;
+    top: 72px;
+    z-index: 99;
 }
 
 .container-fixed {
@@ -1156,8 +1160,8 @@ div.crumb:last-child {
     padding-top: 16px;
 }
 
-#app-content-files thead {
-    top: 0
+#filestable thead {
+    top: 118px;
 }
 
 
@@ -2018,6 +2022,7 @@ div.crumb.crumbmenu a {
         margin-left: 0.5rem !important;
     }
     .brand-footer {
+        position: relative;
         padding: 1rem 0 1.5rem 0;
     }
     .brand-footer .brand-footer-bar {
@@ -2063,6 +2068,9 @@ div.crumb.crumbmenu a {
     }
     #viewer .modal-header .modal-title {
         width: calc(50% - 70px)!important;
+    }
+    #filestable .summary {
+        height: 150px;
     }
 }
 
