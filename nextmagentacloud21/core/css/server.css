@@ -802,10 +802,6 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-image: var(--icon-edit-custom) !important;
 }
 
-.icon-external {
-    background-image: var(--icon-copy-paste-custom) !important;
-}
-
 .icon-download {
     background-image: var(--icon-download-custom) !important;
 }
