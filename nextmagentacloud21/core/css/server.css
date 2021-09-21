@@ -90,11 +90,6 @@ section {
     color: var(--scl-color-grey-90);
 }
 
-
-/* body {
-    overflow-y: hidden;
-}*/
-
 #body-user>* {
     box-sizing: border-box !important;
     -webkit-box-sizing: border-box !important;
@@ -122,9 +117,8 @@ section {
 #app-navigation {
     z-index: 10 !important;
     left: unset !important;
-    position: absolute !important;
-    top: 47px !important;
-    height: calc(100vh - 230px) !important;
+    top: 120px !important;
+    height: calc(100% - 190px) !important;
 }
 
 #app-navigation>ul>li.active,
@@ -152,12 +146,6 @@ section {
 #app-navigation>ul>li>ul {
     line-height: 48px;
     padding: 0.188rem 0rem 0rem 3rem !important;
-}
-
-#app-navigation>ul {
-    overflow-y: unset;
-    overflow-x: unset;
-    margin-top: 4em;
 }
 
 #sublist-favorites {
@@ -684,12 +672,6 @@ aside {
     }
 }
 
-@media screen and (max-height: 750px) {
-    #app-navigation>ul {
-        margin-top: 0 !important;
-    }
-}
-
 
 /*---------------------------LeftNav-----------------------------------*/
 
@@ -895,11 +877,12 @@ input[type="checkbox"].checkbox+label:before:hover {
 }*/
 
 #view-toggle {
-    background-color: transparent;
     border: none;
-    position: fixed;
-    top: 5.2rem;
-    right: 0;
+    position: sticky;
+    display: block;
+    background-color: transparent;
+    top: 5.1rem;
+    left: 100%;
     z-index: 999;
     opacity: 1;
     padding: 0;
@@ -907,6 +890,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     width: 24px;
     margin-right: 1rem;
     border-radius: 0;
+    margin-top: -25px;
 }
 
 #view-toggle:hover,
@@ -927,12 +911,13 @@ a.menuitem.action:hover>span,
 
 #controls,
 .controls-section {
-    top: 72px;
+    top: 73px;
     width: 100%;
     height: 47px;
     padding: 0;
     margin-bottom: 2em;
     background-color: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 
@@ -1022,16 +1007,17 @@ div.crumb:last-child {
     transition: none;
 }
 
+
+/*
 .snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
     left: -92%;
     top: -1px;
     transition: none;
 }
-
 .snapjs-left #app-content:not([style=''])>.viewcontainer #controls {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
-}
+} */
 
 #app-navigation-toggle.app-navigation-translation {
     top: 4.5em;
@@ -1894,7 +1880,6 @@ div.crumb.crumbmenu a {
 
 .modal-header {
     position: relative !important;
-    /* width: 1536px !important; */
     height: 63px !important;
     margin: 0 auto;
     background: #191919;
