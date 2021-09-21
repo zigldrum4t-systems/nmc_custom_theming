@@ -340,6 +340,9 @@ div.crumb {
     background-image: url(../../core/img/icons/play-icon-white.svg) !important;
 }
 
+.icon-external{
+  background-image: var( --icon-external-custom) !important;
+}
 
 /*filelist-toggle-icons*/
 

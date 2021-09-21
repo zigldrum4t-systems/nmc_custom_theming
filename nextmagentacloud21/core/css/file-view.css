@@ -264,8 +264,8 @@ table th .sort-indicator {
     opacity: 0.3;
 }
 
-.span-visibility {
-    display: none;
+.span-visibility, .item-toggleSelectionMode, a.menuitem.action.toggleSelectionMode.permanent {
+    display: none !important;
 }
 
 #filestable .icon-public {
@@ -339,7 +339,9 @@ table th .sort-indicator {
 .icon-delete:hover,
 a.menu-option:hover>span,
 a.menuitem.action:hover>span,
-.icon-home:hover {
+.icon-home:hover,
+.filesSelectionMenu ul li,
+#selectedActionLabel a{
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
@@ -438,4 +440,36 @@ a.menuitem.action:hover>span,
 
 #filestable.view-grid tfoot .summary {
     margin-left: 0px !important;
+}
+
+.popovermenu li>a, .popovermenu li>.menuitem {
+  align-items:center !important;
+ }
+
+ #selectedActionsList .popovermenu {
+  border-radius: 8px !important;
+  box-shadow: var(--scl-shadow-level-2) !important;
+  padding: 0.875rem 0.5rem !important;
+}
+
+.selectedActions a {
+  opacity: unset !important;
+}
+
+.selectedActions a:hover
+{
+  text-decoration: underline;
+}
+
+.selectedActions a .label{
+	padding-left: 0.5rem;
+}
+
+#filestable .filename .action .icon, #filestable .selectedActions a .icon, #filestable .filename .favorite-mark .icon, #controls .actions .button .icon {
+  background-size: 16px 16px !important;
+}
+
+#selectedActionsList .popovermenu {
+  right: 0;
+  top: 45px;
 }
