@@ -440,11 +440,7 @@ a.menuitem.action:hover>span,
     margin-left: 0px !important;
 }
 
-.item-toggleSelectionMode{
-  display: none !important;
-}
-
- a.menuitem.action.toggleSelectionMode.permanent{
+.item-toggleSelectionMode, a.menuitem.action.toggleSelectionMode.permanent{
   display: none !important;
 }
 
@@ -455,7 +451,7 @@ a.menuitem.action:hover>span,
  #selectedActionsList .popovermenu {
   border-radius: 8px !important;
   box-shadow: var(--scl-shadow-level-2) !important;
-  padding: 0.875rem 0.5rem 0.875rem 0.5rem !important;
+  padding: 0.875rem 0.5rem !important;
 }
 
 .selectedActions a {
@@ -474,11 +470,7 @@ a.menuitem.action:hover>span,
   background-size: 16px 16px !important;
 }
 
-.filesSelectionMenu ul li{
-  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
-}
-
-#selectedActionLabel a{
+.filesSelectionMenu ul li, #selectedActionLabel a{
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
