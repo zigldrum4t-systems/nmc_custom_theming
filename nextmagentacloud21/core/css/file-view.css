@@ -74,12 +74,6 @@ table th#headerDate {
     right: -11px;
 }
 
-#filestable .icon-shared,
-.icon-public-white,
-.icon-public.icon-white {
-    background-image: var(--icon-user-000-org);
-}
-
 #filestable span.extension {
     padding-top: 14px !important;
 }
@@ -235,7 +229,7 @@ table th#headerDate {
 }
 
 #filestable:not(.view-grid) td.filesize {
-    padding: 0 1rem !important;
+    padding: 1.25rem 1rem !important;
 }
 
 #filestable:not(.view-grid) td.date {
@@ -270,16 +264,8 @@ table th .sort-indicator {
     display: none;
 }
 
-#filestable .icon-triangle-n {
-    background-image: var(--icon-triangle-n-e20074);
-}
-
 #filestable .icon-public {
     background-image: var(--icon-user-e20074);
-}
-
-#filestable .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
 }
 
 .zero-font {
