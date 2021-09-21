@@ -147,19 +147,24 @@
                                 <a class="right-menu-font"><?php p($_['user_uid']); ?></a>
                             </span>
                         </div>
-                        <nav class="settings-menu" id="expanddiv" style="display:none;"
-                            aria-label="<?php p($l->t('Settings menu'));?>">
+                        <nav class="settings-menu" id="expanddiv" style="display:none;" aria-label="<?php p($l->t('Settings menu'));?>">
                             <ul>
-                                <?php foreach ($_['settingsnavigation'] as $entry):?>
-                                <li data-id="<?php p($entry['id']); ?>">
-                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
-                                        class="active" <?php endif; ?>>
-                                        <img alt=""
-                                            src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
-                                        <?php p($entry['name']) ?>
-                                    </a>
-                                </li>
-                                <?php endforeach; ?>
+                              <?php foreach ($_['settingsnavigation'] as $entry):?>
+                              <li data-id="<?php p($entry['id']); ?>">
+                                <a href="<?php $entry['id']=="help"?print_unescaped("https://cloud.telekom-dienste.de/hilfe"):print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
+                                  class="active" <?php endif; ?>>
+                                  <img alt=""
+                                  src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
+                                  <?php if($entry['id']=="help"){ ?>
+                                  <?php p($l->t('Help & FAQ'));?>
+                                  <?php }elseif($entry['id']=="logout"){ ?>
+                                    <?php p($l->t('Logout'));?>
+                                  <?php }else{ ?>
+                                  <?php p($entry['name']) ?>
+                                  <?php } ?>
+                                </a>
+                              </li>
+                              <?php endforeach; ?>
                             </ul>
                         </nav>
                     </div>
