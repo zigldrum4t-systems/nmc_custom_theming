@@ -1200,7 +1200,7 @@ div.crumb:last-child {
 /* Add Button*/
 
 .newFileMenu {
-    padding: 16px 16px 24px 16px;
+    padding: 1rem;
     box-shadow: var(--scl-shadow-level-2);
     width: 235px !important;
     border-radius: 8px;
@@ -1226,8 +1226,7 @@ div.crumb:last-child {
 }
 
 .newFileMenu .menuitem .displayname {
-    padding-left: 8px;
-    padding-top: 12px;
+    padding-left: 0.5rem;
 }
 
 .actions.creatable .popovermenu.menu-left a {
