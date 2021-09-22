@@ -340,9 +340,10 @@ div.crumb {
     background-image: url(../../core/img/icons/play-icon-white.svg) !important;
 }
 
-.icon-external{
-  background-image: var( --icon-external-custom) !important;
+.icon-external {
+    background-image: var( --icon-external-custom) !important;
 }
+
 
 /*filelist-toggle-icons*/
 
@@ -362,6 +363,7 @@ div.crumb {
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close {
     background: var(--icon-dialog-close) !important;
+    background-repeat: no-repeat !important;
 }
 
 
