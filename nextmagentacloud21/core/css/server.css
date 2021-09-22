@@ -117,7 +117,7 @@ section {
 #app-navigation {
     z-index: 10 !important;
     left: unset !important;
-    top: 120px !important;
+    top: 185px !important;
     height: calc(100% - 190px) !important;
 }
 
@@ -877,7 +877,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     position: sticky;
     display: block;
     background-color: transparent;
-    top: 5.1rem;
+    top: 9.1rem;
     left: 100%;
     z-index: 999;
     opacity: 1;
@@ -931,7 +931,7 @@ a.menuitem.action:hover>span,
     left: 0;
     background: #f2f2f2;
     border-bottom: 1px solid #e5e5e5;
-    z-index: -1;
+    z-index: 99;
 }
 
 .breadcrumb-translation {
@@ -941,7 +941,7 @@ a.menuitem.action:hover>span,
 
 #content {
     padding-top: 0;
-    top: 72px;
+    top: 138px;
     z-index: 99;
 }
 
@@ -1020,7 +1020,7 @@ div.crumb:last-child {
 }
 
 .translation {
-    transition: all 700ms;
+    transition: all .4s;
 }
 
 .header-brandbar {
@@ -1036,6 +1036,19 @@ div.crumb:last-child {
 .brandbar-logo-minified {
     max-width: 80px !important;
     opacity: 1 !important;
+}
+
+.content-translation {
+    top: 72px !important;
+}
+
+.view-toggle-translation {
+    top: 5.1rem !important;
+    margin-top: -25px !important;
+}
+
+#app-navigation.app-navigation-translation {
+    top: 120px !important;
 }
 
 .tooltip .tooltip-inner {

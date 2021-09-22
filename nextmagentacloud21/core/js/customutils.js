@@ -17,12 +17,17 @@ function brandBarAnimation() {
         for (let i = 0; i < ele.length; i++) {
             ele[i] ? ele[i].classList.add('breadcrumb-translation') : null;
         }
+        document.getElementById('content') ? document.getElementById('content').classList.add('content-translation', 'translation') : null;
+        document.getElementById('view-toggle') ? document.getElementById('view-toggle').classList.add('view-toggle-translation') : null;
+        document.getElementById('app-navigation') ? document.getElementById('app-navigation').classList.add('app-navigation-translation', 'translation') : null;
+
     }, 3000);
-    // let workSpaceelement = document.getElementById('showRichWorkspacesToggle');
-    // let workSpaceevent = new Event('change');
-    // workSpaceelement.dispatchEvent(workSpaceevent);
-    // document.getElementById('showRichWorkspacesToggle').checked = true;
-    // document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
+
+    document.getElementById('showRichWorkspacesToggle').checked = true;
+    document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
+    let workSpaceelement = document.getElementById('showRichWorkspacesToggle');
+    let workSpaceevent = new Event('change');
+    workSpaceelement.dispatchEvent(workSpaceevent);
 }
 
 

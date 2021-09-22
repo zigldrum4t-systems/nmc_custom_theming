@@ -1,5 +1,4 @@
 <div id="controls">
-<!-- <div class="full-width-breadcrumb"></div> -->
 		<div class="actions creatable hidden">
 			<div id="uploadprogresswrapper">
 			</div>
