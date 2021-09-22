@@ -367,4 +367,28 @@ div.crumb {
 }
 
 
-/** icons**/
+/** RIGHT click icons**/
+
+.icon-starred {
+    background-image: var(--icon-favourite-custom) !important;
+}
+
+.icon-star-dark {
+    background-image: var( --icon-yellow-fav) !important;
+}
+
+.icon-details {
+    background-image: var(--icon-user-000-org) !important;
+}
+
+.icon-rename {
+    background-image: var(--icon-edit-custom) !important;
+}
+
+.icon-download {
+    background-image: var(--icon-download-custom) !important;
+}
+
+.icon-delete {
+    background-image: var(--icon-delete-custom) !important;
+}

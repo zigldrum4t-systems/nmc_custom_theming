@@ -395,13 +395,7 @@ section {
 }
 
 
-/* ---------------------------------------------------------------------------- */
-
-
 /* ----------------------------------HEADER------------------------------------ */
-
-
-/* ---------------------------------------------------------------------------- */
 
 .MenuWrapperParent {
     position: fixed;
@@ -465,9 +459,6 @@ aside {
     #content>.container-fixed {
         width: 1236px;
     }
-    /* .header-right .navbar-icons .smallscreenSize {
-        display: none !important;
-    } */
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
@@ -519,19 +510,11 @@ aside {
     height: 5px;
 }
 
-
-/* UI chnages */
-
 .MenuWrapperParent {
     top: 0;
     width: 100%;
     border-bottom: 1px solid #e5e5e5;
 }
-
-
-/* #header .container-fixed .header-right .navbar-icons a {
-    display: inline;
-} */
 
 @media screen and (max-width: 640px) {
     .button.new .hidden-visually {
@@ -621,9 +604,6 @@ aside {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    /* #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 12px;
-    } */
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 0 !important;
     }
@@ -632,35 +612,10 @@ aside {
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 639px) {
-    /* .header-right .navbar-icons a {
-        font-size: 6px !important;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 2px !important;
-    }
-    #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 10px;
-     }
-
-    #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 9px;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 0px !important;
-    } */
-}
-
 @media screen and (max-width: 1299px) {
     .container-fixed {
         width: 100%;
     }
-    /* #header .container-fixed .header-right .navbar-icons a label {
-        display: block;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 5px;
-    }*/
     #filestable.view-grid tbody {
         row-gap: 16px !important;
     }
@@ -786,30 +741,6 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 /*----right-click-menu------*/
 
-.icon-starred {
-    background-image: var(--icon-favourite-custom) !important;
-}
-
-.icon-star-dark {
-    background-image: var( --icon-yellow-fav) !important;
-}
-
-.icon-details {
-    background-image: var(--icon-user-000-org) !important;
-}
-
-.icon-rename {
-    background-image: var(--icon-edit-custom) !important;
-}
-
-.icon-download {
-    background-image: var(--icon-download-custom) !important;
-}
-
-.icon-delete {
-    background-image: var(--icon-delete-custom) !important;
-}
-
 #rightClickMenu,
 .fileActionsMenu {
     margin: 0;
@@ -827,11 +758,6 @@ input[type="checkbox"].checkbox+label:before:hover {
     margin-left: .5rem;
 }
 
-
-/* #rightClickMenu span:hover {
-    color: #e20074 !important;
-} */
-
 #rightClickMenu.bubble li>a,
 .fileActionsMenu.bubble li>a {
     align-items: center !important;
@@ -841,36 +767,6 @@ input[type="checkbox"].checkbox+label:before:hover {
 .fileActionsMenu.bubble li>a:hover {
     background-color: unset !important;
 }
-
-
-/* Hover icons */
-
-
-/* #rightClickMenu .icon-delete:hover,
-.icon-delete:focus {
-    background-image: var(--icon-delete-magenta) !important;
-    filter: initial;
-}
-
-.icon-download:hover {
-    background-image: var(--icon-download-magenta) !important;
-}
-
-#rightClickMenu .icon-starred:hover {
-    background-image: var(--icon-fav-magenta) !important;
-}
-
-.icon-details:hover {
-    background-image: var(--icon-user-e20074) !important;
-}
-
-#rightClickMenu .icon-rename:hover {
-    background-image: var(--icon-edit-magenta) !important;
-}
-
-#rightClickMenu .icon-external:hover {
-    background-image: var(--icon-copy-paste-magenta) !important;
-}*/
 
 #view-toggle {
     border: none;
@@ -1003,18 +899,6 @@ div.crumb:last-child {
     transition: none;
 }
 
-
-/*
-.snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
-    left: -92%;
-    top: -1px;
-    transition: none;
-}
-.snapjs-left #app-content:not([style=''])>.viewcontainer #controls {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-} */
-
 #app-navigation-toggle.app-navigation-translation {
     top: 4.5em;
 }
@@ -1065,94 +949,6 @@ div.crumb:last-child {
     padding-right: 30px !important;
 }
 
-
-/** Grid Icons ***********************************/
-
-
-/*
-#filestable [data-mime="text/plain"] .thumbnail,
-#filestable [data-mime="text/markdown"] .thumbnail,
-#filestable [data-mime="application/octet-stream"] .thumbnail,
-#filestable [data-mime="application/msword"] .thumbnail,
-#filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail {
-    background-image: var(--grid-text-files-icon) !important;
-}
-
-#filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
-#filestable [data-mime="text/csv"] .thumbnail {
-    background-image: var(--grid-file-calculation-icon) !important;
-}
-
-#filestable [data-mime="application/zip"] .thumbnail,
-#filestable [data-mime="application/x-rar-compressed"] .thumbnail {
-    background-image: var(--grid-zip-icon) !important;
-}
-
-#filestable [data-mime="application/xml"] .thumbnail,
-#filestable [data-mime="application/x-php"] .thumbnail,
-#filestable [data-mime="application/json"] .thumbnail,
-#filestable [data-mime="application/javascript"] .thumbnail,
-#filestable [data-mime="text/css"] .thumbnail {
-    background-image: var(--grid-file-code-icon) !important;
-}
-
-#filestable [data-mime="audio/mpeg"] .thumbnail,
-#filestable [data-mime="audio/ogg"] .thumbnail,
-#filestable [data-mime="audio/mp4"] .thumbnail,
-#filestable [data-mime="audio/wav"] .thumbnail {
-    background-image: var(--grid-file-audio-icon) !important;
-}
-
-#filestable [data-mime="application/vnd.ms-powerpoint"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"] .thumbnail {
-    background-image: var(--grid-present-icon) !important;
-}
-
-#filestable [data-mime="application/pdf"] .thumbnail {
-    background-image: var(--grid-pdf-icon) !important;
-}
-
-#filestable [data-mime="text/html"] .thumbnail {
-    background-image: var(--grid-file-web-icon) !important;
-}
-
-#filestable [data-mime="video/x-ms-wmv"] .thumbnail,
-#filestable [data-mime="video/mpeg"] .thumbnail,
-#filestable [data-mime="video/x-msvideo"] .thumbnail,
-#filestable [data-mime="video/x-matroska"] .thumbnail,
-#filestable [data-mime="video/quicktime"] .thumbnail,
-#filestable [data-mime="video/mp4"] .thumbnail {
-    background-image: var(--grid-file-video-icon) !important;
-}
-
-
-/* #filestable [data-mime="image/webp"] .thumbnail,
-#filestable [data-mime="image/bmp"] .thumbnail,
-#filestable [data-mime="image/png"] .thumbnail,
-#filestable [data-mime="image/heic"] .thumbnail,
-#filestable [data-mime="image/jpeg"] .thumbnail,
-#filestable [data-mime="image/gif"] .thumbnail,
-#filestable [data-mime="image/svg+xml"] .thumbnail,
-#filestable [data-mime="application/postscript"] .thumbnail,
-#filestable [data-mime="image/x-dcraw"] .thumbnail {
-    background-image: var(--grid-file-img-icon) !important;
-} */
-
-
-/* #filestable [data-mime="httpd/unix-directory"] .thumbnail {
-    background-image: var(--grid-folder-icon) !important;
-}
-
-#filestable [data-e2eencrypted="true"] .thumbnail {
-    background-image: var(--grid-folder-enc-icon) !important;
-}
-
-#filestable [data-icon] .thumbnail {
-    background-image: var(--grid-folder-shared-icon) !important;
-} */
-
 .brand-bar-translation {
     height: 9px;
 }
@@ -1170,13 +966,6 @@ div.crumb:last-child {
 }
 
 
-/* .viewcontainer {
-    overflow-y: scroll;
-    height: 100vh;
-    min-height: auto !important;
-} */
-
-
 /*Guest layout*/
 
 .gust-download-svg {
@@ -1189,12 +978,6 @@ div.crumb:last-child {
     font-weight: bold;
     vertical-align: super !important;
 }
-
-
-/* #files-public-content #emptycontent h2,
-#emptycontent.hidden~.guest-emptycontent {
-    display: none;
-} */
 
 
 /*Guest layout*/
