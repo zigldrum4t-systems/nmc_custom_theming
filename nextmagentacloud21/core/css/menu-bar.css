@@ -563,7 +563,8 @@
     background-color: unset !important;
 }
 
-.settings-menu li:nth-child(1) {
+.settings-menu .user-status-menu-item,
+.settings-menu li[data-id="firstrunwizard-about"] {
     display: none !important;
 }
 
@@ -578,4 +579,15 @@
     opacity: unset !important;
     height: 20px !important;
     width: 20px !important;
+}
+
+#header .header-left nav .menu #apps ul li a:active,
+#header .header-left nav .menu #apps ul li a.active,
+#header .header-left nav .menu.settings-menu ul li a:active,
+#header .header-left nav .menu.settings-menu ul li a.active,
+#header .header-right div .menu #apps ul li a:active,
+#header .header-right div .menu #apps ul li a.active,
+#header .header-right div .menu.settings-menu ul li a:active,
+#header .header-right div .menu.settings-menu ul li a.active {
+    background-color: unset !important;
 }
