@@ -37,7 +37,7 @@ table th#headerDate {
 }
 
 #filestable #selectedActionsList {
-    height: 40px !important
+    height: 40px !important;
 }
 
 #filestable th .columntitle {
@@ -264,7 +264,9 @@ table th .sort-indicator {
     opacity: 0.3;
 }
 
-.span-visibility, .item-toggleSelectionMode, a.menuitem.action.toggleSelectionMode.permanent {
+.span-visibility,
+.item-toggleSelectionMode,
+a.menuitem.action.toggleSelectionMode.permanent {
     display: none !important;
 }
 
@@ -341,7 +343,7 @@ a.menu-option:hover>span,
 a.menuitem.action:hover>span,
 .icon-home:hover,
 .filesSelectionMenu ul li,
-#selectedActionLabel a{
+#selectedActionLabel a {
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
@@ -442,33 +444,40 @@ a.menuitem.action:hover>span,
     margin-left: 0px !important;
 }
 
-.popovermenu li>a, .popovermenu li>.menuitem {
-  align-items:center !important;
- }
-
- #selectedActionsList .popovermenu {
-  border-radius: 8px !important;
-  box-shadow: var(--scl-shadow-level-2) !important;
-  padding: 0.875rem 0.5rem !important;
-}
-
-.selectedActions a {
-  opacity: unset !important;
-}
-
-.selectedActions a:hover
-{
-  text-decoration: underline;
-}
-
-.selectedActions a .label{
-	padding-left: 0.5rem;
-}
-
- #filestable .selectedActions .filesSelectionMenu a .icon{
-  background-size: 16px 16px !important;
+.popovermenu li>a,
+.popovermenu li>.menuitem {
+    align-items: center !important;
 }
 
 #selectedActionsList .popovermenu {
-  top: 45px;
+    border-radius: 8px !important;
+    box-shadow: var(--scl-shadow-level-2) !important;
+    padding: 0.875rem 0.5rem !important;
+}
+
+.selectedActions a {
+    opacity: unset !important;
+}
+
+.selectedActions a:hover {
+    text-decoration: underline;
+}
+
+.selectedActions a .label {
+    padding-left: 0.5rem;
+}
+
+table.multiselect #modified,
+table.multiselect #headerSize,
+table.multiselect #selectedActionsList,
+table.multiselect .columntitle.name {
+    display: none !important;
+}
+
+#filestable .selectedActions .filesSelectionMenu a .icon {
+    background-size: 16px 16px !important;
+}
+
+#selectedActionsList .popovermenu {
+    top: 45px;
 }
