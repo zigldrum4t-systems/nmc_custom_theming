@@ -2,6 +2,12 @@
     width: 24px !important;
 }
 
+#uploadprogresswrapper .icon-close {
+    background-size: 16px !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.6;
+}
+
 
 /*---progress-bar----*/
 
@@ -58,9 +64,4 @@
 #uploadprogresswrapper .button:not(:disabled):not(.primary):focus,
 #uploadprogresswrapper .button:not(:disabled):not(.primary).active {
     border-color: #e5e5e5 !important;
-}
-
-#uploadprogresswrapper .icon-close {
-    background-size: 16px;
-    opacity: 0.6;
 }
