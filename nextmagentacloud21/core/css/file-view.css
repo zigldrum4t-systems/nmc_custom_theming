@@ -465,11 +465,10 @@ a.menuitem.action:hover>span,
 	padding-left: 0.5rem;
 }
 
-#filestable .filename .action .icon, #filestable .selectedActions a .icon, #filestable .filename .favorite-mark .icon, #controls .actions .button .icon {
+ #filestable .selectedActions .filesSelectionMenu a .icon{
   background-size: 16px 16px !important;
 }
 
 #selectedActionsList .popovermenu {
-  right: 0;
   top: 45px;
 }
