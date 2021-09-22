@@ -148,19 +148,18 @@
                             </span>
                         </div>
                         <nav class="settings-menu" id="expanddiv" style="display:none;" aria-label="<?php p($l->t('Settings menu'));?>">
-                        <ul>
+<ul>
     <?php foreach ($_['settingsnavigation'] as $entry):?>
     <li data-id="<?php p($entry['id']); ?>">
     <a href="<?php $entry['id']=="help"?print_unescaped("https://cloud.telekom-dienste.de/hilfe"):print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
         class="active" <?php endif; ?>>
-        <?php
-        if($entry['id']=="settings") {?>
+        <?php if($entry['id']=="settings") {?>
             <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/admin.svg'. '?v=' . $_['versionHash']); ?>">
-        <?php p($entry['name']);
-        } elseif($entry['id']=="help") {?>
+        <?php p($entry['name']);?>
+        <?php } elseif($entry['id']=="help") {?>
         <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/help.svg'. '?v=' . $_['versionHash']); ?>">
-        <?php  p($l->t('Help & FAQ'));
-        } elseif($entry['id']=="logout") {?>
+        <?php  p($l->t('Help & FAQ'));?>
+        <?php } elseif($entry['id']=="logout") {?>
         <img alt="" src="<?php print_unescaped($entry['icon']. '?v=' . $_['versionHash']); ?>">
         <?php  p($l->t('Logout')); ?>
         <?php } elseif($entry['id']=="core_apps") {?>
