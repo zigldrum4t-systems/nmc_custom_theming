@@ -1,5 +1,4 @@
 <div class="controls-section">
-<div class="full-width-breadcrumb"></div>
 </div>
 
 <div id='notification'></div>

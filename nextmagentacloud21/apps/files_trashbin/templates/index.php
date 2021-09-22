@@ -1,6 +1,5 @@
 <?php /** @var \OCP\IL10N $l */ ?>
 <div id="controls">
-<div class="full-width-breadcrumb"></div>
 	<div id="file_action_panel"></div>
 </div>
 <div id='notification'></div>

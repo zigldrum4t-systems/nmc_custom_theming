@@ -19,7 +19,6 @@
     font-size: 25px;
     color: #161616;
     font-weight: bold;
-    padding-left: 12px;
 }
 
 #nextcloud span {
@@ -158,6 +157,7 @@
 #header .container-fixed .header-left .logo-area .logo-area__inner {
     opacity: 0;
     max-width: 0;
+    margin-right: .75rem;
     overflow: hidden;
     -webkit-transition: max-width .3s ease-out, opacity .4s ease-out;
     transition: max-width .3s ease-out, opacity .4s ease-out;
@@ -274,6 +274,7 @@
 .settingsdiv {
     line-height: 12px !important;
     padding-left: 0 !important;
+    cursor: pointer;
 }
 
 #expand:hover span a,
