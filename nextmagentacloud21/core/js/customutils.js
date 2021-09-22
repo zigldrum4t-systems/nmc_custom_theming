@@ -17,12 +17,17 @@ function brandBarAnimation() {
         for (let i = 0; i < ele.length; i++) {
             ele[i] ? ele[i].classList.add('breadcrumb-translation') : null;
         }
+        document.getElementById('content') ? document.getElementById('content').classList.add('content-translation', 'translation') : null;
+        document.getElementById('view-toggle') ? document.getElementById('view-toggle').classList.add('view-toggle-translation') : null;
+        document.getElementById('app-navigation') ? document.getElementById('app-navigation').classList.add('app-navigation-translation', 'translation') : null;
+
     }, 3000);
-    // let workSpaceelement = document.getElementById('showRichWorkspacesToggle');
-    // let workSpaceevent = new Event('change');
-    // workSpaceelement.dispatchEvent(workSpaceevent);
-    // document.getElementById('showRichWorkspacesToggle').checked = true;
-    // document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
+
+    document.getElementById('showRichWorkspacesToggle').checked = true;
+    document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
+    let workSpaceelement = document.getElementById('showRichWorkspacesToggle');
+    let workSpaceevent = new Event('change');
+    workSpaceelement.dispatchEvent(workSpaceevent);
 }
 
 
@@ -52,7 +57,8 @@ function searchInputLabel() {
             var labelElement = document.createElement('label');
             labelElement.className = 'search-input-label';
             labelElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
-            document.getElementsByClassName('unified-search__form-input')[0].required = true;
+            document.getElementsByClassName('unified-search__form-input')[0] ?
+                document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
             document.getElementsByClassName('unified-search__form')[0] ?
                 document.getElementsByClassName('unified-search__form')[0].appendChild(labelElement) : null;
         }
