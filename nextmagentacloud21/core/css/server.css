@@ -770,19 +770,19 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #view-toggle {
     border: none;
-    position: sticky;
+    position: sticky !important;
     display: block;
     background-color: transparent;
     top: 9.1rem;
     left: 100%;
-    z-index: 999;
+    z-index: 9999;
     opacity: 1;
     padding: 0;
     height: 24px;
     width: 24px;
     margin-right: 1rem;
     border-radius: 0;
-    margin-top: -25px;
+    margin-top: -38px;
 }
 
 #view-toggle:hover,
@@ -807,9 +807,15 @@ a.menuitem.action:hover>span,
     width: 100%;
     height: 47px;
     padding: 0;
+    margin-top: -33px;
     margin-bottom: 2em;
     background-color: #f2f2f2;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.controls-section {
+    position: sticky;
+    z-index: 999;
 }
 
 
@@ -837,7 +843,7 @@ a.menuitem.action:hover>span,
 
 #content {
     padding-top: 0;
-    top: 138px;
+    top: 184px;
     z-index: 99;
 }
 
@@ -896,6 +902,7 @@ div.crumb:last-child {
 .snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
     left: 0;
     top: 0;
+    margin-top: -47px;
     transition: none;
 }
 
@@ -923,12 +930,12 @@ div.crumb:last-child {
 }
 
 .content-translation {
-    top: 72px !important;
+    top: 120px !important;
 }
 
 .view-toggle-translation {
     top: 5.1rem !important;
-    margin-top: -25px !important;
+    margin-top: -38px !important;
 }
 
 #app-navigation.app-navigation-translation {
@@ -2062,7 +2069,7 @@ div.crumb.crumbmenu a {
         margin-right: 0;
     }
     #controls {
-        margin: 0 0 1rem 0 !important;
+        margin-bottom: 1rem !important;
         padding: 0 0 0 2.5rem !important;
     }
     #rich-workspace {
