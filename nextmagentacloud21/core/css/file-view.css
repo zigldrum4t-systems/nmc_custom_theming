@@ -281,8 +281,7 @@ a.menuitem.action.toggleSelectionMode.permanent {
 #headerName .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -65px;
-    margin-right: 65px;
+    margin-left: -4.25rem;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
@@ -291,7 +290,8 @@ a.menuitem.action.toggleSelectionMode.permanent {
 #headerSize .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-right: 0px;
+    margin-left: -3.5rem;
+    margin-right: 2.5rem;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
