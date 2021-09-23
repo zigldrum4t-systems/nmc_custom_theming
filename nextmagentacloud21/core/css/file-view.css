@@ -102,7 +102,6 @@ table th#headerDate {
 #filestable tbody {
     display: table;
     width: 100%;
-    display: block;
     overflow: auto;
 }
 
