@@ -813,6 +813,11 @@ a.menuitem.action:hover>span,
     border-bottom: 1px solid #e5e5e5;
 }
 
+.controls-section {
+    position: sticky;
+    z-index: 999;
+}
+
 
 /* new custom changes*/
 
