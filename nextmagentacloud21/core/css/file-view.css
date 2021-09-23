@@ -467,10 +467,7 @@ a.menuitem.action:hover>span,
     padding-left: 0.5rem;
 }
 
-table.multiselect #modified,
-table.multiselect #headerSize,
-table.multiselect #selectedActionsList,
-table.multiselect .columntitle.name {
+table.multiselect #modified {
     display: none !important;
 }
 
