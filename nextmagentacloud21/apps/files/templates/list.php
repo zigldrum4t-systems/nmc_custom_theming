@@ -60,8 +60,9 @@
             </th>
             <th id="headerSize" class="hidden column-size">
                 <a class="size sort columntitle" data-sort="size">
-                    <span class="sort-indicator zero-font"></span>
                     <span><?php p($l->t('Size')); ?></span>
+                    <span class="sort-indicator zero-font"></span>
+
                 </a>
             </th>
             <th id="headerDate" class="hidden column-mtime">
