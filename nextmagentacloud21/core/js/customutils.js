@@ -23,11 +23,11 @@ function brandBarAnimation() {
 
     }, 3000);
 
-    if (document.getElementById('showRichWorkspacesToggle')) {
-        document.getElementById('showRichWorkspacesToggle').checked = true;
-        document.getElementById('showRichWorkspacesToggle').nextElementSibling.innerHTML = 'Show folder info text';
-        let workSpaceevent = new Event('change');
-        workSpaceelement.dispatchEvent(workSpaceevent);
+    var richWorkSpace = document.getElementById('showRichWorkspacesToggle');
+    if (richWorkSpace) {
+        richWorkSpace.checked = true;
+        richWorkSpace.nextElementSibling.innerHTML = 'Show folder info text';
+        richWorkSpace.dispatchEvent(new Event('change'));
     }
 }
 
