@@ -257,3 +257,7 @@
         margin-top: 1rem;
         margin-bottom: 1.5rem !important;
     }
+
+    #app-content-trashbin #emptycontent .icon-delete:hover{
+      filter: none !important;
+    }

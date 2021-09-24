@@ -396,7 +396,3 @@ div.crumb {
 #app-content-sharingin .icon-shared, #app-content-sharingout .icon-shared{
     background-image: var(--icon-user-000-org);
 }
-
-#app-content-sharingin .icon-shared:hover, #app-content-sharingout .icon-shared:hover{
-    background-image: var(--icon-user-e20074);
-}
