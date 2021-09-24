@@ -102,7 +102,6 @@ table th#headerDate {
 #filestable tbody {
     display: table;
     width: 100%;
-    display: block;
     overflow: auto;
 }
 
@@ -480,6 +479,6 @@ table.multiselect #modified {
     top: 45px;
 }
 
-#filestable .view-grid #headerSize{
-  padding-left: 4rem;
+#filestable .view-grid #headerSize {
+    padding-left: 4rem;
 }
