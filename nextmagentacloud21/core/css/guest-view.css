@@ -78,8 +78,8 @@
     #app-content-sharingout #emptycontent [class^='icon-'],
     #app-content-sharingout #emptycontent [class*='icon-'] {
         background-size: 120px;
-        height: 120px;
-        width: 120px;
+        height: 7.5rem;
+        width: 7.5rem;
         margin: 0 auto !important;
     }
 
