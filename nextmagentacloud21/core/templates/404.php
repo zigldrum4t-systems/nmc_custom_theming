@@ -21,8 +21,8 @@ if (!isset($_)) {//standalone  page is not supported anymore - redirect to /
 		<p class="infogroup"><?php p($l->t('The document could not be found on the server. Maybe the share was deleted or has expired?')); ?></p>
 		<p>
 			<a class="button primary" href="<?php p(\OC::$server->getURLGenerator()->linkTo('', 'index.php')) ?>">
-			<img src="/themes/magenta-simple/core/img/app-logo-small.svg" />
-			
+			<img src="/themes/nextmagentacloud21/core/img/app-logo-small.svg" />
+
 			<?php p($l->t('Back to %s', [$theme->getName()])); ?>
 		</a></p>
 	</div>

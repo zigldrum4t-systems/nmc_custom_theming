@@ -35,7 +35,6 @@
     <?php emit_css_loading_tags($_); ?>
     <?php emit_script_loading_tags($_); ?>
     <?php print_unescaped($_['headers']); ?>
-    <!-- <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" defer src="/themes/magenta-simple/core/js/custom.js"></script> -->
 </head>
 
 
