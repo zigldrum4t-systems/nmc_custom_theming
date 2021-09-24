@@ -40,6 +40,8 @@
 
 
 <body id="<?php p($_['bodyid']);?>">
+
+
     <?php include 'layout.noscript.warning.php'; ?>
 
     <?php foreach ($_['initialStates'] as $app => $initialState) { ?>
@@ -212,6 +214,7 @@
     </div>
 
     <footer class="brand-footer">
+	<button><?php p($l->t('This is new button')); ?></button>
         <div class="container-fixed">
             <div class="row brand-footer-bar">
                 <div class="col-l-4 col-s-12 text-muted">
