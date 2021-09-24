@@ -482,3 +482,88 @@ table.multiselect #modified {
 #headerSize {
     padding-left: 4rem;
 }
+
+#emptycontent [class^='icon-'],
+#emptycontent [class*='icon-'],
+.emptycontent [class^='icon-'],
+.emptycontent [class*='icon-'] {
+    background-size: 192px;
+    height: 192px;
+    width: 192px;
+    margin: 0 auto !important;
+}
+
+#emptycontent .icon-filetype-folder .guest-emptycontent h2:nth-child(1) {
+    margin: 1rem 0 !important;
+}
+
+#emptycontent h2 {
+    font-size: 1.25rem !important;
+}
+
+#emptycontent h2:nth-child(3) {
+    margin-bottom: 0.5rem !important;
+    font-weight: normal !important;
+}
+
+#emptycontent h2:nth-child(2) {
+    margin-bottom: 1rem !important;
+}
+
+#emptycontent p {
+    font-size: 1.25rem !important;
+    font-weight: normal !important;
+}
+
+#emptycontent .icon-folder,
+.icon-filetype-folder {
+    background-image: var( --icon-folder-empty) !important;
+}
+
+#emptycontent h2,
+.emptycontent h2 {
+    margin-bottom: 0 !important;
+}
+
+#emptycontent .hidden {
+    font-size: 1.25rem !important;
+}
+
+#app-content-trashbin #emptycontent [class^='icon-']:not([class^='icon-loading']),
+#app-content-trashbin #emptycontent [class^='icon-']:not([class*='icon-loading']),
+#app-content-trashbin #emptycontent [class*='icon-']:not([class^='icon-loading']),
+#app-content-trashbin #emptycontent [class*='icon-']:not([class*='icon-loading']),
+#app-content-sharingin #emptycontent [class^='icon-']:not([class^='icon-loading']),
+#app-content-sharingin #emptycontent [class^='icon-']:not([class*='icon-loading']),
+#app-content-sharingin #emptycontent [class*='icon-']:not([class^='icon-loading']),
+#app-content-sharingin #emptycontent [class*='icon-']:not([class*='icon-loading']),
+#app-content-sharingout #emptycontent [class^='icon-']:not([class^='icon-loading']),
+#app-content-sharingout #emptycontent [class^='icon-']:not([class*='icon-loading']),
+#app-content-sharingout #emptycontent [class*='icon-']:not([class^='icon-loading']),
+#app-content-sharingout #emptycontent [class*='icon-']:not([class*='icon-loading']) {
+    opacity: unset !important;
+}
+
+#app-content-trashbin #emptycontent [class^='icon-'],
+#app-content-trashbin #emptycontent [class*='icon-'],
+#app-content-sharingin #emptycontent [class^='icon-'],
+#app-content-sharingin #emptycontent [class*='icon-'],
+#app-content-sharingout #emptycontent [class^='icon-'],
+#app-content-sharingout #emptycontent [class*='icon-'] {
+    background-size: 120px;
+    height: 7.5rem;
+    width: 7.5rem;
+    margin: 0 auto !important;
+}
+
+#app-content-trashbin #emptycontent h2,
+#app-content-sharingin #emptycontent h2,
+#app-content-sharingout #emptycontent h2 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem !important;
+}
+
+#app-content-trashbin #emptycontent .icon-delete:hover{
+    filter: none !important;
+}
+
