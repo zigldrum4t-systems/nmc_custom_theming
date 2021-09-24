@@ -102,7 +102,6 @@ table th#headerDate {
 #filestable tbody {
     display: table;
     width: 100%;
-    display: block;
     overflow: auto;
 }
 
@@ -457,6 +456,7 @@ a.menuitem.action:hover>span,
 
 .selectedActions a {
     opacity: unset !important;
+    padding-left: 4rem;
 }
 
 .selectedActions a:hover {
@@ -477,4 +477,8 @@ table.multiselect #modified {
 
 #selectedActionsList .popovermenu {
     top: 45px;
+}
+
+#filestable .view-grid #headerSize {
+    padding-left: 4rem;
 }
