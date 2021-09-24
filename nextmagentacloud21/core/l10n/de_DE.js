@@ -1,7 +1,6 @@
 OC.L10N.register(
     "core",
     {
-    "This is new button" : "updated from theme_core_l10n1",
     "Please select a file." : "Bitte wählen Sie eine Datei aus.",
     "File is too big" : "Datei ist zu groß",
     "The selected file is not an image." : "Die ausgewählte Datei ist kein Bild.",

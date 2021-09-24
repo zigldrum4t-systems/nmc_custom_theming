@@ -1,5 +1,4 @@
 { "translations": {
-	"TestString":"core eng",
     "Cannot write into \"config\" directory!" : "Cannot write into \"config\" directory!",
     "See %s" : "See %s",
     "Sample configuration detected" : "Sample configuration detected",
