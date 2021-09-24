@@ -1,8 +1,8 @@
 /** icons**/
 
-.icon-home {
+.icon-home,
+#oc-dialog-filepicker-content .dirtree div:first-child a {
     background-image: var(--icon-home-custom);
-    width: 24px !important;
 }
 
 .icon-menu,
@@ -340,5 +340,63 @@ div.crumb {
     background-image: url(../../core/img/icons/play-icon-white.svg) !important;
 }
 
+.icon-external {
+    background-image: var( --icon-external-custom) !important;
+}
 
-/** icons**/
+
+/*filelist-toggle-icons*/
+
+.filelist-container .icon-triangle-s,
+#filestable .icon-triangle-s {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+.filelist-container .icon-triangle-n,
+#filestable .icon-triangle-n {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+
+/*close-dialog-icons*/
+
+.oc-dialog .oc-dialog-close,
+#uploadprogresswrapper .icon-close {
+    background: var(--icon-dialog-close) !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/** RIGHT click icons**/
+
+.icon-starred {
+    background-image: var(--icon-favourite-custom) !important;
+}
+
+.icon-star-dark {
+    background-image: var( --icon-yellow-fav) !important;
+}
+
+.icon-details {
+    background-image: var(--icon-user-000-org) !important;
+}
+
+.icon-rename {
+    background-image: var(--icon-edit-custom) !important;
+}
+
+.icon-download {
+    background-image: var(--icon-download-custom) !important;
+}
+
+.icon-delete {
+    background-image: var(--icon-delete-custom) !important;
+}
+
+#app-content-sharingin .icon-shared, #app-content-sharingout .icon-shared{
+    background-image: var(--icon-user-000-org);
+}
+
+#app-content-sharingin .icon-shared:hover, #app-content-sharingout .icon-shared:hover{
+    background-image: var(--icon-user-e20074);
+}

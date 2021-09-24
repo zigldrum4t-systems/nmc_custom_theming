@@ -149,20 +149,35 @@
                                 <a class="right-menu-font"><?php p($_['user_uid']); ?></a>
                             </span>
                         </div>
-                        <nav class="settings-menu" id="expanddiv" style="display:none;"
-                            aria-label="<?php p($l->t('Settings menu'));?>">
-                            <ul>
-                                <?php foreach ($_['settingsnavigation'] as $entry):?>
-                                <li data-id="<?php p($entry['id']); ?>">
-                                    <a href="<?php print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
-                                        class="active" <?php endif; ?>>
-                                        <img alt=""
-                                            src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
-                                        <?php p($entry['name']) ?>
-                                    </a>
-                                </li>
-                                <?php endforeach; ?>
-                            </ul>
+                        <nav class="settings-menu" id="expanddiv" style="display:none;" aria-label="<?php p($l->t('Settings menu'));?>">
+<ul>
+    <?php foreach ($_['settingsnavigation'] as $entry):?>
+    <li data-id="<?php p($entry['id']); ?>">
+    <a href="<?php $entry['id']=="help"?print_unescaped("https://cloud.telekom-dienste.de/hilfe"):print_unescaped($entry['href']); ?>" <?php if ($entry["active"]): ?>
+        class="active" <?php endif; ?>>
+        <?php if($entry['id']=="settings") {?>
+            <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/admin.svg'. '?v=' . $_['versionHash']); ?>">
+        <?php p($entry['name']);?>
+        <?php } elseif($entry['id']=="help") {?>
+        <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/help.svg'. '?v=' . $_['versionHash']); ?>">
+        <?php  p($l->t('Help & FAQ'));?>
+        <?php } elseif($entry['id']=="logout") {?>
+        <img alt="" src="<?php print_unescaped($entry['icon']. '?v=' . $_['versionHash']); ?>">
+        <?php  p($l->t('Logout')); ?>
+        <?php } elseif($entry['id']=="core_apps") {?>
+            <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/apps.svg'. '?v=' . $_['versionHash']); ?>">
+            <?php p($entry['name']);?>
+        <?php } elseif($entry['id']=="core_users") {?>
+            <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/users.svg'. '?v=' . $_['versionHash']); ?>">
+            <?php p($entry['name']);?>
+        <?php } else { ?>
+        <img alt="" src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']);?>">
+        <?php p($entry['name']);
+        }?>
+    </a>
+    </li>
+    <?php endforeach; ?>
+</ul>
                         </nav>
                     </div>
                         <div id="navigation" style="display: none;" aria-label="<?php p($l->t('More apps menu')); ?>">
@@ -192,6 +207,7 @@
             </div>
         </header>
     </div>
+    <div class="full-width-breadcrumb"></div>
 
 
     <div id="sudo-login-background" class="hidden"></div>

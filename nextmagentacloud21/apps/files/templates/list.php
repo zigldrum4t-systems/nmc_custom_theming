@@ -1,5 +1,4 @@
 <div id="controls">
-<div class="full-width-breadcrumb"></div>
 		<div class="actions creatable hidden">
 			<div id="uploadprogresswrapper">
 			</div>
@@ -22,7 +21,7 @@
 </div>
 
  <div id="filelist-header"></div>
- 
+
  <div id="emptycontent" class="hidden">
     <div class="icon-folder"></div>
     <h2 class="folder-name"></h2>
@@ -34,7 +33,7 @@
     <div class="icon-search"></div>
     <h2><?php p($l->t('No entries found in this folder')); ?></h2>
     <p></p>
-</div> 
+</div>
 <table id="filestable" class="list-container <?php p($_['showgridview'] ? 'view-grid' : '') ?>"
     data-allow-public-upload="<?php p($_['publicUploadEnabled'])?>" data-preview-x="250" data-preview-y="250">
     <thead>
@@ -61,8 +60,9 @@
             </th>
             <th id="headerSize" class="hidden column-size">
                 <a class="size sort columntitle" data-sort="size">
-                    <span class="sort-indicator zero-font"></span>
                     <span><?php p($l->t('Size')); ?></span>
+                    <span class="sort-indicator zero-font"></span>
+
                 </a>
             </th>
             <th id="headerDate" class="hidden column-mtime">

@@ -1,6 +1,5 @@
 <?php /** @var \OCP\IL10N $l */ ?>
 <div class="controls-section">
-<div class="full-width-breadcrumb"></div>
 </div>
 <div id='notification'></div>
 

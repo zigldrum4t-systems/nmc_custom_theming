@@ -90,10 +90,6 @@ section {
     color: var(--scl-color-grey-90);
 }
 
-body {
-    overflow-y: hidden;
-}
-
 #body-user>* {
     box-sizing: border-box !important;
     -webkit-box-sizing: border-box !important;
@@ -121,9 +117,8 @@ body {
 #app-navigation {
     z-index: 10 !important;
     left: unset !important;
-    position: absolute !important;
-    top: 47px !important;
-    height: calc(100vh - 230px) !important;
+    top: 185px !important;
+    height: calc(100% - 190px) !important;
 }
 
 #app-navigation>ul>li.active,
@@ -151,12 +146,6 @@ body {
 #app-navigation>ul>li>ul {
     line-height: 48px;
     padding: 0.188rem 0rem 0rem 3rem !important;
-}
-
-#app-navigation>ul {
-    overflow-y: unset;
-    overflow-x: unset;
-    margin-top: 4em;
 }
 
 #sublist-favorites {
@@ -406,16 +395,12 @@ body {
 }
 
 
-/* ---------------------------------------------------------------------------- */
-
-
 /* ----------------------------------HEADER------------------------------------ */
 
-
-/* ---------------------------------------------------------------------------- */
-
 .MenuWrapperParent {
-    position: relative;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
 }
 
 .header-brandbar-claim span {
@@ -474,9 +459,6 @@ aside {
     #content>.container-fixed {
         width: 1236px;
     }
-    /* .header-right .navbar-icons .smallscreenSize {
-        display: none !important;
-    } */
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
@@ -528,19 +510,11 @@ aside {
     height: 5px;
 }
 
-
-/* UI chnages */
-
 .MenuWrapperParent {
     top: 0;
     width: 100%;
     border-bottom: 1px solid #e5e5e5;
 }
-
-
-/* #header .container-fixed .header-right .navbar-icons a {
-    display: inline;
-} */
 
 @media screen and (max-width: 640px) {
     .button.new .hidden-visually {
@@ -551,6 +525,16 @@ aside {
     }
     .app-files #app-content {
         width: 100% !important;
+    }
+    #uploadprogressbar {
+        width: 80px !important;
+    }
+    #uploadprogressbar .label {
+        top: 2px !important;
+        width: 80px !important;
+    }
+    #uploadprogressbar .mobile {
+        display: block !important;
     }
 }
 
@@ -620,9 +604,6 @@ aside {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    /* #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 12px;
-    } */
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 0 !important;
     }
@@ -631,35 +612,10 @@ aside {
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 639px) {
-    /* .header-right .navbar-icons a {
-        font-size: 6px !important;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 2px !important;
-    }
-    #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 10px;
-     }
-
-    #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 9px;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 0px !important;
-    } */
-}
-
 @media screen and (max-width: 1299px) {
     .container-fixed {
         width: 100%;
     }
-    /* #header .container-fixed .header-right .navbar-icons a label {
-        display: block;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 5px;
-    }*/
     #filestable.view-grid tbody {
         row-gap: 16px !important;
     }
@@ -668,12 +624,6 @@ aside {
 @media screen and (max-width: 1599px) {
     #filestable tbody {
         row-gap: unset !important;
-    }
-}
-
-@media screen and (max-height: 750px) {
-    #app-navigation>ul {
-        margin-top: 0 !important;
     }
 }
 
@@ -791,34 +741,6 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 /*----right-click-menu------*/
 
-.icon-starred {
-    background-image: var(--icon-favourite-custom) !important;
-}
-
-.icon-star-dark {
-    background-image: var( --icon-yellow-fav) !important;
-}
-
-.icon-details {
-    background-image: var(--icon-user-000-org) !important;
-}
-
-.icon-rename {
-    background-image: var(--icon-edit-custom) !important;
-}
-
-.icon-external {
-    background-image: var(--icon-copy-paste-custom) !important;
-}
-
-.icon-download {
-    background-image: var(--icon-download-custom) !important;
-}
-
-.icon-delete {
-    background-image: var(--icon-delete-custom) !important;
-}
-
 #rightClickMenu,
 .fileActionsMenu {
     margin: 0;
@@ -836,11 +758,6 @@ input[type="checkbox"].checkbox+label:before:hover {
     margin-left: .5rem;
 }
 
-
-/* #rightClickMenu span:hover {
-    color: #e20074 !important;
-} */
-
 #rightClickMenu.bubble li>a,
 .fileActionsMenu.bubble li>a {
     align-items: center !important;
@@ -851,49 +768,21 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: unset !important;
 }
 
-
-/* Hover icons */
-
-
-/* #rightClickMenu .icon-delete:hover,
-.icon-delete:focus {
-    background-image: var(--icon-delete-magenta) !important;
-    filter: initial;
-}
-
-.icon-download:hover {
-    background-image: var(--icon-download-magenta) !important;
-}
-
-#rightClickMenu .icon-starred:hover {
-    background-image: var(--icon-fav-magenta) !important;
-}
-
-.icon-details:hover {
-    background-image: var(--icon-user-e20074) !important;
-}
-
-#rightClickMenu .icon-rename:hover {
-    background-image: var(--icon-edit-magenta) !important;
-}
-
-#rightClickMenu .icon-external:hover {
-    background-image: var(--icon-copy-paste-magenta) !important;
-}*/
-
 #view-toggle {
-    background-color: transparent;
     border: none;
-    position: absolute;
-    top: 0.6rem;
-    right: 0;
-    z-index: 999;
+    position: sticky !important;
+    display: block;
+    background-color: transparent;
+    top: 9.1rem;
+    left: 100%;
+    z-index: 9999;
     opacity: 1;
     padding: 0;
     height: 24px;
     width: 24px;
     margin-right: 1rem;
     border-radius: 0;
+    margin-top: -38px;
 }
 
 #view-toggle:hover,
@@ -914,13 +803,19 @@ a.menuitem.action:hover>span,
 
 #controls,
 .controls-section {
-    top: 0;
+    top: 73px;
     width: 100%;
     height: 47px;
     padding: 0;
-    /* margin-left: .2rem; */
+    margin-top: -33px;
     margin-bottom: 2em;
     background-color: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.controls-section {
+    position: sticky;
+    z-index: 999;
 }
 
 
@@ -938,7 +833,7 @@ a.menuitem.action:hover>span,
     left: 0;
     background: #f2f2f2;
     border-bottom: 1px solid #e5e5e5;
-    z-index: -1;
+    z-index: 99;
 }
 
 .breadcrumb-translation {
@@ -948,6 +843,8 @@ a.menuitem.action:hover>span,
 
 #content {
     padding-top: 0;
+    top: 184px;
+    z-index: 99;
 }
 
 .container-fixed {
@@ -1005,18 +902,8 @@ div.crumb:last-child {
 .snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
     left: 0;
     top: 0;
+    margin-top: -47px;
     transition: none;
-}
-
-.snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
-    left: -92%;
-    top: -1px;
-    transition: none;
-}
-
-.snapjs-left #app-content:not([style=''])>.viewcontainer #controls {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
 }
 
 #app-navigation-toggle.app-navigation-translation {
@@ -1024,7 +911,7 @@ div.crumb:last-child {
 }
 
 .translation {
-    transition: all 700ms;
+    transition: all .4s;
 }
 
 .header-brandbar {
@@ -1042,6 +929,19 @@ div.crumb:last-child {
     opacity: 1 !important;
 }
 
+.content-translation {
+    top: 120px !important;
+}
+
+.view-toggle-translation {
+    top: 5.1rem !important;
+    margin-top: -38px !important;
+}
+
+#app-navigation.app-navigation-translation {
+    top: 120px !important;
+}
+
 .tooltip .tooltip-inner {
     background: #ffffff;
     color: #191919 !important;
@@ -1056,94 +956,6 @@ div.crumb:last-child {
     padding-right: 30px !important;
 }
 
-
-/** Grid Icons ***********************************/
-
-
-/*
-#filestable [data-mime="text/plain"] .thumbnail,
-#filestable [data-mime="text/markdown"] .thumbnail,
-#filestable [data-mime="application/octet-stream"] .thumbnail,
-#filestable [data-mime="application/msword"] .thumbnail,
-#filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail {
-    background-image: var(--grid-text-files-icon) !important;
-}
-
-#filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
-#filestable [data-mime="text/csv"] .thumbnail {
-    background-image: var(--grid-file-calculation-icon) !important;
-}
-
-#filestable [data-mime="application/zip"] .thumbnail,
-#filestable [data-mime="application/x-rar-compressed"] .thumbnail {
-    background-image: var(--grid-zip-icon) !important;
-}
-
-#filestable [data-mime="application/xml"] .thumbnail,
-#filestable [data-mime="application/x-php"] .thumbnail,
-#filestable [data-mime="application/json"] .thumbnail,
-#filestable [data-mime="application/javascript"] .thumbnail,
-#filestable [data-mime="text/css"] .thumbnail {
-    background-image: var(--grid-file-code-icon) !important;
-}
-
-#filestable [data-mime="audio/mpeg"] .thumbnail,
-#filestable [data-mime="audio/ogg"] .thumbnail,
-#filestable [data-mime="audio/mp4"] .thumbnail,
-#filestable [data-mime="audio/wav"] .thumbnail {
-    background-image: var(--grid-file-audio-icon) !important;
-}
-
-#filestable [data-mime="application/vnd.ms-powerpoint"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"] .thumbnail {
-    background-image: var(--grid-present-icon) !important;
-}
-
-#filestable [data-mime="application/pdf"] .thumbnail {
-    background-image: var(--grid-pdf-icon) !important;
-}
-
-#filestable [data-mime="text/html"] .thumbnail {
-    background-image: var(--grid-file-web-icon) !important;
-}
-
-#filestable [data-mime="video/x-ms-wmv"] .thumbnail,
-#filestable [data-mime="video/mpeg"] .thumbnail,
-#filestable [data-mime="video/x-msvideo"] .thumbnail,
-#filestable [data-mime="video/x-matroska"] .thumbnail,
-#filestable [data-mime="video/quicktime"] .thumbnail,
-#filestable [data-mime="video/mp4"] .thumbnail {
-    background-image: var(--grid-file-video-icon) !important;
-}
-
-
-/* #filestable [data-mime="image/webp"] .thumbnail,
-#filestable [data-mime="image/bmp"] .thumbnail,
-#filestable [data-mime="image/png"] .thumbnail,
-#filestable [data-mime="image/heic"] .thumbnail,
-#filestable [data-mime="image/jpeg"] .thumbnail,
-#filestable [data-mime="image/gif"] .thumbnail,
-#filestable [data-mime="image/svg+xml"] .thumbnail,
-#filestable [data-mime="application/postscript"] .thumbnail,
-#filestable [data-mime="image/x-dcraw"] .thumbnail {
-    background-image: var(--grid-file-img-icon) !important;
-} */
-
-
-/* #filestable [data-mime="httpd/unix-directory"] .thumbnail {
-    background-image: var(--grid-folder-icon) !important;
-}
-
-#filestable [data-e2eencrypted="true"] .thumbnail {
-    background-image: var(--grid-folder-enc-icon) !important;
-}
-
-#filestable [data-icon] .thumbnail {
-    background-image: var(--grid-folder-shared-icon) !important;
-} */
-
 .brand-bar-translation {
     height: 9px;
 }
@@ -1156,16 +968,9 @@ div.crumb:last-child {
     padding-top: 16px;
 }
 
-#app-content-files thead {
-    top: 0
+#filestable thead {
+    top: 118px;
 }
-
-
-/* .viewcontainer {
-    overflow-y: scroll;
-    height: 100vh;
-    min-height: auto !important;
-} */
 
 
 /*Guest layout*/
@@ -1182,19 +987,13 @@ div.crumb:last-child {
 }
 
 
-/* #files-public-content #emptycontent h2,
-#emptycontent.hidden~.guest-emptycontent {
-    display: none;
-} */
-
-
 /*Guest layout*/
 
 
 /* Add Button*/
 
 .newFileMenu {
-    padding: 16px 16px 24px 16px;
+    padding: 1rem;
     box-shadow: var(--scl-shadow-level-2);
     width: 235px !important;
     border-radius: 8px;
@@ -1220,8 +1019,7 @@ div.crumb:last-child {
 }
 
 .newFileMenu .menuitem .displayname {
-    padding-left: 8px;
-    padding-top: 12px;
+    padding-left: 0.5rem;
 }
 
 .actions.creatable .popovermenu.menu-left a {
@@ -1880,7 +1678,6 @@ div.crumb.crumbmenu a {
 
 .modal-header {
     position: relative !important;
-    /* width: 1536px !important; */
     height: 63px !important;
     margin: 0 auto;
     background: #191919;
@@ -1954,11 +1751,202 @@ div.crumb.crumbmenu a {
     top: 81px !important;
 }
 
+#viewer .viewer__content {
+    align-self: start;
+    height: auto !important;
+    margin-top: 1rem;
+}
+
+#viewer .modal-container {
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+#viewer #editor-container {
+    top: 64px !important
+}
+
 
 /* preview css*/
 
 .icon-loading-small {
     display: none;
+}
+
+
+/*Copy-move-dialog*/
+
+.oc-dialog {
+    padding: 1.5rem !important;
+    box-shadow: var(--scl-shadow-level-2) !important;
+}
+
+.oc-dialog .oc-dialog-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.375rem !important;
+}
+
+.oc-dialog .oc-dialog-close {
+    margin: 1.5rem !important;
+    padding: 0.938rem !important;
+    opacity: unset !important;
+}
+
+#oc-dialog-filepicker-content .dirtree {
+    padding-left: 0.125rem !important;
+}
+
+.oc-dialog-buttonrow button {
+    height: 40px !important;
+    min-width: 135px !important;
+    border-radius: 8px !important;
+    padding: 0 1.5rem !important;
+    background-color: #ffffff;
+    border-color: #191919;
+    margin: 0px !important;
+}
+
+.oc-dialog-buttonrow button:hover {
+    border-color: #e20074 !important;
+    color: #e20074 !important;
+}
+
+.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.twobuttons.aside .primary {
+    background-color: #e20074 !important;
+    border-color: #e20074 !important;
+    color: #ffffff !important;
+    margin: 0 0 0 0.5rem !important;
+}
+
+.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.twobuttons.aside .primary:hover {
+    background-color: #f90984 !important;
+}
+
+.oc-dialog-buttonrow button {
+    font-size: 1rem !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist .filename {
+    background-size: 44px !important;
+    background-position: 5px 14px !important;
+}
+
+#picker-filestable thead tr {
+    height: 32px !important;
+}
+
+#picker-filestable tr {
+    height: 68px !important;
+}
+
+#picker-filestable tbody tr:hover,
+#picker-filestable tbody tr:focus,
+#picker-filestable tbody tr:active {
+    background-color: rgb(242 242 242 / 50%) !important;
+}
+
+.oc-dialog-buttonrow {
+    padding: 0 !important;
+}
+
+#oc-dialog-filepicker-content .filelist-container {
+    margin-bottom: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist {
+    margin-bottom: 0 !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist td.filename {
+    width: 200px !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist td.filesize {
+    padding: 0.875rem 1rem !important;
+    width: 50px !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist td.date {
+    padding: 0.875rem 1rem !important;
+    text-align: right !important;
+    width: calc(100% - 250px) !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.name {
+    padding: 1.25rem 1rem 1.25rem 0.313rem !important;
+    margin-left: 2.688rem !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.size {
+    padding: 1.25rem 1rem !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle#modified {
+    padding: 1.25rem 1rem !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#oc-dialog-filepicker-content .actions.creatable {
+    background-color: unset !important;
+    border: unset !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable a {
+    background-color: unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
+    border: unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
+    border-bottom: 1px solid var(--color-border) !important;
+}
+
+.oc-dialog div.crumb {
+    background-size: auto 24px !important;
+}
+
+#oc-dialog-filepicker-content .actions.creatable {
+    left: 6px !important;
+    top: 10px !important;
+}
+
+#oc-dialog-filepicker-content #picker-view-toggle {
+    display: none;
+}
+
+#oc-dialog-filepicker-content .breadcrumb {
+    margin-left: 0 !important;
+}
+
+.oc-dialog-content {
+    max-width: unset !important;
+}
+
+#picker-filestable .view-grid tbody {
+    display: none !important;
+}
+
+.oc-dialog ::-webkit-scrollbar {
+    width: 4px !important;
+}
+
+.oc-dialog ::-webkit-scrollbar-thumb {
+    background: #cccccc !important;
+    border: unset !important;
+}
+
+#oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator {
+    margin-left: -78px !important;
 }
 
 
@@ -2003,6 +1991,7 @@ div.crumb.crumbmenu a {
         margin-left: 0.5rem !important;
     }
     .brand-footer {
+        position: relative;
         padding: 1rem 0 1.5rem 0;
     }
     .brand-footer .brand-footer-bar {
@@ -2046,8 +2035,11 @@ div.crumb.crumbmenu a {
     #viewer .modal-wrapper a.next {
         right: 25% !important;
     }
-    .modal-header .modal-title {
+    #viewer .modal-header .modal-title {
         width: calc(50% - 70px)!important;
+    }
+    #filestable .summary {
+        height: 150px;
     }
 }
 
@@ -2055,14 +2047,8 @@ div.crumb.crumbmenu a {
     #fileList td a a.action.action-share.shared-style {
         width: 0 !important;
     }
-    #uploadprogressbar {
-      width: 80px !important;
-  }
-  #uploadprogressbar .label {
-    top: 2px !important;
-    width: 80px !important;
 }
-}
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     .breadcrumb {
         margin-left: 2rem;
@@ -2083,7 +2069,7 @@ div.crumb.crumbmenu a {
         margin-right: 0;
     }
     #controls {
-        margin: 0 0 1rem 0 !important;
+        margin-bottom: 1rem !important;
         padding: 0 0 0 2.5rem !important;
     }
     #rich-workspace {
@@ -2158,195 +2144,11 @@ div.crumb.crumbmenu a {
     }
 }
 
+@media screen and (min-width: 641px) {
+    #uploadprogressbar .desktop {
+        display: block !important;
+    }
+}
+
 
 /*Responsive Styling*/
-
-
-/*Copy-move-dialog*/
-
-.oc-dialog {
-    padding: 1.5rem !important;
-    box-shadow: var(--scl-shadow-level-2) !important;
-}
-
-.oc-dialog .oc-dialog-title {
-    font-size: 1.5rem !important;
-    margin-bottom: 0.375rem !important;
-}
-
-.oc-dialog .oc-dialog-close {
-    background: var(--icon-dialog-close) no-repeat center !important;
-    margin: 1.5rem !important;
-    padding: 0.938rem !important;
-    opacity: unset !important;
-}
-
-#oc-dialog-filepicker-content .dirtree {
-    padding-left: 0.125rem !important;
-}
-
-.oc-dialog-buttonrow button {
-    height: 40px !important;
-    min-width: 135px !important;
-    border-radius: 8px !important;
-    padding: 0 1.5rem !important;
-    background-color: #ffffff;
-    border-color: #191919;
-    margin: 0px !important;
-}
-
-.oc-dialog-buttonrow button:hover {
-    border-color: #e20074 !important;
-    color: #e20074 !important;
-}
-
-.oc-dialog-buttonrow.onebutton,
-.oc-dialog-buttonrow.twobuttons.aside .primary {
-    background-color: #e20074 !important;
-    border-color: #e20074 !important;
-    color: #ffffff !important;
-    margin: 0 0 0 0.5rem !important;
-}
-
-.oc-dialog-buttonrow.onebutton,
-.oc-dialog-buttonrow.twobuttons.aside .primary:hover {
-    background-color: #f90984 !important;
-}
-
-.oc-dialog-buttonrow button {
-    font-size: 1rem !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist .filename {
-    background-size: 44px !important;
-    background-position: 5px 14px !important;
-}
-
-#picker-filestable thead tr {
-    height: 32px !important;
-}
-
-#picker-filestable tr {
-    height: 68px !important;
-}
-
-#picker-filestable tbody tr:hover,
-#picker-filestable tbody tr:focus,
-#picker-filestable tbody tr:active {
-    background-color: rgb(242 242 242 / 50%) !important;
-    ;
-}
-
-.oc-dialog-buttonrow {
-    padding: 0 !important;
-}
-
-#oc-dialog-filepicker-content .filelist-container {
-    margin-bottom: 1.5rem;
-    margin-top: 0.75rem;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist {
-    margin-bottom: 0 !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist td.filename {
-    width: 200px !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist td.filesize {
-    padding: 0.875rem 1rem !important;
-    width: 50px !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist td.date {
-    padding: 0.875rem 1rem !important;
-    text-align: right !important;
-    width: calc(100% - 250px) !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.name {
-    padding: 1.25rem 1rem 1.25rem 0.313rem !important;
-    margin-left: 2.688rem !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle.size {
-    padding: 1.25rem 1rem !important;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist th .columntitle#modified {
-    padding: 1.25rem 1rem !important;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-#oc-dialog-filepicker-content .dirtree div:first-child a {
-    background-image: var(--icon-home-custom) !important;
-}
-
-#oc-dialog-filepicker-content .actions.creatable {
-    background-color: unset !important;
-    border: unset !important;
-}
-
-#oc-dialog-filepicker-content .actions.creatable a {
-    background-color: unset !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
-    border: unset !important;
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist thead tr th {
-    border-bottom: 1px solid var(--color-border) !important;
-}
-
-.oc-dialog div.crumb {
-    background-size: auto 24px !important;
-}
-
-#oc-dialog-filepicker-content .actions.creatable {
-    left: 6px !important;
-    top: 10px !important;
-}
-
-#oc-dialog-filepicker-content #picker-view-toggle {
-    display: none;
-}
-
-#oc-dialog-filepicker-content .breadcrumb {
-    margin-left: 0 !important;
-}
-
-.oc-dialog-content {
-    max-width: unset !important;
-}
-
-#picker-filestable .view-grid tbody {
-    display: none !important;
-}
-
-.oc-dialog ::-webkit-scrollbar {
-    width: 4px !important;
-}
-
-.oc-dialog ::-webkit-scrollbar-thumb {
-    background: #cccccc !important;
-    border: unset !important;
-}
-
-.filelist-container .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
-}
-
-.filelist-container .icon-triangle-n {
-    background-image: var(--icon-triangle-s-e20074);
-}
-
-#oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator {
-    margin-left: -78px !important;
-}
