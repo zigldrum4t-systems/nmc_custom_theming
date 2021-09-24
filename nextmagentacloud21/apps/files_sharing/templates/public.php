@@ -58,7 +58,7 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 	<!-- files listing -->
 	<div id="files-public-content">
 		<div id="preview">
-			<?php  
+			<?php
 			if (isset($_['folder'])): ?>
 				<?php print_unescaped($_['folder']); ?>
 				<div class="guest-emptycontent">
@@ -87,8 +87,8 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 									<span class="icon icon-download"></span>
 									<?php p($l->t('Download'))?>
 								</a>
-							</div>							
-						 <?php 	} ?>						
+							</div>
+						 <?php 	} ?>
 					<?php } ?>
 					<?php endif; ?>
 				<?php endif; ?>
@@ -106,7 +106,6 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 			<?php endif; ?>
 		</div>
 		<div class="content-dialog">
-		     
 			<div class="container-fixed">
 			<div class="closePopup">
                         <a href="#" id="closePopUp" class="button">
@@ -127,7 +126,7 @@ $maxUploadFilesize = min($upload_max_filesize, $post_max_size);
 			</div>
         </div>
 	</div>
-	
+
 <?php } else { ?>
 	<input type="hidden" id="upload-only-interface" value="1"/>
 	<div id="public-upload">

@@ -61,10 +61,10 @@
 
 					<div class="login-header">
 						<div class="app-logo brand">
-						<img src="/themes/magenta-simple/core/img/1-T-3-logo.svg">
+						<img src="/themes/nextmagentacloud21/core/img/1-T-3-logo.svg">
 						</div>
 						<div class="app-claim brand">
-							<img src="/themes/magenta-simple/core/img/app-claim-logo.svg">
+							<img src="/themes/nextmagentacloud21/core/img/app-claim-logo.svg">
 						</div>
 					</div>
 
@@ -80,9 +80,9 @@
 									&& \OC::$server->getConfig()->getAppValue('theming', 'logoMime', false)): ?>
 									<img src="<?php p($theme->getLogo()); ?>"/>
 								<?php endif; ?>
-								<img src="/themes/magenta-simple/core/img/app-logo.svg"/>
+								<img src="/themes/nextmagentacloud21/core/img/app-logo.svg"/>
 							</div>
-							
+
 							<h1>Magenta<span class="logo-title">CLOUD</span></h1>
 					<?php print_unescaped($_['content']); ?>
 					</div>
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 		<footer role="contentinfo" class="brand-footer login-footer">
-		
+
 			<div class="container-fixed">
             <div class="row brand-footer-bar">
                 <div class="col-l-4 col-s-12 text-muted">
@@ -110,6 +110,6 @@
             </div>
         </div>
 		</footer>
-	
+
 	</body>
 </html>

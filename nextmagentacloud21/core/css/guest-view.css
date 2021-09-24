@@ -1,5 +1,5 @@
     /*empty folder*/
-    
+
     #emptycontent [class^='icon-'],
     #emptycontent [class*='icon-'],
     .emptycontent [class^='icon-'],
@@ -9,49 +9,217 @@
         width: 192px;
         margin: 0 auto !important;
     }
-    
+
     #files-public-content #emptycontent {
         margin-top: 8vh !important;
         margin-bottom: 31vh !important;
     }
-    
+
     #emptycontent .icon-filetype-folder .guest-emptycontent h2:nth-child(1) {
         margin: 1rem 0 !important;
     }
-    
+
     #emptycontent h2 {
         font-size: 1.25rem !important;
     }
-    
+
     #emptycontent h2:nth-child(3) {
         margin-bottom: 0.5rem !important;
         font-weight: normal !important;
     }
-    
+
     #emptycontent h2:nth-child(2) {
         margin-bottom: 1rem !important;
     }
-    
+
     #emptycontent p {
         font-size: 1.25rem !important;
         font-weight: normal !important;
     }
-    
+
     #emptycontent .icon-folder,
     .icon-filetype-folder {
         background-image: var( --icon-folder-empty) !important;
     }
-    
+
     #emptycontent h2,
     .emptycontent h2 {
         margin-bottom: 0 !important;
     }
-    
+
     #emptycontent .hidden {
         font-size: 1.25rem !important;
     }
     /*toggle-btn-*/
-    
+
     #body-public .header-right #header-secondary-action #header-actions-toggle {
         display: none !important;
+    }
+    /*Guest layout*/
+
+    .gust-download-svg {
+        margin-right: 5px;
+    }
+
+    .gust-download-label {
+        font-size: 20px;
+        font-style: 'TeleNeo';
+        font-weight: bold;
+        vertical-align: super !important;
+    }
+    /*Guest layout*/
+    /*Guest layout header*/
+
+    #body-user #header,
+    #body-settings #header,
+    #body-public #header {
+        position: relative;
+        top: -5px !important;
+        background-color: #ffffff !important;
+        background-image: unset !important;
+        height: 63px !important;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    #body-public #header .header-right {
+        padding-left: 5px;
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+
+    #files-public-content #imgframe {
+        padding: 1.5em 0px 1em 0px !important;
+    }
+    /* guest-layout-dialog*/
+
+    .content-button .informNow .icon-download {
+        background-image: var( --icon-magenta-cloud) !important;
+        opacity: unset !important;
+    }
+
+    .content-button .directDownload button>span[class^='icon-'],
+    .content-button .directDownload button>span[class*=' icon-'],
+    .content-button .directDownload .button>span[class^='icon-'],
+    .content-button .directDownload .button>span[class*=' icon-'] {
+        opacity: unset !important;
+    }
+
+    .content-button .informNow [class^='icon-'],
+    .content-button .informNow [class*=' icon-'] {
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 24px;
+        min-height: 24px;
+        background-size: 22px;
+    }
+
+    .content-button .informNow button,
+    .content-button .informNow .button,
+    .content-button .informNow input[type='button'],
+    .content-button .informNow input[type='submit'],
+    .content-button .informNow input[type='reset'] {
+        border-radius: 4px !important;
+        background-color: unset !important;
+        font-weight: normal !important;
+        border: 1px solid #191919;
+    }
+
+    .directDownload button,
+    .directDownload .button,
+    .directDownload input[type='button'],
+    .directDownload input[type='submit'],
+    .directDownload input[type='reset'] {
+        border-radius: 4px !important;
+        background-color: #e20074 !important;
+        font-weight: normal !important;
+        border: 1px solid #e20074;
+        font-size: 16px;
+    }
+
+    .directDownload button:hover,
+    .directDownload .button:hover,
+    .directDownload input[type='button']:hover,
+    .directDownload input[type='submit']:hover,
+    .directDownload input[type='reset']:hover {
+        border-radius: 4px !important;
+        background-color: #f90984 !important;
+        font-weight: normal !important;
+        border: 1px solid #e20074;
+        font-size: 1rem;
+    }
+
+    .content-dialog {
+        text-align: center;
+        padding: 24px;
+        background-color: #fff;
+    }
+
+    .content-dialog .content-para {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .content-dialog .informNow {
+        margin-top: 1.5em;
+    }
+
+    .content-dialog .informNow #downloadFile {
+        padding: 0.625rem 1.5rem 0.813rem 1.5rem;
+        border-radius: 8px !important;
+    }
+
+    .content-dialog .informNow span {
+        vertical-align: middle;
+        margin: 0em 0.125em;
+    }
+
+    .content-dialog .informNow span:hover {
+        color: #e20074 !important;
+    }
+
+    .directDownload .icon-download {
+        background-image: var(--icon-white-download) !important;
+        opacity: unset !important;
+    }
+
+    .informNow a:hover span {
+        color: #e20074 !important;
+    }
+
+    button:not(:disabled):not(.primary):hover,
+    button:not(:disabled):not(.primary):focus,
+    button:not(:disabled):not(.primary).active,
+    .button:not(:disabled):not(.primary):hover,
+    .button:not(:disabled):not(.primary):focus,
+    .button:not(:disabled):not(.primary).active {
+        border-color: #e20074 !important;
+    }
+
+    div[contenteditable=true]:not(:disabled):not(.primary):hover,
+    div[contenteditable=true]:not(:disabled):not(.primary):focus,
+    div[contenteditable=true]:not(:disabled):not(.primary).active,
+    .pager li a:not(:disabled):not(.primary):hover,
+    .pager li a:not(:disabled):not(.primary):focus,
+    .pager li a:not(:disabled):not(.primary).active {
+        border-color: unset !important;
+        outline: none;
+    }
+
+    .content-dialog .content-para span {
+        font-weight: bold;
+    }
+
+    #files-public-content #editor-container~.content-dialog {
+        position: fixed;
+        bottom: 0;
+        z-index: 99;
+    }
+
+    #files-public-content #preview {
+        min-height: 65vh;
+    }
+
+    #body-public #content {
+        min-height: calc(100% - 120px);
     }
