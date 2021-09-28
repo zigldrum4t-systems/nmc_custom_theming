@@ -1805,19 +1805,19 @@ div.crumb.crumbmenu a {
   width: 100%;
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  font-weight: 400 !important;;
+  font-weight: 400 !important;
   height: 2.5rem;
   background-color: #FFFFFF;
   color:#000000;
-  border-radius: 0.5rem !important;;
-  text-overflow: ellipsis !important;;
+  border-radius: 0.5rem !important;
+  text-overflow: ellipsis !important;
   font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
   border: 0.063rem solid #191919 !important;;
 }
 
 .oc-conflict-pre-dlg-replace-button {
   background-color: #E20074 !important;
-  color:#FFFFFF !important;;
+  color:#FFFFFF !important;
   border: 0.063rem solid #E20074 !important;
 }
 
