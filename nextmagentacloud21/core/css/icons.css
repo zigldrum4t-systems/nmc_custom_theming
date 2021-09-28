@@ -396,3 +396,14 @@ div.crumb {
 #app-content-sharingin .icon-shared, #app-content-sharingout .icon-shared{
     background-image: var(--icon-user-000-org);
 }
+
+.oc-conflict-pre-dlg-close-div a{
+  padding-right: 1.12rem;
+  padding-bottom: 0.37rem;
+  background-size: 1.5rem 1.5rem !important;
+  background: url('../../core/img/close.svg') no-repeat !important;
+}
+
+.oc-conflict-pre-dlg-close-div a:hover, .oc-conflict-pre-dlg-close-div a:active, .oc-conflict-pre-dlg-close-div a:focus {
+  background: url('../../core/img/close-magenta.svg') no-repeat !important;
+}
