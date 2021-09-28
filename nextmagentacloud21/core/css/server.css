@@ -1798,7 +1798,7 @@ div.crumb.crumbmenu a {
   padding-right: 1.5rem !important;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  width: 18rem !important;
+  width: 16px !important;
 }
 
 .oc-conflict-pre-dlg-button {
@@ -1851,7 +1851,13 @@ div.crumb.crumbmenu a {
     color:#FFFFFF;
 }
 
-
+.oc-conflict-pre-dlg-close-div a{
+    padding-right: 1.12rem;
+    padding-bottom: 0.37rem;
+    background-size: 1.5rem 1.5rem !important;
+  }
+  
+  
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {

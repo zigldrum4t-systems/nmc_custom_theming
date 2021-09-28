@@ -397,10 +397,7 @@ div.crumb {
     background-image: var(--icon-user-000-org);
 }
 
-.oc-conflict-pre-dlg-close-div a{
-  padding-right: 1.12rem;
-  padding-bottom: 0.37rem;
-  background-size: 1.5rem 1.5rem !important;
+.oc-conflict-pre-dlg-close-div a {
   background: url('../../core/img/close.svg') no-repeat !important;
 }
 
