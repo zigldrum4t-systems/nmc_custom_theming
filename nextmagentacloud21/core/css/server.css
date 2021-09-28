@@ -1791,6 +1791,73 @@ div.crumb.crumbmenu a {
 }
 
 
+/*** Custom conflict dialog ******************************************************/
+
+.oc-conflict-pre-dlg {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 16px !important;
+}
+
+.oc-conflict-pre-dlg-button {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400 !important;
+  height: 2.5rem;
+  background-color: #FFFFFF;
+  color:#000000;
+  border-radius: 8px !important;
+  text-overflow: ellipsis !important;
+  font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+  border: 1px solid #191919 !important;;
+}
+
+.oc-conflict-pre-dlg-replace-button {
+  background-color: #E20074 !important;
+  color:#FFFFFF !important;
+  border: 1px solid #E20074 !important;
+}
+
+.oc-conflict-pre-dlg .fileexists {
+  margin-bottom: 1.5rem !important;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.oc-conflict-pre-dlg-title-div {
+  flex: 1;
+}
+
+.oc-conflict-pre-dlg-close-div {
+  flex: 1;
+  text-align: right;
+}
+
+.oc-conflct-pre-dlg-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.fourbuttons button:hover, .fourbuttons button:focus, .fourbuttons button:active {
+    color:#E20074;
+}
+
+.fourbuttons button:last-child:hover, .fourbuttons button:last-child:focus, .fourbuttons button:last-child:active {
+    color:#FFFFFF;
+}
+
+.oc-conflict-pre-dlg-close-div a{
+    padding-right: 1.12rem;
+    padding-bottom: 0.37rem;
+    background-size: 1.5rem 1.5rem !important;
+  }
+  
+  
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {

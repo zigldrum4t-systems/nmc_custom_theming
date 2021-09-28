@@ -396,3 +396,11 @@ div.crumb {
 #app-content-sharingin .icon-shared, #app-content-sharingout .icon-shared{
     background-image: var(--icon-user-000-org);
 }
+
+.oc-conflict-pre-dlg-close-div a {
+  background: url('../../core/img/close.svg') no-repeat !important;
+}
+
+.oc-conflict-pre-dlg-close-div a:hover, .oc-conflict-pre-dlg-close-div a:active, .oc-conflict-pre-dlg-close-div a:focus {
+  background: url('../../core/img/close-magenta.svg') no-repeat !important;
+}
