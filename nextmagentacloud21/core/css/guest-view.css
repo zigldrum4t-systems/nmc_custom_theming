@@ -4,7 +4,6 @@
         margin-top: 8vh !important;
         margin-bottom: 31vh !important;
     }
-
     /*toggle-btn-*/
 
     #body-public .header-right #header-secondary-action #header-actions-toggle {
@@ -165,7 +164,7 @@
         font-weight: bold;
     }
 
-    #files-public-content #editor-container~.content-dialog {
+    .content-dialog.fixed-dialog {
         position: fixed;
         bottom: 0;
         z-index: 99;
@@ -179,3 +178,6 @@
         min-height: calc(100% - 120px);
     }
 
+    #files-public-content {
+        height: auto !important;
+    }
