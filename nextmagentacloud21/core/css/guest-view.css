@@ -179,5 +179,5 @@
     }
 
     #files-public-content {
-        height: auto;
+        height: auto !important;
     }
