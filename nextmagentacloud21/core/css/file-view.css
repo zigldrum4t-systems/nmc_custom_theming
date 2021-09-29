@@ -563,7 +563,6 @@ table.multiselect #modified {
     margin-bottom: 1.5rem !important;
 }
 
-#app-content-trashbin #emptycontent .icon-delete:hover{
+#app-content-trashbin #emptycontent .icon-delete:hover {
     filter: none !important;
 }
-

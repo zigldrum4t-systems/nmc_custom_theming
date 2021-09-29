@@ -541,7 +541,7 @@ aside {
 }
 
 @media screen and (min-width: 1600px) {
-    .container-fixed {
+    .container-fixed,.modal-header {
         width: 1536px !important;
     }
     #app-navigation {
@@ -565,7 +565,7 @@ aside {
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
-    .container-fixed {
+    .container-fixed,.modal-header {
         width: 1280px !important;
     }
     #app-navigation,
@@ -593,7 +593,7 @@ aside {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
-    .container-fixed {
+    .container-fixed,.modal-header{
         width: 1024px !important;
     }
     #app-navigation,
@@ -615,7 +615,7 @@ aside {
 }
 
 @media screen and (max-width: 1299px) {
-    .container-fixed {
+    .container-fixed,.modal-header {
         width: 100%;
     }
     #filestable.view-grid tbody {
@@ -849,7 +849,7 @@ a.menuitem.action:hover>span,
     z-index: 99;
 }
 
-.container-fixed {
+.container-fixed,.modal-header {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -1492,6 +1492,12 @@ div.crumb.crumbmenu a {
     margin-top: 4px;
 }
 
+#viewer[view="application/pdf"] a.prev,#viewer[view="application/pdf"] a.next,
+#viewer[view="text/markdown"] a.prev,#viewer[view="text/markdown"] a.next
+{
+  visibility: hidden !important;
+}
+
 #viewer a.prev,
 #viewer a.next {
     position: fixed !important;
@@ -1520,11 +1526,12 @@ div.crumb.crumbmenu a {
 .modal-header {
     position: relative !important;
     height: 63px !important;
-    margin: 0 auto;
     background: #191919;
-    border-bottom: 1px solid #e5e5e5;
     justify-content: space-between !important;
     visibility: visible !important;
+}
+.modal-wrapper{
+  border-top: 1px solid #e5e5e5;
 }
 
 .modal-header .modal-title {
@@ -1596,6 +1603,7 @@ div.crumb.crumbmenu a {
     align-self: start;
     height: auto !important;
     margin-top: 1rem;
+    width: inherit !important;
 }
 
 #viewer .modal-container {
@@ -1607,6 +1615,12 @@ div.crumb.crumbmenu a {
     top: 64px !important
 }
 
+#viewer .plyr audio,
+#viewer .plyr iframe,
+#viewer .plyr video,
+iframe.viewer__file {
+    width: inherit !important;
+}
 
 /* preview css*/
 
