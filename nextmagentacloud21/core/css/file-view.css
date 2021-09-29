@@ -37,7 +37,7 @@ table th#headerDate {
 }
 
 #filestable #selectedActionsList {
-    height: 40px !important
+    height: 40px !important;
 }
 
 #filestable th .columntitle {
@@ -102,7 +102,6 @@ table th#headerDate {
 #filestable tbody {
     display: table;
     width: 100%;
-    display: block;
     overflow: auto;
 }
 
@@ -233,7 +232,7 @@ table th#headerDate {
 }
 
 #filestable:not(.view-grid) td.filesize {
-    padding: 0 1rem !important;
+    padding: 1.25rem 1rem !important;
 }
 
 #filestable:not(.view-grid) td.date {
@@ -247,9 +246,11 @@ table th#headerDate {
 #fileList td a a.action.action-share {
     padding: 1.063rem 1rem !important;
 }
+
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
     margin-right: 0.5rem !important;
 }
+
 
 /***************************************** List view sorting ******************************************************************/
 
@@ -262,20 +263,14 @@ table th .sort-indicator {
     opacity: 0.3;
 }
 
-.span-visibility {
-    display: none;
-}
-
-#filestable .icon-triangle-n {
-    background-image: var(--icon-triangle-n-e20074);
+.span-visibility,
+.item-toggleSelectionMode,
+a.menuitem.action.toggleSelectionMode.permanent {
+    display: none !important;
 }
 
 #filestable .icon-public {
     background-image: var(--icon-user-e20074);
-}
-
-#filestable .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
 }
 
 .zero-font {
@@ -285,8 +280,7 @@ table th .sort-indicator {
 #headerName .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -65px;
-    margin-right: 65px;
+    margin-left: -4.25rem;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
@@ -295,7 +289,8 @@ table th .sort-indicator {
 #headerSize .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-right: 0px;
+    margin-left: -3.5rem;
+    margin-right: 2.5rem;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 0.3;
@@ -345,7 +340,9 @@ table th .sort-indicator {
 .icon-delete:hover,
 a.menu-option:hover>span,
 a.menuitem.action:hover>span,
-.icon-home:hover {
+.icon-home:hover,
+.filesSelectionMenu ul li,
+#selectedActionLabel a {
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
@@ -445,3 +442,128 @@ a.menuitem.action:hover>span,
 #filestable.view-grid tfoot .summary {
     margin-left: 0px !important;
 }
+
+.popovermenu li>a,
+.popovermenu li>.menuitem {
+    align-items: center !important;
+}
+
+#selectedActionsList .popovermenu {
+    border-radius: 8px !important;
+    box-shadow: var(--scl-shadow-level-2) !important;
+    padding: 0.875rem 0.5rem !important;
+}
+
+.selectedActions a {
+    opacity: unset !important;
+    padding-left: 4rem;
+}
+
+.selectedActions a:hover {
+    text-decoration: underline;
+}
+
+.selectedActions a .label {
+    padding-left: 0.5rem;
+}
+
+table.multiselect #modified {
+    display: none !important;
+}
+
+#filestable .selectedActions .filesSelectionMenu a .icon {
+    background-size: 16px 16px !important;
+}
+
+#selectedActionsList .popovermenu {
+    top: 45px;
+}
+
+#headerSize {
+    padding-left: 4rem;
+}
+
+#emptycontent [class^='icon-'],
+#emptycontent [class*='icon-'],
+.emptycontent [class^='icon-'],
+.emptycontent [class*='icon-'] {
+    background-size: 192px;
+    height: 192px;
+    width: 192px;
+    margin: 0 auto !important;
+}
+
+#emptycontent .icon-filetype-folder .guest-emptycontent h2:nth-child(1) {
+    margin: 1rem 0 !important;
+}
+
+#emptycontent h2 {
+    font-size: 1.25rem !important;
+}
+
+#emptycontent h2:nth-child(3) {
+    margin-bottom: 0.5rem !important;
+    font-weight: normal !important;
+}
+
+#emptycontent h2:nth-child(2) {
+    margin-bottom: 1rem !important;
+}
+
+#emptycontent p {
+    font-size: 1.25rem !important;
+    font-weight: normal !important;
+}
+
+#emptycontent .icon-folder,
+.icon-filetype-folder {
+    background-image: var( --icon-folder-empty) !important;
+}
+
+#emptycontent h2,
+.emptycontent h2 {
+    margin-bottom: 0 !important;
+}
+
+#emptycontent .hidden {
+    font-size: 1.25rem !important;
+}
+
+#app-content-trashbin #emptycontent [class^='icon-']:not([class^='icon-loading']),
+#app-content-trashbin #emptycontent [class^='icon-']:not([class*='icon-loading']),
+#app-content-trashbin #emptycontent [class*='icon-']:not([class^='icon-loading']),
+#app-content-trashbin #emptycontent [class*='icon-']:not([class*='icon-loading']),
+#app-content-sharingin #emptycontent [class^='icon-']:not([class^='icon-loading']),
+#app-content-sharingin #emptycontent [class^='icon-']:not([class*='icon-loading']),
+#app-content-sharingin #emptycontent [class*='icon-']:not([class^='icon-loading']),
+#app-content-sharingin #emptycontent [class*='icon-']:not([class*='icon-loading']),
+#app-content-sharingout #emptycontent [class^='icon-']:not([class^='icon-loading']),
+#app-content-sharingout #emptycontent [class^='icon-']:not([class*='icon-loading']),
+#app-content-sharingout #emptycontent [class*='icon-']:not([class^='icon-loading']),
+#app-content-sharingout #emptycontent [class*='icon-']:not([class*='icon-loading']) {
+    opacity: unset !important;
+}
+
+#app-content-trashbin #emptycontent [class^='icon-'],
+#app-content-trashbin #emptycontent [class*='icon-'],
+#app-content-sharingin #emptycontent [class^='icon-'],
+#app-content-sharingin #emptycontent [class*='icon-'],
+#app-content-sharingout #emptycontent [class^='icon-'],
+#app-content-sharingout #emptycontent [class*='icon-'] {
+    background-size: 120px;
+    height: 7.5rem;
+    width: 7.5rem;
+    margin: 0 auto !important;
+}
+
+#app-content-trashbin #emptycontent h2,
+#app-content-sharingin #emptycontent h2,
+#app-content-sharingout #emptycontent h2 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem !important;
+}
+
+#app-content-trashbin #emptycontent .icon-delete:hover{
+    filter: none !important;
+}
+

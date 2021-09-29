@@ -1,8 +1,8 @@
 /** icons**/
 
-.icon-home {
+.icon-home,
+#oc-dialog-filepicker-content .dirtree div:first-child a {
     background-image: var(--icon-home-custom);
-    width: 24px !important;
 }
 
 .icon-menu,
@@ -186,7 +186,8 @@ div.crumb {
     background-repeat: no-repeat;
 }
 
-.icon-more {
+.icon-more,
+.action-item__menutoggle--default-icon {
     background-image: var(--icon-more-custom) !important;
 }
 
@@ -229,101 +230,177 @@ div.crumb {
     background-image: var(--icon-delete-magenta) !important;
 }
 
-#navigation[style=''] ~ #more-apps .icon-more-white{
-  background-image: var(--icon-close-custom) !important;
-  background-size: cover;
-  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+#navigation[style='']~#more-apps .icon-more-white {
+    background-image: var(--icon-close-custom) !important;
+    background-size: cover;
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
-.closePopup .icon-download {
-  background-image: var( --icon-close-mark) !important;
+.closePopup .icon-download,
+.icon-close {
+    background-image: var( --icon-close-mark) !important;
 }
 
 .icon-folder,
 .icon-filetype-folder {
-    background-image: url(/themes/magenta-simple/core/img/filetypes/folder.svg) !important;
+    background-image: url(../../core/img/filetypes/folder.svg) !important;
     background-size: cover !important;
 }
 
 .icon-settings {
-  background-image: var( --icon-setting-custom) !important;
-  background-size: cover !important;
+    background-image: var( --icon-setting-custom) !important;
+    background-size: cover !important;
 }
 
 .nmc-guest .icon-search {
-  background-image: var(--icon-search-white) !important;
+    background-image: var(--icon-search-white) !important;
 }
 
-
 .menubar button.is-active.icon-italic {
-  background-image: var(--icon-italic-magenta) !important;
+    background-image: var(--icon-italic-magenta) !important;
 }
 
 .menubar button.is-active.icon-strike {
-  background-image: var(--icon-strike-magenta) !important;
+    background-image: var(--icon-strike-magenta) !important;
 }
 
 .menubar button.is-active.icon-bold {
-  background-image: var(--icon-bold-magenta) !important;
+    background-image: var(--icon-bold-magenta) !important;
 }
 
 .menubar button.is-active.icon-ol {
-  background-image: var(--icon-ol-magenta) !important;
+    background-image: var(--icon-ol-magenta) !important;
 }
 
 .menubar button.is-active.icon-ul {
-  background-image: var(--icon-ul-magenta) !important;
+    background-image: var(--icon-ul-magenta) !important;
 }
 
 .menubar button.is-active.icon-h1 {
-  background-image: var(--icon-h1-magenta) !important;
+    background-image: var(--icon-h1-magenta) !important;
 }
 
 .menubar button.is-active.icon-h2 {
-  background-image: var(--icon-h2-magenta) !important;
+    background-image: var(--icon-h2-magenta) !important;
 }
 
 .menubar button.is-active.icon-h3 {
-  background-image: var(--icon-h3-magenta) !important;
+    background-image: var(--icon-h3-magenta) !important;
 }
 
 .menubar button.is-active.icon-h4 {
-  background-image: var(--icon-h4-magenta) !important;
+    background-image: var(--icon-h4-magenta) !important;
 }
 
 .menubar button.is-active.icon-h5 {
-  background-image: var(--icon-h5-magenta) !important;
+    background-image: var(--icon-h5-magenta) !important;
 }
 
 .menubar button.is-active.icon-h6 {
-  background-image: var(--icon-h6-magenta) !important;
+    background-image: var(--icon-h6-magenta) !important;
 }
 
 .informNow a:hover .icon-download {
-  background-image: var(--icon-cloud-btn-magenta) !important;
+    background-image: var(--icon-cloud-btn-magenta) !important;
 }
 
 .newFileMenu li:nth-child(1) .menuitem:hover .svg {
-  background-image: var(--icon-upload-magenta) !important;
+    background-image: var(--icon-upload-magenta) !important;
 }
 
 .newFileMenu li:nth-child(2) .menuitem:hover .svg {
-  background-image: var(--icon-new-folder-magenta) !important;
+    background-image: var(--icon-new-folder-magenta) !important;
 }
 
 .newFileMenu li:nth-child(3) .menuitem:hover .svg {
-  background-image: var(--icon-text-magenta) !important;
+    background-image: var(--icon-text-magenta) !important;
 }
 
 .newFileMenu li:nth-child(1) .menuitem:hover .svg {
-  background-image: var(--icon-upload-magenta) !important;
+    background-image: var(--icon-upload-magenta) !important;
 }
 
 .newFileMenu li:nth-child(2) .menuitem:hover .svg {
-  background-image: var(--icon-new-folder-magenta) !important;
+    background-image: var(--icon-new-folder-magenta) !important;
 }
 
 .newFileMenu li:nth-child(3) .menuitem:hover .svg {
-  background-image: var(--icon-text-magenta) !important;
+    background-image: var(--icon-text-magenta) !important;
 }
-/** icons**/
+
+.icon-previous {
+    background-image: url(../../core/img/icons/prev-icon-white.svg) !important;
+}
+
+.icon-next {
+    background-image: url(../../core/img/icons/next-icon-white.svg) !important;
+}
+
+.icon-play {
+    background-image: url(../../core/img/icons/play-icon-white.svg) !important;
+}
+
+.icon-external {
+    background-image: var( --icon-external-custom) !important;
+}
+
+
+/*filelist-toggle-icons*/
+
+.filelist-container .icon-triangle-s,
+#filestable .icon-triangle-s {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+.filelist-container .icon-triangle-n,
+#filestable .icon-triangle-n {
+    background-image: var(--icon-triangle-s-e20074);
+}
+
+
+/*close-dialog-icons*/
+
+.oc-dialog .oc-dialog-close,
+#uploadprogresswrapper .icon-close {
+    background: var(--icon-dialog-close) !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/** RIGHT click icons**/
+
+.icon-starred {
+    background-image: var(--icon-favourite-custom) !important;
+}
+
+.icon-star-dark {
+    background-image: var( --icon-yellow-fav) !important;
+}
+
+.icon-details {
+    background-image: var(--icon-user-000-org) !important;
+}
+
+.icon-rename {
+    background-image: var(--icon-edit-custom) !important;
+}
+
+.icon-download {
+    background-image: var(--icon-download-custom) !important;
+}
+
+.icon-delete {
+    background-image: var(--icon-delete-custom) !important;
+}
+
+#app-content-sharingin .icon-shared, #app-content-sharingout .icon-shared{
+    background-image: var(--icon-user-000-org);
+}
+
+.oc-conflict-pre-dlg-close-div a {
+  background: url('../../core/img/close.svg') no-repeat !important;
+}
+
+.oc-conflict-pre-dlg-close-div a:hover, .oc-conflict-pre-dlg-close-div a:active, .oc-conflict-pre-dlg-close-div a:focus {
+  background: url('../../core/img/close-magenta.svg') no-repeat !important;
+}
