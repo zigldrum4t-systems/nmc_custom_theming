@@ -356,6 +356,10 @@ div.crumb {
     background-image: url(../../core/img/icons/play-icon-white.svg) !important;
 }
 
+.icon-external {
+    background-image: var( --icon-external-custom) !important;
+}
+
 
 /*filelist-toggle-icons*/
 
@@ -375,7 +379,44 @@ div.crumb {
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close {
     background: var(--icon-dialog-close) !important;
+    background-repeat: no-repeat !important;
 }
 
 
-/** icons**/
+/** RIGHT click icons**/
+
+.icon-starred {
+    background-image: var(--icon-favourite-custom) !important;
+}
+
+.icon-star-dark {
+    background-image: var( --icon-yellow-fav) !important;
+}
+
+.icon-details {
+    background-image: var(--icon-user-000-org) !important;
+}
+
+.icon-rename {
+    background-image: var(--icon-edit-custom) !important;
+}
+
+.icon-download {
+    background-image: var(--icon-download-custom) !important;
+}
+
+.icon-delete {
+    background-image: var(--icon-delete-custom) !important;
+}
+
+#app-content-sharingin .icon-shared, #app-content-sharingout .icon-shared{
+    background-image: var(--icon-user-000-org);
+}
+
+.oc-conflict-pre-dlg-close-div a {
+  background: url('../../core/img/close.svg') no-repeat !important;
+}
+
+.oc-conflict-pre-dlg-close-div a:hover, .oc-conflict-pre-dlg-close-div a:active, .oc-conflict-pre-dlg-close-div a:focus {
+  background: url('../../core/img/close-magenta.svg') no-repeat !important;
+}

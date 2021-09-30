@@ -91,11 +91,9 @@ section {
     color: var(--scl-color-grey-90);
 }
 
-body {
-    overflow-y: hidden;
-}
-
-#body-user>* {
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box !important;
     -webkit-box-sizing: border-box !important;
 }
@@ -122,9 +120,8 @@ body {
 #app-navigation {
     z-index: 10 !important;
     left: unset !important;
-    position: absolute !important;
-    top: 47px !important;
-    height: calc(100vh - 230px) !important;
+    top: 185px !important;
+    height: calc(100% - 190px) !important;
 }
 
 #app-navigation>ul>li.active,
@@ -152,12 +149,6 @@ body {
 #app-navigation>ul>li>ul {
     line-height: 48px;
     padding: 0.188rem 0rem 0rem 3rem !important;
-}
-
-#app-navigation>ul {
-    overflow-y: unset;
-    overflow-x: unset;
-    margin-top: 4em;
 }
 
 #sublist-favorites {
@@ -407,16 +398,12 @@ body {
 }
 
 
-/* ---------------------------------------------------------------------------- */
-
-
 /* ----------------------------------HEADER------------------------------------ */
 
-
-/* ---------------------------------------------------------------------------- */
-
 .MenuWrapperParent {
-    position: relative;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
 }
 
 .header-brandbar-claim span {
@@ -477,9 +464,6 @@ aside {
     #content>.container-fixed {
         width: 1236px;
     }
-    /* .header-right .navbar-icons .smallscreenSize {
-        display: none !important;
-    } */
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
@@ -531,19 +515,11 @@ aside {
     height: 5px;
 }
 
-
-/* UI chnages */
-
 .MenuWrapperParent {
     top: 0;
     width: 100%;
     border-bottom: 1px solid #e5e5e5;
 }
-
-
-/* #header .container-fixed .header-right .navbar-icons a {
-    display: inline;
-} */
 
 @media screen and (max-width: 640px) {
     .button.new .hidden-visually {
@@ -568,7 +544,7 @@ aside {
 }
 
 @media screen and (min-width: 1600px) {
-    .container-fixed {
+    .container-fixed,.modal-header {
         width: 1536px !important;
     }
     #app-navigation {
@@ -592,7 +568,7 @@ aside {
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
-    .container-fixed {
+    .container-fixed,.modal-header {
         width: 1280px !important;
     }
     #app-navigation,
@@ -620,7 +596,7 @@ aside {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
-    .container-fixed {
+    .container-fixed,.modal-header{
         width: 1024px !important;
     }
     #app-navigation,
@@ -633,9 +609,6 @@ aside {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    /* #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 12px;
-    } */
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 0 !important;
     }
@@ -644,35 +617,10 @@ aside {
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 639px) {
-    /* .header-right .navbar-icons a {
-        font-size: 6px !important;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 2px !important;
-    }
-    #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 10px;
-     }
-
-    #header .container-fixed .header-right .navbar-icons a label {
-        font-size: 9px;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 0px !important;
-    } */
-}
-
 @media screen and (max-width: 1299px) {
-    .container-fixed {
+    .container-fixed,.modal-header {
         width: 100%;
     }
-    /* #header .container-fixed .header-right .navbar-icons a label {
-        display: block;
-    }
-    #header .container-fixed .header-right .navbar-icons a {
-        padding: 14px 5px;
-    }*/
     #filestable.view-grid tbody {
         row-gap: 16px !important;
     }
@@ -681,12 +629,6 @@ aside {
 @media screen and (max-width: 1599px) {
     #filestable tbody {
         row-gap: unset !important;
-    }
-}
-
-@media screen and (max-height: 750px) {
-    #app-navigation>ul {
-        margin-top: 0 !important;
     }
 }
 
@@ -804,34 +746,6 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 /*----right-click-menu------*/
 
-.icon-starred {
-    background-image: var(--icon-favourite-custom) !important;
-}
-
-.icon-star-dark {
-    background-image: var( --icon-yellow-fav) !important;
-}
-
-.icon-details {
-    background-image: var(--icon-user-000-org) !important;
-}
-
-.icon-rename {
-    background-image: var(--icon-edit-custom) !important;
-}
-
-.icon-external {
-    background-image: var(--icon-copy-paste-custom) !important;
-}
-
-.icon-download {
-    background-image: var(--icon-download-custom) !important;
-}
-
-.icon-delete {
-    background-image: var(--icon-delete-custom) !important;
-}
-
 #rightClickMenu,
 .fileActionsMenu {
     margin: 0;
@@ -849,11 +763,6 @@ input[type="checkbox"].checkbox+label:before:hover {
     margin-left: .5rem;
 }
 
-
-/* #rightClickMenu span:hover {
-    color: #e20074 !important;
-} */
-
 #rightClickMenu.bubble li>a,
 .fileActionsMenu.bubble li>a {
     align-items: center !important;
@@ -864,49 +773,21 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: unset !important;
 }
 
-
-/* Hover icons */
-
-
-/* #rightClickMenu .icon-delete:hover,
-.icon-delete:focus {
-    background-image: var(--icon-delete-magenta) !important;
-    filter: initial;
-}
-
-.icon-download:hover {
-    background-image: var(--icon-download-magenta) !important;
-}
-
-#rightClickMenu .icon-starred:hover {
-    background-image: var(--icon-fav-magenta) !important;
-}
-
-.icon-details:hover {
-    background-image: var(--icon-user-e20074) !important;
-}
-
-#rightClickMenu .icon-rename:hover {
-    background-image: var(--icon-edit-magenta) !important;
-}
-
-#rightClickMenu .icon-external:hover {
-    background-image: var(--icon-copy-paste-magenta) !important;
-}*/
-
 #view-toggle {
-    background-color: transparent;
     border: none;
-    position: absolute;
-    top: 0.6rem;
-    right: 0;
-    z-index: 999;
+    position: sticky !important;
+    display: block;
+    background-color: transparent;
+    top: 9.1rem;
+    left: 100%;
+    z-index: 9999;
     opacity: 1;
     padding: 0;
     height: 24px;
     width: 24px;
     margin-right: 1rem;
     border-radius: 0;
+    margin-top: -38px;
 }
 
 #view-toggle:hover,
@@ -927,13 +808,19 @@ a.menuitem.action:hover>span,
 
 #controls,
 .controls-section {
-    top: 0;
+    top: 72px;
     width: 100%;
-    height: 47px;
+    height: 48px;
     padding: 0;
-    /* margin-left: .2rem; */
+    margin-top: -34px;
     margin-bottom: 2em;
     background-color: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.controls-section {
+    position: sticky;
+    z-index: 999;
 }
 
 
@@ -951,7 +838,7 @@ a.menuitem.action:hover>span,
     left: 0;
     background: #f2f2f2;
     border-bottom: 1px solid #e5e5e5;
-    z-index: -1;
+    z-index: 99;
 }
 
 .breadcrumb-translation {
@@ -961,9 +848,11 @@ a.menuitem.action:hover>span,
 
 #content {
     padding-top: 0;
+    top: 184px;
+    z-index: 99;
 }
 
-.container-fixed {
+.container-fixed,.modal-header {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -1018,18 +907,8 @@ div.crumb:last-child {
 .snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
     left: 0;
     top: 0;
+    margin-top: -47px;
     transition: none;
-}
-
-.snapjs-left #app-content:not([style=''])>.viewcontainer .full-width-breadcrumb {
-    left: -92%;
-    top: -1px;
-    transition: none;
-}
-
-.snapjs-left #app-content:not([style=''])>.viewcontainer #controls {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
 }
 
 #app-navigation-toggle.app-navigation-translation {
@@ -1037,7 +916,7 @@ div.crumb:last-child {
 }
 
 .translation {
-    transition: all 700ms;
+    transition: all .4s;
 }
 
 .header-brandbar {
@@ -1055,6 +934,19 @@ div.crumb:last-child {
     opacity: 1 !important;
 }
 
+.content-translation {
+    top: 120px !important;
+}
+
+.view-toggle-translation {
+    top: 5.1rem !important;
+    margin-top: -38px !important;
+}
+
+#app-navigation.app-navigation-translation {
+    top: 120px !important;
+}
+
 .tooltip .tooltip-inner {
     background: #ffffff;
     color: #191919 !important;
@@ -1069,94 +961,6 @@ div.crumb:last-child {
     padding-right: 30px !important;
 }
 
-
-/** Grid Icons ***********************************/
-
-
-/*
-#filestable [data-mime="text/plain"] .thumbnail,
-#filestable [data-mime="text/markdown"] .thumbnail,
-#filestable [data-mime="application/octet-stream"] .thumbnail,
-#filestable [data-mime="application/msword"] .thumbnail,
-#filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail {
-    background-image: var(--grid-text-files-icon) !important;
-}
-
-#filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
-#filestable [data-mime="text/csv"] .thumbnail {
-    background-image: var(--grid-file-calculation-icon) !important;
-}
-
-#filestable [data-mime="application/zip"] .thumbnail,
-#filestable [data-mime="application/x-rar-compressed"] .thumbnail {
-    background-image: var(--grid-zip-icon) !important;
-}
-
-#filestable [data-mime="application/xml"] .thumbnail,
-#filestable [data-mime="application/x-php"] .thumbnail,
-#filestable [data-mime="application/json"] .thumbnail,
-#filestable [data-mime="application/javascript"] .thumbnail,
-#filestable [data-mime="text/css"] .thumbnail {
-    background-image: var(--grid-file-code-icon) !important;
-}
-
-#filestable [data-mime="audio/mpeg"] .thumbnail,
-#filestable [data-mime="audio/ogg"] .thumbnail,
-#filestable [data-mime="audio/mp4"] .thumbnail,
-#filestable [data-mime="audio/wav"] .thumbnail {
-    background-image: var(--grid-file-audio-icon) !important;
-}
-
-#filestable [data-mime="application/vnd.ms-powerpoint"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"] .thumbnail {
-    background-image: var(--grid-present-icon) !important;
-}
-
-#filestable [data-mime="application/pdf"] .thumbnail {
-    background-image: var(--grid-pdf-icon) !important;
-}
-
-#filestable [data-mime="text/html"] .thumbnail {
-    background-image: var(--grid-file-web-icon) !important;
-}
-
-#filestable [data-mime="video/x-ms-wmv"] .thumbnail,
-#filestable [data-mime="video/mpeg"] .thumbnail,
-#filestable [data-mime="video/x-msvideo"] .thumbnail,
-#filestable [data-mime="video/x-matroska"] .thumbnail,
-#filestable [data-mime="video/quicktime"] .thumbnail,
-#filestable [data-mime="video/mp4"] .thumbnail {
-    background-image: var(--grid-file-video-icon) !important;
-}
-
-
-/* #filestable [data-mime="image/webp"] .thumbnail,
-#filestable [data-mime="image/bmp"] .thumbnail,
-#filestable [data-mime="image/png"] .thumbnail,
-#filestable [data-mime="image/heic"] .thumbnail,
-#filestable [data-mime="image/jpeg"] .thumbnail,
-#filestable [data-mime="image/gif"] .thumbnail,
-#filestable [data-mime="image/svg+xml"] .thumbnail,
-#filestable [data-mime="application/postscript"] .thumbnail,
-#filestable [data-mime="image/x-dcraw"] .thumbnail {
-    background-image: var(--grid-file-img-icon) !important;
-} */
-
-
-/* #filestable [data-mime="httpd/unix-directory"] .thumbnail {
-    background-image: var(--grid-folder-icon) !important;
-}
-
-#filestable [data-e2eencrypted="true"] .thumbnail {
-    background-image: var(--grid-folder-enc-icon) !important;
-}
-
-#filestable [data-icon] .thumbnail {
-    background-image: var(--grid-folder-shared-icon) !important;
-} */
-
 .brand-bar-translation {
     height: 9px;
 }
@@ -1169,45 +973,15 @@ div.crumb:last-child {
     padding-top: 16px;
 }
 
-#app-content-files thead {
-    top: 0
+#filestable thead {
+    top: 118px;
 }
-
-
-/* .viewcontainer {
-    overflow-y: scroll;
-    height: 100vh;
-    min-height: auto !important;
-} */
-
-
-/*Guest layout*/
-
-.gust-download-svg {
-    margin-right: 5px;
-}
-
-.gust-download-label {
-    font-size: 20px;
-    font-style: 'TeleNeo';
-    font-weight: bold;
-    vertical-align: super !important;
-}
-
-
-/* #files-public-content #emptycontent h2,
-#emptycontent.hidden~.guest-emptycontent {
-    display: none;
-} */
-
-
-/*Guest layout*/
 
 
 /* Add Button*/
 
 .newFileMenu {
-    padding: 16px 16px 24px 16px;
+    padding: 1rem;
     box-shadow: var(--scl-shadow-level-2);
     width: 235px !important;
     border-radius: 8px;
@@ -1233,8 +1007,7 @@ div.crumb:last-child {
 }
 
 .newFileMenu .menuitem .displayname {
-    padding-left: 8px;
-    padding-top: 12px;
+    padding-left: 0.5rem;
 }
 
 .actions.creatable .popovermenu.menu-left a {
@@ -1266,150 +1039,6 @@ button:not(:disabled):not(.primary).active,
 .pager li a:not(:disabled):not(.primary):focus,
 .pager li a:not(:disabled):not(.primary).active {
     border-color: var(--scl-color-magenta) !important;
-}
-
-
-/*Guest layout header*/
-
-#body-user #header,
-#body-settings #header,
-#body-public #header {
-    position: relative;
-    top: -5px !important;
-    background-color: #ffffff !important;
-    background-image: unset !important;
-    height: 63px !important;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-#body-public #header .header-right {
-    padding-left: 5px;
-    font-size: 20px !important;
-    font-weight: bold;
-}
-
-#files-public-content #imgframe {
-    padding: 1.5em 0px 1em 0px !important;
-}
-
-
-/* guest-layout-dialog*/
-
-.content-button .informNow .icon-download {
-    background-image: var( --icon-magenta-cloud) !important;
-    opacity: unset !important;
-}
-
-.content-button .directDownload button>span[class^='icon-'],
-.content-button .directDownload button>span[class*=' icon-'],
-.content-button .directDownload .button>span[class^='icon-'],
-.content-button .directDownload .button>span[class*=' icon-'] {
-    opacity: unset !important;
-}
-
-.content-button .informNow [class^='icon-'],
-.content-button .informNow [class*=' icon-'] {
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 24px;
-    min-height: 24px;
-    background-size: 22px;
-}
-
-.content-button .informNow button,
-.content-button .informNow .button,
-.content-button .informNow input[type='button'],
-.content-button .informNow input[type='submit'],
-.content-button .informNow input[type='reset'] {
-    border-radius: 4px !important;
-    background-color: unset !important;
-    font-weight: normal !important;
-    border: 1px solid #191919;
-}
-
-.directDownload button,
-.directDownload .button,
-.directDownload input[type='button'],
-.directDownload input[type='submit'],
-.directDownload input[type='reset'] {
-    border-radius: 4px !important;
-    background-color: #e20074 !important;
-    font-weight: normal !important;
-    border: 1px solid #e20074;
-    font-size: 16px;
-}
-
-.directDownload button:hover,
-.directDownload .button:hover,
-.directDownload input[type='button']:hover,
-.directDownload input[type='submit']:hover,
-.directDownload input[type='reset']:hover {
-    border-radius: 4px !important;
-    background-color: #f90984 !important;
-    font-weight: normal !important;
-    border: 1px solid #e20074;
-    font-size: 1rem;
-}
-
-.content-dialog {
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.content-dialog .content-para {
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.content-dialog .informNow {
-    margin-top: 1.5em;
-}
-
-.content-dialog .informNow #downloadFile {
-    padding: 0.625rem 1.5rem 0.813rem 1.5rem;
-    border-radius: 8px !important;
-}
-
-.content-dialog .informNow span {
-    vertical-align: middle;
-    margin: 0em 0.125em;
-}
-
-.content-dialog .informNow span:hover {
-    color: #e20074 !important;
-}
-
-.directDownload .icon-download {
-    background-image: var(--icon-white-download) !important;
-    opacity: unset !important;
-}
-
-.informNow a:hover span {
-    color: #e20074 !important;
-}
-
-button:not(:disabled):not(.primary):hover,
-button:not(:disabled):not(.primary):focus,
-button:not(:disabled):not(.primary).active,
-.button:not(:disabled):not(.primary):hover,
-.button:not(:disabled):not(.primary):focus,
-.button:not(:disabled):not(.primary).active {
-    border-color: #e20074 !important;
-}
-
-div[contenteditable=true]:not(:disabled):not(.primary):hover,
-div[contenteditable=true]:not(:disabled):not(.primary):focus,
-div[contenteditable=true]:not(:disabled):not(.primary).active,
-.pager li a:not(:disabled):not(.primary):hover,
-.pager li a:not(:disabled):not(.primary):focus,
-.pager li a:not(:disabled):not(.primary).active {
-    border-color: unset !important;
-    outline: none;
-}
-
-.content-dialog .content-para span {
-    font-weight: bold;
 }
 
 .menubar button.icon-undo,
@@ -1866,6 +1495,12 @@ div.crumb.crumbmenu a {
     margin-top: 4px;
 }
 
+#viewer[view="application/pdf"] a.prev,#viewer[view="application/pdf"] a.next,
+#viewer[view="text/markdown"] a.prev,#viewer[view="text/markdown"] a.next
+{
+  visibility: hidden !important;
+}
+
 #viewer a.prev,
 #viewer a.next {
     position: fixed !important;
@@ -1893,13 +1528,13 @@ div.crumb.crumbmenu a {
 
 .modal-header {
     position: relative !important;
-    /* width: 1536px !important; */
     height: 63px !important;
-    margin: 0 auto;
     background: #191919;
-    border-bottom: 1px solid #e5e5e5;
     justify-content: space-between !important;
     visibility: visible !important;
+}
+.modal-wrapper{
+  border-top: 1px solid #e5e5e5;
 }
 
 .modal-header .modal-title {
@@ -1971,6 +1606,7 @@ div.crumb.crumbmenu a {
     align-self: start;
     height: auto !important;
     margin-top: 1rem;
+    width: inherit !important;
 }
 
 #viewer .modal-container {
@@ -1982,6 +1618,12 @@ div.crumb.crumbmenu a {
     top: 64px !important
 }
 
+#viewer .plyr audio,
+#viewer .plyr iframe,
+#viewer .plyr video,
+iframe.viewer__file {
+    width: inherit !important;
+}
 
 /* preview css*/
 
@@ -2003,7 +1645,6 @@ div.crumb.crumbmenu a {
 }
 
 .oc-dialog .oc-dialog-close {
-    background: no-repeat center !important;
     margin: 1.5rem !important;
     padding: 0.938rem !important;
     opacity: unset !important;
@@ -2167,6 +1808,73 @@ div.crumb.crumbmenu a {
 }
 
 
+/*** Custom conflict dialog ******************************************************/
+
+.oc-conflict-pre-dlg {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 16px !important;
+}
+
+.oc-conflict-pre-dlg-button {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400 !important;
+  height: 2.5rem;
+  background-color: #FFFFFF;
+  color:#000000;
+  border-radius: 8px !important;
+  text-overflow: ellipsis !important;
+  font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+  border: 1px solid #191919 !important;;
+}
+
+.oc-conflict-pre-dlg-replace-button {
+  background-color: #E20074 !important;
+  color:#FFFFFF !important;
+  border: 1px solid #E20074 !important;
+}
+
+.oc-conflict-pre-dlg .fileexists {
+  margin-bottom: 1.5rem !important;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.oc-conflict-pre-dlg-title-div {
+  flex: 1;
+}
+
+.oc-conflict-pre-dlg-close-div {
+  flex: 1;
+  text-align: right;
+}
+
+.oc-conflct-pre-dlg-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.fourbuttons button:hover, .fourbuttons button:focus, .fourbuttons button:active {
+    color:#E20074;
+}
+
+.fourbuttons button:last-child:hover, .fourbuttons button:last-child:focus, .fourbuttons button:last-child:active {
+    color:#FFFFFF;
+}
+
+.oc-conflict-pre-dlg-close-div a{
+    padding-right: 1.12rem;
+    padding-bottom: 0.37rem;
+    background-size: 1.5rem 1.5rem !important;
+  }
+
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
@@ -2208,6 +1916,7 @@ div.crumb.crumbmenu a {
         margin-left: 0.5rem !important;
     }
     .brand-footer {
+        position: relative;
         padding: 1rem 0 1.5rem 0;
     }
     .brand-footer .brand-footer-bar {
@@ -2254,6 +1963,9 @@ div.crumb.crumbmenu a {
     #viewer .modal-header .modal-title {
         width: calc(50% - 70px)!important;
     }
+    #filestable .summary {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 689px) {
@@ -2282,7 +1994,7 @@ div.crumb.crumbmenu a {
         margin-right: 0;
     }
     #controls {
-        margin: 0 0 1rem 0 !important;
+        margin-bottom: 1rem !important;
         padding: 0 0 0 2.5rem !important;
     }
     #rich-workspace {
