@@ -23,6 +23,7 @@
 @import url("footer.css");
 @import url("file-view.css");
 @import url("breadcrumb.css");
+@import url("sharing.css");
 
 /* ---------------------------------------------------------------------------- */
 
@@ -422,12 +423,14 @@ section {
 #app-navigation,
 #app-sidebar-vue {
     width: 288px !important;
+    padding: 1rem;
 }
 
 aside {
     top: 120px !important;
     min-width: unset !important;
     width: 288px !important;
+    margin-left: 2rem;
 }
 
 .sticky {
@@ -541,7 +544,8 @@ aside {
 }
 
 @media screen and (min-width: 1600px) {
-    .container-fixed,.modal-header {
+    .container-fixed,
+    .modal-header {
         width: 1536px !important;
     }
     #app-navigation {
@@ -565,7 +569,8 @@ aside {
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
-    .container-fixed,.modal-header {
+    .container-fixed,
+    .modal-header {
         width: 1280px !important;
     }
     #app-navigation,
@@ -593,7 +598,8 @@ aside {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
-    .container-fixed,.modal-header{
+    .container-fixed,
+    .modal-header {
         width: 1024px !important;
     }
     #app-navigation,
@@ -615,7 +621,8 @@ aside {
 }
 
 @media screen and (max-width: 1299px) {
-    .container-fixed,.modal-header {
+    .container-fixed,
+    .modal-header {
         width: 100%;
     }
     #filestable.view-grid tbody {
@@ -849,7 +856,8 @@ a.menuitem.action:hover>span,
     z-index: 99;
 }
 
-.container-fixed,.modal-header {
+.container-fixed,
+.modal-header {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -1492,10 +1500,11 @@ div.crumb.crumbmenu a {
     margin-top: 4px;
 }
 
-#viewer[view="application/pdf"] a.prev,#viewer[view="application/pdf"] a.next,
-#viewer[view="text/markdown"] a.prev,#viewer[view="text/markdown"] a.next
-{
-  visibility: hidden !important;
+#viewer[view="application/pdf"] a.prev,
+#viewer[view="application/pdf"] a.next,
+#viewer[view="text/markdown"] a.prev,
+#viewer[view="text/markdown"] a.next {
+    visibility: hidden !important;
 }
 
 #viewer a.prev,
@@ -1530,8 +1539,9 @@ div.crumb.crumbmenu a {
     justify-content: space-between !important;
     visibility: visible !important;
 }
-.modal-wrapper{
-  border-top: 1px solid #e5e5e5;
+
+.modal-wrapper {
+    border-top: 1px solid #e5e5e5;
 }
 
 .modal-header .modal-title {
@@ -1621,6 +1631,7 @@ div.crumb.crumbmenu a {
 iframe.viewer__file {
     width: inherit !important;
 }
+
 
 /* preview css*/
 
@@ -1808,48 +1819,49 @@ iframe.viewer__file {
 /*** Custom conflict dialog ******************************************************/
 
 .oc-conflict-pre-dlg {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 16px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 16px !important;
 }
 
 .oc-conflict-pre-dlg-button {
-  width: 100%;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  font-weight: 400 !important;
-  height: 2.5rem;
-  background-color: #FFFFFF;
-  color:#000000;
-  border-radius: 8px !important;
-  text-overflow: ellipsis !important;
-  font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
-  border: 1px solid #191919 !important;;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400 !important;
+    height: 2.5rem;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 8px !important;
+    text-overflow: ellipsis !important;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+    border: 1px solid #191919 !important;
+    ;
 }
 
 .oc-conflict-pre-dlg-replace-button {
-  background-color: #E20074 !important;
-  color:#FFFFFF !important;
-  border: 1px solid #E20074 !important;
+    background-color: #E20074 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #E20074 !important;
 }
 
 .oc-conflict-pre-dlg .fileexists {
-  margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 .flex-container {
-  display: flex;
+    display: flex;
 }
 
 .oc-conflict-pre-dlg-title-div {
-  flex: 1;
+    flex: 1;
 }
 
 .oc-conflict-pre-dlg-close-div {
-  flex: 1;
-  text-align: right;
+    flex: 1;
+    text-align: right;
 }
 
 .oc-conflct-pre-dlg-title {
@@ -1857,19 +1869,23 @@ iframe.viewer__file {
     margin-bottom: 0.5rem !important;
 }
 
-.fourbuttons button:hover, .fourbuttons button:focus, .fourbuttons button:active {
-    color:#E20074;
+.fourbuttons button:hover,
+.fourbuttons button:focus,
+.fourbuttons button:active {
+    color: #E20074;
 }
 
-.fourbuttons button:last-child:hover, .fourbuttons button:last-child:focus, .fourbuttons button:last-child:active {
-    color:#FFFFFF;
+.fourbuttons button:last-child:hover,
+.fourbuttons button:last-child:focus,
+.fourbuttons button:last-child:active {
+    color: #FFFFFF;
 }
 
-.oc-conflict-pre-dlg-close-div a{
+.oc-conflict-pre-dlg-close-div a {
     padding-right: 1.12rem;
     padding-bottom: 0.37rem;
     background-size: 1.5rem 1.5rem !important;
-  }
+}
 
 
 /*Responsive Styling*/
