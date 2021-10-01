@@ -395,7 +395,8 @@ aside .icon-close {
     background-image: var(--icon-download-custom) !important;
 }
 
-.icon-delete {
+.icon-delete,
+.popover__inner .icon-close {
     background-image: var(--icon-delete-custom) !important;
 }
 
