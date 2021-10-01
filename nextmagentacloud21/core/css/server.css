@@ -1622,6 +1622,28 @@ iframe.viewer__file {
     width: inherit !important;
 }
 
+#viewer .action-item__menutoggle--default-icon,#viewer .action-item.action-item--single.header-close{
+  background: none;
+}
+
+.modal-mask .play-pause .progress-ring{
+  top: 10px !important;
+  left: -5px !important;
+}
+
+#viewer circle.progress-ring__circle {
+  r: 20;
+}
+
+.modal-header .icons-menu .play-pause .icon-pause{
+  opacity: 1;
+  border-radius: 22px;
+  background-color: rgb(255 255 255 / 25%);
+  height: 40px !important;
+  width: 40px !important;
+  margin: 0 !important;
+  padding: 9px !important;
+}
 /* preview css*/
 
 .icon-loading-small {
@@ -1952,7 +1974,7 @@ iframe.viewer__file {
         height: 24px !important;
     }
     #viewer .modal-wrapper a.prev {
-        left: 30.5% !important;
+        left: 31.5% !important;
     }
     #viewer .modal-wrapper a.next {
         right: 25% !important;
