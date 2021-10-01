@@ -206,15 +206,7 @@ aside .icon-star {
     background-image: unset !important;
 }
 
-.avatardiv--unknown {
-    background-color: unset !important;
-}
-
-.sharing-entry .avatar-link-share {
-    background-color: unset !important;
-}
-
-.avatar-class-icon {
+.avatardiv--unknown,.sharing-entry .avatar-link-share,.avatar-class-icon {
     background-color: unset !important;
 }
 
