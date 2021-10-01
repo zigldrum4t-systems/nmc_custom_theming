@@ -54,15 +54,12 @@ aside .icon-close {
 
 /*hided-items-with-css*/
 
-ul#sharing-inherited-shares {
-    display: none;
-}
-
-ul#collection-list {
-    display: none;
-}
-
-li.sharing-entry__internal {
+ul#sharing-inherited-shares,
+ul#collection-list,
+li.sharing-entry__internal,
+.app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__desc .app-sidebar-header__menu,
+li.share-link-password-talk-checkbox,
+#tab-sharing .action-input__label {
     display: none !important;
 }
 
@@ -70,10 +67,6 @@ li.sharing-entry__internal {
 /* .popover__inner li:nth-child(4) {
     display: none !important;
 } */
-
-.app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__desc .app-sidebar-header__menu {
-    display: none;
-}
 
 .app-sidebar-header__info .icon-starred {
     background-image: var(--icon-star-dark-FC0) !important;
@@ -182,14 +175,6 @@ aside .icon-star {
     border-color: #E20074 !important;
 }
 
-li.share-link-password-talk-checkbox {
-    display: none;
-}
-
-#tab-sharing .action-input__label {
-    display: none !important;
-}
-
 #tab-sharing input,
 #tab-sharing textarea {
     color: #666666 !important;
@@ -275,12 +260,9 @@ li.share-link-password-talk-checkbox {
     background-color: unset !important;
 }
 
-aside .icon-clippy:hover {
-    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
-}
-
 aside .icon-more:hover,
-aside .action-item__menutoggle--default-icon:hover {
+aside .action-item__menutoggle--default-icon:hover,
+aside .icon-clippy:hover {
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
@@ -300,10 +282,7 @@ aside .action-item__menutoggle--default-icon:before {
     content: unset !important;
 }
 
-aside .action-item.action-item--open .action-item__menutoggle {
-    background-color: unset !important;
-}
-
+aside .action-item.action-item--open .action-item__menutoggle,
 .popover__inner li.active {
     background-color: unset !important;
 }
