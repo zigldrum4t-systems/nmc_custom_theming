@@ -357,11 +357,16 @@ div.crumb {
     background-image: var(--icon-triangle-s-e20074);
 }
 
+.sharing-entry__desc select {
+    background-image: var(--icon-triangle-s-000) !important;
+}
+
 
 /*close-dialog-icons*/
 
 .oc-dialog .oc-dialog-close,
-#uploadprogresswrapper .icon-close {
+#uploadprogresswrapper .icon-close,
+aside .icon-close {
     background: var(--icon-dialog-close) !important;
     background-repeat: no-repeat !important;
 }
@@ -381,7 +386,8 @@ div.crumb {
     background-image: var(--icon-user-000-org) !important;
 }
 
-.icon-rename {
+.icon-rename,
+.popover__inner .icon-settings {
     background-image: var(--icon-edit-custom) !important;
 }
 

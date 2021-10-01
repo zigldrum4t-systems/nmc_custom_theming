@@ -11,7 +11,6 @@
 }
 
 aside .icon-close {
-    background-image: var(--icon-dialog-close) !important;
     background-position: left center;
 }
 
@@ -67,15 +66,6 @@ li.share-link-password-talk-checkbox,
 /* .popover__inner li:nth-child(4) {
     display: none !important;
 } */
-
-.app-sidebar-header__info .icon-starred {
-    background-image: var(--icon-star-dark-FC0) !important;
-    background-size: 24px !important;
-}
-
-.app-sidebar-header__info .icon-settings {
-    background-image: var(--icon-edit-custom) !important;
-}
 
 aside .icon-star {
     background-size: 24px !important;
