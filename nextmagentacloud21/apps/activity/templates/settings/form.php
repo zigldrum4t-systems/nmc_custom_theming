@@ -25,11 +25,13 @@
 
 /** @var array $_ */
 /** @var \OCP\IL10N $l */
+
 ?>
 
-	<table class="grid activitysettings thmes">
+	<table class="grid activitysettings">
 		<tbody>
-		<?php foreach ($_['activityGroups'] as $group): ?>
+		<?php foreach ($_['activityGroups'] as $group):
+			if($group['name'] == 'Files'):?>
 			<tr>
 				<th colspan="3" class="group-header"><?php p($group['name']) ?></th>
 			</tr>
@@ -43,12 +45,18 @@
 			</tr>
 			<?php foreach ($group['activities'] as $activity => $data): ?>
 				<tr>
-					<?php foreach ($_['methods'] as $method => $methodName): ?>
+					<?php foreach ($_['methods'] as $method => $methodName):?>
 					<td class="small">
 						<input type="checkbox" id="<?php p($activity) ?>_<?php p($method) ?>" name="<?php p($activity) ?>_<?php p($method) ?>"
 							value="1" class="<?php p($activity) ?> <?php p($method) ?> checkbox"
 							<?php if (!in_array($method, $data['methods'])): ?> disabled="disabled"<?php endif; ?>
-							<?php if ($data[$method]): ?> checked="checked"<?php endif; ?> />
+							<?php
+              if ($data[$method]):
+
+
+
+                ?> checked="checked"
+                <?php endif; ?> />
 						<label for="<?php p($activity) ?>_<?php p($method) ?>">
 						</label>
 					</td>
@@ -58,11 +66,11 @@
 					</td>
 				</tr>
 			<?php endforeach; ?>
-		<?php endforeach; ?>
+		<?php endif; endforeach; ?>
 		</tbody>
 	</table>
 
-<?php if ($_['email_enabled']) { ?>
+<?php /* if ($_['email_enabled']) { ?>
 	<?php if (!$_['is_email_set']): ?>
 		<br />
 		<strong><?php p($l->t('You need to set up your email address before you can receive notification emails.')); ?></strong>
@@ -76,4 +84,4 @@
 		<option value="1"<?php if ($_['setting_batchtime'] === \OCA\Activity\UserSettings::EMAIL_SEND_DAILY): ?> selected="selected"<?php endif; ?>><?php p($l->t('Daily')); ?></option>
 		<option value="2"<?php if ($_['setting_batchtime'] === \OCA\Activity\UserSettings::EMAIL_SEND_WEEKLY): ?> selected="selected"<?php endif; ?>><?php p($l->t('Weekly')); ?></option>
 	</select>
-<?php }
+<?php }*/
