@@ -70,7 +70,7 @@
 		</tbody>
 	</table>
 
-<?php /* if ($_['email_enabled']) { ?>
+<?php if ($_['email_enabled']) { ?>
 	<?php if (!$_['is_email_set']): ?>
 		<br />
 		<strong><?php p($l->t('You need to set up your email address before you can receive notification emails.')); ?></strong>
@@ -84,4 +84,4 @@
 		<option value="1"<?php if ($_['setting_batchtime'] === \OCA\Activity\UserSettings::EMAIL_SEND_DAILY): ?> selected="selected"<?php endif; ?>><?php p($l->t('Daily')); ?></option>
 		<option value="2"<?php if ($_['setting_batchtime'] === \OCA\Activity\UserSettings::EMAIL_SEND_WEEKLY): ?> selected="selected"<?php endif; ?>><?php p($l->t('Weekly')); ?></option>
 	</select>
-<?php }*/
+<?php }
