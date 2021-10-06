@@ -1,0 +1,86 @@
+#app-navigation.without-app-settings a:hover{
+    background-color: unset !important;
+  }
+  .without-app-settings a span:hover{
+    color:#e20074 !important;
+  }
+  #personal-settings {
+    display: flex !important;
+    padding:3rem 1rem !important;
+    grid-template-columns: unset !important
+  }
+  #personal-settings-avatar-container {
+    display: flex !important;
+    grid-template-columns: unset !important;
+    grid-template-rows: unset !important;
+    vertical-align: unset !important;
+    flex-direction: column;
+  }
+  .personal-settings-container {
+    display: flex;
+    grid-template-columns: unset !important;
+    grid-template-rows: unset !important;
+    flex-wrap:wrap;
+  }
+  #personal-settings-avatar-container h3{
+    margin:unset !important;
+    color:#191919 !important;
+    font-weight: bold;
+    font-size:1.25rem;
+  }
+  #personal-settings .section {
+    padding:1.5rem 0 !important;
+  }
+  #personal-settings label{
+    margin-bottom: 0.25rem;
+  }
+  #personal-settings .personal-settings-language-box .section{
+    padding:0 !important;
+  }
+  #personal-settings .personal-settings-group-box{
+    padding:3rem 0 !important;
+  }
+  .personal-settings-setting-box h3{
+    font-size:1rem !important;
+    color:#666666 !important;
+    font-weight:normal !important;
+  }
+
+  .personal-settings-setting-box .section input[type='text'],
+  .personal-settings-setting-box .section input[type='email'],
+  .personal-settings-setting-box .section input[type='tel'],
+  .personal-settings-setting-box .section input[type='url'] {
+    width: 400px !important;
+  }
+  .personal-settings-setting-box{
+    margin-right:32px;
+  }
+
+  #personal-settings #app-sidebar,
+  .personal-settings-language-box em,
+  .federation-menu,
+  #emailform em{
+    display:none;
+  }
+  .telekom-link a{
+    color: #e20074;
+  }
+  .personal-settings-group-box b{
+    font-size:1.25rem;
+    color:#191919;
+  }
+  #personal-settings .personal-info {
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+  }
+  .quotatext-bg{
+    margin-bottom:0.5rem !important;
+  }
+  .telekom-link .icon-quota{
+    background-image: unset !important;
+  }
+
+  #personal-settings .personal-info[class^='icon-'],
+  #personal-settings .personal-info[class*=' icon-'] {
+    padding-left:0 !important
+  }
