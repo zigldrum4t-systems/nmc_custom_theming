@@ -858,6 +858,14 @@ a.menuitem.action:hover>span,
     z-index: 99;
 }
 
+.app-settings{
+  z-index: 1 !important;
+}
+
+#content-vue.app-settings{
+  margin-top: 6.25rem !important;
+}
+
 .container-fixed,
 .modal-header {
     margin-left: auto;
