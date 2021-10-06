@@ -33,25 +33,58 @@ script('files', 'jquery.fileupload');
 		<?php if (!empty($_['forms']['admin'])) { ?>
 			<li class="app-navigation-caption"><?php p($l->t('Personal')); ?></li>
 		<?php
-		}?>
+		}
+    $customSettingMenu = array($_['forms']['personal'][0],$_['forms']['personal'][1],$_['forms']['personal'][2]);
+    $customSettingMenu[0]['section-name']= 'Account information';
+    $customSettingMenu[1]['section-name']= 'Devices & sessions';
+    $customSettingMenu[2]['section-name']= 'Notifications';
+		foreach ($customSettingMenu as $form) {
+			if (isset($form['anchor'])) {
+				$anchor = \OC::$server->getURLGenerator()->linkToRoute('settings.PersonalSettings.index', ['section' => $form['anchor']]);
+				$class = 'nav-icon-' . $form['anchor'];
+				$sectionName = $form['section-name'];
+				$active = $form['active'] ? ' class="active"' : ''; ?>
+				<li <?php print_unescaped($form['active'] ? ' class="active"' : ''); ?>>
+					<a href="<?php p($anchor); ?>">
+						<?php if (!empty($form['icon'])) { ?>
+							<img alt="" src="<?php print_unescaped($form['icon']); ?>">
+							<span><?php p($form['section-name']); ?></span>
+						<?php } else { ?>
+							<span class="no-icon"><?php p($form['section-name']); ?></span>
+						<?php } ?>
+					</a>
+				</li>
+				<?php
+			}
+		}
+		?>
 
-		<li <?php print_unescaped($form['active'] ? ' class="active"' : ''); ?>>
+		<?php
+		if (!empty($_['forms']['admin'])) {
+			?>
+			<li class="app-navigation-caption"><?php p($l->t('Administration')); ?></li>
+			<?php
+		}
+		foreach ($_['forms']['admin'] as $form) {
+			if (isset($form['anchor'])) {
+				$anchor = \OC::$server->getURLGenerator()->linkToRoute('settings.AdminSettings.index', ['section' => $form['anchor']]);
+				$class = 'nav-icon-' . $form['anchor'];
+				$sectionName = $form['section-name'];
+				$active = $form['active'] ? ' class="active"' : ''; ?>
+				<li <?php print_unescaped($form['active'] ? ' class="active"' : ''); ?>>
 					<a href="<?php p($anchor); ?>">
-							<span>Account Information</span>
+						<?php if (!empty($form['icon'])) { ?>
+							<img alt="" src="<?php print_unescaped($form['icon']); ?>">
+							<span><?php p($form['section-name']); ?></span>
+						<?php } else { ?>
+							<span class="no-icon"><?php p($form['section-name']); ?></span>
+						<?php } ?>
 					</a>
-		</li>
-		<li <?php print_unescaped($form['active'] ? ' class="active"' : ''); ?>>
-					<a href="<?php p($anchor); ?>">
-							<span>Devices & sessions</span>
-					</a>
-		</li>
-
-		<li <?php print_unescaped($form['active'] ? ' class="active"' : ''); ?>>
-					<a href="<?php p($anchor); ?>">
-							<span>Notifications</span>
-					</a>
-		</li>
-				
+				</li>
+		<?php
+			}
+		}
+		?>
 	</ul>
 </div>
 
