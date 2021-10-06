@@ -35,9 +35,9 @@ script('files', 'jquery.fileupload');
 		<?php
 		}
     $customSettingMenu = array($_['forms']['personal'][0],$_['forms']['personal'][1],$_['forms']['personal'][2]);
-    $customSettingMenu[0]['section-name']= 'Account information';
-    $customSettingMenu[1]['section-name']= 'Devices & sessions';
-    $customSettingMenu[2]['section-name']= 'Notifications';
+    $customSettingMenu[0]['section-name'] =  $l->t('Account information');
+    $customSettingMenu[1]['section-name'] =  $l->t('Devices & sessions');
+    $customSettingMenu[2]['section-name'] =  $l->t('Notifications');
 		foreach ($customSettingMenu as $form) {
 			if (isset($form['anchor'])) {
 				$anchor = \OC::$server->getURLGenerator()->linkToRoute('settings.PersonalSettings.index', ['section' => $form['anchor']]);
