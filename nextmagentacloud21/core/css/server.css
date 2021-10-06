@@ -24,6 +24,8 @@
 @import url("file-view.css");
 @import url("breadcrumb.css");
 @import url("sharing.css");
+@import url("settings.css");
+
 
 /* ---------------------------------------------------------------------------- */
 
@@ -141,7 +143,7 @@ section {
 #app-navigation:not(.vue)>ul>li a:hover>a,
 #app-navigation:not(.vue)>ul>li a:focus,
 #app-navigation:not(.vue)>ul>li a:focus>a {
-    background-color: #f2f2f2 !important;
+    background-color: #f2f2f2;
     color: #e20074;
 }
 
@@ -2109,6 +2111,5 @@ iframe.viewer__file {
         display: block !important;
     }
 }
-
 
 /*Responsive Styling*/
