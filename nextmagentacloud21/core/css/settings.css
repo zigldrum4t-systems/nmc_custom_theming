@@ -84,3 +84,59 @@
   #personal-settings .personal-info[class*=' icon-'] {
     padding-left:0 !important
   }
+
+  .extra-details{
+    margin-bottom: 1.5rem;
+  }
+
+  .extra-details strong {
+    margin-left:0.5rem;
+  }
+
+  .extra-details #files,
+  .extra-details #photos,
+  .extra-details #backup,
+  .extra-details #bin{
+    border-radius:30px;
+    width:16px;
+    height:8px;
+    display:inline-block;
+    margin:0.125rem 0.25rem;
+  }
+
+  .extra-details #files{
+    background-color: #22adb9;
+  }
+  .extra-details #photos{
+    background-color: #b682bd;
+  }
+  .extra-details #backup{
+    background-color: #828ac4;
+  }
+  .extra-details #bin{
+    background-color: #fc9a55;
+  }
+  
+  #tarrifInfo{
+    margin-bottom:1.25rem;
+  }
+
+  #tarrifInfo b{
+  font-size:1.25rem;
+  margin-bottom:0.5rem;
+  }
+
+  #tarrifInfo button{
+    height:40px;
+    padding:0 1.5rem;
+    background-color: #ffffff;
+    border-color: #191919;
+    color:#191919;
+    border-radius: 8px;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif;
+    font-size: 1rem;
+  }
+  #tarrifInfo button:hover{
+    border:1px solid #e20074 !important;
+    color:#e20074 !important;
+  }
