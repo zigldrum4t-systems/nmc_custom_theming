@@ -211,20 +211,20 @@ script('settings', [
 
   </div>
 
-
-
-<?php
-  $totalSpaceInGB = (int)$_['total_space'];
-?>
+<?php $totalSpaceInGB = $_['total_space']; ?>
 <div id="tarrifInfo" class="personal-settings-setting-box personal-settings-group-box section">
   <b><?php p($l->t('Tariff information')); ?></b>
   <div>
-      <?php print_unescaped($l->t('<strong>Your tariff</strong>')); ?>
+      <?php print_unescaped($l->t('<strong>Your tariff</strong>:')); ?>
       <?php
         if ($_['quota'] == 0) {
             p($l->t('No space allocated'));
-          }elseif($_['quota'] == -3){
+          }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED){
             p($l->t('Magentacloud XXL'));
+          }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNKNOWN){
+            p($l->t('Space unknown'));
+          }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_NOT_COMPUTED){
+            p($l->t('Space not computed'));
           }elseif ($totalSpaceInGB > 0 && $totalSpaceInGB <= 10){
             p($l->t('Magentacloud Free'));
           }elseif ($totalSpaceInGB > 10 && $totalSpaceInGB <= 25){
