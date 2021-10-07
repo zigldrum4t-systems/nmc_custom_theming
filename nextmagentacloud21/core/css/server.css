@@ -126,6 +126,10 @@ section {
     height: calc(100% - 190px) !important;
 }
 
+#app-navigation:not(.vue) ul {
+    padding-top: 4rem;
+}
+
 #app-navigation>ul>li.active,
 #app-navigation>ul>li.active>a,
 #app-navigation>ul>li a:active,
@@ -425,7 +429,6 @@ section {
 #app-navigation,
 #app-sidebar-vue {
     width: 288px !important;
-    padding: 1rem;
 }
 
 aside {
@@ -567,6 +570,9 @@ aside {
     }
     aside {
         width: 352px !important;
+    }
+    #fileList td a a.action.action-menu {
+        display: none;
     }
 }
 
@@ -856,6 +862,14 @@ a.menuitem.action:hover>span,
     padding-top: 0;
     top: 184px;
     z-index: 99;
+}
+
+.app-settings{
+  z-index: 1 !important;
+}
+
+#content-vue.app-settings{
+  margin-top: 6.25rem !important;
 }
 
 .container-fixed,
@@ -1634,28 +1648,30 @@ iframe.viewer__file {
     width: inherit !important;
 }
 
-#viewer .action-item__menutoggle--default-icon,#viewer .action-item.action-item--single.header-close{
-  background: none;
+#viewer .action-item__menutoggle--default-icon,
+#viewer .action-item.action-item--single.header-close {
+    background: none;
 }
 
-.modal-mask .play-pause .progress-ring{
-  top: 10px !important;
-  left: -5px !important;
+.modal-mask .play-pause .progress-ring {
+    top: 10px !important;
+    left: -5px !important;
 }
 
 #viewer circle.progress-ring__circle {
-  r: 20;
+    r: 20;
 }
 
-.modal-header .icons-menu .play-pause .icon-pause{
-  opacity: 1;
-  border-radius: 22px;
-  background-color: rgb(255 255 255 / 25%);
-  height: 40px !important;
-  width: 40px !important;
-  margin: 0 !important;
-  padding: 9px !important;
+.modal-header .icons-menu .play-pause .icon-pause {
+    opacity: 1;
+    border-radius: 22px;
+    background-color: rgb(255 255 255 / 25%);
+    height: 40px !important;
+    width: 40px !important;
+    margin: 0 !important;
+    padding: 9px !important;
 }
+
 
 /* preview css*/
 
@@ -2090,6 +2106,9 @@ iframe.viewer__file {
     #viewer a.next {
         right: 39.1% !important;
     }
+    #fileList td a a.action.action-menu {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -2112,4 +2131,9 @@ iframe.viewer__file {
     }
 }
 
+@media screen and (max-height: 700px) {
+    #app-navigation:not(.vue) ul {
+        padding-top: 0;
+    }
+}
 /*Responsive Styling*/
