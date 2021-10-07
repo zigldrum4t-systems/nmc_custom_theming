@@ -1,5 +1,8 @@
 /*--------------sharing-----------------*/
 
+#app-sidebar-vue {
+    padding: 1rem;
+}
 
 /*thumbnail*/
 
@@ -206,7 +209,9 @@ aside .icon-star {
     background-image: unset !important;
 }
 
-.avatardiv--unknown,.sharing-entry .avatar-link-share,.avatar-class-icon {
+.avatardiv--unknown,
+.sharing-entry .avatar-link-share,
+.avatar-class-icon {
     background-color: unset !important;
 }
 
