@@ -216,27 +216,44 @@ script('settings', [
 
   </div>
 
-
-  <div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
-    <b><?php p($l->t('Tariff information')); ?></b>
-    <div><?php print_unescaped($l->t(
-                '<strong>Your tariff</strong>: %1$s ',
-                [$_['usage']]
-              )); ?>
-              </div>
-              <div><?php print_unescaped($l->t(
-                '<strong>Storage  </strong>: %1$s ',
-                [$_['usage']]
-              )); ?>
-              </div>
-              <div>
-                <button><?php print_unescaped($l->t(
-                'Expand storage',
-                [$_['usage']]
-              )); ?></button>
+<?php $totalSpaceInGB = (int)$_['total_space']; ?>
+<div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
+  <b><?php p($l->t('Tariff information')); ?></b>
+    <div>
+        <?php print_unescaped($l->t('<strong>Your tariff</strong>:')); ?>
+        <?php
+            if ($_['quota'] == 0) {
+                p($l->t('No space allocated'));
+            }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED){
+                p($l->t('Unlimited'));
+            }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNKNOWN){
+                p($l->t('Space unknown'));
+            }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_NOT_COMPUTED){
+                p($l->t('Space not computed'));
+            }elseif ($totalSpaceInGB  == 3 || $totalSpaceInGB == 10){
+                p($l->t('Magentacloud Free'));
+            }elseif ($totalSpaceInGB  == 15 || $totalSpaceInGB == 25){
+                p($l->t('Magentacloud S'));
+            }elseif ($totalSpaceInGB == 100){
+                p($l->t('Magentacloud M'));
+            }else if ($totalSpaceInGB == 500){
+                p($l->t('Magentacloud L'));
+            }else if ($totalSpaceInGB == 1000){
+                p($l->t('Magentacloud XL'));
+            }else if ($totalSpaceInGB == 5000){
+                p($l->t('Magentacloud XXL'));
+            }
+        ?>
     </div>
-  </div>
-
+    <div>
+        <?php print_unescaped($l->t('<strong>Storage  </strong>: %1$s ', [$_['total_space']])); ?>
+    </div>
+    <div>
+        <button>
+        <?php print_unescaped($l->t('Expend storage')); ?>
+        </button>
+    </div>
+<div>
 
 
   <div id="personal-settings-group-container">

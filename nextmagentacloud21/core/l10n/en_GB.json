@@ -260,7 +260,16 @@
     "Password can not be changed. Please contact your administrator.": "Password can not be changed. Please contact your administrator.",
     "The": "The",
     "MagentaCLOUD": "MagentaCLOUD",
-    "is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.": "is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends."
+    "is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.": "is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.",
+    "No space allocated": "No space allocated",
+    "Space unknown" : "Space unknown",
+    "Space not computed": "Space not computed",
+    "Magentacloud Free": "Magentacloud Free",
+    "Magentacloud S": "Magentacloud S",
+    "Magentacloud M": "Magentacloud M",
+    "Magentacloud L": "Magentacloud L",
+    "Magentacloud XL": "Magentacloud XL",
+    "Magentacloud XXL": "Magentacloud XXL"
   },
   "pluralForm": "nplurals=2; plural=(n != 1);"
 }
