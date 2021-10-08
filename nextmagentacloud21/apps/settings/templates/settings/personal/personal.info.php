@@ -216,7 +216,7 @@ script('settings', [
 
   </div>
 
-<?php $totalSpaceInGB = $_['total_space']; ?>
+<?php $totalSpaceInGB = (int)$_['total_space']; ?>
 <div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
   <b><?php p($l->t('Tariff information')); ?></b>
     <div>
@@ -225,22 +225,22 @@ script('settings', [
             if ($_['quota'] == 0) {
                 p($l->t('No space allocated'));
             }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED){
-                p($l->t('Magentacloud XXL'));
+                p($l->t('Unlimited'));
             }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNKNOWN){
                 p($l->t('Space unknown'));
             }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_NOT_COMPUTED){
                 p($l->t('Space not computed'));
-            }elseif ($totalSpaceInGB > 0 && $totalSpaceInGB <= 10){
+            }elseif ($totalSpaceInGB  == 3 || $totalSpaceInGB == 10){
                 p($l->t('Magentacloud Free'));
-            }elseif ($totalSpaceInGB > 10 && $totalSpaceInGB <= 25){
+            }elseif ($totalSpaceInGB  == 15 || $totalSpaceInGB == 25){
                 p($l->t('Magentacloud S'));
-            }elseif ($totalSpaceInGB > 25 && $totalSpaceInGB <= 100){
+            }elseif ($totalSpaceInGB == 100){
                 p($l->t('Magentacloud M'));
-            }else if ($totalSpaceInGB > 100 && $totalSpaceInGB <= 500){
+            }else if ($totalSpaceInGB == 500){
                 p($l->t('Magentacloud L'));
-            }else if ($totalSpaceInGB >= 500 && $totalSpaceInGB < 1000){
+            }else if ($totalSpaceInGB == 1000){
                 p($l->t('Magentacloud XL'));
-            }else if ($totalSpaceInGB >= 1000){
+            }else if ($totalSpaceInGB == 5000){
                 p($l->t('Magentacloud XXL'));
             }
         ?>
