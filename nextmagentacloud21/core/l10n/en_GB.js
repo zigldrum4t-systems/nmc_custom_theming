@@ -247,6 +247,15 @@ OC.L10N.register(
     "The PHP OPcache is not properly configured. <a target=\"_blank\" rel=\"noreferrer noopener\" href=\"{docLink}\">For better performance it is recommended</a> to use the following settings in the <code>php.ini</code>:" : "The PHP OPcache is not properly configured. <a target=\"_blank\" rel=\"noreferrer noopener\" href=\"{docLink}\">For better performance it is recommended</a> to use the following settings in the <code>php.ini</code>:",
     "Continue to Nextcloud" : "Continue to Nextcloud",
     "_The update was successful. Redirecting you to Nextcloud in %n second._::_The update was successful. Redirecting you to Nextcloud in %n seconds._" : ["The update was successful. Redirecting you to Nextcloud in %n second.","The update was successful. Redirecting you to Nextcloud in %n seconds."],
-    "Password can not be changed. Please contact your administrator." : "Password can not be changed. Please contact your administrator."
+    "Password can not be changed. Please contact your administrator." : "Password can not be changed. Please contact your administrator.",
+    "No space allocated": "No space allocated",
+    "Space unknown" : "Space unknown",
+    "Space not computed": "Space not computed",
+    "Magentacloud Free": "Magentacloud Free",
+    "Magentacloud S": "Magentacloud S",
+    "Magentacloud M": "Magentacloud M",
+    "Magentacloud L": "Magentacloud L",
+    "Magentacloud XL": "Magentacloud XL",
+    "Magentacloud XXL": "Magentacloud XXL"
 },
 "nplurals=2; plural=(n != 1);");
