@@ -179,21 +179,26 @@ script('settings', [
         <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage_relative'] > 80) : ?> class="warn" <?php endif; ?>></progress>
       </div>
       <div class="extra-details">
-      <div><?php print_unescaped($l->t(
-                '<strong>Files</strong>: %1$s ',
+      <div>
+        <div id="files"></div>
+        <?php print_unescaped($l->t(
+                 'Files:<strong>%1$s</strong> ',
                 [$_['usage']]
-              )); ?>
-              </div>
-              <div>     <?php print_unescaped($l->t(
-                '<strong>Photos & videos</strong>: %1$s ',
+        )); ?>
+      </div>
+              <div>
+              <div id="photos"></div>   <?php print_unescaped($l->t(
+                'Photos & videos:<strong>%1$s</strong> ',
                 [$_['usage']]
               )); ?></div>
-               <div> <?php print_unescaped($l->t(
-                '<strong>Live Backups</strong>: %1$s ',
+               <div>
+               <div id="backup"></div>  <?php print_unescaped($l->t(
+                'Live Backups:<strong>%1$s </strong> ',
                 [$_['usage']]
               )); ?></div>
-               <div> <?php print_unescaped($l->t(
-                '<strong>Recycle Bin</strong>: %1$s ',
+               <div>
+               <div id="bin"></div> <?php print_unescaped($l->t(
+                'Recycle Bin:<strong>%1$s</strong>',
                 [$_['usage']]
               )); ?></div>
     </div>
@@ -212,45 +217,43 @@ script('settings', [
   </div>
 
 <?php $totalSpaceInGB = $_['total_space']; ?>
-<div id="tarrifInfo" class="personal-settings-setting-box personal-settings-group-box section">
+<div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
   <b><?php p($l->t('Tariff information')); ?></b>
-  <div>
-      <?php print_unescaped($l->t('<strong>Your tariff</strong>:')); ?>
-      <?php
-        if ($_['quota'] == 0) {
-            p($l->t('No space allocated'));
-          }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED){
-            p($l->t('Magentacloud XXL'));
-          }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNKNOWN){
-            p($l->t('Space unknown'));
-          }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_NOT_COMPUTED){
-            p($l->t('Space not computed'));
-          }elseif ($totalSpaceInGB > 0 && $totalSpaceInGB <= 10){
-            p($l->t('Magentacloud Free'));
-          }elseif ($totalSpaceInGB > 10 && $totalSpaceInGB <= 25){
-            p($l->t('Magentacloud S'));
-          }elseif ($totalSpaceInGB > 25 && $totalSpaceInGB <= 100){
-            p($l->t('Magentacloud M'));
-          }else if ($totalSpaceInGB > 100 && $totalSpaceInGB <= 500){
-            p($l->t('Magentacloud L'));
-          }else if ($totalSpaceInGB >= 500 && $totalSpaceInGB < 1000){
-            p($l->t('Magentacloud XL'));
-          }else if ($totalSpaceInGB >= 1000){
-            p($l->t('Magentacloud XXL'));
-          }
-      ?>
-
-  </div>
-  <div>
-      <?php print_unescaped($l->t('<strong>Storage  </strong>: %1$s ', [$_['total_space']])); ?>
-  </div>
-  <div>
-    <button>
-      <?php print_unescaped($l->t('Expend storage')); ?>
-    </button>
-  </div>
-</div>
-
+    <div>
+        <?php print_unescaped($l->t('<strong>Your tariff</strong>:')); ?>
+        <?php
+            if ($_['quota'] == 0) {
+                p($l->t('No space allocated'));
+            }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED){
+                p($l->t('Magentacloud XXL'));
+            }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNKNOWN){
+                p($l->t('Space unknown'));
+            }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_NOT_COMPUTED){
+                p($l->t('Space not computed'));
+            }elseif ($totalSpaceInGB > 0 && $totalSpaceInGB <= 10){
+                p($l->t('Magentacloud Free'));
+            }elseif ($totalSpaceInGB > 10 && $totalSpaceInGB <= 25){
+                p($l->t('Magentacloud S'));
+            }elseif ($totalSpaceInGB > 25 && $totalSpaceInGB <= 100){
+                p($l->t('Magentacloud M'));
+            }else if ($totalSpaceInGB > 100 && $totalSpaceInGB <= 500){
+                p($l->t('Magentacloud L'));
+            }else if ($totalSpaceInGB >= 500 && $totalSpaceInGB < 1000){
+                p($l->t('Magentacloud XL'));
+            }else if ($totalSpaceInGB >= 1000){
+                p($l->t('Magentacloud XXL'));
+            }
+        ?>
+    </div>
+    <div>
+        <?php print_unescaped($l->t('<strong>Storage  </strong>: %1$s ', [$_['total_space']])); ?>
+    </div>
+    <div>
+        <button>
+        <?php print_unescaped($l->t('Expend storage')); ?>
+        </button>
+    </div>
+<div>
 
 
   <div id="personal-settings-group-container">
