@@ -1,9 +1,7 @@
 #app-navigation.without-app-settings a:hover{
     background-color: unset !important;
   }
-  .without-app-settings a span:hover{
-    color:#e20074 !important;
-  }
+
   #personal-settings {
     display: flex !important;
     padding:3rem 1rem !important;
@@ -16,13 +14,14 @@
     vertical-align: unset !important;
     flex-direction: column;
   }
-  .personal-settings-container {
+  .personal-settings-container,
+  .profile-settings-container {
     display: flex;
     grid-template-columns: unset !important;
     grid-template-rows: unset !important;
     flex-wrap:wrap;
   }
-  #personal-settings-avatar-container h3{
+ #personal-settings-avatar-container h3{
     margin:unset !important;
     color:#191919 !important;
     font-weight: bold;
@@ -47,10 +46,22 @@
   }
 
   .personal-settings-setting-box .section input[type='text'],
-  .personal-settings-setting-box .section input[type='email'],
-  .personal-settings-setting-box .section input[type='tel'],
-  .personal-settings-setting-box .section input[type='url'] {
+  .personal-settings-setting-box .section input[type='email']{
     width: 400px !important;
+    height:48px !important;
+    padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
+    background-color: #e5e5e5;
+    border:1px solid #e5e5e5;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif;
+  }
+
+  select#languageinput{
+    width: 400px !important;
+    height:48px !important;
+    padding:0.75rem 0.75rem 0.75rem 0.688rem;
+    background-color: #ffffff;
+    border:1px solid #191919;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif;
   }
   .personal-settings-setting-box{
     margin-right:32px;
@@ -116,7 +127,7 @@
   .extra-details #bin{
     background-color: #fc9a55;
   }
-  
+
   #tarrifInfo{
     margin-bottom:1.25rem;
   }
@@ -132,11 +143,57 @@
     background-color: #ffffff;
     border-color: #191919;
     color:#191919;
-    border-radius: 8px;
+    border-radius: 4px;
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
     font-size: 1rem;
+    margin:1rem 0 0 0;
+    font-weight: normal;
   }
   #tarrifInfo button:hover{
     border:1px solid #e20074 !important;
     color:#e20074 !important;
+  }
+  #tarrifInfo h4{
+  margin-bottom: 0.25rem;
+  font-size:1.25rem;
+  font-weight: bold;
+  }
+
+  p.quotatext {
+    color: #191919 !important;
+  }
+
+  #personal-settings .personal-info[class^='icon-'],
+  #personal-settings .personal-info[class*=' icon-'] {
+    opacity: unset !important;
+  }
+
+  .personal-settings-setting-box,
+  #personal-settings .personal-info {
+   margin-right: unset !important;
+  }
+
+  .personal-settings-language-box select{
+    margin-bottom: 1rem !important;
+  }
+  /* select#languageinput{
+    background:no-repeat right 4px center;
+  } */
+  #app-navigation.without-app-settings  img{
+    width:24px !important;
+    height:24px !important;
+  }
+  #app-navigation.without-app-settings ul li:hover {
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+  }
+
+  #app-navigation.without-app-settings ul li.active,
+  #app-navigation.without-app-settings ul li.active a,
+  #app-navigation.without-app-settings ul li a:active,
+  #app-navigation.without-app-settings ul li a:active a,
+  #app-navigation.without-app-settings ul li a.selected,
+  #app-navigation.without-app-settings ul li a.selected a,
+  #app-navigation.without-app-settings ul li a.active,
+  #app-navigation.without-app-settings ul li a.active a {
+    background-color: unset !important;
   }

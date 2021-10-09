@@ -24,7 +24,7 @@
 @import url("file-view.css");
 @import url("breadcrumb.css");
 @import url("sharing.css");
-@import url("settings.css"); 
+@import url("settings.css");
 
 
 /* ---------------------------------------------------------------------------- */
@@ -154,7 +154,7 @@ section {
 #app-navigation>ul>li>a,
 #app-navigation>ul>li>ul {
     line-height: 48px;
-    padding: 0.188rem 0rem 0rem 3rem !important;
+    padding: 0 1rem 0 0.875rem;
 }
 
 #sublist-favorites {
@@ -168,11 +168,6 @@ section {
     text-decoration: none;
 }
 
-#app-navigation img {
-    margin-bottom: unset !important;
-    margin-right: unset !important;
-    width: 40px !important;
-}
 
 .NextCloudPorgressBar {
     margin: 1rem 0rem;
