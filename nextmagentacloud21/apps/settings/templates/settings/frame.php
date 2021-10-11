@@ -31,7 +31,7 @@ script('files', 'jquery.fileupload');
 <div id="app-navigation">
 	<ul>
 		<?php if (!empty($_['forms']['admin'])) { ?>
-			<li class="app-navigation-caption"><?php p($l->t('Personal')); ?></li>
+			<!-- <li class="app-navigation-caption"><?php p($l->t('Personal')); ?></li> -->
 		<?php
 		}
     $customSettingMenu = array($_['forms']['personal'][0],$_['forms']['personal'][1],$_['forms']['personal'][2]);
