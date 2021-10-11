@@ -584,6 +584,53 @@ __webpack_require__.r(__webpack_exports__);
     },
 
     /**
+     * Format a remote address
+     *
+    * @param {String} shareWith userid, full remote share, or whatever
+    * @param {String} shareWithDisplayName
+    * @param {String} message
+    * @returns {String} HTML code to display
+    */
+    _formatRemoteSharewith: function _formatRemoteSharewith(shareWith, shareWithDisplayName, message) {
+      var parts = OCA.Sharing.Util._REMOTE_OWNER_REGEXP.exec(shareWith);
+
+      console.error(parts);
+
+      if (!parts || !parts[7]) {
+        // display avatar of the user
+        var avatar = '<span class="avatar" data-username="' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWith) + '" title="' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '"></span>';
+        var hidden = '<span class="hidden-visually">' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '</span> ';
+        return avatar + hidden;
+      }
+
+      var userName = parts[2];
+      var userDomain = parts[4];
+      var server = parts[5];
+      var protocol = parts[6];
+      var serverPath = parts[8] ? parts[7] : ''; // no trailing slash on root
+
+      var tooltip = message + ' ' + userName;
+
+      if (userDomain) {
+        tooltip += '@' + userDomain;
+      }
+
+      if (server) {
+        tooltip += '@' + server.replace(protocol, '') + serverPath;
+      }
+
+      var html = '<span class="remoteAddress" title="' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(tooltip) + '">';
+      html += '<span class="username">' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(userName) + '</span>';
+
+      if (userDomain) {
+        html += '<span class="userDomain">@' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(userDomain) + '</span>';
+      }
+
+      html += '</span> ';
+      return html;
+    },
+
+    /**
      * Loop over all recipients in the list and format them using
      * all kind of fancy magic.
      *
@@ -598,7 +645,7 @@ __webpack_require__.r(__webpack_exports__);
         return a.shareWithDisplayName.localeCompare(b.shareWithDisplayName);
       });
       return $.map(recipients, function (recipient) {
-        return _parent._formatRemoteShare(recipient.shareWith, recipient.shareWithDisplayName, t('files_sharing', 'Shared with'));
+        return _parent._formatRemoteSharewith(recipient.shareWith, recipient.shareWithDisplayName, t('files_sharing', 'Shared with'));
       });
     },
 
