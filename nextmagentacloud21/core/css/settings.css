@@ -28,7 +28,7 @@
     font-size:1.25rem;
   }
   #personal-settings .section {
-    padding:1.5rem 0 !important;
+    padding:1rem 0 !important;
   }
   #personal-settings label{
     margin-bottom: 0.25rem;
@@ -218,7 +218,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 /* Activity Notifications*/
 
   #tarrifInfo h4{
-  margin-bottom: 0.25rem;
+  margin-bottom:1rem;
   font-size:1.25rem;
   font-weight: bold;
   }

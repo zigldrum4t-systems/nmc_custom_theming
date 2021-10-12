@@ -167,7 +167,9 @@ section {
     opacity: 1 !important;
     text-decoration: none;
 }
-
+#app-navigation img {
+  width: 40px !important;
+}
 
 .NextCloudPorgressBar {
     margin: 1rem 0rem;
@@ -1949,6 +1951,7 @@ iframe.viewer__file {
         padding-top: 0.5rem;
         padding-bottom: 1rem;
     }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -2013,6 +2016,11 @@ iframe.viewer__file {
     }
     #filestable .summary {
         height: 150px;
+    }
+    .toastify.dialogs{
+      max-width: 312px !important;
+      min-width: 312px !important;
+      margin-left: -9.75rem !important;
     }
 }
 
