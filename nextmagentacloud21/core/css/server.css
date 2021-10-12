@@ -965,6 +965,11 @@ div.crumb:last-child {
     top: 120px !important;
 }
 
+#app-content-recent, #app-content-favorites, #app-content-shareoverview, #app-content-sharingout,
+#app-content-sharingin, #app-content-sharinglinks, #app-content-deletedshares, #app-content-pendingshares {
+    margin-top: 0 !important;
+}
+
 .tooltip .tooltip-inner {
     background: #ffffff;
     color: #191919 !important;
