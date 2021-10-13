@@ -89,5 +89,6 @@ script('files', 'jquery.fileupload');
 </div>
 
 <div id="app-content">
+  <div class="controls-section"></div>
 	<?php print_unescaped($_['content']); ?>
 </div>
