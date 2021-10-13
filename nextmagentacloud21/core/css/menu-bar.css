@@ -592,3 +592,45 @@
 #header .header-right div .menu.settings-menu ul li a.active {
     background-color: unset !important;
 }
+
+/*Notification*/
+
+.toastify.dialogs {
+  max-width: 624px !important;
+  min-width: 624px !important;
+  border-radius: 8px !important;
+  box-shadow: var(--scl-shadow-level-2) !important;
+  top: 38px !important;
+  left: 50% !important;
+  right: 0 !important;
+  margin-left: -19.5rem !important;
+}
+
+.toastify.dialogs .toast-undo-button, .toastify.dialogs .toast-close {
+  height:auto;
+}
+
+.toastify.dialogs .toast-undo-button.toast-close,
+.toastify.dialogs .toast-close.toast-close {
+  opacity: 0.7 !important;
+}
+
+.toastify.dialogs.toast-info {
+  border-left:16px solid #e20074 !important
+}
+
+.toastify.dialogs.toast-warning {
+  border-left:16px solid  #FECB00 !important;
+}
+
+.toastify.dialogs.toast-success {
+  border-left:16px solid #73c354 !important;
+}
+
+.toastify.dialogs.toast-error {
+  border-left:16px solid #ed425b !important;
+}
+
+.toastify.dialogs .toast-undo-button, .toastify.dialogs .toast-close {
+  height:auto !important;
+}

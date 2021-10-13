@@ -116,7 +116,7 @@
           </a>
         </div>
         <div class="content-para">
-          The <span>MagentaCLOUD</span> is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.
+          <?php p($l->t('The')) ?> <span><?php p($l->t('MagentaCLOUD')) ?></span> <?php p($l->t("is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.")) ?>
         </div>
         <div class="content-button">
           <div class="informNow">

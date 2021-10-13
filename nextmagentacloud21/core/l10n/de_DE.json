@@ -428,7 +428,19 @@
     "Password can not be changed. Please contact your administrator.": "Passwort kann nicht geändert werden. Bitte kontaktieren Sie Ihren Administrator.",
     "Could not fetch list of apps from the app store.": "Liste der Apps kann nicht vom App Store abgerufen werden",
     "Can't install this app because it is not compatible": "App kann nicht installiert werden, da sie inkompatibel ist",
-    "Can't install this app": "App kann nicht installiert werden"
+    "Can't install this app": "App kann nicht installiert werden",
+    "The": "Die",
+    "MagentaCLOUD": "MagentaCLOUD",
+    "is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.": "ist der sichere und kostenlose Online-Speicher der Telekom. Ideal für Ihre Fotos, Videos und alle anderen Dateien, die Sie sicher speichern wollen. Sie können Ihre Daten direkt vom Smartphone, Tablet oder PC hochladen, von überall abrufen und ganz einfach mit Familie und Freunden teilen.",
+    "No space allocated": "Geen ruimte toegewezen",
+    "Space unknown" : "Ruimte onbekend",
+    "Space not computed": "Space not computed",
+    "Magentacloud Free": "Ruimte niet berekend",
+    "Magentacloud S": "Magentacloud S",
+    "Magentacloud M": "Magentacloud M",
+    "Magentacloud L": "Magentacloud L",
+    "Magentacloud XL": "Magentacloud XL",
+    "Magentacloud XXL": "Magentacloud XXL"
   },
   "pluralForm": "nplurals=2; plural=(n != 1);"
 }

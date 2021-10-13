@@ -23,6 +23,9 @@
 @import url("footer.css");
 @import url("file-view.css");
 @import url("breadcrumb.css");
+@import url("sharing.css");
+@import url("settings.css");
+
 
 /* ---------------------------------------------------------------------------- */
 
@@ -123,6 +126,10 @@ section {
     height: calc(100% - 190px) !important;
 }
 
+#app-navigation:not(.vue) ul {
+    padding-top: 4rem;
+}
+
 #app-navigation>ul>li.active,
 #app-navigation>ul>li.active>a,
 #app-navigation>ul>li a:active,
@@ -140,14 +147,14 @@ section {
 #app-navigation:not(.vue)>ul>li a:hover>a,
 #app-navigation:not(.vue)>ul>li a:focus,
 #app-navigation:not(.vue)>ul>li a:focus>a {
-    background-color: #f2f2f2 !important;
+    background-color: #f2f2f2;
     color: #e20074;
 }
 
 #app-navigation>ul>li>a,
 #app-navigation>ul>li>ul {
     line-height: 48px;
-    padding: 0.188rem 0rem 0rem 3rem !important;
+    padding: 0 1rem 0 0.875rem;
 }
 
 #sublist-favorites {
@@ -160,11 +167,8 @@ section {
     opacity: 1 !important;
     text-decoration: none;
 }
-
 #app-navigation img {
-    margin-bottom: unset !important;
-    margin-right: unset !important;
-    width: 40px !important;
+  width: 40px !important;
 }
 
 .NextCloudPorgressBar {
@@ -428,6 +432,7 @@ aside {
     top: 120px !important;
     min-width: unset !important;
     width: 288px !important;
+    margin-left: 2rem;
 }
 
 .sticky {
@@ -541,7 +546,8 @@ aside {
 }
 
 @media screen and (min-width: 1600px) {
-    .container-fixed {
+    .container-fixed,
+    .modal-header {
         width: 1536px !important;
     }
     #app-navigation {
@@ -562,10 +568,14 @@ aside {
     aside {
         width: 352px !important;
     }
+    #fileList td a a.action.action-menu {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
-    .container-fixed {
+    .container-fixed,
+    .modal-header {
         width: 1280px !important;
     }
     #app-navigation,
@@ -593,7 +603,8 @@ aside {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
-    .container-fixed {
+    .container-fixed,
+    .modal-header {
         width: 1024px !important;
     }
     #app-navigation,
@@ -615,7 +626,8 @@ aside {
 }
 
 @media screen and (max-width: 1299px) {
-    .container-fixed {
+    .container-fixed,
+    .modal-header {
         width: 100%;
     }
     #filestable.view-grid tbody {
@@ -849,7 +861,16 @@ a.menuitem.action:hover>span,
     z-index: 99;
 }
 
-.container-fixed {
+.app-settings{
+  z-index: 1 !important;
+}
+
+#content-vue.app-settings{
+  margin-top: 6.25rem !important;
+}
+
+.container-fixed,
+.modal-header {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -942,6 +963,11 @@ div.crumb:last-child {
 
 #app-navigation.app-navigation-translation {
     top: 120px !important;
+}
+
+#app-content-recent, #app-content-favorites, #app-content-shareoverview, #app-content-sharingout,
+#app-content-sharingin, #app-content-sharinglinks, #app-content-deletedshares, #app-content-pendingshares {
+    margin-top: 0 !important;
 }
 
 .tooltip .tooltip-inner {
@@ -1492,6 +1518,13 @@ div.crumb.crumbmenu a {
     margin-top: 4px;
 }
 
+#viewer[view="application/pdf"] a.prev,
+#viewer[view="application/pdf"] a.next,
+#viewer[view="text/markdown"] a.prev,
+#viewer[view="text/markdown"] a.next {
+    visibility: hidden !important;
+}
+
 #viewer a.prev,
 #viewer a.next {
     position: fixed !important;
@@ -1520,11 +1553,13 @@ div.crumb.crumbmenu a {
 .modal-header {
     position: relative !important;
     height: 63px !important;
-    margin: 0 auto;
     background: #191919;
-    border-bottom: 1px solid #e5e5e5;
     justify-content: space-between !important;
     visibility: visible !important;
+}
+
+.modal-wrapper {
+    border-top: 1px solid #e5e5e5;
 }
 
 .modal-header .modal-title {
@@ -1596,6 +1631,7 @@ div.crumb.crumbmenu a {
     align-self: start;
     height: auto !important;
     margin-top: 1rem;
+    width: inherit !important;
 }
 
 #viewer .modal-container {
@@ -1605,6 +1641,37 @@ div.crumb.crumbmenu a {
 
 #viewer #editor-container {
     top: 64px !important
+}
+
+#viewer .plyr audio,
+#viewer .plyr iframe,
+#viewer .plyr video,
+iframe.viewer__file {
+    width: inherit !important;
+}
+
+#viewer .action-item__menutoggle--default-icon,
+#viewer .action-item.action-item--single.header-close {
+    background: none;
+}
+
+.modal-mask .play-pause .progress-ring {
+    top: 10px !important;
+    left: -5px !important;
+}
+
+#viewer circle.progress-ring__circle {
+    r: 20;
+}
+
+.modal-header .icons-menu .play-pause .icon-pause {
+    opacity: 1;
+    border-radius: 22px;
+    background-color: rgb(255 255 255 / 25%);
+    height: 40px !important;
+    width: 40px !important;
+    margin: 0 !important;
+    padding: 9px !important;
 }
 
 
@@ -1793,48 +1860,49 @@ div.crumb.crumbmenu a {
 /*** Custom conflict dialog ******************************************************/
 
 .oc-conflict-pre-dlg {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 16px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 16px !important;
 }
 
 .oc-conflict-pre-dlg-button {
-  width: 100%;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  font-weight: 400 !important;
-  height: 2.5rem;
-  background-color: #FFFFFF;
-  color:#000000;
-  border-radius: 8px !important;
-  text-overflow: ellipsis !important;
-  font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
-  border: 1px solid #191919 !important;;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400 !important;
+    height: 2.5rem;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 8px !important;
+    text-overflow: ellipsis !important;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+    border: 1px solid #191919 !important;
+    ;
 }
 
 .oc-conflict-pre-dlg-replace-button {
-  background-color: #E20074 !important;
-  color:#FFFFFF !important;
-  border: 1px solid #E20074 !important;
+    background-color: #E20074 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #E20074 !important;
 }
 
 .oc-conflict-pre-dlg .fileexists {
-  margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 .flex-container {
-  display: flex;
+    display: flex;
 }
 
 .oc-conflict-pre-dlg-title-div {
-  flex: 1;
+    flex: 1;
 }
 
 .oc-conflict-pre-dlg-close-div {
-  flex: 1;
-  text-align: right;
+    flex: 1;
+    text-align: right;
 }
 
 .oc-conflct-pre-dlg-title {
@@ -1842,19 +1910,23 @@ div.crumb.crumbmenu a {
     margin-bottom: 0.5rem !important;
 }
 
-.fourbuttons button:hover, .fourbuttons button:focus, .fourbuttons button:active {
-    color:#E20074;
+.fourbuttons button:hover,
+.fourbuttons button:focus,
+.fourbuttons button:active {
+    color: #E20074;
 }
 
-.fourbuttons button:last-child:hover, .fourbuttons button:last-child:focus, .fourbuttons button:last-child:active {
-    color:#FFFFFF;
+.fourbuttons button:last-child:hover,
+.fourbuttons button:last-child:focus,
+.fourbuttons button:last-child:active {
+    color: #FFFFFF;
 }
 
-.oc-conflict-pre-dlg-close-div a{
+.oc-conflict-pre-dlg-close-div a {
     padding-right: 1.12rem;
     padding-bottom: 0.37rem;
     background-size: 1.5rem 1.5rem !important;
-  }
+}
 
 
 /*Responsive Styling*/
@@ -1883,6 +1955,7 @@ div.crumb.crumbmenu a {
         padding-top: 0.5rem;
         padding-bottom: 1rem;
     }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -1937,7 +2010,7 @@ div.crumb.crumbmenu a {
         height: 24px !important;
     }
     #viewer .modal-wrapper a.prev {
-        left: 30.5% !important;
+        left: 31.5% !important;
     }
     #viewer .modal-wrapper a.next {
         right: 25% !important;
@@ -1947,6 +2020,11 @@ div.crumb.crumbmenu a {
     }
     #filestable .summary {
         height: 150px;
+    }
+    .toastify.dialogs{
+      max-width: 312px !important;
+      min-width: 312px !important;
+      margin-left: -9.75rem !important;
     }
 }
 
@@ -2035,6 +2113,9 @@ div.crumb.crumbmenu a {
     #viewer a.next {
         right: 39.1% !important;
     }
+    #fileList td a a.action.action-menu {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -2057,4 +2138,9 @@ div.crumb.crumbmenu a {
     }
 }
 
+@media screen and (max-height: 700px) {
+    #app-navigation:not(.vue) ul {
+        padding-top: 0;
+    }
+}
 /*Responsive Styling*/

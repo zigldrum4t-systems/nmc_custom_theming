@@ -174,7 +174,7 @@ table th#headerDate {
 }
 
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
-    color: #E20074 !important;
+    color: #E20074;
 }
 
 #fileList .fileactions {
@@ -208,7 +208,7 @@ table th#headerDate {
 
 #fileList td a a.action.action-share {
     display: flex;
-    width: 55px;
+    width:64px;
     height: 44px;
     align-items: center;
 }
@@ -247,7 +247,8 @@ table th#headerDate {
     padding: 1.063rem 1rem !important;
 }
 
-#fileList .action.action-share.permanent.shared-style span:not(.icon) {
+#fileList .action.action-share.permanent.shared-style span:not(.icon),
+#fileList .action.action-share.permanent.shared-style span:not(.avatar) {
     margin-right: 0.5rem !important;
 }
 
@@ -563,7 +564,42 @@ table.multiselect #modified {
     margin-bottom: 1.5rem !important;
 }
 
-#app-content-trashbin #emptycontent .icon-delete:hover{
+#app-content-trashbin #emptycontent .icon-delete:hover {
     filter: none !important;
 }
 
+/*received-shares*/
+
+.fileactions .action .avatar img,
+.action .avatardiv img {
+    display: none !important;
+}
+
+.fileactions .action.action-share.permanent.shared-style .avatar {
+    height: 24px !important;
+    width: 24px !important;
+    margin: 0 !important;
+    background-image: var(--icon-cloud-blue) !important;
+    background-repeat: no-repeat;
+}
+
+#fileList .action.action-share.permanent.shared-style span:not(.icon) {
+    overflow: unset !important;
+}
+
+#fileList span.receiveData {
+    color: #0099ff !important;
+}
+
+.tooltip {
+    filter: unset !important;
+}
+
+.action-share span.avatar{
+   background-color: unset !important;
+    color: unset !important;
+    font-weight: unset !important;
+    text-align: unset !important;
+    line-height: unset !important;
+    font-size: unset !important;
+}

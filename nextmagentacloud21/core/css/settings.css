@@ -1,0 +1,261 @@
+#app-navigation.without-app-settings a:hover{
+    background-color: unset !important;
+  }
+
+  #personal-settings {
+    display: flex !important;
+    padding:3rem 1rem !important;
+    grid-template-columns: unset !important
+  }
+  #personal-settings-avatar-container {
+    display: flex !important;
+    grid-template-columns: unset !important;
+    grid-template-rows: unset !important;
+    vertical-align: unset !important;
+    flex-direction: column;
+  }
+  .personal-settings-container,
+  .profile-settings-container {
+    display: flex;
+    grid-template-columns: unset !important;
+    grid-template-rows: unset !important;
+    flex-wrap:wrap;
+  }
+ #personal-settings-avatar-container h3{
+    margin:unset !important;
+    color:#191919 !important;
+    font-weight: bold;
+    font-size:1.25rem;
+  }
+  #personal-settings .section {
+    padding:1rem 0 !important;
+  }
+  #personal-settings label{
+    margin-bottom: 0.25rem;
+  }
+  #personal-settings .personal-settings-language-box .section{
+    padding:0 !important;
+  }
+  #personal-settings .personal-settings-group-box{
+    padding:3rem 0 !important;
+  }
+  .personal-settings-setting-box h3{
+    font-size:1rem !important;
+    color:#666666 !important;
+    font-weight:normal !important;
+  }
+
+  .personal-settings-setting-box .section input[type='text'],
+  .personal-settings-setting-box .section input[type='email']{
+    width: 400px !important;
+    height:48px !important;
+    padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
+    background-color: #e5e5e5;
+    border:1px solid #e5e5e5;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif;
+  }
+
+  select#languageinput{
+    width: 400px !important;
+    height:48px !important;
+    padding:0.75rem 0.75rem 0.75rem 0.688rem;
+    background-color: #ffffff;
+    border:1px solid #191919;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif;
+  }
+  .personal-settings-setting-box{
+    margin-right:32px;
+  }
+
+  #personal-settings #app-sidebar,
+  .personal-settings-language-box em,
+  .federation-menu,
+  #emailform em,
+  #body-settings #app-sidebar{
+    display:none;
+  }
+  .telekom-link a{
+    color: #e20074;
+  }
+  .personal-settings-group-box b{
+    font-size:1.25rem;
+    color:#191919;
+  }
+  #personal-settings .personal-info {
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+  }
+  .quotatext-bg{
+    margin-bottom:0.5rem !important;
+  }
+  .telekom-link .icon-quota{
+    background-image: unset !important;
+  }
+
+  #personal-settings .personal-info[class^='icon-'],
+  #personal-settings .personal-info[class*=' icon-'] {
+    padding-left:0 !important
+  }
+
+  .extra-details{
+    margin-bottom: 1.5rem;
+  }
+
+  .extra-details strong {
+    margin-left:0.5rem;
+  }
+
+  .extra-details #files,
+  .extra-details #photos,
+  .extra-details #backup,
+  .extra-details #bin{
+    border-radius:30px;
+    width:16px;
+    height:8px;
+    display:inline-block;
+    margin:0.125rem 0.25rem;
+  }
+
+  .extra-details #files{
+    background-color: #22adb9;
+  }
+  .extra-details #photos{
+    background-color: #b682bd;
+  }
+  .extra-details #backup{
+    background-color: #828ac4;
+  }
+  .extra-details #bin{
+    background-color: #fc9a55;
+  }
+
+  #tarrifInfo{
+    margin-bottom:1.25rem;
+  }
+
+  #tarrifInfo b{
+  font-size:1.25rem;
+  margin-bottom:0.5rem;
+  }
+
+  #tarrifInfo button{
+    height:40px;
+    padding:0 1.5rem;
+    background-color: #ffffff;
+    border-color: #191919;
+    color:#191919;
+    border-radius: 4px;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif;
+    font-size: 1rem;
+    margin:1rem 0 0 0;
+    font-weight: normal;
+  }
+  #tarrifInfo button:hover{
+    border:1px solid #e20074 !important;
+    color:#e20074 !important;
+  }
+
+  /* Activity Notifications*/
+
+  #activity_notifications{
+    padding-top: 0;
+    max-width: 600px;
+    margin-bottom: 8rem;
+    border-bottom: none;
+  }
+
+  #activity_notifications table{
+    border-collapse: collapse;
+    max-width:unset !important;
+    width: 100% !important;
+    margin-top: 2rem;
+  }
+  #activity_notifications table tr{
+    border-bottom: 1px solid #e5e5e5;
+  }
+  #activity_notifications table td strong {
+    font-weight: 400;
+  }
+
+  #activity_notifications h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #191919;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #activity_notifications table th {
+    background: #f2f2f2;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 0.5rem;
+  }
+
+  #activity_notifications table td {
+    padding: 1rem 0.5rem;
+  }
+
+  #activity_notifications .mails-report-section p {
+    color: #666;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+#activity_notifications #notify_setting_batchtime {
+  margin-top: 0.5rem;
+}
+
+input[type='checkbox'].checkbox:checked + label:before{
+  background-color: #e20074;
+  border-color:#e20074 !important;
+}
+
+input[type='checkbox'].checkbox:checked:disabled + label:before{
+  border-color:#bababa !important;
+}
+
+/* Activity Notifications*/
+
+  #tarrifInfo h4{
+  margin-bottom:1rem;
+  font-size:1.25rem;
+  font-weight: bold;
+  }
+
+  p.quotatext {
+    color: #191919 !important;
+  }
+
+  #personal-settings .personal-info[class^='icon-'],
+  #personal-settings .personal-info[class*=' icon-'] {
+    opacity: unset !important;
+  }
+
+  .personal-settings-setting-box,
+  #personal-settings .personal-info {
+   margin-right: unset !important;
+  }
+
+  .personal-settings-language-box select{
+    margin-bottom: 1rem !important;
+  }
+
+  #app-navigation.without-app-settings  img{
+    width:24px !important;
+    height:24px !important;
+  }
+  #app-navigation.without-app-settings ul li:hover {
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+  }
+
+  #app-navigation.without-app-settings ul li.active,
+  #app-navigation.without-app-settings ul li.active a,
+  #app-navigation.without-app-settings ul li a:active,
+  #app-navigation.without-app-settings ul li a:active a,
+  #app-navigation.without-app-settings ul li a.selected,
+  #app-navigation.without-app-settings ul li a.selected a,
+  #app-navigation.without-app-settings ul li a.active,
+  #app-navigation.without-app-settings ul li a.active a {
+    background-color: unset !important;
+  }
