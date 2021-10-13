@@ -832,6 +832,9 @@ a.menuitem.action:hover>span,
     z-index: 999;
 }
 
+#body-settings .controls-section {
+  margin-top: -48px;
+}
 
 /* new custom changes*/
 
@@ -859,10 +862,6 @@ a.menuitem.action:hover>span,
     padding-top: 0;
     top: 184px;
     z-index: 99;
-}
-
-.app-settings{
-  z-index: 1 !important;
 }
 
 #content-vue.app-settings{

@@ -34,8 +34,8 @@
 	<?php endif;*/ ?>
 
 	<!-- <label for="notify_setting_batchtime"><?php p($l->t('Send notification emails:')); ?></label> -->
-  <h1>Notifications</h1>
-  <p>You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.</p>
+  <h1><?php p($l->t('Notifications')); ?></h1>
+  <p><?php p($l->t('You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.')); ?></p>
 	<select id="notify_setting_batchtime" name="notify_setting_batchtime">
 		<option value="3"<?php if ($_['setting_batchtime'] === \OCA\Activity\UserSettings::EMAIL_SEND_ASAP): ?> selected="selected"<?php endif; ?>><?php p($l->t('As soon as possible')); ?></option>
 		<option value="0"<?php if ($_['setting_batchtime'] === \OCA\Activity\UserSettings::EMAIL_SEND_HOURLY): ?> selected="selected"<?php endif; ?>><?php p($l->t('Hourly')); ?></option>
@@ -55,7 +55,6 @@
 
 		<?php foreach ($_['activityGroups'] as $group): ?>
       <?php
-
         unset($group['activities']['group_settings']);
         unset($group['activities']['comments']);
         unset($group['activities']['systemtags']);
