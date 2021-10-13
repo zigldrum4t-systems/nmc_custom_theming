@@ -191,7 +191,14 @@ div.crumb {
     background-image: var(--icon-more-custom) !important;
 }
 
+.icon-clippy {
+  background-image: var(--icon-clipboard-custom) !important;
 
+}
+
+.icon-mail {
+  background-image: var(--icon-mail-custom) !important;
+}
 /**navigation-icons**/
 
 #app-navigation .nav-icon-favorites {

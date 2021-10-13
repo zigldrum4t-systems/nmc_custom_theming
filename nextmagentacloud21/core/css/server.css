@@ -1182,11 +1182,11 @@ li>.menuitem[class*=' icon-'] {
     padding-right: 0 !important;
 }
 
-.popover__wrapper li.active span,
+/* .popover__wrapper li.active span,
 .popover__wrapper li.hover span {
     color: #E20074 !important;
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
-}
+} */
 
 .popover__wrapper li.active {
     box-shadow: none !important;
