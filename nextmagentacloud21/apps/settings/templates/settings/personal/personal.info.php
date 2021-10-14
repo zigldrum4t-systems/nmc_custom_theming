@@ -197,10 +197,11 @@ script('settings', [
                 [$_['usage']]
               )); ?></div>
                <div>
-               <div id="bin"></div> <?php print_unescaped($l->t(
-                'Recycle Bin:<strong>%1$s</strong>',
-                [$_['usage']]
-              )); ?></div>
+               <div id="bin"></div>
+                <?php
+                  print_unescaped($l->t('Recycle Bin:<strong>%1$s</strong>', isset($_['trashSize'])?[$_['trashSize']]:""));
+                ?>
+              </div>
     </div>
 <div>
 <?php print_unescaped($l->t(
@@ -216,7 +217,15 @@ script('settings', [
 
   </div>
 
-<?php $totalSpaceInGB = (int)$_['total_space']; ?>
+<?php
+    $totalSpaceInGB = null;
+    if($_['quota']>=1024){ // bytes converted
+      $totalSpaceInKB = round($_['quota'] / 1024, 1);
+      $totalSpaceInMB = round($totalSpaceInKB / 1024, 1);
+      $totalSpaceInGB = round($totalSpaceInMB / 1024, 1);
+    }
+
+?>
 <div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
   <b><?php p($l->t('Tariff information')); ?></b>
     <div>
