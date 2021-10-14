@@ -46,7 +46,10 @@
   }
 
   .personal-settings-setting-box .section input[type='text'],
-  .personal-settings-setting-box .section input[type='email']{
+  .personal-settings-setting-box .section input[type='email'],
+  #webdav-address input[type='text'],
+  #security input[type='text']
+  {
     width: 400px !important;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
@@ -259,3 +262,74 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   #app-navigation.without-app-settings ul li a.active a {
     background-color: unset !important;
   }
+
+  .app-password-row .icon{
+    background-size: 24px !important;
+  }
+  #webdav-address .button{
+    border-color: unset !important;
+    background-color: unset !important;
+    border-radius:unset !important;
+    border: unset !important;
+  }
+
+  #webdav-address .clipboardButton {
+    display: inline !important;
+  }
+  #webdav-address span{
+  color:#e20074;
+  }
+
+  #webdav-address span:hover{
+    text-decoration: underline;
+  }
+
+  #webdav-address div{
+    margin-top: 1rem;
+  }
+
+  .devices-session{
+    padding: 3rem 1rem !important;
+  }
+
+  #security{
+    padding-left: 1rem !important;
+  }
+
+  .devices-session .clientslinks {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+ }
+
+#clientslinks{
+   padding-bottom: 1.5rem;
+}
+#security thead tr{
+  background-color: #e5e5e5;
+}
+
+#setting-tokens-table{
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+#setting-session{
+  padding-bottom: 1rem;
+}
+
+.create-session{
+  margin-top: 0.5rem;
+  padding: 0.563rem 1.5rem !important;
+  border-color: #e20074 !important;
+  background-color: #e20074;;
+  color: #ffffff !important;
+  display: inline-block;
+  border-radius: 8px;
+  font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.42857143;
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #e20074 !important;
+}
+

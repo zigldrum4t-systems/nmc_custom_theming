@@ -429,3 +429,10 @@ aside .icon-close {
 .icon-public.icon-white {
     background-image: var(--icon-user-custom)!important;
 }
+
+.icon-clippy{
+  background-image: var(--icon-clippy-magenta) !important;
+  background-size: 24px;
+  min-width: 24px;
+  min-height: 24px;
+}

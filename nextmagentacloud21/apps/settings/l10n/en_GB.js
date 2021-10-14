@@ -290,6 +290,7 @@ OC.L10N.register(
     "No display name set" : "No display name set",
     "For password reset and notifications" : "For password reset and notifications",
     "Account information":"Account information",
-    "Notifications":"Notifications"
+    "Notifications":"Notifications",
+    "Session label":"Session label"
 },
 "nplurals=2; plural=(n != 1);");
