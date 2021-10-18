@@ -659,14 +659,26 @@ __webpack_require__.r(__webpack_exports__);
     */
     _formatShareList: function _formatShareList(recipients) {
       var _parent = this;
+      var returnVal='';
+      var firstname='';
 
       recipients = _.toArray(recipients);
       recipients.sort(function (a, b) {
         return a.shareWithDisplayName.localeCompare(b.shareWithDisplayName);
       });
-      return $.map(recipients, function (recipient) {
-        return _parent._formatRemoteShare(recipient.shareWith, recipient.shareWithDisplayName, t('files_sharing', 'Shared with'));
-      });
+      //  $.map(recipients, function (recipient) {
+      //   return _parent._formatRemoteShare(firstname, returnVal, t('files_sharing', 'Shared with'));
+      // });
+
+      $.each(recipients, function(key,val) {   
+        firstname =   val.shareWith;
+        returnVal+= val.shareWithDisplayName+",";        
+    }); 
+    returnVal = returnVal.replace(/,\s*$/, "");
+
+    returnVal= _parent._formatRemoteShare(firstname, returnVal, t('files_sharing', 'Shared with'));              
+     console.log(returnVal);
+     return returnVal;
     },
 
     /**
