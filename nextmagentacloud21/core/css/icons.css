@@ -199,6 +199,15 @@ div.crumb {
 .icon-mail {
   background-image: var(--icon-mail-custom) !important;
 }
+
+.popover__inner li:hover .icon-mail{
+  background-image: var(--icon-mail-magenta) !important;
+}
+
+
+.icon-mail {
+  background-image: var(--icon-mail-custom) !important;
+}
 /**navigation-icons**/
 
 #app-navigation .nav-icon-favorites {
@@ -229,7 +238,8 @@ div.crumb {
     background-image: var(--icon-delete-custom) !important;
 }
 
-#app-navigation .nav-icon-trashbin:hover {
+#app-navigation .nav-icon-trashbin:hover,
+.popover__inner li:hover .icon-close{
     background-image: var(--icon-delete-magenta) !important;
 }
 
@@ -368,6 +378,11 @@ div.crumb {
     background-image: var(--icon-triangle-s-000) !important;
 }
 
+.popover__inner li:hover .icon-settings {
+  background-image: var(--icon-edit-magenta) !important;
+}
+
+
 
 /*close-dialog-icons*/
 
@@ -385,7 +400,8 @@ aside .icon-close {
     background-image: var(--icon-favourite-custom) !important;
 }
 
-.icon-star-dark {
+.icon-star-dark,
+aside .icon-starred {
     background-image: var( --icon-yellow-fav) !important;
 }
 
@@ -427,5 +443,20 @@ aside .icon-close {
 
 .icon-public-white,
 .icon-public.icon-white {
-    background-image: var(--icon-user-custom)!important;
+    background-image: var(--icon-link-custom)!important;
+}
+
+/*check-mark-sharing*/
+.icon-checkmark-color{
+  background-image: var(--icon-checkmark-magenta)!important;
+}
+/*star-gray*/
+
+aside .icon-star{
+  background-image: var(--icon-star-gray)!important;
+}
+
+/*cloud-icon*/
+.avatardiv:not(.avatardiv--unknown) {
+  background-image: var(--icon-magenta-cloud)!important;
 }

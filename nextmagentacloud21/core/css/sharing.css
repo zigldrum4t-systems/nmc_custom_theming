@@ -64,7 +64,7 @@ li.share-link-password-talk-checkbox,
 #tab-sharing .action-input__label,
 .avatardiv img,
 .sharing-entry .avatardiv.popovermenu-wrapper .icon-more,
-.app-sidebar-tabs__nav .activityTabView{
+.app-sidebar-tabs__nav #activityTabView{
   display: none !important;
 }
 
@@ -89,7 +89,6 @@ aside .icon-star {
 
 .action-radio__label,
 .action-checkbox__label {
-  color: #666666 !important;
   padding: 0 !important;
   opacity: unset !important;
   margin-top: 0.5rem;
@@ -127,7 +126,11 @@ aside .icon-star {
 }
 
 #tab-sharing button.status-buttons__select:hover {
-  color: #e20074 !important;
+  border-color: #e20074 !important;
+  color:#e20074;
+}
+#tab-sharing button.status-buttons__select:focus{
+  border-color:#e20074 !important;
 }
 
 #tab-sharing button.status-buttons__primary {
@@ -136,7 +139,7 @@ aside .icon-star {
   color: #ffffff;
 }
 
-#tab-sharing button.status-buttons__primary:hover {
+#tab-sharing button.status-buttons__primary:hover{
   background-color: #f90984 !important;
   border: 1px solid #e20074 !important;
 }
@@ -172,11 +175,26 @@ aside .icon-star {
 .multiselect__tags {
 margin-top:1rem;
 }
+
+.sharing-permissions input,
 #tab-sharing textarea {
-  color: #666666 !important;
-  border: 1px solid #e20074 !important;
+  color: #191919 !important;
+  border: 1px solid #191919 !important;
   height: 48px !important;
 }
+
+.sharing-permissions input:focus,
+#tab-sharing textarea:focus,
+.sharing-permissions input:hover,
+#tab-sharing textarea:hover{
+  border-color:#e20074 !important;
+}
+
+.mx-input-wrapper:hover svg,
+.mx-input-wrapper:active svg{
+  fill: #e20074 !important;
+}
+
 
 #tab-sharing .action-input__input {
   min-height: unset !important;
@@ -191,9 +209,7 @@ margin-top:1rem;
   padding: 0 !important;
 }
 
-#tab-sharing .mx-datepicker svg {
-  fill: #e20074 !important;
-}
+
 
 #tab-sharing textarea {
   height: 220px !important;
@@ -241,7 +257,7 @@ margin-top:1rem;
   font-size: 0.875rem !important;
 }
 
-.sharing-entry__desc select:hover {
+.sharing-entry__desc select {
   color: #e20074 !important;
 }
 
@@ -281,8 +297,18 @@ aside .action-item.action-item--open .action-item__menutoggle,
   border-color: unset !important;
   box-shadow: unset !important;
 }
+
+.sharing-notes{
+  margin-top:1.5rem;
+}
+
 .sharing-notes .note-subtitle {
 font-size:0.875rem !important;
+}
+
+.sharing-permissions,
+.sharing-notes{
+  margin-top:1.5rem;
 }
 
 .sharing-permissions .permissions{
@@ -328,6 +354,74 @@ padding:0 !important;
 
 .avatardiv:not(.avatardiv--unknown) {
   background-color:unset !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.action-item--single ,
+.action-item__menutoggle ,
+.action-button {
+  opacity: unset !important;
+}
+
+
+
+.popover__inner li:hover span{
+  color:#e20074 !important;
+}
+
+.app-sidebar-tabs__tab {
+  flex: unset !important;
+}
+
+aside .multiselect .multiselect__tags,
+aside input:not([type='radio']) {
+  min-height:40px !important;
+  border-color:#191919 !important;
+  color:#191919;
+}
+
+aside .multiselect .multiselect__tags:hover,
+aside input:not([type='radio']):hover
+aside .multiselect .multiselect__tags:active,
+aside input:not([type='radio']):active{
+  border-color:#e20074 !important;
+}
+
+.advanced-settings{
+font-weight:bold;
+}
+
+.password-message {
+margin-left: unset !important;
+color: #666666 !important;
+font-weight: normal;
+margin-bottom:4px;
+}
+
+.advanced-settings li:last-child .action-input {
+margin-bottom: unset !important;
+}
+
+
+nav .app-sidebar-tabs__nav {
+margin-bottom:0.25rem;
+}
+.app-sidebar-tabs__tab a#sharing{
+text-align: left;
+font-size: 1.25rem;
+}
+
+.app-sidebar-tabs__tab a {
+padding:0 !important;
+}
+
+.advanced-settings{
+  margin-top:0.25rem;
+}
+
+.avatardiv:not(.avatardiv--unknown) {
+  background-color:unset !important;
   background-image: var(--icon-magenta-cloud);
   background-repeat: no-repeat;
   background-position: center;
@@ -339,3 +433,58 @@ padding:0 !important;
   opacity: unset !important;
 }
 
+.note-subtitle,
+.sharing-message{
+  margin-top:0.25rem;
+}
+
+p.sharing-input-subtitle{
+  font-size:0.875rem;
+  color: #0d0dec;
+}
+.add-new-link-btn{
+  margin:0.75rem 0 1rem 0;
+  width:135px;
+  background-color: #ffffff !important;
+  border: 1px solid #191919;
+  color: #191919;
+  border-radius:4px !important;
+  padding: 0.563rem 1.5rem !important;
+  height:40px;
+  font-weight:normal;
+}
+.add-new-link-btn:hover{
+  color:#e20074;
+}
+
+aside .app-sidebar-header__menu{
+  display: none !important;
+}
+
+aside select[disabled]{
+  color:#666666 !important;
+}
+
+ #tab-sharing input[type='radio'][disabled].radio:checked+label:before,
+  #tab-sharing input[type='radio'][disabled].radio.checkbox:indeterminate+label:before {
+    box-shadow: inset 0px 0px 0px 5px #666666 !important;
+    background-color: white !important;
+    border-color: #666666 !important;
+}
+aside .icon-triangle-s {
+  display:inline-block;
+  vertical-align: text-top;
+  cursor:pointer;
+}
+.mx-datepicker-main.mx-datepicker-popup{
+  left:0 !important
+}
+
+.mx-datepicker .mx-table .cell:hover,
+.mx-datepicker .mx-table .cell:focus,
+.mx-datepicker .mx-table .cell.actived,
+ .mx-datepicker .mx-table .cell.active,
+ .mx-datepicker .mx-table .cell.in-range {
+   background-color:#e20074 !important;
+   opacity: 0.7;
+ }
