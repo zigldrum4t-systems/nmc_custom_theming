@@ -1052,10 +1052,8 @@ div.crumb:last-child {
 }
 
 button:not(:disabled):not(.primary):hover,
-button:not(:disabled):not(.primary):focus,
 button:not(:disabled):not(.primary).active,
 .button:not(:disabled):not(.primary):hover,
-.button:not(:disabled):not(.primary):focus,
 .button:not(:disabled):not(.primary).active,
 .pager li a:not(:disabled):not(.primary):hover,
 .pager li a:not(:disabled):not(.primary):focus,
@@ -1210,8 +1208,8 @@ li>.menuitem[class*=' icon-'] {
 .action-item.action-item--open .action-item__menutoggle {
     background-color: unset !important;
     background-image: var(--icon-menutoggle-magenta) !important;
-    min-height: 1.5rem !important;
-    min-width: 1.5rem !important;
+    /* min-height: 1.5rem !important;
+    min-width: 1.5rem !important; */
 }
 
 .action-item__menutoggle--default-icon:before {
