@@ -193,7 +193,6 @@ div.crumb {
 
 .icon-clippy {
   background-image: var(--icon-clipboard-custom) !important;
-
 }
 
 .icon-mail {
@@ -459,4 +458,10 @@ aside .icon-star{
 /*cloud-icon*/
 .avatardiv:not(.avatardiv--unknown) {
   background-image: var(--icon-magenta-cloud)!important;
+}
+
+#webdav-address .icon-clippy, .app-password-row .icon-clippy{
+  background-image: var(--icon-clippy-magenta) !important;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
 }
