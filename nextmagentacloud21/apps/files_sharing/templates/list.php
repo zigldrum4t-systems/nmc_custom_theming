@@ -27,9 +27,12 @@
     <span class="sort-indicator zero-font"></span>
   </a>
 </th>
+
 <th id="headerDate" class="hidden column-mtime">
-<a id="modified" class="columntitle" data-sort="mtime"><span><?php p($l->t('Modified')); ?></span><span class="sort-indicator"></span></a>
-</th>
+				<a id="modified" class="columntitle" data-sort="mtime"><span><?php p($l->t('Share time')); ?></span><span class="sort-indicator"></span></a>
+			</th>
+
+      
 <th class="hidden column-expiration">
 <a class="columntitle"><span><?php p($l->t('Expiration date')); ?></span></a>
 </th>

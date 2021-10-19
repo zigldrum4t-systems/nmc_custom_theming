@@ -141,14 +141,7 @@
         color: #e20074 !important;
     }
 
-    button:not(:disabled):not(.primary):hover,
-    button:not(:disabled):not(.primary):focus,
-    button:not(:disabled):not(.primary).active,
-    .button:not(:disabled):not(.primary):hover,
-    .button:not(:disabled):not(.primary):focus,
-    .button:not(:disabled):not(.primary).active {
-        border-color: #e20074 !important;
-    }
+
 
     div[contenteditable=true]:not(:disabled):not(.primary):hover,
     div[contenteditable=true]:not(:disabled):not(.primary):focus,

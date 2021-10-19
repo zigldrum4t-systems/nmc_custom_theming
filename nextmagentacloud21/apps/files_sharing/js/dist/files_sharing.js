@@ -550,12 +550,10 @@ window.addEventListener('DOMContentLoaded', function () {
     },
     _createRow: function _createRow(fileData) {
       // TODO: hook earlier and render the whole row here
-      var td, simpleSize, sizeColor;
+      var $tr = OCA.Files.FileList.prototype._createRow.apply(this, arguments);
 
-      var $tr = OCA.Files.FileList.prototype._createRow.apply(this, arguments); //$tr.find('.filesize').remove()
-
-
-      $tr.find('td.filesize').before($tr.children('td:first'));
+      $tr.find('.filesize').remove();
+      $tr.find('td.date').before($tr.children('td:first'));
       $tr.find('td.filename input:checkbox').remove();
       $tr.attr('data-share-id', _.pluck(fileData.shares, 'id').join(','));
 
@@ -600,49 +598,6 @@ window.addEventListener('DOMContentLoaded', function () {
           modifiedColor = 160;
         }
 
-        var isDarkTheme = OCA.Accessibility && OCA.Accessibility.theme === 'dark';
-
-        try {
-          var maxContrastHex = window.getComputedStyle(document.documentElement).getPropertyValue('--color-text-maxcontrast').trim();
-
-          if (maxContrastHex.length < 4) {
-            throw Error();
-          }
-
-          var maxContrast = parseInt(maxContrastHex.substring(1, 3), 16);
-        } catch (error) {
-          var maxContrast = isDarkTheme ? 130 : 118;
-        } // size column
-
-
-        if (typeof fileData.size !== 'undefined' && fileData.size >= 0) {
-          simpleSize = OC.Util.humanFileSize(parseInt(fileData.size, 10), true); // rgb(118, 118, 118) / #767676
-          // min. color contrast for normal text on white background according to WCAG AA
-
-          sizeColor = Math.round(118 - Math.pow(fileData.size / (1024 * 1024), 2)); // ensure that the brightest color is still readable
-          // min. color contrast for normal text on white background according to WCAG AA
-
-          if (sizeColor >= maxContrast) {
-            sizeColor = maxContrast;
-          }
-
-          if (isDarkTheme) {
-            sizeColor = Math.abs(sizeColor); // ensure that the dimmest color is still readable
-            // min. color contrast for normal text on black background according to WCAG AA
-
-            if (sizeColor < maxContrast) {
-              sizeColor = maxContrast;
-            }
-          }
-        } else {
-          simpleSize = t('files', 'Pending');
-        }
-
-        td = $('<td></td>').attr({
-          "class": "filesize",
-          "style": 'color:rgb(' + sizeColor + ',' + sizeColor + ',' + sizeColor + ')'
-        }).text(simpleSize);
-        tr.append(td);
         td = $('<td></td>').attr({
           'class': 'date'
         });
@@ -653,7 +608,6 @@ window.addEventListener('DOMContentLoaded', function () {
         }).text(text).tooltip({
           placement: 'top'
         }));
-        tr.find('.filesize').text(simpleSize);
         $tr.append(td);
       }
 
@@ -863,7 +817,6 @@ window.addEventListener('DOMContentLoaded', function () {
           icon: OC.MimeType.getIconUrl(share.mimetype),
           mimetype: share.mimetype,
           hasPreview: share.has_preview,
-          size: share.size,
           tags: share.tags || []
         };
 
@@ -1033,6 +986,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_app__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _js_sharedfilelist__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/sharedfilelist */ "./apps/files_sharing/js/sharedfilelist.js");
 /* harmony import */ var _js_sharedfilelist__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_sharedfilelist__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * @copyright Copyright (c) 2016 John Molakvoæ <skjnldsv@protonmail.com>
+ *
+ * @author John Molakvoæ <skjnldsv@protonmail.com>
+ * @author Julius Härtl <jus@bitgrid.net>
+ *
+ * @license GNU AGPL version 3 or any later version
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
 
  // eslint-disable-next-line camelcase
 
