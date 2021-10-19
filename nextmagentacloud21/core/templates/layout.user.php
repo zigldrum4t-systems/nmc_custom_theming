@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html class="ng-csp" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" data-locale="<?php p($_['locale']); ?>">
-
 <head data-user="<?php p($_['user_uid']); ?>" data-user-displayname="<?php p($_['user_displayname']); ?>" data-requesttoken="<?php p($_['requesttoken']); ?>">
 
   <meta charset="utf-8">
-
   <title>
     <?php
     p(!empty($_['application']) ? $_['application'] . ' - ' : '');
@@ -26,12 +24,10 @@
   <link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
   <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
   <link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
-
   <?php emit_css_loading_tags($_); ?>
   <?php emit_script_loading_tags($_); ?>
   <?php print_unescaped($_['headers']); ?>
 </head>
-
 
 <body id="<?php p($_['bodyid']); ?>">
   <?php include 'layout.noscript.warning.php'; ?>
@@ -46,7 +42,6 @@
   <div id="notification-container">
     <div id="notification"></div>
   </div>
-
 
   <div class="MenuWrapperParent">
     <div class="brandbar">
@@ -196,7 +191,6 @@
   </div>
   <div class="full-width-breadcrumb"></div>
 
-
   <div id="sudo-login-background" class="hidden"></div>
   <form id="sudo-login-form" class="hidden" method="POST">
     <label>
@@ -234,5 +228,4 @@
     </div>
   </footer>
 </body>
-
 </html>
