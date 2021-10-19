@@ -969,14 +969,14 @@ div.crumb:last-child {
     margin-top: 0 !important;
 }
 
-.tooltip .tooltip-inner {
-    background: #ffffff;
-    color: #191919 !important;
-    padding: 16px;
-    font-family: TeleNeo, sans-serif;
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: var(--scl-shadow-level-1);
+.tooltip .tooltip-inner, .vue-tooltip .tooltip-inner {
+  background: #ffffff;
+  color: #191919 !important;
+  padding: 1rem !important;
+  font-family: TeleNeo, sans-serif;
+  max-width: 100%;
+  border-radius: 8px !important;
+  box-shadow: var(--scl-shadow-level-1) !important;
 }
 
 .popover__inner {
@@ -1674,9 +1674,9 @@ iframe.viewer__file {
 
 /* preview css*/
 
-.icon-loading-small {
+/* .icon-loading-small {
     display: none;
-}
+} */
 
 
 /*Copy-move-dialog*/
