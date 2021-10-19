@@ -832,6 +832,9 @@ a.menuitem.action:hover>span,
     z-index: 999;
 }
 
+#body-settings .controls-section {
+  margin-top: -48px;
+}
 
 /* new custom changes*/
 
@@ -859,10 +862,6 @@ a.menuitem.action:hover>span,
     padding-top: 0;
     top: 184px;
     z-index: 99;
-}
-
-.app-settings{
-  z-index: 1 !important;
 }
 
 #content-vue.app-settings{
@@ -1053,10 +1052,8 @@ div.crumb:last-child {
 }
 
 button:not(:disabled):not(.primary):hover,
-button:not(:disabled):not(.primary):focus,
 button:not(:disabled):not(.primary).active,
 .button:not(:disabled):not(.primary):hover,
-.button:not(:disabled):not(.primary):focus,
 .button:not(:disabled):not(.primary).active,
 .pager li a:not(:disabled):not(.primary):hover,
 .pager li a:not(:disabled):not(.primary):focus,
@@ -1183,11 +1180,11 @@ li>.menuitem[class*=' icon-'] {
     padding-right: 0 !important;
 }
 
-.popover__wrapper li.active span,
+/* .popover__wrapper li.active span,
 .popover__wrapper li.hover span {
     color: #E20074 !important;
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
-}
+} */
 
 .popover__wrapper li.active {
     box-shadow: none !important;
@@ -1211,8 +1208,8 @@ li>.menuitem[class*=' icon-'] {
 .action-item.action-item--open .action-item__menutoggle {
     background-color: unset !important;
     background-image: var(--icon-menutoggle-magenta) !important;
-    min-height: 1.5rem !important;
-    min-width: 1.5rem !important;
+    /* min-height: 1.5rem !important;
+    min-width: 1.5rem !important; */
 }
 
 .action-item__menutoggle--default-icon:before {
