@@ -186,17 +186,17 @@ script('settings', [
 
   // convert to percentage for progress bar
 
-  $proFiles = $filesSizeinBytes / $defaultQuota;
-  $proPhotoVideo = $filesSizeinBytes / $photoVideoSizeinBytes;
-  $proLiveBackup = $filesSizeinBytes / $liveBackSizeinBytes;
-  $proRecycle = $filesSizeinBytes / $recyclebinSizeinBytes;
+  $proFiles = ($filesSizeinBytes / $defaultQuota) * 100;
+  $proPhotoVideo = ($filesSizeinBytes / $photoVideoSizeinBytes) * 100;
+  $proLiveBackup = ($filesSizeinBytes / $liveBackSizeinBytes) * 100;
+  $proRecycle = ($filesSizeinBytes / $recyclebinSizeinBytes) * 100;
 
 // use below values for progress bar
 ?>
 <?php // echo $proFiles; ?>
 <?php // echo $proPhotoVideo; ?>
 <?php // echo $proLiveBackup; ?>
-<?php // echo $proRecycle; ?>
+<?php  // echo $proRecycle; exit; ?>
 
 
         <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage_relative'] > 80) : ?> class="warn" <?php endif; ?>></progress>
