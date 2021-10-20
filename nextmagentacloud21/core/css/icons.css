@@ -439,6 +439,9 @@ aside .icon-starred {
 
 
 /*user-icon*/
+.icon-mail-white, .icon-mail.icon-white{
+  background-image: var(--icon-user-custom)!important;
+}
 
 .icon-public-white,
 .icon-public.icon-white {
