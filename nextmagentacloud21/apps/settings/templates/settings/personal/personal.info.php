@@ -176,6 +176,29 @@ script('settings', [
             <?php endif ?>
           </p>
         </div>
+
+<?php
+  $defaultQuota = $_['quota'];
+  $filesSizeinBytes = 10000002;
+  $photoVideoSizeinBytes = 15000000;
+  $liveBackSizeinBytes = 18000000;
+  $recyclebinSizeinBytes = 92220000;
+
+  // convert to percentage for progress bar
+
+  $proFiles = $filesSizeinBytes / $defaultQuota;
+  $proPhotoVideo = $filesSizeinBytes / $photoVideoSizeinBytes;
+  $proLiveBackup = $filesSizeinBytes / $liveBackSizeinBytes;
+  $proRecycle = $filesSizeinBytes / $recyclebinSizeinBytes;
+
+// use below values for progress bar
+?>
+<?php // echo $proFiles; ?>
+<?php // echo $proPhotoVideo; ?>
+<?php // echo $proLiveBackup; ?>
+<?php // echo $proRecycle; ?>
+
+
         <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage_relative'] > 80) : ?> class="warn" <?php endif; ?>></progress>
       </div>
       <div class="extra-details">
