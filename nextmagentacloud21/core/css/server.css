@@ -2157,4 +2157,28 @@ select#languageinput {
   width:320px !important
 }
 }
+
+@media screen and (max-width: 768px) {
+    .app-password-username-row {
+		display: table-caption;
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .app-password-row {
+		display: table-caption !important;
+	}
+
+	.devices-session .clientslinks {
+		display: grid !important;
+	}
+
+    #clientslinks{
+		display: grid !important;
+	}
+
+	#webdav-address div {
+		display: grid;
+	}
+}
 /*Responsive Styling*/
