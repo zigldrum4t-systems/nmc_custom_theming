@@ -2141,4 +2141,20 @@ iframe.viewer__file {
         padding-top: 0;
     }
 }
+
+@media screen and (max-width: 420px) {
+  .personal-settings-setting-box .section input[type='text'],
+   .personal-settings-setting-box .section input[type='email'] {
+     width:auto !important;
+}
+.telekom-link p {
+ width:364px !important;
+}
+select#languageinput {
+  width:auto !important;
+}
+#body-settings #quota {
+  width:320px !important
+}
+}
 /*Responsive Styling*/
