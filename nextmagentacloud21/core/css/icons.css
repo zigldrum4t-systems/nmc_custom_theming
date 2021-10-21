@@ -364,16 +364,19 @@ div.crumb {
 /*filelist-toggle-icons*/
 
 .filelist-container .icon-triangle-s,
-#filestable .icon-triangle-s {
-    background-image: var(--icon-triangle-s-e20074);
+#filestable .icon-triangle-s ,
+.advanced-settings label:hover span.icon-triangle-s,
+.advanced-settings label:active span.icon-triangle-s,
+.sharing-entry__desc select {
+    background-image: var(--icon-triangle-s-e20074) !important;
 }
 
 .filelist-container .icon-triangle-n,
 #filestable .icon-triangle-n {
-    background-image: var(--icon-triangle-s-e20074);
+    background-image: var(--icon-triangle-n-e20074);
 }
 
-.sharing-entry__desc select {
+aside select[disabled]{
     background-image: var(--icon-triangle-s-000) !important;
 }
 

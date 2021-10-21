@@ -380,3 +380,11 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
     color: #e20074;
   }
+
+  #personal-settings  input:not(:disabled):not(.primary):hover,
+  #personal-settings  input:not(:disabled):not(.primary):focus,
+  #personal-settings  input:not(:disabled):not(.primary).active{
+      border-color:#e5e5e5 !important;
+      background-color: #e5e5e5 !important;
+    }
+
