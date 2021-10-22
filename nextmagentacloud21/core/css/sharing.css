@@ -519,4 +519,8 @@ aside .icon-triangle-s {
    background-color:#ffffff !important;
  }
 
-
+ .readonly-message{
+   margin-top:0.25rem;
+   color:#666666;
+   margin-left: unset !important;
+ }
