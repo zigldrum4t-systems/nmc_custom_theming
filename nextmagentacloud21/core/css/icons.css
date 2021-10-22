@@ -238,7 +238,9 @@ div.crumb {
 }
 
 #app-navigation .nav-icon-trashbin:hover,
-.popover__inner li:hover .icon-close{
+.popover__inner li:hover .icon-close,
+.popover__wrapper li.hover .icon-delete,
+.popover__inner li:hover span.icon-delete{
     background-image: var(--icon-delete-magenta) !important;
 }
 
@@ -380,7 +382,9 @@ aside select[disabled]{
     background-image: var(--icon-triangle-s-000) !important;
 }
 
-.popover__inner li:hover .icon-settings {
+.popover__inner li:hover .icon-settings,
+.popover__wrapper li.hover .icon-rename,
+.popover__inner li:hover span.icon-rename{
   background-image: var(--icon-edit-magenta) !important;
 }
 

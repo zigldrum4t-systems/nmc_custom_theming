@@ -428,3 +428,6 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
       background-color: #e5e5e5 !important;
     }
 
+  .vue-tooltip {
+   top:12px !important;
+  }
