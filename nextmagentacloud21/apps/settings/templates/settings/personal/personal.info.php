@@ -53,7 +53,7 @@ script('settings', [
         </h3>
         <input type="text" id="displayname" name="displayname" read-only <?php if (!$_['displayNameChangeSupported']) {
                                                                   print_unescaped('class="hidden"');
-                                                                } ?> value="<?php p($_['displayName']) ?>" autocomplete="on" autocapitalize="none" autocorrect="off" />
+                                                                } ?> value="<?php p($_['displayName']) ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly/>
         <?php if (!$_['displayNameChangeSupported']) { ?>
           <span><?php if (isset($_['displayName']) && !empty($_['displayName'])) {
                   p($_['displayName']);
@@ -95,7 +95,7 @@ script('settings', [
         </div>
         <input type="email" name="email" id="email" value="<?php p($_['email']); ?>" <?php if (!$_['displayNameChangeSupported']) {
                                                                                         print_unescaped('class="hidden"');
-                                                                                      } ?> placeholder="<?php p($l->t('Your email address')); ?>" autocomplete="on" autocapitalize="none" autocorrect="off" />
+                                                                                      } ?> placeholder="<?php p($l->t('Your email address')); ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly />
         <span class="icon-checkmark hidden"></span>
         <span class="icon-error hidden"></span>
         <?php if (!$_['displayNameChangeSupported']) { ?>

@@ -38,7 +38,7 @@ aside .icon-close {
 }
 
 .app-sidebar .app-sidebar-header__desc {
-  padding: 0.5rem 0.375rem 1.5rem 0 !important;
+ padding: 0.5rem 0.375rem 1.5rem 0 !important;
 }
 
 .app-sidebar .app-sidebar-header__desc .app-sidebar-header__tertiary-actions {
@@ -106,7 +106,7 @@ aside .icon-star {
 
 /*buttons*/
 
-#tab-sharing button.status-buttons__select,
+ #tab-sharing button.status-buttons__select,
 #tab-sharing button.status-buttons__primary {
   padding: 0 1.5rem !important;
   min-height: 40px !important;
@@ -230,7 +230,8 @@ margin-top:1rem;
 
 .avatardiv--unknown,
 .sharing-entry .avatar-link-share,
-.avatar-class-icon {
+.avatar-class-icon ,
+#app-settings-header .settings-button:focus{
   background-color: unset !important;
 }
 
@@ -241,7 +242,9 @@ margin-top:1rem;
   height: 16px !important;
   color: #b2b2b2 !important;
   font-weight: bold;
-  background: var(--icon-triangle-s-000) no-repeat left -2px center !important;
+  background-repeat: no-repeat;
+  background-position: left center;
+  /* background: var(--icon-triangle-s-e20074) no-repeat left -2px center !important; */
 }
 
 .action-item--single:hover,
@@ -308,11 +311,11 @@ font-size:0.875rem !important;
 
 .sharing-permissions,
 .sharing-notes{
-  margin-top:1.5rem;
+  margin-top:1rem;
 }
 
 .sharing-permissions .permissions{
-font-size:1.25rem;
+font-size:1rem;
 font-weight:bold;
 }
 
@@ -349,7 +352,7 @@ padding:0 !important;
 }
 
 .advanced-settings{
-  margin-top:0.25rem;
+  margin-top:2rem;
 }
 
 .avatardiv:not(.avatardiv--unknown) {
@@ -396,7 +399,7 @@ font-weight:bold;
 margin-left: unset !important;
 color: #666666 !important;
 font-weight: normal;
-margin-bottom:4px;
+margin-bottom:0.25rem;
 }
 
 .advanced-settings li:last-child .action-input {
@@ -417,7 +420,7 @@ padding:0 !important;
 }
 
 .advanced-settings{
-  margin-top:0.25rem;
+  margin-top:2rem !important;
 }
 
 .avatardiv:not(.avatardiv--unknown) {
@@ -473,18 +476,47 @@ aside select[disabled]{
 }
 aside .icon-triangle-s {
   display:inline-block;
-  vertical-align: text-top;
+  vertical-align: middle;
   cursor:pointer;
 }
 .mx-datepicker-main.mx-datepicker-popup{
-  left:0 !important
+  left:0 !important;
 }
 
 .mx-datepicker .mx-table .cell:hover,
 .mx-datepicker .mx-table .cell:focus,
 .mx-datepicker .mx-table .cell.actived,
- .mx-datepicker .mx-table .cell.active,
- .mx-datepicker .mx-table .cell.in-range {
+.mx-datepicker .mx-table .cell.active,
+.mx-datepicker .mx-table .cell.in-range {
    background-color:#e20074 !important;
    opacity: 0.7;
  }
+
+ .app-sidebar .app-sidebar-header__desc .app-sidebar-header__title-container {
+   flex: unset !important;
+ }
+
+ .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__desc .app-sidebar-header__tertiary-actions {
+   top:3px !important;
+   left: -2px !important;
+ }
+
+ aside.app-sidebar:not(.has-preview) .app-sidebar-header__title-container{
+   margin-top:0.875rem;
+   margin-left:1.875rem;
+
+ }
+ .app-sidebar .app-sidebar-header__desc {
+   justify-content: unset !important;
+ }
+
+ .advanced-settings label:hover,
+ .advanced-settings label:active{
+   color:#e20074 !important;
+ }
+
+ .sharing-link-list select:disabled{
+   background-color:#ffffff !important;
+ }
+
+

@@ -60123,7 +60123,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return !_vm.adding
-    ? _c("div", [
+    ? _c("div", { attrs: { id: "settings-input" } }, [
         _c("div", { attrs: { id: "setting-tokens-table" } }, [
           _vm._v(
             "\n\t\t" +
@@ -60295,17 +60295,17 @@ var render = function() {
                 _vm.hoveringCopyButton = false
               }
             }
-          }),
-          _vm._v(" "),
-          _c("button", { staticClass: "button", on: { click: _vm.reset } }, [
-            _vm._v("\n\t\t\t" + _vm._s(_vm.t("settings", "Done")) + "\n\t\t")
-          ])
+          })
         ]),
         _vm._v(" "),
         _c(
           "div",
           { staticClass: "app-password-code" },
           [
+            _c("button", { staticClass: "button", on: { click: _vm.reset } }, [
+              _vm._v("\n\t\t\t" + _vm._s(_vm.t("settings", "Done")) + "\n\t\t")
+            ]),
+            _vm._v(" "),
             _c("span", { staticClass: "app-password-label" }),
             _vm._v(" "),
             !_vm.showQR
@@ -73408,4 +73408,4 @@ module.exports = g;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-settings-personal-security.js.map?v=ef0f6721223228924134
+//# sourceMappingURL=vue-settings-personal-security.js.map?v=37a7b8cd996219c953cd

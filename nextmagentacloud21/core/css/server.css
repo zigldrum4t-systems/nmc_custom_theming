@@ -2142,4 +2142,43 @@ iframe.viewer__file {
 }
 
 
+@media screen and (max-width: 420px) {
+  .personal-settings-setting-box .section input[type='text'],
+   .personal-settings-setting-box .section input[type='email'] {
+     width:auto !important;
+}
+.telekom-link p {
+ width:364px !important;
+}
+select#languageinput {
+  width:auto !important;
+}
+#body-settings #quota {
+  width:320px !important
+}
+}
+
+@media screen and (max-width: 768px) {
+    .app-password-username-row {
+		display: table-caption;
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .app-password-row {
+		display: table-caption !important;
+	}
+
+	.devices-session .clientslinks {
+		display: grid !important;
+	}
+
+    #clientslinks{
+		display: grid !important;
+	}
+
+	#webdav-address div {
+		display: grid;
+	}
+}
 /*Responsive Styling*/
