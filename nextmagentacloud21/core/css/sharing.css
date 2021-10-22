@@ -64,7 +64,8 @@ li.share-link-password-talk-checkbox,
 #tab-sharing .action-input__label,
 .avatardiv img,
 .sharing-entry .avatardiv.popovermenu-wrapper .icon-more,
-.app-sidebar-tabs__nav #activityTabView{
+.app-sidebar-tabs__nav #activityTabView,
+.app-sidebar-tabs__tab #activity{
   display: none !important;
 }
 
@@ -523,4 +524,7 @@ aside .icon-triangle-s {
    margin-top:0.25rem;
    color:#666666;
    margin-left: unset !important;
+ }
+ .app-sidebar-tabs__tab #activity{
+   display:none;
  }
