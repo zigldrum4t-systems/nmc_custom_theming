@@ -5,6 +5,10 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
   <ul class="with-icon">
     <?php
 
+    if(isset($_['navigationItems']['filesactivity'])){
+      $customNavigationItems['filesactivity'] = $_['navigationItems']['filesactivity'];
+    }
+
     $customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
     $customNavigationItems['files'] = $_['navigationItems']['files'];
 
@@ -15,6 +19,8 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
     $customNavigationItems['sharingin']['name'] = 'Shared with me';
 
     $customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
+
+
     $pinned = 0;
 
     foreach ($customNavigationItems as $item) {
