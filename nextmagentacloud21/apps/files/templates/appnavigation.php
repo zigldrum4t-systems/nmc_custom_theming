@@ -5,8 +5,8 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
   <ul class="with-icon">
     <?php
 
-    if(isset($_['navigationItems']['filesactivity'])){
-      $customNavigationItems['filesactivity'] = $_['navigationItems']['filesactivity'];
+    if(isset($_['navigationItems']['nmc_files_activity'])){
+      $customNavigationItems['nmc_files_activity'] = $_['navigationItems']['nmc_files_activity'];
     }
 
     $customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
