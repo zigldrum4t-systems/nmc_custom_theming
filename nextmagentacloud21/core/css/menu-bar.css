@@ -630,3 +630,7 @@
 .toastify.dialogs.toast-error {
   border-left:16px solid #ed425b !important;
 }
+
+.toastify.dialogs .toast-undo-button, .toastify.dialogs .toast-close {
+  height:auto !important;
+}

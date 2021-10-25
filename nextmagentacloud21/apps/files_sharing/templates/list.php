@@ -21,9 +21,18 @@
 <a class="name sort columntitle" data-sort="name"><span><?php p($l->t('Name')); ?></span><span class="sort-indicator"></span></a>
 </div>
     </th>
-<th id="headerDate" class="hidden column-mtime">
-<a id="modified" class="columntitle" data-sort="mtime"><span><?php p($l->t('Modified')); ?></span><span class="sort-indicator"></span></a>
+<th id="headerSize" class="hidden column-size">
+  <a class="size sort columntitle" data-sort="size">
+    <span><?php p($l->t('Size')); ?></span>
+    <span class="sort-indicator zero-font"></span>
+  </a>
 </th>
+
+<th id="headerDate" class="hidden column-mtime">
+				<a id="modified" class="columntitle" data-sort="mtime"><span><?php p($l->t('Share time')); ?></span><span class="sort-indicator"></span></a>
+			</th>
+
+      
 <th class="hidden column-expiration">
 <a class="columntitle"><span><?php p($l->t('Expiration date')); ?></span></a>
 </th>

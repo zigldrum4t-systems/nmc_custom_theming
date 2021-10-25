@@ -38,7 +38,7 @@ script('settings', [
 <div id="personal-settings" data-lookup-server-upload-enabled="<?php p($_['lookupServerUploadEnabled'] ? 'true' : 'false') ?>">
   <h2 class="hidden-visually"><?php p($l->t('Personal info')); ?></h2>
   <div id="personal-settings-avatar-container" class="personal-settings-container">
-  <h3><?php p($l->t('Account details')); ?></h3>
+   <h3><?php p($l->t('Account details')); ?></h3>
 
   <div class="personal-settings-container">
     <div class="personal-settings-setting-box">
@@ -51,9 +51,9 @@ script('settings', [
             </span>
           </a>
         </h3>
-        <input type="text" id="displayname" name="displayname" <?php if (!$_['displayNameChangeSupported']) {
+        <input type="text" id="displayname" name="displayname" read-only <?php if (!$_['displayNameChangeSupported']) {
                                                                   print_unescaped('class="hidden"');
-                                                                } ?> value="<?php p($_['displayName']) ?>" autocomplete="on" autocapitalize="none" autocorrect="off" />
+                                                                } ?> value="<?php p($_['displayName']) ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly/>
         <?php if (!$_['displayNameChangeSupported']) { ?>
           <span><?php if (isset($_['displayName']) && !empty($_['displayName'])) {
                   p($_['displayName']);
@@ -95,7 +95,7 @@ script('settings', [
         </div>
         <input type="email" name="email" id="email" value="<?php p($_['email']); ?>" <?php if (!$_['displayNameChangeSupported']) {
                                                                                         print_unescaped('class="hidden"');
-                                                                                      } ?> placeholder="<?php p($l->t('Your email address')); ?>" autocomplete="on" autocapitalize="none" autocorrect="off" />
+                                                                                      } ?> placeholder="<?php p($l->t('Your email address')); ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly />
         <span class="icon-checkmark hidden"></span>
         <span class="icon-error hidden"></span>
         <?php if (!$_['displayNameChangeSupported']) { ?>
@@ -111,6 +111,7 @@ script('settings', [
         <input type="hidden" id="emailscope" value="<?php p($_['emailScope']) ?>">
       </form>
     </div>
+  </div>
     <div class="profile-settings-container">
     <div class="personal-settings-setting-box personal-settings-language-box">
       <?php if (isset($_['activelanguage'])) { ?>
@@ -148,24 +149,24 @@ script('settings', [
       <?php } ?>
     </div>
 
-    <span class="msg"></span>
-  </div>
+    <!-- <span class="msg"></span> -->
+
   </div>
   <div class="telekom-link">
-  <p><label><?php p($l->t('You can change your password in the')); ?>
-  <a href='https://account.idm.telekom.com/account-manager/index.xhtml' target='_blank'>login settings</a>
+    <p><label><?php p($l->t('You can change your password in the')); ?>
+    <a href='https://account.idm.telekom.com/account-manager/index.xhtml' target='_blank'>login settings</a>
           <?php p($l->t('for all telekom services.')); ?>
-</label>
-</p>
+    </label>
+    </p>
 
     <div class="personal-settings-setting-box personal-settings-group-box section">
-    <b><?php p($l->t('Storage utilisation  ')); ?></b>
+     <b><?php p($l->t('Storage utilisation  ')); ?></b>
       <div id="quota" class="personal-info icon-quota">
         <div class="quotatext-bg">
-          <p class="quotatext">
+          <h4 class="quotatext">
             <?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED) : ?>
               <?php print_unescaped($l->t(
-                '<strong>%1$s</strong> of <strong>%2$s</strong> ',
+                '<strong>%1$s</strong> of <span>%2$s</span> ',
                 [$_['usage'], $_['total_space'],  $_['usage_relative']]
               )); ?>
             <?php else : ?>
@@ -174,7 +175,7 @@ script('settings', [
                 [$_['usage'], $_['total_space'],  $_['usage_relative']]
               )); ?>
             <?php endif ?>
-          </p>
+            </h4>
         </div>
 
 <?php
@@ -226,11 +227,11 @@ script('settings', [
                 ?>
               </div>
     </div>
-<div>
-<?php print_unescaped($l->t(
+  <div>
+     <?php print_unescaped($l->t(
                 'The recycle bin is automatically tide up.'
               )); ?>
-</div>
+  </div>
 <div>
 <?php print_unescaped($l->t(
                 'Files that have been in the recycle bin for longer then 30 days are automatically deleted permanently and free up storage space.'
@@ -293,3 +294,5 @@ script('settings', [
   </div>
 
 </div>
+</div>
+
