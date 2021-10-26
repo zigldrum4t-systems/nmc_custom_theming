@@ -999,11 +999,7 @@ div.crumb:last-child {
     top: 118px;
 }
 
-#filelist-header #rich-workspace{
-    padding-right: 0;
-}
-
-#rich-workspace #editor-session-list{
+#filelist-header #rich-workspace, #rich-workspace #editor-session-list{
     padding-right: 0 !important;
 }
 
