@@ -293,7 +293,7 @@
     background-image: var(--icon-search-magenta) !important;
 }
 
-.search-outer:hover span {
+.search-outer:hover .menu-search-text {
     color: #E20074;
 }
 
@@ -341,6 +341,7 @@
     border-radius: 8px;
     box-shadow: var(--scl-shadow-level-2);
     padding: 14px;
+    position: absolute !important;
 }
 
 #header-menu-unified-search .header-menu__content {
@@ -349,7 +350,8 @@
 }
 
 .unified-search__result {
-    height: 48px !important;
+    height: 68px !important;
+    align-items: center !important;
 }
 
 .unified-search__results::before {
@@ -403,6 +405,7 @@
 
 .header-menu__content ul li:last-child span {
     color: var(--scl-color-magenta);
+    padding-left: 0 !important;
 }
 
 .header-menu__content>ul>li:last-child>a>div {

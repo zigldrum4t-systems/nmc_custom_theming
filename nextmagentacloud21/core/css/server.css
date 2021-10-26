@@ -1000,6 +1000,13 @@ div.crumb:last-child {
     top: 118px;
 }
 
+#filelist-header #rich-workspace, #rich-workspace #editor-session-list{
+    padding-right: 0 !important;
+}
+
+#rich-workspace #editor-session-list .save-status{
+    padding-right: 0.25rem !important;
+}
 
 /* Add Button*/
 
@@ -1116,7 +1123,7 @@ li>.menuitem span[class^='icon-'],
 li>.menuitem span[class*=' icon-'],
 li>.menuitem[class^='icon-'],
 li>.menuitem[class*=' icon-'] {
-    background-size: unset !important;
+    background-size: unset;
 }
 
 #editor-wrapper div.ProseMirror h1 span {
@@ -1172,7 +1179,7 @@ li>.menuitem[class*=' icon-'] {
     border-radius: 8px;
 }
 
-.popover__wrapper .popover__inner li span[class] {
+.popover__wrapper .popover__inner li span.action-button__text{
     margin-right: 0.5rem;
 }
 
