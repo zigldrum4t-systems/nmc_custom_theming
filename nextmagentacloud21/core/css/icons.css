@@ -188,7 +188,7 @@ div.crumb {
 
 .icon-more,
 .action-item__menutoggle--default-icon {
-    background-image: var(--icon-more-custom) !important;
+    background-image: var(--icon-more-custom);
 }
 
 .icon-clippy {
@@ -238,7 +238,9 @@ div.crumb {
 }
 
 #app-navigation .nav-icon-trashbin:hover,
-.popover__inner li:hover .icon-close{
+.popover__inner li:hover .icon-close,
+.popover__wrapper li.hover .icon-delete,
+.popover__inner li:hover span.icon-delete{
     background-image: var(--icon-delete-magenta) !important;
 }
 
@@ -263,7 +265,7 @@ div.crumb {
     background-size: cover !important;
 }
 
-.icon-settings {
+.unified-search__result-icon--no-preview.icon-settings {
     background-image: var( --icon-setting-custom) !important;
     background-size: cover !important;
 }
@@ -380,7 +382,9 @@ aside select[disabled]{
     background-image: var(--icon-triangle-s-000) !important;
 }
 
-.popover__inner li:hover .icon-settings {
+.popover__inner li:hover .icon-settings,
+.popover__wrapper li.hover .icon-rename,
+.popover__inner li:hover span.icon-rename{
   background-image: var(--icon-edit-magenta) !important;
 }
 
@@ -472,3 +476,34 @@ aside .icon-star{
   min-height: 1.5rem;
 }
 
+#selectedActionLabel .icon-more{
+  background-image: var(--icon-more-magenta) !important;
+}
+
+.icon-desktop {
+  background-image: var(--icon-desktop-custom);
+}
+
+.icon-phone {
+  background-image: var(--icon-phone-custom);
+}
+
+/*Mimetype icons */
+
+#filestable [data-mime="text/plain"] .thumbnail,
+#filestable [data-mime="text/markdown"] .thumbnail,
+#filestable [data-mime="application/msword"] .thumbnail,
+#filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail {
+  background-image: url('../../core/img/filetypes/text.svg') !important;
+}
+
+#filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
+#filestable [data-mime="text/csv"] .thumbnail {
+  background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+}
+
+#filestable [data-mime="application/octet-stream"] .thumbnail {
+  background-image: url('../../core/img/filetypes/unknown-file.svg') !important;
+}

@@ -32,17 +32,10 @@ table th#headerDate {
     margin: 0 3px 3px 3px;
 }
 
-#filestable #headerName-container {
-    height: 40px !important;
-}
-
 #filestable #selectedActionsList {
     height: 40px !important;
 }
 
-#filestable th .columntitle {
-    height: 40px !important;
-}
 
 #headerDate #headerSelection label {
     margin-left: 7px;
@@ -84,7 +77,6 @@ table th#headerDate {
 
 #filestable>thead>tr>th>div>a {
     color: #f2f2f2;
-    font-size: 14px;
 }
 
 #filestable>thead>tr>th>div>a:hover {
@@ -96,7 +88,19 @@ table th#headerDate {
 }
 
 #filestable th .columntitle.name {
-    margin-left: 70px !important;
+    margin-left: 3.625rem;
+}
+
+table.multiselect th .columntitle.name {
+    margin-left: 1.5rem !important;
+}
+
+table.multiselect thead #selectedMenu {
+  width: 100% !important;
+}
+
+.unified-search__input-wrapper input:hover{
+  border-color: #e20074 !important;
 }
 
 #filestable tbody {
@@ -106,7 +110,7 @@ table th#headerDate {
 }
 
 #filestable input[type='checkbox'].checkbox+label:before {
-    margin: 0rem !important;
+    margin: 0 0 0.25rem 0 !important;
 }
 
 #filestable .filename .fileactions a span {
@@ -457,11 +461,11 @@ a.menuitem.action:hover>span,
 
 .selectedActions a {
     opacity: unset !important;
-    padding-left: 4rem;
+    line-height: 2.5rem;
 }
 
-.selectedActions a:hover {
-    text-decoration: underline;
+.selectedActions .filesSelectionMenu a .label {
+    font-size: 0.875rem;
 }
 
 .selectedActions a .label {
@@ -482,6 +486,16 @@ table.multiselect #modified {
 
 #headerSize {
     padding-left: 4rem;
+}
+
+#allLabel {
+    padding-left: 10px;
+    color: var(--scl-color-grey-90);
+    padding-top: 0;
+}
+
+#selectedActionLabel {
+    padding-right: 0 !important;
 }
 
 #emptycontent [class^='icon-'],
@@ -596,10 +610,26 @@ table.multiselect #modified {
 }
 
 .action-share span.avatar{
-   background-color: unset !important;
+    background-color: unset !important;
     color: unset !important;
     font-weight: unset !important;
     text-align: unset !important;
     line-height: unset !important;
     font-size: unset !important;
+}
+
+#fileList .action.action-share.permanent.shared-style .icon-shared{
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+#fileList tr td.selection .selectCheckBox:focus+label, .select-all:focus+label {
+  background-color: unset !important;
+}
+
+#filestable .filesummary {
+  padding-left: unset !important;
+}
+
+#fileList td.filename input.filename{
+  margin-left: 4.063rem !important;
 }
