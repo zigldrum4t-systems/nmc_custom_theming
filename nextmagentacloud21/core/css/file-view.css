@@ -629,3 +629,7 @@ table.multiselect #modified {
 #filestable .filesummary {
   padding-left: unset !important;
 }
+
+#fileList td.filename input.filename{
+  margin-left: 4.063rem !important;
+}
