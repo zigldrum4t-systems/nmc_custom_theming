@@ -188,7 +188,7 @@ div.crumb {
 
 .icon-more,
 .action-item__menutoggle--default-icon {
-    background-image: var(--icon-more-custom) !important;
+    background-image: var(--icon-more-custom);
 }
 
 .icon-clippy {
@@ -265,7 +265,7 @@ div.crumb {
     background-size: cover !important;
 }
 
-.icon-settings {
+.unified-search__result-icon--no-preview.icon-settings {
     background-image: var( --icon-setting-custom) !important;
     background-size: cover !important;
 }
@@ -474,5 +474,17 @@ aside .icon-star{
   background-image: var(--icon-clippy-magenta) !important;
   min-width: 1.5rem;
   min-height: 1.5rem;
+}
+
+#selectedActionLabel .icon-more{
+  background-image: var(--icon-more-magenta) !important;
+}
+
+.icon-desktop {
+  background-image: var(--icon-desktop-custom);
+}
+
+.icon-phone {
+  background-image: var(--icon-phone-custom);
 }
 
