@@ -106,7 +106,7 @@ table th#headerDate {
 }
 
 #filestable input[type='checkbox'].checkbox+label:before {
-    margin: 0rem !important;
+    margin: 0 0 0.25rem 0 !important;
 }
 
 #filestable .filename .fileactions a span {
@@ -602,4 +602,12 @@ table.multiselect #modified {
     text-align: unset !important;
     line-height: unset !important;
     font-size: unset !important;
+}
+
+#fileList tr td.selection .selectCheckBox:focus+label, .select-all:focus+label {
+  background-color: unset !important;
+}
+
+#filestable .filesummary {
+  padding-left: unset !important;
 }

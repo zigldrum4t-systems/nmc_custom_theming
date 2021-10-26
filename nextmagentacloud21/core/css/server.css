@@ -1167,7 +1167,7 @@ li>.menuitem[class*=' icon-'] {
 }
 
 .popover__wrapper .popover__inner {
-    padding: 1rem 1rem 1rem 1rem !important;
+    padding: 1.5rem 1rem 1.5rem 1rem !important;
     border-radius: 8px;
 }
 
