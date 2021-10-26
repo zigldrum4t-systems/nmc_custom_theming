@@ -110,7 +110,7 @@ table.multiselect thead #selectedMenu {
 }
 
 #filestable input[type='checkbox'].checkbox+label:before {
-    margin: 0rem !important;
+    margin: 0 0 0.25rem 0 !important;
 }
 
 #filestable .filename .fileactions a span {
@@ -617,6 +617,15 @@ table.multiselect #modified {
     line-height: unset !important;
     font-size: unset !important;
 }
+
 #fileList .action.action-share.permanent.shared-style .icon-shared{
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+#fileList tr td.selection .selectCheckBox:focus+label, .select-all:focus+label {
+  background-color: unset !important;
+}
+
+#filestable .filesummary {
+  padding-left: unset !important;
 }
