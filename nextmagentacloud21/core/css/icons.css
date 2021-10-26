@@ -476,3 +476,22 @@ aside .icon-star{
   min-height: 1.5rem;
 }
 
+/*Mimetype icons */
+
+#filestable [data-mime="text/plain"] .thumbnail,
+#filestable [data-mime="text/markdown"] .thumbnail,
+#filestable [data-mime="application/msword"] .thumbnail,
+#filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail {
+  background-image: url('../../core/img/filetypes/text.svg') !important;
+}
+
+#filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
+#filestable [data-mime="text/csv"] .thumbnail {
+  background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+}
+
+#filestable [data-mime="application/octet-stream"] .thumbnail {
+  background-image: url('../../core/img/filetypes/unknown-file.svg') !important;
+}

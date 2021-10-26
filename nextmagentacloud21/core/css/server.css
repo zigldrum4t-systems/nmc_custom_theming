@@ -687,6 +687,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #app-settings-header .settings-button.opened {
     border-top: unset !important;
+    background-image: var(--icon-triangle-s-e20074);
 }
 
 
@@ -1678,7 +1679,6 @@ iframe.viewer__file {
     display: none;
 } */
 
-
 /*Copy-move-dialog*/
 
 .oc-dialog {
@@ -1926,6 +1926,9 @@ iframe.viewer__file {
     background-size: 1.5rem 1.5rem !important;
 }
 
+.icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after{
+  display: none;
+}
 
 /*Responsive Styling*/
 
