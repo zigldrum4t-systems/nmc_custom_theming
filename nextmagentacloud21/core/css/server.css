@@ -1123,7 +1123,7 @@ li>.menuitem span[class^='icon-'],
 li>.menuitem span[class*=' icon-'],
 li>.menuitem[class^='icon-'],
 li>.menuitem[class*=' icon-'] {
-    background-size: unset;
+    background-size: 24px !important;
 }
 
 #editor-wrapper div.ProseMirror h1 span {
