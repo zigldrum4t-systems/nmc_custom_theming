@@ -25,6 +25,7 @@
 @import url("breadcrumb.css");
 @import url("sharing.css");
 @import url("settings.css");
+@import url("activity.css");
 
 
 /* ---------------------------------------------------------------------------- */
@@ -687,6 +688,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #app-settings-header .settings-button.opened {
     border-top: unset !important;
+    background-image: var(--icon-triangle-s-e20074);
 }
 
 
@@ -999,6 +1001,13 @@ div.crumb:last-child {
     top: 118px;
 }
 
+#filelist-header #rich-workspace, #rich-workspace #editor-session-list{
+    padding-right: 0 !important;
+}
+
+#rich-workspace #editor-session-list .save-status{
+    padding-right: 0.25rem !important;
+}
 
 /* Add Button*/
 
@@ -1115,7 +1124,7 @@ li>.menuitem span[class^='icon-'],
 li>.menuitem span[class*=' icon-'],
 li>.menuitem[class^='icon-'],
 li>.menuitem[class*=' icon-'] {
-    background-size: unset !important;
+    background-size: unset;
 }
 
 #editor-wrapper div.ProseMirror h1 span {
@@ -1171,7 +1180,7 @@ li>.menuitem[class*=' icon-'] {
     border-radius: 8px;
 }
 
-.popover__wrapper .popover__inner li span[class] {
+.popover__wrapper .popover__inner li span.action-button__text{
     margin-right: 0.5rem;
 }
 
@@ -1678,7 +1687,6 @@ iframe.viewer__file {
     display: none;
 } */
 
-
 /*Copy-move-dialog*/
 
 .oc-dialog {
@@ -1926,6 +1934,9 @@ iframe.viewer__file {
     background-size: 1.5rem 1.5rem !important;
 }
 
+.icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after{
+  display: none;
+}
 
 /*Responsive Styling*/
 

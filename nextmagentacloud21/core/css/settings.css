@@ -409,8 +409,12 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     padding-right: 0.5rem;
   }
 
-  #security table tr {
-    border-bottom: 1px solid #e5e5e5;
+  #app-tokens-table tbody tr{
+    border-bottom: 1px solid hsl(0, 0%, 80%) !important;
+  }
+
+  #app-tokens-table tbody td{
+    border-top: unset !important;
   }
 
   #security table tbody tr:hover, #security table tbody tr:focus, #security table tbody tr:active {
@@ -429,5 +433,13 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     }
 
   .vue-tooltip {
-   top:12px !important;
+      top: 12px !important;
+  }
+
+  .popover__wrapper .action-button__icon{
+      background-position: center !important;
+  }
+
+  td.client div{
+    opacity: unset !important;
   }

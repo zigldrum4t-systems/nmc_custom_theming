@@ -94,7 +94,7 @@ aside .icon-star {
 
 #tab-sharing ul.sharing-permissions .action-radio__label::before,
 #tab-sharing ul.sharing-permissions span.action-checkbox .action-checkbox__label::before {
-  margin: 0 0.5rem 0 0 !important;
+  margin: 0.063rem 0.5rem 0 0 !important;
 }
 
 
@@ -116,7 +116,7 @@ aside .icon-star {
   border: 1px solid #191919;
   color: #191919;
   margin-bottom:1.5rem;
-  font-size:0.875rem;
+  font-size:1rem !important;
 }
 
 #tab-sharing button.status-buttons__select:hover {
@@ -131,6 +131,7 @@ aside .icon-star {
   background-color: #e20074 !important;
   border: 1px solid #e20074;
   color: #ffffff;
+  font-size: 1rem !important;
 }
 
 #tab-sharing button.status-buttons__primary:hover{
@@ -237,7 +238,7 @@ margin-top:1rem;
 }
 
 .sharing-entry__desc select {
-  min-height: 1rem !important;
+  min-height: 1.188rem !important;
   border: unset !important;
   padding: 0 1.5rem 0 1rem !important;
   height: 16px !important;
@@ -263,6 +264,7 @@ margin-top:1rem;
 
 .sharing-entry__desc select {
   color: #e20074 !important;
+  font-weight:400 !important;
 }
 
 .popover__inner:hover li.active,
@@ -449,6 +451,7 @@ p.sharing-input-subtitle{
 }
 .add-new-link-btn{
   margin:0.75rem 0 1rem 0;
+  font-size:1rem !important;
   width:135px;
   background-color: #ffffff !important;
   border: 1px solid #191919;
@@ -526,17 +529,17 @@ aside .icon-triangle-s {
    margin-top:unset !important;
 }
 .multiselect .multiselect__tags input.multiselect__input {
-  top:-1px !important
+  top:-3px !important;
 }
 .multiselect:hover .multiselect__content-wrapper,
 .multiselect:active .multiselect__content-wrapper,
-.multiselect:focus .multiselect__content-wrapper{
+.multiselect:focus-within .multiselect__content-wrapper{
   border:1px solid #E20074 !important;
   background-color: #ffffff !important;
 }
 .multiselect:hover .multiselect__tags,
-.multiselect:focus .multiselect__tags,
-.multiselect:visited .multiselect__tags{
+.multiselect:active .multiselect__tags,
+.multiselect:focus-within .multiselect__tags{
   border-color:#e20074 !important;
 }
 aside input[type='radio'].radio+label:before, input[type='radio'].checkbox+label:before {
@@ -557,7 +560,16 @@ flex-direction: row-reverse;
   max-height: 40px !important;
 }
 
-.multiselect__content-wrapper .multiselect__element .avatardiv:not(.avatardiv--unknown) {
+.multiselect__content-wrapper .multiselect__element .avatardiv:not(.avatardiv--unknown),
+.multiselect.multiselect--disabled, .multiselect.multiselect--disabled .multiselect__single {
   background-color: unset !important;
   box-shadow:unset !important;
+}
+
+aside .action-radio__label {
+  align-items: unset !important;
+}
+
+.option__desc--lineone strong {
+  font-weight: normal !important;
 }
