@@ -178,28 +178,6 @@ script('settings', [
             </h4>
         </div>
 
-<?php
-  $defaultQuota = $_['quota'];
-  $filesSizeinBytes = 10000002;
-  $photoVideoSizeinBytes = 15000000;
-  $liveBackSizeinBytes = 18000000;
-  $recyclebinSizeinBytes = 92220000;
-
-  // convert to percentage for progress bar
-
-  $proFiles = ($filesSizeinBytes / $defaultQuota) * 100;
-  $proPhotoVideo = ($filesSizeinBytes / $photoVideoSizeinBytes) * 100;
-  $proLiveBackup = ($filesSizeinBytes / $liveBackSizeinBytes) * 100;
-  $proRecycle = ($filesSizeinBytes / $recyclebinSizeinBytes) * 100;
-
-// use below values for progress bar
-?>
-<?php // echo $proFiles; ?>
-<?php // echo $proPhotoVideo; ?>
-<?php // echo $proLiveBackup; ?>
-<?php  // echo $proRecycle; exit; ?>
-
-
         <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage_relative'] > 80) : ?> class="warn" <?php endif; ?>></progress>
       </div>
       <div class="extra-details">
@@ -207,19 +185,15 @@ script('settings', [
         <div id="files"></div>
         <?php print_unescaped($l->t(
                  'Files:<strong>%1$s</strong> ',
-                [$_['usage']]
+                [$_['filesSize']]
         )); ?>
       </div>
               <div>
               <div id="photos"></div>   <?php print_unescaped($l->t(
                 'Photos & videos:<strong>%1$s</strong> ',
-                [$_['usage']]
+                [$_['audioVideoSize']]
               )); ?></div>
-               <div>
-               <div id="backup"></div>  <?php print_unescaped($l->t(
-                'Live Backups:<strong>%1$s </strong> ',
-                [$_['usage']]
-              )); ?></div>
+
                <div>
                <div id="bin"></div>
                 <?php
