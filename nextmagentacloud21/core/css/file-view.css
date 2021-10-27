@@ -623,13 +623,21 @@ table.multiselect #modified {
 }
 
 #fileList tr td.selection .selectCheckBox:focus+label, .select-all:focus+label {
-  background-color: unset !important;
+    background-color: unset !important;
 }
 
 #filestable .filesummary {
-  padding-left: unset !important;
+    padding-left: unset !important;
 }
 
 #fileList td.filename input.filename{
-  margin-left: 4.063rem !important;
+    margin-left: 4.063rem !important;
+}
+
+.item-cancel a .label {
+    color: var(--scl-color-grey-90);
+}
+
+.item-cancel .icon-close {
+    filter: unset;
 }
