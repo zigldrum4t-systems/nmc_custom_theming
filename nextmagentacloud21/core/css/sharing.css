@@ -573,3 +573,8 @@ aside .action-radio__label {
 .option__desc--lineone strong {
   font-weight: normal !important;
 }
+
+.vue-tooltip .tooltip-inner,
+.vue-tooltip .tooltip-arrow{
+  display: none !important;
+}
