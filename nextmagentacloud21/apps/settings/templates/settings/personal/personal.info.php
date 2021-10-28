@@ -182,26 +182,20 @@ script('settings', [
       <div class="extra-details">
       <div>
         <div id="files"></div>
-        <?php print_unescaped($l->t(
-                 'Files:<strong>%1$s</strong> ',
-                [$_['usage']]
-        )); ?>
+        <?php p($l->t('Files')); ?>:<strong><?php p($_['usage']); ?></strong>
       </div>
-              <div>
-              <div id="photos"></div>   <?php print_unescaped($l->t(
-                'Photos & videos:<strong>%1$s</strong> ',
-                [$_['usage']]
-              )); ?></div>
-               <div>
-               <div id="backup"></div>  <?php print_unescaped($l->t(
-                'Live Backups:<strong>%1$s </strong> ',
-                [$_['usage']]
-              )); ?></div>
-               <div>
-               <div id="bin"></div> <?php print_unescaped($l->t(
-                'Recycle Bin:<strong>%1$s</strong>',
-                [$_['usage']]
-              )); ?></div>
+        <div>
+          <div id="photos"></div>
+            <?php p($l->t('Photos & videos')); ?>:<strong><?php p($_['usage']); ?></strong>
+        </div>
+        <div>
+          <div id="backup"></div>
+            <?php p($l->t('Live Backups')); ?>:<strong><?php p($_['usage']); ?></strong>
+        </div>
+        <div>
+          <div id="bin"></div>
+          <?php p($l->t('Recycle Bin')); ?>:<strong><?php p($_['usage']); ?></strong>
+        </div>
     </div>
   <div>
      <?php print_unescaped($l->t(
@@ -230,7 +224,7 @@ script('settings', [
 <div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
   <h4><?php p($l->t('Tariff information')); ?></h4>
     <div>
-        <?php print_unescaped($l->t('<strong>Your tariff</strong>:')); ?>
+        <strong><?php p($l->t('Your tariff')); ?></strong>:
         <?php
             if ($_['quota'] == 0) {
                 p($l->t('No space allocated'));
@@ -256,7 +250,7 @@ script('settings', [
         ?>
     </div>
     <div>
-        <?php print_unescaped($l->t('<strong>Storage  </strong>: %1$s ', [$_['total_space']])); ?>
+    <strong><?php p($l->t('Storage')); ?></strong>: <?php p($_['total_space']); ?>
     </div>
     <div>
         <button>
