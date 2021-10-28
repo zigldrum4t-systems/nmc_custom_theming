@@ -329,6 +329,9 @@
     height: 24px !important;
 }
 
+.unified-search__form.icon-loading-small{
+  display: block !important;
+}
 
 /***  Right menuitems ***/
 
