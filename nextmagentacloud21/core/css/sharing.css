@@ -116,11 +116,7 @@ aside .icon-star {
   border: 1px solid #191919;
   color: #191919;
   margin-bottom:1.5rem;
-<<<<<<< HEAD
   font-size:0.875rem !important;
-=======
-  font-size:1rem !important;
->>>>>>> 73f4c5771243e0949f86803a86817336beb51c81
 }
 
 #tab-sharing button.status-buttons__select:hover {
@@ -135,11 +131,7 @@ aside .icon-star {
   background-color: #e20074 !important;
   border: 1px solid #e20074;
   color: #ffffff;
-<<<<<<< HEAD
   font-size: 0.875rem !important;
-=======
-  font-size: 1rem !important;
->>>>>>> 73f4c5771243e0949f86803a86817336beb51c81
 }
 
 #tab-sharing button.status-buttons__primary:hover{
@@ -199,9 +191,9 @@ margin-top:1rem;
   border-color: #E20074 !important;
 }
 
-.mx-input-wrapper:hover svg,
-.mx-input-wrapper:active svg{
-  fill: #e20074 !important;
+.mx-input-wrapper:hover .mx-icon-calendar,
+.mx-input-wrapper:active .mx-icon-calendar{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
 
@@ -593,6 +585,16 @@ aside .action-radio__label {
 }
 
 /*calendar*/
+
+.mx-datepicker svg{
+  visibility: hidden !important;
+}
+
+.mx-icon-calendar{
+  background-repeat: no-repeat !important;
+  width:24px;
+  height:24px;
+}
 
 .mx-table.mx-table-date th{
   font-size: 0.875rem !important;

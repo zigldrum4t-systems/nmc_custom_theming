@@ -490,6 +490,11 @@ aside .icon-star{
   background-image: var(--icon-phone-custom);
 }
 
+/*calendar*/
+.mx-icon-calendar {
+  background-image: var(--icon-calendar-custom) !important;
+}
+
 /*Mimetype icons */
 
 #filestable [data-mime="text/plain"] .thumbnail,
