@@ -116,7 +116,11 @@ aside .icon-star {
   border: 1px solid #191919;
   color: #191919;
   margin-bottom:1.5rem;
+<<<<<<< HEAD
   font-size:0.875rem !important;
+=======
+  font-size:1rem !important;
+>>>>>>> 73f4c5771243e0949f86803a86817336beb51c81
 }
 
 #tab-sharing button.status-buttons__select:hover {
@@ -131,7 +135,11 @@ aside .icon-star {
   background-color: #e20074 !important;
   border: 1px solid #e20074;
   color: #ffffff;
+<<<<<<< HEAD
   font-size: 0.875rem !important;
+=======
+  font-size: 1rem !important;
+>>>>>>> 73f4c5771243e0949f86803a86817336beb51c81
 }
 
 #tab-sharing button.status-buttons__primary:hover{
