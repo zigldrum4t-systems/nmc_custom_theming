@@ -480,6 +480,12 @@ OC.L10N.register(
     "Session label": "bezeichnung der Sitzung",
     "Create new session": "Neue Sitzung erstellen",
     "Show QR code": "QR-Code anzeigen",
-    "Edit": "bearbeiten"
+    "Edit": "bearbeiten",
+    "Files": "Bestanden",
+    "Photos & videos": "FilFoto's en video'ses",
+    "Live Backups": "Live back-ups",
+    "Recycle Bin": "Prullenbak",
+    "Your tariff": "Uw tarief",
+    "Storage": "Opslag"
 },
 "nplurals=2; plural=(n != 1);");

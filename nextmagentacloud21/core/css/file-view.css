@@ -265,7 +265,7 @@ table th .sort-indicator {
     margin-right: 4px;
     display: inline-block;
     vertical-align: text-bottom;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 .span-visibility,
@@ -285,10 +285,10 @@ a.menuitem.action.toggleSelectionMode.permanent {
 #headerName .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -4.25rem;
+    margin-left: -4.125rem;
     display: inline-block;
     vertical-align: text-bottom;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 #headerSize .sort-indicator {
@@ -298,7 +298,7 @@ a.menuitem.action.toggleSelectionMode.permanent {
     margin-right: 2.5rem;
     display: inline-block;
     vertical-align: text-bottom;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 #headerDate .sort-indicator {
@@ -307,7 +307,7 @@ a.menuitem.action.toggleSelectionMode.permanent {
     margin-left: -85px;
     display: inline-block;
     vertical-align: text-bottom;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 #app-content-sharingout #headerDate .sort-indicator {

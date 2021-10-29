@@ -25,6 +25,7 @@
 @import url("breadcrumb.css");
 @import url("sharing.css");
 @import url("settings.css");
+@import url("activity.css");
 
 
 /* ---------------------------------------------------------------------------- */
@@ -1006,6 +1007,7 @@ div.crumb:last-child {
 
 #rich-workspace #editor-session-list .save-status{
     padding-right: 0.25rem !important;
+    min-width: unset !important;
 }
 
 /* Add Button*/

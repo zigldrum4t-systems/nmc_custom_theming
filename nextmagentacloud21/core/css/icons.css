@@ -365,16 +365,16 @@ div.crumb {
 
 /*filelist-toggle-icons*/
 
-.filelist-container .icon-triangle-s,
-#filestable .icon-triangle-s ,
+.filelist-container .icon-triangle-s:hover,
+#filestable .icon-triangle-s:hover ,
 .advanced-settings label:hover span.icon-triangle-s,
 .advanced-settings label:active span.icon-triangle-s,
 .sharing-entry__desc select {
     background-image: var(--icon-triangle-s-e20074) !important;
 }
 
-.filelist-container .icon-triangle-n,
-#filestable .icon-triangle-n {
+.filelist-container .icon-triangle-n:hover,
+#filestable .icon-triangle-n:hover {
     background-image: var(--icon-triangle-n-e20074);
 }
 

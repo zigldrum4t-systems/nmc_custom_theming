@@ -12523,6 +12523,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
 
 
 
@@ -59737,6 +59740,14 @@ var render = function() {
             ])
           ]
         : [
+            _c("label", { staticClass: "permissions" }, [
+              _vm._v(
+                "\n\t\t\t" +
+                  _vm._s(_vm.t("files_sharing", "Permissions")) +
+                  "\n\t\t"
+              )
+            ]),
+            _vm._v(" "),
             _vm.isFolder && _vm.config.isPublicUploadEnabled
               ? [
                   _c(
@@ -59827,11 +59838,10 @@ var render = function() {
                   )
                 ],
             _vm._v(" "),
-            _c("div", [
+            _c("div", { staticClass: "advanced-settings" }, [
               _c(
                 "label",
                 {
-                  staticClass: "advanced-settings",
                   on: {
                     click: function($event) {
                       _vm.show = !_vm.show
