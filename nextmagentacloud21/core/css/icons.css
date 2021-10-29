@@ -448,11 +448,13 @@ aside .icon-starred {
 /*user-icon*/
 .icon-mail-white, .icon-mail.icon-white{
   background-image: var(--icon-user-custom)!important;
+  background-position-y: 5px;
 }
 
 .icon-public-white,
 .icon-public.icon-white {
     background-image: var(--icon-link-custom)!important;
+    background-position-y: 5px;
 }
 
 /*check-mark-sharing*/
@@ -486,6 +488,11 @@ aside .icon-star{
 
 .icon-phone {
   background-image: var(--icon-phone-custom);
+}
+
+/*calendar*/
+.mx-icon-calendar {
+  background-image: var(--icon-calendar-custom) !important;
 }
 
 /*Mimetype icons */
