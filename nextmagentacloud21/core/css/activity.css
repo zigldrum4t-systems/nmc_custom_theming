@@ -1,0 +1,41 @@
+.section.activity-section.group{
+    padding:0rem !important;
+    margin-bottom:2rem !important;
+}
+#container .section.activity-section.group h2 {
+  margin-left: unset !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 1.25rem !important;
+}
+
+.activitysubject strong,
+.activitysubject .filename{
+  color:#e20074 !important;
+  font-weight: normal !important;
+}
+
+.activity.box .messagecontainer {
+  margin-bottom: 1rem !important;
+}
+.activity.box .preview ,
+.app-activity #app-sidebar,
+.activitysubject .avatar{
+  display: none;
+}
+
+#container{
+  margin:2rem 1rem 0rem 1rem !important;
+}
+.activity.box,
+.activitysubject{
+  margin-bottom: unset !important;
+}
+.activity.box .activitytime {
+  color:#191919 !important;
+  font-size: 1rem !important;
+}
+
+.activity-icon img {
+  max-width: 24px !important;
+  max-height: 24px !important;
+}
