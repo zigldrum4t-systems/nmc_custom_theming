@@ -119,16 +119,16 @@
     margin:0.125rem 0.25rem;
   }
 
-  .extra-details #files{
+  .files-usage{
     background-color: #22adb9;
   }
-  .extra-details #photos{
+  .photos-usage{
     background-color: #b682bd;
   }
-  .extra-details #backup{
+  .backup-usage{
     background-color: #828ac4;
   }
-  .extra-details #bin{
+  .bin-usage{
     background-color: #fc9a55;
   }
 
@@ -430,4 +430,25 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 
   .vue-tooltip {
    top:12px !important;
+  }
+
+  .settings-progress-bar{
+    display: flex;
+    height: 10px;
+    width: 100%;
+    background: #f2f2f2;
+    border-radius: 10px;
+  }
+
+  .settings-progress-bar .progress-bar {
+    border-radius: 10px;
+  }
+  .settings-progress-bar .progress-bar:not(:first-child):before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #fff;
   }
