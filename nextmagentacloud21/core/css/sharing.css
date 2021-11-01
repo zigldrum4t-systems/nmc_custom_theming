@@ -688,17 +688,13 @@ form div{
      border-top:1px solid #e5e5e5;
    }
 
-   .mx-datepicker .mx-table .cell:hover ,
-   .mx-datepicker .mx-table .cell:focus ,
-   .mx-datepicker .mx-table .cell.actived ,
-   .mx-datepicker .mx-table .cell.active ,
-   .mx-datepicker .mx-table .cell.in-range,
-   .mx-datepicker .mx-table .cell.today {
-    font-weight: normal !important;
-   }
-
     table.mx-table td:hover div,
-    .mx-datepicker .mx-table .cell.today div{
+    .mx-datepicker .mx-table .cell.today div,
+    .mx-calendar-header .mx-calendar-header-label button.mx-btn:hover,
+    .mx-datepicker .mx-calendar-header button:hover:before{
      color:#e20074 !important;
     }
 
+    .mx-calendar-header-label .mx-btn{
+      font-size:1rem !important ;
+    }
