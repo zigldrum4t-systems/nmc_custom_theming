@@ -34,3 +34,12 @@
   color:#191919 !important;
   font-size: 1rem !important;
 }
+
+.activity-icon img {
+  max-width: 24px !important;
+  max-height: 24px !important;
+}
+
+.activity-icon {
+  opacity: 1 !important;
+}

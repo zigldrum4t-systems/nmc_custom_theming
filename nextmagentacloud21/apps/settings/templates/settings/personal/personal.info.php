@@ -177,23 +177,33 @@ script('settings', [
             <?php endif ?>
             </h4>
         </div>
-        <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage_relative'] > 80) : ?> class="warn" <?php endif; ?>></progress>
-      </div>
+        <!-- <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage'] > 80) : ?> class="warn" <?php endif; ?>></progress> -->
+          <div class="settings-progress-bar">
+            <div class="progress-bar styledbar files-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            </div>
+            <div class="progress-bar styledbar photos-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            </div>
+            <div class="progress-bar styledbar backup-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            </div>
+            <div class="progress-bar styledbar bin-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            </div>
+          </div>
+        </div>
       <div class="extra-details">
       <div>
-        <div id="files"></div>
+        <div id="files" class="files-usage"></div>
         <?php p($l->t('Files')); ?>:<strong><?php p($_['usage']); ?></strong>
       </div>
         <div>
-          <div id="photos"></div>
+          <div id="photos" class="photos-usage"></div>
             <?php p($l->t('Photos & videos')); ?>:<strong><?php p($_['usage']); ?></strong>
         </div>
         <div>
-          <div id="backup"></div>
+          <div id="backup" class="backup-usage"></div>
             <?php p($l->t('Live Backups')); ?>:<strong><?php p($_['usage']); ?></strong>
         </div>
         <div>
-          <div id="bin"></div>
+          <div id="bin" class="bin-usage"></div>
           <?php p($l->t('Recycle Bin')); ?>:<strong><?php p($_['usage']); ?></strong>
         </div>
     </div>
