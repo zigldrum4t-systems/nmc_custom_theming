@@ -687,3 +687,14 @@ form div{
    .mx-table.mx-table-date tbody{
      border-top:1px solid #e5e5e5;
    }
+
+    table.mx-table td:hover div,
+    .mx-datepicker .mx-table .cell.today div,
+    .mx-calendar-header .mx-calendar-header-label button.mx-btn:hover,
+    .mx-datepicker .mx-calendar-header button:hover:before{
+     color:#e20074 !important;
+    }
+
+    .mx-calendar-header-label .mx-btn{
+      font-size:1rem !important ;
+    }
