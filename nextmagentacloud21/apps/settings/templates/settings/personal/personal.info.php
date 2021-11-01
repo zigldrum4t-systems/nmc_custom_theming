@@ -195,7 +195,7 @@ script('settings', [
       </div>
         <div>
           <div id="photos" class="photos-usage"></div>
-            <?php p($l->t('Photos & videos')); ?>:<strong><?php p($_['audioVideoSize']); ?></strong>
+            <?php p($l->t('Photos & videos')); ?>:<strong><?php p($_['photoVideoSize']); ?></strong>
         </div>
 
         <div>
