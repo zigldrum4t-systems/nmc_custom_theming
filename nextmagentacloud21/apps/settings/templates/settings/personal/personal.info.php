@@ -255,11 +255,7 @@ script('settings', [
         ?>
     </div>
     <div>
-<<<<<<< HEAD
-        <?php print_unescaped($l->t('<strong>Storage  </strong>: %1$s ', [$_['total_space']])); ?>
-=======
     <strong><?php p($l->t('Storage')); ?></strong>: <?php p($_['total_space']); ?>
->>>>>>> 886603d044e414b522715d3a111a60c868ca291f
     </div>
     <div>
         <button>
