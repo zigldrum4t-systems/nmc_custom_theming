@@ -5,6 +5,10 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
   <ul class="with-icon">
     <?php
 
+    if(isset($_['navigationItems']['nmc_files_activity'])){
+      $customNavigationItems['nmc_files_activity'] = $_['navigationItems']['nmc_files_activity'];
+    }
+
     $customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
     $customNavigationItems['files'] = $_['navigationItems']['files'];
 
@@ -29,7 +33,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
     </div>
     <div class="logo-right-text">
       <span class="avlspace"><?php p($l->t('%1$s', [$_['usage']])); ?></span><span class="outoftext">
-        <?php p($l->t('out of')); ?></span><span class="totalspace"><?php p($l->t('%1$s', [$_['total_space']])); ?></span>
+        <?php p($l->t('of')); ?></span><span class="totalspace"><?php p($l->t('%1$s', [$_['total_space']])); ?></span>
     </div>
   </div>
 

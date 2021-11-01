@@ -177,29 +177,31 @@ script('settings', [
             <?php endif ?>
             </h4>
         </div>
+        <!-- <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage'] > 80) : ?> class="warn" <?php endif; ?>></progress> -->
+          <div class="settings-progress-bar">
+            <div class="progress-bar styledbar files-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['filesSizeInPer']); ?>%;">
+            </div>
+            <div class="progress-bar styledbar photos-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['photoVideoSizeInPer']); ?>%;">
+            </div>
 
-        <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage_relative'] > 80) : ?> class="warn" <?php endif; ?>></progress>
-      </div>
+            <div class="progress-bar styledbar bin-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['trashSizeInPer']); ?>%;">
+            </div>
+          </div>
+        </div>
       <div class="extra-details">
       <div>
-        <div id="files"></div>
-        <?php print_unescaped($l->t(
-                 'Files:<strong>%1$s</strong> ',
-                [$_['filesSize']]
-        )); ?>
+        <div id="files" class="files-usage"></div>
+        <?php p($l->t('Files')); ?>:<strong><?php p($_['filesSize']); ?></strong>
       </div>
-              <div>
-              <div id="photos"></div>   <?php print_unescaped($l->t(
-                'Photos & videos:<strong>%1$s</strong> ',
-                [$_['audioVideoSize']]
-              )); ?></div>
+        <div>
+          <div id="photos" class="photos-usage"></div>
+            <?php p($l->t('Photos & videos')); ?>:<strong><?php p($_['audioVideoSize']); ?></strong>
+        </div>
 
-               <div>
-               <div id="bin"></div>
-                <?php
-                  print_unescaped($l->t('Recycle Bin:<strong>%1$s</strong>', isset($_['trashSize'])?[$_['trashSize']]:""));
-                ?>
-              </div>
+        <div>
+          <div id="bin" class="bin-usage"></div>
+          <?php p($l->t('Recycle Bin')); ?>:<strong><?php p($_['trashSize']); ?></strong>
+        </div>
     </div>
   <div>
      <?php print_unescaped($l->t(
@@ -227,7 +229,7 @@ script('settings', [
 <div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
   <b><?php p($l->t('Tariff information')); ?></b>
     <div>
-        <?php print_unescaped($l->t('<strong>Your tariff</strong>:')); ?>
+        <strong><?php p($l->t('Your tariff')); ?></strong>:
         <?php
             if ($_['quota'] == 0) {
                 p($l->t('No space allocated'));
@@ -253,7 +255,11 @@ script('settings', [
         ?>
     </div>
     <div>
+<<<<<<< HEAD
         <?php print_unescaped($l->t('<strong>Storage  </strong>: %1$s ', [$_['total_space']])); ?>
+=======
+    <strong><?php p($l->t('Storage')); ?></strong>: <?php p($_['total_space']); ?>
+>>>>>>> 886603d044e414b522715d3a111a60c868ca291f
     </div>
     <div>
         <button>
@@ -269,4 +275,3 @@ script('settings', [
 
 </div>
 </div>
-

@@ -303,6 +303,12 @@ OC.L10N.register(
     "Session label": "Session label",
     "Create new session": "Create new session",
     "Show QR code": "Show QR code",
-    "Edit": "Edit"
+    "Edit": "Edit",
+    "Files": "Files",
+    "Photos & videos": "Photos & videos",
+    "Live Backups": "Live Backups",
+    "Recycle Bin": "Recycle Bin",
+    "Your tariff": "Your tariff",
+    "Storage": "Storage"
 },
 "nplurals=2; plural=(n != 1);");

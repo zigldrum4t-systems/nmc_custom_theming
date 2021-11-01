@@ -29,6 +29,9 @@ function brandBarAnimation() {
     richWorkSpace.nextElementSibling.innerHTML = 'Show folder info text';
     richWorkSpace.dispatchEvent(new Event('change'));
   }
+
+  document.getElementById('recommendations-setting-enabled') ?
+    document.getElementById('recommendations-setting-enabled').classList.add('hide') : null;
 }
 
 
