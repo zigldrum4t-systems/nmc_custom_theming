@@ -39,3 +39,7 @@
   max-width: 24px !important;
   max-height: 24px !important;
 }
+
+.activity-icon {
+  opacity: 1 !important;
+}
