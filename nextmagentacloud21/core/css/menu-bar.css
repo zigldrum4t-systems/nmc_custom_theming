@@ -597,11 +597,7 @@
 #header .header-right div .menu.settings-menu ul li a.active {
     background-color: unset !important;
 }
- ul li[data-id='settings'] a div{
-  background-image: var(--icon-checkmark-magenta) !important;
-  height:20px;
-  width:20px;
-}
+
 /*Notification*/
 
 .toastify.dialogs {
