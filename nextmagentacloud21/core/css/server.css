@@ -918,6 +918,11 @@ div.crumb:last-child {
     margin-right: 1.5rem;
 }
 
+#controls>div.actions.creatable>a:active,#controls>div.actions.creatable>a:focus {
+  background: none !important;
+  border-color: #e20074;
+}
+
 #app-navigation-toggle {
     top: 8.5em;
     width: 24px;
@@ -1646,6 +1651,10 @@ div.crumb.crumbmenu a {
 #viewer .modal-container {
     height: 100% !important;
     max-height: 100% !important;
+}
+
+#viewer .modal-container > * {
+  z-index: 999999;
 }
 
 #viewer #editor-container {
