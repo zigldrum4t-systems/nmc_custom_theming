@@ -23,8 +23,9 @@
 @import url("footer.css");
 @import url("file-view.css");
 @import url("breadcrumb.css");
-@import url("sharing.css");
+ @import url("sharing.css");
 @import url("settings.css");
+@import url("activity.css");
 
 
 /* ---------------------------------------------------------------------------- */
@@ -119,7 +120,7 @@ section {
     background-size: 24px 24px !important;
 }
 
-#app-navigation {
+#app-navigation,#app-navigation-vue{
     z-index: 10 !important;
     left: unset !important;
     top: 185px !important;
@@ -687,6 +688,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #app-settings-header .settings-button.opened {
     border-top: unset !important;
+    background-image: var(--icon-triangle-s-e20074);
 }
 
 
@@ -729,9 +731,11 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 .Memory-consumed .logo-right-text {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
+    padding-top: 0.313rem;
     padding-left: 0.375rem;
+    font-size: 1.25rem;
 }
 
 .Memory-consumed img {
@@ -914,6 +918,11 @@ div.crumb:last-child {
     margin-right: 1.5rem;
 }
 
+#controls>div.actions.creatable>a:active,#controls>div.actions.creatable>a:focus {
+  background: none !important;
+  border-color: #e20074;
+}
+
 #app-navigation-toggle {
     top: 8.5em;
     width: 24px;
@@ -999,6 +1008,14 @@ div.crumb:last-child {
     top: 118px;
 }
 
+#filelist-header #rich-workspace, #rich-workspace #editor-session-list{
+    padding-right: 0 !important;
+}
+
+#rich-workspace #editor-session-list .save-status{
+    padding-right: 0.25rem !important;
+    min-width: unset !important;
+}
 
 /* Add Button*/
 
@@ -1115,7 +1132,7 @@ li>.menuitem span[class^='icon-'],
 li>.menuitem span[class*=' icon-'],
 li>.menuitem[class^='icon-'],
 li>.menuitem[class*=' icon-'] {
-    background-size: unset !important;
+    background-size: 24px !important;
 }
 
 #editor-wrapper div.ProseMirror h1 span {
@@ -1167,11 +1184,11 @@ li>.menuitem[class*=' icon-'] {
 }
 
 .popover__wrapper .popover__inner {
-    padding: 1rem 1rem 1rem 1rem !important;
+    padding: 1.5rem 1rem 1.5rem 1rem !important;
     border-radius: 8px;
 }
 
-.popover__wrapper .popover__inner li span[class] {
+.popover__wrapper .popover__inner li span.action-button__text{
     margin-right: 0.5rem;
 }
 
@@ -1636,6 +1653,10 @@ div.crumb.crumbmenu a {
     max-height: 100% !important;
 }
 
+#viewer .modal-container > * {
+  z-index: 999999;
+}
+
 #viewer #editor-container {
     top: 64px !important
 }
@@ -1678,7 +1699,6 @@ iframe.viewer__file {
     display: none;
 } */
 
-
 /*Copy-move-dialog*/
 
 .oc-dialog {
@@ -1716,7 +1736,7 @@ iframe.viewer__file {
     color: #e20074 !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+
 .oc-dialog-buttonrow.twobuttons.aside .primary {
     background-color: #e20074 !important;
     border-color: #e20074 !important;
@@ -1724,7 +1744,7 @@ iframe.viewer__file {
     margin: 0 0 0 0.5rem !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+
 .oc-dialog-buttonrow.twobuttons.aside .primary:hover {
     background-color: #f90984 !important;
 }
@@ -1851,9 +1871,15 @@ iframe.viewer__file {
 }
 
 #oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator {
-    margin-left: -78px !important;
+    margin-left: -4.375rem !important;
 }
-
+#oc-dialog-filepicker-content #picker-filestable.filelist th .sort-indicator {
+  opacity: unset !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .sort-indicator {
+  margin-left: 0.875rem !important;
+  margin-right:0.5rem !important;
+}
 
 /*** Custom conflict dialog ******************************************************/
 
@@ -1926,6 +1952,9 @@ iframe.viewer__file {
     background-size: 1.5rem 1.5rem !important;
 }
 
+.icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after{
+  display: none;
+}
 
 /*Responsive Styling*/
 

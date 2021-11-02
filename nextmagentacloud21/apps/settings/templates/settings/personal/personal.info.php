@@ -176,32 +176,38 @@ script('settings', [
               )); ?>
             <?php endif ?>
             </h4>
+            <span class="space-occupied">Memory 31.6% occupied</span>
+
         </div>
-        <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage_relative'] > 80) : ?> class="warn" <?php endif; ?>></progress>
-      </div>
+        <!-- <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage'] > 80) : ?> class="warn" <?php endif; ?>></progress> -->
+          <div class="settings-progress-bar">
+            <div class="progress-bar styledbar files-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            </div>
+            <div class="progress-bar styledbar photos-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            </div>
+            <div class="progress-bar styledbar backup-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            </div>
+            <div class="progress-bar styledbar bin-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            </div>
+          </div>
+        </div>
       <div class="extra-details">
       <div>
-        <div id="files"></div>
-        <?php print_unescaped($l->t(
-                 'Files:<strong>%1$s</strong> ',
-                [$_['usage']]
-        )); ?>
+        <div id="files" class="files-usage"></div>
+        <?php p($l->t('Files')); ?>:<strong><?php p($_['usage']); ?></strong>
       </div>
-              <div>
-              <div id="photos"></div>   <?php print_unescaped($l->t(
-                'Photos & videos:<strong>%1$s</strong> ',
-                [$_['usage']]
-              )); ?></div>
-               <div>
-               <div id="backup"></div>  <?php print_unescaped($l->t(
-                'Live Backups:<strong>%1$s </strong> ',
-                [$_['usage']]
-              )); ?></div>
-               <div>
-               <div id="bin"></div> <?php print_unescaped($l->t(
-                'Recycle Bin:<strong>%1$s</strong>',
-                [$_['usage']]
-              )); ?></div>
+        <div>
+          <div id="photos" class="photos-usage"></div>
+            <?php p($l->t('Photos & videos')); ?>:<strong><?php p($_['usage']); ?></strong>
+        </div>
+        <div>
+          <div id="backup" class="backup-usage"></div>
+            <?php p($l->t('Live Backups')); ?>:<strong><?php p($_['usage']); ?></strong>
+        </div>
+        <div>
+          <div id="bin" class="bin-usage"></div>
+          <?php p($l->t('Recycle Bin')); ?>:<strong><?php p($_['usage']); ?></strong>
+        </div>
     </div>
   <div>
      <?php print_unescaped($l->t(
@@ -218,12 +224,20 @@ script('settings', [
   </div>
 
 
-  <?php $totalSpaceInGB = (int)$_['total_space']; ?>
+  <?php
+    $totalSpaceInGB = null;
+    if($_['quota']>=1024){ // bytes converted
+      $totalSpaceInKB = round($_['quota'] / 1024, 1);
+      $totalSpaceInMB = round($totalSpaceInKB / 1024, 1);
+      $totalSpaceInGB = round($totalSpaceInMB / 1024, 1);
+    }
+
+?>
 <div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
   <h4><?php p($l->t('Tariff information')); ?></h4>
     <div>
-        <?php print_unescaped($l->t('Your tariff:')); ?>
-        <strong> <?php
+        <strong><?php p($l->t('Your tariff')); ?></strong>:
+        <?php
             if ($_['quota'] == 0) {
                 p($l->t('No space allocated'));
             }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED){
@@ -246,14 +260,13 @@ script('settings', [
                 p($l->t('Magentacloud XXL'));
             }
         ?>
-        </strong>
     </div>
     <div>
-        <?php print_unescaped($l->t('Storage: <strong>%1$s</strong> ', [$_['total_space']])); ?>
+    <strong><?php p($l->t('Storage')); ?></strong>: <?php p($_['total_space']); ?>
     </div>
     <div>
         <button>
-        <?php print_unescaped($l->t('Expand storage')); ?>
+        <?php print_unescaped($l->t('Expend storage')); ?>
         </button>
     </div>
 <div>
@@ -265,4 +278,3 @@ script('settings', [
 
 </div>
 </div>
-
