@@ -120,7 +120,7 @@ section {
     background-size: 24px 24px !important;
 }
 
-#app-navigation {
+#app-navigation,#app-navigation-vue{
     z-index: 10 !important;
     left: unset !important;
     top: 185px !important;
