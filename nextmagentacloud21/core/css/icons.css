@@ -207,6 +207,23 @@ div.crumb {
 .icon-mail {
   background-image: var(--icon-mail-custom) !important;
 }
+
+.settings-menu ul li[data-id='core_apps'] a div {
+  background-image: var(--icon-apps-custom) !important;
+}
+
+.settings-menu ul li[data-id='core_users'] a div {
+  background-image: var(--icon-core-users) !important;
+}
+
+.settings-menu ul li[data-id='help'] a div {
+  background-image: var(--icon-help-custom) !important;
+}
+.settings-menu ul li[data-id='logout'] a div {
+  background-image: var(--icon-logout-custom) !important;
+}
+
+
 /**navigation-icons**/
 
 #app-navigation .nav-icon-favorites {
@@ -265,7 +282,8 @@ div.crumb {
     background-size: cover !important;
 }
 
-.unified-search__result-icon--no-preview.icon-settings {
+.unified-search__result-icon--no-preview.icon-settings,
+.settings-menu ul li[data-id='settings'] a div {
     background-image: var( --icon-setting-custom) !important;
     background-size: cover !important;
 }
