@@ -479,7 +479,8 @@ aside select[disabled]{
     background-color: white !important;
     border-color: #666666 !important;
 }
-aside .icon-triangle-s {
+aside .icon-triangle-s,
+aside .icon-triangle-n {
   display:inline-block;
   vertical-align: middle;
   cursor:pointer;
