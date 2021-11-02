@@ -23,7 +23,7 @@
 @import url("footer.css");
 @import url("file-view.css");
 @import url("breadcrumb.css");
-@import url("sharing.css");
+ @import url("sharing.css");
 @import url("settings.css");
 @import url("activity.css");
 
@@ -120,7 +120,7 @@ section {
     background-size: 24px 24px !important;
 }
 
-#app-navigation {
+#app-navigation,#app-navigation-vue{
     z-index: 10 !important;
     left: unset !important;
     top: 185px !important;
@@ -1736,7 +1736,7 @@ iframe.viewer__file {
     color: #e20074 !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+
 .oc-dialog-buttonrow.twobuttons.aside .primary {
     background-color: #e20074 !important;
     border-color: #e20074 !important;
@@ -1744,7 +1744,7 @@ iframe.viewer__file {
     margin: 0 0 0 0.5rem !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+
 .oc-dialog-buttonrow.twobuttons.aside .primary:hover {
     background-color: #f90984 !important;
 }
@@ -1871,9 +1871,15 @@ iframe.viewer__file {
 }
 
 #oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator {
-    margin-left: -78px !important;
+    margin-left: -4.375rem !important;
 }
-
+#oc-dialog-filepicker-content #picker-filestable.filelist th .sort-indicator {
+  opacity: unset !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .sort-indicator {
+  margin-left: 0.875rem !important;
+  margin-right:0.5rem !important;
+}
 
 /*** Custom conflict dialog ******************************************************/
 
