@@ -549,9 +549,7 @@ aside input[type='radio'].radio+label:before, input[type='radio'].checkbox+label
   border:1px solid #191919 !important;
 }
 
-/* aside select{
-  padding:1.5rem 1rem !important;
-} */
+
 
 aside .multiselect__element .option {
 flex-direction: row-reverse;
@@ -562,11 +560,7 @@ flex-direction: row-reverse;
   display:none !important;
 }
 
-/* .multiselect .multiselect__content-wrapper li span {
-  padding:8px !important;
-  height:40px !important;
-  max-height: 40px !important;
-} */
+
 li.multiselect__element,
 li.multiselect__element .multiselect__option--highlight,
 li.multiselect__option,
