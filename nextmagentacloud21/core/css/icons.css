@@ -374,7 +374,9 @@ div.crumb {
 }
 
 .filelist-container .icon-triangle-n:hover,
-#filestable .icon-triangle-n:hover {
+#filestable .icon-triangle-n:hover,
+.advanced-settings label:hover span.icon-triangle-n,
+.advanced-settings label:active span.icon-triangle-n {
     background-image: var(--icon-triangle-n-e20074);
 }
 

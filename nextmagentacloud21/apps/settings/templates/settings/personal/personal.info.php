@@ -176,6 +176,8 @@ script('settings', [
               )); ?>
             <?php endif ?>
             </h4>
+            <span class="space-occupied">Memory 31.6% occupied</span>
+
         </div>
         <!-- <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage'] > 80) : ?> class="warn" <?php endif; ?>></progress> -->
           <div class="settings-progress-bar">

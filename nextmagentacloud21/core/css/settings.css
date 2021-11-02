@@ -464,3 +464,12 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     border-bottom-right-radius: 10px;
     background: #fff;
   }
+
+  .quotatext-bg .quotatext {
+    display: inline !important;
+  }
+  .quotatext-bg .space-occupied {
+    font-size:0.975rem !important;
+    float:right;
+    display: inline;
+  }
