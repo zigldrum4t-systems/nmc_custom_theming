@@ -1214,7 +1214,15 @@ li>.menuitem[class*=' icon-'] {
 }
 
 #editor-wrapper div.ProseMirror blockquote {
-    border-left: none !important;
+    border-left: 4px solid #E20074 !important;
+}
+
+#rich-workspace #editor-wrapper .ProseMirror p div{
+  background-color: unset !important;
+}
+
+#rich-workspace #editor-wrapper .ProseMirror .image__view, #rich-workspace #editor-wrapper .image__view .image__caption input[type='text']{
+  text-align: start !important;
 }
 
 .action-item.action-item--open .action-item__menutoggle {
@@ -1727,7 +1735,7 @@ iframe.viewer__file {
     color: #e20074 !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.onebutton.aside .primary,
 .oc-dialog-buttonrow.twobuttons.aside .primary {
     background-color: #e20074 !important;
     border-color: #e20074 !important;
@@ -1735,11 +1743,13 @@ iframe.viewer__file {
     margin: 0 0 0 0.5rem !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.onebutton .primary:hover,
 .oc-dialog-buttonrow.twobuttons.aside .primary:hover {
     background-color: #f90984 !important;
 }
-
+.oc-dialog-buttonrow.onebutton button:disabled{
+    opacity: unset;
+}
 .oc-dialog-buttonrow button {
     font-size: 1rem !important;
 }
