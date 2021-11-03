@@ -269,8 +269,7 @@ table th .sort-indicator {
 }
 
 .span-visibility,
-.item-toggleSelectionMode,
-a.menuitem.action.toggleSelectionMode.permanent {
+.item-toggleSelectionMode{
     display: none !important;
 }
 
@@ -477,7 +476,8 @@ table.multiselect #modified {
 }
 
 #filestable .selectedActions .filesSelectionMenu a .icon {
-    background-size: 16px 16px !important;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
 }
 
 #selectedActionsList .popovermenu {
