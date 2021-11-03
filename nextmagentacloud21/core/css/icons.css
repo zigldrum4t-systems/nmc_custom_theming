@@ -226,6 +226,19 @@ div.crumb {
 
 /**navigation-icons**/
 
+#app-navigation .nav-icon-nmc_files_activity {
+    background-image: var(--icon-files-activity-custom) !important;
+}
+
+#app-navigation .nav-icon-nmc_files_activity:hover {
+    background-image: var( --icon-files-activity-magenta) !important;
+}
+
+#app-navigation .nav-icon-nmc_files_activity.svg.active {
+    background-image: var(--icon-files-activity-magenta) !important;
+}
+
+
 #app-navigation .nav-icon-favorites {
     background-image: var(--icon-favourite-custom) !important;
 }
