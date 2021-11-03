@@ -207,7 +207,37 @@ div.crumb {
 .icon-mail {
   background-image: var(--icon-mail-custom) !important;
 }
+
+.settings-menu ul li[data-id='core_apps'] a div {
+  background-image: var(--icon-apps-custom) !important;
+}
+
+.settings-menu ul li[data-id='core_users'] a div {
+  background-image: var(--icon-core-users) !important;
+}
+
+.settings-menu ul li[data-id='help'] a div {
+  background-image: var(--icon-help-custom) !important;
+}
+.settings-menu ul li[data-id='logout'] a div {
+  background-image: var(--icon-logout-custom) !important;
+}
+
+
 /**navigation-icons**/
+
+#app-navigation .nav-icon-nmc_files_activity {
+    background-image: var(--icon-files-activity-custom) !important;
+}
+
+#app-navigation .nav-icon-nmc_files_activity:hover {
+    background-image: var( --icon-files-activity-magenta) !important;
+}
+
+#app-navigation .nav-icon-nmc_files_activity.svg.active {
+    background-image: var(--icon-files-activity-magenta) !important;
+}
+
 
 #app-navigation .nav-icon-favorites {
     background-image: var(--icon-favourite-custom) !important;
@@ -265,7 +295,8 @@ div.crumb {
     background-size: cover !important;
 }
 
-.unified-search__result-icon--no-preview.icon-settings {
+.unified-search__result-icon--no-preview.icon-settings,
+.settings-menu ul li[data-id='settings'] a div {
     background-image: var( --icon-setting-custom) !important;
     background-size: cover !important;
 }
@@ -378,7 +409,9 @@ div.crumb {
 }
 
 .filelist-container .icon-triangle-n:hover,
-#filestable .icon-triangle-n:hover {
+#filestable .icon-triangle-n:hover,
+.advanced-settings label:hover span.icon-triangle-n,
+.advanced-settings label:active span.icon-triangle-n {
     background-image: var(--icon-triangle-n-e20074);
 }
 

@@ -479,7 +479,8 @@ aside select[disabled]{
     background-color: white !important;
     border-color: #666666 !important;
 }
-aside .icon-triangle-s {
+aside .icon-triangle-s,
+aside .icon-triangle-n {
   display:inline-block;
   vertical-align: middle;
   cursor:pointer;
@@ -548,23 +549,35 @@ aside input[type='radio'].radio+label:before, input[type='radio'].checkbox+label
   border:1px solid #191919 !important;
 }
 
-aside select{
-  padding:1.5rem 1rem !important;
-}
+
 
 aside .multiselect__element .option {
 flex-direction: row-reverse;
 }
 
-.multiselect .multiselect__content-wrapper li span {
-  padding:0.625rem 0 !important;
-  height:40px !important;
-  max-height: 40px !important;
-}
-.multiselect__element .multiselect__option{
-  padding:0 0.375rem !important;
+
+ .option__linetwo {
+  display:none !important;
 }
 
+
+li.multiselect__element,
+li.multiselect__element .multiselect__option--highlight,
+li.multiselect__option,
+span#global-lookup,
+.multiselect__option span.option{
+  height:40px !important;
+  max-height:40px !important;
+}
+
+#tab-sharing .multiselect .multiselect__option span[lookup] .avatardiv,
+.avatardiv--unknown  {
+  background-image: unset !important;
+  background-color: unset !important;
+}
+.multiselect .multiselect__content-wrapper {
+  overflow-y: unset !important;
+}
 .multiselect__content-wrapper .multiselect__element .avatardiv:not(.avatardiv--unknown),
 .multiselect.multiselect--disabled, .multiselect.multiselect--disabled .multiselect__single {
   background-color: unset !important;
