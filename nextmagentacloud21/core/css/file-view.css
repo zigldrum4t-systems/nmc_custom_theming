@@ -641,3 +641,18 @@ table.multiselect #modified {
 .item-cancel .icon-close {
     filter: unset;
 }
+
+#fileList td a a.action-restore {
+   padding: unset !important;
+   line-height: 33px !important;
+   margin-right:5rem !important;
+}
+
+#filestable .filename .fileactions a.action-restore span {
+  color:#e20074 !important;
+  vertical-align: bottom !important;
+}
+.icon-history {
+  margin-top:0.438rem !important;
+  margin-right:0.125rem !important;
+}

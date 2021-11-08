@@ -693,7 +693,9 @@ form div{
    }
 
    .mx-table.mx-table-date th,
-   .mx-table.mx-table-date td{
+   .mx-table.mx-table-date td,
+   .mx-table.mx-table-year td,
+   .mx-table.mx-table-year th{
      border-bottom: unset !important;
    }
 
