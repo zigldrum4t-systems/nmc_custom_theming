@@ -8,7 +8,7 @@ OC.L10N.register(
         "Send email" : "Email senden",
         "Send new mail" : "Neue Email verfassen",
         "Read only" : "Nur lesen",
-        "Read, write and upload" : "Hochladen & Bearbeiten",
+        "Read, write and upload" : "Kann bearbeiten",
         "File drop (upload only)" : "Sammelbox",
         "Read and write" : "Bearbeiten",
         "Add link" : "Link hinzufügen",
