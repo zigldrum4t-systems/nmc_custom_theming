@@ -846,9 +846,12 @@ window.addEventListener('DOMContentLoaded', function () {
             file.extraData = share.file_target;
           }
         } else {
+          console.log(share);
           if (share.share_type !== OC.Share.SHARE_TYPE_LINK) {
             file.share.targetDisplayName = share.share_with_displayname;
             file.share.targetShareWithId = share.share_with;
+            file.share.targetShareType = share.share_type;
+
           }
 
           file.name = OC.basename(share.path);
@@ -870,6 +873,7 @@ window.addEventListener('DOMContentLoaded', function () {
         var data = memo[file.id];
         var recipient = file.share.targetDisplayName;
         var recipientId = file.share.targetShareWithId;
+        var shareType = file.share.share_type;
 
         if (!data) {
           data = memo[file.id] = file;
@@ -893,6 +897,7 @@ window.addEventListener('DOMContentLoaded', function () {
         }
 
         if (recipient) {
+          console.log("AAAA"+ shareType);
           // limit counterparts for output
           if (data.recipientsCount < 4) {
             // only store the first ones, they will be the only ones
@@ -901,6 +906,7 @@ window.addEventListener('DOMContentLoaded', function () {
             data.recipientData[data.recipientsCount] = {
               'shareWith': recipientId,
               'shareWithDisplayName': recipient
+              ,'shareType':shareType 
             };
           }
 
