@@ -50,12 +50,27 @@
   color: #191919;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .file-activity-note {
+  font-size: 1rem;
+  font-weight: normal;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .del-files-activity-div {
   margin-bottom: 3rem;
+  margin-left: 1rem;
 }
+
+.del-files-activity .btn {
+  background-color: #e20074;
+  border: #e20074;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+
