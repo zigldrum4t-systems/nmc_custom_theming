@@ -23,7 +23,7 @@
 @import url("footer.css");
 @import url("file-view.css");
 @import url("breadcrumb.css");
-@import url("sharing.css");
+ @import url("sharing.css");
 @import url("settings.css");
 @import url("activity.css");
 
@@ -120,7 +120,7 @@ section {
     background-size: 24px 24px !important;
 }
 
-#app-navigation {
+#app-navigation,#app-navigation-vue{
     z-index: 10 !important;
     left: unset !important;
     top: 185px !important;
@@ -918,6 +918,11 @@ div.crumb:last-child {
     margin-right: 1.5rem;
 }
 
+#controls>div.actions.creatable>a:active,#controls>div.actions.creatable>a:focus {
+  background: none !important;
+  border-color: #e20074;
+}
+
 #app-navigation-toggle {
     top: 8.5em;
     width: 24px;
@@ -1214,7 +1219,15 @@ li>.menuitem[class*=' icon-'] {
 }
 
 #editor-wrapper div.ProseMirror blockquote {
-    border-left: none !important;
+    border-left: 4px solid #E20074 !important;
+}
+
+#rich-workspace #editor-wrapper .ProseMirror p div{
+  background-color: unset !important;
+}
+
+#rich-workspace #editor-wrapper .ProseMirror .image__view, #rich-workspace #editor-wrapper .image__view .image__caption input[type='text']{
+  text-align: start !important;
 }
 
 .action-item.action-item--open .action-item__menutoggle {
@@ -1648,6 +1661,10 @@ div.crumb.crumbmenu a {
     max-height: 100% !important;
 }
 
+#viewer .modal-container > * {
+  z-index: 999999;
+}
+
 #viewer #editor-container {
     top: 64px !important
 }
@@ -1727,7 +1744,7 @@ iframe.viewer__file {
     color: #e20074 !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.onebutton.aside .primary,
 .oc-dialog-buttonrow.twobuttons.aside .primary {
     background-color: #e20074 !important;
     border-color: #e20074 !important;
@@ -1735,11 +1752,13 @@ iframe.viewer__file {
     margin: 0 0 0 0.5rem !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.onebutton .primary:hover,
 .oc-dialog-buttonrow.twobuttons.aside .primary:hover {
     background-color: #f90984 !important;
 }
-
+.oc-dialog-buttonrow.onebutton button:disabled{
+    opacity: unset;
+}
 .oc-dialog-buttonrow button {
     font-size: 1rem !important;
 }
@@ -1862,9 +1881,15 @@ iframe.viewer__file {
 }
 
 #oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator {
-    margin-left: -78px !important;
+    margin-left: -4.375rem !important;
 }
-
+#oc-dialog-filepicker-content #picker-filestable.filelist th .sort-indicator {
+  opacity: unset !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .sort-indicator {
+  margin-left: 0.875rem !important;
+  margin-right:0.5rem !important;
+}
 
 /*** Custom conflict dialog ******************************************************/
 

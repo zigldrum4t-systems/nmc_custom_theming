@@ -269,8 +269,7 @@ table th .sort-indicator {
 }
 
 .span-visibility,
-.item-toggleSelectionMode,
-a.menuitem.action.toggleSelectionMode.permanent {
+.item-toggleSelectionMode{
     display: none !important;
 }
 
@@ -294,7 +293,7 @@ a.menuitem.action.toggleSelectionMode.permanent {
 #headerSize .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -3.25rem;
+    margin-left: -3.188rem;
     margin-right: 2.5rem;
     display: inline-block;
     vertical-align: text-bottom;
@@ -477,7 +476,8 @@ table.multiselect #modified {
 }
 
 #filestable .selectedActions .filesSelectionMenu a .icon {
-    background-size: 16px 16px !important;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
 }
 
 #selectedActionsList .popovermenu {
@@ -640,4 +640,19 @@ table.multiselect #modified {
 
 .item-cancel .icon-close {
     filter: unset;
+}
+
+#fileList td a a.action-restore {
+   padding: unset !important;
+   line-height: 33px !important;
+   margin-right:5rem !important;
+}
+
+#filestable .filename .fileactions a.action-restore span {
+  color:#e20074 !important;
+  vertical-align: bottom !important;
+}
+.icon-history {
+  margin-top:0.438rem !important;
+  margin-right:0.125rem !important;
 }

@@ -5,7 +5,22 @@ window.onload = function () {
   searchInputLabel();
   appendFolderName();
   domElementsobserver();
+  fileActionButtonSettings();
 };
+
+function fileActionButtonSettings() {
+  setTimeout(function () {
+  var ele = document.querySelectorAll('.filesSelectMenu ul li, .filesSelectionMenu ul li');
+      for(var i=0; li=ele[i]; i++) {
+        if(li.className === 'item-toggleSelectionMode'){
+          li.parentNode.removeChild(li);
+        }
+        else if(li.className === 'item-tags'){
+          li.parentNode.removeChild(li);
+        }
+      }
+    }, 200);
+}
 
 function brandBarAnimation() {
   setTimeout(function () {
@@ -60,7 +75,7 @@ function searchInputLabel() {
     ele.onclick = function () {
       var labelElement = document.createElement('label');
       labelElement.className = 'search-input-label';
-      labelElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
+      labelElement.innerText = 'Search files, folders or settings …';
       document.getElementsByClassName('unified-search__form-input')[0] ?
         document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
       document.getElementsByClassName('unified-search__form')[0] ?
