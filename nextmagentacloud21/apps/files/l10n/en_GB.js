@@ -1,5 +1,5 @@
 OC.L10N.register(
-    "settings",
+    "files",
     {
     "Crop image previews": "Crop image previews"
 },
