@@ -436,6 +436,10 @@ aside .icon-close {
     background-repeat: no-repeat !important;
 }
 
+/*history-restore-icon*/
+.icon-history {
+  background-image: var(--icon-restore-custom) !important;
+}
 
 /** RIGHT click icons**/
 
