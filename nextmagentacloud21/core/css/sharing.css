@@ -238,15 +238,15 @@ margin-top:1rem;
 }
 
 .sharing-entry__desc select {
-  min-height: 1.188rem !important;
+  min-height:0 !important;
+  margin:0 !important;
   border: unset !important;
-  padding: 0 1.5rem 0 1rem !important;
+  padding: 0 !important;
   height: 16px !important;
   color: #b2b2b2 !important;
   font-weight: bold;
   background-repeat: no-repeat;
-  background-position: left center;
-  /* background: var(--icon-triangle-s-e20074) no-repeat left -2px center !important; */
+  background: var(--icon-triangle-s-e20074) no-repeat right 1px !important;
 }
 
 .action-item--single:hover,

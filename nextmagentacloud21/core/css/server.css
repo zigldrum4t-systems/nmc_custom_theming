@@ -452,6 +452,10 @@ aside {
     width: 1236px;
 }
 
+.content.app-photos{
+  width:100% !important;
+}
+
 #content>.container-fixed {
     position: relative;
     display: flex;
