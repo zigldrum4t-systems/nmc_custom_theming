@@ -2185,7 +2185,6 @@ iframe.viewer__file {
     }
 }
 
-
 @media screen and (max-width: 420px) {
   .personal-settings-setting-box .section input[type='text'],
    .personal-settings-setting-box .section input[type='email'] {
@@ -2225,5 +2224,4 @@ select#languageinput {
 		display: grid;
 	}
 }
-
 /*Responsive Styling*/
