@@ -438,8 +438,6 @@ aside .icon-close {
 
 /*history-restore-icon*/
 .icon-history {
-  margin-top:7px !important;
-  margin-right:2px !important;
   background-image: var(--icon-restore-custom) !important;
 }
 
