@@ -226,6 +226,19 @@ div.crumb {
 
 /**navigation-icons**/
 
+#app-navigation .nav-icon-nmc_files_activity {
+    background-image: var(--icon-files-activity-custom) !important;
+}
+
+#app-navigation .nav-icon-nmc_files_activity:hover {
+    background-image: var( --icon-files-activity-magenta) !important;
+}
+
+#app-navigation .nav-icon-nmc_files_activity.svg.active {
+    background-image: var(--icon-files-activity-magenta) !important;
+}
+
+
 #app-navigation .nav-icon-favorites {
     background-image: var(--icon-favourite-custom) !important;
 }
@@ -306,6 +319,10 @@ div.crumb {
 
 .menubar button.is-active.icon-ol {
     background-image: var(--icon-ol-magenta) !important;
+}
+
+.menubar button.is-active.icon-quote,.menubar button.is-active.icon-code{
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
 .menubar button.is-active.icon-ul {
@@ -419,6 +436,12 @@ aside .icon-close {
     background-repeat: no-repeat !important;
 }
 
+/*history-restore-icon*/
+.icon-history {
+  margin-top:7px !important;
+  margin-right:2px !important;
+  background-image: var(--icon-restore-custom) !important;
+}
 
 /** RIGHT click icons**/
 

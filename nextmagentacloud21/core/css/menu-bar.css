@@ -328,8 +328,33 @@
     height: 24px !important;
 }
 
+.nmc_spica_wrapper .has-unread {
+    margin-top: -24px;
+    margin-left: -18px;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+.nmc_spica_wrapper .icon-mail{
+    margin-right: 0.5rem;
+}
+
+.nmc_spica_wrapper div{
+    font-size: 12px;
+    font-weight: bold !important;
+    color:  var(--scl-color-grey-90);
+}
+
+.nmc_spica_wrapper:hover > div{
+    color: #E20074;
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+.unread-badge .has-unread:hover{
+    color: #fff !important;
+}
+
 .unified-search__form.icon-loading-small{
-  display: block !important;
+    display: block !important;
 }
 
 /***  Right menuitems ***/
@@ -477,7 +502,6 @@
     pointer-events: none;
     left: 12px;
     top: 50%;
-    font-size: 0.8125rem;
     opacity: 1;
     transform: translate(0px, -50%);
     color: hsl(0, 0%, 40%);
