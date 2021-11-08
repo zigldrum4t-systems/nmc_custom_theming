@@ -8,7 +8,7 @@ OC.L10N.register(
         "Send email" : "Send email",
         "Send new mail" : "Send new email",
         "Read only" : "Read only",
-        "Read, write and upload" : "Allow upload and editing",
+        "Read, write and upload" : "Can edit",
         "File drop (upload only)" : "File drop",
         "Read and write" : "Editing",
         "Add link" : "Add link",
