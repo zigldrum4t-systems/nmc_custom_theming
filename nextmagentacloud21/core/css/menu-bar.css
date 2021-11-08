@@ -491,10 +491,11 @@
 }
 
 .unified-search__form-input {
-    padding: 0.75rem 0.75rem 0 !important;
+    padding: 0.5rem 0.75rem 0 !important;
     height: 3rem !important;
     border-color: unset;
     border-radius: 4px;
+    font-size: 1rem !important;
 }
 
 .search-input-label {
@@ -518,6 +519,9 @@
     color: transparent;
 }
 
+.app-content{
+    z-index: 998 !important;
+}
 #navigation {
     position: fixed !important;
     top: 63px !important;

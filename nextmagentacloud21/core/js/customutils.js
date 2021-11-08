@@ -41,7 +41,7 @@ function brandBarAnimation() {
   var richWorkSpace = document.getElementById('showRichWorkspacesToggle');
   if (richWorkSpace) {
     richWorkSpace.checked = true;
-    richWorkSpace.nextElementSibling.innerHTML = 'Show folder info text';
+    richWorkSpace.nextElementSibling.innerHTML = t('core', 'Show folder info text');
     richWorkSpace.dispatchEvent(new Event('change'));
   }
 
@@ -75,11 +75,11 @@ function searchInputLabel() {
     ele.onclick = function () {
       var labelElement = document.createElement('label');
       labelElement.className = 'search-input-label';
-      labelElement.innerText = 'Search files, folders or settings …';
+      labelElement.innerText = t('core', 'Search files, folders or settings …');
       document.getElementsByClassName('unified-search__form-input')[0] ?
-        document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
+      document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
       document.getElementsByClassName('unified-search__form')[0] ?
-        document.getElementsByClassName('unified-search__form')[0].appendChild(labelElement) : null;
+      document.getElementsByClassName('unified-search__form')[0].appendChild(labelElement) : null;
     }
   }
 }
