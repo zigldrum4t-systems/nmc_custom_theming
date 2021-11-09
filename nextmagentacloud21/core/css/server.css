@@ -2223,5 +2223,14 @@ select#languageinput {
 	#webdav-address div {
 		display: grid;
 	}
+
+  #filestable th .columntitle.name {
+    margin-left: 1.625rem;
+  }
+
+  table.multiselect th .columntitle.name {
+    margin-left: 0 !important;
+    padding-left: 0.625rem !important;
+  }
 }
 /*Responsive Styling*/
