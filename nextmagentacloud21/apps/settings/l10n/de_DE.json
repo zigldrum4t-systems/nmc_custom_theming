@@ -475,7 +475,7 @@
     "When terminating, a new login is necessary.": "Beim Beenden wird ein erneuter Login notwendig.",
     "If you delete a session, all data of your MagentaCLOUD on the respective device will also be removed.": "Löschen sie eine Sitzungen werden auch alle Daten ihrer MagentaCLOUD auf dem betreffenden Gerät entfernt.",
     "You can manually create a new session here and connect a new device to your MagentaCLOUD via login data or QR code.": "Sie können hier manuell eine neue Sitzungen erstellen und per Login Daten oder QR Code ein neues Gerät mit ihrer MagentaCLOUD verbinden.",
-    "Session label": "bezeichnung der Sitzung",
+    "Session label": "Bezeichnung der Sitzung",
     "Create new session": "Neue Sitzung erstellen",
     "Show QR code": "QR-Code anzeigen",
     "Edit": "bearbeiten",

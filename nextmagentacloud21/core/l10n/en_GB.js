@@ -256,6 +256,7 @@ OC.L10N.register(
     "Magentacloud M": "Magentacloud M",
     "Magentacloud L": "Magentacloud L",
     "Magentacloud XL": "Magentacloud XL",
-    "Magentacloud XXL": "Magentacloud XXL"
+    "Magentacloud XXL": "Magentacloud XXL",
+    "Search files, folders or settings …": "Search files, folders or settings …"
 },
 "nplurals=2; plural=(n != 1);");
