@@ -161,7 +161,7 @@
   /* Activity Notifications*/
 
   #activity_notifications{
-    padding-top: 0;
+    padding-top: 0.25rem;
     max-width: 600px;
     margin-bottom: 8rem;
     border-bottom: none;
@@ -277,7 +277,8 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     display: inline !important;
   }
   #webdav-address span{
-  color:#e20074;
+    color:#e20074;
+    padding-left: 0.25rem;
   }
 
   #webdav-address span:hover{
@@ -472,4 +473,22 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     font-size:0.975rem !important;
     float:right;
     display: inline;
+  }
+
+  #monthly-notifications-settings .settings-hint{
+    margin-top: 8px !important;
+  }
+
+  #monthly-notifications-settings h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #191919;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #monthly-notifications-settings {
+    display: block;
+    padding-left: 30px;
+    max-width: 600px;
   }

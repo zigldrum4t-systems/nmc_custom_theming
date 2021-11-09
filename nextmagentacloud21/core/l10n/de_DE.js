@@ -423,6 +423,8 @@ OC.L10N.register(
     "Magentacloud M": "Magentacloud M",
     "Magentacloud L": "Magentacloud L",
     "Magentacloud XL": "Magentacloud XL",
-    "Magentacloud XXL": "Magentacloud XXL"
+    "Magentacloud XXL": "Magentacloud XXL",
+    "Search files, folders or settings …": "Suchen Sie nach Dateien, Ordner oder Einstellungen...",
+    "Show folder info text": "Ordnerinfotext anzeigen"
 },
 "nplurals=2; plural=(n != 1);");
