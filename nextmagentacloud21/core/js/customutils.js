@@ -5,8 +5,22 @@ window.onload = function () {
   searchInputLabel();
   appendFolderName();
   domElementsobserver();
+  fileActionButtonSettings();
 };
 
+function fileActionButtonSettings() {
+  setTimeout(function () {
+  var ele = document.querySelectorAll('.filesSelectMenu ul li, .filesSelectionMenu ul li');
+      for(var i=0; li=ele[i]; i++) {
+        if(li.className === 'item-toggleSelectionMode'){
+          li.parentNode.removeChild(li);
+        }
+        else if(li.className === 'item-tags'){
+          li.parentNode.removeChild(li);
+        }
+      }
+    }, 200);
+}
 
 function brandBarAnimation() {
   setTimeout(function () {
@@ -30,6 +44,9 @@ function brandBarAnimation() {
     richWorkSpace.nextElementSibling.innerHTML = 'Show folder info text';
     richWorkSpace.dispatchEvent(new Event('change'));
   }
+
+  document.getElementById('recommendations-setting-enabled') ?
+    document.getElementById('recommendations-setting-enabled').classList.add('hide') : null;
 }
 
 
@@ -58,7 +75,7 @@ function searchInputLabel() {
     ele.onclick = function () {
       var labelElement = document.createElement('label');
       labelElement.className = 'search-input-label';
-      labelElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
+      labelElement.innerText = 'Search files, folders or settings …';
       document.getElementsByClassName('unified-search__form-input')[0] ?
         document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
       document.getElementsByClassName('unified-search__form')[0] ?
@@ -99,115 +116,3 @@ function domElementsobserver() {
   domObserver.observe(document.body, { attributes: true, childList: true, characterData: true });
 }
 var ele={};
-document.addEventListener('click',function(e){ 
-var targetElement = event.target || event.srcElement;
-console.log(e.target.attributes + "w");
-alert(e.target);
-if(e.target.className!=="" && e.target.className !=="active" ){
-  var containsval = e.target.className; 
-  if(containsval!==''){
-    if(!containsval.includes('-menu-')){
-
-      var eventClassName = e.target.className; 
-      var foo = eventClassName.split("nav-icon-");
-     // alert(foo[0]);
-      if(foo[0].includes('__trigger')){
-        var utag_data = {
-          page_content_id : "top.bar.menu.search", // page name
-          page_type : "theme" // page type
-          }
-          alert("search =" + utag_data);
-        }
-
-       else if(foo[0].includes('emailmenu')){
-          var utag_data = {
-            page_content_id : "top.bar.menu.emailcenter", // page name
-            page_type : "theme" // page type
-            }
-            alert("email =" + utag_data);
-          }
-          alert(foo[1]);
-          if(foo[1]!==""){
-            var foo1 = foo[1].split("svg");
-            if($.trim(foo1[0])=="favorites"){
-              var utag_data = {
-                page_content_id : "left.menu.favorites", // page name
-                page_type : "theme" // page type
-                }
-                alert("favorites =" + utag_data);
-
-            }
-            if($.trim(foo1[0])=="files"){
-              var utag_data = {
-                page_content_id : "left.menu.allfiles", // page name
-                page_type : "theme" // page type
-                }
-                alert("my files =" + utag_data);
-              
-            }
-            if($.trim(foo1[0])=="sharingout"){
-              var utag_data = {
-                page_content_id : "left.menu.sharesfromme", // page name
-                page_type : "theme" // page type
-                }
-                alert("sharingout =" + utag_data);
-            }
-            if($.foo1[0]=="sharingin"){
-              var utag_data = {
-                page_content_id : "left.menu.sharesfromothers", // page name
-                page_type : "theme" // page type
-                }
-                alert("sharingin =" + utag_data);              
-            }
-          }
-    }
-    else if(containsval.contains('menu-')){
-      var foo = eventClassName.split("menu-");
-      alert(foo[1]+"aa");
-    }
-  }
-}
-else if(e.target.attributes){
-  alert(e.target.attributes);
-  if(e.target.attributes.href.value.includes('apps/')){
-    var foo = e.target.attributes.href.value.split('apps/')
-    if(foo[1]=="files/"){
-      var utag_data = {
-        page_content_id : "top.bar.menu.myfiles", // page name
-        page_type : "theme" // page type
-        }
-        alert("myfiles =" + utag_data);
-    }
-    else if(foo[1]=="dashboard/"){
-      var utag_data = {
-        page_content_id : "top.bar.menu.welcome", // page name
-        page_type : "theme" // page type
-        }
-        alert("dashboard =" + utag_data);
-    }
-    else if(foo[1]=="photos/"){
-      var utag_data = {
-        page_content_id : "top.bar.menu.media", // page name
-        page_type : "theme" // page type
-        }
-        alert("photos =" + utag_data);
-    }
-    alert(foo[1]+"dd");
-  }
-  else{
-    if(e.target.attributes.href.value=="/index.php/settings/user"){
-      var utag_data = {
-        page_content_id : "top.bar.menu.userprofile", // page name
-        page_type : "theme" // page type
-        }
-        alert("profile =" + utag_data);
-    }
-    alert(e.target.attributes.href.value);
-  }
-}
-if(e.target=="Object HTMLSpanElement"){
-  alert("aaa");
-}
-if(e.target && e.target.id== 'sharingout'){
-     alert("sharingout");
-  }}); 

@@ -32,17 +32,8 @@ aside .icon-close {
   font-size: 1rem !important;
 }
 
-.app-sidebar .app-sidebar-header__desc .app-sidebar-header__title-container .app-sidebar-header__subtitle {
-  opacity: unset !important;
-  font-size: 0.875rem !important;
-}
-
 .app-sidebar .app-sidebar-header__desc {
-  padding: 0.5rem 0.375rem 1.5rem 0 !important;
-}
-
-.app-sidebar .app-sidebar-header__desc .app-sidebar-header__tertiary-actions {
-  width: 32px !important;
+ padding: 0.5rem 0.375rem 1.5rem 0 !important;
 }
 
 .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__figure {
@@ -64,7 +55,10 @@ li.share-link-password-talk-checkbox,
 #tab-sharing .action-input__label,
 .avatardiv img,
 .sharing-entry .avatardiv.popovermenu-wrapper .icon-more,
-.app-sidebar-tabs__nav #activityTabView{
+.app-sidebar-tabs__nav #activityTabView,
+.app-sidebar-tabs__tab #activity,
+.app-sidebar .app-sidebar-header__desc .app-sidebar-header__tertiary-actions,
+.app-sidebar .app-sidebar-header__desc .app-sidebar-header__title-container .app-sidebar-header__subtitle {
   display: none !important;
 }
 
@@ -100,13 +94,13 @@ aside .icon-star {
 
 #tab-sharing ul.sharing-permissions .action-radio__label::before,
 #tab-sharing ul.sharing-permissions span.action-checkbox .action-checkbox__label::before {
-  margin: 0 0.5rem 0 0 !important;
+  margin: 0.063rem 0.5rem 0 0 !important;
 }
 
 
 /*buttons*/
 
-#tab-sharing button.status-buttons__select,
+ #tab-sharing button.status-buttons__select,
 #tab-sharing button.status-buttons__primary {
   padding: 0 1.5rem !important;
   min-height: 40px !important;
@@ -122,7 +116,7 @@ aside .icon-star {
   border: 1px solid #191919;
   color: #191919;
   margin-bottom:1.5rem;
-  font-size:0.875rem;
+  font-size:0.875rem !important;
 }
 
 #tab-sharing button.status-buttons__select:hover {
@@ -137,6 +131,7 @@ aside .icon-star {
   background-color: #e20074 !important;
   border: 1px solid #e20074;
   color: #ffffff;
+  font-size: 0.875rem !important;
 }
 
 #tab-sharing button.status-buttons__primary:hover{
@@ -181,6 +176,7 @@ margin-top:1rem;
   color: #191919 !important;
   border: 1px solid #191919 !important;
   height: 48px !important;
+  font-size: 1rem;
 }
 
 .sharing-permissions input:focus,
@@ -190,15 +186,21 @@ margin-top:1rem;
   border-color:#e20074 !important;
 }
 
-.mx-input-wrapper:hover svg,
-.mx-input-wrapper:active svg{
-  fill: #e20074 !important;
+.mx-input-wrapper:hover input,
+.mx-input-wrapper:hover focus{
+  border-color: #E20074 !important;
+}
+
+.mx-input-wrapper:hover .mx-icon-calendar,
+.mx-input-wrapper:active .mx-icon-calendar{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
 
 #tab-sharing .action-input__input {
   min-height: unset !important;
   max-height: unset !important;
+  font-size:1rem;
 }
 
 #tab-sharing .action-input__form {
@@ -230,18 +232,21 @@ margin-top:1rem;
 
 .avatardiv--unknown,
 .sharing-entry .avatar-link-share,
-.avatar-class-icon {
+.avatar-class-icon ,
+#app-settings-header .settings-button:focus{
   background-color: unset !important;
 }
 
 .sharing-entry__desc select {
-  min-height: 1rem !important;
+  min-height:0 !important;
+  margin:0 !important;
   border: unset !important;
-  padding: 0 1.5rem 0 1rem !important;
+  padding: 0 !important;
   height: 16px !important;
   color: #b2b2b2 !important;
   font-weight: bold;
-  background: var(--icon-triangle-s-000) no-repeat left -2px center !important;
+  background-repeat: no-repeat;
+  background: var(--icon-triangle-s-e20074) no-repeat right 1px !important;
 }
 
 .action-item--single:hover,
@@ -259,6 +264,7 @@ margin-top:1rem;
 
 .sharing-entry__desc select {
   color: #e20074 !important;
+  font-weight:400 !important;
 }
 
 .popover__inner:hover li.active,
@@ -303,16 +309,16 @@ aside .action-item.action-item--open .action-item__menutoggle,
 }
 
 .sharing-notes .note-subtitle {
-font-size:0.875rem !important;
+font-size:1rem !important;
 }
 
 .sharing-permissions,
 .sharing-notes{
-  margin-top:1.5rem;
+  margin-top:1rem;
 }
 
 .sharing-permissions .permissions{
-font-size:1.25rem;
+font-size:1rem;
 font-weight:bold;
 }
 
@@ -349,7 +355,7 @@ padding:0 !important;
 }
 
 .advanced-settings{
-  margin-top:0.25rem;
+  margin-top:2rem;
 }
 
 .avatardiv:not(.avatardiv--unknown) {
@@ -379,6 +385,7 @@ aside input:not([type='radio']) {
   min-height:40px !important;
   border-color:#191919 !important;
   color:#191919;
+  font-size: 1rem !important;
 }
 
 aside .multiselect .multiselect__tags:hover,
@@ -396,7 +403,7 @@ font-weight:bold;
 margin-left: unset !important;
 color: #666666 !important;
 font-weight: normal;
-margin-bottom:4px;
+margin-bottom:0.25rem;
 }
 
 .advanced-settings li:last-child .action-input {
@@ -417,7 +424,7 @@ padding:0 !important;
 }
 
 .advanced-settings{
-  margin-top:0.25rem;
+  margin-top:2rem !important;
 }
 
 .avatardiv:not(.avatardiv--unknown) {
@@ -444,6 +451,7 @@ p.sharing-input-subtitle{
 }
 .add-new-link-btn{
   margin:0.75rem 0 1rem 0;
+  font-size:1rem !important;
   width:135px;
   background-color: #ffffff !important;
   border: 1px solid #191919;
@@ -471,20 +479,237 @@ aside select[disabled]{
     background-color: white !important;
     border-color: #666666 !important;
 }
-aside .icon-triangle-s {
+aside .icon-triangle-s,
+aside .icon-triangle-n {
   display:inline-block;
-  vertical-align: text-top;
+  vertical-align: middle;
   cursor:pointer;
 }
 .mx-datepicker-main.mx-datepicker-popup{
-  left:0 !important
+  left:0 !important;
+}
+
+.mx-datepicker .mx-table .cell:hover td div,
+.mx-datepicker .mx-table .cell:focus td div,
+.mx-datepicker .mx-table .cell.actived td div,
+.mx-datepicker .mx-table .cell.active td div,
+.mx-datepicker .mx-table .cell.in-range td div{
+   background-color: unset !important;
+   opacity: 0.7;
+   color:#e20074 !important;
+ }
+
+ .app-sidebar .app-sidebar-header__desc .app-sidebar-header__title-container {
+   flex: unset !important;
+   max-width:254px;
+ }
+
+ .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__desc .app-sidebar-header__tertiary-actions {
+   top:3px !important;
+   left: -2px !important;
+ }
+
+ .app-sidebar .app-sidebar-header__desc {
+   justify-content: unset !important;
+ }
+
+ .advanced-settings label:hover,
+ .advanced-settings label:active{
+   color:#e20074 !important;
+ }
+
+ .sharing-link-list select:disabled{
+   background-color:#ffffff !important;
+ }
+
+ .readonly-message{
+   margin-top:0.25rem;
+   color:#666666;
+   margin-left: unset !important;
+ }
+
+ .app-sidebar-tabs__nav {
+   margin-top:unset !important;
+}
+.multiselect .multiselect__tags input.multiselect__input {
+  top:-3px !important;
+}
+.multiselect:hover .multiselect__content-wrapper,
+.multiselect:active .multiselect__content-wrapper,
+.multiselect:focus-within .multiselect__content-wrapper{
+  border:1px solid #E20074 !important;
+  background-color: #ffffff !important;
+}
+.multiselect:hover .multiselect__tags,
+.multiselect:active .multiselect__tags,
+.multiselect:focus-within .multiselect__tags{
+  border-color:#e20074 !important;
+}
+aside input[type='radio'].radio+label:before, input[type='radio'].checkbox+label:before {
+  border:1px solid #191919 !important;
+}
+
+
+
+aside .multiselect__element .option {
+flex-direction: row-reverse;
+}
+
+
+ .option__linetwo {
+  display:none !important;
+}
+
+
+li.multiselect__element,
+li.multiselect__element .multiselect__option--highlight,
+li.multiselect__option,
+span#global-lookup,
+.multiselect__option span.option{
+  height:40px !important;
+  max-height:40px !important;
+}
+
+#tab-sharing .multiselect .multiselect__option span[lookup] .avatardiv,
+.avatardiv--unknown  {
+  background-image: unset !important;
+  background-color: unset !important;
+}
+.multiselect .multiselect__content-wrapper {
+  overflow-y: unset !important;
+}
+.multiselect__content-wrapper .multiselect__element .avatardiv:not(.avatardiv--unknown),
+.multiselect.multiselect--disabled, .multiselect.multiselect--disabled .multiselect__single {
+  background-color: unset !important;
+  box-shadow:unset !important;
+}
+
+aside .action-radio__label {
+  align-items: unset !important;
+}
+
+.option__desc--lineone strong {
+  font-weight: normal !important;
+}
+
+.vue-tooltip .tooltip-inner,
+.vue-tooltip .tooltip-arrow{
+  display: none !important;
+}
+
+/*calendar*/
+
+.mx-datepicker svg{
+  visibility: hidden !important;
+}
+
+.mx-icon-calendar{
+  background-repeat: no-repeat !important;
+  width:24px;
+  height:24px;
+}
+
+.mx-table.mx-table-date th{
+  font-size: 0.875rem !important;
+}
+
+.mx-datepicker-main {
+  font-size:1rem !important;
+  font:unset !important;
+  font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+}
+
+form div{
+  color:unset !important;
+}
+
+.mx-datepicker .mx-datepicker-main {
+  font-family: unset !important;
 }
 
 .mx-datepicker .mx-table .cell:hover,
 .mx-datepicker .mx-table .cell:focus,
 .mx-datepicker .mx-table .cell.actived,
- .mx-datepicker .mx-table .cell.active,
- .mx-datepicker .mx-table .cell.in-range {
-   background-color:#e20074 !important;
-   opacity: 0.7;
+.mx-datepicker .mx-table .cell.active,
+.mx-datepicker .mx-table .cell.in-range,
+.mx-calendar-content .cell:hover,
+.mx-datepicker .mx-calendar-header button:hover,
+.mx-datepicker .mx-time-header button:hover,
+.mx-datepicker .mx-calendar-header button:focus,
+.mx-datepicker .mx-time-header button:focus {
+  background-color: unset !important;
+}
+
+.mx-datepicker .mx-calendar-header button,
+.mx-datepicker .mx-time-header button,
+.mx-table.mx-table-date thead tr th,
+.cell.not-current-month div{
+   color:#666666 !important;
  }
+
+
+.mx-datepicker .mx-table .cell,
+.mx-datepicker .mx-table thead tr th  {
+    opacity: unset !important;
+}
+
+  .mx-datepicker .mx-table.mx-table-date thead th,
+  .mx-datepicker .mx-table.mx-table-date thead td,
+  .mx-datepicker .mx-table.mx-table-date tbody th,
+  .mx-datepicker .mx-table.mx-table-date tbody td,
+  .mx-datepicker .mx-table.mx-table-year th,
+  .mx-datepicker .mx-table.mx-table-year td,
+  .mx-datepicker .mx-table.mx-table-month th,
+  .mx-datepicker .mx-table.mx-table-month td {
+     min-width:unset !important;
+     transition: unset !important;
+     flex:unset !important;
+     flex-basis: unset !important;
+   }
+
+
+   .mx-table.mx-table-date th,
+   .mx-btn.mx-btn-text.mx-btn-current-month,
+   .cell:not(.not-current-month) div{
+     color:#191919 !important;
+   }
+
+   .mx-calendar-header button.mx-btn.mx-btn-text.mx-btn-icon-double-left,
+   .mx-calendar-header button.mx-btn.mx-btn-text.mx-btn-icon-left,
+   .mx-calendar-header button.mx-btn.mx-btn-text.mx-btn-icon-double-right,
+   .mx-calendar-header button.mx-btn.mx-btn-text.mx-btn-icon-right,
+   .mx-calendar-header-label button.mx-btn.mx-btn-text.mx-btn-current-month,
+   .mx-calendar-header-label button.mx-btn.mx-btn-text.mx-btn-current-year,
+   .mx-datepicker .mx-calendar-header button.mx-btn-icon-double-left:before,
+   .mx-datepicker .mx-time-header button.mx-btn-icon-double-left:before,
+   .mx-datepicker .mx-calendar-header button.mx-btn-icon-left:before,
+   .mx-datepicker .mx-time-header button.mx-btn-icon-left:before,
+   .mx-datepicker .mx-calendar-header button.mx-btn-icon-right:before,
+   .mx-datepicker .mx-time-header button.mx-btn-icon-right:before,
+   .mx-datepicker .mx-calendar-header button.mx-btn-icon-double-right:before,
+   .mx-datepicker .mx-time-header button.mx-btn-icon-double-right:before{
+     opacity:unset !important;
+     color:#191919 !important;
+   }
+
+   .mx-table.mx-table-date th,
+   .mx-table.mx-table-date td,
+   .mx-table.mx-table-year td,
+   .mx-table.mx-table-year th{
+     border-bottom: unset !important;
+   }
+
+   .mx-table.mx-table-date tbody{
+     border-top:1px solid #e5e5e5;
+   }
+
+    table.mx-table td:hover div,
+    .mx-datepicker .mx-table .cell.today div,
+    .mx-calendar-header .mx-calendar-header-label button.mx-btn:hover,
+    .mx-datepicker .mx-calendar-header button:hover:before{
+     color:#e20074 !important;
+    }
+
+    .mx-calendar-header-label .mx-btn{
+      font-size:1rem !important ;
+    }

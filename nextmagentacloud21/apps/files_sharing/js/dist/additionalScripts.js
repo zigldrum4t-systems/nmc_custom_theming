@@ -508,7 +508,7 @@ __webpack_require__.r(__webpack_exports__);
       var action = $tr.find('.fileactions .action[data-action="Share"]');
       var type = $tr.data('type');
       var icon = action.find('.icon');
-      var message, recipients, avatars;
+      var message, recipients, avatars,data1;
       var ownerId = $tr.attr('data-share-owner-id');
       var owner = $tr.attr('data-share-owner');
       var mountType = $tr.attr('data-mounttype');
@@ -549,14 +549,15 @@ __webpack_require__.r(__webpack_exports__);
 
       if (hasShares || ownerId) {
         recipients = $tr.data('share-recipient-data');
+        data1 = $tr.data('share-types');
         action.addClass('shared-style');
-        avatars = '<span>' + t('files_sharing', 'Shared') + '</span>'; // even if reshared, only show "Shared by"
+        avatars = '<span class="icon icon-public">' + t('files_sharing', '') + '</span>'; // even if reshared, only show "Shared by"
 
         if (ownerId) {
           message = t('files_sharing', 'Shared by');
           avatars = OCA.Sharing.Util._formatRemoteShare(ownerId, owner, message);
         } else if (recipients) {
-          avatars = OCA.Sharing.Util._formatShareList(recipients);
+          avatars = OCA.Sharing.Util._formatShareListNew(recipients,data1);
         }
 
         action.html(avatars).prepend(icon);
@@ -682,10 +683,10 @@ __webpack_require__.r(__webpack_exports__);
     * @returns {String[]} modified list of recipients
     */
     _formatShareList: function _formatShareList(recipients) {
+      //alert(recipients);
       var _parent = this;
-      var returnVal='';
       var firstname='';
-
+      var returnVal='';
       recipients = _.toArray(recipients);
       recipients.sort(function (a, b) {
         return a.shareWithDisplayName.localeCompare(b.shareWithDisplayName);
@@ -694,11 +695,50 @@ __webpack_require__.r(__webpack_exports__);
       //   return _parent._formatRemoteShare(firstname, returnVal, t('files_sharing', 'Shared with'));
       // });
 
-      $.each(recipients, function(key,val) {   
+      $.each(recipients, function(key,val) {  
+        //alert(val.shareWith); 
         firstname =   val.shareWith;
         returnVal+= val.shareWithDisplayName+", ";        
     }); 
     returnVal = returnVal.replace(/,\s*$/, "");
+
+    returnVal= _parent._formatRemoteSharewith(firstname, returnVal, t('files_sharing', 'Shared with'));              
+     console.log(returnVal);
+     return returnVal;
+    },
+
+
+    _formatShareListNew: function _formatShareListNew(recipients,dataType) {
+      //alert(recipients);
+      var _parent = this;
+      var firstname='';
+      var returnVal='';
+      //dataType = _.toArray(dataType);
+      recipients = _.toArray(recipients);
+      recipients.sort(function (a, b) {
+        return a.shareWithDisplayName.localeCompare(b.shareWithDisplayName);
+      });
+      //  $.map(recipients, function (recipient) {
+      //   return _parent._formatRemoteShare(firstname, returnVal, t('files_sharing', 'Shared with'));
+      // });
+
+      $.each(recipients, function(key,val) {  
+        //alert(val.shareWith); 
+        firstname =   val.shareWith;
+        returnVal+= val.shareWithDisplayName+", ";        
+    }); 
+    returnVal = returnVal.replace(/,\s*$/, "");
+   
+    if($.inArray(3,dataType)> -1){
+      alert("yes" + dataType);
+    }
+    else{
+      alert(dataType);
+    }
+  
+    // $.map(dataType, function (data) {
+    //   return _parent._formatRemoteShare(firstname, returnVal, t('files_sharing', 'Shared with'));
+    // });
 
     returnVal= _parent._formatRemoteSharewith(firstname, returnVal, t('files_sharing', 'Shared with'));              
      console.log(returnVal);
@@ -758,9 +798,9 @@ __webpack_require__.r(__webpack_exports__);
 
       if (hasShares || ownerId) {
         recipients = $tr.data('share-recipient-data');
+        
         action.addClass('shared-style');
         avatars = '<span>' + t('files_sharing', 'Shared') + '</span>'; // even if reshared, only show "Shared by"
-
         if (ownerId) {
           message = t('files_sharing', 'Shared by');
           avatars = this._formatRemoteShare(ownerId, owner, message);

@@ -46,7 +46,10 @@
   }
 
   .personal-settings-setting-box .section input[type='text'],
-  .personal-settings-setting-box .section input[type='email']{
+  .personal-settings-setting-box .section input[type='email'],
+  #webdav-address input[type='text'],
+  #security input[type='text']
+  {
     width: 400px !important;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
@@ -116,16 +119,16 @@
     margin:0.125rem 0.25rem;
   }
 
-  .extra-details #files{
+  .files-usage{
     background-color: #22adb9;
   }
-  .extra-details #photos{
+  .photos-usage{
     background-color: #b682bd;
   }
-  .extra-details #backup{
+  .backup-usage{
     background-color: #828ac4;
   }
-  .extra-details #bin{
+  .bin-usage{
     background-color: #fc9a55;
   }
 
@@ -192,7 +195,7 @@
     padding: 0 0.5rem;
   }
 
-  #activity_notifications table td {
+  #activity_notifications table td{
     padding: 1rem 0.5rem;
   }
 
@@ -258,4 +261,215 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   #app-navigation.without-app-settings ul li a.active,
   #app-navigation.without-app-settings ul li a.active a {
     background-color: unset !important;
+  }
+
+  .app-password-row .icon{
+    background-size: 24px !important;
+  }
+  #webdav-address .button{
+    border-color: unset !important;
+    background-color: unset !important;
+    border-radius:unset !important;
+    border: unset !important;
+  }
+
+  #webdav-address .clipboardButton {
+    display: inline !important;
+  }
+  #webdav-address span{
+  color:#e20074;
+  }
+
+  #webdav-address span:hover{
+    text-decoration: underline;
+  }
+
+  #webdav-address div{
+    margin-top: 1rem;
+  }
+
+  .devices-session{
+    padding: 3rem 1rem !important;
+  }
+
+  #security{
+    padding-left: 1rem !important;
+  }
+
+  .devices-session .clientslinks {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+ }
+
+  #clientslinks{
+    padding-bottom: 1.5rem;
+  }
+  #security thead tr{
+    background-color: #e5e5e5;
+  }
+
+  #setting-tokens-table{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  #setting-session{
+    padding-bottom: 1rem;
+  }
+
+  #settings-input input[type='text']{
+    background-color: unset !important;
+    border: 1px solid #191919;
+  }
+  #settings-input input:hover{
+    border-color: #e20074 !important;
+  }
+
+  .create-session{
+    margin-top: 0.5rem;
+    padding: 0.563rem 1.5rem !important;
+    border-color: #e20074 !important;
+    background-color: #e20074;
+    color: #ffffff !important;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.42857143;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: #e20074 !important;
+	margin-bottom: 8rem;
+  }
+
+  .app-password-code a{
+    color: #e20074;
+  }
+
+  .app-password-code a:hover{
+    text-decoration: underline;
+  }
+
+  .app-password-code{
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+	display: flex;
+    align-items: center;
+  }
+
+  .app-password-username-row{
+    display: table-cell;
+    padding-right: 1rem;
+  }
+
+  .app-password-code .button{
+    padding: 0.563rem 1.5rem !important;
+    border-color: #e20074 !important;
+    background-color: #e20074;
+    color: #ffffff !important;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.42857143;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: #e20074 !important;
+
+  }
+
+  .clientslinks a:nth-child(1){
+    padding-right: 0.5rem;
+  }
+
+  #app-tokens-table .action-item__menutoggle--default-icon {
+    background-position: center center !important;
+  }
+
+  #security table{
+    max-width: 562px;
+	border-collapse: collapse;
+    width: 100% !important;
+  }
+
+  #security table th {
+    background: #f2f2f2;
+    font-size: 0.75rem;
+    font-weight: bold;
+    opacity: unset;
+    padding: 0.625rem 0 0.625rem 0;
+  }
+
+  /* .popover__wrapper ul li button:hover{
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+    color: #e20074;
+  } */
+
+  #clientslinks a:nth-child(1) {
+    padding-right: 0.5rem;
+  }
+
+  #app-tokens-table tbody tr{
+    border-bottom: 1px solid hsl(0, 0%, 80%) !important;
+  }
+
+  #app-tokens-table tbody td{
+    border-top: unset !important;
+  }
+
+  #security table tbody tr:hover, #security table tbody tr:focus, #security table tbody tr:active {
+	background-color: var(--color-background-dark) !important;
+  }
+
+  #app-tokens-table tr th:nth-child(4) {
+    padding-left: 1rem;
+  }
+
+  #personal-settings  input:not(:disabled):not(.primary):hover,
+  #personal-settings  input:not(:disabled):not(.primary):focus,
+  #personal-settings  input:not(:disabled):not(.primary).active{
+      border-color:#e5e5e5 !important;
+      background-color: #e5e5e5 !important;
+    }
+
+  .vue-tooltip {
+      top: 12px !important;
+  }
+
+  .popover__wrapper .action-button__icon{
+      background-position: center !important;
+  }
+
+  td.client div{
+    opacity: unset !important;
+  }
+
+  .settings-progress-bar{
+    display: flex;
+    height: 8px;
+    width: 100%;
+    background: #f2f2f2;
+    border-radius: 10px;
+  }
+
+  .settings-progress-bar .progress-bar {
+    border-radius: 10px;
+  }
+  .settings-progress-bar .progress-bar:not(:first-child):before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #fff;
+  }
+
+  .quotatext-bg .quotatext {
+    display: inline !important;
+  }
+  .quotatext-bg .space-occupied {
+    font-size:0.975rem !important;
+    float:right;
+    display: inline;
   }
