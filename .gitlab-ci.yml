@@ -11,4 +11,3 @@ build image:
   trigger: nextmagentacloud/images
   only:
     - master
-
