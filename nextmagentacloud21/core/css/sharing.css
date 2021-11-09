@@ -248,18 +248,7 @@ margin-top:1rem;
   background-position: left center;
   background: var(--icon-triangle-s-e20074) no-repeat left -2px center !important;
 }
-/* .sharing-entry__desc select {
-  align-items: baseline;
-  margin:0 !important;
-  padding-top: 0 !important;
-  padding-left: 0 !important;
-  padding-bottom: 0 !important;
-  border: unset !important;
-  color: #b2b2b2 !important;
-  background-position-x: 64px;
-  background-position-y: 4px;
-  background-repeat: no-repeat !important;
-} */
+
 
 .action-item--single:hover,
 .action-item--single:focus,
