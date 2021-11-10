@@ -1073,8 +1073,10 @@ div.crumb:last-child {
 }
 
 button:not(:disabled):not(.primary):hover,
+button:not(:disabled):not(.primary):focus,
 button:not(:disabled):not(.primary).active,
 .button:not(:disabled):not(.primary):hover,
+.button:not(:disabled):not(.primary):focus,
 .button:not(:disabled):not(.primary).active,
 .pager li a:not(:disabled):not(.primary):hover,
 .pager li a:not(:disabled):not(.primary):focus,
