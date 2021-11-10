@@ -176,32 +176,32 @@ script('settings', [
               )); ?>
             <?php endif ?>
             </h4>
-            <span class="space-occupied">Memory 31.6% occupied</span>
-
+            <span class="space-occupied"><?php p($l->t('Memory %s%% occupied', [$_['usage_relative']])); ?></span>
         </div>
         <!-- <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage'] > 80) : ?> class="warn" <?php endif; ?>></progress> -->
           <div class="settings-progress-bar">
-            <div class="progress-bar styledbar files-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            <div class="progress-bar styledbar files-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php isset($_['filesSizeInPer'])?p($_['filesSizeInPer']):""; ?>%;">
             </div>
-            <div class="progress-bar styledbar photos-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+            <div class="progress-bar styledbar photos-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php isset($_['photoVideoSizeInPer'])?p($_['photoVideoSizeInPer']):""; ?>%;">
             </div>
-            <div class="progress-bar styledbar bin-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php p($_['usage_relative']); ?>%;">
+
+            <div class="progress-bar styledbar bin-usage" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php isset($_['trashSizeInPer'])?p($_['trashSizeInPer']):""; ?>%;">
             </div>
           </div>
         </div>
       <div class="extra-details">
       <div>
         <div id="files" class="files-usage"></div>
-        <?php p($l->t('Files')); ?>:<strong><?php p($_['usage']); ?></strong>
+        <?php p($l->t('Files')); ?>:<strong><?php isset($_['filesSize'])?p($_['filesSize']):""; ?></strong>
       </div>
         <div>
           <div id="photos" class="photos-usage"></div>
-            <?php p($l->t('Photos & videos')); ?>:<strong><?php p($_['usage']); ?></strong>
+            <?php p($l->t('Photos & videos')); ?>:<strong><?php isset($_['photoVideoSize'])?p($_['photoVideoSize']):""; ?></strong>
         </div>
         <div>
         <div>
           <div id="bin" class="bin-usage"></div>
-          <?php p($l->t('Recycle Bin')); ?>:<strong><?php p($_['usage']); ?></strong>
+          <?php p($l->t('Recycle Bin')); ?>:<strong><?php isset($_['trashSize'])?p($_['trashSize']):""; ?></strong>
         </div>
     </div>
   <div>

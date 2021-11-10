@@ -688,7 +688,8 @@ __webpack_require__.r(__webpack_exports__);
       recipients.sort(function (a, b) {
         return a.shareWithDisplayName.localeCompare(b.shareWithDisplayName);
       });
-      //Here we need to add our code for sharing 
+      //Here we need to add our code for sharing also need one icon for link sharting. 
+      // we need to work on sharing icons.  
       return $.map(recipients, function (recipient) {
         return _parent._formatRemoteSharewith(recipient.shareWith, recipient.shareWithDisplayName, t('files_sharing', 'Shared with'));
       });
