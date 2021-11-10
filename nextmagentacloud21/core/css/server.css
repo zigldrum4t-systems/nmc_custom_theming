@@ -1750,8 +1750,8 @@ iframe.viewer__file {
     color: #e20074 !important;
 }
 
-.oc-dialog-buttonrow.onebutton.aside .primary,
-.oc-dialog-buttonrow.twobuttons.aside .primary {
+.oc-dialog-buttonrow.onebutton .primary,
+.oc-dialog-buttonrow.twobuttons .primary {
     background-color: #e20074 !important;
     border-color: #e20074 !important;
     color: #ffffff !important;

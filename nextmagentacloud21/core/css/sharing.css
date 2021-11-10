@@ -599,10 +599,10 @@ aside .action-radio__label {
   font-weight: normal !important;
 }
 
-.vue-tooltip .tooltip-inner,
+/* .vue-tooltip .tooltip-inner,
 .vue-tooltip .tooltip-arrow{
   display: none !important;
-}
+} */
 
 /*calendar*/
 
