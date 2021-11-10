@@ -309,6 +309,8 @@ OC.L10N.register(
     "Live Backups": "Live Backups",
     "Recycle Bin": "Recycle Bin",
     "Your tariff": "Your tariff",
-    "Storage": "Storage"
+    "Storage": "Storage",
+    "You can terminate individual sessions here or remove them completely. When terminating, a new login is necessary. If you delete a session, all data of your MagentaCLOUD on the respective device will also be removed.": "You can terminate individual sessions here or remove them completely. When terminating, a new login is necessary. If you delete a session, all data of your MagentaCLOUD on the respective device will also be removed.",
+    "Copy to clipboard": "Copy to clipboard"
 },
 "nplurals=2; plural=(n != 1);");
