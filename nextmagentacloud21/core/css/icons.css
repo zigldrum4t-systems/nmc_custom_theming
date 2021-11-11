@@ -559,3 +559,9 @@ aside .icon-star{
 #fileList [data-mounttype="shared-root"] .thumbnail {
   background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }
+
+/*photo gallery video icon*/
+
+.icon-video-white, .icon-video.icon-white {
+  background-image: var(--icon-video-play-custom) !important;
+}

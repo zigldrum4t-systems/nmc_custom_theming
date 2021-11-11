@@ -2069,6 +2069,11 @@ iframe.viewer__file {
       min-width: 312px !important;
       margin-left: -9.75rem !important;
     }
+/*photo-gallery-icon*/
+
+a.file [class^='icon-'], [class*=' icon-'] {
+  min-width:24px !important;
+  min-height:24px !important;
 }
 
 @media screen and (max-width: 689px) {
