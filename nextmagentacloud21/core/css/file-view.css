@@ -657,3 +657,7 @@ table.multiselect #modified {
   margin-right:0.5rem !important;
   margin-top:0.625rem !important;
 }
+
+#app-content-trashbin .selectedActions{
+  position: unset;
+}

@@ -2,6 +2,8 @@
 
 #app-sidebar-vue {
   padding: 1rem;
+  overflow-x: unset !important;
+  overflow-y: unset !important;
 }
 
 /*thumbnail*/
@@ -79,6 +81,7 @@ aside .icon-star {
 
 .app-sidebar__tab {
   padding: 0 !important;
+  overflow: unset !important;
 }
 
 .action-radio__label,
@@ -462,7 +465,10 @@ p.sharing-input-subtitle{
   height:40px;
   font-weight:normal;
 }
-.add-new-link-btn:hover{
+
+.add-new-link-btn:hover,
+.add-new-link-btn:focus,
+.add-new-link-btn:focus-within {
   color:#e20074;
 }
 
@@ -593,10 +599,10 @@ aside .action-radio__label {
   font-weight: normal !important;
 }
 
-.vue-tooltip .tooltip-inner,
+/* .vue-tooltip .tooltip-inner,
 .vue-tooltip .tooltip-arrow{
   display: none !important;
-}
+} */
 
 /*calendar*/
 
