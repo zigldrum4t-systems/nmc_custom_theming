@@ -30,3 +30,4 @@ deploy-dev1:
     strategy: depend
   only:
     - master
+
