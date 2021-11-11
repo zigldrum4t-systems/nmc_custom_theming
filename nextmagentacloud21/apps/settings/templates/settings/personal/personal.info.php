@@ -204,7 +204,7 @@ script('settings', [
           <?php p($l->t('Recycle Bin')); ?>:<strong><?php isset($_['trashSize'])?p($_['trashSize']):""; ?></strong>
         </div>
     </div>
-  <div>
+  <div class="recycle-para">
      <?php print_unescaped($l->t(
                 'The recycle bin is automatically tide up.'
               )); ?>

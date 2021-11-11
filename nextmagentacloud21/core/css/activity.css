@@ -74,3 +74,10 @@
 }
 
 
+.activitysubject {
+  margin-top: 0.25rem;
+  vertical-align: middle !important;
+}
+.activity-icon {
+  margin-top:0 !important;
+}
