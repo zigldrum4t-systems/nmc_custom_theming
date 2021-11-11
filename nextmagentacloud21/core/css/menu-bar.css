@@ -598,7 +598,8 @@
 }
 
 .settings-menu .user-status-menu-item,
-.settings-menu li[data-id="firstrunwizard-about"] {
+.settings-menu li[data-id="firstrunwizard-about"],
+.settings-menu li[data-id="nmc-firstrunwizard-about"]{
     display: none !important;
 }
 
