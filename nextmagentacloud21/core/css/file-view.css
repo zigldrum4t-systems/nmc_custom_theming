@@ -129,6 +129,14 @@ table.multiselect thead #selectedMenu {
     display: inline-block !important;
 }
 
+#app-content-trashbin #filestable th .columntitle.name {
+  margin-left: 2rem;
+}
+
+#app-content-trashbin table.multiselect th .columntitle.name {
+  margin-left: 0 !important;
+}
+
 .select-all+label {
     width: 54px;
     height: 52px;
