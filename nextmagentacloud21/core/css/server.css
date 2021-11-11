@@ -452,14 +452,32 @@ aside {
     width: 1236px;
 }
 
-.content.app-photos{
+/* .content.app-photos{
   width:100% !important;
-}
+} */
 
 #content>.container-fixed {
     position: relative;
     display: flex;
 }
+
+/* App specific changes for photos app */
+.app-photos #app-navigation-vue {
+    left : 0 !important;
+    top :125px !important;
+}
+.app-photos .app-navigation__list{
+    padding-top: 4rem !important;
+}
+
+.app-photos *{
+     line-height: 0 !important;
+}
+
+.app-photos .app-navigation__list .app-navigation-entry__title {
+    line-height: 44px !important;
+  }
+
 
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
     .brandbar>.container-fixed {
@@ -2069,6 +2087,11 @@ iframe.viewer__file {
       min-width: 312px !important;
       margin-left: -9.75rem !important;
     }
+/*photo-gallery-icon*/
+
+a.file [class^='icon-'], [class*=' icon-'] {
+  min-width:24px !important;
+  min-height:24px !important;
 }
 
 @media screen and (max-width: 689px) {
