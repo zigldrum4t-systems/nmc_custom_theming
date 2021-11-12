@@ -568,6 +568,7 @@ aside .icon-star{
 
 .icon-video-white, .icon-video.icon-white {
   background-image: var(--icon-video-play-custom) !important;
+  filter: unset !important;
 }
 
 /*zip-icon*/

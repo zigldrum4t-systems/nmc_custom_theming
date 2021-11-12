@@ -734,10 +734,11 @@ form div{
 
     .custom-select .items {
       padding:0.5rem;
-      border: 1px solid #e20074 !important;
+      border: unset !important;
       max-width:140px !important;
       top:24px;
       border-radius: unset !important;
+      box-shadow: var(--scl-shadow-level-2);
     }
 
     .custom-select .items div:hover {

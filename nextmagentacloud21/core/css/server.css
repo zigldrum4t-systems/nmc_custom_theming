@@ -2082,14 +2082,17 @@ iframe.viewer__file {
     #filestable .summary {
         height: 150px;
     }
+
     .toastify.dialogs{
       max-width: 312px !important;
       min-width: 312px !important;
       margin-left: -9.75rem !important;
     }
+
 /*photo-gallery-icon*/
 
-a.file [class^='icon-'], [class*=' icon-'] {
+.app-photos [class^='icon-'],
+.app-photos [class*=' icon-'] {
   min-width:24px !important;
   min-height:24px !important;
 }
