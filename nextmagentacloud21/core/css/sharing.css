@@ -720,3 +720,41 @@ form div{
     .mx-calendar-header-label .mx-btn{
       font-size:1rem !important ;
     }
+
+    /*select-box*/
+
+    .custom-select .selected {
+      border: unset !important;
+    }
+
+    .custom-select .selected:after {
+      top: 7px !important;
+      left: 0px !important;
+    }
+
+    .custom-select .items {
+      padding:0.5rem;
+      border: 1px solid #e20074 !important;
+      max-width:140px !important;
+      top:24px;
+      border-radius: unset !important;
+    }
+
+    .custom-select .items div:hover {
+      background-color: unset !important;
+      color:#e20074 !important;
+    }
+
+    .custom-select .items div {
+      padding-left: unset !important;
+      text-align: center !important;
+      padding-bottom: 0.25rem !important;
+    }
+
+    .sharing-entry__desc {
+      max-width: 150px !important;
+    }
+
+    .custom-select {
+      height:24px !important;
+    }
