@@ -2234,5 +2234,9 @@ select#languageinput {
     margin-left: 0 !important;
     padding-left: 0.625rem !important;
   }
+
+  #app-content-trashbin table th .selectedActions {
+    float: unset !important;
+  }
 }
 /*Responsive Styling*/

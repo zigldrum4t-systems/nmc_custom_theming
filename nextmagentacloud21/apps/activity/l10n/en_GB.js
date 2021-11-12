@@ -46,6 +46,8 @@ OC.L10N.register(
     "Open file" : "Open file",
     "This application enables users to view actions related to their files in Nextcloud." : "This application enables users to view actions related to their files in Nextcloud.",
     "Regular mails": "Regular mails",
-    "Activity Report": "Activity Report"
+    "Activity Report": "Activity Report",
+    "You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.": "You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.",
+    "The activity report informs you every morning about all processes in your MagentaCLOUD.": "The activity report informs you every morning about all processes in your MagentaCLOUD."
 },
 "nplurals=2; plural=(n != 1);");

@@ -669,3 +669,11 @@ table.multiselect #modified {
 #app-content-trashbin .selectedActions{
   position: unset;
 }
+
+#oc-dialog-0-content {
+  margin-bottom: 1.5rem;
+}
+
+.oc-dialog-buttonrow.twobuttons {
+  justify-content: end;
+}
