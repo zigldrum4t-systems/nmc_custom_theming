@@ -888,6 +888,7 @@ a.menuitem.action:hover>span,
     padding-top: 0;
     top: 184px;
     z-index: 99;
+    min-height: calc(100% - 120px);
 }
 
 #content-vue.app-settings{
