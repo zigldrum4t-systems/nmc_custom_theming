@@ -569,3 +569,9 @@ aside .icon-star{
 .icon-video-white, .icon-video.icon-white {
   background-image: var(--icon-video-play-custom) !important;
 }
+
+/*zip-icon*/
+
+.icon-zip {
+    background-image: var(--icon-zip-custom) !important;
+}
