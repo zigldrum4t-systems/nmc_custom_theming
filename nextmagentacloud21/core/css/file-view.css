@@ -129,6 +129,21 @@ table.multiselect thead #selectedMenu {
     display: inline-block !important;
 }
 
+#app-content-trashbin #filestable th .columntitle.name {
+    margin-left: 4.5rem;
+}
+
+#app-content-trashbin table.multiselect th .columntitle.name {
+    margin-left: 0 !important;
+}
+
+#app-content-sharingout #filestable th .columntitle.name,
+#app-content-sharingin #filestable th .columntitle.name,
+#app-content-favorites #filestable th .columntitle.name
+{
+    margin-left: 5.625rem !important;
+}
+
 .select-all+label {
     width: 54px;
     height: 52px;
@@ -660,4 +675,12 @@ table.multiselect #modified {
 
 #app-content-trashbin .selectedActions{
   position: unset;
+}
+
+#oc-dialog-0-content {
+  margin-bottom: 1.5rem;
+}
+
+.oc-dialog-buttonrow.twobuttons {
+  justify-content: end;
 }

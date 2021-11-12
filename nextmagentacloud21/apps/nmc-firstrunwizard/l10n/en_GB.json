@@ -57,6 +57,7 @@
     "Browse the app store" : "Browse the app store",
     "Android app" : "Android app",
     "WebDAV Address": "WebDAV Address",
-    "With the WebDAV address, you can set up your MagentaCLOUD as a network drive on Windows, for example. You can find more information about WebDAV and how to use it ": "With the WebDAV address, you can set up your MagentaCLOUD as a network drive on Windows, for example. You can find more information about WebDAV and how to use it "
-},"pluralForm" :"nplurals=2; plural=(n != 1);"
+    "With the WebDAV address, you can set up your MagentaCLOUD as a network drive on Windows, for example. You can find more information about WebDAV and how to use it ": "With the WebDAV address, you can set up your MagentaCLOUD as a network drive on Windows, for example. You can find more information about WebDAV and how to use it ",
+    "here.": "here."
+    },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
