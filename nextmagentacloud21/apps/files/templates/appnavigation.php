@@ -7,16 +7,17 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
 
     if(isset($_['navigationItems']['nmc_files_activity'])){
       $customNavigationItems['nmc_files_activity'] = $_['navigationItems']['nmc_files_activity'];
+      $customNavigationItems['nmc_files_activity']['name'] = $l->t("Activities");
     }
 
     $customNavigationItems['favorites'] = $_['navigationItems']['favorites'];
     $customNavigationItems['files'] = $_['navigationItems']['files'];
 
     $customNavigationItems['sharingout'] = $_['navigationItems']['shareoverview']['sublist'][0];
-    $customNavigationItems['sharingout']['name'] = 'My shares';
+    $customNavigationItems['sharingout']['name'] = $l->t('My shares');
 
     $customNavigationItems['sharingin'] = $_['navigationItems']['shareoverview']['sublist'][1];
-    $customNavigationItems['sharingin']['name'] = 'Shared with me';
+    $customNavigationItems['sharingin']['name'] = $l->t('Shared with me');
 
     $customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
     $pinned = 0;

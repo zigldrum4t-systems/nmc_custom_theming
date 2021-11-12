@@ -1,4 +1,7 @@
 { "translations": {
-  "Crop image previews": "Crop image previews"
+  "Crop image previews": "Crop image previews",
+  "All files" : "All files",
+  "My shares" : "My shares",
+  "Activities" : "Activities"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
