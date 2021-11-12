@@ -23,6 +23,7 @@ OC.L10N.register(
         "Permissions" : "Permissions",
         "With File drop, only uploading is allowed. Only you can see files and folders that have been uploaded." : "With File drop, only uploading is allowed. Only you can see files and folders that have been uploaded.",
         "There are no editing functions for files shared with non-MagentaCLOUD users." : "There are no editing functions for files shared with non-MagentaCLOUD users.",
-        "The password is not send with the email to maintain confidentiality." : "The password is not send with the email to maintain confidentiality."
+        "The password is not send with the email to maintain confidentiality." : "The password is not send with the email to maintain confidentiality.",
+        "Received": "Received"
 },
 "nplurals=2; plural=(n != 1);");

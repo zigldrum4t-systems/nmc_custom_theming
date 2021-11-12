@@ -90,6 +90,6 @@ OC.L10N.register(
     "Android app" : "Android-App",
     "WebDAV Address": "WebDAV Adresse",
     "With the WebDAV address, you can set up your MagentaCLOUD as a network drive on Windows, for example. You can find more information about WebDAV and how to use it ": "Mit der WebDAV Adresse können sie ihre MagentaCLOUD z.B. als Netzlaufwerk bei Windows einrichten. Weitere Information über WebDAV und wie Sie es nutzen können finden Sie ",
-    "here": "hier"
+    "here.": "hier."
 },
 "nplurals=2; plural=(n != 1);");

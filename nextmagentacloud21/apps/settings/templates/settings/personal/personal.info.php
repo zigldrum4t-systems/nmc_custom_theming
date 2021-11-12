@@ -154,29 +154,25 @@ script('settings', [
   </div>
   <div class="telekom-link">
     <p><label><?php p($l->t('You can change your password in the')); ?>
-    <a href='https://account.idm.telekom.com/account-manager/index.xhtml' target='_blank'>login settings</a>
+    <a href='https://account.idm.telekom.com/account-manager/index.xhtml' target='_blank'> <?php p($l->t('login settings')); ?></a>
           <?php p($l->t('for all telekom services.')); ?>
     </label>
     </p>
 
     <div class="personal-settings-setting-box personal-settings-group-box section">
-     <b><?php p($l->t('Storage utilisation  ')); ?></b>
+     <b><?php p($l->t('Storage utilisation')); ?></b>
       <div id="quota" class="personal-info icon-quota">
         <div class="quotatext-bg">
           <h4 class="quotatext">
             <?php if ($_['quota'] === \OCP\Files\FileInfo::SPACE_UNLIMITED) : ?>
-              <?php print_unescaped($l->t(
-                '<strong>%1$s</strong> of <span>%2$s</span> ',
-                [$_['usage'], $_['total_space'],  $_['usage_relative']]
-              )); ?>
+              <strong><?php p($_['usage']); ?></strong> <?php p($l->t('of')); ?> <?php p($_['total_space']); ?>
             <?php else : ?>
-              <?php print_unescaped($l->t(
-                '<strong>%1$s</strong> of <strong>%2$s</strong>',
-                [$_['usage'], $_['total_space'],  $_['usage_relative']]
-              )); ?>
+              <strong><?php p($_['usage']); ?></strong> <?php p($l->t('of')); ?> <?php p($_['total_space']); ?>
             <?php endif ?>
             </h4>
-            <span class="space-occupied"><?php p($l->t('Memory %s%% occupied', [$_['usage_relative']])); ?></span>
+            <span class="space-occupied">
+            <?php p($l->t('Memory')); ?> <?php p($_['usage_relative']); ?>% <?php p($l->t('occupied')); ?>
+            </span>
         </div>
         <!-- <progress value="<?php p($_['usage_relative']); ?>" max="100" <?php if ($_['usage'] > 80) : ?> class="warn" <?php endif; ?>></progress> -->
           <div class="settings-progress-bar">
@@ -206,12 +202,12 @@ script('settings', [
     </div>
   <div class="recycle-para">
      <?php print_unescaped($l->t(
-                'The recycle bin is automatically tide up.'
+                'The recycle bin is automatically tidied up.'
               )); ?>
   </div>
 <div>
 <?php print_unescaped($l->t(
-                'Files that have been in the recycle bin for longer then 30 days are automatically deleted permanently and free up storage space.'
+                'Files that have been in the recycle bin for longer than 30 days are automatically deleted permanently and free up storage space.'
               )); ?>
 </div>
 
@@ -261,7 +257,7 @@ script('settings', [
     </div>
     <div>
         <button>
-        <?php print_unescaped($l->t('Expend storage')); ?>
+        <?php print_unescaped($l->t('Expand storage')); ?>
         </button>
     </div>
 <div>

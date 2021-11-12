@@ -2256,9 +2256,20 @@ select#languageinput {
     margin-left: 1.625rem;
   }
 
+  #app-content-sharingout #filestable th .columntitle.name,
+  #app-content-sharingin #filestable th .columntitle.name,
+  #app-content-favorites #filestable th .columntitle.name
+  {
+    margin-left: 5.4rem;
+  }
+
   table.multiselect th .columntitle.name {
     margin-left: 0 !important;
     padding-left: 0.625rem !important;
+  }
+
+  #app-content-trashbin table th .selectedActions {
+    float: unset !important;
   }
 }
 /*Responsive Styling*/
