@@ -130,11 +130,18 @@ table.multiselect thead #selectedMenu {
 }
 
 #app-content-trashbin #filestable th .columntitle.name {
-  margin-left: 2rem;
+    margin-left: 4.5rem;
 }
 
 #app-content-trashbin table.multiselect th .columntitle.name {
-  margin-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+#app-content-sharingout #filestable th .columntitle.name,
+#app-content-sharingin #filestable th .columntitle.name,
+#app-content-favorites #filestable th .columntitle.name
+{
+    margin-left: 5.625rem !important;
 }
 
 .select-all+label {
