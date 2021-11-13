@@ -37,7 +37,9 @@ script('files', 'jquery.fileupload');
     $customSettingMenu = array($_['forms']['personal'][0],$_['forms']['personal'][1],$_['forms']['personal'][2]);
     $customSettingMenu[0]['section-name'] =  $l->t('Account information');
     $customSettingMenu[1]['section-name'] =  $l->t('Devices & sessions');
+    $customSettingMenu[1]['icon'] = '/themes/nextmagentacloud21/core/img/settings/img/replacement.svg';
     $customSettingMenu[2]['section-name'] =  $l->t('Notifications');
+    $customSettingMenu[2]['icon'] = '/themes/nextmagentacloud21/core/img/settings/img/voice.svg';
 		foreach ($customSettingMenu as $form) {
 			if (isset($form['anchor'])) {
 				$anchor = \OC::$server->getURLGenerator()->linkToRoute('settings.PersonalSettings.index', ['section' => $form['anchor']]);
