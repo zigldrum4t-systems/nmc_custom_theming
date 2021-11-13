@@ -1,4 +1,6 @@
 { "translations": {
-  "Crop image previews": "Crop image previews"
+  "Crop image previews": "Crop image previews",
+  "My shares": "My shares",
+  "Shared with me": "Shared with me"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
