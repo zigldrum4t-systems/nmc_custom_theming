@@ -568,10 +568,15 @@ aside .icon-star{
 
 .icon-video-white, .icon-video.icon-white {
   background-image: var(--icon-video-play-custom) !important;
+  filter: unset !important;
 }
 
 /*zip-icon*/
 
 .icon-zip {
     background-image: var(--icon-zip-custom) !important;
+}
+
+.icon-h1:hover,.icon-h2:hover,.icon-h3:hover,.icon-h4:hover,.icon-h5:hover,.icon-h6:hover{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }

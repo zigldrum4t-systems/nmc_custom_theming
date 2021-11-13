@@ -613,6 +613,10 @@ table.multiselect #modified {
 }
 
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
+  max-width:80px !important;
+}
+
+#fileList .action.action-share.permanent.shared-style span:not(.icon) {
     overflow: unset !important;
 }
 
