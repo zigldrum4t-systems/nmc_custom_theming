@@ -60,6 +60,7 @@ OC.L10N.register(
     "Android app" : "Android app",
     "WebDAV Address": "WebDAV Address",
     "With the WebDAV address, you can set up your MagentaCLOUD as a network drive on Windows, for example. You can find more information about WebDAV and how to use it ": "With the WebDAV address, you can set up your MagentaCLOUD as a network drive on Windows, for example. You can find more information about WebDAV and how to use it ",
-    "Copy to clipboard": "Copy to clipboard"
+    "Copy to clipboard": "Copy to clipboard",
+    "here.": "here."
 },
 "nplurals=2; plural=(n != 1);");
