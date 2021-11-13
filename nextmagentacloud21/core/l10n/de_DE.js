@@ -425,6 +425,7 @@ OC.L10N.register(
     "Magentacloud XL": "Magentacloud XL",
     "Magentacloud XXL": "Magentacloud XXL",
     "Search files, folders or settings …": "Suchen Sie nach Dateien, Ordner oder Einstellungen...",
-    "Show folder info text": "Ordnerinfotext anzeigen"
+    "Show folder info text": "Ordnerinfotext anzeigen",
+    "Add":"Hinzufügen"
 },
 "nplurals=2; plural=(n != 1);");

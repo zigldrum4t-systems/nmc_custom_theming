@@ -761,11 +761,6 @@ form div{
       height:24px !important;
     }
 
-    /* .custom-select,
-    .custom-select h5{
-      cursor: pointer !important;
-    } */
-
     .custom-select .selected {
       padding-left:unset !important;
       color:#e20074 !important;

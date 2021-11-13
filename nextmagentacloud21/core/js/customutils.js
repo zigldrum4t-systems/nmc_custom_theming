@@ -6,21 +6,8 @@ window.onload = function () {
   appendFolderName();
   domElementsobserver();
   fileActionButtonSettings();
+  breadcrumbAddLabel();
 };
-
-function fileActionButtonSettings() {
-  setTimeout(function () {
-  var ele = document.querySelectorAll('.filesSelectMenu ul li, .filesSelectionMenu ul li');
-      for(var i=0; li=ele[i]; i++) {
-        if(li.className === 'item-toggleSelectionMode'){
-          li.parentNode.removeChild(li);
-        }
-        else if(li.className === 'item-tags'){
-          li.parentNode.removeChild(li);
-        }
-      }
-    }, 200);
-}
 
 function brandBarAnimation() {
   setTimeout(function () {
@@ -115,5 +102,28 @@ function domElementsobserver() {
 
   domObserver.observe(document.body, { attributes: true, childList: true, characterData: true });
 }
-//Add new extra comment for push new code.
 
+function fileActionButtonSettings() {
+  setTimeout(function () {
+  var ele = document.querySelectorAll('.filesSelectMenu ul li, .filesSelectionMenu ul li');
+      for(var i=0; li=ele[i]; i++) {
+        if(li.className === 'item-toggleSelectionMode'){
+          li.parentNode.removeChild(li);
+        }
+        else if(li.className === 'item-tags'){
+          li.parentNode.removeChild(li);
+        }
+      }
+    }, 200);
+}
+
+function breadcrumbAddLabel() {
+  var ele = document.querySelectorAll('#controls .actions.creatable a')[0];
+  var labelElement = document.createElement('label');
+      labelElement.className = 'add-label';
+      labelElement.innerText = t('core', 'Add');
+
+     if(ele){
+       ele.appendChild(labelElement);
+     }
+  }
