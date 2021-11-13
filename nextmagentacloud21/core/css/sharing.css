@@ -456,7 +456,7 @@ p.sharing-input-subtitle{
 .add-new-link-btn{
   margin:0.75rem 0 1rem 0;
   font-size:1rem !important;
-  width:135px;
+  width:auto !important;
   background-color: #ffffff !important;
   border: 1px solid #191919;
   color: #191919;
@@ -758,4 +758,13 @@ form div{
 
     .custom-select {
       height:24px !important;
+    }
+
+    .custom-select,
+    .custom-select h5{
+      cursor: pointer !important;
+    }
+
+    .custom-select .selected {
+      padding-left:unset !important;
     }
