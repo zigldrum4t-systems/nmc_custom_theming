@@ -224,6 +224,7 @@ script('settings', [
     }
 
 ?>
+
 <div id="tarrifInfo" class="personal-settings-tarrif personal-settings-tarrif-box">
   <h4><?php p($l->t('Tariff information')); ?></h4>
     <div>
@@ -245,9 +246,9 @@ script('settings', [
                 p($l->t('Magentacloud M'));
             }else if ($totalSpaceInGB == 500){
                 p($l->t('Magentacloud L'));
-            }else if ($totalSpaceInGB == 1000){
+            }else if ($totalSpaceInGB == 1024){
                 p($l->t('Magentacloud XL'));
-            }else if ($totalSpaceInGB == 5000){
+            }else if ($totalSpaceInGB == 5120){
                 p($l->t('Magentacloud XXL'));
             }
         ?>
