@@ -404,7 +404,8 @@ div.crumb {
 #filestable .icon-triangle-s:hover ,
 .advanced-settings label:hover span.icon-triangle-s,
 .advanced-settings label:active span.icon-triangle-s,
-.sharing-entry__desc select {
+.sharing-entry__desc select,
+.custom-select  span.icon-triangle-s{
     background-image: var(--icon-triangle-s-e20074) !important;
 }
 
