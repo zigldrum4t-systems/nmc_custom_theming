@@ -271,7 +271,8 @@
     "Magentacloud XL": "Magentacloud XL",
     "Magentacloud XXL": "Magentacloud XXL",
     "Search files, folders or settings …": "Search files, folders or settings …",
-    "Show folder info text": "Show folder info text"
+    "Show folder info text": "Show folder info text",
+    "Add":"Add"
   },
   "pluralForm": "nplurals=2; plural=(n != 1);"
 }
