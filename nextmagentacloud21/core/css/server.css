@@ -393,7 +393,7 @@ section {
 
 #controls>div.actions.creatable>a:hover {
     color: var(--scl-color-magenta);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #controls>div.actions.creatable>a>span.hidden-visually:hover {
@@ -904,6 +904,7 @@ a.menuitem.action:hover>span,
 
 .actions {
     padding: 8px;
+    margin-top: 2px;
 }
 
 .actions.creatable a {
@@ -915,8 +916,21 @@ a.menuitem.action:hover>span,
     margin-top: 2px
 }
 
+.actions.creatable .add-label{
+  margin-left: 0.625rem;
+  font-weight: normal;
+  color:#E20074;
+}
+
+#controls .actions > .button{
+  justify-content: start !important;
+  padding-left: 0.2rem !important;
+}
+
+
 div.crumb {
     padding: 0;
+    margin-top: 2px;
 }
 
 div.crumb>a,
@@ -924,6 +938,9 @@ div.crumb>span {
     opacity: 1 !important;
 }
 
+div.crumb>a:hover{
+    color: #e20074;
+}
 div.crumb:last-child {
     margin-right: 0 !important;
 }
@@ -2090,12 +2107,13 @@ iframe.viewer__file {
       margin-left: -9.75rem !important;
     }
 
-/*photo-gallery-icon*/
+  /*photo-gallery-icon*/
 
-.app-photos [class^='icon-'],
-.app-photos [class*=' icon-'] {
-  min-width:24px !important;
-  min-height:24px !important;
+  .app-photos [class^='icon-'],
+  .app-photos [class*=' icon-'] {
+      min-width:24px !important;
+      min-height:24px !important;
+    }
 }
 
 @media screen and (max-width: 689px) {
@@ -2218,16 +2236,16 @@ iframe.viewer__file {
   .personal-settings-setting-box .section input[type='text'],
    .personal-settings-setting-box .section input[type='email'] {
      width:auto !important;
-}
-.telekom-link p {
- width:364px !important;
-}
-select#languageinput {
-  width:auto !important;
-}
-#body-settings #quota {
-  width:320px !important
-}
+  }
+  .telekom-link p {
+  width:364px !important;
+  }
+  select#languageinput {
+    width:auto !important;
+  }
+  #body-settings #quota {
+    width:320px !important
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2273,4 +2291,5 @@ select#languageinput {
     float: unset !important;
   }
 }
+
 /*Responsive Styling*/
