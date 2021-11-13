@@ -1,4 +1,5 @@
-  #app-navigation.without-app-settings li:hover span{
+  #app-navigation.without-app-settings li:hover span,
+  #app-navigation.without-app-settings li.active span{
     color:#e20074 !important;
   }
 
@@ -257,7 +258,8 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     vertical-align: text-bottom;
   }
 
-  #app-navigation.without-app-settings ul li:hover img{
+  #app-navigation.without-app-settings ul li:hover img,
+  #app-navigation.without-app-settings ul li.active img{
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
   }
 

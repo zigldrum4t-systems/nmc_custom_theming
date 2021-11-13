@@ -140,7 +140,7 @@ section {
 #app-navigation>ul>li a.active,
 #app-navigation>ul>li a.active>a {
     background-color: #f2f2f2 !important;
-    color: #e20074;
+    color: #e20074 !important;
     text-decoration: none;
 }
 
@@ -1980,8 +1980,12 @@ iframe.viewer__file {
     color: #FFFFFF;
 }
 
+.oc-conflict-pre-dlg {
+  width:288px !important;
+}
+
 .oc-conflict-pre-dlg-close-div a {
-    padding-right: 1.12rem;
+    padding-right: 1.375rem !important;
     padding-bottom: 0.37rem;
     background-size: 1.5rem 1.5rem !important;
 }
@@ -1990,6 +1994,10 @@ iframe.viewer__file {
   display: none;
 }
 
+.app-navigation__photos:hover span,
+.app-navigation__photos:active span{
+  color: #e20074 !important;
+}
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {

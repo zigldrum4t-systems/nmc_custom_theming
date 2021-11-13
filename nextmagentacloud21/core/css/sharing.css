@@ -436,6 +436,7 @@ padding:0 !important;
   background-image: var(--icon-magenta-cloud);
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: unset !important;
 }
 
 .action-item--single ,
@@ -733,7 +734,7 @@ form div{
     }
 
     .custom-select .items {
-      padding:0.5rem;
+      padding:1rem 0.5rem 0.5rem 0.5rem;
       border: unset !important;
       max-width:140px !important;
       top:24px;
@@ -747,9 +748,9 @@ form div{
     }
 
     .custom-select .items div {
-      padding-left: unset !important;
-      text-align: center !important;
-      padding-bottom: 0.25rem !important;
+      /* padding-left: unset !important; */
+      /* text-align: center !important; */
+      padding-bottom: 0.5rem !important;
     }
 
     .sharing-entry__desc {
@@ -760,11 +761,16 @@ form div{
       height:24px !important;
     }
 
-    .custom-select,
+    /* .custom-select,
     .custom-select h5{
       cursor: pointer !important;
-    }
+    } */
 
     .custom-select .selected {
       padding-left:unset !important;
+      color:#e20074 !important;
+    }
+
+    .sharing-sharee-list .sharing-entry__actions {
+      margin-left:44px !important;
     }

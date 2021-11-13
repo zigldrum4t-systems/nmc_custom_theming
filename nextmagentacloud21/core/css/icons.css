@@ -431,7 +431,8 @@ aside select[disabled]{
 
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close,
-aside .icon-close {
+aside .icon-close,
+.oc-conflict-pre-dlg-close-div a  {
     background: var(--icon-dialog-close) !important;
     background-repeat: no-repeat !important;
 }
