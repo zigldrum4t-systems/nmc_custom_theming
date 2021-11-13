@@ -4,6 +4,11 @@
         margin-top: 8vh !important;
         margin-bottom: 31vh !important;
     }
+
+    #files-public-content #allLabel {
+      display:none;
+    }
+
     /*toggle-btn-*/
 
     #body-public .header-right #header-secondary-action #header-actions-toggle {

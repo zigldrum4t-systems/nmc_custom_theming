@@ -1,5 +1,5 @@
-#app-navigation.without-app-settings a:hover{
-    background-color: unset !important;
+  #app-navigation.without-app-settings li:hover span{
+    color:#e20074 !important;
   }
 
   #personal-settings {
@@ -157,11 +157,18 @@
     border:1px solid #e20074 !important;
     color:#e20074 !important;
   }
+  .recycle-para {
+    margin-top:1.5rem !important;
+  }
+
+  .telekom-link p label a:hover {
+  text-decoration: underline !important;
+  }
 
   /* Activity Notifications*/
 
   #activity_notifications{
-    padding-top: 0;
+    padding-top: 0.25rem;
     max-width: 600px;
     margin-bottom: 8rem;
     border-bottom: none;
@@ -247,21 +254,13 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   #app-navigation.without-app-settings  img{
     width:24px !important;
     height:24px !important;
+    vertical-align: text-bottom;
   }
-  #app-navigation.without-app-settings ul li:hover {
+
+  #app-navigation.without-app-settings ul li:hover img{
     filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
   }
 
-  #app-navigation.without-app-settings ul li.active,
-  #app-navigation.without-app-settings ul li.active a,
-  #app-navigation.without-app-settings ul li a:active,
-  #app-navigation.without-app-settings ul li a:active a,
-  #app-navigation.without-app-settings ul li a.selected,
-  #app-navigation.without-app-settings ul li a.selected a,
-  #app-navigation.without-app-settings ul li a.active,
-  #app-navigation.without-app-settings ul li a.active a {
-    background-color: unset !important;
-  }
 
   .app-password-row .icon{
     background-size: 24px !important;
@@ -277,7 +276,8 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     display: inline !important;
   }
   #webdav-address span{
-  color:#e20074;
+    color:#e20074;
+    padding-left: 0.25rem;
   }
 
   #webdav-address span:hover{
@@ -473,3 +473,23 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     float:right;
     display: inline;
   }
+
+  #monthly-notifications-settings .settings-hint{
+    margin-top: 8px !important;
+  }
+
+  #monthly-notifications-settings h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #191919;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #monthly-notifications-settings {
+    display: block;
+    padding-left: 30px;
+    max-width: 600px;
+  }
+
+

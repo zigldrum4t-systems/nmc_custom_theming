@@ -129,6 +129,21 @@ table.multiselect thead #selectedMenu {
     display: inline-block !important;
 }
 
+#app-content-trashbin #filestable th .columntitle.name {
+    margin-left: 4.5rem;
+}
+
+#app-content-trashbin table.multiselect th .columntitle.name {
+    margin-left: 0 !important;
+}
+
+#app-content-sharingout #filestable th .columntitle.name,
+#app-content-sharingin #filestable th .columntitle.name,
+#app-content-favorites #filestable th .columntitle.name
+{
+    margin-left: 5.625rem !important;
+}
+
 .select-all+label {
     width: 54px;
     height: 52px;
@@ -598,6 +613,10 @@ table.multiselect #modified {
 }
 
 #fileList .action.action-share.permanent.shared-style span:not(.icon) {
+  max-width:80px !important;
+}
+
+#fileList .action.action-share.permanent.shared-style span:not(.icon) {
     overflow: unset !important;
 }
 
@@ -643,16 +662,29 @@ table.multiselect #modified {
 }
 
 #fileList td a a.action-restore {
-   padding: unset !important;
-   line-height: 33px !important;
-   margin-right:5rem !important;
+   display: flex;
+   width:auto;
+   padding:0 !important;
 }
 
-#filestable .filename .fileactions a.action-restore span {
+#filestable .filename .fileactions a.action-restore span:not(.icon) {
   color:#e20074 !important;
+  padding:0.875rem 1rem 0 0 !important;
   vertical-align: bottom !important;
 }
 .icon-history {
-  margin-top:0.438rem !important;
-  margin-right:0.125rem !important;
+  margin-right:0.5rem !important;
+  margin-top:0.625rem !important;
+}
+
+#app-content-trashbin .selectedActions{
+  position: unset;
+}
+
+#oc-dialog-0-content {
+  margin-bottom: 1.5rem;
+}
+
+.oc-dialog-buttonrow.twobuttons {
+  justify-content: end;
 }

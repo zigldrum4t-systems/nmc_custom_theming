@@ -393,7 +393,7 @@ section {
 
 #controls>div.actions.creatable>a:hover {
     color: var(--scl-color-magenta);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #controls>div.actions.creatable>a>span.hidden-visually:hover {
@@ -452,14 +452,32 @@ aside {
     width: 1236px;
 }
 
-.content.app-photos{
+/* .content.app-photos{
   width:100% !important;
-}
+} */
 
 #content>.container-fixed {
     position: relative;
     display: flex;
 }
+
+/* App specific changes for photos app */
+.app-photos #app-navigation-vue {
+    left : 0 !important;
+    top :125px !important;
+}
+.app-photos .app-navigation__list{
+    padding-top: 4rem !important;
+}
+
+.app-photos *{
+     line-height: 0 !important;
+}
+
+.app-photos .app-navigation__list .app-navigation-entry__title {
+    line-height: 44px !important;
+  }
+
 
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
     .brandbar>.container-fixed {
@@ -870,6 +888,7 @@ a.menuitem.action:hover>span,
     padding-top: 0;
     top: 184px;
     z-index: 99;
+    min-height: calc(100% - 120px);
 }
 
 #content-vue.app-settings{
@@ -885,6 +904,7 @@ a.menuitem.action:hover>span,
 
 .actions {
     padding: 8px;
+    margin-top: 2px;
 }
 
 .actions.creatable a {
@@ -896,8 +916,21 @@ a.menuitem.action:hover>span,
     margin-top: 2px
 }
 
+.actions.creatable .add-label{
+  margin-left: 0.625rem;
+  font-weight: normal;
+  color:#E20074;
+}
+
+#controls .actions > .button{
+  justify-content: start !important;
+  padding-left: 0.2rem !important;
+}
+
+
 div.crumb {
     padding: 0;
+    margin-top: 2px;
 }
 
 div.crumb>a,
@@ -905,6 +938,9 @@ div.crumb>span {
     opacity: 1 !important;
 }
 
+div.crumb>a:hover{
+    color: #e20074;
+}
 div.crumb:last-child {
     margin-right: 0 !important;
 }
@@ -1073,8 +1109,10 @@ div.crumb:last-child {
 }
 
 button:not(:disabled):not(.primary):hover,
+button:not(:disabled):not(.primary):focus,
 button:not(:disabled):not(.primary).active,
 .button:not(:disabled):not(.primary):hover,
+.button:not(:disabled):not(.primary):focus,
 .button:not(:disabled):not(.primary).active,
 .pager li a:not(:disabled):not(.primary):hover,
 .pager li a:not(:disabled):not(.primary):focus,
@@ -1748,8 +1786,8 @@ iframe.viewer__file {
     color: #e20074 !important;
 }
 
-.oc-dialog-buttonrow.onebutton.aside .primary,
-.oc-dialog-buttonrow.twobuttons.aside .primary {
+.oc-dialog-buttonrow.onebutton .primary,
+.oc-dialog-buttonrow.twobuttons .primary {
     background-color: #e20074 !important;
     border-color: #e20074 !important;
     color: #ffffff !important;
@@ -2062,10 +2100,19 @@ iframe.viewer__file {
     #filestable .summary {
         height: 150px;
     }
+
     .toastify.dialogs{
       max-width: 312px !important;
       min-width: 312px !important;
       margin-left: -9.75rem !important;
+    }
+
+  /*photo-gallery-icon*/
+
+  .app-photos [class^='icon-'],
+  .app-photos [class*=' icon-'] {
+      min-width:24px !important;
+      min-height:24px !important;
     }
 }
 
@@ -2189,16 +2236,16 @@ iframe.viewer__file {
   .personal-settings-setting-box .section input[type='text'],
    .personal-settings-setting-box .section input[type='email'] {
      width:auto !important;
-}
-.telekom-link p {
- width:364px !important;
-}
-select#languageinput {
-  width:auto !important;
-}
-#body-settings #quota {
-  width:320px !important
-}
+  }
+  .telekom-link p {
+  width:364px !important;
+  }
+  select#languageinput {
+    width:auto !important;
+  }
+  #body-settings #quota {
+    width:320px !important
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2223,5 +2270,26 @@ select#languageinput {
 	#webdav-address div {
 		display: grid;
 	}
+
+  #filestable th .columntitle.name {
+    margin-left: 1.625rem;
+  }
+
+  #app-content-sharingout #filestable th .columntitle.name,
+  #app-content-sharingin #filestable th .columntitle.name,
+  #app-content-favorites #filestable th .columntitle.name
+  {
+    margin-left: 5.4rem;
+  }
+
+  table.multiselect th .columntitle.name {
+    margin-left: 0 !important;
+    padding-left: 0.625rem !important;
+  }
+
+  #app-content-trashbin table th .selectedActions {
+    float: unset !important;
+  }
 }
+
 /*Responsive Styling*/

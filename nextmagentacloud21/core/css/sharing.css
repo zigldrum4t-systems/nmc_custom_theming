@@ -2,6 +2,8 @@
 
 #app-sidebar-vue {
   padding: 1rem;
+  overflow-x: unset !important;
+  overflow-y: unset !important;
 }
 
 /*thumbnail*/
@@ -79,6 +81,7 @@ aside .icon-star {
 
 .app-sidebar__tab {
   padding: 0 !important;
+  overflow: unset !important;
 }
 
 .action-radio__label,
@@ -238,16 +241,17 @@ margin-top:1rem;
 }
 
 .sharing-entry__desc select {
-  min-height:0 !important;
-  margin:0 !important;
+  min-height: 1.188rem !important;
   border: unset !important;
-  padding: 0 !important;
+  padding: 0 1.5rem 0 1rem !important;
   height: 16px !important;
   color: #b2b2b2 !important;
   font-weight: bold;
   background-repeat: no-repeat;
-  background: var(--icon-triangle-s-e20074) no-repeat right 1px !important;
+  background-position: left center;
+  background: var(--icon-triangle-s-e20074) no-repeat left -2px center !important;
 }
+
 
 .action-item--single:hover,
 .action-item--single:focus,
@@ -452,7 +456,7 @@ p.sharing-input-subtitle{
 .add-new-link-btn{
   margin:0.75rem 0 1rem 0;
   font-size:1rem !important;
-  width:135px;
+  width:auto !important;
   background-color: #ffffff !important;
   border: 1px solid #191919;
   color: #191919;
@@ -461,7 +465,10 @@ p.sharing-input-subtitle{
   height:40px;
   font-weight:normal;
 }
-.add-new-link-btn:hover{
+
+.add-new-link-btn:hover,
+.add-new-link-btn:focus,
+.add-new-link-btn:focus-within {
   color:#e20074;
 }
 
@@ -592,10 +599,10 @@ aside .action-radio__label {
   font-weight: normal !important;
 }
 
-.vue-tooltip .tooltip-inner,
+/* .vue-tooltip .tooltip-inner,
 .vue-tooltip .tooltip-arrow{
   display: none !important;
-}
+} */
 
 /*calendar*/
 
@@ -712,4 +719,52 @@ form div{
 
     .mx-calendar-header-label .mx-btn{
       font-size:1rem !important ;
+    }
+
+    /*select-box*/
+
+    .custom-select .selected {
+      border: unset !important;
+    }
+
+    .custom-select .selected:after {
+      top: 7px !important;
+      left: 0px !important;
+    }
+
+    .custom-select .items {
+      padding:0.5rem;
+      border: unset !important;
+      max-width:140px !important;
+      top:24px;
+      border-radius: unset !important;
+      box-shadow: var(--scl-shadow-level-2);
+    }
+
+    .custom-select .items div:hover {
+      background-color: unset !important;
+      color:#e20074 !important;
+    }
+
+    .custom-select .items div {
+      padding-left: unset !important;
+      text-align: center !important;
+      padding-bottom: 0.25rem !important;
+    }
+
+    .sharing-entry__desc {
+      max-width: 150px !important;
+    }
+
+    .custom-select {
+      height:24px !important;
+    }
+
+    .custom-select,
+    .custom-select h5{
+      cursor: pointer !important;
+    }
+
+    .custom-select .selected {
+      padding-left:unset !important;
     }
