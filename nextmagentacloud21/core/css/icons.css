@@ -501,10 +501,14 @@ aside .icon-starred {
 }
 
 /*check-mark-sharing*/
-.icon-checkmark-color,
-.icon-select-check{
+.icon-checkmark-color {
   background-image: var(--icon-checkmark-magenta)!important;
 }
+
+.icon-select-check {
+  background-image: var(--icon-select-check-custom)!important;
+}
+
 /*star-gray*/
 
 aside .icon-star{
