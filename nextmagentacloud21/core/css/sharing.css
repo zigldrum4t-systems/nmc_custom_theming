@@ -807,3 +807,7 @@ form div{
     .custom-select .items .selectedItem span {
       display: inline-block !important;
     }
+
+    .custom-select  span.icon-triangle-s {
+      margin-left: -0.375rem;
+    }
