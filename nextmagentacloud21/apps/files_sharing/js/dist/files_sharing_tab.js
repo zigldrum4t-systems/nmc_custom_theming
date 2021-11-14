@@ -3489,9 +3489,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SharingTab_vue_vue_type_template_id_0f81577f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SharingTab.vue?vue&type=template&id=0f81577f& */ "./apps/files_sharing/src/views/SharingTab.vue?vue&type=template&id=0f81577f&");
 /* harmony import */ var _SharingTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SharingTab.vue?vue&type=script&lang=js& */ "./apps/files_sharing/src/views/SharingTab.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _SharingTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SharingTab.vue?vue&type=style&index=0&lang=scss& */ "./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -3499,7 +3497,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _SharingTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _SharingTab_vue_vue_type_template_id_0f81577f___WEBPACK_IMPORTED_MODULE_0__["render"],
   _SharingTab_vue_vue_type_template_id_0f81577f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -3528,20 +3526,6 @@ component.options.__file = "apps/files_sharing/src/views/SharingTab.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_SharingTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib!../../../../node_modules/vue-loader/lib??vue-loader-options!./SharingTab.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js?!./apps/files_sharing/src/views/SharingTab.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_SharingTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss&":
-/*!***************************************************************************************!*\
-  !*** ./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss& ***!
-  \***************************************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_SharingTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/sass-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib??vue-loader-options!./SharingTab.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js?!./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss&");
-/* empty/unused harmony star reexport */
 
 /***/ }),
 
@@ -10415,7 +10399,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 
 
 
@@ -11109,11 +11092,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(debounce__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _nextcloud_vue_dist_Components_Multiselect__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/Multiselect */ "./node_modules/@nextcloud/vue/dist/Components/Multiselect.js");
 /* harmony import */ var _nextcloud_vue_dist_Components_Multiselect__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_Multiselect__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _utils_GeneratePassword__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/GeneratePassword */ "./apps/files_sharing/src/utils/GeneratePassword.js");
-/* harmony import */ var _services_ConfigService__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/ConfigService */ "./apps/files_sharing/src/services/ConfigService.js");
-/* harmony import */ var _models_Share__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../models/Share */ "./apps/files_sharing/src/models/Share.js");
-/* harmony import */ var _mixins_ShareRequests__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../mixins/ShareRequests */ "./apps/files_sharing/src/mixins/ShareRequests.js");
-/* harmony import */ var _mixins_ShareTypes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../mixins/ShareTypes */ "./apps/files_sharing/src/mixins/ShareTypes.js");
+/* harmony import */ var _services_ConfigService__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/ConfigService */ "./apps/files_sharing/src/services/ConfigService.js");
+/* harmony import */ var _models_Share__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../models/Share */ "./apps/files_sharing/src/models/Share.js");
+/* harmony import */ var _mixins_ShareRequests__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../mixins/ShareRequests */ "./apps/files_sharing/src/mixins/ShareRequests.js");
+/* harmony import */ var _mixins_ShareTypes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../mixins/ShareTypes */ "./apps/files_sharing/src/mixins/ShareTypes.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -11176,18 +11158,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 
 
 
@@ -11202,7 +11172,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   components: {
     Multiselect: _nextcloud_vue_dist_Components_Multiselect__WEBPACK_IMPORTED_MODULE_4___default.a
   },
-  mixins: [_mixins_ShareTypes__WEBPACK_IMPORTED_MODULE_9__["default"], _mixins_ShareRequests__WEBPACK_IMPORTED_MODULE_8__["default"]],
+  mixins: [_mixins_ShareTypes__WEBPACK_IMPORTED_MODULE_8__["default"], _mixins_ShareRequests__WEBPACK_IMPORTED_MODULE_7__["default"]],
   props: {
     shares: {
       type: Array,
@@ -11224,7 +11194,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       required: true
     },
     reshare: {
-      type: _models_Share__WEBPACK_IMPORTED_MODULE_7__["default"],
+      type: _models_Share__WEBPACK_IMPORTED_MODULE_6__["default"],
       default: null
     },
     canReshare: {
@@ -11234,7 +11204,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   data: function data() {
     return {
-      config: new _services_ConfigService__WEBPACK_IMPORTED_MODULE_6__["default"](),
+      config: new _services_ConfigService__WEBPACK_IMPORTED_MODULE_5__["default"](),
       loading: false,
       query: '',
       recommendations: [],
@@ -11295,333 +11265,35 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     });
   },
   methods: {
-    /**
-     * Create a new share link and append it to the list
-     */
-    onNewLinkShare: function onNewLinkShare() {
+    asyncFind: function asyncFind(query, id) {
       var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var shareDefaults, share, component, _share;
-
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                if (!_this2.loading) {
-                  _context.next = 2;
-                  break;
-                }
-
-                return _context.abrupt("return");
-
-              case 2:
-                shareDefaults = {
-                  share_type: OC.Share.SHARE_TYPE_LINK
-                };
-
-                if (_this2.config.isDefaultExpireDateEnforced) {
-                  // default is empty string if not set
-                  // expiration is the share object key, not expireDate
-                  shareDefaults.expiration = _this2.config.defaultExpirationDateString;
-                }
-
-                if (!_this2.config.enableLinkPasswordByDefault) {
-                  _context.next = 8;
-                  break;
-                }
-
-                _context.next = 7;
-                return Object(_utils_GeneratePassword__WEBPACK_IMPORTED_MODULE_5__["default"])();
-
-              case 7:
-                shareDefaults.password = _context.sent;
-
-              case 8:
-                if (!(_this2.config.enforcePasswordForPublicLink || _this2.config.isDefaultExpireDateEnforced)) {
-                  _context.next = 33;
-                  break;
-                }
-
-                _this2.pending = true; // if a share already exists, pushing it
-
-                if (!(_this2.share && !_this2.share.id)) {
-                  _context.next = 20;
-                  break;
-                }
-
-                if (!_this2.checkShare(_this2.share)) {
-                  _context.next = 17;
-                  break;
-                }
-
-                _context.next = 14;
-                return _this2.pushNewLinkShare(_this2.share, true);
-
-              case 14:
-                return _context.abrupt("return", true);
-
-              case 17:
-                _this2.open = true;
-                OC.Notification.showTemporary(t('files_sharing', 'Error, please enter proper password and/or expiration date'));
-                return _context.abrupt("return", false);
-
-              case 20:
-                if (!_this2.config.enforcePasswordForPublicLink) {
-                  _context.next = 24;
-                  break;
-                }
-
-                _context.next = 23;
-                return Object(_utils_GeneratePassword__WEBPACK_IMPORTED_MODULE_5__["default"])();
-
-              case 23:
-                shareDefaults.password = _context.sent;
-
-              case 24:
-                // create share & close menu
-                share = new _models_Share__WEBPACK_IMPORTED_MODULE_7__["default"](shareDefaults);
-                _context.next = 27;
-                return new Promise(function (resolve) {
-                  _this2.$emit('add:share', share, resolve);
-                });
-
-              case 27:
-                component = _context.sent;
-                // open the menu on the
-                // freshly created share component
-                _this2.open = false;
-                _this2.pending = false;
-                component.open = true; // Nothing is enforced, creating share directly
-
-                _context.next = 36;
-                break;
-
-              case 33:
-                _share = new _models_Share__WEBPACK_IMPORTED_MODULE_7__["default"](shareDefaults);
-                _context.next = 36;
-                return _this2.pushNewLinkShare(_share);
-
-              case 36:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }))();
-    },
-
-    /**
-     * Push a new link share to the server
-     * And update or append to the list
-     * accordingly
-     *
-     * @param {Share} share the new share
-     * @param {boolean} [update=false] do we update the current share ?
-     */
-    pushNewLinkShare: function pushNewLinkShare(share, update) {
-      var _this3 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-        var path, newShare, component, response;
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                _context2.prev = 0;
-
-                if (!_this3.loading) {
-                  _context2.next = 3;
-                  break;
-                }
-
-                return _context2.abrupt("return", true);
-
-              case 3:
-                // this.loading = true
-                _this3.errors = {};
-                path = (_this3.fileInfo.path + '/' + _this3.fileInfo.name).replace('//', '/');
-                _context2.next = 7;
-                return _this3.createShare({
-                  path: path,
-                  shareType: OC.Share.SHARE_TYPE_LINK,
-                  password: share.password,
-                  expireDate: share.expireDate // we do not allow setting the publicUpload
-                  // before the share creation.
-                  // Todo: We also need to fix the createShare method in
-                  // lib/Controller/ShareAPIController.php to allow file drop
-                  // (currently not supported on create, only update)
-
-                });
-
-              case 7:
-                newShare = _context2.sent;
-                _this3.open = false;
-                console.debug('Link share created', newShare); // if share already exists, copy link directly on next tick
-
-                if (!update) {
-                  _context2.next = 16;
-                  break;
-                }
-
-                _context2.next = 13;
-                return new Promise(function (resolve) {
-                  _this3.$emit('update:share', newShare, resolve);
-                });
-
-              case 13:
-                component = _context2.sent;
-                _context2.next = 19;
-                break;
-
-              case 16:
-                _context2.next = 18;
-                return new Promise(function (resolve) {
-                  _this3.addShare(newShare, resolve); // this.$emit('add:share', newShare, resolve)
-
-                });
-
-              case 18:
-                component = _context2.sent;
-
-              case 19:
-                // Execute the copy link method
-                // freshly created share component
-                // ! somehow does not works on firefox !
-                if (!_this3.config.enforcePasswordForPublicLink) {
-                  // Only copy the link when the password was not forced,
-                  // otherwise the user needs to copy/paste the password before finishing the share.
-                  component.copyLink();
-                }
-
-                _context2.next = 25;
-                break;
-
-              case 22:
-                _context2.prev = 22;
-                _context2.t0 = _context2["catch"](0);
-                response = _context2.t0.response;
-
-              case 25:
-                _context2.prev = 25;
-                _this3.loading = false;
-                return _context2.finish(25);
-
-              case 28:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2, null, [[0, 22, 25, 28]]);
-      }))();
-    },
-    copyLink: function copyLink() {
-      var _this4 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
-        return regeneratorRuntime.wrap(function _callee3$(_context3) {
-          while (1) {
-            switch (_context3.prev = _context3.next) {
-              case 0:
-                _context3.prev = 0;
-                _context3.next = 3;
-                return _this4.$copyText(_this4.shareLink);
-
-              case 3:
-                // focus and show the tooltip
-                _this4.$refs.copyButton.$el.focus();
-
-                _this4.copySuccess = true;
-                _this4.copied = true;
-                _context3.next = 13;
-                break;
-
-              case 8:
-                _context3.prev = 8;
-                _context3.t0 = _context3["catch"](0);
-                _this4.copySuccess = false;
-                _this4.copied = true;
-                console.error(_context3.t0);
-
-              case 13:
-                _context3.prev = 13;
-                setTimeout(function () {
-                  _this4.copySuccess = false;
-                  _this4.copied = false;
-                }, 4000);
-                return _context3.finish(13);
-
-              case 16:
-              case "end":
-                return _context3.stop();
-            }
-          }
-        }, _callee3, null, [[0, 8, 13, 16]]);
-      }))();
-    },
-
-    /**
-     * Add a new share into the link shares list
-     * and return the newly created share component
-     *
-     * @param {Share} share the share to add to the array
-     * @param {Function} resolve a function to run after the share is added and its component initialized
-     */
-    addShare: function addShare(share, resolve) {
-      this.linkShares.unshift(share);
-      this.awaitForShare(share, resolve);
-    },
-
-    /**
-     * Await for next tick and render after the list updated
-     * Then resolve with the matched vue component of the
-     * provided share object
-     *
-     * @param {Share} share newly created share
-     * @param {Function} resolve a function to execute after
-     */
-    awaitForShare: function awaitForShare(share, resolve) {
-      var _this5 = this;
-
-      this.$nextTick(function () {
-        var newShare = _this5.$children.find(function (component) {
-          return component.share === share;
-        });
-
-        if (newShare) {
-          resolve(newShare);
-        }
-      });
-    },
-    asyncFind: function asyncFind(query, id) {
-      var _this6 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
-        return regeneratorRuntime.wrap(function _callee4$(_context4) {
-          while (1) {
-            switch (_context4.prev = _context4.next) {
-              case 0:
                 // save current query to check if we display
                 // recommendations or search results
-                _this6.query = query.trim();
+                _this2.query = query.trim();
 
-                if (!_this6.isValidQuery) {
-                  _context4.next = 5;
+                if (!_this2.isValidQuery) {
+                  _context.next = 5;
                   break;
                 }
 
                 // start loading now to have proper ux feedback
                 // during the debounce
-                _this6.loading = true;
-                _context4.next = 5;
-                return _this6.debounceGetSuggestions(query);
+                _this2.loading = true;
+                _context.next = 5;
+                return _this2.debounceGetSuggestions(query);
 
               case 5:
               case "end":
-                return _context4.stop();
+                return _context.stop();
             }
           }
-        }, _callee4);
+        }, _callee);
       }))();
     },
 
@@ -11633,49 +11305,49 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
      */
     getSuggestions: function getSuggestions(search) {
       var _arguments = arguments,
-          _this7 = this;
+          _this3 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
         var lookup, shareType, request, data, exact, rawExactSuggestions, rawSuggestions, exactSuggestions, suggestions, lookupEntry, externalResults, allSuggestions, nameCounts;
-        return regeneratorRuntime.wrap(function _callee5$(_context5) {
+        return regeneratorRuntime.wrap(function _callee2$(_context2) {
           while (1) {
-            switch (_context5.prev = _context5.next) {
+            switch (_context2.prev = _context2.next) {
               case 0:
                 lookup = _arguments.length > 1 && _arguments[1] !== undefined ? _arguments[1] : false;
-                _this7.loading = true;
+                _this3.loading = true;
 
                 if (OC.getCapabilities().files_sharing.sharee.query_lookup_default === true) {
                   lookup = true;
                 }
 
-                shareType = [_this7.SHARE_TYPES.SHARE_TYPE_USER, _this7.SHARE_TYPES.SHARE_TYPE_GROUP, _this7.SHARE_TYPES.SHARE_TYPE_REMOTE, _this7.SHARE_TYPES.SHARE_TYPE_REMOTE_GROUP, _this7.SHARE_TYPES.SHARE_TYPE_CIRCLE, _this7.SHARE_TYPES.SHARE_TYPE_ROOM, _this7.SHARE_TYPES.SHARE_TYPE_GUEST, _this7.SHARE_TYPES.SHARE_TYPE_DECK];
+                shareType = [_this3.SHARE_TYPES.SHARE_TYPE_USER, _this3.SHARE_TYPES.SHARE_TYPE_GROUP, _this3.SHARE_TYPES.SHARE_TYPE_REMOTE, _this3.SHARE_TYPES.SHARE_TYPE_REMOTE_GROUP, _this3.SHARE_TYPES.SHARE_TYPE_CIRCLE, _this3.SHARE_TYPES.SHARE_TYPE_ROOM, _this3.SHARE_TYPES.SHARE_TYPE_GUEST, _this3.SHARE_TYPES.SHARE_TYPE_DECK];
 
                 if (OC.getCapabilities().files_sharing.public.enabled === true) {
-                  shareType.push(_this7.SHARE_TYPES.SHARE_TYPE_EMAIL);
+                  shareType.push(_this3.SHARE_TYPES.SHARE_TYPE_EMAIL);
                 }
 
-                _context5.next = 7;
+                _context2.next = 7;
                 return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(Object(_nextcloud_router__WEBPACK_IMPORTED_MODULE_0__["generateOcsUrl"])('apps/files_sharing/api/v1') + 'sharees', {
                   params: {
                     format: 'json',
-                    itemType: _this7.fileInfo.type === 'dir' ? 'folder' : 'file',
+                    itemType: _this3.fileInfo.type === 'dir' ? 'folder' : 'file',
                     search: search,
                     lookup: lookup,
-                    perPage: _this7.config.maxAutocompleteResults,
+                    perPage: _this3.config.maxAutocompleteResults,
                     shareType: shareType
                   }
                 });
 
               case 7:
-                request = _context5.sent;
+                request = _context2.sent;
 
                 if (!(request.data.ocs.meta.statuscode !== 100)) {
-                  _context5.next = 11;
+                  _context2.next = 11;
                   break;
                 }
 
                 console.error('Error fetching suggestions', request);
-                return _context5.abrupt("return");
+                return _context2.abrupt("return");
 
               case 11:
                 data = request.data.ocs.data;
@@ -11690,14 +11362,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return arr.concat(elem);
                 }, []); // remove invalid data and format to user-select layout
 
-                exactSuggestions = _this7.filterOutExistingShares(rawExactSuggestions).map(function (share) {
-                  return _this7.formatForMultiselect(share);
+                exactSuggestions = _this3.filterOutExistingShares(rawExactSuggestions).map(function (share) {
+                  return _this3.formatForMultiselect(share);
                 }) // sort by type so we can get user&groups first...
                 .sort(function (a, b) {
                   return a.shareType - b.shareType;
                 });
-                suggestions = _this7.filterOutExistingShares(rawSuggestions).map(function (share) {
-                  return _this7.formatForMultiselect(share);
+                suggestions = _this3.filterOutExistingShares(rawSuggestions).map(function (share) {
+                  return _this3.formatForMultiselect(share);
                 }) // sort by type so we can get user&groups first...
                 .sort(function (a, b) {
                   return a.shareType - b.shareType;
@@ -11716,8 +11388,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 } // if there is a condition specified, filter it
 
 
-                externalResults = _this7.externalResults.filter(function (result) {
-                  return !result.condition || result.condition(_this7);
+                externalResults = _this3.externalResults.filter(function (result) {
+                  return !result.condition || result.condition(_this3);
                 });
                 allSuggestions = exactSuggestions.concat(suggestions).concat(externalResults).concat(lookupEntry); // Count occurances of display names in order to provide a distinguishable description if needed
 
@@ -11733,7 +11405,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   nameCounts[result.displayName]++;
                   return nameCounts;
                 }, {});
-                _this7.suggestions = allSuggestions.map(function (item) {
+                _this3.suggestions = allSuggestions.map(function (item) {
                   // Make sure that items with duplicate displayName get the shareWith applied as a description
                   if (nameCounts[item.displayName] > 1 && !item.desc) {
                     return _objectSpread(_objectSpread({}, item), {}, {
@@ -11743,14 +11415,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                   return item;
                 });
-                _this7.loading = false;
+                _this3.loading = false;
 
               case 25:
               case "end":
-                return _context5.stop();
+                return _context2.stop();
             }
           }
-        }, _callee5);
+        }, _callee2);
       }))();
     },
 
@@ -11767,37 +11439,37 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
      * Get the sharing recommendations
      */
     getRecommendations: function getRecommendations() {
-      var _this8 = this;
+      var _this4 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
         var request, externalResults, exact, rawRecommendations;
-        return regeneratorRuntime.wrap(function _callee6$(_context6) {
+        return regeneratorRuntime.wrap(function _callee3$(_context3) {
           while (1) {
-            switch (_context6.prev = _context6.next) {
+            switch (_context3.prev = _context3.next) {
               case 0:
-                _this8.loading = true;
-                _context6.next = 3;
+                _this4.loading = true;
+                _context3.next = 3;
                 return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(Object(_nextcloud_router__WEBPACK_IMPORTED_MODULE_0__["generateOcsUrl"])('apps/files_sharing/api/v1') + 'sharees_recommended', {
                   params: {
                     format: 'json',
-                    itemType: _this8.fileInfo.type
+                    itemType: _this4.fileInfo.type
                   }
                 });
 
               case 3:
-                request = _context6.sent;
+                request = _context3.sent;
 
                 if (!(request.data.ocs.meta.statuscode !== 100)) {
-                  _context6.next = 7;
+                  _context3.next = 7;
                   break;
                 }
 
                 console.error('Error fetching recommendations', request);
-                return _context6.abrupt("return");
+                return _context3.abrupt("return");
 
               case 7:
-                externalResults = _this8.externalResults.filter(function (result) {
-                  return !result.condition || result.condition(_this8);
+                externalResults = _this4.externalResults.filter(function (result) {
+                  return !result.condition || result.condition(_this4);
                 });
                 exact = request.data.ocs.data.exact; // flatten array of arrays
 
@@ -11805,17 +11477,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return arr.concat(elem);
                 }, []); // remove invalid data and format to user-select layout
 
-                _this8.recommendations = _this8.filterOutExistingShares(rawRecommendations).map(function (share) {
-                  return _this8.formatForMultiselect(share);
+                _this4.recommendations = _this4.filterOutExistingShares(rawRecommendations).map(function (share) {
+                  return _this4.formatForMultiselect(share);
                 }).concat(externalResults);
-                _this8.loading = false;
+                _this4.loading = false;
 
               case 12:
               case "end":
-                return _context6.stop();
+                return _context3.stop();
             }
           }
-        }, _callee6);
+        }, _callee3);
       }))();
     },
 
@@ -11827,7 +11499,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
      * @returns {Object[]}
      */
     filterOutExistingShares: function filterOutExistingShares(shares) {
-      var _this9 = this;
+      var _this5 = this;
 
       return shares.reduce(function (arr, share) {
         // only check proper objects
@@ -11836,21 +11508,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }
 
         try {
-          if (share.value.shareType === _this9.SHARE_TYPES.SHARE_TYPE_USER) {
+          if (share.value.shareType === _this5.SHARE_TYPES.SHARE_TYPE_USER) {
             // filter out current user
             if (share.value.shareWith === Object(_nextcloud_auth__WEBPACK_IMPORTED_MODULE_1__["getCurrentUser"])().uid) {
               return arr;
             } // filter out the owner of the share
 
 
-            if (_this9.reshare && share.value.shareWith === _this9.reshare.owner) {
+            if (_this5.reshare && share.value.shareWith === _this5.reshare.owner) {
               return arr;
             }
           } // filter out existing mail shares
 
 
-          if (share.value.shareType === _this9.SHARE_TYPES.SHARE_TYPE_EMAIL) {
-            var emails = _this9.linkShares.map(function (elem) {
+          if (share.value.shareType === _this5.SHARE_TYPES.SHARE_TYPE_EMAIL) {
+            var emails = _this5.linkShares.map(function (elem) {
               return elem.shareWith;
             });
 
@@ -11860,7 +11532,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           } else {
             // filter out existing shares
             // creating an object of uid => type
-            var sharesObj = _this9.shares.reduce(function (obj, elem) {
+            var sharesObj = _this5.shares.reduce(function (obj, elem) {
               obj[elem.shareWith] = elem.type;
               return obj;
             }, {}); // if shareWith is the same and the share type too, ignore it
@@ -11956,34 +11628,34 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       };
     },
     showPermissions: function showPermissions(value) {
-      var _this10 = this;
+      var _this6 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
         var newShare;
-        return regeneratorRuntime.wrap(function _callee7$(_context7) {
+        return regeneratorRuntime.wrap(function _callee4$(_context4) {
           while (1) {
-            switch (_context7.prev = _context7.next) {
+            switch (_context4.prev = _context4.next) {
               case 0:
                 // this.$root.$emit('optionValues', value)
-                _this10.$store.commit('addOption', value);
+                _this6.$store.commit('addOption', value);
 
-                _this10.$store.commit('addFromInput', true);
+                _this6.$store.commit('addFromInput', true);
 
-                newShare = new _models_Share__WEBPACK_IMPORTED_MODULE_7__["default"]({});
+                newShare = new _models_Share__WEBPACK_IMPORTED_MODULE_6__["default"]({});
                 newShare.permissions = OC.PERMISSION_READ;
                 newShare.expireDate = '';
                 newShare.password = '';
 
-                _this10.$store.commit('addShare', newShare);
+                _this6.$store.commit('addShare', newShare);
 
-                _this10.$store.commit('addCurrentTab', 'permissions');
+                _this6.$store.commit('addCurrentTab', 'permissions');
 
               case 8:
               case "end":
-                return _context7.stop();
+                return _context4.stop();
             }
           }
-        }, _callee7);
+        }, _callee4);
       }))();
     }
   }
@@ -12016,10 +11688,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
 //
 //
 //
@@ -12505,27 +12173,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -12557,11 +12204,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       publicUploadRWValue: OC.PERMISSION_UPDATE | OC.PERMISSION_CREATE | OC.PERMISSION_READ | OC.PERMISSION_DELETE,
       publicUploadRValue: OC.PERMISSION_READ,
       publicUploadWValue: OC.PERMISSION_CREATE,
-      publicUploadEValue: OC.PERMISSION_UPDATE | OC.PERMISSION_READ,
-      show: true,
-      showAdLink: true,
-      sendPasswordByTalk: null,
-      hideDownload: null
+      publicUploadEValue: OC.PERMISSION_UPDATE | OC.PERMISSION_READ
     };
   },
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_8__["mapGetters"])({
@@ -12763,21 +12406,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     confirmSharing: function confirmSharing() {
       this.loading = true;
-
-      if (this.share.sendPasswordByTalk) {
-        this.sendPasswordByTalk = this.share.sendPasswordByTalk.toString();
-      }
-
-      if (this.share.hideDownload) {
-        this.hideDownload = this.share.hideDownload.toString();
-      }
-
       var result = this.updateShare(this.share.id, {
         permissions: this.share.permissions,
-        hideDownload: this.hideDownload,
+        hideDownload: this.share.hideDownload.toString(),
         password: this.share.password,
         expireDate: this.share.expireDate,
-        sendPasswordByTalk: this.sendPasswordByTalk
+        sendPasswordByTalk: this.share.sendPasswordByTalk.toString()
       }); // this.$emit('add:share', this.share)
 
       console.debug('updated share', result);
@@ -13446,27 +13080,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -13529,12 +13142,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     canReshare: function canReshare() {
       return !!(this.fileInfo.permissions & OC.PERMISSION_SHARE) || !!(this.reshare && this.reshare.hasSharePermission && this.config.isResharingAllowed);
-    },
-    hasShares: function hasShares() {
-      return this.shares.length > 0;
-    },
-    hasLinkShares: function hasLinkShares() {
-      return this.linkShares.length > 0;
     }
   }),
   mounted: function mounted() {
@@ -22162,7 +21769,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".sharing-note[data-v-2e2cd36e] {\n  width: 100%;\n  height: 200px;\n}\n.note-title[data-v-2e2cd36e] {\n  font-weight: bold;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".sharing-note[data-v-2e2cd36e] {\n  width: 100%;\n  height: 200px;\n}\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -22184,7 +21791,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".action-input__label {\n  display: none !important;\n}\n.password-message {\n  margin-left: 43px;\n}\n.readonly-message {\n  margin-left: 43px;\n}\n.filedrop-message {\n  margin-left: 43px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".action-input__label {\n  display: none !important;\n}\n.password-message {\n  margin-left: 43px;\n}\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -22207,28 +21814,6 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, ".sharing-entry__inherited .avatar-shared[data-v-3f1bda78] {\n  width: 32px;\n  height: 32px;\n  line-height: 32px;\n  font-size: 18px;\n  background-color: var(--color-text-maxcontrast);\n  border-radius: 50%;\n  flex-shrink: 0;\n}\n", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js?!./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss&":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib??vue-loader-options!./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".your-shares {\n  font-weight: bold;\n}\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -51881,34 +51466,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js?!./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib??vue-loader-options!./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_SharingTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/sass-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib??vue-loader-options!./SharingTab.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js?!./apps/files_sharing/src/views/SharingTab.vue?vue&type=style&index=0&lang=scss&");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_SharingTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_SharingTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -58572,7 +58129,7 @@ var render = function() {
                             _c(
                               "select",
                               {
-                                attrs: { disabled: "true", name: _vm.randomId },
+                                attrs: { name: _vm.randomId },
                                 on: { change: _vm.togglePermissions }
                               },
                               [
@@ -58598,7 +58155,6 @@ var render = function() {
                                 _c(
                                   "option",
                                   {
-                                    attrs: { disabled: "" },
                                     domProps: {
                                       value: _vm.publicUploadEValue,
                                       selected:
@@ -58991,6 +58547,32 @@ var render = function() {
                             )
                           ]
                         )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    !_vm.isEmailShareType && _vm.canReshare
+                      ? _c(
+                          "ActionButton",
+                          {
+                            staticClass: "new-share-link",
+                            attrs: { icon: "icon-add" },
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                $event.stopPropagation()
+                                return _vm.onNewLinkShare($event)
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n\t\t\t\t" +
+                                _vm._s(
+                                  _vm.t("files_sharing", "Add another link")
+                                ) +
+                                "\n\t\t\t"
+                            )
+                          ]
+                        )
                       : _vm._e()
                   ]
                 : _vm.canReshare
@@ -59117,89 +58699,51 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("Multiselect", {
-        ref: "multiselect",
-        staticClass: "sharing-input",
-        attrs: {
-          "clear-on-select": true,
-          disabled: !_vm.canReshare,
-          "hide-selected": true,
-          "internal-search": false,
-          loading: _vm.loading,
-          options: _vm.options,
-          placeholder: _vm.inputPlaceholder,
-          "preselect-first": true,
-          "preserve-search": true,
-          searchable: true,
-          "user-select": true,
-          "open-direction": "below",
-          label: "displayName",
-          "track-by": "id"
+  return _c("Multiselect", {
+    ref: "multiselect",
+    staticClass: "sharing-input",
+    attrs: {
+      "clear-on-select": true,
+      disabled: !_vm.canReshare,
+      "hide-selected": true,
+      "internal-search": false,
+      loading: _vm.loading,
+      options: _vm.options,
+      placeholder: _vm.inputPlaceholder,
+      "preselect-first": true,
+      "preserve-search": true,
+      searchable: true,
+      "user-select": true,
+      "open-direction": "below",
+      label: "displayName",
+      "track-by": "id"
+    },
+    on: { "search-change": _vm.asyncFind, select: _vm.showPermissions },
+    scopedSlots: _vm._u([
+      {
+        key: "noOptions",
+        fn: function() {
+          return [
+            _vm._v(
+              "\n\t\t" +
+                _vm._s(
+                  _vm.t("files_sharing", "No recommendations. Start typing.")
+                ) +
+                "\n\t"
+            )
+          ]
         },
-        on: { "search-change": _vm.asyncFind, select: _vm.showPermissions },
-        scopedSlots: _vm._u([
-          {
-            key: "noOptions",
-            fn: function() {
-              return [
-                _vm._v(
-                  "\n\t\t\t" +
-                    _vm._s(
-                      _vm.t(
-                        "files_sharing",
-                        "No recommendations. Start typing."
-                      )
-                    ) +
-                    "\n\t\t"
-                )
-              ]
-            },
-            proxy: true
-          },
-          {
-            key: "noResult",
-            fn: function() {
-              return [_vm._v("\n\t\t\t" + _vm._s(_vm.noResultText) + "\n\t\t")]
-            },
-            proxy: true
-          }
-        ])
-      }),
-      _vm._v(" "),
-      _c("p", { staticClass: "sharing-input-subtitle" }, [
-        _vm._v(
-          "\n\t\t" +
-            _vm._s(_vm.t("files_sharing", "Personal sharing via email")) +
-            "\n\t"
-        )
-      ]),
-      _vm._v(" "),
-      _vm.canReshare
-        ? _c(
-            "button",
-            {
-              staticClass: "add-new-link-btn",
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  $event.stopPropagation()
-                  return _vm.onNewLinkShare($event)
-                }
-              }
-            },
-            [
-              _vm._v(
-                "\n\t\t" + _vm._s(_vm.t("files_sharing", "Add link")) + "\n\t"
-              )
-            ]
-          )
-        : _vm._e()
-    ],
-    1
-  )
+        proxy: true
+      },
+      {
+        key: "noResult",
+        fn: function() {
+          return [_vm._v("\n\t\t" + _vm._s(_vm.noResultText) + "\n\t")]
+        },
+        proxy: true
+      }
+    ])
+  })
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -59229,23 +58773,10 @@ var render = function() {
       { staticClass: "sharing-notes" },
       [
         [
-          _c("label", { staticClass: "note-title" }, [
+          _c("label", [
             _vm._v(
               "\n\t\t\t\t" +
-                _vm._s(_vm.t("files_sharing", "Your Message")) +
-                "\n\t\t\t"
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "note-subtitle" }, [
-            _vm._v(
-              "\n\t\t\t\t" +
-                _vm._s(
-                  _vm.t(
-                    "files_sharing",
-                    "You can attach a message to the share."
-                  )
-                ) +
+                _vm._s(_vm.t("files_sharing", "Note to recipient")) +
                 "\n\t\t\t"
             )
           ]),
@@ -59262,7 +58793,7 @@ var render = function() {
               ],
               ref: "note",
               staticClass: "sharing-note",
-              attrs: { placeholder: "Your message...", disabled: _vm.saving },
+              attrs: { disabled: _vm.saving },
               domProps: { value: _vm.shareNote },
               on: {
                 input: function($event) {
@@ -59366,14 +58897,6 @@ var render = function() {
     [
       _vm.isExteranlShare
         ? [
-            _c("label", { staticClass: "permissions" }, [
-              _vm._v(
-                "\n\t\t\t" +
-                  _vm._s(_vm.t("files_sharing", "Permissions")) +
-                  "\n\t\t"
-              )
-            ]),
-            _vm._v(" "),
             _vm.isFolder &&
             _vm.fileHasCreatePermission &&
             _vm.config.isPublicUploadEnabled
@@ -59444,20 +58967,7 @@ var render = function() {
                           "\n\t\t\t"
                       )
                     ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "filedrop-message" }, [
-                    _vm._v(
-                      "\n\t\t\t\t" +
-                        _vm._s(
-                          _vm.t(
-                            "files_sharing",
-                            "With File drop, only uploading is allowed. Only you can see files and folders that have been uploaded."
-                          )
-                        ) +
-                        "\n\t\t\t"
-                    )
-                  ])
+                  )
                 ]
               : [
                   _c(
@@ -59468,7 +58978,7 @@ var render = function() {
                           _vm.sharePermissions === _vm.publicUploadRValue,
                         value: _vm.publicUploadRValue,
                         name: _vm.randomId,
-                        disabled: true
+                        disabled: _vm.saving
                       },
                       on: { change: _vm.addPermissions }
                     },
@@ -59481,19 +58991,6 @@ var render = function() {
                     ]
                   ),
                   _vm._v(" "),
-                  _c("div", { staticClass: "readonly-message" }, [
-                    _vm._v(
-                      "\n\t\t\t\t" +
-                        _vm._s(
-                          _vm.t(
-                            "files_sharing",
-                            "There are no editing functions for files shared with non-MagentaCLOUD users."
-                          )
-                        ) +
-                        "\n\t\t\t"
-                    )
-                  ]),
-                  _vm._v(" "),
                   _c(
                     "ActionRadio",
                     {
@@ -59501,7 +58998,7 @@ var render = function() {
                         checked:
                           _vm.sharePermissions === _vm.publicUploadEValue,
                         value: _vm.publicUploadEValue,
-                        disabled: true,
+                        disabled: _vm.saving,
                         name: _vm.randomId
                       },
                       on: { change: _vm.addPermissions }
@@ -59516,238 +59013,189 @@ var render = function() {
                   )
                 ],
             _vm._v(" "),
-            _c("div", { staticClass: "advanced-settings" }, [
-              _c(
-                "label",
-                {
-                  on: {
-                    click: function($event) {
-                      _vm.showAdLink = !_vm.showAdLink
-                    }
-                  }
-                },
-                [
-                  _vm._v(
-                    "\n\t\t\t\t" + _vm._s(_vm.t("files_sharing", "Advanced"))
-                  ),
-                  _c("span", { staticClass: "sort-indicator icon-triangle-s" })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.showAdLink,
-                      expression: "showAdLink"
-                    }
-                  ]
-                },
-                [
-                  _c(
-                    "ActionCheckbox",
-                    {
-                      attrs: {
-                        checked: _vm.share.hideDownload,
-                        disabled: _vm.saving
-                      },
-                      on: {
-                        "update:checked": function($event) {
-                          return _vm.$set(_vm.share, "hideDownload", $event)
-                        },
-                        change: _vm.addHideDownload
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t" +
-                          _vm._s(_vm.t("files_sharing", "Hide download")) +
-                          "\n\t\t\t\t"
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "ActionCheckbox",
-                    {
-                      staticClass: "share-link-password-checkbox",
-                      attrs: {
-                        checked: _vm.isPasswordProtected,
-                        disabled:
-                          _vm.config.enforcePasswordForPublicLink || _vm.saving
-                      },
-                      on: {
-                        "update:checked": function($event) {
-                          _vm.isPasswordProtected = $event
-                        }
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t" +
-                          _vm._s(
-                            _vm.config.enforcePasswordForPublicLink
-                              ? _vm.t(
-                                  "files_sharing",
-                                  "Password protection (enforced)"
-                                )
-                              : _vm.t("files_sharing", "Password protect")
-                          ) +
-                          "\n\t\t\t\t"
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm.isPasswordProtected
-                    ? _c(
-                        "ActionInput",
-                        {
-                          ref: "password",
-                          attrs: {
-                            icon: "",
-                            disabled: _vm.saving,
-                            required: _vm.config.enforcePasswordForPublicLink,
-                            value: _vm.hasUnsavedPassword
-                              ? _vm.share.newPassword
-                              : "***************",
-                            autocomplete: "new-password",
-                            type: _vm.hasUnsavedPassword ? "text" : "password"
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t" +
-                              _vm._s(
-                                _vm.t("files_sharing", "Enter a password")
-                              ) +
-                              "\n\t\t\t\t"
-                          )
-                        ]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.isPasswordProtected
-                    ? _c("div", { staticClass: "password-message" }, [
-                        _vm._v(
-                          "\n\t\t\t\t\t" +
-                            _vm._s(
-                              _vm.t(
-                                "files_sharing",
-                                "The password is not send with the email to maintain confidentiality."
-                              )
-                            ) +
-                            "\n\t\t\t\t"
-                        )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.isPasswordProtectedByTalkAvailable
-                    ? _c(
-                        "ActionCheckbox",
-                        {
-                          staticClass: "share-link-password-talk-checkbox",
-                          attrs: {
-                            checked: _vm.share.sendPasswordByTalk,
-                            disabled:
-                              !_vm.canTogglePasswordProtectedByTalkAvailable ||
-                              _vm.saving
-                          },
-                          on: {
-                            "update:checked": function($event) {
-                              return _vm.$set(
-                                _vm.share,
-                                "sendPasswordByTalk",
-                                $event
-                              )
-                            },
-                            change: _vm.addPasswordProtectedByTalkChange
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t" +
-                              _vm._s(
-                                _vm.t("files_sharing", "Video verification")
-                              ) +
-                              "\n\t\t\t\t"
-                          )
-                        ]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.canHaveExpirationDate
-                    ? _c(
-                        "ActionCheckbox",
-                        {
-                          attrs: { checked: _vm.hasExpirationDate },
-                          on: {
-                            "update:checked": function($event) {
-                              _vm.hasExpirationDate = $event
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t" +
-                              _vm._s(
-                                _vm.config.isDefaultInternalExpireDateEnforced
-                                  ? _vm.t(
-                                      "files_sharing",
-                                      "Expiration date enforced"
-                                    )
-                                  : _vm.t(
-                                      "files_sharing",
-                                      "Set expiration date"
-                                    )
-                              ) +
-                              "\n\t\t\t\t"
-                          )
-                        ]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.hasExpirationDate
-                    ? _c(
-                        "ActionInput",
-                        {
-                          ref: "expireDate",
-                          attrs: {
-                            disabled: _vm.saving,
-                            "first-day-of-week": _vm.firstDay,
-                            lang: _vm.lang,
-                            value: _vm.share.expireDate,
-                            "value-type": "format",
-                            icon: "icon-calendar-dark",
-                            type: "date"
-                          },
-                          on: { "update:value": _vm.addExpirationDate }
-                        },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t" +
-                              _vm._s(_vm.t("files_sharing", "Enter a date")) +
-                              "\n\t\t\t\t"
-                          )
-                        ]
-                      )
-                    : _vm._e()
-                ],
-                1
-              )
-            ])
-          ]
-        : [
-            _c("label", { staticClass: "permissions" }, [
+            _c("label", [
               _vm._v(
                 "\n\t\t\t" +
-                  _vm._s(_vm.t("files_sharing", "Permissions")) +
+                  _vm._s(_vm.t("files_sharing", "Advanced settings")) +
                   "\n\t\t"
               )
             ]),
             _vm._v(" "),
+            _c(
+              "ActionCheckbox",
+              {
+                attrs: {
+                  checked: _vm.share.hideDownload,
+                  disabled: _vm.saving
+                },
+                on: {
+                  "update:checked": function($event) {
+                    return _vm.$set(_vm.share, "hideDownload", $event)
+                  },
+                  change: _vm.addHideDownload
+                }
+              },
+              [
+                _vm._v(
+                  "\n\t\t\t" +
+                    _vm._s(_vm.t("files_sharing", "Hide download")) +
+                    "\n\t\t"
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "ActionCheckbox",
+              {
+                staticClass: "share-link-password-checkbox",
+                attrs: {
+                  checked: _vm.isPasswordProtected,
+                  disabled:
+                    _vm.config.enforcePasswordForPublicLink || _vm.saving
+                },
+                on: {
+                  "update:checked": function($event) {
+                    _vm.isPasswordProtected = $event
+                  }
+                }
+              },
+              [
+                _vm._v(
+                  "\n\t\t\t" +
+                    _vm._s(
+                      _vm.config.enforcePasswordForPublicLink
+                        ? _vm.t(
+                            "files_sharing",
+                            "Password protection (enforced)"
+                          )
+                        : _vm.t("files_sharing", "Password protect")
+                    ) +
+                    "\n\t\t"
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _vm.isPasswordProtected
+              ? _c(
+                  "ActionInput",
+                  {
+                    ref: "password",
+                    attrs: {
+                      icon: "",
+                      disabled: _vm.saving,
+                      required: _vm.config.enforcePasswordForPublicLink,
+                      value: _vm.hasUnsavedPassword
+                        ? _vm.share.newPassword
+                        : "***************",
+                      autocomplete: "new-password",
+                      type: _vm.hasUnsavedPassword ? "text" : "password"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t" +
+                        _vm._s(_vm.t("files_sharing", "Enter a password")) +
+                        "\n\t\t"
+                    )
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.isPasswordProtected
+              ? _c("div", { staticClass: "password-message" }, [
+                  _vm._v(
+                    "\n\t\t\t" +
+                      _vm._s(
+                        _vm.t(
+                          "files_sharing",
+                          "The password is not send with the email to maintain confidentiality."
+                        )
+                      ) +
+                      "\n\t\t"
+                  )
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.isPasswordProtectedByTalkAvailable
+              ? _c(
+                  "ActionCheckbox",
+                  {
+                    staticClass: "share-link-password-talk-checkbox",
+                    attrs: {
+                      checked: _vm.share.sendPasswordByTalk,
+                      disabled:
+                        !_vm.canTogglePasswordProtectedByTalkAvailable ||
+                        _vm.saving
+                    },
+                    on: {
+                      "update:checked": function($event) {
+                        return _vm.$set(_vm.share, "sendPasswordByTalk", $event)
+                      },
+                      change: _vm.addPasswordProtectedByTalkChange
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t" +
+                        _vm._s(_vm.t("files_sharing", "Video verification")) +
+                        "\n\t\t"
+                    )
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.canHaveExpirationDate
+              ? _c(
+                  "ActionCheckbox",
+                  {
+                    attrs: { checked: _vm.hasExpirationDate },
+                    on: {
+                      "update:checked": function($event) {
+                        _vm.hasExpirationDate = $event
+                      }
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t" +
+                        _vm._s(
+                          _vm.config.isDefaultInternalExpireDateEnforced
+                            ? _vm.t("files_sharing", "Expiration date enforced")
+                            : _vm.t("files_sharing", "Set expiration date")
+                        ) +
+                        "\n\t\t"
+                    )
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.hasExpirationDate
+              ? _c(
+                  "ActionInput",
+                  {
+                    ref: "expireDate",
+                    attrs: {
+                      disabled: _vm.saving,
+                      "first-day-of-week": _vm.firstDay,
+                      lang: _vm.lang,
+                      value: _vm.share.expireDate,
+                      "value-type": "format",
+                      icon: "icon-calendar-dark",
+                      type: "date"
+                    },
+                    on: { "update:value": _vm.addExpirationDate }
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t" +
+                        _vm._s(_vm.t("files_sharing", "Enter a date")) +
+                        "\n\t\t"
+                    )
+                  ]
+                )
+              : _vm._e()
+          ]
+        : [
             _vm.isFolder && _vm.config.isPublicUploadEnabled
               ? [
                   _c(
@@ -59838,125 +59286,90 @@ var render = function() {
                   )
                 ],
             _vm._v(" "),
-            _c("div", { staticClass: "advanced-settings" }, [
-              _c(
-                "label",
-                {
-                  on: {
-                    click: function($event) {
-                      _vm.show = !_vm.show
-                    }
-                  }
-                },
-                [
-                  _vm._v(
-                    "\n\t\t\t\t" + _vm._s(_vm.t("files_sharing", "Advanced"))
-                  ),
-                  _c("span", { staticClass: "sort-indicator icon-triangle-s" })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.show,
-                      expression: "show"
-                    }
-                  ]
-                },
-                [
-                  _vm.config.isResharingAllowed
-                    ? _c(
-                        "ActionCheckbox",
-                        {
-                          ref: "canReshare",
-                          attrs: {
-                            checked: _vm.canReshare,
-                            value: _vm.permissionsShare,
-                            disabled: _vm.saving || !_vm.canSetReshare
-                          },
-                          on: {
-                            "update:checked": function($event) {
-                              _vm.canReshare = $event
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t" +
-                              _vm._s(
-                                _vm.t("files_sharing", "Allow resharing")
-                              ) +
-                              "\n\t\t\t\t"
-                          )
-                        ]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.canHaveExpirationDate
-                    ? _c(
-                        "ActionCheckbox",
-                        {
-                          attrs: { checked: _vm.hasExpirationDate },
-                          on: {
-                            "update:checked": function($event) {
-                              _vm.hasExpirationDate = $event
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t" +
-                              _vm._s(
-                                _vm.config.isDefaultInternalExpireDateEnforced
-                                  ? _vm.t(
-                                      "files_sharing",
-                                      "Expiration date enforced"
-                                    )
-                                  : _vm.t(
-                                      "files_sharing",
-                                      "Set expiration date"
-                                    )
-                              ) +
-                              "\n\t\t\t\t"
-                          )
-                        ]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.hasExpirationDate
-                    ? _c(
-                        "ActionInput",
-                        {
-                          ref: "expireDate",
-                          attrs: {
-                            disabled: _vm.saving,
-                            "first-day-of-week": _vm.firstDay,
-                            lang: _vm.lang,
-                            value: _vm.share.expireDate,
-                            "value-type": "format",
-                            icon: "icon-calendar-dark",
-                            type: "date"
-                          },
-                          on: { "update:value": _vm.addExpirationDate }
-                        },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t" +
-                              _vm._s(_vm.t("files_sharing", "Enter a date")) +
-                              "\n\t\t\t\t"
-                          )
-                        ]
-                      )
-                    : _vm._e()
-                ],
-                1
+            _c("label", [
+              _vm._v(
+                "\n\t\t\t" +
+                  _vm._s(_vm.t("files_sharing", "Advanced settings")) +
+                  "\n\t\t"
               )
-            ])
+            ]),
+            _vm._v(" "),
+            _vm.config.isResharingAllowed
+              ? _c(
+                  "ActionCheckbox",
+                  {
+                    ref: "canReshare",
+                    attrs: {
+                      checked: _vm.canReshare,
+                      value: _vm.permissionsShare,
+                      disabled: _vm.saving || !_vm.canSetReshare
+                    },
+                    on: {
+                      "update:checked": function($event) {
+                        _vm.canReshare = $event
+                      }
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t" +
+                        _vm._s(_vm.t("files_sharing", "Allow resharing")) +
+                        "\n\t\t"
+                    )
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.canHaveExpirationDate
+              ? _c(
+                  "ActionCheckbox",
+                  {
+                    attrs: { checked: _vm.hasExpirationDate },
+                    on: {
+                      "update:checked": function($event) {
+                        _vm.hasExpirationDate = $event
+                      }
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t" +
+                        _vm._s(
+                          _vm.config.isDefaultInternalExpireDateEnforced
+                            ? _vm.t("files_sharing", "Expiration date enforced")
+                            : _vm.t("files_sharing", "Set expiration date")
+                        ) +
+                        "\n\t\t"
+                    )
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.hasExpirationDate
+              ? _c(
+                  "ActionInput",
+                  {
+                    ref: "expireDate",
+                    attrs: {
+                      disabled: _vm.saving,
+                      "first-day-of-week": _vm.firstDay,
+                      lang: _vm.lang,
+                      value: _vm.share.expireDate,
+                      "value-type": "format",
+                      icon: "icon-calendar-dark",
+                      type: "date"
+                    },
+                    on: { "update:value": _vm.addExpirationDate }
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t" +
+                        _vm._s(_vm.t("files_sharing", "Enter a date")) +
+                        "\n\t\t"
+                    )
+                  ]
+                )
+              : _vm._e()
           ],
       _vm._v(" "),
       _c(
@@ -60106,6 +59519,16 @@ var render = function() {
         "ul",
         { staticClass: "sharing-link-list" },
         [
+          !_vm.hasLinkShares && _vm.canReshare
+            ? _c("SharingEntryLink", {
+                attrs: {
+                  "can-reshare": _vm.canReshare,
+                  "file-info": _vm.fileInfo
+                },
+                on: { "add:share": _vm.addShare }
+              })
+            : _vm._e(),
+          _vm._v(" "),
           _vm.hasShares
             ? _vm._l(_vm.shares, function(share, index) {
                 return _c("SharingEntryLink", {
@@ -60251,84 +59674,17 @@ var render = function() {
                         )
                       : _vm._e(),
                     _vm._v(" "),
-                    _c("p", { staticClass: "sharing-message" }, [
-                      !_vm.canReshare
-                        ? _c("span", [
-                            _vm._v(
-                              "\n\t\t\t\t\t" +
-                                _vm._s(
-                                  _vm.t(
-                                    "files_sharing",
-                                    "Resharing is not allowed."
-                                  )
-                                ) +
-                                "\n\t\t\t\t"
-                            )
-                          ])
-                        : _c("span", [
-                            _vm.isSharedWithMe
-                              ? _c("span", [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t" +
-                                      _vm._s(
-                                        _vm.t(
-                                          "files_sharing",
-                                          "Resharing is allowed."
-                                        )
-                                      ) +
-                                      "\n\t\t\t\t\t"
-                                  )
-                                ])
-                              : _vm._e(),
-                            _vm._v(
-                              "\n\t\t\t\t\t" +
-                                _vm._s(
-                                  _vm.t(
-                                    "files_sharing",
-                                    "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration."
-                                  )
-                                ) +
-                                "\n\t\t\t\t"
-                            )
-                          ])
-                    ]),
-                    _vm._v(" "),
                     !_vm.loading
                       ? _c("SharingInput", {
                           attrs: {
                             "can-reshare": _vm.canReshare,
                             "file-info": _vm.fileInfo,
-                            linkShares: _vm.linkShares,
+                            "link-shares": _vm.linkShares,
                             reshare: _vm.reshare,
                             shares: _vm.shares
                           },
                           on: { "add:share": _vm.addShare }
                         })
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "your-shares" }, [
-                      _vm._v(
-                        "\n\t\t\t\t" +
-                          _vm._s(_vm.t("files_sharing", "Your shares")) +
-                          "\n\t\t\t"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    !_vm.hasShares && !_vm.hasLinkShares
-                      ? [
-                          _c("label", [
-                            _vm._v(
-                              "\n\t\t\t\t\t" +
-                                _vm._s(
-                                  _vm.t(
-                                    "files_sharing",
-                                    "No shares created yet."
-                                  )
-                                ) +
-                                "\n\t\t\t\t"
-                            )
-                          ])
-                        ]
                       : _vm._e(),
                     _vm._v(" "),
                     !_vm.loading
