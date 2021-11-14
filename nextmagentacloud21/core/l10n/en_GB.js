@@ -266,7 +266,8 @@ OC.L10N.register(
     "More details" : "Mehr Details",
     "Replace file" : "Datei ersetzen",
     "The file {filename} already exist in the location." : "Die Datei {filename} existiert bereits am Speicherort.",
-    "The files already exist in the location." : "Die Dateien sind bereits am Speicherort vorhanden."
+    "The files already exist in the location." : "Die Dateien sind bereits am Speicherort vorhanden.",
+    "{conflictCount} File conflicts" : "{conflictCount} File conflicts"
 
 },
 "nplurals=2; plural=(n != 1);");
