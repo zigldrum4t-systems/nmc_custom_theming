@@ -2024,6 +2024,10 @@ iframe.viewer__file {
   background-color: var(--color-background-hover) !important;
 }
 
+ .fourbuttons button:nth-child(3){
+     display:none;
+ }
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
@@ -2233,6 +2237,9 @@ iframe.viewer__file {
     .oc-dialog {
         width: 640px !important;
     }
+    .oc-conflict-pre-dlg {
+      width: 288px !important;
+  }
     .menu-search-text,
     .email-menu-text,
     .username-lable {
