@@ -779,7 +779,6 @@ form div{
 
     .selectedItem {
       color:#e20074 !important;
-      background-image: var(--icon-favorite-custom) !important;
     }
 
     .disabledRow .selected{
