@@ -740,7 +740,7 @@ form div{
     .custom-select .items {
       padding:1rem 0.5rem 0.5rem 0.5rem;
       border: unset !important;
-      max-width:140px !important;
+      max-width:178px !important;
       top:24px;
       border-radius: unset !important;
       box-shadow: var(--scl-shadow-level-2);
@@ -752,12 +752,12 @@ form div{
     }
 
     .custom-select .items div {
-      padding-left: 2rem !important;
+      padding-left: 36px !important;
       padding-bottom: 0.5rem !important;
     }
 
     .custom-select .items div.selectedItem{
-      padding-left: 8px !important;
+      padding-left: 0.5rem !important;
     }
 
     .sharing-entry__desc {
@@ -791,7 +791,7 @@ form div{
     }
 
     .custom-select  .icon-select-check {
-      margin-right:8px !important;
+      margin-right:0.125rem !important;
       vertical-align: middle;
     }
 

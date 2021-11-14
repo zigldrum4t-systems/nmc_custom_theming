@@ -1055,6 +1055,7 @@ div.crumb:last-child {
 #rich-workspace #editor-session-list .save-status{
     padding-right: 0.25rem !important;
     min-width: unset !important;
+    top:0 !important;
 }
 
 /* Add Button*/
@@ -2302,6 +2303,12 @@ iframe.viewer__file {
 
   #app-content-trashbin table th .selectedActions {
     float: unset !important;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1072px){
+  #files-public-content .item-download{
+    padding-right: 2rem;
   }
 }
 
