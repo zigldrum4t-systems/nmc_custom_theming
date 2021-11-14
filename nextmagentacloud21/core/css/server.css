@@ -2012,10 +2012,15 @@ iframe.viewer__file {
   display: none;
 }
 
-.app-navigation__photos:hover span,
-.app-navigation__photos:active span{
+.app-photos li:hover span,
+.app-photos li:active span{
   color: #e20074 !important;
 }
+
+.app-navigation-entry.active {
+  background-color: var(--color-background-hover) !important;
+}
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
