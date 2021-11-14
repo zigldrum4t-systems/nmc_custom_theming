@@ -416,7 +416,7 @@ div.crumb {
     background-image: var(--icon-triangle-n-e20074);
 }
 
-aside select[disabled]{
+aside .custom-select .disabledRow span.icon-triangle-s{
     background-image: var(--icon-triangle-s-000) !important;
 }
 
@@ -501,7 +501,8 @@ aside .icon-starred {
 }
 
 /*check-mark-sharing*/
-.icon-checkmark-color{
+.icon-checkmark-color,
+.icon-select-check{
   background-image: var(--icon-checkmark-magenta)!important;
 }
 /*star-gray*/

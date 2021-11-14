@@ -1054,6 +1054,7 @@ div.crumb:last-child {
 #rich-workspace #editor-session-list .save-status{
     padding-right: 0.25rem !important;
     min-width: unset !important;
+    top:0 !important;
 }
 
 /* Add Button*/
@@ -2014,10 +2015,15 @@ iframe.viewer__file {
   display: none;
 }
 
-.app-navigation__photos:hover span,
-.app-navigation__photos:active span{
+.app-photos li:hover span,
+.app-photos li:active span{
   color: #e20074 !important;
 }
+
+.app-navigation-entry.active {
+  background-color: var(--color-background-hover) !important;
+}
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
@@ -2304,6 +2310,12 @@ iframe.viewer__file {
 
   #app-content-trashbin table th .selectedActions {
     float: unset !important;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1072px){
+  #files-public-content .item-download{
+    padding-right: 2rem;
   }
 }
 
