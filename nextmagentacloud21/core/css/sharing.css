@@ -738,7 +738,7 @@ form div{
     }
 
     .custom-select .items {
-      padding:1rem 0.5rem 0.5rem 0.5rem;
+      padding:1rem 0.5rem 1rem 0.5rem;
       border: unset !important;
       max-width:178px !important;
       top:24px;
@@ -752,8 +752,8 @@ form div{
     }
 
     .custom-select .items div {
-      padding-left: 2.25rem !important;
-      padding-bottom: 0.5rem !important;
+      padding-left: 2.375rem !important;
+      padding-bottom: 0.188rem !important;
     }
 
     .custom-select .items div.selectedItem{
