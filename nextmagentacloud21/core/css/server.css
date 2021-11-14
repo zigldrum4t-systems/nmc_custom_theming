@@ -531,7 +531,7 @@ aside {
         width: calc(100% - 320px);
     }
     #app-content-files #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -620,7 +620,7 @@ aside {
         display: none !important;
     }
     #app-content-files #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 

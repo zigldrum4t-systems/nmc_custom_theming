@@ -260,6 +260,8 @@ table.multiselect thead #selectedMenu {
 
 #fileList td a a.action.action-menu {
     padding: 1.063rem 0 !important;
+    display: inline !important;
+    margin: -15px -15px 0 0;
 }
 
 #fileList td a a.action.action-share {
