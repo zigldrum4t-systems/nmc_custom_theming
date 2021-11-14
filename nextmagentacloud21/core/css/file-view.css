@@ -667,11 +667,12 @@ table.multiselect #modified {
    display: flex;
    width:auto;
    padding:0 !important;
+   flex-direction: row-reverse;
 }
 
 #filestable .filename .fileactions a.action-restore span:not(.icon) {
   color:#e20074 !important;
-  padding:0.875rem 1rem 0 0 !important;
+  padding:0.875rem 0.4rem 0 0 !important;
   vertical-align: bottom !important;
 }
 .icon-history {
