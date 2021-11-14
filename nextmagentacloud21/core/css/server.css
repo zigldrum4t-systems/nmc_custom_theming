@@ -126,6 +126,9 @@ section {
     top: 185px !important;
     height: calc(100% - 190px) !important;
 }
+#app-navigation-vue{
+  height: calc(100% - 250px) !important;
+}
 
 #app-navigation:not(.vue) ul {
     padding-top: 4rem;
@@ -446,28 +449,24 @@ aside {
     height: 100%;
 }
 
-.content {
+/* .content {
     margin-left: auto;
     margin-right: auto;
     width: 1236px;
-}
+} */
 
 /* .content.app-photos{
   width:100% !important;
 } */
 
-#content>.container-fixed {
+#content>.container-fixed, #content-vue>.container-fixed  {
     position: relative;
     display: flex;
 }
 
 /* App specific changes for photos app */
 .app-photos #app-navigation-vue {
-    left : 0 !important;
-    top :125px !important;
-}
-.app-photos .app-navigation__list{
-    padding-top: 4rem !important;
+    position: fixed;
 }
 
 .app-photos *{
@@ -492,7 +491,7 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     aside {
@@ -528,11 +527,11 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     #app-content-files #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -553,7 +552,7 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 0 !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: 100% !important;
     }
     #uploadprogressbar {
@@ -573,7 +572,7 @@ aside {
     .modal-header {
         width: 1536px !important;
     }
-    #app-navigation {
+    #app-navigation, #app-navigation-vue {
         width: 288px !important;
     }
     .app-sidebar-header__info {
@@ -583,9 +582,9 @@ aside {
         row-gap: 13px !important;
     }
     #app-navigation:not(.hidden)+#app-content {
-        margin-left: 320px;
+        margin-left: 320px !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     aside {
@@ -601,7 +600,7 @@ aside {
     .modal-header {
         width: 1280px !important;
     }
-    #app-navigation,
+    #app-navigation,#app-navigation-vue,
     #app-sidebar-vue {
         width: 288px !important;
     }
@@ -621,7 +620,7 @@ aside {
         display: none !important;
     }
     #app-content-files #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -631,7 +630,7 @@ aside {
         width: 1024px !important;
     }
     #app-navigation,
-    #app-sidebar-vue {
+    #app-sidebar-vue , #app-navigation-vue{
         width: 288px !important;
     }
     aside {
@@ -640,10 +639,10 @@ aside {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    #app-navigation:not(.hidden)+#app-content {
+    #app-navigation:not(.hidden)+#app-content{
         margin-left: 0 !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: 100% !important;
     }
 }
@@ -1572,8 +1571,11 @@ div.crumb.crumbmenu a {
     margin-left: 1rem;
 }
 
-#app-content {
+#app-content, #app-content-vue {
     position: static;
+}
+#app-content-vue:not(.left-menu-hide){
+  margin-left: 320px !important;
 }
 
 
@@ -2114,7 +2116,6 @@ iframe.viewer__file {
     #filestable .summary {
         height: 150px;
     }
-
     .toastify.dialogs{
       max-width: 312px !important;
       min-width: 312px !important;
@@ -2129,7 +2130,6 @@ iframe.viewer__file {
       min-height:24px !important;
     }
 }
-
 @media screen and (max-width: 689px) {
     #fileList td a a.action.action-share.shared-style {
         width: 0 !important;
@@ -2206,6 +2206,12 @@ iframe.viewer__file {
     .modal-header .modal-title {
         width: calc(50% - 150px)!important;
     }
+    #app-content-vue{
+      margin-left: 0 !important;
+    }
+   #app-navigation-vue{
+     left:0 !important
+   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2300,6 +2306,7 @@ iframe.viewer__file {
     margin-left: 0 !important;
     padding-left: 0.625rem !important;
   }
+
 
   #app-content-trashbin table th .selectedActions {
     float: unset !important;
