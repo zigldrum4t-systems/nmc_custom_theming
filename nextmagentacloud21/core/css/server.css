@@ -126,6 +126,9 @@ section {
     top: 185px !important;
     height: calc(100% - 190px) !important;
 }
+#app-navigation-vue{
+  height: calc(100% - 250px) !important;
+}
 
 #app-navigation:not(.vue) ul {
     padding-top: 4rem;
@@ -140,7 +143,7 @@ section {
 #app-navigation>ul>li a.active,
 #app-navigation>ul>li a.active>a {
     background-color: #f2f2f2 !important;
-    color: #e20074;
+    color: #e20074 !important;
     text-decoration: none;
 }
 
@@ -446,28 +449,24 @@ aside {
     height: 100%;
 }
 
-.content {
+/* .content {
     margin-left: auto;
     margin-right: auto;
     width: 1236px;
-}
+} */
 
 /* .content.app-photos{
   width:100% !important;
 } */
 
-#content>.container-fixed {
+#content>.container-fixed, #content-vue>.container-fixed  {
     position: relative;
     display: flex;
 }
 
 /* App specific changes for photos app */
 .app-photos #app-navigation-vue {
-    left : 0 !important;
-    top :125px !important;
-}
-.app-photos .app-navigation__list{
-    padding-top: 4rem !important;
+    position: fixed;
 }
 
 .app-photos *{
@@ -492,7 +491,7 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     aside {
@@ -528,11 +527,11 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     #app-content-files #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -553,7 +552,7 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 0 !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: 100% !important;
     }
     #uploadprogressbar {
@@ -573,7 +572,7 @@ aside {
     .modal-header {
         width: 1536px !important;
     }
-    #app-navigation {
+    #app-navigation, #app-navigation-vue {
         width: 288px !important;
     }
     .app-sidebar-header__info {
@@ -583,9 +582,9 @@ aside {
         row-gap: 13px !important;
     }
     #app-navigation:not(.hidden)+#app-content {
-        margin-left: 320px;
+        margin-left: 320px !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     aside {
@@ -601,7 +600,7 @@ aside {
     .modal-header {
         width: 1280px !important;
     }
-    #app-navigation,
+    #app-navigation,#app-navigation-vue,
     #app-sidebar-vue {
         width: 288px !important;
     }
@@ -621,7 +620,7 @@ aside {
         display: none !important;
     }
     #app-content-files #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -631,7 +630,7 @@ aside {
         width: 1024px !important;
     }
     #app-navigation,
-    #app-sidebar-vue {
+    #app-sidebar-vue , #app-navigation-vue{
         width: 288px !important;
     }
     aside {
@@ -640,10 +639,10 @@ aside {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    #app-navigation:not(.hidden)+#app-content {
+    #app-navigation:not(.hidden)+#app-content{
         margin-left: 0 !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: 100% !important;
     }
 }
@@ -1055,6 +1054,7 @@ div.crumb:last-child {
 #rich-workspace #editor-session-list .save-status{
     padding-right: 0.25rem !important;
     min-width: unset !important;
+    top:0 !important;
 }
 
 /* Add Button*/
@@ -1571,8 +1571,11 @@ div.crumb.crumbmenu a {
     margin-left: 1rem;
 }
 
-#app-content {
+#app-content, #app-content-vue {
     position: static;
+}
+#app-content-vue:not(.left-menu-hide){
+  margin-left: 320px !important;
 }
 
 
@@ -1998,8 +2001,12 @@ iframe.viewer__file {
     color: #FFFFFF;
 }
 
+.oc-conflict-pre-dlg {
+  width:288px !important;
+}
+
 .oc-conflict-pre-dlg-close-div a {
-    padding-right: 1.12rem;
+    padding-right: 1.375rem !important;
     padding-bottom: 0.37rem;
     background-size: 1.5rem 1.5rem !important;
 }
@@ -2007,6 +2014,19 @@ iframe.viewer__file {
 .icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after{
   display: none;
 }
+
+.app-photos li:hover span,
+.app-photos li:active span{
+  color: #e20074 !important;
+}
+
+.app-navigation-entry.active {
+  background-color: var(--color-background-hover) !important;
+}
+
+ .fourbuttons button:nth-child(3){
+     display:none;
+ }
 
 /*Responsive Styling*/
 
@@ -2100,7 +2120,6 @@ iframe.viewer__file {
     #filestable .summary {
         height: 150px;
     }
-
     .toastify.dialogs{
       max-width: 312px !important;
       min-width: 312px !important;
@@ -2115,7 +2134,6 @@ iframe.viewer__file {
       min-height:24px !important;
     }
 }
-
 @media screen and (max-width: 689px) {
     #fileList td a a.action.action-share.shared-style {
         width: 0 !important;
@@ -2192,6 +2210,12 @@ iframe.viewer__file {
     .modal-header .modal-title {
         width: calc(50% - 150px)!important;
     }
+    #app-content-vue{
+      margin-left: 0 !important;
+    }
+   #app-navigation-vue{
+     left:0 !important
+   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2213,6 +2237,9 @@ iframe.viewer__file {
     .oc-dialog {
         width: 640px !important;
     }
+    .oc-conflict-pre-dlg {
+      width: 288px !important;
+  }
     .menu-search-text,
     .email-menu-text,
     .username-lable {
@@ -2287,8 +2314,15 @@ iframe.viewer__file {
     padding-left: 0.625rem !important;
   }
 
+
   #app-content-trashbin table th .selectedActions {
     float: unset !important;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1072px){
+  #files-public-content .item-download{
+    padding-right: 2rem;
   }
 }
 

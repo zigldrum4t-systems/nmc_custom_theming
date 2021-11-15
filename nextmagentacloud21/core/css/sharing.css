@@ -436,6 +436,7 @@ padding:0 !important;
   background-image: var(--icon-magenta-cloud);
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: unset !important;
 }
 
 .action-item--single ,
@@ -732,10 +733,14 @@ form div{
       left: 0px !important;
     }
 
+    .custom-select h5{
+      cursor:pointer !important;
+    }
+
     .custom-select .items {
-      padding:0.5rem;
+      padding:1rem 0.5rem 1rem 0.5rem;
       border: unset !important;
-      max-width:140px !important;
+      max-width:178px !important;
       top:24px;
       border-radius: unset !important;
       box-shadow: var(--scl-shadow-level-2);
@@ -747,9 +752,12 @@ form div{
     }
 
     .custom-select .items div {
-      padding-left: unset !important;
-      text-align: center !important;
-      padding-bottom: 0.25rem !important;
+      padding-left: 2.375rem !important;
+      padding-bottom: 0.188rem !important;
+    }
+
+    .custom-select .items div.selectedItem{
+      padding-left: 0.5rem !important;
     }
 
     .sharing-entry__desc {
@@ -760,11 +768,46 @@ form div{
       height:24px !important;
     }
 
-    .custom-select,
-    .custom-select h5{
-      cursor: pointer !important;
-    }
-
     .custom-select .selected {
       padding-left:unset !important;
+      color:#e20074 !important;
+    }
+
+    .sharing-sharee-list .sharing-entry__actions {
+      margin-left:2.75rem !important;
+    }
+
+    .selectedItem {
+      color:#e20074 !important;
+    }
+
+    .disabledRow .selected{
+      color:#666666 !important;
+    }
+
+    .disabledRow .icon-triangle-s {
+      opacity:0.4 !important;
+    }
+
+    .custom-select  .icon-select-check {
+      margin-right:0.125rem !important;
+      vertical-align: middle;
+    }
+
+    .custom-select [class^='icon-'],
+    .custom-select [class*=' icon-'] {
+      min-width: 24px !important;
+      min-height: 24px !important;
+    }
+
+    .items span {
+      display:none;
+    }
+
+    .custom-select .items .selectedItem span {
+      display: inline-block !important;
+    }
+
+    .custom-select  span.icon-triangle-s {
+      margin-left: -0.375rem;
     }

@@ -258,6 +258,15 @@ OC.L10N.register(
     "Magentacloud XL": "Magentacloud XL",
     "Magentacloud XXL": "Magentacloud XXL",
     "Search files, folders or settings …": "Search files, folders or settings …",
-    "Add":"Add"
+    "Add":"Add",
+    "File conflict" : "File conflict",
+    "The file nextcloud.log already exist in the location." : "The file {filename} already exist in the location.",
+    "Do you want to replace it with files you're moving?" : "Do you want to replace it with files you're moving?",
+    "Keep both files": "Keep both files",
+    "More details" : "More details",
+    "Replace file" : "Replace file",
+    "The file {filename} already exist in the location." : "The file {filename} already exist in the location.",
+    "The files already exist in the location." : "The files already exist in the location.",
+    "{conflictCount} File conflicts" : "{conflictCount} File conflicts"
 },
 "nplurals=2; plural=(n != 1);");

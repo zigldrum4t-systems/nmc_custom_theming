@@ -404,7 +404,8 @@ div.crumb {
 #filestable .icon-triangle-s:hover ,
 .advanced-settings label:hover span.icon-triangle-s,
 .advanced-settings label:active span.icon-triangle-s,
-.sharing-entry__desc select {
+.sharing-entry__desc select,
+.custom-select  span.icon-triangle-s{
     background-image: var(--icon-triangle-s-e20074) !important;
 }
 
@@ -415,7 +416,7 @@ div.crumb {
     background-image: var(--icon-triangle-n-e20074);
 }
 
-aside select[disabled]{
+aside .custom-select .disabledRow span.icon-triangle-s{
     background-image: var(--icon-triangle-s-000) !important;
 }
 
@@ -431,7 +432,8 @@ aside select[disabled]{
 
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close,
-aside .icon-close {
+aside .icon-close,
+.oc-conflict-pre-dlg-close-div a  {
     background: var(--icon-dialog-close) !important;
     background-repeat: no-repeat !important;
 }
@@ -499,9 +501,14 @@ aside .icon-starred {
 }
 
 /*check-mark-sharing*/
-.icon-checkmark-color{
+.icon-checkmark-color {
   background-image: var(--icon-checkmark-magenta)!important;
 }
+
+.icon-select-check {
+  background-image: var(--icon-select-check-custom)!important;
+}
+
 /*star-gray*/
 
 aside .icon-star{
@@ -586,4 +593,8 @@ aside .icon-star{
 
 .icon-h1:hover,.icon-h2:hover,.icon-h3:hover,.icon-h4:hover,.icon-h5:hover,.icon-h6:hover{
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+.icon-share-link {
+    background-image: var(--icon-share-link) !important;
 }
