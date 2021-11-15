@@ -672,11 +672,11 @@
       */
       _formatRemoteSharewith: function _formatRemoteSharewith(shareWith, shareWithDisplayName, message) {
         var parts = OCA.Sharing.Util._REMOTE_OWNER_REGEXP.exec(shareWith);
-        if(!this.validateEmail(shareWith))
+        if(this.validateEmail(shareWith))
         {
           if (!parts || !parts[7]) {
             // display avatar of the user
-            var avatar = '<span class="icon-shared" data-username="' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWith) + '" title="' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '"></span>';
+            var avatar = '<span class="icon icon-shared" data-username="' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWith) + '" title="' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '"></span>';
             var hidden = '<span class="hidden-visually">' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '</span> ';
             return avatar + hidden;
           }
