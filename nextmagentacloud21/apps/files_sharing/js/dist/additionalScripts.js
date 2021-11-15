@@ -409,12 +409,22 @@ __webpack_require__.r(__webpack_exports__);
         permissions: OC.PERMISSION_ALL,
         iconClass: function iconClass(fileName, context) {
           var shareType = parseInt(context.$file.data('share-types'), 10);
-
+          console.log(OC.Share.SHARE_TYPE_EMAIL);
           if (shareType === OC.Share.SHARE_TYPE_EMAIL || shareType === OC.Share.SHARE_TYPE_LINK) {
             return 'icon-public';
           }
-
-          return 'icon-shared';
+          
+          var url_string = window.location.href;
+          var url = new URL(url_string);
+          var c = url.searchParams.get("view");
+          console.log("c===" + c);
+          if(c=="sharingout"){
+            return '';
+          }
+          else{
+            return 'icon-shared';
+          }
+          
         },
         icon: function icon(fileName, context) {
           var shareOwner = context.$file.data('share-owner-id');
@@ -574,8 +584,8 @@ __webpack_require__.r(__webpack_exports__);
             avatars = OCA.Sharing.Util._formatShareList(recipients);
           }
         }
+        console.log("avtar final data  : " + avatars)
         
-
         action.html(avatars).prepend(icon);
 
         if (ownerId || recipients) {
@@ -592,10 +602,18 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       if (hasLink) {
-        iconClass = 'icon-public';
+        if(c=="sharingout"){
+          iconClass = '';
+          icon.removeClass('icon-shared icon-public').addClass(iconClass);
+        }
+        else{
+          iconClass = 'icon-public';
+          icon.removeClass('icon-shared icon-public').addClass(iconClass);
+        }
+        
       }
 
-      icon.removeClass('icon-shared icon-public').addClass(iconClass);
+      
     },
 
     /**
@@ -609,7 +627,7 @@ __webpack_require__.r(__webpack_exports__);
     _formatRemoteShare: function _formatRemoteShare(shareWith, shareWithDisplayName, message) {
       var parts = OCA.Sharing.Util._REMOTE_OWNER_REGEXP.exec(shareWith); //console.error(parts);
 
-
+      
       if (!parts || !parts[7]) {
         // display avatar of the user
         var avatar = '<span class="avatar" data-username="' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWith) + '" title="' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '"></span>';
@@ -654,15 +672,26 @@ __webpack_require__.r(__webpack_exports__);
     */
     _formatRemoteSharewith: function _formatRemoteSharewith(shareWith, shareWithDisplayName, message) {
       var parts = OCA.Sharing.Util._REMOTE_OWNER_REGEXP.exec(shareWith);
-
+      if(this.validateEmail(shareWith))
+      {
+        if (!parts || !parts[7]) {
+          // display avatar of the user
+          var avatar = '<span class="icon-shared" data-username="' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWith) + '" title="' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '"></span>';
+          var hidden = '<span class="hidden-visually">' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '</span> ';
+          return avatar + hidden;
+        }
+      }
+      else{
+        if (!parts || !parts[7]) {
+          // display avatar of the user
+          var avatar = '<span class="avatar" data-username="' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWith) + '" title="' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '"></span>';
+          var hidden = '<span class="hidden-visually">' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '</span> ';
+          return avatar + hidden;
+        }
+      }
       console.error(parts);
 
-      if (!parts || !parts[7]) {
-        // display avatar of the user
-        var avatar = '<span class="avatar" data-username="' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWith) + '" title="' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '"></span>';
-        var hidden = '<span class="hidden-visually">' + message + ' ' + escape_html__WEBPACK_IMPORTED_MODULE_0___default()(shareWithDisplayName) + '</span> ';
-        return avatar + hidden;
-      }
+      
 
       var userName = parts[2];
       var userDomain = parts[4];
@@ -720,17 +749,22 @@ __webpack_require__.r(__webpack_exports__);
       //   return _parent._formatRemoteSharewith(recipient.shareWith, recipient.shareWithDisplayName, t('files_sharing', 'Shared with'));
       // });
       $.each(recipients, function(key,val) {   
-        firstname =   val.shareWith;
-        if(_parent.validateEmail(val.shareWithDisplayName)){
+       
+        if(_parent.validateEmail(val.shareWith)){
+          firstname =   val.shareWith;
           externalShare+= val.shareWithDisplayName+", ";
         }else{
+          firstname =   val.shareWith;
           returnVal+= val.shareWithDisplayName+", ";
         }
         
         
     }); 
     returnVal = returnVal.replace(/,\s*$/, "");
-    returnVal= _parent._formatRemoteSharewith(firstname, returnVal, t('files_sharing', 'Shared with'));              
+    if(returnVal!==""){
+         returnVal= _parent._formatRemoteSharewith(firstname, returnVal, t('files_sharing', 'Shared with'));
+    }
+    //returnVal= _parent._formatRemoteSharewith(firstname, returnVal, t('files_sharing', 'Shared with'));              
      console.log(returnVal);
      if(externalShare!==""){
       returnVal+= _parent._formatRemoteSharewith(firstname, externalShare, t('files_sharing', 'Shared with'));              
