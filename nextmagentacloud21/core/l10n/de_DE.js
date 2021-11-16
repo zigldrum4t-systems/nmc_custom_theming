@@ -435,6 +435,8 @@ OC.L10N.register(
     "Replace file" : "Datei ersetzen",
     "The file {filename} already exist in the location." : "Die Datei {filename} existiert bereits am Speicherort.",
     "The files already exist in the location." : "Die Dateien sind bereits am Speicherort vorhanden.",
-    "{conflictCount} File conflicts" : "{conflictCount} Dateikonflikte"
+    "{conflictCount} File conflicts" : "{conflictCount} Dateikonflikte",
+    "Keep both files for all" : "Beide Dateien für alle behalten",
+    "Replace all files" : "Alle Dateien ersetzen"
 },
 "nplurals=2; plural=(n != 1);");

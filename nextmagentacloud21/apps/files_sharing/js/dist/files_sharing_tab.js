@@ -9702,7 +9702,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     options: {
-      type: Array,
+      type: Object,
       required: true
     },
     default: {
@@ -9727,7 +9727,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      selected: this.default ? this.default ? this.options[this.default] : this.options[0] : this.options.length > 0 ? this.options[0] : null,
+      selected: this.getDefault(this.default),
       open: false
     };
   },
@@ -9738,6 +9738,22 @@ __webpack_require__.r(__webpack_exports__);
     setCurrentSelectedOption: function setCurrentSelectedOption(option) {
       console.info('in setCurrentSelectedOption-', option);
       this.$emit('setSelectedOption', option);
+    },
+    getDefault: function getDefault(defaultOption) {
+      var defaultOpt = null;
+
+      if (defaultOption) {
+        for (var i = 0; i < Object.keys(this.options).length; i++) {
+          // this.options.each(function() {
+          if (this.options[i].key === defaultOption) {
+            defaultOpt = this.options[i];
+          }
+        }
+      } else if (Object.keys(this.options).length > 0) {
+        defaultOpt = this.options[0];
+      }
+
+      return defaultOpt;
     }
   }
 });
@@ -10065,15 +10081,27 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       return _typeof(this.share.status) === 'object' && !Array.isArray(this.share.status);
     },
     getFolderOptions: function getFolderOptions() {
-      var options = [];
-      options[this.publicUploadRValue] = t('files_sharing', 'Read only');
-      options[this.publicUploadRWValue] = t('files_sharing', 'Read, write and upload');
+      var options = {};
+      options[0] = {
+        key: this.publicUploadRValue,
+        value: t('files_sharing', 'Read only')
+      };
+      options[1] = {
+        key: this.publicUploadRWValue,
+        value: t('files_sharing', 'Read, write and upload')
+      };
       return options;
     },
     getFileOptions: function getFileOptions() {
-      var options = [];
-      options[this.publicUploadRValue] = t('files_sharing', 'Read only');
-      options[this.publicUploadEValue] = t('files_sharing', 'Read and write');
+      var options = {};
+      options[0] = {
+        key: this.publicUploadRValue,
+        value: t('files_sharing', 'Read only')
+      };
+      options[1] = {
+        key: this.publicUploadEValue,
+        value: t('files_sharing', 'Read and write')
+      };
       return options;
     }
   },
@@ -10861,16 +10889,31 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       return _typeof(this.config.passwordPolicy) === 'object';
     },
     getFolderOptions: function getFolderOptions() {
-      var options = [];
-      options[this.publicUploadRValue] = t('files_sharing', 'Read only');
-      options[this.publicUploadRWValue] = t('files_sharing', 'Read, write and upload');
-      options[this.publicUploadWValue] = t('files_sharing', 'File drop (upload only)');
+      var options = {};
+      options[0] = {
+        key: this.publicUploadRValue,
+        value: t('files_sharing', 'Read only')
+      };
+      options[1] = {
+        key: this.publicUploadRWValue,
+        value: t('files_sharing', 'Read, write and upload')
+      };
+      options[2] = {
+        key: this.publicUploadWValue,
+        value: t('files_sharing', 'File drop (upload only)')
+      };
       return options;
     },
     getFileOptions: function getFileOptions() {
-      var options = [];
-      options[this.publicUploadRValue] = t('files_sharing', 'Read only');
-      options[this.publicUploadEValue] = t('files_sharing', 'Read and write');
+      var options = {};
+      options[0] = {
+        key: this.publicUploadRValue,
+        value: t('files_sharing', 'Read only')
+      };
+      options[1] = {
+        key: this.publicUploadEValue,
+        value: t('files_sharing', 'Read and write')
+      };
       return options;
     }
   },
@@ -58296,7 +58339,7 @@ var render = function() {
           _c("h5", [_vm._v(_vm._s(_vm.title))]),
           _vm._v(" "),
           _c("div", { staticClass: "selected", class: { open: _vm.open } }, [
-            _vm._v("\n\t\t\t" + _vm._s(_vm.selected) + "\n\t\t\t"),
+            _vm._v("\n\t\t\t" + _vm._s(_vm.selected.value) + "\n\t\t\t"),
             _c("span", { staticClass: "sort-indicator icon-triangle-s" })
           ])
         ]
@@ -58305,25 +58348,24 @@ var render = function() {
       _c(
         "div",
         { staticClass: "items", class: { selectHide: !_vm.open } },
-        _vm._l(Object.keys(_vm.options), function(option, i) {
+        _vm._l(_vm.options, function(option, i) {
           return _c(
             "div",
             {
               key: i,
-              class:
-                _vm.options[option] == _vm.selected ? "selectedItem" : null,
+              class: option.key == _vm.selected.key ? "selectedItem" : null,
               on: {
                 click: function($event) {
-                  _vm.selected = _vm.options[option]
+                  _vm.selected = option
                   _vm.open = false
-                  _vm.$emit("input", option)
-                  _vm.setCurrentSelectedOption(option)
+                  _vm.$emit("input", option.key)
+                  _vm.setCurrentSelectedOption(option.key)
                 }
               }
             },
             [
               _c("span", { staticClass: "icon-select-check" }),
-              _vm._v("\n\t\t\t" + _vm._s(_vm.options[option]) + "\n\t\t")
+              _vm._v("\n\t\t\t" + _vm._s(option.value) + "\n\t\t")
             ]
           )
         }),
@@ -59699,7 +59741,13 @@ var render = function() {
                   _vm._v(
                     "\n\t\t\t\t" + _vm._s(_vm.t("files_sharing", "Advanced"))
                   ),
-                  _c("span", { staticClass: "sort-indicator icon-triangle-s" })
+                  _c("span", {
+                    class: [
+                      "sort-indicator",
+                      { "icon-triangle-s": _vm.showAdLink },
+                      { "icon-triangle-n": !_vm.showAdLink }
+                    ]
+                  })
                 ]
               ),
               _vm._v(" "),
@@ -60021,7 +60069,13 @@ var render = function() {
                   _vm._v(
                     "\n\t\t\t\t" + _vm._s(_vm.t("files_sharing", "Advanced"))
                   ),
-                  _c("span", { staticClass: "sort-indicator icon-triangle-s" })
+                  _c("span", {
+                    class: [
+                      "sort-indicator",
+                      { "icon-triangle-s": _vm.showAdLink },
+                      { "icon-triangle-n": !_vm.showAdLink }
+                    ]
+                  })
                 ]
               ),
               _vm._v(" "),
