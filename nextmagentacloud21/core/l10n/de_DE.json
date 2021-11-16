@@ -453,6 +453,8 @@
     "The file {filename} already exist in the location." : "Die Datei {filename} existiert bereits am Speicherort.",
     "The files already exist in the location." : "Die Dateien sind bereits am Speicherort vorhanden.",
     "{conflictCount} File conflicts" : "{conflictCount} Dateikonflikte",
+    "Keep both files for all" : "Beide Dateien für alle behalten",
+    "Replace all files" : "Alle Dateien ersetzen"
   },
   "pluralForm": "nplurals=2; plural=(n != 1);"
 }
