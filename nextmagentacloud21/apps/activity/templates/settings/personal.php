@@ -25,27 +25,12 @@ style('activity', 'settings');
 ?>
 
 <form id="activity_notifications" class="section">
-	<!-- <p class="settings-hint">
-		<?php if ($_['email_enabled']) { ?>
-			<?php p($l->t('Choose for which activities you want to get an email or push notification.')); ?>
-		<?php } else { ?>
-			<?php p($l->t('Choose for which activities you want to get a push notification.')); ?>
-		<?php } ?>
-	</p> -->
-	<h1><?php p($l->t('Regular mails')); ?></h1>
-
-  <div class="mails-report-section">
-    <input type="checkbox" class="checkbox" id="monthly_report">
-    <label for="monthly_report"><?php p($l->t('Monthly Status Report.')); ?></label>
-    <p><?php p($l->t('The status report informs you monthly by email about storage space, your shares and gives you useful tips about the MagentaCLOUD.')); ?></p>
-  </div>
-
-  <div class="mails-report-section">
+	<div class="mails-report-section">
   <input id="activity_email_enabled" name="activity_digest" type="checkbox" class="checkbox"
 		   value="1" <?php if ($_['activity_digest_enabled']) {
 	print_unescaped('checked="checked"');
 } ?> />
- <label for="activity_digest"><?php p($l->t('Activity Report.')); ?></label>
+ <label for="activity_digest"><?php p($l->t('Activity Report')); ?></label>
     <p><?php p($l->t('The activity report informs you every morning about all processes in your MagentaCLOUD.')); ?></p>
   </div>
 

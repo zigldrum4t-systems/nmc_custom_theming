@@ -188,7 +188,7 @@ div.crumb {
 
 .icon-more,
 .action-item__menutoggle--default-icon {
-    background-image: var(--icon-more-custom) !important;
+    background-image: var(--icon-more-custom);
 }
 
 .icon-clippy {
@@ -207,7 +207,37 @@ div.crumb {
 .icon-mail {
   background-image: var(--icon-mail-custom) !important;
 }
+
+.settings-menu ul li[data-id='core_apps'] a div {
+  background-image: var(--icon-apps-custom) !important;
+}
+
+.settings-menu ul li[data-id='core_users'] a div {
+  background-image: var(--icon-core-users) !important;
+}
+
+.settings-menu ul li[data-id='help'] a div {
+  background-image: var(--icon-help-custom) !important;
+}
+.settings-menu ul li[data-id='logout'] a div {
+  background-image: var(--icon-logout-custom) !important;
+}
+
+
 /**navigation-icons**/
+
+#app-navigation .nav-icon-nmc_files_activity {
+    background-image: var(--icon-files-activity-custom) !important;
+}
+
+#app-navigation .nav-icon-nmc_files_activity:hover {
+    background-image: var( --icon-files-activity-magenta) !important;
+}
+
+#app-navigation .nav-icon-nmc_files_activity.svg.active {
+    background-image: var(--icon-files-activity-magenta) !important;
+}
+
 
 #app-navigation .nav-icon-favorites {
     background-image: var(--icon-favourite-custom) !important;
@@ -265,7 +295,8 @@ div.crumb {
     background-size: cover !important;
 }
 
-.icon-settings {
+.unified-search__result-icon--no-preview.icon-settings,
+.settings-menu ul li[data-id='settings'] a div {
     background-image: var( --icon-setting-custom) !important;
     background-size: cover !important;
 }
@@ -288,6 +319,10 @@ div.crumb {
 
 .menubar button.is-active.icon-ol {
     background-image: var(--icon-ol-magenta) !important;
+}
+
+.menubar button.is-active.icon-quote,.menubar button.is-active.icon-code{
+    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
 .menubar button.is-active.icon-ul {
@@ -365,20 +400,23 @@ div.crumb {
 
 /*filelist-toggle-icons*/
 
-.filelist-container .icon-triangle-s,
-#filestable .icon-triangle-s ,
+.filelist-container .icon-triangle-s:hover,
+#filestable .icon-triangle-s:hover ,
 .advanced-settings label:hover span.icon-triangle-s,
 .advanced-settings label:active span.icon-triangle-s,
-.sharing-entry__desc select {
+.sharing-entry__desc select,
+.custom-select  span.icon-triangle-s{
     background-image: var(--icon-triangle-s-e20074) !important;
 }
 
-.filelist-container .icon-triangle-n,
-#filestable .icon-triangle-n {
+.filelist-container .icon-triangle-n:hover,
+#filestable .icon-triangle-n:hover,
+.advanced-settings label:hover span.icon-triangle-n,
+.advanced-settings label:active span.icon-triangle-n {
     background-image: var(--icon-triangle-n-e20074);
 }
 
-aside select[disabled]{
+aside .custom-select .disabledRow span.icon-triangle-s{
     background-image: var(--icon-triangle-s-000) !important;
 }
 
@@ -394,11 +432,16 @@ aside select[disabled]{
 
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close,
-aside .icon-close {
+aside .icon-close,
+.oc-conflict-pre-dlg-close-div a  {
     background: var(--icon-dialog-close) !important;
     background-repeat: no-repeat !important;
 }
 
+/*history-restore-icon*/
+.icon-history {
+  background-image: var(--icon-restore-custom) !important;
+}
 
 /** RIGHT click icons**/
 
@@ -448,17 +491,24 @@ aside .icon-starred {
 /*user-icon*/
 .icon-mail-white, .icon-mail.icon-white{
   background-image: var(--icon-user-custom)!important;
+  background-position-y: 5px;
 }
 
 .icon-public-white,
 .icon-public.icon-white {
     background-image: var(--icon-link-custom)!important;
+    background-position-y: 5px;
 }
 
 /*check-mark-sharing*/
-.icon-checkmark-color{
+.icon-checkmark-color {
   background-image: var(--icon-checkmark-magenta)!important;
 }
+
+.icon-select-check {
+  background-image: var(--icon-select-check-custom)!important;
+}
+
 /*star-gray*/
 
 aside .icon-star{
@@ -476,3 +526,68 @@ aside .icon-star{
   min-height: 1.5rem;
 }
 
+#selectedActionLabel .icon-more{
+  background-image: var(--icon-more-magenta) !important;
+}
+
+.icon-desktop {
+  background-image: var(--icon-desktop-custom);
+}
+
+.icon-phone {
+  background-image: var(--icon-phone-custom);
+}
+
+/*calendar*/
+.mx-icon-calendar {
+  background-image: var(--icon-calendar-custom) !important;
+}
+
+/*Mimetype icons */
+
+#filestable [data-mime="text/plain"] .thumbnail,
+#filestable [data-mime="text/markdown"] .thumbnail,
+#filestable [data-mime="application/msword"] .thumbnail,
+#filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail {
+  background-image: url('../../core/img/filetypes/text.svg') !important;
+}
+
+#filestable [data-mime="application/vnd.ms-excel"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] .thumbnail,
+#filestable [data-mime="text/csv"] .thumbnail {
+  background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+}
+
+#filestable [data-mime="application/octet-stream"] .thumbnail {
+  background-image: url('../../core/img/filetypes/unknown-file.svg') !important;
+}
+
+#fileList [data-mounttype="shared-root"] .thumbnail {
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+}
+
+#fileList [data-icon="/core/img/filetypes/folder-shared.svg"] .thumbnail {
+    background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+  }
+
+/*photo gallery video icon*/
+
+.icon-video-white, .icon-video.icon-white {
+  background-image: var(--icon-video-play-custom) !important;
+  filter: unset !important;
+}
+
+/*zip-icon*/
+
+.icon-zip {
+    background-image: var(--icon-zip-custom) !important;
+}
+
+.icon-h1:hover,.icon-h2:hover,.icon-h3:hover,.icon-h4:hover,.icon-h5:hover,.icon-h6:hover{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+.icon-share-link {
+    background-image: var(--icon-share-link) !important;
+}

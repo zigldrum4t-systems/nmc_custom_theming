@@ -13,10 +13,10 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
     $customNavigationItems['files'] = $_['navigationItems']['files'];
 
     $customNavigationItems['sharingout'] = $_['navigationItems']['shareoverview']['sublist'][0];
-    $customNavigationItems['sharingout']['name'] = 'My shares';
+    $customNavigationItems['sharingout']['name'] = ($l->t('My shares'));
 
     $customNavigationItems['sharingin'] = $_['navigationItems']['shareoverview']['sublist'][1];
-    $customNavigationItems['sharingin']['name'] = 'Shared with me';
+    $customNavigationItems['sharingin']['name'] = ($l->t('Shared with me'));
 
     $customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
     $pinned = 0;
@@ -33,7 +33,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
     </div>
     <div class="logo-right-text">
       <span class="avlspace"><?php p($l->t('%1$s', [$_['usage']])); ?></span><span class="outoftext">
-        <?php p($l->t('out of')); ?></span><span class="totalspace"><?php p($l->t('%1$s', [$_['total_space']])); ?></span>
+        <?php p($l->t('of')); ?></span><span class="totalspace"><?php p($l->t('%1$s', [$_['total_space']])); ?></span>
     </div>
   </div>
 
@@ -67,7 +67,7 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
       </div>
       <div id="files-setting-cropimagepreviews">
         <input class="checkbox" id="cropimagepreviewsToggle" checked="checked" type="checkbox">
-        <label for="cropimagepreviewsToggle"><?php p($l->t('Full screen for image preview')); ?></label>
+        <label for="cropimagepreviewsToggle"><?php p($l->t('Crop image previews')); ?></label>
       </div>
 
     </div>

@@ -9702,7 +9702,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     options: {
+<<<<<<< HEAD
       type: Object,
+=======
+      type: Array,
+>>>>>>> feature-develop
       required: true
     },
     default: {
@@ -9727,7 +9731,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
+<<<<<<< HEAD
       selected: this.getDefault(this.default),
+=======
+      selected: this.default ? this.default ? this.options[this.default] : this.options[0] : this.options.length > 0 ? this.options[0] : null,
+>>>>>>> feature-develop
       open: false
     };
   },
@@ -9738,6 +9746,7 @@ __webpack_require__.r(__webpack_exports__);
     setCurrentSelectedOption: function setCurrentSelectedOption(option) {
       console.info('in setCurrentSelectedOption-', option);
       this.$emit('setSelectedOption', option);
+<<<<<<< HEAD
     },
     getDefault: function getDefault(defaultOption) {
       var defaultOpt = null;
@@ -9754,6 +9763,8 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       return defaultOpt;
+=======
+>>>>>>> feature-develop
     }
   }
 });
@@ -10081,6 +10092,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       return _typeof(this.share.status) === 'object' && !Array.isArray(this.share.status);
     },
     getFolderOptions: function getFolderOptions() {
+<<<<<<< HEAD
       var options = {};
       options[0] = {
         key: this.publicUploadRValue,
@@ -10102,6 +10114,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         key: this.publicUploadEValue,
         value: t('files_sharing', 'Read and write')
       };
+=======
+      var options = [];
+      options[this.publicUploadRValue] = t('files_sharing', 'Read only');
+      options[this.publicUploadRWValue] = t('files_sharing', 'Read, write and upload');
+      return options;
+    },
+    getFileOptions: function getFileOptions() {
+      var options = [];
+      options[this.publicUploadRValue] = t('files_sharing', 'Read only');
+      options[this.publicUploadEValue] = t('files_sharing', 'Read and write');
+>>>>>>> feature-develop
       return options;
     }
   },
@@ -10889,6 +10912,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       return _typeof(this.config.passwordPolicy) === 'object';
     },
     getFolderOptions: function getFolderOptions() {
+<<<<<<< HEAD
       var options = {};
       options[0] = {
         key: this.publicUploadRValue,
@@ -10914,6 +10938,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         key: this.publicUploadEValue,
         value: t('files_sharing', 'Read and write')
       };
+=======
+      var options = [];
+      options[this.publicUploadRValue] = t('files_sharing', 'Read only');
+      options[this.publicUploadRWValue] = t('files_sharing', 'Read, write and upload');
+      options[this.publicUploadWValue] = t('files_sharing', 'File drop (upload only)');
+      return options;
+    },
+    getFileOptions: function getFileOptions() {
+      var options = [];
+      options[this.publicUploadRValue] = t('files_sharing', 'Read only');
+      options[this.publicUploadEValue] = t('files_sharing', 'Read and write');
+>>>>>>> feature-develop
       return options;
     }
   },

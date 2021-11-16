@@ -23,8 +23,9 @@
 @import url("footer.css");
 @import url("file-view.css");
 @import url("breadcrumb.css");
-@import url("sharing.css");
+ @import url("sharing.css");
 @import url("settings.css");
+@import url("activity.css");
 
 
 /* ---------------------------------------------------------------------------- */
@@ -119,11 +120,14 @@ section {
     background-size: 24px 24px !important;
 }
 
-#app-navigation {
+#app-navigation,#app-navigation-vue{
     z-index: 10 !important;
     left: unset !important;
     top: 185px !important;
     height: calc(100% - 190px) !important;
+}
+#app-navigation-vue{
+  height: calc(100% - 250px) !important;
 }
 
 #app-navigation:not(.vue) ul {
@@ -139,7 +143,7 @@ section {
 #app-navigation>ul>li a.active,
 #app-navigation>ul>li a.active>a {
     background-color: #f2f2f2 !important;
-    color: #e20074;
+    color: #e20074 !important;
     text-decoration: none;
 }
 
@@ -392,7 +396,7 @@ section {
 
 #controls>div.actions.creatable>a:hover {
     color: var(--scl-color-magenta);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #controls>div.actions.creatable>a>span.hidden-visually:hover {
@@ -445,16 +449,34 @@ aside {
     height: 100%;
 }
 
-.content {
+/* .content {
     margin-left: auto;
     margin-right: auto;
     width: 1236px;
-}
+} */
 
-#content>.container-fixed {
+/* .content.app-photos{
+  width:100% !important;
+} */
+
+#content>.container-fixed, #content-vue>.container-fixed  {
     position: relative;
     display: flex;
 }
+
+/* App specific changes for photos app */
+.app-photos #app-navigation-vue {
+    position: fixed;
+}
+
+.app-photos *{
+     line-height: 0 !important;
+}
+
+.app-photos .app-navigation__list .app-navigation-entry__title {
+    line-height: 44px !important;
+  }
+
 
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
     .brandbar>.container-fixed {
@@ -469,7 +491,7 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     aside {
@@ -505,11 +527,11 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 320px;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     #app-content-files #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -530,7 +552,7 @@ aside {
     #app-navigation:not(.hidden)+#app-content {
         margin-left: 0 !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: 100% !important;
     }
     #uploadprogressbar {
@@ -550,7 +572,7 @@ aside {
     .modal-header {
         width: 1536px !important;
     }
-    #app-navigation {
+    #app-navigation, #app-navigation-vue {
         width: 288px !important;
     }
     .app-sidebar-header__info {
@@ -560,9 +582,9 @@ aside {
         row-gap: 13px !important;
     }
     #app-navigation:not(.hidden)+#app-content {
-        margin-left: 320px;
+        margin-left: 320px !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
     aside {
@@ -578,7 +600,7 @@ aside {
     .modal-header {
         width: 1280px !important;
     }
-    #app-navigation,
+    #app-navigation,#app-navigation-vue,
     #app-sidebar-vue {
         width: 288px !important;
     }
@@ -598,7 +620,7 @@ aside {
         display: none !important;
     }
     #app-content-files #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -608,7 +630,7 @@ aside {
         width: 1024px !important;
     }
     #app-navigation,
-    #app-sidebar-vue {
+    #app-sidebar-vue , #app-navigation-vue{
         width: 288px !important;
     }
     aside {
@@ -617,10 +639,10 @@ aside {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    #app-navigation:not(.hidden)+#app-content {
+    #app-navigation:not(.hidden)+#app-content{
         margin-left: 0 !important;
     }
-    .app-files #app-content {
+    .app-files #app-content, #app-content-vue {
         width: 100% !important;
     }
 }
@@ -687,6 +709,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #app-settings-header .settings-button.opened {
     border-top: unset !important;
+    background-image: var(--icon-triangle-s-e20074);
 }
 
 
@@ -729,9 +752,11 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 .Memory-consumed .logo-right-text {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
+    padding-top: 0.313rem;
     padding-left: 0.375rem;
+    font-size: 1.25rem;
 }
 
 .Memory-consumed img {
@@ -862,6 +887,7 @@ a.menuitem.action:hover>span,
     padding-top: 0;
     top: 184px;
     z-index: 99;
+    min-height: calc(100% - 120px);
 }
 
 #content-vue.app-settings{
@@ -877,6 +903,7 @@ a.menuitem.action:hover>span,
 
 .actions {
     padding: 8px;
+    margin-top: 2px;
 }
 
 .actions.creatable a {
@@ -888,8 +915,21 @@ a.menuitem.action:hover>span,
     margin-top: 2px
 }
 
+.actions.creatable .add-label{
+  margin-left: 0.625rem;
+  font-weight: normal;
+  color:#E20074;
+}
+
+#controls .actions > .button{
+  justify-content: start !important;
+  padding-left: 0.2rem !important;
+}
+
+
 div.crumb {
     padding: 0;
+    margin-top: 2px;
 }
 
 div.crumb>a,
@@ -897,6 +937,9 @@ div.crumb>span {
     opacity: 1 !important;
 }
 
+div.crumb>a:hover{
+    color: #e20074;
+}
 div.crumb:last-child {
     margin-right: 0 !important;
 }
@@ -912,6 +955,11 @@ div.crumb:last-child {
 
 .crumb a {
     margin-right: 1.5rem;
+}
+
+#controls>div.actions.creatable>a:active,#controls>div.actions.creatable>a:focus {
+  background: none !important;
+  border-color: #e20074;
 }
 
 #app-navigation-toggle {
@@ -999,6 +1047,15 @@ div.crumb:last-child {
     top: 118px;
 }
 
+#filelist-header #rich-workspace, #rich-workspace #editor-session-list{
+    padding-right: 0 !important;
+}
+
+#rich-workspace #editor-session-list .save-status{
+    padding-right: 0.25rem !important;
+    min-width: unset !important;
+    top:0 !important;
+}
 
 /* Add Button*/
 
@@ -1052,8 +1109,10 @@ div.crumb:last-child {
 }
 
 button:not(:disabled):not(.primary):hover,
+button:not(:disabled):not(.primary):focus,
 button:not(:disabled):not(.primary).active,
 .button:not(:disabled):not(.primary):hover,
+.button:not(:disabled):not(.primary):focus,
 .button:not(:disabled):not(.primary).active,
 .pager li a:not(:disabled):not(.primary):hover,
 .pager li a:not(:disabled):not(.primary):focus,
@@ -1115,7 +1174,7 @@ li>.menuitem span[class^='icon-'],
 li>.menuitem span[class*=' icon-'],
 li>.menuitem[class^='icon-'],
 li>.menuitem[class*=' icon-'] {
-    background-size: unset !important;
+    background-size: 24px !important;
 }
 
 #editor-wrapper div.ProseMirror h1 span {
@@ -1171,7 +1230,7 @@ li>.menuitem[class*=' icon-'] {
     border-radius: 8px;
 }
 
-.popover__wrapper .popover__inner li span[class] {
+.popover__wrapper .popover__inner li span.action-button__text{
     margin-right: 0.5rem;
 }
 
@@ -1202,7 +1261,15 @@ li>.menuitem[class*=' icon-'] {
 }
 
 #editor-wrapper div.ProseMirror blockquote {
-    border-left: none !important;
+    border-left: 4px solid #E20074 !important;
+}
+
+#rich-workspace #editor-wrapper .ProseMirror p div{
+  background-color: unset !important;
+}
+
+#rich-workspace #editor-wrapper .ProseMirror .image__view, #rich-workspace #editor-wrapper .image__view .image__caption input[type='text']{
+  text-align: start !important;
 }
 
 .action-item.action-item--open .action-item__menutoggle {
@@ -1504,8 +1571,11 @@ div.crumb.crumbmenu a {
     margin-left: 1rem;
 }
 
-#app-content {
+#app-content, #app-content-vue {
     position: static;
+}
+#app-content-vue:not(.left-menu-hide){
+  margin-left: 320px !important;
 }
 
 
@@ -1636,6 +1706,10 @@ div.crumb.crumbmenu a {
     max-height: 100% !important;
 }
 
+#viewer .modal-container > * {
+  z-index: 999999;
+}
+
 #viewer #editor-container {
     top: 64px !important
 }
@@ -1678,7 +1752,6 @@ iframe.viewer__file {
     display: none;
 } */
 
-
 /*Copy-move-dialog*/
 
 .oc-dialog {
@@ -1716,19 +1789,21 @@ iframe.viewer__file {
     color: #e20074 !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
-.oc-dialog-buttonrow.twobuttons.aside .primary {
+.oc-dialog-buttonrow.onebutton .primary,
+.oc-dialog-buttonrow.twobuttons .primary {
     background-color: #e20074 !important;
     border-color: #e20074 !important;
     color: #ffffff !important;
     margin: 0 0 0 0.5rem !important;
 }
 
-.oc-dialog-buttonrow.onebutton,
+.oc-dialog-buttonrow.onebutton .primary:hover,
 .oc-dialog-buttonrow.twobuttons.aside .primary:hover {
     background-color: #f90984 !important;
 }
-
+.oc-dialog-buttonrow.onebutton button:disabled{
+    opacity: unset;
+}
 .oc-dialog-buttonrow button {
     font-size: 1rem !important;
 }
@@ -1851,9 +1926,15 @@ iframe.viewer__file {
 }
 
 #oc-dialog-filepicker-content #picker-filestable.filelist th #headerName-container .sort-indicator {
-    margin-left: -78px !important;
+    margin-left: -4.375rem !important;
 }
-
+#oc-dialog-filepicker-content #picker-filestable.filelist th .sort-indicator {
+  opacity: unset !important;
+}
+#oc-dialog-filepicker-content #picker-filestable.filelist th .sort-indicator {
+  margin-left: 0.875rem !important;
+  margin-right:0.5rem !important;
+}
 
 /*** Custom conflict dialog ******************************************************/
 
@@ -1920,12 +2001,32 @@ iframe.viewer__file {
     color: #FFFFFF;
 }
 
+.oc-conflict-pre-dlg {
+  width:288px !important;
+}
+
 .oc-conflict-pre-dlg-close-div a {
-    padding-right: 1.12rem;
+    padding-right: 1.375rem !important;
     padding-bottom: 0.37rem;
     background-size: 1.5rem 1.5rem !important;
 }
 
+.icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after{
+  display: none;
+}
+
+.app-photos li:hover span,
+.app-photos li:active span{
+  color: #e20074 !important;
+}
+
+.app-navigation-entry.active {
+  background-color: var(--color-background-hover) !important;
+}
+
+ .fourbuttons button:nth-child(3){
+     display:none;
+ }
 
 /*Responsive Styling*/
 
@@ -2024,8 +2125,15 @@ iframe.viewer__file {
       min-width: 312px !important;
       margin-left: -9.75rem !important;
     }
-}
 
+  /*photo-gallery-icon*/
+
+  .app-photos [class^='icon-'],
+  .app-photos [class*=' icon-'] {
+      min-width:24px !important;
+      min-height:24px !important;
+    }
+}
 @media screen and (max-width: 689px) {
     #fileList td a a.action.action-share.shared-style {
         width: 0 !important;
@@ -2102,6 +2210,12 @@ iframe.viewer__file {
     .modal-header .modal-title {
         width: calc(50% - 150px)!important;
     }
+    #app-content-vue{
+      margin-left: 0 !important;
+    }
+   #app-navigation-vue{
+     left:0 !important
+   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2123,6 +2237,9 @@ iframe.viewer__file {
     .oc-dialog {
         width: 640px !important;
     }
+    .oc-conflict-pre-dlg {
+      width: 288px !important;
+  }
     .menu-search-text,
     .email-menu-text,
     .username-lable {
@@ -2146,16 +2263,16 @@ iframe.viewer__file {
   .personal-settings-setting-box .section input[type='text'],
    .personal-settings-setting-box .section input[type='email'] {
      width:auto !important;
-}
-.telekom-link p {
- width:364px !important;
-}
-select#languageinput {
-  width:auto !important;
-}
-#body-settings #quota {
-  width:320px !important
-}
+  }
+  .telekom-link p {
+  width:364px !important;
+  }
+  select#languageinput {
+    width:auto !important;
+  }
+  #body-settings #quota {
+    width:320px !important
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2180,5 +2297,33 @@ select#languageinput {
 	#webdav-address div {
 		display: grid;
 	}
+
+  #filestable th .columntitle.name {
+    margin-left: 1.625rem;
+  }
+
+  #app-content-sharingout #filestable th .columntitle.name,
+  #app-content-sharingin #filestable th .columntitle.name,
+  #app-content-favorites #filestable th .columntitle.name
+  {
+    margin-left: 5.4rem;
+  }
+
+  table.multiselect th .columntitle.name {
+    margin-left: 0 !important;
+    padding-left: 0.625rem !important;
+  }
+
+
+  #app-content-trashbin table th .selectedActions {
+    float: unset !important;
+  }
 }
+
+@media all and (min-width: 1024px) and (max-width: 1072px){
+  #files-public-content .item-download{
+    padding-right: 2rem;
+  }
+}
+
 /*Responsive Styling*/

@@ -1,0 +1,83 @@
+.section.activity-section.group{
+    padding:0rem !important;
+    margin-bottom:2rem !important;
+}
+#container .section.activity-section.group h2 {
+  margin-left: unset !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 1.25rem !important;
+}
+
+.activitysubject strong,
+.activitysubject .filename{
+  color:#e20074 !important;
+  font-weight: normal !important;
+}
+
+.activity.box .messagecontainer {
+  margin-bottom: 1rem !important;
+}
+.activity.box .preview ,
+.app-activity #app-sidebar,
+.activitysubject .avatar{
+  display: none;
+}
+
+#container{
+  margin:2rem 1rem 0rem 1rem !important;
+}
+.activity.box,
+.activitysubject{
+  margin-bottom: unset !important;
+}
+.activity.box .activitytime {
+  color:#191919 !important;
+  font-size: 1rem !important;
+}
+
+.activity-icon img {
+  max-width: 24px !important;
+  max-height: 24px !important;
+}
+
+.activity-icon {
+  opacity: 1 !important;
+}
+
+.file-activity-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #191919;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.file-activity-note {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.del-files-activity-div {
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+
+.del-files-activity .btn {
+  background-color: #e20074;
+  border: #e20074;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+
+.activitysubject {
+  margin-top: 0.25rem;
+  vertical-align: middle !important;
+}
+.activity-icon {
+  margin-top:0 !important;
+}

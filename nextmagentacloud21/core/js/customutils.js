@@ -5,6 +5,8 @@ window.onload = function () {
   searchInputLabel();
   appendFolderName();
   domElementsobserver();
+  fileActionButtonSettings();
+  breadcrumbAddLabel();
 };
 
 function brandBarAnimation() {
@@ -26,9 +28,12 @@ function brandBarAnimation() {
   var richWorkSpace = document.getElementById('showRichWorkspacesToggle');
   if (richWorkSpace) {
     richWorkSpace.checked = true;
-    richWorkSpace.nextElementSibling.innerHTML = 'Show folder info text';
+    richWorkSpace.nextElementSibling.innerHTML = t('core', 'Show folder info text');
     richWorkSpace.dispatchEvent(new Event('change'));
   }
+
+  document.getElementById('recommendations-setting-enabled') ?
+    document.getElementById('recommendations-setting-enabled').classList.add('hide') : null;
 }
 
 
@@ -57,11 +62,11 @@ function searchInputLabel() {
     ele.onclick = function () {
       var labelElement = document.createElement('label');
       labelElement.className = 'search-input-label';
-      labelElement.innerText = 'Search Apps, Files, Comments, Contacts, Events, Tasks, Settings …';
+      labelElement.innerText = t('core', 'Search files, folders or settings …');
       document.getElementsByClassName('unified-search__form-input')[0] ?
-        document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
+      document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
       document.getElementsByClassName('unified-search__form')[0] ?
-        document.getElementsByClassName('unified-search__form')[0].appendChild(labelElement) : null;
+      document.getElementsByClassName('unified-search__form')[0].appendChild(labelElement) : null;
     }
   }
 }
@@ -97,3 +102,28 @@ function domElementsobserver() {
 
   domObserver.observe(document.body, { attributes: true, childList: true, characterData: true });
 }
+
+function fileActionButtonSettings() {
+  setTimeout(function () {
+  var ele = document.querySelectorAll('.filesSelectMenu ul li, .filesSelectionMenu ul li');
+      for(var i=0; li=ele[i]; i++) {
+        if(li.className === 'item-toggleSelectionMode'){
+          li.parentNode.removeChild(li);
+        }
+        else if(li.className === 'item-tags'){
+          li.parentNode.removeChild(li);
+        }
+      }
+    }, 200);
+}
+
+function breadcrumbAddLabel() {
+  var ele = document.querySelectorAll('#controls .actions.creatable a')[0];
+  var labelElement = document.createElement('label');
+      labelElement.className = 'add-label';
+      labelElement.innerText = t('core', 'Add');
+
+     if(ele){
+       ele.appendChild(labelElement);
+     }
+  }
