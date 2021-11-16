@@ -1987,6 +1987,7 @@ iframe.viewer__file {
 .oc-conflct-pre-dlg-title {
     font-size: 1.25rem !important;
     margin-bottom: 0.5rem !important;
+    width: 180px !important;
 }
 
 .fourbuttons button:hover,
