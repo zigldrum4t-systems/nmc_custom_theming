@@ -720,6 +720,7 @@ __webpack_require__.r(__webpack_exports__);
 
       var returnVal = '';
       var firstname = '';
+      var Normalfirstname = '';
       var externalShare = '';
       recipients = _.toArray(recipients);
       recipients.sort(function (a, b) {
@@ -733,14 +734,14 @@ __webpack_require__.r(__webpack_exports__);
           firstname = val.shareWith;
           externalShare += val.shareWithDisplayName + ", ";
         } else {
-          firstname = val.shareWith;
+          Normalfirstname = val.shareWith;
           returnVal += val.shareWithDisplayName + ", ";
         }
       });
       returnVal = returnVal.replace(/,\s*$/, "");
 
       if (returnVal !== "") {
-        returnVal = _parent._formatRemoteSharewith(firstname, returnVal, t('files_sharing', 'Shared with'));
+        returnVal = _parent._formatRemoteSharewith(Normalfirstname, returnVal, t('files_sharing', 'Shared with'));
       }
 
       if (externalShare !== "") {
