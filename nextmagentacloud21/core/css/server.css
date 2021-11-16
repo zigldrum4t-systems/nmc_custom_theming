@@ -2028,6 +2028,22 @@ iframe.viewer__file {
      display:none;
  }
 
+   /*photo-gallery-icon*/
+
+   .app-photos [class^='icon-'],
+   .app-photos [class*=' icon-'] {
+       min-width:24px !important;
+       min-height:24px !important;
+     }
+
+     .icon-video-white {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 20;
+    }
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
@@ -2126,13 +2142,6 @@ iframe.viewer__file {
       margin-left: -9.75rem !important;
     }
 
-  /*photo-gallery-icon*/
-
-  .app-photos [class^='icon-'],
-  .app-photos [class*=' icon-'] {
-      min-width:24px !important;
-      min-height:24px !important;
-    }
 }
 @media screen and (max-width: 689px) {
     #fileList td a a.action.action-share.shared-style {
