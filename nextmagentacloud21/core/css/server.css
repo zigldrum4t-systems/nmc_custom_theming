@@ -591,7 +591,7 @@ aside {
         width: 352px !important;
     }
     #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -2025,7 +2025,8 @@ iframe.viewer__file {
   color: #e20074 !important;
 }
 
-.app-photos .app-navigation-entry.active .app-navigation-entry-icon {
+.app-photos .app-navigation-entry.active .app-navigation-entry-icon ,
+.app-photos .app-navigation-entry:hover .app-navigation-entry-icon {
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
@@ -2042,6 +2043,17 @@ iframe.viewer__file {
    background-size: unset !important;
  }
 
+ li.app-navigation-entry:nth-child(1),
+ li.app-navigation-entry:nth-child(5),
+ li.app-navigation-entry:nth-child(7),
+ li.app-navigation-entry:nth-child(8) {
+   display: none !important;
+ }
+
+ .app-navigation-entry-icon.icon-share {
+   margin-top:0.125rem !important;
+ }
+
    /*photo-gallery-icon*/
 
    .app-photos [class^='icon-'],
@@ -2051,11 +2063,11 @@ iframe.viewer__file {
      }
 
      .icon-video-white {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%);
-      z-index: 20;
+      position: absolute !important;
+      top: 40% !important;
+      left: 50% !important;
+      transform: translate(-50%) !important;
+      z-index: 20 !important;
     }
 
 /*Responsive Styling*/
