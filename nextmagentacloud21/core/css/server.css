@@ -2043,6 +2043,11 @@ iframe.viewer__file {
    background-size: unset !important;
  }
 
+ li.app-navigation-entry:nth-child(1),
+ li.app-navigation-entry:nth-child(5) {
+   display: none !important;
+ }
+
    /*photo-gallery-icon*/
 
    .app-photos [class^='icon-'],

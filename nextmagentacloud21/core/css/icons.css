@@ -598,15 +598,17 @@ aside .icon-star{
 
 /*photo-gallery-left-nav-icon-*/
 
-.icon-yourphotos {
+.allmedia {
   background-image: var(--icon-media-custom) !important;
 }
 
-
-.icon-video{
+.icon-video {
   background-image: var(--icon-video-custom) !important;
 }
 
+.allphotos{
+  background-image: var(--icon-photo-camera) !important;
+}
 
 .nav-icon-extstoragemounts{
   background-image: var(--icon-nav-exts-custom) !important;
