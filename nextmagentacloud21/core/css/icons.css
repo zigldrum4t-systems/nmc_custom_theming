@@ -606,3 +606,8 @@ aside .icon-star{
 .icon-video{
   background-image: var(--icon-video-custom) !important;
 }
+
+
+.nav-icon-extstoragemounts{
+  background-image: var(--icon-nav-exts-custom) !important;
+}
