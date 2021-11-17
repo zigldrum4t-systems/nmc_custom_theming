@@ -2025,7 +2025,8 @@ iframe.viewer__file {
   color: #e20074 !important;
 }
 
-.app-photos .app-navigation-entry.active .app-navigation-entry-icon {
+.app-photos .app-navigation-entry.active .app-navigation-entry-icon ,
+.app-photos .app-navigation-entry.hover .app-navigation-entry-icon {
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
