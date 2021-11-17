@@ -2051,11 +2051,11 @@ iframe.viewer__file {
      }
 
      .icon-video-white {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%);
-      z-index: 20;
+      position: absolute !important;
+      top: 40% !important;
+      left: 50% !important;
+      transform: translate(-50%) !important;
+      z-index: 20 !important;
     }
 
 /*Responsive Styling*/
