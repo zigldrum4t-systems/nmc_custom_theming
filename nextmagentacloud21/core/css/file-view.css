@@ -118,9 +118,14 @@ table.multiselect thead #selectedMenu {
     background-size: unset !important;
 }
 
-#filestable .fileactions [class*=' icon-'] {
+.fileactions [class*=' icon-'] {
     min-width: 24px !important;
     min-height: 24px !important;
+}
+
+#filestable .fileactions .icon-share-link  {
+  min-width: 22px !important;
+  min-height: 22px !important;
 }
 
 #filestable:not(.view-grid) tr td.selection>.selectCheckBox+label {

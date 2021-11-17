@@ -596,3 +596,18 @@ aside .icon-star{
     background-image: var(--icon-share-link) !important;
 }
 
+/*photo-gallery-left-nav-icon-*/
+
+.icon-yourphotos {
+  background-image: var(--icon-media-custom) !important;
+}
+
+
+.icon-video{
+  background-image: var(--icon-video-custom) !important;
+}
+
+
+.nav-icon-extstoragemounts{
+  background-image: var(--icon-nav-exts-custom) !important;
+}
