@@ -2026,7 +2026,7 @@ iframe.viewer__file {
 }
 
 .app-photos .app-navigation-entry.active .app-navigation-entry-icon ,
-.app-photos .app-navigation-entry.hover .app-navigation-entry-icon {
+.app-photos .app-navigation-entry:hover .app-navigation-entry-icon {
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
@@ -2048,6 +2048,10 @@ iframe.viewer__file {
  li.app-navigation-entry:nth-child(7),
  li.app-navigation-entry:nth-child(8) {
    display: none !important;
+ }
+
+ .app-navigation-entry-icon.icon-share {
+   margin-top:2px !important;
  }
 
    /*photo-gallery-icon*/
