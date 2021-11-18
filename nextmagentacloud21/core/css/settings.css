@@ -331,7 +331,6 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     margin-top: 0.5rem;
     padding: 0.563rem 1.5rem !important;
     border-color: #e20074 !important;
-    background-color: #e20074;
     color: #ffffff !important;
     display: inline-block;
     border-radius: 8px;
@@ -341,7 +340,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     cursor: pointer;
     font-weight: 400;
     background-color: #e20074 !important;
-	margin-bottom: 8rem;
+	  margin-bottom: 8rem;
   }
 
   .app-password-code a{
