@@ -812,18 +812,51 @@ form div{
       margin-left: -0.375rem;
     }
 
+
 /***pending shares***/
 
-.fileactions .action-button{
-    border-radius: 8px;
-    padding: 0.8rem 1.5rem;
-    border: 1px solid #0998fa;
+.pending-share-row .fileactions .action-button{
+  display: flex;
+  align-items: center;
+  border: 1px solid #0998fa;
+  padding: 0.4rem 1.5rem;
+  border-radius: 8px;
 }
 
-.fileactions .action-button .accept{
+.pending-share-row .fileactions .action-button.accept{
   background: #0998fa;
+  margin-right: 0.5rem;
 }
 
-.fileactions .action-button .reject{
-  background: #fff;
+.pending-share-row .fileactions .action-button.accept span{
+  color:#fff;
 }
+
+.pending-share-row .fileactions .action-button.reject{
+  background: #fff;
+  margin-right: 1.5rem;
+}
+
+.pending-share-row .fileactions .action-button.reject span{
+  color:#0998fa;
+}
+
+.pending-share-row .fileactions .icon,#filestable.view-grid .pending-share-row .fileactions{
+  display: none !important;
+}
+
+#filestable tbody tr.pending-share-row .selectCheckBox+label:before{
+  opacity: 0.3 !important;
+  background: #fff !important;
+}
+
+#filestable tbody tr[data-permissions="0"], #filestable tbody tr[data-permissions="16"]{
+  background-color: #fff !important;
+}
+
+.pending-share-row .nametext {
+  max-width: 542px !important;
+}
+
+/***pending shares***/
+
