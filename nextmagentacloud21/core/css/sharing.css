@@ -2,8 +2,8 @@
 
 #app-sidebar-vue {
   padding: 1rem;
-  /* overflow-x: unset !important;
-  overflow-y: unset !important; */
+  overflow-x: unset !important;
+  overflow-y: unset !important;
 }
 
 /*thumbnail*/
@@ -81,7 +81,7 @@ aside .icon-star {
 
 .app-sidebar__tab {
   padding: 0 !important;
-  /* overflow: unset !important; */
+  overflow: unset !important;
 }
 
 .action-radio__label,
@@ -584,7 +584,7 @@ span#global-lookup,
   background-color: unset !important;
 }
 .multiselect .multiselect__content-wrapper {
-  /* overflow-y: unset !important; */
+  overflow-y: unset !important;
 }
 .multiselect__content-wrapper .multiselect__element .avatardiv:not(.avatardiv--unknown),
 .multiselect.multiselect--disabled, .multiselect.multiselect--disabled .multiselect__single {
