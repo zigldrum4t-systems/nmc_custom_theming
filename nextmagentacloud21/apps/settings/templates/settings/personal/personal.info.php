@@ -121,13 +121,13 @@ script('settings', [
           </h3>
           <select id="languageinput" name="lang" data-placeholder="<?php p($l->t('Language')); ?>">
             <option style="" value="<?php p($_['activelanguage']['code']); ?>">
-              <?php p($_['activelanguage']['name']); ?>
+              <?php p(strstr($_['activelanguage']['name'], '(', true)); ?>
             </option>
             <optgroup label="––––––––––"></optgroup>
             <?php foreach ($_['commonlanguages'] as $language) : ?>
               <?php if ($language['code'] == "de_DE") { ?>
-                <option value="<?php p($language['code']); ?>">
-                  <?php p($language['name']); ?>
+                 <option value="<?php p($language['code']); ?>">
+                  <?php p(strstr($language['name'], '(', true)); ?>
                 </option>
               <?php } ?>
             <?php endforeach; ?>
@@ -135,7 +135,7 @@ script('settings', [
             <?php foreach (array_unique($_['languages'], SORT_REGULAR) as $language) : ?>
               <?php if ($language['code'] == "en_GB") { ?>
                 <option value="<?php p($language['code']); ?>">
-                  <?php p($language['name']); ?>
+                   <?php p(strstr($language['name'], '(', true)); ?>
                 </option>
               <?php } ?>
             <?php endforeach; ?>
