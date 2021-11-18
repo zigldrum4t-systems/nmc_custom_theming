@@ -596,6 +596,12 @@ aside .icon-star{
     background-image: var(--icon-share-link) !important;
 }
 
+.icon-share-magenta-user {
+    background-image: var(--icon-user-external-magenta) !important;
+}
+
+
+
 /*photo-gallery-left-nav-icon-*/
 
 .allmedia {
