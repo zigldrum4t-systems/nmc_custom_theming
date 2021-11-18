@@ -773,7 +773,8 @@ form div{
       color:#e20074 !important;
     }
 
-    .sharing-sharee-list .sharing-entry__actions {
+    .sharing-sharee-list .sharing-entry__actions,
+    .action-item.sharing-entry__actions {
       margin-left:2.75rem !important;
     }
 
@@ -811,3 +812,11 @@ form div{
     .custom-select  span.icon-triangle-s {
       margin-left: -0.375rem;
     }
+
+    .custom-select  h5{
+    text-overflow: ellipsis;
+    width: 190px;
+    overflow: hidden;
+    white-space: nowrap;
+    }
+
