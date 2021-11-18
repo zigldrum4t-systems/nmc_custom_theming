@@ -811,3 +811,19 @@ form div{
     .custom-select  span.icon-triangle-s {
       margin-left: -0.375rem;
     }
+
+/***pending shares***/
+
+.fileactions .action-button{
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #0998fa;
+}
+
+.fileactions .action-button .accept{
+  background: #0998fa;
+}
+
+.fileactions .action-button .reject{
+  background: #fff;
+}

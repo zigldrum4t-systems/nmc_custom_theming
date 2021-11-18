@@ -567,10 +567,6 @@ aside .icon-star{
   background-image: url('../../core/img/filetypes/unknown-file.svg') !important;
 }
 
-#fileList [data-mounttype="shared-root"] .thumbnail {
-  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
-}
-
 #fileList [data-icon="/core/img/filetypes/folder-shared.svg"] .thumbnail {
     background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
   }
