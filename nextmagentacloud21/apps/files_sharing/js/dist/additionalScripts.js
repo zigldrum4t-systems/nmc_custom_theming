@@ -569,9 +569,12 @@ __webpack_require__.r(__webpack_exports__);
 
       if (hasShares || ownerId) {
         recipients = $tr.data('share-recipient-data');
+        var shareTypes1 = $tr.data('share-types');
         action.addClass('shared-style');
 
         if (c == "sharingout") {
+          avatars = '';
+
           if (ownerId) {
             message = t('files_sharing', 'Shared by');
             avatars = OCA.Sharing.Util._formatRemoteShare(ownerId, owner, message);
@@ -579,7 +582,9 @@ __webpack_require__.r(__webpack_exports__);
             avatars = OCA.Sharing.Util._formatShareList(recipients);
           }
 
-          avatars += '<span class="icon icon-share-link">' + t('files_sharing', '') + '</span>'; // even if reshared, only show "Shared by"
+          if (shareTypes1 == 3 || typeof shareTypes1 == "string" && shareTypes1.includes('3')) {
+            avatars += '<span class="icon icon-share-link">' + t('files_sharing', '') + '</span>'; // even if reshared, only show "Shared by"
+          }
         } else {
           avatars = '<span>' + t('files_sharing', 'Shared') + '</span>'; // even if reshared, only show "Shared by"
 
@@ -746,7 +751,7 @@ __webpack_require__.r(__webpack_exports__);
           externalCount += 1;
 
           if (externalCount > 2 && externalSkip == 0) {
-            externalShare += ".. ";
+            externalShare += "...";
             externalSkip = 1;
           } else {
             firstname = val.shareWith;
@@ -756,19 +761,21 @@ __webpack_require__.r(__webpack_exports__);
           internalCount += 1;
 
           if (internalCount > 2 && internalSkip == 0) {
-            returnVal += ".. ";
+            returnVal += "...";
             internalSkip = 1;
           } else {
             Normalfirstname = val.shareWith;
             returnVal += val.shareWithDisplayName + ", ";
           }
         }
-      }); //externalShare = externalShare.replace(/,\s*$/, "");
+      });
+      externalShare = externalShare.replace(/,\s*$/, "");
 
       if (externalShare !== "") {
         finalVal += _parent._formatRemoteSharewith(firstname, externalShare, t('files_sharing', 'Shared with'));
-      } //returnVal = returnVal.replace(/,\s*$/, "");
+      }
 
+      returnVal = returnVal.replace(/,\s*$/, "");
 
       if (returnVal !== "") {
         finalVal += _parent._formatRemoteSharewith(Normalfirstname, returnVal, t('files_sharing', 'Shared with'));
