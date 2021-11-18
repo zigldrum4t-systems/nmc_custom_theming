@@ -773,8 +773,7 @@ form div{
       color:#e20074 !important;
     }
 
-    .sharing-sharee-list .sharing-entry__actions,
-    .action-item.sharing-entry__actions {
+    .sharing-sharee-list .sharing-entry__actions{
       margin-left:2.75rem !important;
     }
 
