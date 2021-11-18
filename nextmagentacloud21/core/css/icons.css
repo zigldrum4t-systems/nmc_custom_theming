@@ -595,3 +595,27 @@ aside .icon-star{
 .icon-share-link {
     background-image: var(--icon-share-link) !important;
 }
+
+.icon-share-magenta-user {
+    background-image: var(--icon-user-external-magenta) !important;
+}
+
+
+
+/*photo-gallery-left-nav-icon-*/
+
+.allmedia {
+  background-image: var(--icon-media-custom) !important;
+}
+
+.icon-video {
+  background-image: var(--icon-video-custom) !important;
+}
+
+.allphotos{
+  background-image: var(--icon-photo-camera) !important;
+}
+
+.nav-icon-extstoragemounts{
+  background-image: var(--icon-nav-exts-custom) !important;
+}
