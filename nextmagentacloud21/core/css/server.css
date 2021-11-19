@@ -449,16 +449,6 @@ aside {
     height: 100%;
 }
 
-/* .content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1236px;
-} */
-
-/* .content.app-photos{
-  width:100% !important;
-} */
-
 #content>.container-fixed, #content-vue>.container-fixed  {
     position: relative;
     display: flex;
@@ -476,8 +466,11 @@ aside {
 .app-photos .app-navigation__list .app-navigation-entry__title {
     line-height: 44px !important;
   }
+.app-photos .app-navigation--close {
+    margin-left: -190px;
+}
 
-
+/**responsive **/
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
     .brandbar>.container-fixed {
         width: 1236px;
@@ -2012,7 +2005,8 @@ iframe.viewer__file {
     background-size: 1.5rem 1.5rem !important;
 }
 
-.icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after{
+.icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after,
+.action-share .icon-loading:after {
   display: none;
 }
 
@@ -2250,6 +2244,15 @@ iframe.viewer__file {
     }
    #app-navigation-vue{
      left:0 !important
+   }
+   .app-navigation[data-v-36d636e7]:not(.app-navigation--close) {
+      margin-left: 0;
+   }
+   .pending-share-row .fileactions .button-label{
+    display: none;
+   }
+   .pending-share-row .fileactions .icon{
+      display: block !important;
    }
 }
 
