@@ -19,7 +19,8 @@
 }
 .activity.box .preview ,
 .app-activity #app-sidebar,
-.activitysubject .avatar{
+.activitysubject .avatar,
+#activity_notifications_msg{
   display: none;
 }
 
