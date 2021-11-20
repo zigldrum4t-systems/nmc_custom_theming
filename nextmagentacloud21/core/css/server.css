@@ -720,7 +720,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 .totalspace {
-    font-weight: 600;
+    font-weight: 400;
     font-size: inherit;
     padding-left: 3px;
 }
