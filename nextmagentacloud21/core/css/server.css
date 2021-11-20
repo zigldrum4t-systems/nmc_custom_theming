@@ -126,11 +126,8 @@ section {
     top: 185px !important;
     height: calc(100% - 190px) !important;
 }
-#app-navigation-vue{
-  height: calc(100% - 250px) !important;
-}
 
-#app-navigation:not(.vue) ul {
+#app-navigation:not(.vue) ul,#app-navigation-vue ul {
     padding-top: 4rem;
 }
 
@@ -1001,7 +998,7 @@ div.crumb:last-child {
     margin-top: -38px !important;
 }
 
-#app-navigation.app-navigation-translation {
+#app-navigation.app-navigation-translation,#app-navigation-vue.app-navigation-translation {
     top: 120px !important;
 }
 
