@@ -2051,7 +2051,7 @@ iframe.viewer__file {
 
  .app-photos input[type='checkbox'].checkbox + label:before,
  .app-photos input[type='radio'].checkbox + label:before {
-  margin: 0 8px 3px 3px !important;
+  margin: 0 0.5rem 0.188rem 0.188rem !important;
  }
 
  .app-photos  #app-settings-content {
