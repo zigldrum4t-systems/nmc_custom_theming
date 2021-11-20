@@ -468,8 +468,7 @@ p.sharing-input-subtitle{
 }
 
 .add-new-link-btn:hover,
-.add-new-link-btn:focus,
-.add-new-link-btn:focus-within {
+.add-new-link-btn:active {
   color:#e20074;
 }
 
