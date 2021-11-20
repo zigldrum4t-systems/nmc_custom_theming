@@ -567,10 +567,6 @@ aside .icon-star{
   background-image: url('../../core/img/filetypes/unknown-file.svg') !important;
 }
 
-#fileList [data-mounttype="shared-root"] .thumbnail {
-  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
-}
-
 #fileList [data-icon="/core/img/filetypes/folder-shared.svg"] .thumbnail {
     background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
   }
@@ -600,7 +596,13 @@ aside .icon-star{
     background-image: var(--icon-user-external-magenta) !important;
 }
 
+.icon-approve-share-blue {
+  background-image: var(--icon-approve-share-blue) !important;
+}
 
+.icon-reject-share-blue{
+  background-image: var(--icon-rejet-share-blue) !important;
+}
 
 /*photo-gallery-left-nav-icon-*/
 

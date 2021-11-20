@@ -2248,6 +2248,19 @@ iframe.viewer__file {
    .app-navigation[data-v-36d636e7]:not(.app-navigation--close) {
       margin-left: 0;
    }
+   .pending-share-row .fileactions .button-label{
+    display: none;
+   }
+   .pending-share-row .fileactions .icon{
+      display: block !important;
+   }
+   .pending-share-row .fileactions .action-button {
+      border: 0;
+      padding: 0;
+   }
+   .pending-share-row .fileactions .action-button.accept{
+     background: none;
+   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {

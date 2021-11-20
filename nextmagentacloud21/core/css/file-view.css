@@ -204,6 +204,7 @@ table.multiselect thead #selectedMenu {
 
 #fileList .fileactions {
     display: inline-flex;
+    align-items: center;
 }
 
 #filestable .date span {
