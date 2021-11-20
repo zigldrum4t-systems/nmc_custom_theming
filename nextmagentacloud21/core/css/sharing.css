@@ -3,7 +3,7 @@
 #app-sidebar-vue {
   padding: 1rem;
   overflow-x: unset !important;
-  overflow-y: unset !important;
+  overflow-y: scroll !important;
 }
 
 /*thumbnail*/
@@ -108,7 +108,7 @@ aside .icon-star {
   padding: 0 1.5rem !important;
   min-height: 40px !important;
   border-radius: 8px !important;
-  min-width: 118px !important;
+  width:auto !important;
   font-family: TeleNeoWeb, TeleNeo, sans-serif;
   font-weight: normal;
   margin-top: 1rem;
@@ -468,8 +468,7 @@ p.sharing-input-subtitle{
 }
 
 .add-new-link-btn:hover,
-.add-new-link-btn:focus,
-.add-new-link-btn:focus-within {
+.add-new-link-btn:active {
   color:#e20074;
 }
 
@@ -818,6 +817,8 @@ form div{
     overflow: hidden;
     white-space: nowrap;
   }
+
+
 
 /***pending shares***/
 
