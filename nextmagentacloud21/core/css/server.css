@@ -2048,6 +2048,24 @@ iframe.viewer__file {
    margin-top:0.125rem !important;
  }
 
+
+ .app-photos input[type='checkbox'].checkbox + label:before,
+ .app-photos input[type='radio'].checkbox + label:before {
+  margin: 0 8px 3px 3px !important;
+ }
+
+ .app-photos  #app-settings-content {
+   padding:16px !important;
+ }
+.app-photos .section {
+  padding:unset !important;
+}
+ .oc-dialog .oc-dialog-close:hover,
+#uploadprogresswrapper .icon-close:hover,
+aside .icon-close:hover,
+.oc-conflict-pre-dlg-close-div a:hover {
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
    /*photo-gallery-icon*/
 
    .app-photos [class^='icon-'],
