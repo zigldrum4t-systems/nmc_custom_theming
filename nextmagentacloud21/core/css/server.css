@@ -2254,6 +2254,13 @@ iframe.viewer__file {
    .pending-share-row .fileactions .icon{
       display: block !important;
    }
+   .pending-share-row .fileactions .action-button {
+      border: 0;
+      padding: 0;
+   }
+   .pending-share-row .fileactions .action-button.accept{
+     background: none;
+   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
