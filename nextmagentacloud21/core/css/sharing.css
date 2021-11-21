@@ -568,6 +568,7 @@ flex-direction: row-reverse;
 }
 
 
+
 li.multiselect__element,
 li.multiselect__element .multiselect__option--highlight,
 li.multiselect__option,
@@ -737,7 +738,7 @@ form div{
   }
 
   .custom-select .items {
-    padding:1rem 0.5rem 1rem 0.5rem;
+    padding:1.5rem 0.5rem 1.5rem 0.5rem;
     border: unset !important;
     max-width:178px !important;
     top:24px;
@@ -803,6 +804,10 @@ form div{
     display:none;
   }
 
+  .items div {
+    min-height:27px !important
+  }
+
   .custom-select .items .selectedItem span {
     display: inline-block !important;
   }
@@ -818,7 +823,31 @@ form div{
     white-space: nowrap;
   }
 
+  .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__figure {
+    width:92px !important;
+    width:92px !important;
+  }
 
+  aside .option__icon {
+    background-size: 24px !important;
+    opacity:1 !important;
+    margin:-0.5rem !important;
+  }
+
+  .popover__wrapper li.active:hover p {
+    color: #E20074 !important;
+  }
+
+  .mx-datepicker-main .mx-calendar-header .mx-btn-icon-double-left,
+  .mx-datepicker-main .mx-time-header .mx-btn-icon-double-left,
+  .mx-datepicker-main .mx-calendar-header .mx-btn-icon-left,
+  .mx-datepicker-main .mx-time-header .mx-btn-icon-left,
+  .mx-datepicker-main .mx-calendar-header .mx-btn-icon-double-right,
+  .mx-datepicker-main .mx-time-header .mx-btn-icon-double-right,
+  .mx-datepicker-main .mx-calendar-header .mx-btn-icon-right,
+  .mx-datepicker-main .mx-time-header .mx-btn-icon-right {
+   background-image: unset !important;
+  }
 
 /***pending shares***/
 
