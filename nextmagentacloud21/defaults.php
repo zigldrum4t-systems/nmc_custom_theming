@@ -27,7 +27,8 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getBaseUrl() {
-		return 'http://nextcloud.indemo.t-systems.net';
+		// return 'http://nextcloud.indemo.t-systems.net';
+    return '/themes/nextmagentacloud21/';
 	}
 
 	/**
@@ -43,7 +44,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'Next Magenta Cloud';
+		return 'Magenta Cloud';
 	}
 
 	/**
@@ -51,7 +52,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return 'NextMagentaCloud';
+		return 'MagentaCloud';
 	}
 
 	/**
@@ -59,7 +60,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'NextMagentaCloud';
+		return 'MagentaCloud';
 	}
 
 	/**
