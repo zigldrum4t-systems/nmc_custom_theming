@@ -125,8 +125,8 @@ table.multiselect thead #selectedMenu {
 }
 
 #filestable .fileactions .icon-share-link  {
-  min-width: 22px !important;
-  min-height: 22px !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
 }
 
 #filestable:not(.view-grid) tr td.selection>.selectCheckBox+label {
@@ -317,8 +317,8 @@ table th .sort-indicator {
 #headerSize .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -3.188rem;
-    margin-right: 2.5rem;
+    margin-left: -3.875rem;
+    margin-right: 2.938rem;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 1;

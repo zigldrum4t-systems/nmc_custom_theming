@@ -126,11 +126,8 @@ section {
     top: 185px !important;
     height: calc(100% - 190px) !important;
 }
-#app-navigation-vue{
-  height: calc(100% - 250px) !important;
-}
 
-#app-navigation:not(.vue) ul {
+#app-navigation:not(.vue) ul,#app-navigation-vue ul {
     padding-top: 4rem;
 }
 
@@ -720,7 +717,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 .totalspace {
-    font-weight: 600;
+    font-weight: 400;
     font-size: inherit;
     padding-left: 3px;
 }
@@ -1001,7 +998,7 @@ div.crumb:last-child {
     margin-top: -38px !important;
 }
 
-#app-navigation.app-navigation-translation {
+#app-navigation.app-navigation-translation,#app-navigation-vue.app-navigation-translation {
     top: 120px !important;
 }
 
@@ -1103,14 +1100,12 @@ div.crumb:last-child {
 
 button:not(:disabled):not(.primary):hover,
 button:not(:disabled):not(.primary):focus,
-button:not(:disabled):not(.primary).active,
 .button:not(:disabled):not(.primary):hover,
 .button:not(:disabled):not(.primary):focus,
-.button:not(:disabled):not(.primary).active,
 .pager li a:not(:disabled):not(.primary):hover,
 .pager li a:not(:disabled):not(.primary):focus,
 .pager li a:not(:disabled):not(.primary).active {
-    border-color: var(--scl-color-magenta) !important;
+    border-color: unset !important;
 }
 
 .menubar button.icon-undo,
@@ -2048,6 +2043,24 @@ iframe.viewer__file {
    margin-top:0.125rem !important;
  }
 
+
+ .app-photos input[type='checkbox'].checkbox + label:before,
+ .app-photos input[type='radio'].checkbox + label:before {
+  margin: 0 0.5rem 0.188rem 0.188rem !important;
+ }
+
+ .app-photos  #app-settings-content {
+   padding:1rem !important;
+ }
+.app-photos .section {
+  padding:unset !important;
+}
+ .oc-dialog .oc-dialog-close:hover,
+#uploadprogresswrapper .icon-close:hover,
+aside .icon-close:hover,
+.oc-conflict-pre-dlg-close-div a:hover {
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
    /*photo-gallery-icon*/
 
    .app-photos [class^='icon-'],
@@ -2253,6 +2266,13 @@ iframe.viewer__file {
    }
    .pending-share-row .fileactions .icon{
       display: block !important;
+   }
+   .pending-share-row .fileactions .action-button {
+      border: 0;
+      padding: 0;
+   }
+   .pending-share-row .fileactions .action-button.accept{
+     background: none;
    }
 }
 

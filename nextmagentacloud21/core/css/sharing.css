@@ -3,7 +3,7 @@
 #app-sidebar-vue {
   padding: 1rem;
   overflow-x: unset !important;
-  overflow-y: unset !important;
+  overflow-y: scroll !important;
 }
 
 /*thumbnail*/
@@ -108,7 +108,7 @@ aside .icon-star {
   padding: 0 1.5rem !important;
   min-height: 40px !important;
   border-radius: 8px !important;
-  min-width: 118px !important;
+  width:auto !important;
   font-family: TeleNeoWeb, TeleNeo, sans-serif;
   font-weight: normal;
   margin-top: 1rem;
@@ -468,8 +468,7 @@ p.sharing-input-subtitle{
 }
 
 .add-new-link-btn:hover,
-.add-new-link-btn:focus,
-.add-new-link-btn:focus-within {
+.add-new-link-btn:active {
   color:#e20074;
 }
 
@@ -567,6 +566,7 @@ flex-direction: row-reverse;
  .option__linetwo {
   display:none !important;
 }
+
 
 
 li.multiselect__element,
@@ -738,7 +738,7 @@ form div{
   }
 
   .custom-select .items {
-    padding:1rem 0.5rem 1rem 0.5rem;
+    padding:1.5rem 0.5rem 1.5rem 0.5rem;
     border: unset !important;
     max-width:178px !important;
     top:24px;
@@ -804,6 +804,10 @@ form div{
     display:none;
   }
 
+  .items div {
+    min-height:27px !important
+  }
+
   .custom-select .items .selectedItem span {
     display: inline-block !important;
   }
@@ -817,6 +821,32 @@ form div{
     width: 190px;
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__figure {
+    width:92px !important;
+    width:92px !important;
+  }
+
+  aside .option__icon {
+    background-size: 24px !important;
+    opacity:1 !important;
+    margin:-0.5rem !important;
+  }
+
+  .popover__wrapper li.active:hover p {
+    color: #E20074 !important;
+  }
+
+  .mx-datepicker-main .mx-calendar-header .mx-btn-icon-double-left,
+  .mx-datepicker-main .mx-time-header .mx-btn-icon-double-left,
+  .mx-datepicker-main .mx-calendar-header .mx-btn-icon-left,
+  .mx-datepicker-main .mx-time-header .mx-btn-icon-left,
+  .mx-datepicker-main .mx-calendar-header .mx-btn-icon-double-right,
+  .mx-datepicker-main .mx-time-header .mx-btn-icon-double-right,
+  .mx-datepicker-main .mx-calendar-header .mx-btn-icon-right,
+  .mx-datepicker-main .mx-time-header .mx-btn-icon-right {
+   background-image: unset !important;
   }
 
 /***pending shares***/
@@ -860,9 +890,6 @@ form div{
   background-color: #fff !important;
 }
 
-.pending-share-row .nametext {
-  max-width: 542px !important;
-}
 
 /***pending shares***/
 

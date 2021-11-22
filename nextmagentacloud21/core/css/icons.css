@@ -596,7 +596,13 @@ aside .icon-star{
     background-image: var(--icon-user-external-magenta) !important;
 }
 
+.icon-approve-share-blue {
+  background-image: var(--icon-approve-share-blue) !important;
+}
 
+.icon-reject-share-blue{
+  background-image: var(--icon-rejet-share-blue) !important;
+}
 
 /*photo-gallery-left-nav-icon-*/
 

@@ -20,8 +20,10 @@ function brandBarAnimation() {
       ele[i] ? ele[i].classList.add('breadcrumb-translation') : null;
     }
     document.getElementById('content') ? document.getElementById('content').classList.add('content-translation', 'translation') : null;
+    document.getElementById('content-vue') ? document.getElementById('content-vue').classList.add('content-translation', 'translation') : null;
     document.getElementById('view-toggle') ? document.getElementById('view-toggle').classList.add('view-toggle-translation') : null;
     document.getElementById('app-navigation') ? document.getElementById('app-navigation').classList.add('app-navigation-translation', 'translation') : null;
+    document.getElementById('app-navigation-vue') ? document.getElementById('app-navigation-vue').classList.add('app-navigation-translation', 'translation') : null;
 
   }, 3000);
 
