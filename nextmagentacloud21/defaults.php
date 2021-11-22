@@ -27,8 +27,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getBaseUrl() {
-		// return 'http://nextcloud.indemo.t-systems.net';
-    return '/themes/nextmagentacloud21/';
+		return 'http://nextcloud.indemo.t-systems.net';
 	}
 
 	/**
@@ -138,9 +137,9 @@ class OC_Theme {
 		];
 	}
 
-	public function addCustomScript() {
-		Util::addScript('brandbar');
-	}
+	// public function addCustomScript() {
+	// 	Util::addScript('brandbar');
+	// }
 
   public function __construct() {
 		\OCP\Util::addScript('core', 'customutils');
