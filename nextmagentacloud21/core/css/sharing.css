@@ -2,7 +2,7 @@
 
 #app-sidebar-vue {
   padding: 1rem;
-  overflow-x: unset !important;
+  overflow-x: hidden !important;
   overflow-y: scroll !important;
 }
 
@@ -105,7 +105,7 @@ aside .icon-star {
 
  #tab-sharing button.status-buttons__select,
 #tab-sharing button.status-buttons__primary {
-  padding: 0 1.5rem !important;
+  padding: 0 1rem !important;
   min-height: 40px !important;
   border-radius: 8px !important;
   width:auto !important;
@@ -344,7 +344,6 @@ color: #666666 !important;
 .advanced-settings li:last-child .action-input {
 margin-bottom: unset !important;
 }
-
 
 nav .app-sidebar-tabs__nav {
 margin-bottom:0.25rem;
@@ -742,7 +741,7 @@ form div{
     border: unset !important;
     max-width:178px !important;
     top:24px;
-    border-radius: unset !important;
+    border-radius: 4px !important;
     box-shadow: var(--scl-shadow-level-2);
   }
 
@@ -766,6 +765,7 @@ form div{
 
   .custom-select {
     height:24px !important;
+    border-radius: 12px !important;
   }
 
   .custom-select .selected {
@@ -848,6 +848,17 @@ form div{
   .mx-datepicker-main .mx-time-header .mx-btn-icon-right {
    background-image: unset !important;
   }
+
+  aside {
+    max-height: 867px !important;
+    margin-bottom: 5rem !important;
+    overflow-x: hidden !important;
+  }
+
+  aside::-webkit-scrollbar {
+    width: 8px !important;
+    height: 12px;
+}
 
 /***pending shares***/
 

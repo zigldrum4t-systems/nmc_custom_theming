@@ -406,14 +406,16 @@ div.crumb {
 .advanced-settings label:hover span.icon-triangle-s,
 .advanced-settings label:active span.icon-triangle-s,
 .sharing-entry__desc select,
-.custom-select  span.icon-triangle-s{
+.custom-select  span.icon-triangle-s,
+.columntitle:hover span.icon-triangle-s{
     background-image: var(--icon-triangle-s-e20074) !important;
 }
 
 .filelist-container .icon-triangle-n:hover,
 #filestable .icon-triangle-n:hover,
 .advanced-settings label:hover span.icon-triangle-n,
-.advanced-settings label:active span.icon-triangle-n {
+.advanced-settings label:active span.icon-triangle-n,
+.columntitle:hover span.icon-triangle-n {
     background-image: var(--icon-triangle-n-e20074);
 }
 
@@ -452,7 +454,7 @@ aside .icon-close,
 }
 
 .icon-star-dark,
-aside .icon-starred {
+.icon-favorite {
     background-image: var( --icon-yellow-fav) !important;
 }
 
@@ -602,6 +604,11 @@ aside .icon-star{
 
 .icon-reject-share-blue{
   background-image: var(--icon-rejet-share-blue) !important;
+}
+
+.option-share.icon-shared,
+#filestable .icon-shared {
+  background-image: var(--icon-user-000-org) !important;
 }
 
 /*photo-gallery-left-nav-icon-*/
