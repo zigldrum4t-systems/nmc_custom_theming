@@ -5,6 +5,10 @@
 #container .section.activity-section.group h2 {
   margin-left: unset !important;
   margin-bottom: 1.5rem !important;
+
+}
+
+#container .section.activity-section.group h2 span{
   font-size: 1.25rem !important;
 }
 
@@ -12,6 +16,10 @@
 .activitysubject .filename{
   color:#e20074 !important;
   font-weight: normal !important;
+}
+
+.activitysubject .filename:hover {
+  text-decoration: underline !important;
 }
 
 .activity.box .messagecontainer {
