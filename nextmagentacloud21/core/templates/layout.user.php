@@ -22,8 +22,8 @@
   <link rel="icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon.ico')); /* IE11+ supports png */ ?>">
   <link rel="apple-touch-icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
   <link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
-  <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
-  <link rel="manifest" href="<?php print_unescaped(image_path($_['appid'], 'manifest.json')); ?>">
+  <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'],'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
+  <link rel="manifest" href="<?php print_unescaped(image_path($_['appid'],'manifest.json')); ?>">
   <?php emit_css_loading_tags($_); ?>
   <?php emit_script_loading_tags($_); ?>
   <?php print_unescaped($_['headers']); ?>
@@ -127,19 +127,19 @@
                   <li data-id="<?php p($entry['id']); ?>">
                     <a href="<?php $entry['id'] == "help" ? print_unescaped("https://cloud.telekom-dienste.de/hilfe") : print_unescaped($entry['href']); ?>" <?php if ($entry["active"]) : ?> class="active" <?php endif; ?>>
                       <?php if ($entry['id'] == "settings") { ?>
-                        <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/admin.svg' . '?v=' . $_['versionHash']); ?>">
+                        <img alt="" src="<?php print_unescaped(image_path($_['appid'],'settings/img/admin.svg') . '?v=' . $_['versionHash']); ?>">
                         <?php p($entry['name']); ?>
                       <?php } elseif ($entry['id'] == "help") { ?>
-                        <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/help.svg' . '?v=' . $_['versionHash']); ?>">
+                        <img alt="" src="<?php print_unescaped(image_path($_['appid'],'settings/img/help.svg') . '?v=' . $_['versionHash']); ?>">
                         <?php p($l->t('Help & FAQ')); ?>
                       <?php } elseif ($entry['id'] == "logout") { ?>
                         <img alt="" src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
                         <?php p($l->t('Logout')); ?>
                       <?php } elseif ($entry['id'] == "core_apps") { ?>
-                        <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/apps.svg' . '?v=' . $_['versionHash']); ?>">
+                        <img alt="" src="<?php print_unescaped(image_path($_['appid'],'settings/img/apps.svg') . '?v=' . $_['versionHash']); ?>">
                         <?php p($entry['name']); ?>
                       <?php } elseif ($entry['id'] == "core_users") { ?>
-                        <img alt="" src="<?php print_unescaped('/themes/nextmagentacloud21/core/img/settings/img/users.svg' . '?v=' . $_['versionHash']); ?>">
+                        <img alt="" src="<?php print_unescaped(image_path($_['appid'],'settings/img/users.svg') . '?v=' . $_['versionHash']); ?>">
                         <?php p($entry['name']); ?>
                       <?php } else { ?>
                         <img alt="" src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
