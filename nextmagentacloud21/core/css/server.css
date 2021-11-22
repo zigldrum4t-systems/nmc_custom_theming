@@ -776,6 +776,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     padding: 0.813rem 0.125rem;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
+    border-radius: 8px !important;
 }
 
 #rightClickMenu span::first-letter {
@@ -2035,7 +2036,9 @@ iframe.viewer__file {
  li.app-navigation-entry:nth-child(1),
  li.app-navigation-entry:nth-child(5),
  li.app-navigation-entry:nth-child(7),
- li.app-navigation-entry:nth-child(8) {
+ li.app-navigation-entry:nth-child(8),
+ li.app-navigation-entry:nth-child(6),
+ .app-settings-content .section h2 {
    display: none !important;
  }
 
