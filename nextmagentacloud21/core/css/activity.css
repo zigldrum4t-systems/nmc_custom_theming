@@ -17,20 +17,20 @@
   color:#e20074 !important;
   font-weight: normal !important;
 }
-
 .activitysubject .filename:hover,
 .activitysubject strong:hover{
   text-decoration: underline !important;
 }
 
-.activity.box .messagecontainer {
+#app-content-nmc_files_activity .activity.box .messagecontainer {
   margin-bottom: 1rem !important;
+  display: flex;
 }
 .activity.box .preview ,
 .app-activity #app-sidebar,
 .activitysubject .avatar,
 #activity_notifications_msg{
-  display: none;
+  display: none !important;
 }
 
 #container{
@@ -43,6 +43,7 @@
 .activity.box .activitytime {
   color:#191919 !important;
   font-size: 1rem !important;
+  margin-top: 0.25rem;
 }
 
 .activity-icon img {
@@ -68,6 +69,7 @@
   font-weight: normal;
   margin-bottom: 1rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .del-files-activity-div {
@@ -90,4 +92,12 @@
 }
 .activity-icon {
   margin-top:0 !important;
+}
+
+#app-content-nmc_files_activity #app-content{
+  width: 100%;
+}
+
+#app-content-nmc_files_activity .activity-previews{
+  margin-left: 0 !important;
 }
