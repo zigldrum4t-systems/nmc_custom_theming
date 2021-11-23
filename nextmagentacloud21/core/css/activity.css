@@ -18,7 +18,8 @@
   font-weight: normal !important;
 }
 
-.activitysubject .filename:hover {
+.activitysubject .filename:hover,
+.activitysubject strong:hover{
   text-decoration: underline !important;
 }
 
