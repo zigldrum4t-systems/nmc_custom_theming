@@ -205,7 +205,7 @@ script('settings', [
                 'The recycle bin is automatically tidied up.'
               )); ?>
   </div>
-<div>
+<div class="para-2">
 <?php print_unescaped($l->t(
                 'Files that have been in the recycle bin for longer than 30 days are automatically deleted permanently and free up storage space.'
               )); ?>

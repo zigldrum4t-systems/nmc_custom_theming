@@ -269,6 +269,8 @@ OC.L10N.register(
     "The files already exist in the location." : "The files already exist in the location.",
     "{conflictCount} File conflicts" : "{conflictCount} File conflicts",
     "Keep both files for all" : "Keep both files for all",
-    "Replace all files" : "Replace all files"
+    "Replace all files" : "Replace all files",
+    "Help & FAQ": "Help & FAQ",
+    "Logout": "Logout"
 },
 "nplurals=2; plural=(n != 1);");

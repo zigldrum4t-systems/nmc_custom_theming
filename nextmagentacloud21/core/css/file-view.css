@@ -279,6 +279,9 @@ table.multiselect thead #selectedMenu {
     margin-left: 0.5rem !important;
 }
 
+.summary td {
+  padding-top:1rem !important;
+}
 
 /***************************************** List view sorting ******************************************************************/
 
@@ -680,16 +683,16 @@ table.multiselect #modified {
    width:auto;
    padding:0 !important;
    flex-direction: row-reverse;
+   align-items: center !important;
 }
 
 #filestable .filename .fileactions a.action-restore span:not(.icon) {
   color:#e20074 !important;
-  padding:0.875rem 0.4rem 0 0 !important;
-  vertical-align: bottom !important;
 }
+
 .icon-history {
-  margin-right:0.5rem !important;
-  margin-top:0.625rem !important;
+  margin:0 0.5rem !important;
+  background-position-y:-1px !important;
 }
 
 #app-content-trashbin .selectedActions{

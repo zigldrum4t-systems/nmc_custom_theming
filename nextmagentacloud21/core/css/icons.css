@@ -430,6 +430,9 @@ aside .custom-select .disabledRow span.icon-triangle-s{
 }
 
 
+#filestable .icon-public {
+  background-image: var(--icon-user-e20074);
+}
 
 /*close-dialog-icons*/
 
@@ -606,7 +609,7 @@ aside .icon-star{
   background-image: var(--icon-rejet-share-blue) !important;
 }
 
-.option-share.icon-shared,
+.option-share .icon-shared,
 #filestable .icon-shared {
   background-image: var(--icon-user-000-org) !important;
 }
@@ -627,4 +630,16 @@ aside .icon-star{
 
 .nav-icon-extstoragemounts{
   background-image: var(--icon-nav-exts-custom) !important;
+}
+
+.filesSelectionMenu .icon-close{
+  background-image: var(--icon-magenta-cancel) !important;
+}
+
+.filesSelectMenu .icon-close{
+  background-image: var(--icon-custom-cancel) !important;
+}
+
+.pending-share-row[data-mime="httpd/unix-directory"] .thumbnail {
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }
