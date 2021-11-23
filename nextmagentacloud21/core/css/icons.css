@@ -621,3 +621,15 @@ aside .icon-star{
 .nav-icon-extstoragemounts{
   background-image: var(--icon-nav-exts-custom) !important;
 }
+
+.filesSelectionMenu .icon-close{
+  background-image: var(--icon-magenta-cancel) !important;
+}
+
+.filesSelectMenu .icon-close{
+  background-image: var(--icon-custom-cancel) !important;
+}
+
+.pending-share-row[data-mime="httpd/unix-directory"] .thumbnail {
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+}
