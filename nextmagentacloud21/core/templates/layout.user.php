@@ -118,7 +118,7 @@
                 </svg>
               </div>
               <span class="username-lable">
-                <a class="right-menu-font"><?php p($_['user_uid']); ?></a>
+                <a class="right-menu-font"><?php p($_['user_displayname']); ?></a>
               </span>
             </div>
             <nav class="settings-menu" id="expanddiv" style="display:none;" aria-label="<?php p($l->t('Settings menu')); ?>">
