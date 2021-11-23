@@ -7,7 +7,7 @@ build-image:
   stage: build
   variables:
     TARGET_DIR: 40_nextcloud-magenta
-    THEME_COMMIT: $CI_COMMIT_SHA
+    THEME_TAG: $CI_COMMIT_TAG
     DEPLOY: "true"
     PKR_VAR_image_tag: "dev"
   trigger:
@@ -15,7 +15,7 @@ build-image:
     branch: master
     strategy: depend
   only:
-    - master
+    - /^dev1-.*$/
 
 deploy-dev1:
   stage: deploy
@@ -24,11 +24,12 @@ deploy-dev1:
   variables:
     DEPLOY_STAGE: "dev1"
     DEPLOY: "true"
+    THEME_TAG: $CI_COMMIT_TAG
   trigger:
     project: nextmagentacloud/deployment
     branch: master
     strategy: depend
   only:
-    - master
+    - /^dev1-.*$/
 
 
