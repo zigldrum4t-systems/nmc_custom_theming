@@ -2049,7 +2049,7 @@ iframe.viewer__file {
  li.app-navigation-entry:nth-child(7),
  li.app-navigation-entry:nth-child(8),
  li.app-navigation-entry:nth-child(6),
- .app-settings-content .section h2 {
+ .app-photos .section h2 {
    display: none !important;
  }
 
@@ -2064,7 +2064,7 @@ iframe.viewer__file {
  }
 
  .app-photos  #app-settings-content {
-   padding:1rem !important;
+   padding:1rem 0rem !important;
  }
 .app-photos .section {
   padding:unset !important;
@@ -2366,12 +2366,6 @@ aside .icon-close:hover,
     #app-navigation:not(.vue) ul {
         padding-top: 0;
     }
-}
-
-@media screen and (max-width: 420px) {
-
-
-
 }
 
 @media screen and (max-width: 768px) {
