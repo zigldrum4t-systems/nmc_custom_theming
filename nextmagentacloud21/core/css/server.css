@@ -681,10 +681,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #app-settings-header .settings-button {
     display: block;
-    height: 44px;
+    height: 20px;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0rem 0.5rem 0rem !important;
     background-image: var(--icon-triangle-n-e20074);
     background-position: 14px center;
     background-repeat: no-repeat;
@@ -702,6 +702,13 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-image: var(--icon-triangle-s-e20074);
 }
 
+#app-settings-content {
+  padding:0rem 1rem 1rem 1rem !important;
+}
+
+#app-settings-content input[type='checkbox'].checkbox+label {
+  padding:0 0 0.5rem 0 !important;
+}
 
 /*-------------------MemoryUsed Left Nav------------------------------*/
 
@@ -776,6 +783,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     padding: 0.813rem 0.125rem;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
+    border-radius: 8px !important;
 }
 
 #rightClickMenu span::first-letter {
@@ -1926,6 +1934,10 @@ iframe.viewer__file {
 
 /*** Custom conflict dialog ******************************************************/
 
+#oc-dialog-filepicker-content .emptycontent {
+  margin-top:1rem !important;
+}
+
 .oc-conflict-pre-dlg {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
@@ -2035,7 +2047,9 @@ iframe.viewer__file {
  li.app-navigation-entry:nth-child(1),
  li.app-navigation-entry:nth-child(5),
  li.app-navigation-entry:nth-child(7),
- li.app-navigation-entry:nth-child(8) {
+ li.app-navigation-entry:nth-child(8),
+ li.app-navigation-entry:nth-child(6),
+ .app-settings-content .section h2 {
    display: none !important;
  }
 
@@ -2103,7 +2117,25 @@ aside .icon-close:hover,
         padding-top: 0.5rem;
         padding-bottom: 1rem;
     }
+    .personal-settings-setting-box .section input[type='text'],
+    .personal-settings-setting-box .section input[type='email'],
+     #webdav-address input[type='text'], #security input[type='text'] {
+       width:290px !important;
+     }
+     select#languageinput {
+      width:290px !important;
+    }
+    .para-2 {
+      max-width:300px;
+    }
 
+    #body-settings #quota {
+      width:290px;
+    }
+
+    .telekom-link p {
+      width:300px !important;
+      }
 }
 
 @media screen and (max-width: 640px) {
@@ -2179,6 +2211,19 @@ aside .icon-close:hover,
       max-width: 312px !important;
       min-width: 312px !important;
       margin-left: -9.75rem !important;
+    }
+    .action-restore.permanent span:not(.icon) {
+      display: none;
+    }
+
+    .personal-settings-setting-box .section input[type='text'],
+    .personal-settings-setting-box .section input[type='email'],
+     #webdav-address input[type='text'], #security input[type='text'] {
+       width:350px;
+     }
+
+     select#languageinput {
+      width:350px;
     }
 
 }
@@ -2324,19 +2369,9 @@ aside .icon-close:hover,
 }
 
 @media screen and (max-width: 420px) {
-  .personal-settings-setting-box .section input[type='text'],
-   .personal-settings-setting-box .section input[type='email'] {
-     width:auto !important;
-  }
-  .telekom-link p {
-  width:364px !important;
-  }
-  select#languageinput {
-    width:auto !important;
-  }
-  #body-settings #quota {
-    width:320px !important
-  }
+
+
+
 }
 
 @media screen and (max-width: 768px) {

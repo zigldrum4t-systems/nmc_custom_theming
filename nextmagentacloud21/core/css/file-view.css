@@ -67,9 +67,7 @@ table th#headerDate {
     right: -11px;
 }
 
-#filestable .icon-shared {
-    background-image: var(--icon-user-000-org);
-}
+
 
 #filestable span.extension {
     padding-top: 14px !important;
@@ -114,7 +112,7 @@ table.multiselect thead #selectedMenu {
     margin: 0 0 0.25rem 0 !important;
 }
 
-#filestable .filename .fileactions a span {
+.filename .fileactions a span {
     vertical-align: sub !important;
     background-size: unset !important;
 }
@@ -127,6 +125,7 @@ table.multiselect thead #selectedMenu {
 #filestable .fileactions .icon-share-link  {
   min-width: 20px !important;
   min-height: 20px !important;
+  background-size: 20px !important;
 }
 
 #filestable:not(.view-grid) tr td.selection>.selectCheckBox+label {
@@ -226,7 +225,7 @@ table.multiselect thead #selectedMenu {
 }
 
 #fileList td a a.action.action-menu {
-    width: 24px;
+    width: 32px;
     height: 48px;
     align-items: center;
     display: flex;
@@ -267,19 +266,22 @@ table.multiselect thead #selectedMenu {
 
 #fileList td a a.action.action-menu {
     padding: 1.063rem 0 !important;
-    display: inline !important;
-    margin: -15px -15px 0 0;
 }
 
 #fileList td a a.action.action-share {
     padding: 1.063rem 1rem !important;
 }
 
-#fileList .action.action-share.permanent.shared-style span:not(.icon),
-#fileList .action.action-share.permanent.shared-style span:not(.avatar) {
-    margin-right: 0.5rem !important;
+
+#fileList .action.action-share.permanent.shared-style span.icon-public,
+#fileList .action.action-share.permanent.shared-style span.avatar,
+.fileactions .icon-shared{
+    margin-left: 0.5rem !important;
 }
 
+.summary td {
+  padding-top:1rem !important;
+}
 
 /***************************************** List view sorting ******************************************************************/
 
@@ -317,8 +319,6 @@ table th .sort-indicator {
 #headerSize .sort-indicator {
     width: 10px;
     height: 8px;
-    margin-left: -3.875rem;
-    margin-right: 2.938rem;
     display: inline-block;
     vertical-align: text-bottom;
     opacity: 1;
@@ -606,6 +606,14 @@ table.multiselect #modified {
     filter: none !important;
 }
 
+.size.columntitle {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.columntitle:hover span {
+  color:#e20074 !important;
+}
 /*received-shares*/
 
 .fileactions .action .avatar img,
@@ -675,16 +683,16 @@ table.multiselect #modified {
    width:auto;
    padding:0 !important;
    flex-direction: row-reverse;
+   align-items: center !important;
 }
 
 #filestable .filename .fileactions a.action-restore span:not(.icon) {
   color:#e20074 !important;
-  padding:0.875rem 0.4rem 0 0 !important;
-  vertical-align: bottom !important;
 }
+
 .icon-history {
-  margin-right:0.5rem !important;
-  margin-top:0.625rem !important;
+  margin:0 0.5rem !important;
+  background-position-y:-1px !important;
 }
 
 #app-content-trashbin .selectedActions{
