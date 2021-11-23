@@ -2154,6 +2154,12 @@ aside .icon-close:hover,
         position: relative;
         padding: 1rem 0 1.5rem 0;
     }
+    #personal-settings .brand-footer {
+        position: fixed;
+    }
+    #personal-settings #tarrifInfo {
+      margin-bottom: 5.25rem;
+    }
     .brand-footer .brand-footer-bar {
         justify-content: center !important;
         height: auto;

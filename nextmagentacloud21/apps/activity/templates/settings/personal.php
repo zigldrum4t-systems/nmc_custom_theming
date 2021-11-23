@@ -30,7 +30,7 @@ style('activity', 'settings');
 		   value="1" <?php if ($_['activity_digest_enabled']) {
 	print_unescaped('checked="checked"');
 } ?> />
- <label for="activity_digest"><?php p($l->t('Activity Report')); ?></label>
+ <label for="activity_email_enabled"><?php p($l->t('Activity Report')); ?></label>
     <p><?php p($l->t('The activity report informs you every morning about all processes in your MagentaCLOUD.')); ?></p>
   </div>
 
