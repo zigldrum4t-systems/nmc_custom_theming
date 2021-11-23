@@ -74,8 +74,8 @@ aside .icon-star {
 }
 
 .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__figure[data-v-0307b622] {
-  width: 92px !important;
-  max-height: 92px !important;
+  width: 96px !important;
+  max-height: 96px !important;
   margin: 0 !important;
 }
 
@@ -825,7 +825,7 @@ form div{
 
   .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__figure {
     width:96px !important;
-    width:96px !important;
+    height:96px !important;
   }
 
   aside .option__icon {

@@ -51,7 +51,7 @@
   #webdav-address input[type='text'],
   #security input[type='text']
   {
-    width: 400px !important;
+    width: 400px;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
     background-color: #e5e5e5;
@@ -60,7 +60,7 @@
   }
 
   select#languageinput{
-    width: 400px !important;
+    width: 400px ;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem;
     background-color: #ffffff;
