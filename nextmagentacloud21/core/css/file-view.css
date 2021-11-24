@@ -253,7 +253,7 @@ table.multiselect thead #selectedMenu {
 }
 
 #filestable tfoot .summary .info {
-    margin-left: 78px;
+    margin-left: 66px;
 }
 
 #filestable:not(.view-grid) td.filesize {
@@ -705,4 +705,10 @@ table.multiselect #modified {
 
 .oc-dialog-buttonrow.twobuttons {
   justify-content: end;
+}
+
+#app-content-sharingout .info,
+#app-content-sharingin .info,
+#app-content-favorites .info {
+  margin-left:12px !important;
 }
