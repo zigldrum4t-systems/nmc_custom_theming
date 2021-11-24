@@ -579,10 +579,11 @@
 
 #header .header-left nav .menu,
 #header .header-right div .menu {
-    padding: 1.5rem 1rem;
+    padding: 0.813rem 0.625rem;
     min-width: 176px;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
+    border-radius:8px !important;
 }
 
 #header .header-left nav .menu #apps ul li a:hover,
