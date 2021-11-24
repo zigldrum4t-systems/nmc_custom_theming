@@ -2041,13 +2041,11 @@ iframe.viewer__file {
  li.app-navigation-entry:nth-child(5),
  li.app-navigation-entry:nth-child(7),
  li.app-navigation-entry:nth-child(8),
- li.app-navigation-entry:nth-child(6){
+ li.app-navigation-entry:nth-child(6),
+ #app-settings-content .section h2 {
    display: none !important;
  }
 
- #app-settings-content .section h2 {
-   display:none !important;
- }
 
  .app-navigation-entry-icon.icon-share {
    margin-top:0.125rem !important;
