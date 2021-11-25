@@ -2273,7 +2273,7 @@ aside .icon-close:hover,
     }
 
     .nmc_spica_wrapper div {
-      font-size: 10px;
+      font-size: 0.625rem;
       color: var(--scl-color-grey-90);
     }
 
@@ -2386,7 +2386,7 @@ aside .icon-close:hover,
 @media screen and (max-width: 650px) {
 
   .header-menu__carret {
-    right: 199px !important;
+    right: 12.4375rem !important;
   }
 
   #header-menu-unified-search{

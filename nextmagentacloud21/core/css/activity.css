@@ -43,12 +43,8 @@
 .activity.box .activitytime {
   color:#191919 !important;
   font-size: 1rem !important;
-<<<<<<< HEAD
   padding-top: 0.25rem;
   margin: 0;
-=======
-  margin-top: 0.25rem;
->>>>>>> 2b7282200196239cd77cbd902bede7e31cfefcf0
 }
 
 .activity-icon img {
@@ -106,7 +102,6 @@
 #app-content-nmc_files_activity .activity-previews{
   margin-left: 0 !important;
 }
-<<<<<<< HEAD
 
 #app-content-nmc_files_activity .control-section{
   position: sticky;
@@ -120,5 +115,4 @@
   background-color: #f2f2f2;
   border-bottom: 1px solid #e5e5e5;
 }
-=======
->>>>>>> 2b7282200196239cd77cbd902bede7e31cfefcf0
+
