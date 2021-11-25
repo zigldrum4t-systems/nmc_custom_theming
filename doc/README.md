@@ -1,3 +1,5 @@
+# Table of Contents
+[[_TOC_]]
 # Deploy new image into Dev1 environment
 
 ## Go to the "Nmc custom theming" project in Gitlab
