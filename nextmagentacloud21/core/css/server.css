@@ -702,13 +702,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-image: var(--icon-triangle-s-e20074);
 }
 
-#app-settings-content {
-  padding:0rem 1rem 1rem 1rem !important;
-}
 
-#app-settings-content input[type='checkbox'].checkbox+label {
-  padding:0 0 0.5rem 0 !important;
-}
 
 /*-------------------MemoryUsed Left Nav------------------------------*/
 
@@ -780,7 +774,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 #rightClickMenu,
 .fileActionsMenu {
     margin: 0;
-    padding: 0.813rem 0.125rem;
+    padding: 0.813rem 0.625rem;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
     border-radius: 8px !important;
@@ -1050,7 +1044,7 @@ div.crumb:last-child {
 }
 
 #rich-workspace #editor-session-list .save-status{
-    padding-right: 0.25rem !important;
+    padding-right: 1.25rem !important;
     min-width: unset !important;
     top:0 !important;
 }
@@ -1058,9 +1052,8 @@ div.crumb:last-child {
 /* Add Button*/
 
 .newFileMenu {
-    padding: 1rem;
+    padding: 0.813rem 0.625rem;
     box-shadow: var(--scl-shadow-level-2);
-    width: 235px !important;
     border-radius: 8px;
 }
 
@@ -1150,9 +1143,9 @@ button:not(:disabled):not(.primary):focus,
 
 .submenu .popovermenu {
     box-shadow: var(--scl-shadow-level-2);
-    padding: 1rem 1rem 1.5rem 0.5rem;
+    padding: 0.813rem 0.625rem;
     border-radius: 8px;
-    width: 10rem;
+    width: 178px;
     margin-top: 0.3125rem;
 }
 
@@ -1222,7 +1215,7 @@ li>.menuitem[class*=' icon-'] {
 }
 
 .popover__wrapper .popover__inner {
-    padding: 1.5rem 1rem 1.5rem 1rem !important;
+    padding: 0.813rem 1.5rem 0.813rem 0.625rem !important;
     border-radius: 8px;
 }
 
@@ -2049,9 +2042,10 @@ iframe.viewer__file {
  li.app-navigation-entry:nth-child(7),
  li.app-navigation-entry:nth-child(8),
  li.app-navigation-entry:nth-child(6),
- .app-settings-content .section h2 {
+ #app-settings-content .section h2 {
    display: none !important;
  }
+
 
  .app-navigation-entry-icon.icon-share {
    margin-top:0.125rem !important;
@@ -2063,12 +2057,18 @@ iframe.viewer__file {
   margin: 0 0.5rem 0.188rem 0.188rem !important;
  }
 
- .app-photos  #app-settings-content {
-   padding:1rem !important;
+ #app-settings-content {
+   padding:0rem 0rem 0rem 1rem !important;
  }
+
+ #app-settings-content input[type='checkbox'].checkbox+label {
+  line-height: 1 !important;
+}
+
 .app-photos .section {
   padding:unset !important;
 }
+
  .oc-dialog .oc-dialog-close:hover,
 #uploadprogresswrapper .icon-close:hover,
 aside .icon-close:hover,
@@ -2261,9 +2261,29 @@ aside .icon-close:hover,
     }
     #contactsmenu,
     #settings .menutoggle,
-    .search-outer a.header-menu__trigger {
+    .nmc_spica_wrapper,
+    .search-outer a.header-menu__trigger{
         flex-direction: column;
     }
+
+    .nmc_spica_wrapper .has-unread {
+      position: absolute;
+      right: 0.25rem;
+      top: 2rem;
+    }
+
+    .nmc_spica_wrapper div {
+      font-size: 0.625rem;
+      color: var(--scl-color-grey-90);
+    }
+
+    .username-lable{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 4.5rem;
+      height: 0.75rem;
+    }
+
     #appmenu {
         display: none;
     }
@@ -2325,6 +2345,7 @@ aside .icon-close:hover,
    .pending-share-row .fileactions .action-button.accept{
      background: none;
    }
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2362,16 +2383,30 @@ aside .icon-close:hover,
     }
 }
 
+@media screen and (max-width: 650px) {
+
+  .header-menu__carret {
+    right: 12.4375rem !important;
+  }
+
+  #header-menu-unified-search{
+    position: fixed !important;
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-height: 700px) {
     #app-navigation:not(.vue) ul {
         padding-top: 0;
     }
 }
 
+
 @media screen and (max-width: 420px) {
-
-
-
+  #headerName-container .headerSizeOpen, #headerName-container #headerSizeCount {
+      display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2415,12 +2450,33 @@ aside .icon-close:hover,
   #app-content-trashbin table th .selectedActions {
     float: unset !important;
   }
+
+  table.multiselect th .columntitle.name {
+    padding-left: 0 !important;
+  }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1072px){
   #files-public-content .item-download{
     padding-right: 2rem;
   }
+}
+
+@media only screen
+and (max-width : 1299px) {
+  .pending-share-row .fileactions .button-label{
+    display: none;
+   }
+   .pending-share-row .fileactions .icon{
+      display: block !important;
+   }
+   .pending-share-row .fileactions .action-button {
+      border: 0;
+      padding: 0;
+   }
+   .pending-share-row .fileactions .action-button.accept{
+     background: none;
+   }
 }
 
 /*Responsive Styling*/
