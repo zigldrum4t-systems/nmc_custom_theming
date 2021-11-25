@@ -502,6 +502,6 @@ OC.L10N.register(
     "Files that have been in the recycle bin for longer than 30 days are automatically deleted permanently and free up storage space."  :"Dateien, die länger als 30 Tage im Papierkorb liegen, werden automatisch endgültig gelöscht und geben Speicherplatz frei.",
     "of" : "von",
     "Memory"  :"Speicher zu",
-    "occupied" : "belget"
+    "occupied" : "belegt"
 },
 "nplurals=2; plural=(n != 1);");

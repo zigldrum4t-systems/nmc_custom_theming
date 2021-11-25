@@ -6,6 +6,9 @@ OC.L10N.register(
     "Shared with me": "Mit mir geteilt",
     "All": "Alle",
     "Toggle grid view" : "Ansichtändern",
-    "Help & FAQ": "Hilfe & FAQ"
+    "Help & FAQ": "Hilfe & FAQ",
+    "Display settings": "Anzeige-einstellungen",
+    "Expand storage"  : "Speicherplatz erweitern",
+    "Memory used up to ": "Speicher zu 'percentage' belegt"
 },
 "nplurals=2; plural=(n != 1);");
