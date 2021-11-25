@@ -519,7 +519,7 @@ table.multiselect #modified {
 }
 
 #selectedActionLabel {
-    padding-right: 0 !important;
+    padding-right: 0.5rem !important;
 }
 
 #emptycontent [class^='icon-'],
