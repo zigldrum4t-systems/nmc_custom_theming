@@ -702,13 +702,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-image: var(--icon-triangle-s-e20074);
 }
 
-#app-settings-content {
-  padding:0rem 1rem 1rem 1rem !important;
-}
 
-#app-settings-content input[type='checkbox'].checkbox+label {
-  padding:0 0 0.5rem 0 !important;
-}
 
 /*-------------------MemoryUsed Left Nav------------------------------*/
 
@@ -780,7 +774,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 #rightClickMenu,
 .fileActionsMenu {
     margin: 0;
-    padding: 0.813rem 0.125rem;
+    padding: 0.813rem 0.625rem;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
     border-radius: 8px !important;
@@ -1058,9 +1052,8 @@ div.crumb:last-child {
 /* Add Button*/
 
 .newFileMenu {
-    padding: 1rem;
+    padding: 0.813rem 0.625rem;
     box-shadow: var(--scl-shadow-level-2);
-    width: 235px !important;
     border-radius: 8px;
 }
 
@@ -1150,9 +1143,9 @@ button:not(:disabled):not(.primary):focus,
 
 .submenu .popovermenu {
     box-shadow: var(--scl-shadow-level-2);
-    padding: 1rem 1rem 1.5rem 0.5rem;
+    padding: 0.813rem 0.625rem;
     border-radius: 8px;
-    width: 10rem;
+    width: 178px;
     margin-top: 0.3125rem;
 }
 
@@ -1222,7 +1215,7 @@ li>.menuitem[class*=' icon-'] {
 }
 
 .popover__wrapper .popover__inner {
-    padding: 1.5rem 1rem 1.5rem 1rem !important;
+    padding: 0.813rem 1.5rem 0.813rem 0.625rem !important;
     border-radius: 8px;
 }
 
@@ -2049,9 +2042,10 @@ iframe.viewer__file {
  li.app-navigation-entry:nth-child(7),
  li.app-navigation-entry:nth-child(8),
  li.app-navigation-entry:nth-child(6),
- .app-settings-content .section h2 {
+ #app-settings-content .section h2 {
    display: none !important;
  }
+
 
  .app-navigation-entry-icon.icon-share {
    margin-top:0.125rem !important;
@@ -2063,12 +2057,18 @@ iframe.viewer__file {
   margin: 0 0.5rem 0.188rem 0.188rem !important;
  }
 
- .app-photos  #app-settings-content {
-   padding:1rem !important;
+ #app-settings-content {
+   padding:0rem 0rem 0rem 1rem !important;
  }
+
+ #app-settings-content input[type='checkbox'].checkbox+label {
+  line-height: 1 !important;
+}
+
 .app-photos .section {
   padding:unset !important;
 }
+
  .oc-dialog .oc-dialog-close:hover,
 #uploadprogresswrapper .icon-close:hover,
 aside .icon-close:hover,
@@ -2345,6 +2345,7 @@ aside .icon-close:hover,
    .pending-share-row .fileactions .action-button.accept{
      background: none;
    }
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2400,6 +2401,7 @@ aside .icon-close:hover,
         padding-top: 0;
     }
 }
+
 
 @media screen and (max-width: 420px) {
   #headerName-container .headerSizeOpen, #headerName-container #headerSizeCount {
