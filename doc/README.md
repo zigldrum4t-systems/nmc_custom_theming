@@ -47,4 +47,9 @@ URL: https://gitlab.devops.telekom.de/nextmagentacloud/themes
   * If you see a **pause** sign then it means the job is not jet started
   * If you see a **play** sign then it means the job runs
   * If you see a **red X** sign then it means the job failed
-  
+4. This is the pipeline flow for the image building process. To see the **Lint** and **Build** job you have to click on the **Downstream** job indicated below
+![Inside the pipelin](./img/pipelines4.jpg)
+4. This is the pipeline flow for the image building process. To see the **Deploy** job you have to click on the **Downstream** job indicated below
+![Inside the pipelin](./img/pipelines5.jpg)
+This will be important also for a rollback process.
+
