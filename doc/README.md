@@ -21,3 +21,21 @@ URL: https://gitlab.devops.telekom.de/nextmagentacloud/themes
 Now the pipeline **starts automatically** to 
 1. Create a new image from the tagged code
 2. Deploy the new image to dev1
+
+# How to check the status of the pipeline
+
+## Go to the "Nmc custom theming" project in Gitlab
+
+URL: https://gitlab.devops.telekom.de/nextmagentacloud/themes
+
+## Search for the pipeline
+
+1. Go to the *CI/CD* menu and click on *Pipelines*
+![Pipeline menu](./img/pipelines1.jpg)
+1. In the page of pipelines you will see
+    * the name of the *Tag* under **Commit**
+    * the Pipeline ID
+    * and the status of the Jobs for each stage under **Stages**. Here if everything is green then the pipeline finished without error and the new image is deployed successfuly into dev1
+![Pipeline page](./img/pipelines2.jpg)
+  Click on the pipeline ID to get inside the pipeline.
+
