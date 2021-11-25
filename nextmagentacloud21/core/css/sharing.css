@@ -562,7 +562,8 @@ flex-direction: row-reverse;
 }
 
 
- .option__linetwo {
+ .option__linetwo ,
+ li.multiselect__element .unknown {
   display:none !important;
 }
 
@@ -702,8 +703,10 @@ form div{
   .mx-table.mx-table-date th,
   .mx-table.mx-table-date td,
   .mx-table.mx-table-year td,
-  .mx-table.mx-table-year th{
-    border-bottom: unset !important;
+  .mx-table.mx-table-year th,
+  .mx-table.mx-table-month td,
+  .mx-table.mx-table-month th {
+   border-bottom: unset !important;
   }
 
   .mx-table.mx-table-date tbody{
@@ -720,6 +723,13 @@ form div{
   .mx-calendar-header-label .mx-btn{
     font-size:1rem !important ;
   }
+
+  .mx-datepicker .mx-calendar-header,
+  .mx-datepicker .mx-time-header {
+   display:inline !important;
+   height:32px !important;
+  }
+
 
   /*select-box*/
 
