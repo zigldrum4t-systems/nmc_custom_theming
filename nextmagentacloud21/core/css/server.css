@@ -785,6 +785,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 /*----right-click-menu------*/
 
+#rightClickMenu .action-2{
+  display: none;
+}
+
 #rightClickMenu,
 .fileActionsMenu {
     margin: 0;
