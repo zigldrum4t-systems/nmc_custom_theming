@@ -583,9 +583,11 @@ span#global-lookup,
   background-image: unset !important;
   background-color: unset !important;
 }
+
 .multiselect .multiselect__content-wrapper {
   overflow-y: unset !important;
 }
+
 .multiselect__content-wrapper .multiselect__element .avatardiv:not(.avatardiv--unknown),
 .multiselect.multiselect--disabled, .multiselect.multiselect--disabled .multiselect__single {
   background-color: unset !important;
@@ -595,7 +597,6 @@ span#global-lookup,
 .multiselect__element .option__icon.icon-mail {
   margin-right:0.25rem !important;
 }
-
 
 aside .action-radio__label {
   align-items: unset !important;
