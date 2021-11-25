@@ -24,7 +24,6 @@
 
 #app-content-nmc_files_activity .activity.box .messagecontainer {
   margin-bottom: 1rem !important;
-  display: flex;
 }
 .activity.box .preview ,
 .app-activity #app-sidebar,
@@ -44,6 +43,7 @@
   color:#191919 !important;
   font-size: 1rem !important;
   padding-top: 0.25rem;
+  padding:  0.25rem 0 0 0 !important;
   margin: 0;
 }
 

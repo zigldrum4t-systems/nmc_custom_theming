@@ -645,6 +645,20 @@ aside {
     #filestable.view-grid tbody {
         row-gap: 16px !important;
     }
+    .pending-share-row .fileactions .button-label{
+      display: none;
+     }
+     .pending-share-row .fileactions .icon{
+        display: block !important;
+     }
+     .pending-share-row .fileactions .action-button {
+        border: 0;
+        padding: 0;
+     }
+     .pending-share-row .fileactions .action-button.accept{
+       background: none;
+     }
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -2139,7 +2153,7 @@ aside .icon-close:hover,
 
     .telekom-link p {
       width:300px !important;
-      }
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -2281,13 +2295,6 @@ aside .icon-close:hover,
       color: var(--scl-color-grey-90);
     }
 
-    .username-lable{
-      text-overflow: ellipsis;
-      overflow: hidden;
-      width: 4.5rem;
-      height: 0.75rem;
-    }
-
     #appmenu {
         display: none;
     }
@@ -2348,6 +2355,9 @@ aside .icon-close:hover,
    }
    .pending-share-row .fileactions .action-button.accept{
      background: none;
+   }
+   .activitysubject{
+     width: 50%;
    }
 
 }
@@ -2458,6 +2468,13 @@ aside .icon-close:hover,
   table.multiselect th .columntitle.name {
     padding-left: 0 !important;
   }
+
+  .username-lable{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 2.5rem;
+  }
+
 }
 
 @media all and (min-width: 1024px) and (max-width: 1072px){
@@ -2465,22 +2482,4 @@ aside .icon-close:hover,
     padding-right: 2rem;
   }
 }
-
-@media only screen
-and (max-width : 1299px) {
-  .pending-share-row .fileactions .button-label{
-    display: none;
-   }
-   .pending-share-row .fileactions .icon{
-      display: block !important;
-   }
-   .pending-share-row .fileactions .action-button {
-      border: 0;
-      padding: 0;
-   }
-   .pending-share-row .fileactions .action-button.accept{
-     background: none;
-   }
-}
-
 /*Responsive Styling*/
