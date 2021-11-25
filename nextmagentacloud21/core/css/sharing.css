@@ -592,6 +592,11 @@ span#global-lookup,
   box-shadow:unset !important;
 }
 
+.multiselect__element .option__icon.icon-mail {
+  margin-right:0.25rem !important;
+}
+
+
 aside .action-radio__label {
   align-items: unset !important;
 }
