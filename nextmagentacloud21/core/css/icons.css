@@ -536,7 +536,8 @@ aside .icon-star{
 }
 
 #selectedActionLabel .icon-more{
-  background-image: var(--icon-more-magenta) !important;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
 }
 
 .icon-desktop {

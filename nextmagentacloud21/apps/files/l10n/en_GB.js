@@ -5,6 +5,9 @@ OC.L10N.register(
     "My shares": "My shares",
     "Shared with me": "Shared with me",
     "All": "All",
-    "Toggle grid view" : "Toggle grid view"
+    "Toggle grid view" : "Toggle grid view",
+    "Display settings": "Display settings",
+    "Expand storage"  : "Expand storage",
+    "Memory used up to": "Memory used up to"
 },
 "nplurals=2; plural=(n != 1);");

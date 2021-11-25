@@ -3,6 +3,9 @@
   "My shares": "Meine geteilten Inhalte",
   "Shared with me": "Mit mir geteilt",
   "All": "Alle",
-  "Toggle grid view" : "Ansichtändern"
+  "Toggle grid view" : "Ansichtändern",
+  "Display settings": "Anzeige-einstellungen",
+  "Expand storage"  : "Speicherplatz erweitern",
+  "Memory used up to ": "Speicher zu 'percentage' belegt"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
