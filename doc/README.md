@@ -38,4 +38,13 @@ URL: https://gitlab.devops.telekom.de/nextmagentacloud/themes
     * and the status of the Jobs for each stage under **Stages**. Here if everything is green then the pipeline finished without error and the new image is deployed successfuly into dev1
 ![Pipeline page](./img/pipelines2.jpg)
   Click on the pipeline ID to get inside the pipeline.
-
+1. Inside the pipeline you will see
+  * the name of the **Tag**
+  * **build-image** is the job to create a new image from the code
+  * **deploy-dev1** is the job to deploy the new image to dev1 environment
+![Inside the pipelin](./img/pipelines3.jpg)
+  * If you see a **green checkmark** for the particular job then it means the job finished successufuly
+  * If you see a **pause** sign then it means the job is not jet started
+  * If you see a **play** sign then it means the job runs
+  * If you see a **red X** sign then it means the job failed
+  
