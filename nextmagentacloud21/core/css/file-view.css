@@ -624,7 +624,7 @@ table.multiselect #modified {
 .fileactions .action.action-share.permanent.shared-style .avatar {
     height: 24px !important;
     width: 24px !important;
-    margin: 0 !important;
+    margin-right: 1rem;
     background-image: var(--icon-cloud-blue) !important;
     background-repeat: no-repeat;
 }

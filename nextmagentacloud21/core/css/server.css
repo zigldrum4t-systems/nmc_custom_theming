@@ -555,6 +555,12 @@ aside {
     #uploadprogressbar .mobile {
         display: block !important;
     }
+    .pending-share-row .fileactions .action-button.reject {
+      margin-right: 4.5rem;
+    }
+   .fileactions .action.action-share.permanent.shared-style .avatar {
+    margin-right:2rem;
+   }
 }
 
 @media screen and (min-width: 1600px) {
@@ -2325,6 +2331,12 @@ aside .icon-close:hover,
    .pending-share-row .fileactions .action-button.accept{
      background: none;
    }
+   .fileactions .action.action-share.permanent.shared-style .avatar {
+    margin-right: 3rem;
+  }
+  .pending-share-row .fileactions .action-button.reject {
+    margin-right: 3.5rem;
+  }
 
 }
 
