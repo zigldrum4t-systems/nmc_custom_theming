@@ -7,8 +7,8 @@ OC.L10N.register(
     "All": "Alle",
     "Toggle grid view" : "Ansichtändern",
     "Help & FAQ": "Hilfe & FAQ",
-    "Display settings": "Anzeige-einstellungen",
+    "Display settings": "Anzeigeeinstellungen",
     "Expand storage"  : "Speicherplatz erweitern",
-    "Memory used up to ": "Speicher zu 'percentage' belegt"
+    "Memory used up to %s%%": "Speicher zu 'percentage' belegt %s%%"
 },
 "nplurals=2; plural=(n != 1);");

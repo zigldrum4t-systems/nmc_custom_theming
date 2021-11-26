@@ -2154,6 +2154,22 @@ aside .icon-close:hover,
     .telekom-link p {
       width:300px !important;
     }
+
+    #nextcloud h5, #nextcloud span {
+      font-size: 1rem !important;
+    }
+    .actions-selected span:nth-child(2){
+      display:none;
+    }
+
+    #selectedActionsList .popovermenu {
+      right: -50px;
+    }
+
+    .header-menu__carret {
+      right: 10.4375rem !important;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -2199,7 +2215,7 @@ aside .icon-close:hover,
     #nextcloud h5,
     #nextcloud span {
         padding: 0 !important;
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
     #header .logo-area {
         display: none;
@@ -2400,7 +2416,7 @@ aside .icon-close:hover,
 @media screen and (max-width: 650px) {
 
   .header-menu__carret {
-    right: 12.4375rem !important;
+    right: 12.4375rem;
   }
 
   #header-menu-unified-search{

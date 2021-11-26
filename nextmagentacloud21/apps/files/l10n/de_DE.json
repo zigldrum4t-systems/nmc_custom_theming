@@ -4,8 +4,8 @@
   "Shared with me": "Mit mir geteilt",
   "All": "Alle",
   "Toggle grid view" : "Ansichtändern",
-  "Display settings": "Anzeige-einstellungen",
+  "Display settings": "Anzeigeeinstellungen",
   "Expand storage"  : "Speicherplatz erweitern",
-  "Memory used up to ": "Speicher zu 'percentage' belegt"
+  "Memory used up to %s%%": "Speicher zu 'percentage' belegt %s%%"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
