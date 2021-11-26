@@ -1588,6 +1588,11 @@ div.crumb.crumbmenu a {
 
 /* preview css*/
 
+#viewer  .richEditor .action-item__menutoggle--default-icon{
+  background-image: var(--icon-more-custom);
+  filter: unset !important;
+}
+
 #viewer {
     margin-top: 4px;
 }
@@ -2153,6 +2158,9 @@ aside .icon-close:hover,
 
     .telekom-link p {
       width:300px !important;
+    }
+    #uploadprogressbar {
+      width: 25px !important;
     }
 }
 
