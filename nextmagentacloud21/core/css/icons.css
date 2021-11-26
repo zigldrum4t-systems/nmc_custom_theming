@@ -538,6 +538,7 @@ aside .icon-star{
 #selectedActionLabel .icon-more{
   min-width: 1.5rem;
   min-height: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .icon-desktop {

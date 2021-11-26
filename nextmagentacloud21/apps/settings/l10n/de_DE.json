@@ -499,6 +499,7 @@
     "of" : "von",
     "Memory"  :"Speicher zu",
     "occupied" : "belegt",
-    "Expand storage"  : "Speicherplatz erweitern"
+    "Expand storage"  : "Speicherplatz erweitern",
+    "Tariff information"  : "Tarifinformationen"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
