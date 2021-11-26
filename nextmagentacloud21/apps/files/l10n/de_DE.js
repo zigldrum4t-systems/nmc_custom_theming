@@ -9,6 +9,6 @@ OC.L10N.register(
     "Help & FAQ": "Hilfe & FAQ",
     "Display settings": "Anzeige-einstellungen",
     "Expand storage"  : "Speicherplatz erweitern",
-    "Memory used up to ": "Speicher zu 'percentage' belegt"
+    "Memory used up to %s%%": "Speicher zu 'percentage' belegt %s%%"
 },
 "nplurals=2; plural=(n != 1);");
