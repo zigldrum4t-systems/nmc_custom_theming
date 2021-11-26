@@ -2163,11 +2163,6 @@ aside .icon-close:hover,
     #uploadprogressbar {
       width: 25px !important;
   }
-  #nextcloud h5,
-  #nextcloud span {
-      padding: 0 !important;
-      font-size: 1rem !important;
-  }
 }
 
 @media screen and (max-width: 640px) {
@@ -2213,7 +2208,7 @@ aside .icon-close:hover,
     #nextcloud h5,
     #nextcloud span {
         padding: 0 !important;
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
     }
     #header .logo-area {
         display: none;
