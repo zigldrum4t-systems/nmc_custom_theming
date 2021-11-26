@@ -757,7 +757,7 @@ form div{
     border: unset !important;
     max-width:198px !important;
     top:24px;
-    border-radius: 4px !important;
+    border-radius: 8px !important;
     box-shadow: var(--scl-shadow-level-2);
   }
 
