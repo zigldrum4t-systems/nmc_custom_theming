@@ -1049,6 +1049,9 @@ div.crumb:last-child {
     padding: 0 10px;
 }
 
+#rich-workspace .menubar{
+  z-index: 50 !important
+}
 #filestable {
     padding-top: 16px;
 }
