@@ -66,6 +66,10 @@ select.primary:hover, button.primary:hover, .button.primary:hover ,
   border-radius: 12px !important;
 }
 
+.modal-body a {
+  color:#e20074 !important;
+}
+
  /* slide - forms  */
 
  #welcome_popup  h2 {
