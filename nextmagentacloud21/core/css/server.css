@@ -26,6 +26,8 @@
  @import url("sharing.css");
 @import url("settings.css");
 @import url("activity.css");
+@import url("welcomePopup.css");
+
 
 
 /* ---------------------------------------------------------------------------- */
@@ -1591,6 +1593,11 @@ div.crumb.crumbmenu a {
 
 /* preview css*/
 
+#viewer  .richEditor .action-item__menutoggle--default-icon{
+  background-image: var(--icon-more-custom);
+  filter: unset !important;
+}
+
 #viewer {
     margin-top: 4px;
 }
@@ -2171,6 +2178,10 @@ aside .icon-close:hover,
 
     .header-menu__carret {
       right: 10.4375rem !important;
+    }
+
+    #uploadprogressbar {
+      width: 25px !important;
     }
 
 }
