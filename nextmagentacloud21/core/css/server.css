@@ -921,7 +921,7 @@ a.menuitem.action:hover>span,
     height: 24px !important;
     min-height: 24px !important;
     opacity: 1;
-    border-color: var(--scl-color-magenta);
+    border-color: var(--scl-color-magenta) !important;
     margin-top: 2px
 }
 
@@ -969,7 +969,7 @@ div.crumb:last-child {
 
 #controls>div.actions.creatable>a:active,#controls>div.actions.creatable>a:focus {
   background: none !important;
-  border-color: #e20074;
+  border-color: #e20074 !important;
 }
 
 #app-navigation-toggle {
@@ -2167,7 +2167,7 @@ aside .icon-close:hover,
     }
 
     .header-menu__carret {
-      right: 10.4375rem !important;
+      right: 7.4375rem !important;
     }
 
 }
@@ -2304,6 +2304,7 @@ aside .icon-close:hover,
       position: absolute;
       right: 0.25rem;
       top: 2rem;
+      padding: 0.063rem 0.125rem 0 0.125rem;
     }
 
     .nmc_spica_wrapper div {
@@ -2370,12 +2371,18 @@ aside .icon-close:hover,
       padding: 0;
    }
    .pending-share-row .fileactions .action-button.accept{
-     background: none;
+      background: none;
    }
    .activitysubject{
-     width: 50%;
+      width: 50%;
    }
-
+   .nmc_spica_wrapper .icon-mail{
+      background-image: var(--icon-email-custom) !important;
+      padding: 0;
+      min-height: 20px;
+      min-width: 20px;
+      margin-bottom: 0.25rem;
+   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2489,7 +2496,12 @@ aside .icon-close:hover,
     text-overflow: ellipsis;
     overflow: hidden;
     width: 2.5rem;
+    height: 0.75rem;
   }
+  .username-lable .right-menu-font {
+    margin-top: 0.0625rem;
+  }
+
 
 }
 

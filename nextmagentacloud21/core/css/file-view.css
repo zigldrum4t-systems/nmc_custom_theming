@@ -690,7 +690,7 @@ table.multiselect #modified {
   color:#e20074 !important;
 }
 
-.icon-history {
+#fileList .icon-history {
   margin:0 0.5rem !important;
   background-position-y:-1px !important;
 }
@@ -715,4 +715,8 @@ table.multiselect #modified {
 
 #app-content-trashbin #headerName-container .headerSizeOpen, #app-content-trashbin  #headerName-container #headerSizeCount {
   display: none;
+}
+
+#app-content-trashbin #selectedActionsList .popovermenu {
+  right: 0;
 }
