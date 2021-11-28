@@ -26,6 +26,7 @@
  @import url("sharing.css");
 @import url("settings.css");
 @import url("activity.css");
+@import url("welcomePopup.css");
 
 
 /* ---------------------------------------------------------------------------- */
@@ -2208,7 +2209,7 @@ aside .icon-close:hover,
     #nextcloud h5,
     #nextcloud span {
         padding: 0 !important;
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
     #header .logo-area {
         display: none;
@@ -2409,7 +2410,7 @@ aside .icon-close:hover,
 @media screen and (max-width: 650px) {
 
   .header-menu__carret {
-    right: 12.4375rem !important;
+    right: 12.4375rem;
   }
 
   #header-menu-unified-search{
