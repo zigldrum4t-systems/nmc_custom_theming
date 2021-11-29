@@ -66,6 +66,7 @@
     background-color: #ffffff;
     border:1px solid #191919;
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
+    display: inline-block !important;
   }
   .personal-settings-setting-box{
     margin-right:32px;
@@ -170,7 +171,7 @@
 
   #activity_notifications{
     padding-top: 0.25rem;
-    max-width: 600px;
+    max-width: 700px;
     margin-bottom: 8rem;
     border-bottom: none;
   }
@@ -292,10 +293,12 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 
   .devices-session{
     padding: 3rem 1rem !important;
+    max-width: 700px;
   }
 
   #security{
     padding-left: 1rem !important;
+    max-width: 700px;
   }
 
   .devices-session .clientslinks {
@@ -492,7 +495,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   #monthly-notifications-settings {
     display: block;
     padding-left: 30px;
-    max-width: 600px;
+    max-width: 700px;
   }
 
 

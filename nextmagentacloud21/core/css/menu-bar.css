@@ -443,7 +443,8 @@
     padding-left: 0 !important;
 }
 
-.header-menu__content>ul>li:last-child>a>div {
+.header-menu__content>ul>li:last-child>a>div,
+#appmenu li[data-id='activity']  {
     display: none;
 }
 
