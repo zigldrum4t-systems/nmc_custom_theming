@@ -5,6 +5,14 @@
     margin-top:unset !important;
 }
 
+ .modal-header {
+  background-color: unset !important;
+}
+
+.modal-mask#nmc_welcome_popup .modal-container {
+  max-height:600px !important;
+}
+
 .modal-header .nmc_welcome_popup-header {
   background-color: #ffffff !important;
   background-image: unset !important;
@@ -48,7 +56,14 @@ select.primary, button.primary, .button.primary ,
 }
 
 .modal-footer {
-  margin:0rem 1rem 1rem 0rem !important;
+  margin:0rem 1.5rem 1.5rem 0rem !important;
+}
+.modal-footer {
+   overflow: unset !important;
+   position: unset !important;
+   display: unset !important;
+   text-align: right;
+   margin-top:2rem !important;
 }
 
 select.primary:hover, button.primary:hover, .button.primary:hover ,
@@ -57,7 +72,24 @@ select.primary:hover, button.primary:hover, .button.primary:hover ,
 }
 
 .modal-body {
-  padding:1rem !important;
+  padding:1.5rem !important;
+}
+
+.modal-mask .modal-body .logo {
+  background-size: cover !important;
+  width: unset !important;
+  height: unset !important;
+  max-height: unset !important;
+  margin: unset !important;
+}
+
+.logo img {
+  max-width:100%;
+  height:100%;
+}
+
+.modal-body .content {
+  padding:1.25rem 0rem;
 }
 
 .modal-container {
@@ -110,8 +142,19 @@ div[contenteditable=true]:hover {
   width: 300px !important;
 }
 
+.image-label {
+  display: inline;
+}
 
-.settings-hint {
+#welcome_popup.section {
+  padding: 1.875rem 1.875rem 0rem 1.875rem !important;
+}
+
+.uploadButton {
+  margin-top:2rem;
+}
+
+.section:not(.section-english) .settings-hint {
   border-bottom: 2px solid #e20074;
   padding-bottom: 0.25rem;
   text-align: center;
@@ -160,5 +203,5 @@ div[contenteditable=true]:hover {
 .button.icon-upload {
 display: inline;
 margin-top: -0.313rem;
-float: right;
+width:auto !important;
 }
