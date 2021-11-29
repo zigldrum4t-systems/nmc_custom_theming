@@ -26,6 +26,8 @@
  @import url("sharing.css");
 @import url("settings.css");
 @import url("activity.css");
+@import url("welcome-modal.css");
+
 
 
 /* ---------------------------------------------------------------------------- */
@@ -1591,6 +1593,10 @@ div.crumb.crumbmenu a {
 
 /* preview css*/
 
+#viewer  .richEditor .action-item__menutoggle--default-icon{
+  filter: unset !important;
+}
+
 #viewer {
     margin-top: 4px;
 }
@@ -2173,6 +2179,13 @@ aside .icon-close:hover,
       right: 7.4375rem !important;
     }
 
+    #uploadprogressbar {
+      width: 25px !important;
+    }
+    .modal-mask#nmc_welcome_popup .modal-container {
+      max-height: 420px !important;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -2262,6 +2275,9 @@ aside .icon-close:hover,
      select#languageinput {
       width:350px;
     }
+    .modal-wrapper {
+      height: 86% !important;
+  }
 
 }
 @media screen and (max-width: 689px) {

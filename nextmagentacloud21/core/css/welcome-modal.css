@@ -1,0 +1,207 @@
+.nmc_welcome_popup-header h2 {
+    float:left;
+    color:#191919 !important;
+    font-weight:bold !important;
+    margin-top:unset !important;
+}
+
+ .modal-header {
+  background-color: unset !important;
+}
+
+.modal-mask#nmc_welcome_popup .modal-container {
+  max-height:600px !important;
+}
+
+.modal-header .nmc_welcome_popup-header {
+  background-color: #ffffff !important;
+  background-image: unset !important;
+  padding:1.5rem !important;
+}
+
+
+#nmc_welcome_popup a.button {
+  height: 40px !important;
+  border-radius: 8px !important;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.625rem 1.5rem !important;
+  background-color: #ffffff;
+  border-color: #191919;
+  margin:0 0.5rem 0 0 !important;
+}
+
+
+#nmc_welcome_popup a.button:hover {
+  border-color: #e20074 !important;
+  color:#e20074 !important;
+}
+
+
+select.primary, button.primary, .button.primary ,
+#add_new_popup {
+    background-color: #e20074 !important;
+    border-color: #e20074 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    height: 40px !important;
+    font-size: 1rem;
+    font-weight: normal;
+    padding:0.625rem 1.5rem !important;
+}
+
+.modal-footer button {
+  margin: unset !important;
+}
+
+.modal-footer {
+  margin:0rem 1.5rem 1.5rem 0rem !important;
+}
+.modal-footer {
+   overflow: unset !important;
+   position: unset !important;
+   display: unset !important;
+   text-align: right;
+   margin-top:2rem !important;
+}
+
+select.primary:hover, button.primary:hover, .button.primary:hover ,
+#add_new_popup:hover {
+  background-color: #f90984 !important;
+}
+
+.modal-body {
+  padding:1.5rem !important;
+}
+
+.modal-mask .modal-body .logo {
+  background-size: cover !important;
+  width: unset !important;
+  height: unset !important;
+  max-height: unset !important;
+  margin: unset !important;
+}
+
+.logo img {
+  max-width:100%;
+  height:100%;
+}
+
+.modal-body .content {
+  padding:1.25rem 0rem;
+}
+
+.modal-container {
+  max-width:672px !important;
+  max-height:600px !important;
+  border-radius: 12px !important;
+}
+
+.modal-body a {
+  color:#e20074 !important;
+}
+
+ /* slide - forms  */
+
+ #welcome_popup  h2 {
+  margin-bottom: 1.5rem !important;
+  font-size: 1.25rem !important;
+}
+
+h3.inlineblock {
+  font-weight: bold !important;
+}
+
+#welcome_popup label div {
+  color:#666666 !important;
+}
+
+#welcome_popup label input{
+  height:48px !important;
+  padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
+  border:1px solid #666666 !important;
+  font-size:1rem;
+  color:#666666 !important;
+}
+
+#welcome_popup textarea, div[contenteditable=true] {
+  padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
+  border:1px solid #666666 !important;
+  font-size:1rem;
+  color:#666666 !important;
+}
+
+#welcome_popup label input:hover,
+#welcome_popup textarea:hover,
+div[contenteditable=true]:hover {
+  border-color:#e20074 !important;
+}
+
+#welcome_popup input, #welcome_popup textarea {
+  width: 540px !important;
+}
+
+.image-label #en-uploadimage,
+.image-label {
+  display:inline;
+}
+
+
+#welcome_popup.section {
+  padding: 1.875rem 1.875rem 0rem 1.875rem !important;
+}
+
+.uploadButton {
+  margin-top:2rem;
+}
+
+.section:not(.section-english) .settings-hint {
+  border-bottom: 2px solid #e20074;
+  padding-bottom: 0.25rem;
+  text-align: center;
+  width: 100px;
+}
+
+.button.icon-upload {
+ border: unset !important;
+ background-color: unset !important;
+}
+
+.section:not(:last-child) {
+  border-bottom: unset !important;
+}
+
+#add_new_popup {
+  background-color: #e20074 !important;
+  border-color: #e20074 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  height: 40px !important;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.625rem 1.5rem!important;
+}
+
+#welcome_popup .icon-upload {
+  background-image: var(--icon-pop-up-upload-image) !important;
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+.field-border {
+  margin-top: 0.625rem;
+  border: 1px solid #666666;
+  padding: 0.75rem;
+  height: 48px;
+  border-radius: 4px;
+  color:#666666 !important;
+}
+
+.field-border:hover {
+  color:#e20074;
+}
+
+.button.icon-upload {
+display: inline;
+margin-top: -0.313rem;
+width:auto !important;
+}
