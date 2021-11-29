@@ -14,6 +14,7 @@
   <?php if ($theme->getiTunesAppId() !== '') { ?>
     <meta name="apple-itunes-app" content="app-id=<?php p($theme->getiTunesAppId()); ?>">
   <?php } ?>
+  <script src="//tags-eu.tiqcdn.com/utag/telekom/mediencenter/dev/utag.js"></script>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="<?php p((!empty($_['application']) && $_['appid'] != 'files') ? $_['application'] : $theme->getTitle()); ?>">
