@@ -2276,6 +2276,9 @@ aside .icon-close:hover,
      select#languageinput {
       width:350px;
     }
+    .modal-wrapper {
+      height: 86% !important;
+  }
 
 }
 @media screen and (max-width: 689px) {

@@ -139,7 +139,11 @@ div[contenteditable=true]:hover {
 }
 
 #welcome_popup input, #welcome_popup textarea {
-  width: 300px !important;
+  width: 540px !important;
+}
+
+.image-label #en-uploadimage{
+  display:inline;
 }
 
 .image-label {
