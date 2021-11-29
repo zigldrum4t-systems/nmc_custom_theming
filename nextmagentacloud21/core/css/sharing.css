@@ -595,7 +595,7 @@ span#global-lookup,
 }
 
 .multiselect__element .option__icon.icon-mail {
-  margin-right:0.25rem !important;
+  margin-right:0.125rem !important;
 }
 
 aside .action-radio__label {
@@ -757,7 +757,7 @@ form div{
     border: unset !important;
     max-width:198px !important;
     top:24px;
-    border-radius: 4px !important;
+    border-radius: 8px !important;
     box-shadow: var(--scl-shadow-level-2);
   }
 
@@ -768,7 +768,7 @@ form div{
 
   .custom-select .items div {
     padding-left: 2.375rem !important;
-    padding-bottom: 0.188rem !important;
+    padding-bottom: 0.25rem !important;
   }
 
   .custom-select .items div.selectedItem{
@@ -821,7 +821,7 @@ form div{
   }
 
   .items div {
-    min-height:27px !important
+    min-height:32px !important
   }
 
   .custom-select .items .selectedItem span {
