@@ -5,6 +5,10 @@
 #container .section.activity-section.group h2 {
   margin-left: unset !important;
   margin-bottom: 1.5rem !important;
+
+}
+
+#container .section.activity-section.group h2 span{
   font-size: 1.25rem !important;
 }
 
@@ -13,14 +17,19 @@
   color:#e20074 !important;
   font-weight: normal !important;
 }
+.activitysubject .filename:hover,
+.activitysubject strong:hover{
+  text-decoration: underline !important;
+}
 
-.activity.box .messagecontainer {
+#app-content-nmc_files_activity .activity.box .messagecontainer {
   margin-bottom: 1rem !important;
 }
 .activity.box .preview ,
 .app-activity #app-sidebar,
-.activitysubject .avatar{
-  display: none;
+.activitysubject .avatar,
+#activity_notifications_msg{
+  display: none !important;
 }
 
 #container{
@@ -33,6 +42,9 @@
 .activity.box .activitytime {
   color:#191919 !important;
   font-size: 1rem !important;
+  padding-top: 0.25rem;
+  padding:  0.25rem 0 0 0 !important;
+  margin: 0;
 }
 
 .activity-icon img {
@@ -58,6 +70,7 @@
   font-weight: normal;
   margin-bottom: 1rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .del-files-activity-div {
@@ -80,4 +93,12 @@
 }
 .activity-icon {
   margin-top:0 !important;
+}
+
+#app-content-nmc_files_activity #app-content{
+  width: 100%;
+}
+
+#app-content-nmc_files_activity .activity-previews{
+  margin-left: 0 !important;
 }

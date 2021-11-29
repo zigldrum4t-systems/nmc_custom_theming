@@ -43,7 +43,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'Next Magenta Cloud';
+		return 'Magenta Cloud';
 	}
 
 	/**
@@ -51,7 +51,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return 'NextMagentaCloud';
+		return 'MagentaCloud';
 	}
 
 	/**
@@ -59,7 +59,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'NextMagentaCloud';
+		return 'MagentaCloud';
 	}
 
 	/**
@@ -137,9 +137,9 @@ class OC_Theme {
 		];
 	}
 
-	public function addCustomScript() {
-		Util::addScript('brandbar');
-	}
+	// public function addCustomScript() {
+	// 	Util::addScript('brandbar');
+	// }
 
   public function __construct() {
 		\OCP\Util::addScript('core', 'customutils');

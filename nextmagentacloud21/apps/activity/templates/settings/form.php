@@ -49,7 +49,7 @@
           unset($_['activityGroups']['calendar']);
           unset($_['activityGroups']['other']);
       }
-      $_['activityGroups']['files']['name'] = 'Activity';
+      $_['activityGroups']['files']['name'] = ($l->t('Activity'));
   ?>
 
 

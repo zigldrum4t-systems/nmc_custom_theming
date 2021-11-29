@@ -232,7 +232,7 @@
 
 /*** Right menuitems ***/
 
-.material-design-icon__svg {
+.unified-search .material-design-icon__svg {
     display: none;
 }
 
@@ -329,10 +329,18 @@
 }
 
 .nmc_spica_wrapper .has-unread {
-    margin-top: -24px;
+    margin-top: -20px;
     margin-left: -18px;
     color: #FFFFFF !important;
-    font-weight: bold !important;
+    font-weight: 700 !important;
+    height: 0.875rem;
+    font-size: 0.688rem;
+    padding: 0.063rem 0.25rem 0 0.25rem;
+    border-radius: 20px;
+    vertical-align: middle;
+    line-height: unset;
+    min-width: 0.625rem;
+    background-color: #E20074;
 }
 .nmc_spica_wrapper .icon-mail{
     margin-right: 0.5rem;
@@ -435,7 +443,8 @@
     padding-left: 0 !important;
 }
 
-.header-menu__content>ul>li:last-child>a>div {
+.header-menu__content>ul>li:last-child>a>div,
+#appmenu li[data-id='activity']  {
     display: none;
 }
 
@@ -579,10 +588,11 @@
 
 #header .header-left nav .menu,
 #header .header-right div .menu {
-    padding: 1.5rem 1rem;
+    padding: 0.813rem 0.625rem;
     min-width: 176px;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
+    border-radius:8px !important;
 }
 
 #header .header-left nav .menu #apps ul li a:hover,

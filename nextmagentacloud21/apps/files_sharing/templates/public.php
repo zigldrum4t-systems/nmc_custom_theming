@@ -122,7 +122,7 @@
           <div class="informNow">
             <a href="https://www.magentacloud.de" id="downloadFile" class="button">
               <span class="icon icon-download"></span>
-              <span class="text">Inform Now</span>
+              <span class="text"><?php p($l->t('Inform Now'))?></span>
             </a>
           </div>
         </div>

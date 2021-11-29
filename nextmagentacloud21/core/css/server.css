@@ -126,11 +126,8 @@ section {
     top: 185px !important;
     height: calc(100% - 190px) !important;
 }
-#app-navigation-vue{
-  height: calc(100% - 250px) !important;
-}
 
-#app-navigation:not(.vue) ul {
+#app-navigation:not(.vue) ul,#app-navigation-vue ul {
     padding-top: 4rem;
 }
 
@@ -449,16 +446,6 @@ aside {
     height: 100%;
 }
 
-/* .content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1236px;
-} */
-
-/* .content.app-photos{
-  width:100% !important;
-} */
-
 #content>.container-fixed, #content-vue>.container-fixed  {
     position: relative;
     display: flex;
@@ -476,8 +463,11 @@ aside {
 .app-photos .app-navigation__list .app-navigation-entry__title {
     line-height: 44px !important;
   }
+.app-photos .app-navigation--close {
+    margin-left: -190px;
+}
 
-
+/**responsive **/
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
     .brandbar>.container-fixed {
         width: 1236px;
@@ -591,7 +581,7 @@ aside {
         width: 352px !important;
     }
     #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -655,6 +645,20 @@ aside {
     #filestable.view-grid tbody {
         row-gap: 16px !important;
     }
+    .pending-share-row .fileactions .button-label{
+      display: none;
+     }
+     .pending-share-row .fileactions .icon{
+        display: block !important;
+     }
+     .pending-share-row .fileactions .action-button {
+        border: 0;
+        padding: 0;
+     }
+     .pending-share-row .fileactions .action-button.accept{
+       background: none;
+     }
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -691,10 +695,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #app-settings-header .settings-button {
     display: block;
-    height: 44px;
+    height: 20px;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0rem 0.5rem 0rem !important;
     background-image: var(--icon-triangle-n-e20074);
     background-position: 14px center;
     background-repeat: no-repeat;
@@ -713,6 +717,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 
+
 /*-------------------MemoryUsed Left Nav------------------------------*/
 
 .avlspace {
@@ -727,7 +732,7 @@ input[type="checkbox"].checkbox+label:before:hover {
 }
 
 .totalspace {
-    font-weight: 600;
+    font-weight: 400;
     font-size: inherit;
     padding-left: 3px;
 }
@@ -780,12 +785,17 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 /*----right-click-menu------*/
 
+#rightClickMenu .action-2{
+  display: none;
+}
+
 #rightClickMenu,
 .fileActionsMenu {
     margin: 0;
-    padding: 0.813rem 0.125rem;
+    padding: 0.813rem 0.625rem;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
+    border-radius: 8px !important;
 }
 
 #rightClickMenu span::first-letter {
@@ -1008,7 +1018,7 @@ div.crumb:last-child {
     margin-top: -38px !important;
 }
 
-#app-navigation.app-navigation-translation {
+#app-navigation.app-navigation-translation,#app-navigation-vue.app-navigation-translation {
     top: 120px !important;
 }
 
@@ -1039,6 +1049,9 @@ div.crumb:last-child {
     padding: 0 10px;
 }
 
+#rich-workspace .menubar{
+  z-index: 50 !important
+}
 #filestable {
     padding-top: 16px;
 }
@@ -1052,7 +1065,7 @@ div.crumb:last-child {
 }
 
 #rich-workspace #editor-session-list .save-status{
-    padding-right: 0.25rem !important;
+    padding-right: 1.25rem !important;
     min-width: unset !important;
     top:0 !important;
 }
@@ -1060,9 +1073,8 @@ div.crumb:last-child {
 /* Add Button*/
 
 .newFileMenu {
-    padding: 1rem;
+    padding: 0.813rem 0.625rem;
     box-shadow: var(--scl-shadow-level-2);
-    width: 235px !important;
     border-radius: 8px;
 }
 
@@ -1110,14 +1122,12 @@ div.crumb:last-child {
 
 button:not(:disabled):not(.primary):hover,
 button:not(:disabled):not(.primary):focus,
-button:not(:disabled):not(.primary).active,
 .button:not(:disabled):not(.primary):hover,
 .button:not(:disabled):not(.primary):focus,
-.button:not(:disabled):not(.primary).active,
 .pager li a:not(:disabled):not(.primary):hover,
 .pager li a:not(:disabled):not(.primary):focus,
 .pager li a:not(:disabled):not(.primary).active {
-    border-color: var(--scl-color-magenta) !important;
+    border-color: unset !important;
 }
 
 .menubar button.icon-undo,
@@ -1154,9 +1164,9 @@ button:not(:disabled):not(.primary).active,
 
 .submenu .popovermenu {
     box-shadow: var(--scl-shadow-level-2);
-    padding: 1rem 1rem 1.5rem 0.5rem;
+    padding: 0.813rem 0.625rem;
     border-radius: 8px;
-    width: 10rem;
+    width: 178px;
     margin-top: 0.3125rem;
 }
 
@@ -1226,7 +1236,7 @@ li>.menuitem[class*=' icon-'] {
 }
 
 .popover__wrapper .popover__inner {
-    padding: 1.5rem 1rem 1.5rem 1rem !important;
+    padding: 0.813rem 1.5rem 0.813rem 0.625rem !important;
     border-radius: 8px;
 }
 
@@ -1938,6 +1948,10 @@ iframe.viewer__file {
 
 /*** Custom conflict dialog ******************************************************/
 
+#oc-dialog-filepicker-content .emptycontent {
+  margin-top:1rem !important;
+}
+
 .oc-conflict-pre-dlg {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
@@ -1958,7 +1972,7 @@ iframe.viewer__file {
     text-overflow: ellipsis !important;
     font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
     border: 1px solid #191919 !important;
-    ;
+    padding:0.375rem !important;
 }
 
 .oc-conflict-pre-dlg-replace-button {
@@ -2012,7 +2026,8 @@ iframe.viewer__file {
     background-size: 1.5rem 1.5rem !important;
 }
 
-.icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after{
+.icon-loading-small-dark,.icon-loading-small,.icon-loading-small:after, .icon-loading-small-dark:after,
+.action-share .icon-loading:after {
   display: none;
 }
 
@@ -2021,7 +2036,16 @@ iframe.viewer__file {
   color: #e20074 !important;
 }
 
-.app-navigation-entry.active {
+.app-photos .app-navigation-entry.active span {
+  color: #e20074 !important;
+}
+
+.app-photos .app-navigation-entry.active .app-navigation-entry-icon ,
+.app-photos .app-navigation-entry:hover .app-navigation-entry-icon {
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+.app-photos .app-navigation-entry.active {
   background-color: var(--color-background-hover) !important;
 }
 
@@ -2029,6 +2053,49 @@ iframe.viewer__file {
      display:none;
  }
 
+ .app-navigation-entry .app-navigation-entry-link .app-navigation-entry-icon,
+  .app-navigation-entry .app-navigation-entry-div .app-navigation-entry-icon {
+   background-size: unset !important;
+ }
+
+ li.app-navigation-entry:nth-child(1),
+ li.app-navigation-entry:nth-child(5),
+ li.app-navigation-entry:nth-child(7),
+ li.app-navigation-entry:nth-child(8),
+ li.app-navigation-entry:nth-child(6),
+ #app-settings-content .section h2 {
+   display: none !important;
+ }
+
+
+ .app-navigation-entry-icon.icon-share {
+   margin-top:0.125rem !important;
+ }
+
+
+ .app-photos input[type='checkbox'].checkbox + label:before,
+ .app-photos input[type='radio'].checkbox + label:before {
+  margin: 0 0.5rem 0.188rem 0.188rem !important;
+ }
+
+ #app-settings-content {
+   padding:0rem 0rem 0rem 1rem !important;
+ }
+
+ #app-settings-content input[type='checkbox'].checkbox+label {
+  line-height: 1 !important;
+}
+
+.app-photos .section {
+  padding:unset !important;
+}
+
+ .oc-dialog .oc-dialog-close:hover,
+#uploadprogresswrapper .icon-close:hover,
+aside .icon-close:hover,
+.oc-conflict-pre-dlg-close-div a:hover {
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
    /*photo-gallery-icon*/
 
    .app-photos [class^='icon-'],
@@ -2038,11 +2105,11 @@ iframe.viewer__file {
      }
 
      .icon-video-white {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%);
-      z-index: 20;
+      position: absolute !important;
+      top: 40% !important;
+      left: 50% !important;
+      transform: translate(-50%) !important;
+      z-index: 20 !important;
     }
 
 /*Responsive Styling*/
@@ -2071,6 +2138,40 @@ iframe.viewer__file {
         padding-top: 0.5rem;
         padding-bottom: 1rem;
     }
+    .personal-settings-setting-box .section input[type='text'],
+    .personal-settings-setting-box .section input[type='email'],
+     #webdav-address input[type='text'], #security input[type='text'] {
+       width:290px !important;
+     }
+     select#languageinput {
+      width:290px !important;
+    }
+    .para-2 {
+      max-width:300px;
+    }
+
+    #body-settings #quota {
+      width:290px;
+    }
+
+    .telekom-link p {
+      width:300px !important;
+    }
+
+    #nextcloud h5, #nextcloud span {
+      font-size: 1rem !important;
+    }
+    .actions-selected span:nth-child(2){
+      display:none;
+    }
+
+    #selectedActionsList .popovermenu {
+      right: -50px;
+    }
+
+    .header-menu__carret {
+      right: 10.4375rem !important;
+    }
 
 }
 
@@ -2089,6 +2190,12 @@ iframe.viewer__file {
     .brand-footer {
         position: relative;
         padding: 1rem 0 1.5rem 0;
+    }
+    #personal-settings .brand-footer {
+        position: fixed;
+    }
+    #personal-settings #tarrifInfo {
+      margin-bottom: 5.25rem;
     }
     .brand-footer .brand-footer-bar {
         justify-content: center !important;
@@ -2111,7 +2218,7 @@ iframe.viewer__file {
     #nextcloud h5,
     #nextcloud span {
         padding: 0 !important;
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
     #header .logo-area {
         display: none;
@@ -2141,6 +2248,19 @@ iframe.viewer__file {
       max-width: 312px !important;
       min-width: 312px !important;
       margin-left: -9.75rem !important;
+    }
+    .action-restore.permanent span:not(.icon) {
+      display: none;
+    }
+
+    .personal-settings-setting-box .section input[type='text'],
+    .personal-settings-setting-box .section input[type='email'],
+     #webdav-address input[type='text'], #security input[type='text'] {
+       width:350px;
+     }
+
+     select#languageinput {
+      width:350px;
     }
 
 }
@@ -2178,9 +2298,22 @@ iframe.viewer__file {
     }
     #contactsmenu,
     #settings .menutoggle,
-    .search-outer a.header-menu__trigger {
+    .nmc_spica_wrapper,
+    .search-outer a.header-menu__trigger{
         flex-direction: column;
     }
+
+    .nmc_spica_wrapper .has-unread {
+      position: absolute;
+      right: 0.25rem;
+      top: 2rem;
+    }
+
+    .nmc_spica_wrapper div {
+      font-size: 0.625rem;
+      color: var(--scl-color-grey-90);
+    }
+
     #appmenu {
         display: none;
     }
@@ -2226,6 +2359,26 @@ iframe.viewer__file {
    #app-navigation-vue{
      left:0 !important
    }
+   .app-navigation[data-v-36d636e7]:not(.app-navigation--close) {
+      margin-left: 0;
+   }
+   .pending-share-row .fileactions .button-label{
+    display: none;
+   }
+   .pending-share-row .fileactions .icon{
+      display: block !important;
+   }
+   .pending-share-row .fileactions .action-button {
+      border: 0;
+      padding: 0;
+   }
+   .pending-share-row .fileactions .action-button.accept{
+     background: none;
+   }
+   .activitysubject{
+     width: 50%;
+   }
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2263,25 +2416,29 @@ iframe.viewer__file {
     }
 }
 
+@media screen and (max-width: 650px) {
+
+  .header-menu__carret {
+    right: 12.4375rem;
+  }
+
+  #header-menu-unified-search{
+    position: fixed !important;
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-height: 700px) {
     #app-navigation:not(.vue) ul {
         padding-top: 0;
     }
 }
 
+
 @media screen and (max-width: 420px) {
-  .personal-settings-setting-box .section input[type='text'],
-   .personal-settings-setting-box .section input[type='email'] {
-     width:auto !important;
-  }
-  .telekom-link p {
-  width:364px !important;
-  }
-  select#languageinput {
-    width:auto !important;
-  }
-  #body-settings #quota {
-    width:320px !important
+  #headerName-container .headerSizeOpen, #headerName-container #headerSizeCount {
+      display: none;
   }
 }
 
@@ -2319,15 +2476,24 @@ iframe.viewer__file {
     margin-left: 5.4rem;
   }
 
-  table.multiselect th .columntitle.name {
-    margin-left: 0 !important;
-    padding-left: 0.625rem !important;
+  #app-content-trashbin #selectedActionsList .popovermenu {
+    right:0 !important
   }
-
 
   #app-content-trashbin table th .selectedActions {
     float: unset !important;
   }
+
+  table.multiselect th .columntitle.name {
+    padding-left: 0 !important;
+  }
+
+  .username-lable{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 2.5rem;
+  }
+
 }
 
 @media all and (min-width: 1024px) and (max-width: 1072px){
@@ -2335,5 +2501,4 @@ iframe.viewer__file {
     padding-right: 2rem;
   }
 }
-
 /*Responsive Styling*/

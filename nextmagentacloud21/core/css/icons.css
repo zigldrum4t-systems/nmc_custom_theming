@@ -406,14 +406,16 @@ div.crumb {
 .advanced-settings label:hover span.icon-triangle-s,
 .advanced-settings label:active span.icon-triangle-s,
 .sharing-entry__desc select,
-.custom-select  span.icon-triangle-s{
+.custom-select  span.icon-triangle-s,
+.columntitle:hover span.icon-triangle-s{
     background-image: var(--icon-triangle-s-e20074) !important;
 }
 
 .filelist-container .icon-triangle-n:hover,
 #filestable .icon-triangle-n:hover,
 .advanced-settings label:hover span.icon-triangle-n,
-.advanced-settings label:active span.icon-triangle-n {
+.advanced-settings label:active span.icon-triangle-n,
+.columntitle:hover span.icon-triangle-n {
     background-image: var(--icon-triangle-n-e20074);
 }
 
@@ -428,6 +430,9 @@ aside .custom-select .disabledRow span.icon-triangle-s{
 }
 
 
+#filestable .icon-public {
+  background-image: var(--icon-user-e20074);
+}
 
 /*close-dialog-icons*/
 
@@ -452,7 +457,7 @@ aside .icon-close,
 }
 
 .icon-star-dark,
-aside .icon-starred {
+.icon-favorite {
     background-image: var( --icon-yellow-fav) !important;
 }
 
@@ -531,7 +536,9 @@ aside .icon-star{
 }
 
 #selectedActionLabel .icon-more{
-  background-image: var(--icon-more-magenta) !important;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .icon-desktop {
@@ -567,10 +574,6 @@ aside .icon-star{
   background-image: url('../../core/img/filetypes/unknown-file.svg') !important;
 }
 
-#fileList [data-mounttype="shared-root"] .thumbnail {
-  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
-}
-
 #fileList [data-icon="/core/img/filetypes/folder-shared.svg"] .thumbnail {
     background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
   }
@@ -594,4 +597,51 @@ aside .icon-star{
 
 .icon-share-link {
     background-image: var(--icon-share-link) !important;
+}
+
+.icon-share-magenta-user {
+    background-image: var(--icon-user-external-magenta) !important;
+}
+
+.icon-approve-share-blue {
+  background-image: var(--icon-approve-share-blue) !important;
+}
+
+.icon-reject-share-blue{
+  background-image: var(--icon-rejet-share-blue) !important;
+}
+
+.option-share .icon-shared,
+#filestable .icon-shared {
+  background-image: var(--icon-user-000-org) !important;
+}
+
+/*photo-gallery-left-nav-icon-*/
+
+.allmedia {
+  background-image: var(--icon-media-custom) !important;
+}
+
+.icon-video {
+  background-image: var(--icon-video-custom) !important;
+}
+
+.allphotos{
+  background-image: var(--icon-photo-camera) !important;
+}
+
+.nav-icon-extstoragemounts{
+  background-image: var(--icon-nav-exts-custom) !important;
+}
+
+.filesSelectionMenu .icon-close{
+  background-image: var(--icon-magenta-cancel) !important;
+}
+
+.filesSelectMenu .icon-close{
+  background-image: var(--icon-custom-cancel) !important;
+}
+
+.pending-share-row[data-mime="httpd/unix-directory"] .thumbnail {
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }

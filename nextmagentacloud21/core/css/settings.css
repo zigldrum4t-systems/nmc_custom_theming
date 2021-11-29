@@ -51,7 +51,7 @@
   #webdav-address input[type='text'],
   #security input[type='text']
   {
-    width: 400px !important;
+    width: 400px;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
     background-color: #e5e5e5;
@@ -60,7 +60,7 @@
   }
 
   select#languageinput{
-    width: 400px !important;
+    width: 400px ;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem;
     background-color: #ffffff;
@@ -208,7 +208,7 @@
   }
 
   #activity_notifications .mails-report-section p {
-    color: #666;
+    color: #666666;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
@@ -331,7 +331,6 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     margin-top: 0.5rem;
     padding: 0.563rem 1.5rem !important;
     border-color: #e20074 !important;
-    background-color: #e20074;
     color: #ffffff !important;
     display: inline-block;
     border-radius: 8px;
@@ -341,7 +340,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     cursor: pointer;
     font-weight: 400;
     background-color: #e20074 !important;
-	margin-bottom: 8rem;
+	  margin-bottom: 8rem;
   }
 
   .app-password-code a{
@@ -478,6 +477,8 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 
   #monthly-notifications-settings .settings-hint{
     margin-top: 8px !important;
+    opacity: unset;
+    color: #666666;
   }
 
   #monthly-notifications-settings h1{
