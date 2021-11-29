@@ -251,7 +251,8 @@ div.crumb {
     background-image: var(--icon-fav-magenta) !important;
 }
 
-#app-navigation .nav-icon-files {
+#app-navigation .nav-icon-files,
+.app-navigation-entry-icon.icon-files-dark {
     background-image: var( --icon-folder-custom-nav) !important;
 }
 
@@ -445,7 +446,8 @@ aside .icon-close,
 
 /** RIGHT click icons**/
 
-.icon-starred {
+.icon-starred,
+.app-navigation-entry-icon.icon-favorite {
     background-image: var(--icon-favourite-custom) !important;
 }
 
@@ -489,8 +491,10 @@ aside .icon-starred {
 
 
 /*user-icon*/
-.icon-mail-white, .icon-mail.icon-white{
-  background-image: var(--icon-user-custom)!important;
+.icon-mail-white, .icon-mail.icon-white,
+.app-navigation-entry-icon.icon-shared,
+.app-navigation-entry-icon.icon-share {
+  background-image: var(--icon-user-custom) !important;
   background-position-y: 5px;
 }
 
