@@ -26,7 +26,7 @@
  @import url("sharing.css");
 @import url("settings.css");
 @import url("activity.css");
-@import url("welcomeModal.css");
+@import url("welcome-modal.css");
 
 
 
@@ -1594,7 +1594,6 @@ div.crumb.crumbmenu a {
 /* preview css*/
 
 #viewer  .richEditor .action-item__menutoggle--default-icon{
-  background-image: var(--icon-more-custom);
   filter: unset !important;
 }
 

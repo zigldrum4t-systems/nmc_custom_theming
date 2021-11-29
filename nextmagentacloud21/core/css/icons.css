@@ -187,7 +187,8 @@ div.crumb {
 }
 
 .icon-more,
-.action-item__menutoggle--default-icon {
+.action-item__menutoggle--default-icon,
+#viewer  .richEditor .action-item__menutoggle--default-icon {
     background-image: var(--icon-more-custom);
 }
 
