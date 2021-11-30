@@ -188,7 +188,8 @@ div.crumb {
 
 .icon-more,
 .action-item__menutoggle--default-icon,
-#viewer  .richEditor .action-item__menutoggle--default-icon {
+#viewer  .richEditor .action-item__menutoggle--default-icon,
+.modal-mask--dark#viewer   .action-item__menutoggle--default-icon  {
     background-image: var(--icon-more-custom);
 }
 
@@ -440,7 +441,8 @@ aside .custom-select .disabledRow span.icon-triangle-s{
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close,
 aside .icon-close,
-.oc-conflict-pre-dlg-close-div a  {
+.oc-conflict-pre-dlg-close-div a ,
+.nmc_welcome_popup-header button.modal-default-button {
     background: var(--icon-dialog-close) !important;
     background-repeat: no-repeat !important;
 }
