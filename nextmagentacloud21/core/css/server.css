@@ -585,6 +585,9 @@ aside {
     #fileList td a a.action.action-menu {
         display: none !important;
     }
+    #nmc_welcome_popup .modal-header {
+      width: unset !important;
+   }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -605,6 +608,9 @@ aside {
     #filestable.view-grid tbody {
         row-gap: 0px !important;
     }
+    #nmc_welcome_popup .modal-header {
+      width: unset !important;
+  }
 }
 
 @media screen and (min-width: 1599px) {
@@ -627,6 +633,9 @@ aside {
     }
     aside {
         width: 288px !important;
+    }
+    #nmc_welcome_popup .modal-header {
+      width: unset !important;
     }
 }
 
@@ -1593,9 +1602,11 @@ div.crumb.crumbmenu a {
 
 /* preview css*/
 
-#viewer  .richEditor .action-item__menutoggle--default-icon{
+#viewer  .richEditor .action-item__menutoggle--default-icon {
   filter: unset !important;
 }
+
+
 
 #viewer {
     margin-top: 4px;
@@ -2099,7 +2110,8 @@ iframe.viewer__file {
  .oc-dialog .oc-dialog-close:hover,
 #uploadprogresswrapper .icon-close:hover,
 aside .icon-close:hover,
-.oc-conflict-pre-dlg-close-div a:hover {
+.oc-conflict-pre-dlg-close-div a:hover,
+.nmc_welcome_popup-header button.modal-default-button:hover {
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
    /*photo-gallery-icon*/
