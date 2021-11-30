@@ -104,10 +104,8 @@ select.primary:hover, button.primary:hover, .button.primary:hover ,
 .nmc_welcome_popup-header button.modal-default-button {
   background-color: unset!important;
   border: unset!important;
-  color: unset !important;
   width:24px !important;
   height: 24px !important;
-  background-image: var(--icon-dialog-close);
   background-repeat:no-repeat;
   padding:unset !important;
   float:right;
