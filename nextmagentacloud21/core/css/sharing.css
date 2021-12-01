@@ -740,6 +740,14 @@ form div{
    background-color:unset !important;
   }
 
+  aside .multiselect.sharing-input.multiselect--disabled.multiselect--single .multiselect__tags input.multiselect__input{
+    top:unset !important;
+  }
+
+ aside .multiselect.sharing-input.multiselect--disabled.multiselect--single:hover .multiselect__tags {
+    border-color:unset !important;
+  }
+
   .sharing-entry.sharing-entry__reshare .sharing-entry__desc h5 {
     white-space: unset !important;
     text-overflow: unset !important;
@@ -751,7 +759,7 @@ form div{
      max-width: 190px !important;
   }
 
-  .custom-select.select div {
+  .custom-select .disabledRow h5 {
     max-width:150px;
   }
 

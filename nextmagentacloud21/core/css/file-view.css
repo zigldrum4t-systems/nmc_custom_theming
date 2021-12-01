@@ -617,6 +617,11 @@ table.multiselect #modified {
 .columntitle:hover span {
   color:#e20074 !important;
 }
+
+table th#headerDate, table td.date, table th.column-last, table td.column-last {
+  max-width: unset !important;
+}
+
 /*received-shares*/
 
 .fileactions .action .avatar img,
