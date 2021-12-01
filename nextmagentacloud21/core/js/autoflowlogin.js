@@ -4,4 +4,3 @@ if (jQuery('#redirect-link a').length > 0) {
   window.location = jQuery('#redirect-link a').attr('href');
 }
 
-console.log('autoflowlogin js loadded');
