@@ -66,6 +66,7 @@
     background-color: #ffffff;
     border:1px solid #191919;
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
+    display: inline-block !important;
   }
   .personal-settings-setting-box{
     margin-right:32px;

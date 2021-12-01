@@ -128,6 +128,9 @@ table.multiselect thead #selectedMenu {
   background-size: 20px !important;
 }
 
+#filestable .fileactions .icon-share-magenta-user {
+  margin-left:0.5rem;
+}
 #filestable:not(.view-grid) tr td.selection>.selectCheckBox+label {
     width: 54px;
     padding: 1rem 0rem !important;
@@ -614,6 +617,11 @@ table.multiselect #modified {
 .columntitle:hover span {
   color:#e20074 !important;
 }
+
+table th#headerDate, table td.date, table th.column-last, table td.column-last {
+  max-width: unset !important;
+}
+
 /*received-shares*/
 
 .fileactions .action .avatar img,

@@ -595,7 +595,7 @@ span#global-lookup,
 }
 
 .multiselect__element .option__icon.icon-mail {
-  margin-right:0.25rem !important;
+  margin-right: -0.125rem !important;
 }
 
 aside .action-radio__label {
@@ -736,6 +736,32 @@ form div{
    height:32px !important;
   }
 
+  aside .multiselect.sharing-input.multiselect--disabled.multiselect--single {
+   background-color:unset !important;
+  }
+
+  aside .multiselect.sharing-input.multiselect--disabled.multiselect--single .multiselect__tags input.multiselect__input{
+    top:unset !important;
+  }
+
+ aside .multiselect.sharing-input.multiselect--disabled.multiselect--single:hover .multiselect__tags {
+    border-color:unset !important;
+  }
+
+  .sharing-entry.sharing-entry__reshare .sharing-entry__desc h5 {
+    white-space: unset !important;
+    text-overflow: unset !important;
+    overflow: unset !important;
+    max-width: unset !important;
+  }
+
+  .sharing-entry.sharing-entry__reshare  .sharing-entry__desc {
+     max-width: 190px !important;
+  }
+
+  .custom-select .disabledRow h5 {
+    max-width:150px;
+  }
 
   /*select-box*/
 
@@ -757,7 +783,7 @@ form div{
     border: unset !important;
     max-width:198px !important;
     top:24px;
-    border-radius: 4px !important;
+    border-radius: 8px !important;
     box-shadow: var(--scl-shadow-level-2);
   }
 
@@ -768,7 +794,7 @@ form div{
 
   .custom-select .items div {
     padding-left: 2.375rem !important;
-    padding-bottom: 0.188rem !important;
+    padding-bottom: 0.25rem !important;
   }
 
   .custom-select .items div.selectedItem{
@@ -821,7 +847,7 @@ form div{
   }
 
   .items div {
-    min-height:27px !important
+    min-height:32px !important
   }
 
   .custom-select .items .selectedItem span {
@@ -854,6 +880,7 @@ form div{
     color: #E20074 !important;
   }
 
+
   .mx-datepicker-main .mx-calendar-header .mx-btn-icon-double-left,
   .mx-datepicker-main .mx-time-header .mx-btn-icon-double-left,
   .mx-datepicker-main .mx-calendar-header .mx-btn-icon-left,
@@ -882,6 +909,10 @@ form div{
 }
  .action-button p {
   width:190px !important;
+}
+
+.email-share-link .sharing-entry__actions {
+  margin-left: 2.75rem !important;
 }
 
 /***pending shares***/
