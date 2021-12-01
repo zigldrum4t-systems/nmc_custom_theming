@@ -11,7 +11,7 @@ OC.L10N.register(
         "Read, write and upload" : "Kann bearbeiten",
         "File drop (upload only)" : "Sammelbox",
         "Read and write" : "Kann bearbeiten",
-        "Add link" : "Link hinzufügen",
+        "Add link" : "Link erstellen",
         "Personal sharing via email" : "Persönliche Freigabe per Mail",
         "Resharing is not allowed." : "Das Weiterteilen ist nicht erlaubt.",
         "Resharing is allowed." : "Erneutes Teilen ist erlaubt.",

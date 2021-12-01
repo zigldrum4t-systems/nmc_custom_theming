@@ -1048,13 +1048,13 @@ var headers = {
      */
     createShare: function createShare(_ref) {
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var path, permissions, shareType, shareWith, publicUpload, password, sendPasswordByTalk, expireDate, label, hideDownload, _request$data, request, _error$response, _error$response$data, _error$response$data$, _error$response$data$2, errorMessage;
+        var path, permissions, shareType, shareWith, publicUpload, password, sendPasswordByTalk, expireDate, label, hideDownload, note, _request$data, request, _error$response, _error$response$data, _error$response$data$, _error$response$data$2, errorMessage;
 
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                path = _ref.path, permissions = _ref.permissions, shareType = _ref.shareType, shareWith = _ref.shareWith, publicUpload = _ref.publicUpload, password = _ref.password, sendPasswordByTalk = _ref.sendPasswordByTalk, expireDate = _ref.expireDate, label = _ref.label, hideDownload = _ref.hideDownload;
+                path = _ref.path, permissions = _ref.permissions, shareType = _ref.shareType, shareWith = _ref.shareWith, publicUpload = _ref.publicUpload, password = _ref.password, sendPasswordByTalk = _ref.sendPasswordByTalk, expireDate = _ref.expireDate, label = _ref.label, hideDownload = _ref.hideDownload, note = _ref.note;
                 _context.prev = 1;
                 _context.next = 4;
                 return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(shareUrl, {
@@ -1067,7 +1067,8 @@ var headers = {
                   sendPasswordByTalk: sendPasswordByTalk,
                   expireDate: expireDate,
                   label: label,
-                  hideDownload: hideDownload
+                  hideDownload: hideDownload,
+                  note: note
                 });
 
               case 4:
@@ -3328,7 +3329,7 @@ var shareWithTitle = function shareWithTitle(share) {
       });
     }
   } else {
-    return t('files_sharing', 'Shared with you by {owner}', {
+    return t('files_sharing', 'Shared by {owner}', {
       owner: share.ownerDisplayName
     }, undefined, {
       escape: false
@@ -12693,7 +12694,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var _this = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var share, _this$$refs$multisele, _this$$refs$multisele2, _this$$refs$multisele3, path, _share;
+        var share, _this$$refs$multisele, _this$$refs$multisele2, _this$$refs$multisele3, path;
 
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
@@ -12738,51 +12739,49 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   sendPasswordByTalk: _this.sendPasswordByTalk,
                   expireDate: _this.share.expireDate,
                   hideDownload: _this.hideDownload,
+                  note: _this.shareNote,
                   permissions: _this.fileInfo.sharePermissions & OC.getCapabilities().files_sharing.default_permissions & _this.share.permissions
                 });
 
               case 15:
-                _share = _context.sent;
                 // add notes to share if any
-                _this.share = _share;
-                _this.share.note = _this.shareNote;
-
-                _this.queueUpdate('note'); // reset the search string when done
+                // this.share = share
+                // this.share.note = this.shareNote
+                // this.queueUpdate('note')
+                // reset the search string when done
                 // FIXME: https://github.com/shentao/vue-multiselect/issues/633
-
-
                 if ((_this$$refs$multisele = _this.$refs.multiselect) !== null && _this$$refs$multisele !== void 0 && (_this$$refs$multisele2 = _this$$refs$multisele.$refs) !== null && _this$$refs$multisele2 !== void 0 && (_this$$refs$multisele3 = _this$$refs$multisele2.VueMultiselect) !== null && _this$$refs$multisele3 !== void 0 && _this$$refs$multisele3.search) {
                   _this.$refs.multiselect.$refs.VueMultiselect.search = '';
                 }
 
                 _this.$root.$emit('update', _this.fileInfo);
 
-                _context.next = 23;
+                _context.next = 19;
                 return _this.$root.$emit('getRecommendations');
 
-              case 23:
+              case 19:
                 _this.cancelSharing();
 
-                _context.next = 30;
+                _context.next = 26;
                 break;
 
-              case 26:
-                _context.prev = 26;
+              case 22:
+                _context.prev = 22;
                 _context.t0 = _context["catch"](9);
                 _this.query = _this.share.shareWith;
                 console.error('Error while adding new share', _context.t0);
 
-              case 30:
-                _context.prev = 30;
+              case 26:
+                _context.prev = 26;
                 _this.loading = false;
-                return _context.finish(30);
+                return _context.finish(26);
 
-              case 33:
+              case 29:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[9, 26, 30, 33]]);
+        }, _callee, null, [[9, 22, 26, 29]]);
       }))();
     }
   }
@@ -13075,6 +13074,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -13110,7 +13116,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       show: true,
       showAdLink: true,
       sendPasswordByTalk: null,
-      hideDownload: null
+      hideDownload: null,
+      shareLabel: this.share.newLabel || this.share.label || ''
     };
   },
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_8__["mapGetters"])({
@@ -13259,6 +13266,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       } else {
         return Boolean(this.SHARE_TYPES.SHARE_TYPE_EMAIL === this.share.type || this.SHARE_TYPES.SHARE_TYPE_LINK === this.share.type);
       }
+    },
+    isLinkShare: function isLinkShare() {
+      return this.SHARE_TYPES.SHARE_TYPE_LINK === this.share.type;
     }
   }),
   methods: {
@@ -13312,6 +13322,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     confirmSharing: function confirmSharing() {
       this.loading = true;
+      this.share.label = this.shareLabel.trim();
 
       if (this.share.sendPasswordByTalk) {
         this.sendPasswordByTalk = this.share.sendPasswordByTalk.toString();
@@ -13321,15 +13332,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         this.hideDownload = this.share.hideDownload.toString();
       }
 
-      var result = this.updateShare(this.share.id, {
+      this.updateShare(this.share.id, {
         permissions: this.share.permissions,
         hideDownload: this.hideDownload,
         password: this.share.password,
         expireDate: this.share.expireDate,
+        label: this.share.label,
         sendPasswordByTalk: this.sendPasswordByTalk
       }); // this.$emit('add:share', this.share)
 
-      console.debug('updated share', result);
       this.loading = true;
       this.$store.commit('addCurrentTab', 'default');
     },
@@ -61606,6 +61617,31 @@ var render = function() {
                   ]
                 },
                 [
+                  _vm.isLinkShare
+                    ? _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.shareLabel,
+                            expression: "shareLabel"
+                          }
+                        ],
+                        ref: "label",
+                        class: { error: _vm.errors.label },
+                        attrs: { disabled: _vm.saving },
+                        domProps: { value: _vm.shareLabel },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.shareLabel = $event.target.value
+                          }
+                        }
+                      })
+                    : _vm._e(),
+                  _vm._v(" "),
                   _c(
                     "ActionCheckbox",
                     {
@@ -62318,18 +62354,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("p", { staticClass: "sharing-message" }, [
                       !_vm.canReshare
-                        ? _c("span", [
-                            _vm._v(
-                              "\n\t\t\t\t\t" +
-                                _vm._s(
-                                  _vm.t(
-                                    "files_sharing",
-                                    "Resharing is not allowed."
-                                  )
-                                ) +
-                                "\n\t\t\t\t"
-                            )
-                          ])
+                        ? _c("span")
                         : _c("span", [
                             _vm.isSharedWithMe
                               ? _c("span", [
@@ -62371,15 +62396,17 @@ var render = function() {
                         })
                       : _vm._e(),
                     _vm._v(" "),
-                    _c("div", { staticClass: "your-shares" }, [
-                      _vm._v(
-                        "\n\t\t\t\t" +
-                          _vm._s(_vm.t("files_sharing", "Your shares")) +
-                          "\n\t\t\t"
-                      )
-                    ]),
+                    _vm.canReshare
+                      ? _c("div", { staticClass: "your-shares" }, [
+                          _vm._v(
+                            "\n\t\t\t\t" +
+                              _vm._s(_vm.t("files_sharing", "Your shares")) +
+                              "\n\t\t\t"
+                          )
+                        ])
+                      : _vm._e(),
                     _vm._v(" "),
-                    !_vm.hasShares && !_vm.hasLinkShares
+                    !_vm.hasShares && !_vm.hasLinkShares && _vm.canReshare
                       ? [
                           _c("label", [
                             _vm._v(
