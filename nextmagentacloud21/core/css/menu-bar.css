@@ -687,3 +687,7 @@
 .toastify.dialogs .toast-undo-button, .toastify.dialogs .toast-close {
   height:auto !important;
 }
+
+#body-public #contactsmenu{
+  display: none;
+}
