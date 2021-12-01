@@ -13081,6 +13081,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 
 
@@ -61629,7 +61630,10 @@ var render = function() {
                         ],
                         ref: "label",
                         class: { error: _vm.errors.label },
-                        attrs: { disabled: _vm.saving },
+                        attrs: {
+                          placeholder: "Share label",
+                          disabled: _vm.saving
+                        },
                         domProps: { value: _vm.shareLabel },
                         on: {
                           input: function($event) {
