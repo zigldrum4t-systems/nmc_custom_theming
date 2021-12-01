@@ -121,12 +121,6 @@ function fileActionButtonSettings() {
     }, 200);
 }
 
-  (function(a,b,c,d) {
-      a='///tags-eu.tiqcdn.com/utag/telekom/mediencenter/dev/utag.js';
-      b=document;c='script';d=b.createElement(c);d.src=a;
-      d.type='text/java'+c;d.async=true;
-      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)})();
-
 function breadcrumbAddLabel() {
   var ele = document.querySelectorAll('#controls .actions.creatable a')[0];
   var labelElement = document.createElement('label');
@@ -141,19 +135,18 @@ function breadcrumbAddLabel() {
   
 
 window.addEventListener('click',function(e){
+  debugger;
   var targetElement = e.target || e.srcElement;
   
-  if(e.target.id=="select_alselect_all_filesl_files"){
+  if(targetElement.id=="select_alselect_all_filesl_files"){
     var utag_data = {
       wt_link_id: "content.checkbox.selectall",
       page_content_id : "files.list.select", // page name
       page_type : "files" // page type
       }
       
-      //alert("content.checkbox.selectall=" + utag_data);
   }
-//|| e.target.innerHTML=="Neuer Ordner"
-  if(e.target.innerHTML=="Upload file" || e.target.innerHTML=="Datei hochladen"){
+  if(targetElement.innerHTML=="Upload file" || targetElement.innerHTML=="Datei hochladen"){
     var utag_data = {
       wt_link_id: "plus.button.upload",
       page_content_id : "files.list.select", // page name
@@ -210,7 +203,7 @@ window.addEventListener('click',function(e){
       }
       utag.view(utag_data);
   }
-  var title = $(e.target).attr('title');
+  var title = $(targetElement).attr('title');
   if(title!='' && title!='undefined' && title!=undefined){
     
     if(title=="All Media"){
@@ -294,14 +287,13 @@ window.addEventListener('click',function(e){
       utag.view(utag_data);
 
   }
-  if(e.target.className!=="" && e.target.className !=="active"  &&  e.target.className !=="selected"){
-    var containsval = e.target.className; 
-    if(containsval!==''){
-      if(!containsval.includes('-menu-')){
+  if(targetElement.className!=="" && targetElement.className !=="active"  &&  targetElement.className !=="selected"){
+    var elementClassname = targetElement.className; 
+    if(elementClassname!==''){
+      if(!elementClassname.includes('-menu-')){
   
-        var eventClassName = e.target.className; 
+        var eventClassName = targetElement.className; 
         var foo = eventClassName.split("nav-icon-");
-       // alert(foo[0]);
         if(foo[0].includes('menu__trigger')){
           var utag_data = {
             wt_link_id: "top.bar.menu.search",
@@ -375,29 +367,25 @@ window.addEventListener('click',function(e){
                   page_type : "theme" // page type
                   }
                   utag.view(utag_data);
-                  //alert("sharingin =" + utag_data);              
               }
             }
       }
-      else if(containsval.contains('menu-')){
+      else if(elementClassname.contains('menu-')){
         var foo = eventClassName.split("menu-");
         //alert(foo[1]+"aa");
       }
     }
   }
-  else if(e.target.attributes){
-    //alert(e.target.attributes);     
-    if(e.target.attributes.href.value.includes('apps/')){
-      var foo = e.target.attributes.href.value.split('apps/')
-      //alert(foo[1]);
+  else if(targetElement.attributes){
+    if(targetElement.attributes.href.value.includes('apps/')){
+      var foo = targetElement.attributes.href.value.split('apps/')
       if(foo[1]=="files/"){
         var utag_data = {
           wt_link_id: "top.bar.menu.myfiles",
           page_content_id : "top.bar.menu", // page name
           page_type : "top bar" // page type
           }
-          //utag.view(utag_data);
-          //alert("myfiles =" + utag_data);
+          utag.view(utag_data);
       }
       else if(foo[1]=="dashboard/"){
         var utag_data = {
@@ -406,7 +394,6 @@ window.addEventListener('click',function(e){
           page_type : "top bar" // page type
           }
           utag.view(utag_data);
-          //alert("dashboard =" + utag_data);
       }
       else if(foo[1]=="photos/"){
         var utag_data = {
@@ -415,7 +402,6 @@ window.addEventListener('click',function(e){
           page_type : "top bar" // page type
           }
           utag.view(utag_data);
-          //alert("photos =" + utag_data);
       }
       else if(foo[1]=="photos/videos"){
         var utag_data = {
@@ -424,12 +410,10 @@ window.addEventListener('click',function(e){
           page_type : "theme" // page type
           }
           utag.view(utag_data);
-          //alert("photos videos=" + utag_data);
       }
-      // alert(foo[1]+"dd");
     }
     else{
-      if(e.target.attributes.href.value=="/index.php/settings/user"){
+      if(targetElement.attributes.href.value=="/index.php/settings/user"){
         var utag_data = {
           wt_link_id: "top.bar.menu.userprofile",
           page_content_id : "top.bar.menu", // page name
@@ -437,17 +421,11 @@ window.addEventListener('click',function(e){
           }
           utag.view(utag_data);
       }
-      // alert(e.target.attributes.href.value);
     }
   }
   else if(targetElement=="Object HTMLSpanElement"){
-     //alert("aaa");
   }
-  else if(e.target && e.target.id== 'sharingout'){
-      //  alert("sharingout");
+  else if(targetElement && targetElement.id== 'sharingout'){
     }
  
-  //if(e.target.attr('title'))
   }); 
-  
-  
