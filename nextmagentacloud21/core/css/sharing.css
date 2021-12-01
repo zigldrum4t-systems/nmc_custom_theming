@@ -736,6 +736,24 @@ form div{
    height:32px !important;
   }
 
+  aside .multiselect.sharing-input.multiselect--disabled.multiselect--single {
+   background-color:unset !important;
+  }
+
+  .sharing-entry.sharing-entry__reshare .sharing-entry__desc h5 {
+    white-space: unset !important;
+    text-overflow: unset !important;
+    overflow: unset !important;
+    max-width: unset !important;
+  }
+
+  .sharing-entry.sharing-entry__reshare  .sharing-entry__desc {
+     max-width: 190px !important;
+  }
+
+  .custom-select.select div {
+    max-width:150px;
+  }
 
   /*select-box*/
 
@@ -834,7 +852,7 @@ form div{
 
   .custom-select  h5{
     text-overflow: ellipsis;
-    width: 190px;
+    width: 148px;
     overflow: hidden;
     white-space: nowrap;
   }
@@ -853,6 +871,7 @@ form div{
   .popover__wrapper li.active:hover p {
     color: #E20074 !important;
   }
+
 
   .mx-datepicker-main .mx-calendar-header .mx-btn-icon-double-left,
   .mx-datepicker-main .mx-time-header .mx-btn-icon-double-left,
