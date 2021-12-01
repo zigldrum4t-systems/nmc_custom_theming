@@ -126,7 +126,6 @@ table.multiselect thead #selectedMenu {
   min-width: 20px !important;
   min-height: 20px !important;
   background-size: 20px !important;
-  margin-right: 0.5rem;
 }
 
 #filestable .fileactions .icon-share-magenta-user {
@@ -618,6 +617,11 @@ table.multiselect #modified {
 .columntitle:hover span {
   color:#e20074 !important;
 }
+
+table th#headerDate, table td.date, table th.column-last, table td.column-last {
+  max-width: unset !important;
+}
+
 /*received-shares*/
 
 .fileactions .action .avatar img,
