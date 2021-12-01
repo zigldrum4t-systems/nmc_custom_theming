@@ -21,13 +21,13 @@ OC.L10N.register(
         "Advanced permission" : "Erweiterte Berechtigungen",
         "Advanced" : "Erweiterte",
         "Permissions" : "Berechtigungen",
+        "Shared by": "Geteilt von",
         "With File drop, only uploading is allowed. Only you can see files and folders that have been uploaded." : "Bei der Sammelbox ist nur das Hochladen erlaubt. Nur Sie sehen Dateien und Ordner die hochgeladen worden sind.",
         "There are no editing functions for files shared with non-MagentaCLOUD users." : "Der Empfänger ist noch kein Nutzer der MagentaCLOUD, daher können keine Rechte zum Bearbeiten vergeben werden.",
         "The password is not send with the email to maintain confidentiality." : "Das Passwort wird nicht mit der E-Mail verschickt, um die Vertraulichkeit zu wahren.",
         "Received": "Empfangen",
         "is Telekom's secure and free online storage. Ideal for your photos, videos and any other files you want to store securely. You can upload your data directly from your smartphone, tablet or PC, access it from anywhere and easily share it with family and friends.": "ist der sichere und kostenlose Online-Speicher der Telekom. Ideal für Ihre Fotos, Videos und alle anderen Dateien, die Sie sicher speichern wollen. Sie können Ihre Daten direkt vom Smartphone, Tablet oder PC hochladen, von überall abrufen und ganz einfach mit Familie und Freunden teilen.",
         "Inform Now": "Jetzt informieren",
-        "The": "Die",
-        "Shared by": "Geteilt von"
+        "The": "Die"
 },
 "nplurals=2; plural=(n != 1);");
