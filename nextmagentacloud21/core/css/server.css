@@ -1217,6 +1217,16 @@ li>.menuitem[class*=' icon-'] {
     line-height: 120% !important;
 }
 
+#editor-wrapper .submenu button.icon-h1,
+#editor-wrapper .submenu button.icon-h2,
+#editor-wrapper .submenu button.icon-h3,
+#editor-wrapper .submenu button.icon-h4,
+#editor-wrapper .submenu button.icon-h5,
+#editor-wrapper .submenu button.icon-h6
+{
+  padding: 0 1rem !important;
+}
+
 #editor-session-list .v-popover {
     display: none !important;
 }
@@ -2173,6 +2183,10 @@ aside .icon-close:hover,
       right: 7.4375rem !important;
     }
 
+    table.multiselect th .columntitle.name span{
+      font-size: 0.875rem;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -2385,6 +2399,7 @@ aside .icon-close:hover,
       min-height: 20px;
       min-width: 20px;
       margin-bottom: 0.25rem;
+      margin-left: 0.5rem;
    }
 }
 
@@ -2442,10 +2457,19 @@ aside .icon-close:hover,
     }
 }
 
-
 @media screen and (max-width: 420px) {
-  #headerName-container .headerSizeOpen, #headerName-container #headerSizeCount {
-      display: none;
+    #selectedActionLabel .icon-more{
+        margin-right: -12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+  table.multiselect th .columntitle.name span{
+    font-size: 0.8125rem !important;
+  }
+  table.multiselect th .columntitle .headerSizeOpen,
+  table.multiselect th .columntitle #headerSizeCount{
+    display: none;
   }
 }
 
@@ -2493,6 +2517,7 @@ aside .icon-close:hover,
 
   table.multiselect th .columntitle.name {
     padding-left: 0 !important;
+    font-size: 0.875rem;
   }
 
   .username-lable{
