@@ -13,7 +13,7 @@ OC.L10N.register(
         "Read and write" : "Kann bearbeiten",
         "Add link" : "Link erstellen",
         "Personal sharing via email" : "Persönliche Freigabe per Mail",
-        "Resharing is not allowed." : "Das Weiterteilen ist nicht erlaubt.",
+        "Resharing is not allowed." : "Weiterteilen ist nicht erlaubt.",
         "Resharing is allowed." : "Erneutes Teilen ist erlaubt.",
         "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration." : "Sie können Links erstellen oder Freigaben per Mail versenden. Wenn Sie MagentaCloud Nutzer einladen, bieten sich Ihnen mehr Möglichkeiten der Zusammenarbeit.",
         "Your shares" : "Ihre Freigaben",
