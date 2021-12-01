@@ -51,7 +51,7 @@
   #webdav-address input[type='text'],
   #security input[type='text']
   {
-    width: 400px !important;
+    width: 400px;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem !important;
     background-color: #e5e5e5;
@@ -60,12 +60,13 @@
   }
 
   select#languageinput{
-    width: 400px !important;
+    width: 400px ;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem;
     background-color: #ffffff;
     border:1px solid #191919;
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
+    display: inline-block !important;
   }
   .personal-settings-setting-box{
     margin-right:32px;
@@ -170,7 +171,7 @@
 
   #activity_notifications{
     padding-top: 0.25rem;
-    max-width: 600px;
+    max-width: 700px;
     margin-bottom: 8rem;
     border-bottom: none;
   }
@@ -208,7 +209,7 @@
   }
 
   #activity_notifications .mails-report-section p {
-    color: #666;
+    color: #666666;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
@@ -292,10 +293,12 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 
   .devices-session{
     padding: 3rem 1rem !important;
+    max-width: 700px;
   }
 
   #security{
     padding-left: 1rem !important;
+    max-width: 700px;
   }
 
   .devices-session .clientslinks {
@@ -477,6 +480,8 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 
   #monthly-notifications-settings .settings-hint{
     margin-top: 8px !important;
+    opacity: unset;
+    color: #666666;
   }
 
   #monthly-notifications-settings h1{
@@ -490,7 +495,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   #monthly-notifications-settings {
     display: block;
     padding-left: 30px;
-    max-width: 600px;
+    max-width: 700px;
   }
 
 

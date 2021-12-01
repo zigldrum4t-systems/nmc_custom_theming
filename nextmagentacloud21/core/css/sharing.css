@@ -74,8 +74,8 @@ aside .icon-star {
 }
 
 .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__figure[data-v-0307b622] {
-  width: 92px !important;
-  max-height: 92px !important;
+  width: 96px !important;
+  max-height: 96px !important;
   margin: 0 !important;
 }
 
@@ -562,7 +562,8 @@ flex-direction: row-reverse;
 }
 
 
- .option__linetwo {
+ .option__linetwo ,
+ li.multiselect__element .unknown {
   display:none !important;
 }
 
@@ -582,13 +583,19 @@ span#global-lookup,
   background-image: unset !important;
   background-color: unset !important;
 }
+
 .multiselect .multiselect__content-wrapper {
   overflow-y: unset !important;
 }
+
 .multiselect__content-wrapper .multiselect__element .avatardiv:not(.avatardiv--unknown),
 .multiselect.multiselect--disabled, .multiselect.multiselect--disabled .multiselect__single {
   background-color: unset !important;
   box-shadow:unset !important;
+}
+
+.multiselect__element .option__icon.icon-mail {
+  margin-right:0.125rem !important;
 }
 
 aside .action-radio__label {
@@ -702,8 +709,10 @@ form div{
   .mx-table.mx-table-date th,
   .mx-table.mx-table-date td,
   .mx-table.mx-table-year td,
-  .mx-table.mx-table-year th{
-    border-bottom: unset !important;
+  .mx-table.mx-table-year th,
+  .mx-table.mx-table-month td,
+  .mx-table.mx-table-month th {
+   border-bottom: unset !important;
   }
 
   .mx-table.mx-table-date tbody{
@@ -721,6 +730,13 @@ form div{
     font-size:1rem !important ;
   }
 
+  .mx-datepicker .mx-calendar-header,
+  .mx-datepicker .mx-time-header {
+   display:inline !important;
+   height:32px !important;
+  }
+
+
   /*select-box*/
 
   .custom-select .selected {
@@ -737,11 +753,11 @@ form div{
   }
 
   .custom-select .items {
-    padding:1.5rem 0.5rem 1.5rem 0.5rem;
+    padding:1.5rem 1rem;
     border: unset !important;
-    max-width:178px !important;
+    max-width:198px !important;
     top:24px;
-    border-radius: 4px !important;
+    border-radius: 8px !important;
     box-shadow: var(--scl-shadow-level-2);
   }
 
@@ -752,7 +768,7 @@ form div{
 
   .custom-select .items div {
     padding-left: 2.375rem !important;
-    padding-bottom: 0.188rem !important;
+    padding-bottom: 0.25rem !important;
   }
 
   .custom-select .items div.selectedItem{
@@ -805,7 +821,7 @@ form div{
   }
 
   .items div {
-    min-height:27px !important
+    min-height:32px !important
   }
 
   .custom-select .items .selectedItem span {
@@ -825,7 +841,7 @@ form div{
 
   .app-sidebar .app-sidebar-header--compact.app-sidebar-header--with-figure .app-sidebar-header__info .app-sidebar-header__figure {
     width:96px !important;
-    width:96px !important;
+    height:96px !important;
   }
 
   aside .option__icon {
@@ -858,6 +874,14 @@ form div{
   aside::-webkit-scrollbar {
     width: 8px !important;
     height: 12px;
+}
+
+ section#tab-activity .multiselect.multiselect--disabled,
+ section#tab-activity .multiselect.multiselect--disabled .multiselect__single {
+  background-color: unset !important;
+}
+ .action-button p {
+  width:190px !important;
 }
 
 /***pending shares***/

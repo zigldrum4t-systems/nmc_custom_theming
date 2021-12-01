@@ -187,7 +187,9 @@ div.crumb {
 }
 
 .icon-more,
-.action-item__menutoggle--default-icon {
+.action-item__menutoggle--default-icon,
+#viewer  .richEditor .action-item__menutoggle--default-icon,
+.modal-mask--dark#viewer   .action-item__menutoggle--default-icon  {
     background-image: var(--icon-more-custom);
 }
 
@@ -430,13 +432,17 @@ aside .custom-select .disabledRow span.icon-triangle-s{
 }
 
 
+#filestable .icon-public {
+  background-image: var(--icon-user-e20074);
+}
 
 /*close-dialog-icons*/
 
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close,
 aside .icon-close,
-.oc-conflict-pre-dlg-close-div a  {
+.oc-conflict-pre-dlg-close-div a ,
+.nmc_welcome_popup-header button.modal-default-button {
     background: var(--icon-dialog-close) !important;
     background-repeat: no-repeat !important;
 }
@@ -533,7 +539,9 @@ aside .icon-star{
 }
 
 #selectedActionLabel .icon-more{
-  background-image: var(--icon-more-magenta) !important;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .icon-desktop {
@@ -606,7 +614,7 @@ aside .icon-star{
   background-image: var(--icon-rejet-share-blue) !important;
 }
 
-.option-share.icon-shared,
+.option-share .icon-shared,
 #filestable .icon-shared {
   background-image: var(--icon-user-000-org) !important;
 }
@@ -627,4 +635,16 @@ aside .icon-star{
 
 .nav-icon-extstoragemounts{
   background-image: var(--icon-nav-exts-custom) !important;
+}
+
+.filesSelectionMenu .icon-close{
+  background-image: var(--icon-magenta-cancel) !important;
+}
+
+.filesSelectMenu .icon-close{
+  background-image: var(--icon-custom-cancel) !important;
+}
+
+.pending-share-row[data-mime="httpd/unix-directory"] .thumbnail {
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }

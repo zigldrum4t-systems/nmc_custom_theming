@@ -26,6 +26,8 @@
  @import url("sharing.css");
 @import url("settings.css");
 @import url("activity.css");
+@import url("welcome-modal.css");
+
 
 
 /* ---------------------------------------------------------------------------- */
@@ -583,6 +585,9 @@ aside {
     #fileList td a a.action.action-menu {
         display: none !important;
     }
+    #nmc_welcome_popup .modal-header {
+      width: unset !important;
+   }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
@@ -603,6 +608,9 @@ aside {
     #filestable.view-grid tbody {
         row-gap: 0px !important;
     }
+    #nmc_welcome_popup .modal-header {
+      width: unset !important;
+  }
 }
 
 @media screen and (min-width: 1599px) {
@@ -626,6 +634,9 @@ aside {
     aside {
         width: 288px !important;
     }
+    #nmc_welcome_popup .modal-header {
+      width: unset !important;
+    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -645,6 +656,20 @@ aside {
     #filestable.view-grid tbody {
         row-gap: 16px !important;
     }
+    .pending-share-row .fileactions .button-label{
+      display: none;
+     }
+     .pending-share-row .fileactions .icon{
+        display: block !important;
+     }
+     .pending-share-row .fileactions .action-button {
+        border: 0;
+        padding: 0;
+     }
+     .pending-share-row .fileactions .action-button.accept{
+       background: none;
+     }
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -681,10 +706,10 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 #app-settings-header .settings-button {
     display: block;
-    height: 44px;
+    height: 20px;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0rem 0.5rem 0rem !important;
     background-image: var(--icon-triangle-n-e20074);
     background-position: 14px center;
     background-repeat: no-repeat;
@@ -701,6 +726,7 @@ input[type="checkbox"].checkbox+label:before:hover {
     border-top: unset !important;
     background-image: var(--icon-triangle-s-e20074);
 }
+
 
 
 /*-------------------MemoryUsed Left Nav------------------------------*/
@@ -770,10 +796,14 @@ input[type="checkbox"].checkbox+label:before:hover {
 
 /*----right-click-menu------*/
 
+#rightClickMenu .action-2{
+  display: none;
+}
+
 #rightClickMenu,
 .fileActionsMenu {
     margin: 0;
-    padding: 0.813rem 0.125rem;
+    padding: 0.813rem 0.625rem;
     box-shadow: var(--scl-shadow-level-2);
     filter: unset !important;
     border-radius: 8px !important;
@@ -902,7 +932,7 @@ a.menuitem.action:hover>span,
     height: 24px !important;
     min-height: 24px !important;
     opacity: 1;
-    border-color: var(--scl-color-magenta);
+    border-color: var(--scl-color-magenta) !important;
     margin-top: 2px
 }
 
@@ -950,7 +980,7 @@ div.crumb:last-child {
 
 #controls>div.actions.creatable>a:active,#controls>div.actions.creatable>a:focus {
   background: none !important;
-  border-color: #e20074;
+  border-color: #e20074 !important;
 }
 
 #app-navigation-toggle {
@@ -1030,6 +1060,9 @@ div.crumb:last-child {
     padding: 0 10px;
 }
 
+#rich-workspace .menubar{
+  z-index: 50 !important
+}
 #filestable {
     padding-top: 16px;
 }
@@ -1043,7 +1076,7 @@ div.crumb:last-child {
 }
 
 #rich-workspace #editor-session-list .save-status{
-    padding-right: 0.25rem !important;
+    padding-right: 1.25rem !important;
     min-width: unset !important;
     top:0 !important;
 }
@@ -1051,9 +1084,8 @@ div.crumb:last-child {
 /* Add Button*/
 
 .newFileMenu {
-    padding: 1rem;
+    padding: 0.813rem 0.625rem;
     box-shadow: var(--scl-shadow-level-2);
-    width: 235px !important;
     border-radius: 8px;
 }
 
@@ -1143,9 +1175,9 @@ button:not(:disabled):not(.primary):focus,
 
 .submenu .popovermenu {
     box-shadow: var(--scl-shadow-level-2);
-    padding: 1rem 1rem 1.5rem 0.5rem;
+    padding: 0.813rem 0.625rem;
     border-radius: 8px;
-    width: 10rem;
+    width: 178px;
     margin-top: 0.3125rem;
 }
 
@@ -1215,7 +1247,7 @@ li>.menuitem[class*=' icon-'] {
 }
 
 .popover__wrapper .popover__inner {
-    padding: 1.5rem 1rem 1.5rem 1rem !important;
+    padding: 0.813rem 1.5rem 0.813rem 0.625rem !important;
     border-radius: 8px;
 }
 
@@ -1569,6 +1601,12 @@ div.crumb.crumbmenu a {
 
 
 /* preview css*/
+
+#viewer  .richEditor .action-item__menutoggle--default-icon {
+  filter: unset !important;
+}
+
+
 
 #viewer {
     margin-top: 4px;
@@ -1927,6 +1965,10 @@ iframe.viewer__file {
 
 /*** Custom conflict dialog ******************************************************/
 
+#oc-dialog-filepicker-content .emptycontent {
+  margin-top:1rem !important;
+}
+
 .oc-conflict-pre-dlg {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
@@ -2038,9 +2080,10 @@ iframe.viewer__file {
  li.app-navigation-entry:nth-child(7),
  li.app-navigation-entry:nth-child(8),
  li.app-navigation-entry:nth-child(6),
- .app-settings-content .section h2 {
+ #app-settings-content .section h2 {
    display: none !important;
  }
+
 
  .app-navigation-entry-icon.icon-share {
    margin-top:0.125rem !important;
@@ -2052,16 +2095,23 @@ iframe.viewer__file {
   margin: 0 0.5rem 0.188rem 0.188rem !important;
  }
 
- .app-photos  #app-settings-content {
-   padding:1rem !important;
+ #app-settings-content {
+   padding:0rem 0rem 0rem 1rem !important;
  }
+
+ #app-settings-content input[type='checkbox'].checkbox+label {
+  line-height: 1 !important;
+}
+
 .app-photos .section {
   padding:unset !important;
 }
+
  .oc-dialog .oc-dialog-close:hover,
 #uploadprogresswrapper .icon-close:hover,
 aside .icon-close:hover,
-.oc-conflict-pre-dlg-close-div a:hover {
+.oc-conflict-pre-dlg-close-div a:hover,
+.nmc_welcome_popup-header button.modal-default-button:hover {
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
    /*photo-gallery-icon*/
@@ -2106,6 +2156,47 @@ aside .icon-close:hover,
         padding-top: 0.5rem;
         padding-bottom: 1rem;
     }
+    .personal-settings-setting-box .section input[type='text'],
+    .personal-settings-setting-box .section input[type='email'],
+     #webdav-address input[type='text'], #security input[type='text'] {
+       width:290px !important;
+     }
+     select#languageinput {
+      width:290px !important;
+    }
+    .para-2 {
+      max-width:300px;
+    }
+
+    #body-settings #quota {
+      width:290px;
+    }
+
+    .telekom-link p {
+      width:300px !important;
+    }
+
+    #nextcloud h5, #nextcloud span {
+      font-size: 1rem !important;
+    }
+    .actions-selected span:nth-child(2){
+      display:none;
+    }
+
+    #selectedActionsList .popovermenu {
+      right: -50px;
+    }
+
+    .header-menu__carret {
+      right: 7.4375rem !important;
+    }
+
+    #uploadprogressbar {
+      width: 25px !important;
+    }
+    .modal-mask#nmc_welcome_popup .modal-container {
+      max-height: 420px !important;
+    }
 
 }
 
@@ -2124,6 +2215,12 @@ aside .icon-close:hover,
     .brand-footer {
         position: relative;
         padding: 1rem 0 1.5rem 0;
+    }
+    #personal-settings .brand-footer {
+        position: fixed;
+    }
+    #personal-settings #tarrifInfo {
+      margin-bottom: 5.25rem;
     }
     .brand-footer .brand-footer-bar {
         justify-content: center !important;
@@ -2146,7 +2243,7 @@ aside .icon-close:hover,
     #nextcloud h5,
     #nextcloud span {
         padding: 0 !important;
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
     #header .logo-area {
         display: none;
@@ -2177,6 +2274,22 @@ aside .icon-close:hover,
       min-width: 312px !important;
       margin-left: -9.75rem !important;
     }
+    .action-restore.permanent span:not(.icon) {
+      display: none;
+    }
+
+    .personal-settings-setting-box .section input[type='text'],
+    .personal-settings-setting-box .section input[type='email'],
+     #webdav-address input[type='text'], #security input[type='text'] {
+       width:350px;
+     }
+
+     select#languageinput {
+      width:350px;
+    }
+    .modal-wrapper {
+      height: 86% !important;
+  }
 
 }
 @media screen and (max-width: 689px) {
@@ -2213,9 +2326,23 @@ aside .icon-close:hover,
     }
     #contactsmenu,
     #settings .menutoggle,
-    .search-outer a.header-menu__trigger {
+    .nmc_spica_wrapper,
+    .search-outer a.header-menu__trigger{
         flex-direction: column;
     }
+
+    .nmc_spica_wrapper .has-unread {
+      position: absolute;
+      right: 0.25rem;
+      top: 2rem;
+      padding: 0.063rem 0.125rem 0 0.125rem;
+    }
+
+    .nmc_spica_wrapper div {
+      font-size: 0.625rem;
+      color: var(--scl-color-grey-90);
+    }
+
     #appmenu {
         display: none;
     }
@@ -2275,7 +2402,17 @@ aside .icon-close:hover,
       padding: 0;
    }
    .pending-share-row .fileactions .action-button.accept{
-     background: none;
+      background: none;
+   }
+   .activitysubject{
+      width: 50%;
+   }
+   .nmc_spica_wrapper .icon-mail{
+      background-image: var(--icon-email-custom) !important;
+      padding: 0;
+      min-height: 20px;
+      min-width: 20px;
+      margin-bottom: 0.25rem;
    }
 }
 
@@ -2314,25 +2451,29 @@ aside .icon-close:hover,
     }
 }
 
+@media screen and (max-width: 650px) {
+
+  .header-menu__carret {
+    right: 12.4375rem;
+  }
+
+  #header-menu-unified-search{
+    position: fixed !important;
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-height: 700px) {
     #app-navigation:not(.vue) ul {
         padding-top: 0;
     }
 }
 
+
 @media screen and (max-width: 420px) {
-  .personal-settings-setting-box .section input[type='text'],
-   .personal-settings-setting-box .section input[type='email'] {
-     width:auto !important;
-  }
-  .telekom-link p {
-  width:364px !important;
-  }
-  select#languageinput {
-    width:auto !important;
-  }
-  #body-settings #quota {
-    width:320px !important
+  #headerName-container .headerSizeOpen, #headerName-container #headerSizeCount {
+      display: none;
   }
 }
 
@@ -2377,6 +2518,22 @@ aside .icon-close:hover,
   #app-content-trashbin table th .selectedActions {
     float: unset !important;
   }
+
+  table.multiselect th .columntitle.name {
+    padding-left: 0 !important;
+  }
+
+  .username-lable{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 2.5rem;
+    height: 0.75rem;
+  }
+  .username-lable .right-menu-font {
+    margin-top: 0.0625rem;
+  }
+
+
 }
 
 @media all and (min-width: 1024px) and (max-width: 1072px){
@@ -2384,5 +2541,4 @@ aside .icon-close:hover,
     padding-right: 2rem;
   }
 }
-
 /*Responsive Styling*/
