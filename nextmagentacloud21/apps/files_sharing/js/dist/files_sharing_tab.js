@@ -61077,7 +61077,6 @@ var render = function() {
                       on: {
                         click: function($event) {
                           $event.preventDefault()
-                          $event.stopPropagation()
                           return _vm.onNewLinkShare($event)
                         }
                       }
@@ -61250,7 +61249,6 @@ var render = function() {
               on: {
                 click: function($event) {
                   $event.preventDefault()
-                  $event.stopPropagation()
                   return _vm.onNewLinkShare($event)
                 }
               }

@@ -14,6 +14,7 @@
   <?php if ($theme->getiTunesAppId() !== '') { ?>
     <meta name="apple-itunes-app" content="app-id=<?php p($theme->getiTunesAppId()); ?>">
   <?php } ?>
+
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="<?php p((!empty($_['application']) && $_['appid'] != 'files') ? $_['application'] : $theme->getTitle()); ?>">
@@ -22,11 +23,12 @@
   <link rel="icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon.ico')); /* IE11+ supports png */ ?>">
   <link rel="apple-touch-icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
   <link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
-  <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'],'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
-  <link rel="manifest" href="<?php print_unescaped(image_path($_['appid'],'manifest.json')); ?>">
+  <link rel="mask-icon" sizes="any" href="<?php print_unescaped('/themes/nextmagentacloud21/core/img/favicon-mask.svg'); ?>" color="<?php p($theme->getColorPrimary()); ?>">
+  <link rel="manifest" href="<?php print_unescaped('/themes/nextmagentacloud21/core/img/manifest.json'); ?>">
   <?php emit_css_loading_tags($_); ?>
   <?php emit_script_loading_tags($_); ?>
   <?php print_unescaped($_['headers']); ?>
+  <script src="//tags-eu.tiqcdn.com/utag/telekom/mediencenter/dev/utag.js"></script>
 </head>
 
 <body id="<?php p($_['bodyid']); ?>">
@@ -118,7 +120,7 @@
                 </svg>
               </div>
               <span class="username-lable">
-                <a class="right-menu-font"><?php p($_['user_uid']); ?></a>
+                <a class="right-menu-font"><?php p($_['user_displayname']); ?></a>
               </span>
             </div>
             <nav class="settings-menu" id="expanddiv" style="display:none;" aria-label="<?php p($l->t('Settings menu')); ?>">

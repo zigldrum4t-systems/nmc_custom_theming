@@ -1,3 +1,5 @@
+//import tealoium_events from "tealium_event.json";
+
 window.onload = function () {
   brandBarAnimation();
   guestInfoText();
@@ -130,128 +132,300 @@ function breadcrumbAddLabel() {
      }
   }
 
+  
 
 window.addEventListener('click',function(e){
   debugger;
   var targetElement = e.target || e.srcElement;
-  //console.log(e.target.attributes + "w");
-  //alert("target "+ e.target);
   
-  if(e.target.className!=="" && e.target.className !=="active" ){
-    var containsval = e.target.className; 
-    if(containsval!==''){
-      if(!containsval.includes('-menu-')){
+  if(targetElement.id=="select_alselect_all_filesl_files"){
+    var utag_data = {
+      wt_link_id: "content.checkbox.selectall",
+      page_content_id : "files.list.select", // page name
+      page_type : "files" // page type
+      }
+      
+  }
+  if(targetElement.innerHTML=="Upload file" || targetElement.innerHTML=="Datei hochladen"){
+    var utag_data = {
+      wt_link_id: "plus.button.upload",
+      page_content_id : "files.list.select", // page name
+      page_type : "files" // page type
+      }
+      utag.view(utag_data);
+  }
+
+  if(targetElement.innerHTML=="Password protect" || targetElement.innerHTML=="Passwortschutz"){
+    var utag_data = {
+      wt_link_id: "share.view.setting.password",
+      page_content_id : "share.view.settings", // page name
+      page_type : "files share" // page type
+      }
+      utag.view(utag_data);
+  }
+
+
+  if(targetElement.innerHTML=="Can edit" || targetElement.innerHTML=="Kann bearbeiten"){
+    var utag_data = {
+      wt_link_id: "share.view.setting.edit",
+      page_content_id : "share.view.settings", // page name
+      page_type : "share" // page type
+      }
+      utag.view(utag_data);
+  }
+
+
+  if(targetElement.innerHTML=="Set expiration date" || targetElement.innerHTML=="Ablaufdatum setzen"){
+    var utag_data = {
+      wt_link_id: "share.view.setting.edit",
+      page_content_id : "share.view.settings", // page name
+      page_type : "share" // page type
+      }
+      utag.view(utag_data);
+  }
+
+  if(targetElement.innerHTML=="File drop only" || targetElement.innerHTML=="Sammelbox"){
+    var utag_data = {
+      wt_link_id: "share.view.setting.droponly",
+      page_content_id : "share.view.settings", // page name
+      page_type : "share" // page type
+      }
+      utag.view(utag_data);
+  }
+
   
-        var eventClassName = e.target.className; 
+  
+  if(e.target.innerHTML=="New folder" || e.target.innerHTML=="Neuer Ordner"){
+    var utag_data = {
+      wt_link_id: "plus.button.createfolder",
+      page_content_id : "files.list.select", // page name
+      page_type : "theme" // page type
+      }
+      utag.view(utag_data);
+  }
+  var title = $(targetElement).attr('title');
+  if(title!='' && title!='undefined' && title!=undefined){
+    
+    if(title=="All Media"){
+      var utag_data = {
+        wt_link_id: "files.view.media.allmedia",
+        page_content_id : "files.view.media.all", // page name
+        page_type : "Media" // page type
+        }
+        utag.view(utag_data);
+    }
+    
+    if(title=="My photos"){
+      var utag_data = {
+        wt_link_id: "content.checkbox.selectall",
+        page_content_id : "files.view.media.myphotos", // page name
+        page_type : "theme" // page type
+        }
+        utag.view(utag_data);
+    }
+    
+    if(title=="My videos"){
+      var utag_data = {
+        wt_link_id: "content.checkbox.selectall",
+        page_content_id : "files.view.media.myvideos", // page name
+        page_type : "theme" // page type
+        }
+        utag.view(utag_data);
+    }
+    if(title=="Favorites"){
+      var utag_data = {
+        wt_link_id: "content.checkbox.selectall",
+        page_content_id : "files.view.media.favorites",
+        page_type : "theme" // page type
+        }
+        utag.view(utag_data);
+    }
+    if(title=="Shared with me"){
+      var utag_data = {
+        wt_link_id: "content.checkbox.selectall",
+        page_content_id : "files.view.media.receivedshares", // page name
+        page_type : "theme" // page type
+        }
+        utag.view(utag_data);
+    }
+    
+
+  }
+
+  if(targetElement.className=="status-buttons__primary primary"){
+    var utag_data = {
+      wt_link_id: "content.button.send",
+      page_content_id : "share.SendTo", // page name
+      page_type : "share" // page type
+      }
+      utag.view(utag_data);
+  }
+
+  if(targetElement.className=="status-buttons__select"){
+    var utag_data = {
+      wt_link_id: "content.button.cancel",
+      page_content_id : "share.SendTo", // page name
+      page_type : "share" // page type
+      }
+      utag.view(utag_data);
+  }
+
+  if(targetElement.className=="app-sidebar__close.icon-close"){
+    var utag_data = {
+      wt_link_id: "share.view.create.cancel",
+      page_content_id : "share.view.create", // page name
+      page_type : "share" // page type
+      }
+      utag.view(utag_data);
+  }
+  if(targetElement.className=="add-new-link-btn"){
+    var utag_data = {
+      wt_link_id: "share.view.create.newlink",
+      page_content_id : "share.view.create", // page name
+      page_type : "share" // page type
+      }
+      utag.view(utag_data);
+
+  }
+  if(targetElement.className!=="" && targetElement.className !=="active"  &&  targetElement.className !=="selected"){
+    var elementClassname = targetElement.className; 
+    if(elementClassname!==''){
+      if(!elementClassname.includes('-menu-')){
+  
+        var eventClassName = targetElement.className; 
         var foo = eventClassName.split("nav-icon-");
-       // alert(foo[0]);
         if(foo[0].includes('menu__trigger')){
           var utag_data = {
-            page_content_id : "top.bar.menu.search", // page name
+            wt_link_id: "top.bar.menu.search",
+            page_content_id : "top.bar.menu", // page name
             page_type : "theme" // page type
             }
-           // alert("search =" + utag_data);
+            utag.view(utag_data);
           }
   
          else if(foo[0].includes('emailmenu')){
             var utag_data = {
-              page_content_id : "top.bar.menu.emailcenter", // page name
+              wt_link_id: "top.bar.menu.emailcenter",
+              page_content_id : "top.bar.menu", // page name
               page_type : "theme" // page type
               }
-             // alert("email =" + utag_data);
-            }
+              utag.view(utag_data);
+          }
           else if(foo[0].includes('displayname')){
             var utag_data = {
+              wt_link_id: "content.checkbox.selectall",
               page_content_id : "Content.Button.NewFolder", // page name
               page_type : "NewFolder" // page type
-              }
-              //alert("email =" + utag_data);
             }
-            //  alert(foo[1]);
-            //  console.log(foo[1]);
-            if(foo[1]!==""){
-              var foo1 = foo[1].split("svg");
-              if($.trim(foo1[0])=="favorites"){
+            utag.view(utag_data);
+          }
+          if(foo[0]!==""){
+              var foo0 = foo[0].split("svg");
+              if($.trim(foo0[0])=="favorites"){
                 var utag_data = {
+                  wt_link_id: "content.checkbox.selectall",
                   page_content_id : "left.menu.favorites", // page name
                   page_type : "theme" // page type
                   }
-                  alert("favorites =" + utag_data);
-  
+                  utag.view(utag_data);  
+              }
+          }
+
+          if(foo[1]!==""){
+              var foo1 = foo[1].split("svg");
+              if($.trim(foo1[0])=="favorites"){
+                var utag_data = {
+                  wt_link_id: "left.menu.favorites",
+                  page_content_id : "left.menu", // page name
+                  page_type : "files" // page type
+                  }
+                utag.view(utag_data);
               }
               else if($.trim(foo1[0])=="files"){
                 var utag_data = {
-                  page_content_id : "left.menu.allfiles", // page name
-                  page_type : "theme" // page type
+                  wt_link_id: "left.menu.allfiles",
+                  page_content_id : "left.menu", // page name
+                  page_type : "files" // page type
                   }
+                  utag.view(utag_data);
                   alert("my files =" + utag_data);
                 
               }
               else if($.trim(foo1[0])=="sharingout"){
                 var utag_data = {
-                  page_content_id : "left.menu.sharesfromme", // page name
+                  wt_link_id: "left.menu.sharesfromme",
+                  page_content_id : "left.menu", // page name
                   page_type : "theme" // page type
                   }
-                  alert("sharingout =" + utag_data);
+                  utag.view(utag_data);
+                  //alert("sharingout =" + utag_data);
               }
               else if($.trim(foo1[0])=="sharingin"){
                 var utag_data = {
-                  page_content_id : "left.menu.sharesfromothers", // page name
+                  wt_link_id: "left.menu.sharesfromothers",
+                  page_content_id : "left.menu", // page name
                   page_type : "theme" // page type
                   }
-                  alert("sharingin =" + utag_data);              
+                  utag.view(utag_data);
               }
             }
       }
-      else if(containsval.contains('menu-')){
+      else if(elementClassname.contains('menu-')){
         var foo = eventClassName.split("menu-");
         //alert(foo[1]+"aa");
       }
     }
   }
-  else if(e.target.attributes){
-    //alert(e.target.attributes);     
-    if(e.target.attributes.href.value.includes('apps/')){
-      var foo = e.target.attributes.href.value.split('apps/')
+  else if(targetElement.attributes){
+    if(targetElement.attributes.href.value.includes('apps/')){
+      var foo = targetElement.attributes.href.value.split('apps/')
       if(foo[1]=="files/"){
         var utag_data = {
-          page_content_id : "top.bar.menu.myfiles", // page name
-          page_type : "theme" // page type
+          wt_link_id: "top.bar.menu.myfiles",
+          page_content_id : "top.bar.menu", // page name
+          page_type : "top bar" // page type
           }
-          alert("myfiles =" + utag_data);
+          utag.view(utag_data);
       }
       else if(foo[1]=="dashboard/"){
         var utag_data = {
-          page_content_id : "top.bar.menu.welcome", // page name
-          page_type : "theme" // page type
+          wt_link_id: "top.bar.menu.welcome",
+          page_content_id : "top.bar.menu", // page name
+          page_type : "top bar" // page type
           }
-          alert("dashboard =" + utag_data);
+          utag.view(utag_data);
       }
       else if(foo[1]=="photos/"){
         var utag_data = {
+          wt_link_id: "top.bar.menu.media",
+          page_content_id : "top.bar.menu", // page name
+          page_type : "top bar" // page type
+          }
+          utag.view(utag_data);
+      }
+      else if(foo[1]=="photos/videos"){
+        var utag_data = {
+          wt_link_id: "content.checkbox.selectall",
           page_content_id : "top.bar.menu.media", // page name
           page_type : "theme" // page type
           }
-          alert("photos =" + utag_data);
+          utag.view(utag_data);
       }
-      // alert(foo[1]+"dd");
     }
     else{
-      if(e.target.attributes.href.value=="/index.php/settings/user"){
+      if(targetElement.attributes.href.value=="/index.php/settings/user"){
         var utag_data = {
-          page_content_id : "top.bar.menu.userprofile", // page name
+          wt_link_id: "top.bar.menu.userprofile",
+          page_content_id : "top.bar.menu", // page name
           page_type : "theme" // page type
           }
-           alert("profile =" + utag_data);
+          utag.view(utag_data);
       }
-      // alert(e.target.attributes.href.value);
     }
   }
   else if(targetElement=="Object HTMLSpanElement"){
-     alert("aaa");
   }
-  else if(e.target && e.target.id== 'sharingout'){
-      //  alert("sharingout");
-    }}); 
-  
-  
+  else if(targetElement && targetElement.id== 'sharingout'){
+    }
+ 
+  }); 

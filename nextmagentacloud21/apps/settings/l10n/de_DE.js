@@ -498,10 +498,11 @@ OC.L10N.register(
     "login settings"  : "Login-Einstellungen",
     "for all telekom services." : "fur alle Telekom Dienste andern.",
     "Storage utilisation" : "Speicherplatz",
-    "The recycle bin is automatically tidied up." : "Der Papierkorb wird automatisch aufgeraumt",
-    "Files that have been in the recycle bin for longer than 30 days are automatically deleted permanently and free up storage space."  :"Dateien, die langer 30 Tage im Papierkorb liegen, werden automatisch endgutig geloscht und geben Speicherplatz frei.",
+    "The recycle bin is automatically tidied up." : "Der Papierkorb wird automatisch aufgeräumt.",
+    "Files that have been in the recycle bin for longer than 30 days are automatically deleted permanently and free up storage space."  :"Dateien, die länger als 30 Tage im Papierkorb liegen, werden automatisch endgültig gelöscht und geben Speicherplatz frei.",
     "of" : "von",
     "Memory"  :"Speicher zu",
-    "occupied" : "belget"
+    "occupied" : "belegt",
+    "Tariff information"  : "Tarifinformationen"
 },
 "nplurals=2; plural=(n != 1);");
