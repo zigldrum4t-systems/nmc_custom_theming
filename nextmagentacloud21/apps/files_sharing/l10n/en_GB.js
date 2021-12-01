@@ -13,7 +13,7 @@ OC.L10N.register(
         "Read and write" : "Can edit",
         "Add link" : "Add link",
         "Personal sharing via email" : "Personal sharing via email",
-        "Resharing is not allowed." : "Resharing is not allowed.",
+        "Resharing is not allowed" : "Resharing is not allowed",
         "Resharing is allowed." : "Resharing is allowed.",
         "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration." : "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration.",
         "Your shares" : "Your shares",
