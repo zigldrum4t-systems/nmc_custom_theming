@@ -21,33 +21,34 @@
 
 
 #nmc_welcome_popup a.button {
+  background-color: #e20074 !important;
+  border-color: #e20074 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  height: 40px !important;
+  font-size: 1rem;
+  font-weight: normal;
+  padding:0.625rem 1.5rem !important;
+}
+
+
+#nmc_welcome_popup a.button:hover {
+  background-color: #f90984 !important;
+}
+
+
+#nmc_welcome_popup select.primary, #nmc_welcome_popup button.primary, #nmc_welcome_popup .button.primary ,
+#add_new_popup {
   height: 40px !important;
   border-radius: 8px !important;
   font-size: 1rem;
   font-weight: normal;
   padding: 0.625rem 1.5rem !important;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border-color: #191919;
   margin:0 0.5rem 0 0 !important;
-}
+  color:#191919;
 
-
-#nmc_welcome_popup a.button:hover {
-  border-color: #e20074 !important;
-  color:#e20074 !important;
-}
-
-
-select.primary, button.primary, .button.primary ,
-#add_new_popup {
-    background-color: #e20074 !important;
-    border-color: #e20074 !important;
-    color: #ffffff !important;
-    border-radius: 8px !important;
-    height: 40px !important;
-    font-size: 1rem;
-    font-weight: normal;
-    padding:0.625rem 1.5rem !important;
 }
 
 .modal-footer button {
@@ -65,9 +66,13 @@ select.primary, button.primary, .button.primary ,
    margin-top:2rem !important;
 }
 
-select.primary:hover, button.primary:hover, .button.primary:hover ,
+
+
+#nmc_welcome_popup select.primary:hover, #nmc_welcome_popup button.primary:hover, #nmc_welcome_popup .button.primary:hover ,
 #add_new_popup:hover {
-  background-color: #f90984 !important;
+  border-color: #e20074 !important;
+  color:#e20074 !important;
+  background-color:#ffffff !important;
 }
 
 .modal-body {
@@ -101,7 +106,7 @@ select.primary:hover, button.primary:hover, .button.primary:hover ,
   color:#e20074 !important;
 }
 
-.nmc_welcome_popup-header button.modal-default-button {
+#nmc_welcome_popup .nmc_welcome_popup-header button.primary.modal-default-button {
   background-color: unset!important;
   border: unset!important;
   width:24px !important;

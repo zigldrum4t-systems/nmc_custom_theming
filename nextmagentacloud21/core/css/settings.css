@@ -303,8 +303,12 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 
   .devices-session .clientslinks {
     margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
- }
+    margin-bottom: 1.5rem;
+  }
+
+ .devices-session #clientslinks {
+    margin-top: 1.5rem;
+  }
 
   #clientslinks{
     padding-bottom: 1.5rem;
