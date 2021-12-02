@@ -1076,9 +1076,14 @@ div.crumb:last-child {
 }
 
 #rich-workspace #editor-session-list .save-status{
+    align-items: flex-start !important;
     padding-right: 1.25rem !important;
     min-width: unset !important;
     top:0 !important;
+}
+
+#body-public #rich-workspace #editor-session-list .icon-share{
+  display: none;
 }
 
 /* Add Button*/
@@ -1228,16 +1233,22 @@ li>.menuitem[class*=' icon-'] {
     line-height: 120% !important;
 }
 
+#editor-wrapper .submenu button.icon-h1,
+#editor-wrapper .submenu button.icon-h2,
+#editor-wrapper .submenu button.icon-h3,
+#editor-wrapper .submenu button.icon-h4,
+#editor-wrapper .submenu button.icon-h5,
+#editor-wrapper .submenu button.icon-h6
+{
+  padding: 0 1rem !important;
+}
+
 #editor-session-list .v-popover {
     display: none !important;
 }
 
 .menubar button.is-active::before {
     background: none !important;
-}
-
-.save-status {
-    align-items: flex-start !important;
 }
 
 .submenu .popovermenu li>a.active,
@@ -1933,6 +1944,7 @@ iframe.viewer__file {
 
 #oc-dialog-filepicker-content .breadcrumb {
     margin-left: 0 !important;
+    padding-bottom: 1.5rem;
 }
 
 .oc-dialog-content {
@@ -2198,6 +2210,9 @@ aside .icon-close:hover,
       max-height: 420px !important;
     }
 
+    table.multiselect th .columntitle.name span{
+      font-size: 0.875rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -2413,6 +2428,7 @@ aside .icon-close:hover,
       min-height: 20px;
       min-width: 20px;
       margin-bottom: 0.25rem;
+      margin-left: 0.5rem;
    }
 }
 
@@ -2470,10 +2486,19 @@ aside .icon-close:hover,
     }
 }
 
-
 @media screen and (max-width: 420px) {
-  #headerName-container .headerSizeOpen, #headerName-container #headerSizeCount {
-      display: none;
+    #selectedActionLabel .icon-more{
+        margin-right: -12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+  table.multiselect th .columntitle.name span{
+    font-size: 0.8125rem !important;
+  }
+  table.multiselect th .columntitle .headerSizeOpen,
+  table.multiselect th .columntitle #headerSizeCount{
+    display: none;
   }
 }
 
@@ -2521,6 +2546,7 @@ aside .icon-close:hover,
 
   table.multiselect th .columntitle.name {
     padding-left: 0 !important;
+    font-size: 0.875rem;
   }
 
   .username-lable{
