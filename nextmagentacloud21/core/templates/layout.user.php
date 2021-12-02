@@ -14,6 +14,7 @@
   <?php if ($theme->getiTunesAppId() !== '') { ?>
     <meta name="apple-itunes-app" content="app-id=<?php p($theme->getiTunesAppId()); ?>">
   <?php } ?>
+
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="<?php p((!empty($_['application']) && $_['appid'] != 'files') ? $_['application'] : $theme->getTitle()); ?>">
@@ -27,6 +28,7 @@
   <?php emit_css_loading_tags($_); ?>
   <?php emit_script_loading_tags($_); ?>
   <?php print_unescaped($_['headers']); ?>
+  <script src="//tags-eu.tiqcdn.com/utag/telekom/mediencenter/dev/utag.js"></script>
 </head>
 
 <body id="<?php p($_['bodyid']); ?>">
