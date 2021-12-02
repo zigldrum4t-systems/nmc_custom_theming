@@ -135,7 +135,6 @@ function breadcrumbAddLabel() {
   
 
 window.addEventListener('click',function(e){
-  debugger;
   var targetElement = e.target || e.srcElement;
   
   if(targetElement.id=="select_alselect_all_filesl_files"){
@@ -293,8 +292,8 @@ window.addEventListener('click',function(e){
       if(!elementClassname.includes('-menu-')){
   
         var eventClassName = targetElement.className; 
-        var foo = eventClassName.split("nav-icon-");
-        if(foo[0].includes('menu__trigger')){
+        var envent_class = eventClassName.split("nav-icon-");
+        if(envent_class[0].includes('menu__trigger')){
           var utag_data = {
             wt_link_id: "top.bar.menu.search",
             page_content_id : "top.bar.menu", // page name
@@ -303,7 +302,7 @@ window.addEventListener('click',function(e){
             utag.view(utag_data);
           }
   
-         else if(foo[0].includes('emailmenu')){
+         else if(envent_class[0].includes('emailmenu')){
             var utag_data = {
               wt_link_id: "top.bar.menu.emailcenter",
               page_content_id : "top.bar.menu", // page name
@@ -311,7 +310,7 @@ window.addEventListener('click',function(e){
               }
               utag.view(utag_data);
           }
-          else if(foo[0].includes('displayname')){
+          else if(envent_class[0].includes('displayname')){
             var utag_data = {
               wt_link_id: "content.checkbox.selectall",
               page_content_id : "Content.Button.NewFolder", // page name
@@ -319,9 +318,9 @@ window.addEventListener('click',function(e){
             }
             utag.view(utag_data);
           }
-          if(foo[0]!==""){
-              var foo0 = foo[0].split("svg");
-              if($.trim(foo0[0])=="favorites"){
+          if(envent_class[0]!==""){
+              var envent_class0 = envent_class[0].split("svg");
+              if($.trim(envent_class0[0])=="favorites"){
                 var utag_data = {
                   wt_link_id: "content.checkbox.selectall",
                   page_content_id : "left.menu.favorites", // page name
@@ -331,9 +330,9 @@ window.addEventListener('click',function(e){
               }
           }
 
-          if(foo[1]!==""){
-              var foo1 = foo[1].split("svg");
-              if($.trim(foo1[0])=="favorites"){
+          if(envent_class[1]!==""){
+              var envent_class1 = envent_class[1].split("svg");
+              if($.trim(envent_class1[0])=="favorites"){
                 var utag_data = {
                   wt_link_id: "left.menu.favorites",
                   page_content_id : "left.menu", // page name
@@ -341,17 +340,16 @@ window.addEventListener('click',function(e){
                   }
                 utag.view(utag_data);
               }
-              else if($.trim(foo1[0])=="files"){
+              else if($.trim(envent_class1[0])=="files"){
                 var utag_data = {
                   wt_link_id: "left.menu.allfiles",
                   page_content_id : "left.menu", // page name
                   page_type : "files" // page type
                   }
                   utag.view(utag_data);
-                  alert("my files =" + utag_data);
                 
               }
-              else if($.trim(foo1[0])=="sharingout"){
+              else if($.trim(envent_class1[0])=="sharingout"){
                 var utag_data = {
                   wt_link_id: "left.menu.sharesfromme",
                   page_content_id : "left.menu", // page name
@@ -360,7 +358,7 @@ window.addEventListener('click',function(e){
                   utag.view(utag_data);
                   //alert("sharingout =" + utag_data);
               }
-              else if($.trim(foo1[0])=="sharingin"){
+              else if($.trim(envent_class1[0])=="sharingin"){
                 var utag_data = {
                   wt_link_id: "left.menu.sharesfromothers",
                   page_content_id : "left.menu", // page name
@@ -371,15 +369,13 @@ window.addEventListener('click',function(e){
             }
       }
       else if(elementClassname.contains('menu-')){
-        var foo = eventClassName.split("menu-");
-        //alert(foo[1]+"aa");
       }
     }
   }
   else if(targetElement.attributes){
     if(targetElement.attributes.href.value.includes('apps/')){
-      var foo = targetElement.attributes.href.value.split('apps/')
-      if(foo[1]=="files/"){
+      var envent_class = targetElement.attributes.href.value.split('apps/')
+      if(envent_class[1]=="files/"){
         var utag_data = {
           wt_link_id: "top.bar.menu.myfiles",
           page_content_id : "top.bar.menu", // page name
@@ -387,7 +383,7 @@ window.addEventListener('click',function(e){
           }
           utag.view(utag_data);
       }
-      else if(foo[1]=="dashboard/"){
+      else if(envent_class[1]=="dashboard/"){
         var utag_data = {
           wt_link_id: "top.bar.menu.welcome",
           page_content_id : "top.bar.menu", // page name
@@ -395,7 +391,7 @@ window.addEventListener('click',function(e){
           }
           utag.view(utag_data);
       }
-      else if(foo[1]=="photos/"){
+      else if(envent_class[1]=="photos/"){
         var utag_data = {
           wt_link_id: "top.bar.menu.media",
           page_content_id : "top.bar.menu", // page name
@@ -403,7 +399,7 @@ window.addEventListener('click',function(e){
           }
           utag.view(utag_data);
       }
-      else if(foo[1]=="photos/videos"){
+      else if(envent_class[1]=="photos/videos"){
         var utag_data = {
           wt_link_id: "content.checkbox.selectall",
           page_content_id : "top.bar.menu.media", // page name
