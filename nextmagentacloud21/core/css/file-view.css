@@ -342,7 +342,7 @@ table th .sort-indicator {
     margin-left: 0;
     display: inline-block;
     vertical-align: text-bottom;
-    opacity: 0.3;
+    opacity: unset !important;
 }
 
 #filestable .filename .favorite-mark .icon-starred {
