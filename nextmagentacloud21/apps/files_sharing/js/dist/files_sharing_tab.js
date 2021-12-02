@@ -10178,6 +10178,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 //
 //
 //
+//
+//
 
 
 
@@ -10941,6 +10943,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 
 
 
@@ -11036,7 +11040,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             });
           }
 
-          return t('files_sharing', 'Share link ({label})', {
+          return t('files_sharing', 'Link "{label}"', {
             label: this.share.label.trim()
           });
         }
@@ -60293,6 +60297,37 @@ var render = function() {
           attrs: { href: _vm.share.shareWithLink }
         },
         [
+          !_vm.share
+            ? _c("div", [
+                _c("h5", [
+                  _vm._v(_vm._s(_vm.title)),
+                  !_vm.isUnique
+                    ? _c(
+                        "span",
+                        { staticClass: "sharing-entry__desc-unique" },
+                        [
+                          _vm._v(
+                            " (" +
+                              _vm._s(_vm.share.shareWithDisplayNameUnique) +
+                              ")"
+                          )
+                        ]
+                      )
+                    : _vm._e()
+                ]),
+                _vm._v(" "),
+                _vm.hasStatus
+                  ? _c("p", [
+                      _c("span", [_vm._v(_vm._s(_vm.share.status.icon || ""))]),
+                      _vm._v(" "),
+                      _c("span", [
+                        _vm._v(_vm._s(_vm.share.status.message || ""))
+                      ])
+                    ])
+                  : _vm._e()
+              ])
+            : _vm._e(),
+          _vm._v(" "),
           _c(
             "div",
             { attrs: { id: "app" } },
@@ -60647,6 +60682,20 @@ var render = function() {
       }),
       _vm._v(" "),
       _c("div", { staticClass: "sharing-entry__desc" }, [
+        !_vm.share
+          ? _c("div", [
+              _c("h5", { attrs: { title: _vm.title } }, [
+                _vm._v("\n\t\t\t\t" + _vm._s(_vm.title) + "\n\t\t\t")
+              ]),
+              _vm._v(" "),
+              _vm.subtitle
+                ? _c("p", [
+                    _vm._v("\n\t\t\t\t" + _vm._s(_vm.subtitle) + "\n\t\t\t")
+                  ])
+                : _vm._e()
+            ])
+          : _vm._e(),
+        _vm._v(" "),
         _c(
           "div",
           { attrs: { id: "app" } },
