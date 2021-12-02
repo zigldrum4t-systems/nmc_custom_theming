@@ -759,7 +759,7 @@ form div{
      max-width: 190px !important;
   }
 
-  .custom-select .disabledRow h5 {
+  .sharing-link-list li:not(.email-share-link ) .custom-select  h5 {
     max-width:150px;
   }
 

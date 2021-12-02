@@ -618,7 +618,7 @@ table.multiselect #modified {
   color:#e20074 !important;
 }
 
-table th#headerDate, table td.date, table th.column-last, table td.column-last {
+ table th.column-mtime {
   max-width: unset !important;
 }
 
