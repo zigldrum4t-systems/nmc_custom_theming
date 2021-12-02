@@ -12676,6 +12676,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
      */
     randomId: function randomId() {
       return Math.random().toString(27).substr(2);
+    },
+    notePlaceholder: function notePlaceholder() {
+      return t('files_sharing', 'Your message');
     }
   }),
   methods: {
@@ -13274,6 +13277,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     isLinkShare: function isLinkShare() {
       return this.SHARE_TYPES.SHARE_TYPE_LINK === this.share.type;
+    },
+    shareLabelPlaceholder: function shareLabelPlaceholder() {
+      return t('files_sharing', 'Share label');
     }
   }),
   methods: {
@@ -60297,7 +60303,7 @@ var render = function() {
           attrs: { href: _vm.share.shareWithLink }
         },
         [
-          !_vm.share
+          !_vm.share.canEdit
             ? _c("div", [
                 _c("h5", [
                   _vm._v(_vm._s(_vm.title)),
@@ -60682,7 +60688,7 @@ var render = function() {
       }),
       _vm._v(" "),
       _c("div", { staticClass: "sharing-entry__desc" }, [
-        !_vm.share
+        !_vm.share.canEdit
           ? _c("div", [
               _c("h5", { attrs: { title: _vm.title } }, [
                 _vm._v("\n\t\t\t\t" + _vm._s(_vm.title) + "\n\t\t\t")
@@ -61376,7 +61382,7 @@ var render = function() {
               ],
               ref: "note",
               staticClass: "sharing-note",
-              attrs: { placeholder: "Your message...", disabled: _vm.saving },
+              attrs: { placeholder: _vm.notePlaceholder, disabled: _vm.saving },
               domProps: { value: _vm.shareNote },
               on: {
                 input: function($event) {
@@ -61680,7 +61686,7 @@ var render = function() {
                         ref: "label",
                         class: { error: _vm.errors.label },
                         attrs: {
-                          placeholder: "Share label",
+                          placeholder: _vm.shareLabelPlaceholder,
                           disabled: _vm.saving
                         },
                         domProps: { value: _vm.shareLabel },
