@@ -356,7 +356,6 @@ window.addEventListener('click',function(e){
                   page_type : "theme" // page type
                   }
                   utag.view(utag_data);
-                  //alert("sharingout =" + utag_data);
               }
               else if($.trim(envent_class1[0])=="sharingin"){
                 var utag_data = {
