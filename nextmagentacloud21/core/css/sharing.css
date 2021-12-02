@@ -595,7 +595,7 @@ span#global-lookup,
 }
 
 .multiselect__element .option__icon.icon-mail {
-  margin-right: -0.125rem !important;
+  margin-right: -0.25rem !important;
 }
 
 aside .action-radio__label {
@@ -759,7 +759,7 @@ form div{
      max-width: 190px !important;
   }
 
-  .custom-select .disabledRow h5 {
+  .sharing-link-list li:not(.email-share-link ) .custom-select  h5 {
     max-width:150px;
   }
 
