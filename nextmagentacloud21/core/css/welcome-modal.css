@@ -71,11 +71,14 @@
 
 
 
-#nmc_welcome_popup select.primary:hover, #nmc_welcome_popup button.primary:hover, #nmc_welcome_popup .button.primary:hover ,
-#add_new_popup:hover {
+#nmc_welcome_popup select.primary:hover, #nmc_welcome_popup button.primary:hover, #nmc_welcome_popup .button.primary:hover {
   border-color: #e20074 !important;
   color:#e20074 !important;
   background-color:#ffffff !important;
+}
+}
+#add_new_popup:hover {
+  background-color: #f90984 !important;
 }
 
 .modal-body {
