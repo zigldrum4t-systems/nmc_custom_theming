@@ -56,13 +56,9 @@
   color:#191919;
   width:auto !important;
   max-width: 180px !important;
-<<<<<<< HEAD
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-=======
-
->>>>>>> 083bc9f4133f533be12d671f3ada7a9c3f058139
 }
 
 .modal-footer button {
@@ -149,11 +145,7 @@
 }
 
 .modal-mask .button {
-<<<<<<< HEAD
   margin:0rem 0.188rem 0rem 0rem !important;
-=======
-  margin:0.188rem 0.188rem 0rem 0rem !important;
->>>>>>> 083bc9f4133f533be12d671f3ada7a9c3f058139
 }
 
 input#add_new_popup {
