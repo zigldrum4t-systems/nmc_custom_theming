@@ -25,3 +25,10 @@
   margin-top: 10rem !important;
 }
 
+
+@media screen and (max-width: 767px) {
+  .login-main {
+    height: 60vh !important;
+  }
+
+}

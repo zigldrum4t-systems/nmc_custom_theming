@@ -26,6 +26,7 @@ OC.L10N.register(
         "The password is not send with the email to maintain confidentiality." : "The password is not send with the email to maintain confidentiality.",
         "Received": "Received",
         "Shared by": "Shared by",
+        "Add Link": "Add Link",
         "Your Message": "Your Message",
         "Your message": "Your message",
         "You can attach a message to the share.": "You can attach a message to the share.",
