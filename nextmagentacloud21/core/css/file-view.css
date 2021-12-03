@@ -728,3 +728,7 @@ table th#headerDate, table td.date, table th.column-last, table td.column-last {
 #app-content-trashbin #selectedActionsList .popovermenu {
   right: 0;
 }
+
+.actions-selected span:nth-child(2){
+  font-size: 14px !important;
+}

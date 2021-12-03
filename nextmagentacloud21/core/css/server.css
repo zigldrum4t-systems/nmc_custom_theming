@@ -1082,8 +1082,8 @@ div.crumb:last-child {
     top:0 !important;
 }
 
-#body-public #rich-workspace #editor-session-list .icon-share{
-  display: none;
+#editor-session-list .icon-share{
+  display: none !important;
 }
 
 /* Add Button*/
