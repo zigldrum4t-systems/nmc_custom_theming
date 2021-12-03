@@ -19,4 +19,9 @@
   color: #e20074 !important;
 }
 
+.login-footer{display: none;}
+.login-main {
+  display: block !important;
+  margin-top: 10rem !important;
+}
 

@@ -1076,9 +1076,14 @@ div.crumb:last-child {
 }
 
 #rich-workspace #editor-session-list .save-status{
+    align-items: flex-start !important;
     padding-right: 1.25rem !important;
     min-width: unset !important;
     top:0 !important;
+}
+
+#body-public #rich-workspace #editor-session-list .icon-share{
+  display: none;
 }
 
 /* Add Button*/
@@ -1244,10 +1249,6 @@ li>.menuitem[class*=' icon-'] {
 
 .menubar button.is-active::before {
     background: none !important;
-}
-
-.save-status {
-    align-items: flex-start !important;
 }
 
 .submenu .popovermenu li>a.active,
@@ -1943,6 +1944,7 @@ iframe.viewer__file {
 
 #oc-dialog-filepicker-content .breadcrumb {
     margin-left: 0 !important;
+    padding-bottom: 1.5rem;
 }
 
 .oc-dialog-content {
