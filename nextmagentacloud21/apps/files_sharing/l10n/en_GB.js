@@ -25,6 +25,10 @@ OC.L10N.register(
         "There are no editing functions for files shared with non-MagentaCLOUD users." : "There are no editing functions for files shared with non-MagentaCLOUD users.",
         "The password is not send with the email to maintain confidentiality." : "The password is not send with the email to maintain confidentiality.",
         "Received": "Received",
-        "Shared by": "Shared by"
+        "Shared by": "Shared by",
+        "Your Message": "Your Message",
+        "Your message": "Your message",
+        "You can attach a message to the share.": "You can attach a message to the share.",
+        "Share label": "Share label"
 },
 "nplurals=2; plural=(n != 1);");

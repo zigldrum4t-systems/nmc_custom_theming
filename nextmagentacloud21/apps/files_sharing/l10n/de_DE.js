@@ -30,6 +30,9 @@ OC.L10N.register(
         "Inform Now": "Jetzt informieren",
         "The": "Die",
         "Shared by": "Geteilt von",
-        "Add Link": "Link erstellen"
+        "Add Link": "Link erstellen",
+        "Your Message": "Ihre Nachricht",
+        "You can attach a message to the share.": "Sie können der Freigabe eine Nachricht anhängen.",
+        "Share label": "Label teilen"
 },
 "nplurals=2; plural=(n != 1);");
