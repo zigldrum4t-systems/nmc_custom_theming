@@ -648,3 +648,8 @@ aside .icon-star{
 .pending-share-row[data-mime="httpd/unix-directory"] .thumbnail {
   background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }
+
+
+.app-sidebar-header__figure.app-sidebar-header__figure--with-action [data-mime="httpd/unix-directory"] {
+  background-image: url(../../core/img/filetypes/folder-shared.svg) !important;
+}

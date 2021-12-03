@@ -31,6 +31,10 @@
   padding: 0.625rem 1.5rem !important;
   width:auto !important;
   max-width: 180px !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
 }
 
 
@@ -52,7 +56,9 @@
   color:#191919;
   width:auto !important;
   max-width: 180px !important;
-
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .modal-footer button {
@@ -139,7 +145,7 @@
 }
 
 .modal-mask .button {
-  margin:0.188rem 0.188rem 0rem 0rem !important;
+  margin:0rem 0.188rem 0rem 0rem !important;
 }
 
 input#add_new_popup {
