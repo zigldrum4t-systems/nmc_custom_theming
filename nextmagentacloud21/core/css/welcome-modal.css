@@ -25,12 +25,12 @@
   border-color: #e20074 !important;
   color: #ffffff !important;
   border-radius: 8px !important;
-  height: 41px !important;
+  height: 40px !important;
   font-size: 1rem;
   font-weight: normal;
   padding: 0.625rem 1.5rem !important;
   width:auto !important;
-
+  max-width: 180px !important;
 }
 
 
@@ -51,6 +51,7 @@
   margin:0 0.5rem 0 0 !important;
   color:#191919;
   width:auto !important;
+  max-width: 180px !important;
 
 }
 
@@ -76,7 +77,7 @@
   color:#e20074 !important;
   background-color:#ffffff !important;
 }
-}
+
 #add_new_popup:hover {
   background-color: #f90984 !important;
 }
@@ -94,8 +95,8 @@
 }
 
 .logo img {
-  max-width:100%;
-  height:100%;
+  width:100%;
+  height:auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -135,6 +136,14 @@
 #welcome_popup .icon-delete {
   display: inline-block;
   padding: 0.75rem 1.25rem !important;
+}
+
+.modal-mask .button {
+  margin:0.188rem 0.188rem 0rem 0rem !important;
+}
+
+input#add_new_popup {
+  margin-bottom:4rem !important;
 }
 
  /* slide - forms  */

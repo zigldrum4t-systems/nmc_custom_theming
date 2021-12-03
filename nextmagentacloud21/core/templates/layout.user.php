@@ -28,7 +28,7 @@
   <?php emit_css_loading_tags($_); ?>
   <?php emit_script_loading_tags($_); ?>
   <?php print_unescaped($_['headers']); ?>
-  <script src="//tags-eu.tiqcdn.com/utag/telekom/mediencenter/dev/utag.js"></script>
+
 </head>
 
 <body id="<?php p($_['bodyid']); ?>">

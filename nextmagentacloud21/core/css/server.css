@@ -1069,6 +1069,7 @@ div.crumb:last-child {
 
 #filestable thead {
     top: 118px;
+    z-index: 49;
 }
 
 #filelist-header #rich-workspace, #rich-workspace #editor-session-list{
@@ -1082,8 +1083,8 @@ div.crumb:last-child {
     top:0 !important;
 }
 
-#body-public #rich-workspace #editor-session-list .icon-share{
-  display: none;
+#editor-session-list .icon-share{
+  display: none !important;
 }
 
 /* Add Button*/
