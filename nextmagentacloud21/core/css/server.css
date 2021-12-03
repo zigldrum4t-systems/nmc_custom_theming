@@ -1069,6 +1069,7 @@ div.crumb:last-child {
 
 #filestable thead {
     top: 118px;
+    z-index: 49;
 }
 
 #filelist-header #rich-workspace, #rich-workspace #editor-session-list{
