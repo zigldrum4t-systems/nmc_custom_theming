@@ -32,6 +32,7 @@ OC.L10N.register(
         "Shared by": "Geteilt von",
         "Add Link": "Link erstellen",
         "Your Message": "Ihre Nachricht",
+        "Your message": "Ihre Nachricht",
         "You can attach a message to the share.": "Sie können der Freigabe eine Nachricht anhängen.",
         "Share label": "Label teilen"
 },
