@@ -96,7 +96,7 @@
 
 .logo img {
   width:100%;
-  height:100%;
+  height:auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -139,7 +139,7 @@
 }
 
 .modal-mask .button {
-  margin:3px 3px 0px 0px !important;
+  margin:0.188rem 0.188rem 0rem 0rem !important;
 }
 
 input#add_new_popup {
