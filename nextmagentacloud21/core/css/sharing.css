@@ -744,9 +744,14 @@ form div{
     top:unset !important;
   }
 
- aside .multiselect.sharing-input.multiselect--disabled.multiselect--single:hover .multiselect__tags {
+ aside .multiselect.sharing-input.multiselect--disabled.multiselect--single:hover .multiselect__tags,
+ aside .multiselect.sharing-input.multiselect--disabled.multiselect--single:focus-within .multiselect__tags{
     border-color:unset !important;
   }
+
+.advanced-settings input {
+  min-width:202px !important;
+}
 
   .sharing-entry.sharing-entry__reshare .sharing-entry__desc h5 {
     white-space: unset !important;
