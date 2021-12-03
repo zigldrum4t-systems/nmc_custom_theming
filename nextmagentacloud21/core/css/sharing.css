@@ -748,6 +748,7 @@ form div{
  aside .multiselect.sharing-input.multiselect--disabled.multiselect--single:focus-within .multiselect__tags{
     border-color:unset !important;
   }
+
 .advanced-settings input {
   min-width:202px !important;
 }
