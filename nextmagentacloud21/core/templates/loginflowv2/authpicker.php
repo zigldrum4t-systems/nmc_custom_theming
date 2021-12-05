@@ -20,7 +20,7 @@
  */
 
 style('core', 'login/authpicker');
-script('core', 'autoflowlogin');
+script('core', 'login/authpicker');
 
 /** @var array $_ */
 /** @var \OCP\IURLGenerator $urlGenerator */
@@ -36,14 +36,16 @@ $urlGenerator = $_['urlGenerator'];
 		])) ?>
 	</p>
 
-	<p class="info">
-		<?php print_unescaped($l->t('If you are not trying to set up a new device or app, someone is trying to trick you into granting them access to your data. In this case do not proceed and instead contact your system administrator.')) ?>
-	</p>
+	<span class="warning hidden">
+		<h3><?php p($l->t('Security warning')) ?></h3>
+		<p>
+			<?php p($l->t('If you are not trying to set up a new device or app, someone is trying to trick you into granting them access to your data. In this case do not proceed and instead contact your system administrator.')) ?>
+		</p>
+	</span>
 
 	<br/>
 
 	<p id="redirect-link">
-  <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()); ?>">window.location="<?php echo $urlGenerator->linkToRouteAbsolute('core.ClientFlowLoginV2.grantPage', ['stateToken' => $_['stateToken']]); ?>";</script>
 		<a href="<?php p($urlGenerator->linkToRouteAbsolute('core.ClientFlowLoginV2.grantPage', ['stateToken' => $_['stateToken']])) ?>">
 			<input type="submit" class="login primary icon-confirm-white" value="<?php p($l->t('Log in')) ?>">
 		</a>

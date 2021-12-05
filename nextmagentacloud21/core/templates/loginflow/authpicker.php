@@ -19,17 +19,15 @@
  *
  */
 
-script('core', 'login/authpicker');
 style('core', 'login/authpicker');
-script('core', 'autoflowlogin');
-
+script('core', 'login/authpicker');
 
 /** @var array $_ */
 /** @var \OCP\IURLGenerator $urlGenerator */
 $urlGenerator = $_['urlGenerator'];
 ?>
 
-<div class="picker-window hidden">
+<div class="picker-window">
 	<h2><?php p($l->t('Connect to your account')) ?></h2>
 	<p class="info">
 		<?php print_unescaped($l->t('Please log in before granting %1$s access to your %2$s account.', [
@@ -38,14 +36,16 @@ $urlGenerator = $_['urlGenerator'];
 		])) ?>
 	</p>
 
-	<p class="info">
-		<?php print_unescaped($l->t('If you are not trying to set up a new device or app, someone is trying to trick you into granting them access to your data. In this case do not proceed and instead contact your system administrator.')) ?>
-	</p>
+	<span class="warning">
+		<h3><?php p($l->t('Security warning')) ?></h3>
+		<p>
+			<?php p($l->t('If you are not trying to set up a new device or app, someone is trying to trick you into granting them access to your data. In this case do not proceed and instead contact your system administrator.')) ?>
+		</p>
+	</span>
 
 	<br/>
 
 	<p id="redirect-link">
-  <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()); ?>">window.location="<?php p($urlGenerator->linkToRoute('core.ClientFlowLogin.grantPage', ['stateToken' => $_['stateToken'], 'clientIdentifier' => $_['clientIdentifier'], 'oauthState' => $_['oauthState']])) ?>";</script>
 		<a href="<?php p($urlGenerator->linkToRoute('core.ClientFlowLogin.grantPage', ['stateToken' => $_['stateToken'], 'clientIdentifier' => $_['clientIdentifier'], 'oauthState' => $_['oauthState']])) ?>">
 			<input type="submit" class="login primary icon-confirm-white" value="<?php p($l->t('Log in')) ?>">
 		</a>
