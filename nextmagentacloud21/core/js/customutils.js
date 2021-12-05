@@ -9,6 +9,7 @@ window.onload = function () {
   domElementsobserver();
   fileActionButtonSettings();
   breadcrumbAddLabel();
+  mobileOnlyClass();
   // we will enable it once it get tested.
   // webTrackingEvents();
 };
@@ -134,9 +135,23 @@ function breadcrumbAddLabel() {
      }
   }
 
+/* to resolve rich text area issue on specific to mobile */
+function mobileOnlyClass() {
+  if( /Android|webOS|iOS/i.test(navigator.userAgent) ) {
 
-  function webTrackingEvents() {
-    console.log('tracking');
+    const ele = document.querySelectorAll('#body-public #content');
+    if(ele){
+      ele[0].classList.add('mobile-content');
+    }
+
+    const editor = document.querySelectorAll('#direct-editor .icon-share');
+    if(editor){
+      editor[0].classList.add('hidden');
+    }
+  }
+}
+
+function webTrackingEvents() {
     window.addEventListener('click',function(e){
       var targetElement = e.target || e.srcElement;
 
