@@ -62,7 +62,7 @@ OC.L10N.register(
     "This application enables users to view actions related to their files in Nextcloud." : "Diese Anwendung erlaubt es dem Benutzer, Aktivitäten zu dessen Dateien in Nextcloud zu verfolgen.",
     "Regular mails": "Regelmäßige Mails",
     "Activity Report": "Aktivitätsbericht",
-    "You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.": "Sie können mit der folgenden Auflistung darüber bestimmen bei welchen Aktivitäten Sie benachrichtigt werden möchten und wie oft. Sie können sich per E-Mail oder Push-Benachrichtigung informieren lassen.",
+    "You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.": "Sie können mit der folgenden Auflistung darüber bestimmen, bei welchen Aktivitäten Sie benachrichtigt werden möchten und wie oft. Sie können sich per E-Mail oder Push-Benachrichtigung informieren lassen.",
     "The activity report informs you every morning about all processes in your MagentaCLOUD.": "Der Aktivitätsbericht informiert Sie jeden Morgen über alle Vorgänge in ihrer MagentaCLOUD."
 },
 "nplurals=2; plural=(n != 1);");
