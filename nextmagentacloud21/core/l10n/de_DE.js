@@ -439,6 +439,10 @@ OC.L10N.register(
     "Keep both files for all" : "Beide Dateien für alle behalten",
     "Replace all files" : "Alle Dateien ersetzen",
     "Help & FAQ": "Hilfe & FAQ",
-    "Logout": "Ausloggen"
+    "Logout": "Ausloggen",
+    "Email": "E-Mail",
+    "Search":"Suche",
+    "Menu": "Menü",
+    "Copied!" : "Kopiert!"
 },
 "nplurals=2; plural=(n != 1);");

@@ -58,7 +58,7 @@ function guestInfoText() {
 function searchIconLabel() {
   var spanElement = document.createElement('span');
   spanElement.className = 'menu-search-text';
-  spanElement.innerText = 'Search';
+  spanElement.innerText = t('core', 'Search');
   document.getElementsByClassName('header-menu__trigger')[0] ?
     document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement) : null;
 }
