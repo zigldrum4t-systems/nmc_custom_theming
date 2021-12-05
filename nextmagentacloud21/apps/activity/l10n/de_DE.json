@@ -44,8 +44,8 @@
     "Send notification emails:" : "Benachrichtigungs-E-Mails senden:",
     "As soon as possible" : "So bald wie möglich",
     "Hourly" : "Stündlich",
-    "Daily" : "täglich",
-    "Weekly" : "wöchentlich",
+    "Daily" : "Täglich",
+    "Weekly" : "Wöchentlich",
     "Choose for which activities you want to get an email or push notification." : "Wählen Sie aus, für welche Aktivitäten Sie eine E-Mail oder eine Push-Benachrichtigung erhalten möchten.",
     "Choose for which activities you want to get a push notification." : "Wählen Sie aus, für welche Aktivitäten Sie eine Push-Benachrichtigung erhalten möchten.",
     "Send daily activity summary in the morning" : "Morgens eine tägliche Aktivitätsübersicht senden",
@@ -61,7 +61,7 @@
     "Regular mails": "Regelmäßige Mails",
     "Monthly Status Report": "Monatlicher Statusbericht",
     "Activity Report": "Aktivitätsbericht",
-    "You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.": "Sie können mit der folgenden Auflistung darüber bestimmen bei welchen Aktivitäten Sie benachrichtigt werden möchten und wie oft. Sie können sich per E-Mail oder Push-Benachrichtigung informieren lassen.",
+    "You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.": "Sie können mit der folgenden Auflistung darüber bestimmen, bei welchen Aktivitäten Sie benachrichtigt werden möchten und wie oft. Sie können sich per E-Mail oder Push-Benachrichtigung informieren lassen.",
     "The activity report informs you every morning about all processes in your MagentaCLOUD.": "Der Aktivitätsbericht informiert Sie jeden Morgen über alle Vorgänge in ihrer MagentaCLOUD."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
