@@ -51,7 +51,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return 'MagentaCloud';
+		return 'MagentaCLOUD';
 	}
 
 	/**
@@ -59,7 +59,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'MagentaCloud';
+		return 'MagentaCLOUD';
 	}
 
 	/**
@@ -75,7 +75,7 @@ class OC_Theme {
 	 * @return string slogan
 	 */
 	public function getSlogan() {
-		return 'Bringing personal cloud storage to the next trust level!';
+		return 'Alle Dateien sicher an einem Ort';
 	}
 
 	/**
@@ -136,10 +136,6 @@ class OC_Theme {
 			//'image-login-background' => 'url("./img/nmcloud-background.jpg?v=2")',
 		];
 	}
-
-	// public function addCustomScript() {
-	// 	Util::addScript('brandbar');
-	// }
 
   public function __construct() {
 		\OCP\Util::addScript('core', 'customutils');

@@ -19,9 +19,8 @@
  *
  */
 
-script('core', 'login/grant');
-style('core', 'login/authpicker');
 
+style('core', 'login/grant');
 
 /** @var array $_ */
 /** @var \OCP\IURLGenerator $urlGenerator */

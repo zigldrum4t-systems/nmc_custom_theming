@@ -25,12 +25,18 @@
   border-color: #e20074 !important;
   color: #ffffff !important;
   border-radius: 8px !important;
-  height: 40px !important;
+  padding:0.625rem 1.5rem !important;
+  height:40px;
   font-size: 1rem;
   font-weight: normal;
   padding: 0.625rem 1.5rem !important;
   width:auto !important;
   max-width: 180px !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  display:inline-block;
 }
 
 
@@ -41,28 +47,32 @@
 
 #nmc_welcome_popup select.primary, #nmc_welcome_popup button.primary, #nmc_welcome_popup .button.primary ,
 #add_new_popup {
-  height: 40px !important;
   border-radius: 8px !important;
   font-size: 1rem;
   font-weight: normal;
-  padding: 0.25rem 1.5rem 0.5rem 1.5rem !important;
+  padding:0.25rem 1.5rem 0.5rem 1.5rem !important;
+  height:40px;
   background-color: #ffffff !important;
   border-color: #191919;
   margin:0 0.5rem 0 0 !important;
   color:#191919;
   width:auto !important;
   max-width: 180px !important;
-
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
 }
 
-.modal-footer button {
+#nmc_welcome_popup .modal-footer button {
   margin: unset !important;
 }
 
-.modal-footer {
+#nmc_welcome_popup .modal-footer {
   margin:0rem 1.5rem 1.5rem 0rem !important;
 }
-.modal-footer {
+
+#nmc_welcome_popup .modal-footer {
    overflow: unset !important;
    position: unset !important;
    display: unset !important;
@@ -82,7 +92,7 @@
   background-color: #f90984 !important;
 }
 
-.modal-body {
+#nmc_welcome_popup .modal-body {
   padding:1.5rem !important;
 }
 
@@ -94,7 +104,7 @@
   margin: unset !important;
 }
 
-.logo img {
+#nmc_welcome_popup .logo img {
   width:100%;
   height:auto;
   display: block;
@@ -139,11 +149,15 @@
 }
 
 .modal-mask .button {
-  margin:0.188rem 0.188rem 0rem 0rem !important;
+  margin:0rem 0.188rem 0rem 0rem !important;
 }
 
 input#add_new_popup {
   margin-bottom:4rem !important;
+}
+
+#nmc_welcome_popup ol {
+  margin-left:0.875rem !important;
 }
 
  /* slide - forms  */
