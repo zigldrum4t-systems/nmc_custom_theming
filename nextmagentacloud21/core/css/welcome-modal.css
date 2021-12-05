@@ -154,6 +154,9 @@ input#add_new_popup {
   margin-bottom:4rem !important;
 }
 
+#nmc_welcome_popup ol {
+  margin-left:0.875rem !important;
+}
  /* slide - forms  */
 
  #welcome_popup  h2 {
