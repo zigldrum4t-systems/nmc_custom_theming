@@ -157,7 +157,12 @@ input#add_new_popup {
 }
 
 #nmc_welcome_popup ol {
-  margin-left:0.875rem !important;
+  margin-left:1rem !important;
+}
+
+#nmc_welcome_popup ul {
+  list-style-type:disc !important;
+  margin-left:1rem !important;
 }
 
  /* slide - forms  */
