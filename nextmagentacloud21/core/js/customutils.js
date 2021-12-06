@@ -9,6 +9,7 @@ window.onload = function () {
   domElementsobserver();
   fileActionButtonSettings();
   breadcrumbAddLabel();
+  mobileOnlyClass();
   // we will enable it once it get tested.
   // webTrackingEvents();
 };
@@ -57,7 +58,7 @@ function guestInfoText() {
 function searchIconLabel() {
   var spanElement = document.createElement('span');
   spanElement.className = 'menu-search-text';
-  spanElement.innerText = 'Search';
+  spanElement.innerText = t('core', 'Search');
   document.getElementsByClassName('header-menu__trigger')[0] ?
     document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement) : null;
 }
@@ -134,9 +135,23 @@ function breadcrumbAddLabel() {
      }
   }
 
+/* to resolve rich text area issue on specific to mobile */
+function mobileOnlyClass() {
+  if( /Android|webOS|iOS/i.test(navigator.userAgent) ) {
 
-  function webTrackingEvents() {
-    console.log('tracking');
+    const ele = document.querySelectorAll('#body-public #content');
+    if(ele){
+      ele[0].classList.add('mobile-content');
+    }
+
+    const editor = document.querySelectorAll('#direct-editor .icon-share');
+    if(editor){
+      editor[0].classList.add('hidden');
+    }
+  }
+}
+
+function webTrackingEvents() {
     window.addEventListener('click',function(e){
       var targetElement = e.target || e.srcElement;
 
