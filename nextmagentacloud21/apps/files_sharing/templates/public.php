@@ -91,7 +91,7 @@
               <?php } ?>
             <?php endif; ?>
           <?php endif; ?>
-          <?php if ($_['previewURL'] === $_['downloadURL'] && !$_['hideDownload']) : ?>
+          <?php if ($_['previewURL'] === $_['downloadURL'] && !$_['hideDownload'] && strpos($_['mimetype'], 'image') !== 0) : ?>
             <div class="directDownload">
               <div class="video-file-details">
                 <?php p($l->t('%s', [$_['filename']])) ?> (<?php p($_['fileSize']) ?>)
