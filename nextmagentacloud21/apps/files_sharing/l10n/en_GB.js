@@ -15,7 +15,7 @@ OC.L10N.register(
         "Personal sharing via email" : "Personal sharing via email",
         "Resharing is not allowed" : "Resharing is not allowed",
         "Resharing is allowed." : "Resharing is allowed.",
-        "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration." : "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration.",
+        "You can create links or send shares by mail. If you invite MagentaCLOUD users, you have more opportunities for collaboration." : "You can create links or send shares by mail. If you invite MagentaCLOUD users, you have more opportunities for collaboration.",
         "Your shares" : "Your shares",
         "No shares created yet." : "No shares created yet.",
         "Advanced permission" : "Advanced permission",
@@ -30,6 +30,7 @@ OC.L10N.register(
         "Your Message": "Your Message",
         "Your message": "Your message",
         "You can attach a message to the share.": "You can attach a message to the share.",
-        "Share label": "Share label"
+        "Share label": "Share label",
+        "The password must contain 10 characters and will not be sent with the mail to maintain confidentiality.": "The password must contain 10 characters and will not be sent with the mail to maintain confidentiality."
 },
 "nplurals=2; plural=(n != 1);");
