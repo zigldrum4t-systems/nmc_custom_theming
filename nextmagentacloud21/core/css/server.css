@@ -1073,7 +1073,6 @@ div.crumb:last-child {
 
 #filestable thead {
     top: 118px;
-    z-index: 49;
 }
 
 #filelist-header #rich-workspace, #rich-workspace #editor-session-list{
@@ -1087,8 +1086,8 @@ div.crumb:last-child {
     top:0 !important;
 }
 
-#editor-session-list .icon-share{
-  display: none !important;
+#direct-editor .save-status {
+  top: 0 !important;
 }
 
 /* Add Button*/
@@ -2205,9 +2204,12 @@ aside .icon-close:hover,
     }
 
     .header-menu__carret {
-      right: 7.4375rem !important;
+      right: 10.4375rem !important;
     }
 
+    .header-menu__wrapper{
+      top: 62px !important;
+    }
     #uploadprogressbar {
       width: 25px !important;
     }
@@ -2263,7 +2265,7 @@ aside .icon-close:hover,
     #nextcloud h5,
     #nextcloud span {
         padding: 0 !important;
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
     }
     #header .logo-area {
         display: none;
@@ -2344,6 +2346,11 @@ aside .icon-close:hover,
     #rich-workspace {
         padding: 0 1rem !important;
     }
+
+    #direct-editor{
+      padding: 0 1rem !important;
+    }
+    
     #contactsmenu,
     #settings .menutoggle,
     .nmc_spica_wrapper,
@@ -2494,6 +2501,9 @@ aside .icon-close:hover,
 @media screen and (max-width: 420px) {
     #selectedActionLabel .icon-more{
         margin-right: -12px;
+    }
+    .menububble{
+      height: 60px !important;
     }
 }
 

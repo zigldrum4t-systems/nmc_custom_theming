@@ -1,6 +1,6 @@
 OC.L10N.register(
-    "text",
+    "files_trashbin",
     {
-    "Add Link": "Link hinzufügen"
+    "All": "Alle"
 },
 "nplurals=2; plural=(n != 1);");

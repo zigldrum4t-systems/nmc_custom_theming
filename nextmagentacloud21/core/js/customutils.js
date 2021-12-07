@@ -11,7 +11,7 @@ window.onload = function () {
   breadcrumbAddLabel();
   mobileOnlyClass();
   // we will enable it once it get tested.
-  // webTrackingEvents();
+   //webTrackingEvents();
 };
 
 function brandBarAnimation() {
@@ -58,7 +58,7 @@ function guestInfoText() {
 function searchIconLabel() {
   var spanElement = document.createElement('span');
   spanElement.className = 'menu-search-text';
-  spanElement.innerText = 'Search';
+  spanElement.innerText = t('core', 'Search');
   document.getElementsByClassName('header-menu__trigger')[0] ?
     document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement) : null;
 }
@@ -151,10 +151,43 @@ function mobileOnlyClass() {
   }
 }
 
-function webTrackingEvents() {
-    window.addEventListener('click',function(e){
-      var targetElement = e.target || e.srcElement;
 
+
+
+function webTrackingEvents() {
+  $('.filesSelectionMenu ul li').click(function(e) {
+    var targetElement = e.target;
+    if(targetElement.innerHTML=="Move or copy" || targetElement.innerHTML=="Verschieben oder kopieren"){
+      var utag_data = {
+        wt_link_id: "content.button.hover-move",
+        page_content_id : "files.list.select", // page name
+        page_type : "files" // page type
+        }
+        utag.view(utag_data);
+    }
+
+    if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
+      var utag_data = {
+        wt_link_id: "content.button.hover-delete",
+        page_content_id : "files.list.select", // page name
+        page_type : "files" // page type
+        }
+        utag.view(utag_data);
+    }
+
+    if(targetElement.innerHTML=="Download" || targetElement.innerHTML=="Herunterladen"){
+      var utag_data = {
+        wt_link_id: "content.button.hover-copy",
+        page_content_id : "files.list.select", // page name
+        page_type : "files" // page type
+        }
+        utag.view(utag_data);
+      }
+  });
+
+  window.addEventListener('click',function(e){
+      var targetElement = e.target || e.srcElement;
+      try{
       if(targetElement.id=="select_alselect_all_filesl_files"){
         var utag_data = {
           wt_link_id: "content.checkbox.selectall",
@@ -163,6 +196,36 @@ function webTrackingEvents() {
           }
 
       }
+
+      if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
+        var utag_data = {
+          wt_link_id: "content.button.hover-delete",
+          page_content_id : "files.list.select", // page name
+          page_type : "files" // page type
+          }
+          utag.view(utag_data);
+      }
+
+
+      if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
+        var utag_data = {
+          wt_link_id: "content.button.hover-move",
+          page_content_id : "files.list.select", // page name
+          page_type : "files" // page type
+          }
+          utag.view(utag_data);
+      }
+
+      
+      if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
+        var utag_data = {
+          wt_link_id: "content.button.hover-copy",
+          page_content_id : "files.list.select", // page name
+          page_type : "files" // page type
+          }
+          utag.view(utag_data);
+      }
+
       if(targetElement.innerHTML=="Upload file" || targetElement.innerHTML=="Datei hochladen"){
         var utag_data = {
           wt_link_id: "plus.button.upload",
@@ -440,7 +503,10 @@ function webTrackingEvents() {
       }
       else if(targetElement && targetElement.id== 'sharingout'){
         }
+      }
+      catch(err){
 
+      }
       });
 
 }
