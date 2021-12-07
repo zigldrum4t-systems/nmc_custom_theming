@@ -522,7 +522,7 @@ aside {
     .app-files #app-content, #app-content-vue {
         width: calc(100% - 320px);
     }
-    #app-content-files #fileList td a a.action.action-menu {
+     #fileList td a a.action.action-menu {
         display: none !important;
     }
 }
@@ -582,7 +582,7 @@ aside {
     aside {
         width: 352px !important;
     }
-    #fileList td a a.action.action-menu {
+    #app-content-files #fileList td a a.action.action-menu {
         display: none !important;
     }
     #nmc_welcome_popup .modal-header {
@@ -614,10 +614,8 @@ aside {
 }
 
 @media screen and (min-width: 1599px) {
-    .header-right .smallscreenSize {
-        display: none !important;
-    }
-    #app-content-files #fileList td a a.action.action-menu {
+    .header-right .smallscreenSize,
+    #fileList td a a.action.action-menu {
         display: none !important;
     }
 }
@@ -2452,7 +2450,7 @@ aside .icon-close:hover,
         right: 39.1% !important;
     }
     #fileList td a a.action.action-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -2580,6 +2578,13 @@ aside .icon-close:hover,
 @media all and (min-width: 1024px) and (max-width: 1072px){
   #files-public-content .item-download{
     padding-right: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 1366px) and (min-height: 1024px) {
+  #app-content-files #fileList td a a.action.action-menu {
+    display: flex !important;
   }
 }
 /*Responsive Styling*/
