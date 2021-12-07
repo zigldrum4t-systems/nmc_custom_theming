@@ -582,7 +582,7 @@ aside {
     aside {
         width: 352px !important;
     }
-    #fileList td a a.action.action-menu {
+    #app-content-files #fileList td a a.action.action-menu {
         display: none !important;
     }
     #nmc_welcome_popup .modal-header {
@@ -2580,10 +2580,9 @@ aside .icon-close:hover,
 }
 
 
-@media screen and (min-width: 1366px) and (min-height: 1024px) {
+@media screen and (max-width: 1366px) and (min-height: 1024px) {
   #app-content-files #fileList td a a.action.action-menu {
     display: flex !important;
 }
-
 }
 /*Responsive Styling*/
