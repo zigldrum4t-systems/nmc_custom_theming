@@ -43,7 +43,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'Magenta Cloud';
+		return 'MagentaCLOUD';
 	}
 
 	/**
