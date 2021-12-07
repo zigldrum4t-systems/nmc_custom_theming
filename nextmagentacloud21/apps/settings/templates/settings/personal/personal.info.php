@@ -238,17 +238,17 @@ script('settings', [
             }elseif($_['quota'] === \OCP\Files\FileInfo::SPACE_NOT_COMPUTED){
                 p($l->t('Space not computed'));
             }elseif ($totalSpaceInGB  == 3 || $totalSpaceInGB == 10){
-                p($l->t('Magentacloud Free'));
+                p($l->t('MagentaCLOUD Free'));
             }elseif ($totalSpaceInGB  == 15 || $totalSpaceInGB == 25){
-                p($l->t('Magentacloud S'));
+                p($l->t('MagentaCLOUD S'));
             }elseif ($totalSpaceInGB == 100){
-                p($l->t('Magentacloud M'));
+                p($l->t('MagentaCLOUD M'));
             }else if ($totalSpaceInGB == 500){
-                p($l->t('Magentacloud L'));
+                p($l->t('MagentaCLOUD L'));
             }else if ($totalSpaceInGB == 1024){
-                p($l->t('Magentacloud XL'));
+                p($l->t('MagentaCLOUD XL'));
             }else if ($totalSpaceInGB == 5120){
-                p($l->t('Magentacloud XXL'));
+                p($l->t('MagentaCLOUD XXL'));
             }
         ?>
     </div>
