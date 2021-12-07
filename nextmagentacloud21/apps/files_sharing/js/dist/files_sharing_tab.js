@@ -62456,7 +62456,7 @@ var render = function() {
                                 _vm._s(
                                   _vm.t(
                                     "files_sharing",
-                                    "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration."
+                                    "You can create links or send shares by mail. If you invite MagentaCLOUD users, you have more opportunities for collaboration."
                                   )
                                 ) +
                                 "\n\t\t\t\t"
