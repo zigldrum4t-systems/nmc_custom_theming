@@ -64,6 +64,27 @@
   vertical-align: middle;
 }
 
+#welcome_popup input#du-show-preview,
+#welcome_popup input#en-show-preview {
+  border-radius: 8px !important;
+  font-size: 1rem;
+  font-weight: normal;
+  padding:0.625rem 1.5rem !important;
+  height:40px;
+  background-color: #ffffff !important;
+  border-color: #191919;
+  margin:0 0.5rem 0 0 !important;
+  color:#191919;
+  width:120px !important;
+}
+
+#welcome_popup input#du-show-preview:hover,
+#welcome_popup input#en-show-preview:hover {
+  border-color: #e20074 !important;
+  color:#e20074 !important;
+
+}
+
 #nmc_welcome_popup .modal-footer button {
   margin: unset !important;
 }
