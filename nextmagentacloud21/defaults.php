@@ -137,6 +137,43 @@ class OC_Theme {
 		];
 	}
 
+ /**
+	 * link to the desktop sync client
+	 * @return string
+	 * @since 6.0.0
+	 */
+	// public function getSyncClientUrl(): string {
+	// 	return $this->defaults->getSyncClientUrl();
+	// }
+
+	/**
+	 * link to the iOS client
+	 * @return string
+	 * @since 8.0.0
+	 */
+	// public function getiOSClientUrl(): string {
+	// 	return $this->defaults->getiOSClientUrl(); //
+	// }
+
+
+	/**
+	 * Returns the AppId for the App Store for the iOS Client
+	 * @return string AppId
+	 * @since 8.0.0
+	 */
+	public function getiTunesAppId(): string {
+		return '';
+	}
+
+	/**
+	 * link to the Android client
+	 * @return string
+	 * @since 8.0.0
+	 */
+	public function getAndroidClientUrl(): string {
+		return '';
+	}
+
   public function __construct() {
 		\OCP\Util::addScript('core', 'customutils');
 	  \OCP\Util::addScript('core', 'mimetypelist');
