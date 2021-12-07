@@ -614,9 +614,7 @@ aside {
 }
 
 @media screen and (min-width: 1599px) {
-    .header-right .smallscreenSize {
-        display: none !important;
-    }
+    .header-right .smallscreenSize,
     #fileList td a a.action.action-menu {
         display: none !important;
     }
