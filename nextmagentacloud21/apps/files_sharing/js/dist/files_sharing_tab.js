@@ -12815,8 +12815,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nextcloud_vue_dist_Directives_Tooltip__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Directives_Tooltip__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _mixins_SharesMixin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../mixins/SharesMixin */ "./apps/files_sharing/src/mixins/SharesMixin.js");
 /* harmony import */ var _mixins_ShareTypes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../mixins/ShareTypes */ "./apps/files_sharing/src/mixins/ShareTypes.js");
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _mixins_ShareRequests__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../mixins/ShareRequests */ "./apps/files_sharing/src/mixins/ShareRequests.js");
+/* harmony import */ var _utils_GeneratePassword__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/GeneratePassword */ "./apps/files_sharing/src/utils/GeneratePassword.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _mixins_ShareRequests__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../mixins/ShareRequests */ "./apps/files_sharing/src/mixins/ShareRequests.js");
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
@@ -13093,8 +13095,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- // import GeneratePassword from '../utils/GeneratePassword'
-// import Vue from 'vue'
+
+
 
 
 
@@ -13108,7 +13110,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   directives: {
     Tooltip: _nextcloud_vue_dist_Directives_Tooltip__WEBPACK_IMPORTED_MODULE_3___default.a
   },
-  mixins: [_mixins_SharesMixin__WEBPACK_IMPORTED_MODULE_4__["default"], _mixins_ShareTypes__WEBPACK_IMPORTED_MODULE_5__["default"], _mixins_ShareRequests__WEBPACK_IMPORTED_MODULE_7__["default"]],
+  mixins: [_mixins_SharesMixin__WEBPACK_IMPORTED_MODULE_4__["default"], _mixins_ShareTypes__WEBPACK_IMPORTED_MODULE_5__["default"], _mixins_ShareRequests__WEBPACK_IMPORTED_MODULE_9__["default"]],
   data: function data() {
     return {
       permissionsEdit: OC.PERMISSION_UPDATE,
@@ -13124,11 +13126,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       showAdLink: true,
       sendPasswordByTalk: null,
       hideDownload: null,
-      showPasswordInput: false,
       shareLabel: this.share.newLabel || this.share.label || ''
     };
   },
-  computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_6__["mapGetters"])({
+  computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_8__["mapGetters"])({
     fromInput: 'getFromInput',
     optionValues: 'getOption'
   })), {}, {
@@ -13184,7 +13185,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     // if newPassword exists, but is empty, it means
     // the user deleted the original password
     hasUnsavedPassword: function hasUnsavedPassword() {
-      return this.share.password !== ''; // this.share.newPassword !== undefined ||
+      return this.share.newPassword !== undefined;
     },
 
     /**
@@ -13214,7 +13215,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
      */
     isPasswordProtected: {
       get: function get() {
-        return this.config.enforcePasswordForPublicLink || !!this.share.password || this.showPasswordInput;
+        return this.config.enforcePasswordForPublicLink || !!this.share.password;
       },
       set: function set(enabled) {
         var _this = this;
@@ -13224,16 +13225,33 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
-                  // TODO: directly save after generation to make sure the share is always protected
-                  _this.showPasswordInput = !_this.showPasswordInput;
+                  _context.t0 = vue__WEBPACK_IMPORTED_MODULE_7__["default"];
+                  _context.t1 = _this.share;
 
-                  if (_this.share.password !== '') {
-                    _this.showPasswordInput = true;
-                  } // Vue.set(this.share, 'password', enabled ? '' : '')
-                  // Vue.set(this.share, 'newPassword', this.share.password)
+                  if (!enabled) {
+                    _context.next = 8;
+                    break;
+                  }
 
+                  _context.next = 5;
+                  return Object(_utils_GeneratePassword__WEBPACK_IMPORTED_MODULE_6__["default"])();
 
-                case 2:
+                case 5:
+                  _context.t2 = _context.sent;
+                  _context.next = 9;
+                  break;
+
+                case 8:
+                  _context.t2 = '';
+
+                case 9:
+                  _context.t3 = _context.t2;
+
+                  _context.t0.set.call(_context.t0, _context.t1, 'password', _context.t3);
+
+                  vue__WEBPACK_IMPORTED_MODULE_7__["default"].set(_this.share, 'newPassword', _this.share.password);
+
+                case 12:
                 case "end":
                   return _context.stop();
               }
@@ -61748,34 +61766,17 @@ var render = function() {
                     ? _c(
                         "ActionInput",
                         {
-                          directives: [
-                            {
-                              name: "tooltip",
-                              rawName: "v-tooltip.auto",
-                              value: {
-                                content: _vm.errors.password,
-                                show: _vm.errors.password,
-                                trigger: "manual",
-                                defaultContainer: "#app-sidebar"
-                              },
-                              expression:
-                                "{\n\t\t\t\t\t\tcontent: errors.password,\n\t\t\t\t\t\tshow: errors.password,\n\t\t\t\t\t\ttrigger: 'manual',\n\t\t\t\t\t\tdefaultContainer: '#app-sidebar'\n\t\t\t\t\t}",
-                              modifiers: { auto: true }
-                            }
-                          ],
                           ref: "password",
-                          staticClass: "share-link-password",
-                          class: { error: _vm.errors.password },
                           attrs: {
                             icon: "",
                             disabled: _vm.saving,
                             required: _vm.config.enforcePasswordForPublicLink,
                             value: _vm.hasUnsavedPassword
-                              ? "***************"
-                              : _vm.share.newPassword,
-                            autocomplete: "new-password"
-                          },
-                          on: { change: _vm.changePassword }
+                              ? _vm.share.newPassword
+                              : "***************",
+                            autocomplete: "new-password",
+                            type: _vm.hasUnsavedPassword ? "text" : "password"
+                          }
                         },
                         [
                           _vm._v(
@@ -62444,7 +62445,7 @@ var render = function() {
                                 _vm._s(
                                   _vm.t(
                                     "files_sharing",
-                                    "You can create links or send shares by mail. If you invite MagentaCLOUD users, you have more opportunities for collaboration."
+                                    "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration."
                                   )
                                 ) +
                                 "\n\t\t\t\t"
