@@ -127,7 +127,7 @@
               <ul>
                 <?php foreach ($_['settingsnavigation'] as $entry) : ?>
                   <li data-id="<?php p($entry['id']); ?>">
-                    <a href="<?php $entry['id'] == "help" ? print_unescaped("https://cloud.telekom-dienste.de/hilfe") : print_unescaped($entry['href']); ?>" <?php if ($entry["active"]) : ?> class="active" <?php endif; ?>>
+                  <a href="<?php $entry['id'] == "help" ? print_unescaped("https://cloud.telekom-dienste.de/hilfe") : print_unescaped($entry['href']); ?>" <?php if ($entry["active"]) : ?> class="active" <?php endif; ?> target="<?php $entry['id'] == "help" ? print_unescaped("_blank") : print_unescaped("_self"); ?>">
                       <?php if ($entry['id'] == "settings") { ?>
                         <img alt="" src="<?php print_unescaped(image_path($_['appid'],'settings/img/admin.svg') . '?v=' . $_['versionHash']); ?>">
                         <?php p($entry['name']); ?>

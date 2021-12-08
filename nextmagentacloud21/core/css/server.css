@@ -1744,6 +1744,8 @@ div.crumb.crumbmenu a {
 #viewer .modal-container {
     height: 100% !important;
     max-height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 #viewer .modal-container > * {
@@ -2144,7 +2146,12 @@ aside .icon-close:hover,
       z-index: 20 !important;
     }
 
-/*Responsive Styling*/
+  /* hiding icon share email on mobile */
+  #direct-editor .icon-share {
+    display: none;
+  }
+
+ /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
     .nmc-guest .login-section .logo {
@@ -2199,10 +2206,6 @@ aside .icon-close:hover,
 
     #selectedActionsList .popovermenu {
       right: -50px;
-    }
-
-    .header-menu__carret {
-      right: 10.4375rem !important;
     }
 
     .header-menu__wrapper{
@@ -2348,7 +2351,7 @@ aside .icon-close:hover,
     #direct-editor{
       padding: 0 1rem !important;
     }
-    
+
     #contactsmenu,
     #settings .menutoggle,
     .nmc_spica_wrapper,
@@ -2502,6 +2505,10 @@ aside .icon-close:hover,
     }
     .menububble{
       height: 60px !important;
+    }
+
+    .header-menu__carret {
+      right: 10.4375rem !important;
     }
 }
 
