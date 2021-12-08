@@ -2201,10 +2201,6 @@ aside .icon-close:hover,
       right: -50px;
     }
 
-    .header-menu__carret {
-      right: 10.4375rem !important;
-    }
-
     .header-menu__wrapper{
       top: 62px !important;
     }
@@ -2348,7 +2344,7 @@ aside .icon-close:hover,
     #direct-editor{
       padding: 0 1rem !important;
     }
-    
+
     #contactsmenu,
     #settings .menutoggle,
     .nmc_spica_wrapper,
@@ -2502,6 +2498,10 @@ aside .icon-close:hover,
     }
     .menububble{
       height: 60px !important;
+    }
+
+    .header-menu__carret {
+      right: 10.4375rem !important;
     }
 }
 
