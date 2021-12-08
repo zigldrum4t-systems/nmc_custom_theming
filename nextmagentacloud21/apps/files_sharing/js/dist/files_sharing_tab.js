@@ -13088,14 +13088,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -13274,10 +13266,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }
   }),
   methods: {
-    changePassword: function changePassword(event) {
-      console.debug('newPassword ', this.share.newPassword);
-      this.share.password = event.target.value;
-    },
     onPasswordDisable: function onPasswordDisable() {
       this.share.password = ''; // reset password state after sync
 
