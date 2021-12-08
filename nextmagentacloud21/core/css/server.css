@@ -1744,6 +1744,8 @@ div.crumb.crumbmenu a {
 #viewer .modal-container {
     height: 100% !important;
     max-height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 #viewer .modal-container > * {
@@ -2144,7 +2146,12 @@ aside .icon-close:hover,
       z-index: 20 !important;
     }
 
-/*Responsive Styling*/
+  /* hiding icon share email on mobile */
+  #direct-editor .icon-share {
+    display: none;
+  }
+
+ /*Responsive Styling*/
 
 @media screen and (max-width: 375px) {
     .nmc-guest .login-section .logo {

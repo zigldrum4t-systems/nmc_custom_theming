@@ -151,9 +151,9 @@ class OC_Theme {
 	 * @return string
 	 * @since 8.0.0
 	 */
-	// public function getiOSClientUrl(): string {
-	// 	return $this->defaults->getiOSClientUrl(); //
-	// }
+	public function getiOSClientUrl(): string {
+		return 'https://apps.apple.com/us/app/magentacloud-cloud-speicher/id312838242';
+	}
 
 
 	/**
@@ -162,7 +162,7 @@ class OC_Theme {
 	 * @since 8.0.0
 	 */
 	public function getiTunesAppId(): string {
-		return '';
+		return '312838242';
 	}
 
 	/**
@@ -171,7 +171,7 @@ class OC_Theme {
 	 * @since 8.0.0
 	 */
 	public function getAndroidClientUrl(): string {
-		return '';
+		return 'https://play.google.com/store/apps/details?=com.t_systems.android.webdav';
 	}
 
   public function __construct() {

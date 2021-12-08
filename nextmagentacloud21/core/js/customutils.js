@@ -138,21 +138,12 @@ function breadcrumbAddLabel() {
 /* to resolve rich text area issue on specific to mobile */
 function mobileOnlyClass() {
   if( /Android|webOS|iOS/i.test(navigator.userAgent) ) {
-
     const ele = document.querySelectorAll('#body-public #content');
     if(ele){
       ele[0].classList.add('mobile-content');
     }
-
-    const editor = document.querySelectorAll('#direct-editor .icon-share');
-    if(editor && editor[0]){
-       editor[0].classList.add('hidden');
-    }
   }
 }
-
-
-
 
 function webTrackingEvents() {
   $('.filesSelectionMenu ul li').click(function(e) {
@@ -186,8 +177,8 @@ function webTrackingEvents() {
   });
 
   window.addEventListener('click',function(e){
-      var targetElement = e.target || e.srcElement;
-      try{
+    var targetElement = e.target || e.srcElement;
+    try{
       if(targetElement.id=="select_alselect_all_filesl_files"){
         var utag_data = {
           wt_link_id: "content.checkbox.selectall",
