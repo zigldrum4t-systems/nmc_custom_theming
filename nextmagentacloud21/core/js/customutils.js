@@ -145,8 +145,8 @@ function mobileOnlyClass() {
     }
 
     const editor = document.querySelectorAll('#direct-editor .icon-share');
-    if(editor){
-      editor[0].classList.add('hidden');
+    if(editor && editor[0]){
+       editor[0].classList.add('hidden');
     }
   }
 }
@@ -216,7 +216,7 @@ function webTrackingEvents() {
           utag.view(utag_data);
       }
 
-      
+
       if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
         var utag_data = {
           wt_link_id: "content.button.hover-copy",
