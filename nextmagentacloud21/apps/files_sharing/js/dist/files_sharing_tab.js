@@ -13202,7 +13202,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
      */
     hasExpirationDate: {
       get: function get() {
-        return this.config.isDefaultInternalExpireDateEnforced || !!this.config.defaultInternalExpirationDateString || !!this.share.expireDate;
+        return this.config.isDefaultInternalExpireDateEnforced || !!this.share.expireDate;
       },
       set: function set(enabled) {
         this.share.expireDate = enabled ? this.config.defaultInternalExpirationDateString !== '' ? this.config.defaultInternalExpirationDateString : ' ' : '';
