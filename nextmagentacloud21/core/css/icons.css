@@ -649,4 +649,7 @@ aside .icon-star{
   background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }
 
+.app-sidebar-header__figure[style='background-image: url("/core/img/filetypes/folder-shared.svg");']{
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+}
 
