@@ -4,7 +4,7 @@ OC.L10N.register(
         "Cancel" : "Abbrechen",
         "Next" : "Weiter",
         "Confirm" : "Übernehmen",
-        "Send share" : "Teilen senden",
+        "Send share" : "Freigabe senden",
         "Send email" : "Email senden",
         "Send new mail" : "Neue Email verfassen",
         "Read only" : "Nur lesen",
