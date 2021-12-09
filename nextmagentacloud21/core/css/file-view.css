@@ -384,6 +384,10 @@ a.menuitem.action:hover>span,
 
 /***************************************** File List Toggle View ******************************************************************/
 
+li.action-details-container {
+  display: none !important;
+}
+
 #filestable th a#modified {
     display: flex;
     flex-direction: row-reverse;

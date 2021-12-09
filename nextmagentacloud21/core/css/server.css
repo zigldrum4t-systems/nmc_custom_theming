@@ -2593,4 +2593,23 @@ aside .icon-close:hover,
     display: flex !important;
   }
 }
+
+
+@media only screen and (max-width: 988px) and (min-width: 1025px),
+only screen and (max-width: 688px) {
+ #fileList a.action-share span:not(.icon):not(.avatar) {
+ position: unset !important;
+ width: unset !important;
+ height: unset !important;
+ }
+}
+
+@media screen and (min-width: 568px) and (max-height: 414px) {
+#app-navigation:not(.vue) ul {
+ height: auto !important;
+ overflow-x: unset !important;
+ overflow-y: unset !important;
+ }
+}
+
 /*Responsive Styling*/
