@@ -503,3 +503,11 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   }
 
 
+/*to hide desktop client*/
+
+.devices-session #clientslinks,
+.devices-session .clientslinks + h2 {
+    display: none;
+}
+
+/*to hide desktop client*/
