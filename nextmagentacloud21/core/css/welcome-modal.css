@@ -10,7 +10,7 @@
 }
 
 .modal-mask#nmc_welcome_popup .modal-container {
-  max-height:600px !important;
+  max-height:720px !important;
 }
 
 .modal-header .nmc_welcome_popup-header {
@@ -139,8 +139,8 @@
 }
 
 .modal-container {
-  max-width:672px !important;
-  max-height:600px !important;
+  max-width:784px !important;
+  max-height:720px !important;
   border-radius: 12px !important;
 }
 
