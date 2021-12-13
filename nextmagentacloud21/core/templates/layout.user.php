@@ -206,10 +206,10 @@
         </div>
         <div class="col-l-8 col-s-12">
           <ul class="nav brand-footer-nav text-l-right">
-            <li><a href="http://www.telekom.de/impressum" title="Impressum">Impressum</a></li>
-            <li><a href="https://static.magentacloud.de/Datenschutz" title="Datenschutz">Datenschutz</a>
+            <li><a href="http://www.telekom.de/impressum" title="Impressum" target="_blank">Impressum</a></li>
+            <li><a href="https://static.magentacloud.de/Datenschutz" title="Datenschutz" target="_blank">Datenschutz</a>
             </li>
-            <li><a href="https://cloud.telekom-dienste.de/hilfe" title="HilfeAndFAQ">Hilfe & FAQ</a></li>
+            <li><a href="https://cloud.telekom-dienste.de/hilfe" title="HilfeAndFAQ" target="_blank">Hilfe & FAQ</a></li>
           </ul>
         </div>
       </div>
