@@ -19,7 +19,7 @@
  *
  */
 
-style('core', 'login/authpicker');
+// style('core', 'login/authpicker');
 script('core', 'login/authpicker');
 
 /** @var array $_ */
