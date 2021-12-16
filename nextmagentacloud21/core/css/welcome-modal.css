@@ -167,6 +167,7 @@
 #welcome_popup .icon-delete {
   display: inline-block;
   padding: 0.75rem 1.25rem !important;
+  margin-bottom: 0.313rem;
 }
 
 .modal-mask .button {
@@ -240,12 +241,23 @@ div[contenteditable=true]:hover {
   margin-top:2rem;
 }
 
-.section:not(.section-english) .settings-hint {
-  border-bottom: 2px solid #e20074;
-  padding-bottom: 0.25rem;
-  text-align: center;
-  width: 100px;
-}
+.slide-list.settings-hint li{
+  padding-right:0.5rem;
+  }
+
+  .slide-list.settings-hint .button {
+  opacity:unset !important;
+  background-color:unset;
+  }
+
+  .slide-list.settings-hint a:hover.button,
+  #welcome_popup .slide-list li.active a {
+  border-color: #e20074 !important;
+  }
+
+  #welcome_popup .slide-list li.active a {
+  color:#e20074 !important;
+  }
 
 .button.icon-upload {
  border: unset !important;
@@ -290,3 +302,45 @@ display: inline;
 margin-top: -0.313rem;
 width:auto !important;
 }
+.footer-actions {
+  margin-right: 1rem;
+}
+
+/*pagination*/
+
+.modal-footer .pagination {
+  margin-left: 1rem;
+  float: left;
+  width: 200px;
+  height: 40px;
+  }
+
+  .modal-footer .pagination span {
+  float:left;
+  padding: 0.5rem;
+  }
+
+  .modal-footer .slide-counter {
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  }
+
+  .modal-footer .Left-arrowBtn{
+  border:1px solid #666666;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+  cursor: pointer;
+
+  }
+
+  .Left-arrowBtn:hover,
+  .Right-arrowBtn:hover{
+  border-color:#e20074;
+  }
+
+  .Right-arrowBtn{
+  border:1px solid #666666;
+  border-top-right-radius:8px;
+  border-bottom-right-radius:8px;
+  cursor: pointer;
+  }
