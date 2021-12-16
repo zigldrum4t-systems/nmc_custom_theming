@@ -444,7 +444,8 @@
 }
 
 .header-menu__content>ul>li:last-child>a>div,
-#appmenu li[data-id='activity']  {
+#appmenu li[data-id='activity'],
+#apps li[data-id='activity']  {
     display: none;
 }
 

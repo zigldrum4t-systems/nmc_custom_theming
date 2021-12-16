@@ -5,6 +5,11 @@
         margin-bottom: 31vh !important;
     }
 
+    #emptycontent {
+      overflow-y: auto;
+      height:500px;
+    }
+
     /*toggle-btn-*/
 
     #body-public .header-right #header-secondary-action #header-actions-toggle {
