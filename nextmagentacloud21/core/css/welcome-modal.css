@@ -324,8 +324,8 @@ width:auto !important;
   margin-right: 1rem;
 }
 
-#welcome_popup .content ol li,
-#welcome_popup .content ul li {
+#nmc_welcome_popup .content ol li,
+#nmc_welcome_popup .content ul li {
   list-style-type: unset !important;
 }
 
