@@ -324,6 +324,12 @@ width:auto !important;
   margin-right: 1rem;
 }
 
+#welcome_popup .content ol li,
+#welcome_popup .content ul li {
+  list-style-type: unset !important;
+}
+
+
 /*pagination*/
 
 .modal-footer .pagination {
