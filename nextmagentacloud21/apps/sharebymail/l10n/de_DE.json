@@ -1,0 +1,5 @@
+{ "translations": {
+    "%1$s shared »%2$s« with you and wants to add" : "%1$s hat '%2$s' mit Ihnen geteilt und möchte folgendes hinzufügen",
+    "»%s« added a note to a file shared with you" : "%s hat eine Nachricht zu einer mit Ihnen geteilten Datei hinzugfügt"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
