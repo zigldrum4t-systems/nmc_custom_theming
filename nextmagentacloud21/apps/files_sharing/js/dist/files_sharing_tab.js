@@ -966,6 +966,7 @@ window.addEventListener('DOMContentLoaded', function () {
       },
       destroy: function destroy() {
         TabInstance.$destroy();
+        _store__WEBPACK_IMPORTED_MODULE_7__["default"].commit('addCurrentTab', 'default');
         TabInstance = null;
       }
     }));
@@ -12737,7 +12738,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   _this.hideDownload = _this.share.hideDownload.toString();
                 }
 
-                _context.next = 15;
+                if (_this.share.newPassword !== undefined) {
+                  _this.share.password = _this.share.newPassword.trim();
+                }
+
+                _context.next = 16;
                 return _this.createShare({
                   path: path,
                   shareType: _this.optionValues.shareType,
@@ -12750,7 +12755,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   permissions: _this.fileInfo.sharePermissions & OC.getCapabilities().files_sharing.default_permissions & _this.share.permissions
                 });
 
-              case 15:
+              case 16:
                 // add notes to share if any
                 // this.share = share
                 // this.share.note = this.shareNote
@@ -12763,32 +12768,32 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
                 _this.$root.$emit('update', _this.fileInfo);
 
-                _context.next = 19;
+                _context.next = 20;
                 return _this.$root.$emit('getRecommendations');
 
-              case 19:
+              case 20:
                 _this.cancelSharing();
 
-                _context.next = 26;
+                _context.next = 27;
                 break;
 
-              case 22:
-                _context.prev = 22;
+              case 23:
+                _context.prev = 23;
                 _context.t0 = _context["catch"](9);
                 _this.query = _this.share.shareWith;
                 console.error('Error while adding new share', _context.t0);
 
-              case 26:
-                _context.prev = 26;
+              case 27:
+                _context.prev = 27;
                 _this.loading = false;
-                return _context.finish(26);
+                return _context.finish(27);
 
-              case 29:
+              case 30:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[9, 22, 26, 29]]);
+        }, _callee, null, [[9, 23, 27, 30]]);
       }))();
     }
   }
@@ -12829,6 +12834,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
 //
 //
 //
@@ -13284,6 +13290,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }
   }),
   methods: {
+    /**
+     * Update newPassword values
+     * of share. If password is set but not newPassword
+     * then the user did not changed the password
+     * If both co-exists, the password have changed and
+     * we show it in plain text.
+     * Then on submit (or menu close), we sync it.
+     * @param {string} password the changed password
+     */
+    onPasswordChange: function onPasswordChange(password) {
+      console.debug('new password', password);
+      this.$set(this.share, 'newPassword', password);
+    },
     onPasswordDisable: function onPasswordDisable() {
       this.share.password = ''; // reset password state after sync
 
@@ -13334,6 +13353,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       this.$store.commit('addCurrentTab', 'default');
     },
     nextSharing: function nextSharing() {
+      console.debug('next sharing', this.share);
       this.$store.commit('addShare', this.share);
       this.$store.commit('addCurrentTab', 'notes');
     },
@@ -13347,6 +13367,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       if (this.share.hideDownload) {
         this.hideDownload = this.share.hideDownload.toString();
+      }
+
+      if (this.share.newPassword !== undefined) {
+        this.share.password = this.share.newPassword.trim();
       }
 
       this.updateShare(this.share.id, {
@@ -61776,7 +61800,8 @@ var render = function() {
                               : "***************",
                             autocomplete: "new-password",
                             type: _vm.hasUnsavedPassword ? "text" : "password"
-                          }
+                          },
+                          on: { "update:value": _vm.onPasswordChange }
                         },
                         [
                           _vm._v(
@@ -61797,7 +61822,7 @@ var render = function() {
                             _vm._s(
                               _vm.t(
                                 "files_sharing",
-                                "The password must contain 10 characters and will not be sent with the mail to maintain confidentiality."
+                                "The password is not sent with the email to maintain confidentiality."
                               )
                             ) +
                             "\n\t\t\t\t"
@@ -62445,7 +62470,7 @@ var render = function() {
                                 _vm._s(
                                   _vm.t(
                                     "files_sharing",
-                                    "You can create links or send shares by mail. If you invite MagentaCloud users, you have more opportunities for collaboration."
+                                    "You can create links or send shares by mail. If you invite MagentaCLOUD users, you have more opportunities for collaboration."
                                   )
                                 ) +
                                 "\n\t\t\t\t"
