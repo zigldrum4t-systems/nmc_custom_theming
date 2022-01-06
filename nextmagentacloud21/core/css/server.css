@@ -1622,11 +1622,13 @@ div.crumb.crumbmenu a {
 
 /* preview css*/
 
+.modal-mask.viewer.modal-mask--dark {
+  width:100% !important;
+  }
+
 #viewer  .richEditor .action-item__menutoggle--default-icon {
   filter: unset !important;
 }
-
-
 
 #viewer {
     margin-top: 4px;
