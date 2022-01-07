@@ -424,7 +424,7 @@ OC.L10N.register(
     "Magentacloud L": "Magentacloud L",
     "Magentacloud XL": "Magentacloud XL",
     "Magentacloud XXL": "Magentacloud XXL",
-    "Search for files or folders…": "Nach Dateien oder Ordnern suchen...",
+    "Search for files or folders…":  "Nach Dateien oder Ordnern suchen...",
     "Show folder info text": "Ordnerinfotext anzeigen",
     "Add":"Hinzufügen",
     "File conflict" : "Dateikonflikt",
