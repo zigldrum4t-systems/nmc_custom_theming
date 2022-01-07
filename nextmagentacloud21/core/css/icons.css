@@ -454,7 +454,12 @@ aside .icon-close,
 
 /** RIGHT click icons**/
 
-.icon-starred,
+.icon-starred {
+  background-image: var(--icon-yellow-fav) !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+}
+
 .app-navigation-entry-icon.icon-favorite {
     background-image: var(--icon-favourite-custom) !important;
 }
