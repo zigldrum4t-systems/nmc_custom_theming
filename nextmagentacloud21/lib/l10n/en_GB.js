@@ -187,6 +187,9 @@ OC.L10N.register(
     "Files can’t be shared with delete permissions" : "Files can’t be shared with delete permissions",
     "Files can’t be shared with create permissions" : "Files can’t be shared with create permissions",
     "Can’t set expiration date more than %s days in the future" : "Can’t set expiration date more than %s days in the future",
-    "Can't read file" : "Can't read file"
+    "Can't read file" : "Can't read file",
+    "»%s« added a note to a file shared with you" : "%s has added a message to a file shared with you",
+    "%1$s shared »%2$s« with you and wants to add" : "%1$s shared '%2$s' with you and wants to add"
+
 },
 "nplurals=2; plural=(n != 1);");
