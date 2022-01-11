@@ -92,7 +92,7 @@ nav,
 section {
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
     font-size: 16px;
-    line-height: 1.223;
+    line-height: 1;
     color: var(--scl-color-grey-90);
 }
 
