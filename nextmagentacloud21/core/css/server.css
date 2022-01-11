@@ -463,18 +463,48 @@ aside {
 } */
 
 .app-photos .app-navigation__list .app-navigation-entry__title {
-    line-height: 44px !important;
-  }
+  line-height: 44px !important;
+}
 .app-photos .app-navigation--close {
-    margin-left: -190px;
+  margin-left: -190px;
 }
 .photos-navigation__back{
   width: 20px !important;
   height: 20px !important;
 }
 #content-vue.app-photos {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
+
+.app-photos .folder-name{
+  height: auto !important;
+  flex-direction: row !important;
+  align-items: center;
+  bottom: 16px;
+  left: 16px;
+}
+.app-photos .folder-name__name{
+  width: 75%;
+  text-align: left !important;
+  padding: 0 !important;
+}
+.app-photos .folder-name__icon{
+  background-size: 40px !important;
+  margin-right: 4px;
+  margin-top: 0 !important;
+}
+
+.app-photos .folder:not(.folder--clear):hover .folder-name,
+.app-photos .folder:not(.folder--clear):hover .cover{
+  opacity: 1 !important;
+}
+
+.app-photos .folder .cover{
+  opacity: 1 !important;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 50%, rgba(0, 0, 0, 0.6) 100%);
+  background-color: unset !important;
+}
+
 
 /**responsive **/
 @media screen and (max-width: 1599px) and (min-width: 1300px) {
