@@ -1741,6 +1741,7 @@ div.crumb.crumbmenu a {
     height: auto !important;
     margin-top: 1rem;
     width: inherit !important;
+    margin-top: 0px !important;
 }
 
 #viewer .modal-container {
