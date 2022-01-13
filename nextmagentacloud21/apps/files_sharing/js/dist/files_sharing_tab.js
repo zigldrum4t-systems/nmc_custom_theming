@@ -11051,7 +11051,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }
       }
 
-      return t('files_sharing', 'Share link');
+      if (this.fileInfo.type === 'dir') {
+        return t('files_sharing', 'Link to folder');
+      } else {
+        return t('files_sharing', 'Link to file');
+      }
     },
 
     /**
