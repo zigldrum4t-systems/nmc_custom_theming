@@ -739,3 +739,12 @@ table.multiselect #modified {
 .actions-selected span:nth-child(2){
   font-size: 14px !important;
 }
+
+/* Zipper-app */
+#oc-dialog-2-content-input {
+  width:509px !important;
+}
+
+.oc-dialog-buttonrow.twobuttons {
+margin-top:1.5rem;
+}
