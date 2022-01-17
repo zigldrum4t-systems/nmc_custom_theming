@@ -108,7 +108,6 @@ table.multiselect thead #selectedMenu {
 #filestable tbody {
     display: table;
     width: 100%;
-    overflow: auto;
 }
 
 #filestable input[type='checkbox'].checkbox+label:before {
