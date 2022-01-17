@@ -97,7 +97,7 @@ aside .icon-star {
 
 #tab-sharing ul.sharing-permissions .action-radio__label::before,
 #tab-sharing ul.sharing-permissions span.action-checkbox .action-checkbox__label::before {
-  margin: 0rem 0.5rem 0 0 !important;
+  margin: 0rem 0.5rem 0.063rem 0 !important;
 }
 
 
