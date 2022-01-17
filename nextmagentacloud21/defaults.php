@@ -177,6 +177,6 @@ class OC_Theme {
   public function __construct() {
 		\OCP\Util::addScript('core', 'customutils');
 	  \OCP\Util::addScript('core', 'mimetypelist');
-    \OCP\Util::addScript('core', 'tealium-lib');
+    // \OCP\Util::addScript('core', 'tealium-lib');
 	 }
 }
