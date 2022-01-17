@@ -738,3 +738,7 @@ table.multiselect #modified {
 .actions-selected span:nth-child(2){
   font-size: 14px !important;
 }
+
+#filestable.view-grid:not(.hidden) tbody td .popovermenu {
+    width: 170px !important;
+}
