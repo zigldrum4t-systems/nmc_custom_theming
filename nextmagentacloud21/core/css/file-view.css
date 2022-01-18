@@ -740,8 +740,9 @@ table.multiselect #modified {
 }
 
 /* Zipper-app */
-#oc-dialog-2-content-input {
+.oc-dialog-content input {
   width:509px !important;
+  margin:1rem 0 1.5rem 0;
 }
 
 
