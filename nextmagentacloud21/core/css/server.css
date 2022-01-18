@@ -862,23 +862,6 @@ input[type="checkbox"].checkbox+label:before:hover {
     background-color: unset !important;
 }
 
-#view-toggle {
-    border: none;
-    position: sticky !important;
-    display: block;
-    background-color: transparent;
-    top: 9.1rem;
-    left: 100%;
-    z-index: 9999;
-    opacity: 1;
-    padding: 0;
-    height: 24px;
-    width: 24px;
-    margin-right: 1rem;
-    border-radius: 0;
-    margin-top: -38px;
-}
-
 #view-toggle:hover,
 .icon-delete:hover,
 a.menu-option:hover>span,
@@ -897,14 +880,9 @@ a.menuitem.action:hover>span,
 
 #controls,
 .controls-section {
-    top: 72px;
-    width: 100%;
-    height: 48px;
-    padding: 0;
-    margin-top: -34px;
-    margin-bottom: 2em;
+    top: 73px;
     background-color: #f2f2f2;
-    border-bottom: 1px solid #e5e5e5;
+    padding-top: 0.5rem;
 }
 
 .controls-section {
@@ -920,17 +898,6 @@ a.menuitem.action:hover>span,
 
 .hide {
     display: none !important;
-}
-
-.full-width-breadcrumb {
-    position: fixed;
-    width: 100%;
-    height: 48px;
-    top: 8.5em;
-    left: 0;
-    background: #f2f2f2;
-    border-bottom: 1px solid #e5e5e5;
-    z-index: 99;
 }
 
 .breadcrumb-translation {
@@ -979,6 +946,7 @@ a.menuitem.action:hover>span,
 #controls .actions > .button{
   justify-content: start !important;
   padding-left: 0.2rem !important;
+  background: none;
 }
 
 
@@ -1027,7 +995,6 @@ div.crumb:last-child {
 .snapjs-left #app-content:not([style=''])>#app-navigation-toggle {
     left: 0;
     top: 0;
-    margin-top: -47px;
     transition: none;
 }
 
@@ -1055,12 +1022,12 @@ div.crumb:last-child {
 }
 
 .content-translation {
-    top: 120px !important;
+    top: 73px !important;
 }
 
 .view-toggle-translation {
-    top: 5.1rem !important;
-    margin-top: -38px !important;
+    top: 5.5rem !important;
+    margin-top: -24px !important;
 }
 
 .mobile-content{

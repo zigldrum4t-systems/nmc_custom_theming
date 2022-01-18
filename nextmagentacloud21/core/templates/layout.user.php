@@ -177,7 +177,6 @@
       </div>
     </header>
   </div>
-  <div class="full-width-breadcrumb"></div>
 
   <div id="sudo-login-background" class="hidden"></div>
   <form id="sudo-login-form" class="hidden" method="POST">
