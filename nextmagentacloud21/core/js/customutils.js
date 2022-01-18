@@ -10,8 +10,7 @@ window.onload = function () {
   fileActionButtonSettings();
   breadcrumbAddLabel();
   mobileOnlyClass();
-  // we will enable it once it get tested.
-   //webTrackingEvents();
+  // webTrackingEvents();
 };
 
 function brandBarAnimation() {
