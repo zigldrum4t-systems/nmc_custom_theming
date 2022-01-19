@@ -594,7 +594,8 @@ aside .icon-star{
 
 /*zip-icon*/
 
-.icon-zip {
+.icon-zip,
+.icon-extract {
     background-image: var(--icon-zip-custom) !important;
 }
 
