@@ -742,3 +742,11 @@ table.multiselect #modified {
 #filestable.view-grid:not(.hidden) tbody td .popovermenu {
     width: 170px !important;
 }
+
+/* Zipper-app */
+.oc-dialog-content input {
+  width:508px !important;
+  margin:1rem 0 1.5rem 0;
+}
+
+
