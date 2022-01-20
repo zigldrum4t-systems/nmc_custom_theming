@@ -92,7 +92,7 @@ nav,
 section {
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
     font-size: 16px;
-    line-height: 1.223;
+    line-height: 1;
     color: var(--scl-color-grey-90);
 }
 
@@ -958,7 +958,7 @@ a.menuitem.action:hover>span,
 
 .actions {
     padding: 8px;
-    margin-top: 2px;
+    margin-top: 0.188rem;
 }
 
 .actions.creatable a {
