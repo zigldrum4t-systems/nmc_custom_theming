@@ -371,6 +371,7 @@ table th .sort-indicator {
   width: 24px;
   margin-right: 1rem;
   border-radius: 0;
+  margin-top: -24px;
 }
 
 #view-toggle:hover,

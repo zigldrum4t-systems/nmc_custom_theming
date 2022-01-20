@@ -1,5 +1,3 @@
-<div class="controls-section">
-</div>
 
 <div id='notification'></div>
 

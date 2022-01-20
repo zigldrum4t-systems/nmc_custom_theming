@@ -395,7 +395,6 @@ section {
 
 #controls>div.actions.creatable>a:hover {
     color: var(--scl-color-magenta);
-    /* text-decoration: underline; */
 }
 
 #controls>div.actions.creatable>a>span.hidden-visually:hover {
@@ -457,10 +456,6 @@ aside {
 .app-photos #app-navigation-vue {
     position: fixed;
 }
-
-/* .app-photos *{
-     line-height: 0 !important;
-} */
 
 .app-photos .app-navigation__list .app-navigation-entry__title {
   line-height: 44px !important;
@@ -881,7 +876,6 @@ a.menuitem.action:hover>span,
 #controls,
 .controls-section {
     top: 73px;
-    background-color: #f2f2f2;
     padding-top: 0.5rem;
 }
 
@@ -907,13 +901,9 @@ a.menuitem.action:hover>span,
 
 #content {
     padding-top: 0;
-    top: 184px;
+    top: 135px;
     z-index: 99;
     min-height: calc(100% - 120px);
-}
-
-#content-vue.app-settings{
-  margin-top: 6.25rem !important;
 }
 
 .container-fixed,
@@ -1035,7 +1025,7 @@ div.crumb:last-child {
 }
 
 #app-navigation.app-navigation-translation,#app-navigation-vue.app-navigation-translation {
-    top: 120px !important;
+    top: 73px !important;
 }
 
 #app-content-recent, #app-content-favorites, #app-content-shareoverview, #app-content-sharingout,
@@ -1276,12 +1266,6 @@ li>.menuitem[class*=' icon-'] {
     padding-right: 0 !important;
 }
 
-/* .popover__wrapper li.active span,
-.popover__wrapper li.hover span {
-    color: #E20074 !important;
-    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
-} */
-
 .popover__wrapper li.active {
     box-shadow: none !important;
     color: #E20074 !important;
@@ -1312,8 +1296,6 @@ li>.menuitem[class*=' icon-'] {
 .action-item.action-item--open .action-item__menutoggle {
     background-color: unset !important;
     background-image: var(--icon-menutoggle-magenta) !important;
-    /* min-height: 1.5rem !important;
-    min-width: 1.5rem !important; */
 }
 
 .action-item__menutoggle--default-icon:before {
@@ -1793,12 +1775,6 @@ iframe.viewer__file {
 }
 
 
-/* preview css*/
-
-/* .icon-loading-small {
-    display: none;
-} */
-
 /*Copy-move-dialog*/
 
 .oc-dialog {
@@ -2096,11 +2072,6 @@ iframe.viewer__file {
    background-size: unset !important;
  }
 
- /* li.app-navigation-entry:nth-child(1),
- li.app-navigation-entry:nth-child(5),
- li.app-navigation-entry:nth-child(7),
- li.app-navigation-entry:nth-child(8),
- li.app-navigation-entry:nth-child(6), */
  #app-settings-content .section h2 {
    display: none !important;
  }
@@ -2151,6 +2122,9 @@ aside .icon-close:hover,
       z-index: 20 !important;
     }
 
+    .app-photos .photos-navigation__share{
+      display: none;
+    }
   /* hiding icon share email on mobile */
   #direct-editor .icon-share {
     display: none;

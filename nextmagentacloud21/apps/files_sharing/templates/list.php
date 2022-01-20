@@ -1,7 +1,6 @@
 <?php
 /** @var \OCP\IL10N $l */ ?>
-<div class="controls-section">
-</div>
+
 <div id='notification'></div>
 
 <div id="emptycontent" class="hidden"></div>
@@ -32,7 +31,6 @@
 				<a id="modified" class="columntitle" data-sort="mtime"><span><?php p($l->t('Share time')); ?></span><span class="sort-indicator"></span></a>
 			</th>
 
-      
 <th class="hidden column-expiration">
 <a class="columntitle"><span><?php p($l->t('Expiration date')); ?></span></a>
 </th>
