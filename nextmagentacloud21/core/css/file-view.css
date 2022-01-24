@@ -387,6 +387,15 @@ a.menuitem.action:hover>span,
   margin-right:1.25rem;
 }
 
+#headerName-container,
+#filestable th .columntitle  {
+  height: 46px !important;
+}
+
+#filestable .filename .action .icon-more {
+  margin-bottom:0.25rem !important;
+}
+
 /***************************************** File List Toggle View ******************************************************************/
 li.action-details-container {
   display: none !important;
