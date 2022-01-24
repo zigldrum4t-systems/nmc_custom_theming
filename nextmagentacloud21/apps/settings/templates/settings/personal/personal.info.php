@@ -32,6 +32,7 @@ script('settings', [
   'federationsettingsview',
   'federationscopemenu',
   'settings/personalInfo',
+ 'vue-settings-personal-info',
 ]);
 ?>
 
@@ -66,8 +67,47 @@ script('settings', [
         <input type="hidden" id="displaynamescope" value="<?php p($_['displayNameScope']) ?>">
       </form>
     </div>
+
+
     <div class="personal-settings-setting-box">
-      <form id="emailform" class="section">
+    <?php if (isset($_['activelanguage'])) { ?>
+        <form id="language" class="section">
+          <h3>
+            <label for="languageinput"><?php p($l->t('Language')); ?></label>
+          </h3>
+          <select id="languageinput" name="lang" data-placeholder="<?php p($l->t('Language')); ?>">
+            <option style="" value="<?php p($_['activelanguage']['code']); ?>">
+              <?php p(strstr($_['activelanguage']['name'], '(', true)); ?>
+            </option>
+            <optgroup label="––––––––––"></optgroup>
+            <?php foreach ($_['commonlanguages'] as $language) : ?>
+              <?php if ($language['code'] == "de_DE") { ?>
+                 <option value="<?php p($language['code']); ?>">
+                  <?php p(strstr($language['name'], '(', true)); ?>
+                </option>
+              <?php } ?>
+            <?php endforeach; ?>
+
+            <?php foreach (array_unique($_['languages'], SORT_REGULAR) as $language) : ?>
+              <?php if ($language['code'] == "en_GB") { ?>
+                <option value="<?php p($language['code']); ?>">
+                   <?php p(strstr($language['name'], '(', true)); ?>
+                </option>
+              <?php } ?>
+            <?php endforeach; ?>
+
+
+          </select>
+          <a href="https://www.transifex.com/nextcloud/nextcloud/" target="_blank" rel="noreferrer noopener">
+            <em><?php p($l->t('Help translate')); ?></em>
+          </a>
+        </form>
+      <?php } ?>
+    </div>
+  </div>
+    <div class="profile-settings-container">
+    <div class="personal-settings-setting-box personal-settings-language-box">
+    <form id="emailform" class="section">
         <h3>
           <label for="email"><?php p($l->t('Mail address')); ?></label>
           <a href="#" class="federation-menu" aria-label="<?php p($l->t('Change privacy level of email')); ?>">
@@ -111,44 +151,7 @@ script('settings', [
         <input type="hidden" id="emailscope" value="<?php p($_['emailScope']) ?>">
       </form>
     </div>
-  </div>
-    <div class="profile-settings-container">
-    <div class="personal-settings-setting-box personal-settings-language-box">
-      <?php if (isset($_['activelanguage'])) { ?>
-        <form id="language" class="section">
-          <h3>
-            <label for="languageinput"><?php p($l->t('Language')); ?></label>
-          </h3>
-          <select id="languageinput" name="lang" data-placeholder="<?php p($l->t('Language')); ?>">
-            <option style="" value="<?php p($_['activelanguage']['code']); ?>">
-              <?php p(strstr($_['activelanguage']['name'], '(', true)); ?>
-            </option>
-            <optgroup label="––––––––––"></optgroup>
-            <?php foreach ($_['commonlanguages'] as $language) : ?>
-              <?php if ($language['code'] == "de_DE") { ?>
-                 <option value="<?php p($language['code']); ?>">
-                  <?php p(strstr($language['name'], '(', true)); ?>
-                </option>
-              <?php } ?>
-            <?php endforeach; ?>
-
-            <?php foreach (array_unique($_['languages'], SORT_REGULAR) as $language) : ?>
-              <?php if ($language['code'] == "en_GB") { ?>
-                <option value="<?php p($language['code']); ?>">
-                   <?php p(strstr($language['name'], '(', true)); ?>
-                </option>
-              <?php } ?>
-            <?php endforeach; ?>
-
-
-          </select>
-          <a href="https://www.transifex.com/nextcloud/nextcloud/" target="_blank" rel="noreferrer noopener">
-            <em><?php p($l->t('Help translate')); ?></em>
-          </a>
-        </form>
-      <?php } ?>
-    </div>
-
+    <div id="vue-emailsection" class="section"></div>
     <!-- <span class="msg"></span> -->
 
   </div>
