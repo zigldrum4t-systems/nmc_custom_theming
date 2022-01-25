@@ -92,7 +92,7 @@ nav,
 section {
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
     font-size: 16px;
-    line-height: 1.223;
+    line-height: 1;
     color: var(--scl-color-grey-90);
 }
 
@@ -958,7 +958,7 @@ a.menuitem.action:hover>span,
 
 .actions {
     padding: 8px;
-    margin-top: 2px;
+    margin-top: 0.188rem;
 }
 
 .actions.creatable a {
@@ -2641,5 +2641,16 @@ aside .icon-close:hover,
    overflow-y: unset !important;
    }
   }
+
+  @media only screen and (max-width: 988px) and (min-width: 1025px), only screen and (max-width: 688px){
+  #fileList a.action-share span:not(.icon):not(.avatar) {
+      position: unset !important;
+      left: unset !important;
+      top: unset !important;
+      width: unset !important;
+      height: unset !important;
+  }
+}
+
 
 /*Responsive Styling*/
