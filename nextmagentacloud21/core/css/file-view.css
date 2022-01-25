@@ -50,7 +50,7 @@ table th#headerDate {
     font-size: 16px !important;
     color: #191919 !important;
     padding-left: 20px;
-    padding-top: 14px;
+    padding-top: 1rem;
 }
 
 #filestable td.filename .thumbnail {
@@ -68,9 +68,12 @@ table th#headerDate {
 }
 
 
-
 #filestable span.extension {
-    padding-top: 14px !important;
+    padding-top: 1rem !important;
+}
+
+#filestable .icon-shared {
+  margin-bottom: 0.375rem;
 }
 
 #filestable>thead>tr>th>div>a {
@@ -105,11 +108,10 @@ table.multiselect thead #selectedMenu {
 #filestable tbody {
     display: table;
     width: 100%;
-    overflow: auto;
 }
 
 #filestable input[type='checkbox'].checkbox+label:before {
-    margin: 0 0 0.25rem 0 !important;
+    margin: 0 0 0.063rem 0 !important;
 }
 
 .filename .fileactions a span {
@@ -224,7 +226,10 @@ table.multiselect thead #selectedMenu {
     width: 130px;
     height: 50px;
     flex-direction: row-reverse;
-    align-items: flex-end;
+}
+
+#filestable .icon-public {
+margin-bottom: 0.375rem;
 }
 
 #fileList td a a.action.action-menu {
@@ -272,7 +277,7 @@ table.multiselect thead #selectedMenu {
 }
 
 #fileList td a a.action.action-share {
-    padding: 1.063rem 1rem !important;
+    padding:1rem !important;
 }
 
 
@@ -380,6 +385,15 @@ a.menuitem.action:hover>span,
 #app-content-sharingin #headerSize .size.sort.columntitle {
   width: auto !important;
   margin-right:1.25rem;
+}
+
+#headerName-container,
+#filestable th .columntitle  {
+  height: 46px !important;
+}
+
+#filestable .filename .action .icon-more {
+  margin-bottom:0.25rem !important;
 }
 
 /***************************************** File List Toggle View ******************************************************************/
@@ -746,3 +760,14 @@ table.multiselect #modified {
     min-width: 24px !important;
     min-height: 24px !important;
   }
+#filestable.view-grid:not(.hidden) tbody td .popovermenu {
+    width: 170px !important;
+}
+
+/* Zipper-app */
+.oc-dialog-content input {
+  width:508px !important;
+  margin:1rem 0 1.5rem 0;
+}
+
+

@@ -298,6 +298,10 @@ div.crumb {
     background-size: cover !important;
 }
 
+.icon-folder-white, .icon-folder.icon-white {
+  background-image: var(--icon-folder-fff) !important;
+}
+
 .unified-search__result-icon--no-preview.icon-settings,
 .settings-menu ul li[data-id='settings'] a div {
     background-image: var( --icon-setting-custom) !important;
@@ -592,7 +596,8 @@ aside .icon-star{
 
 /*zip-icon*/
 
-.icon-zip {
+.icon-zip,
+.icon-extract {
     background-image: var(--icon-zip-custom) !important;
 }
 

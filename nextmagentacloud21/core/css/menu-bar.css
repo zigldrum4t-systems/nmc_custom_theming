@@ -7,6 +7,7 @@
 #nextcloud {
     padding-left: 0;
     overflow: unset;
+    margin-top:0.125rem;
 }
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
@@ -37,7 +38,7 @@
 
 #header>.container-fixed>.header-left>#appmenu li a {
     opacity: 1 !important;
-    padding: 4px 15px 0px 0px;
+    padding: 0 0.938rem 0 0;
     font-size: 20px !important;
     color: #161616;
     font-weight: 600 !important;
