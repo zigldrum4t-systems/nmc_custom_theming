@@ -10,6 +10,7 @@ build-image:
     DEPLOY: "true"
     PKR_VAR_image_tag: "dev"
     PKR_VAR_APP_FILES_VIDEOPLAYER_TAG: ""
+    PKR_VAR_APP_FILES_ZIP_TAG: "nmc01.00.00"
     PKR_VAR_APP_PHOTOS_TAG: "nmc01.00.03"
     PKR_VAR_APP_TEXT_TAG: "nmc01.00.00"
     PKR_VAR_APP_NMC_FIRSTRUNWIZARD_TAG: "nmc01.00.00"
