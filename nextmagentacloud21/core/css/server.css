@@ -1595,10 +1595,10 @@
  #app-content, #app-content-vue {
      position: static;
  }
-
- .app-photos, #app-content-vue {
+/*
+ .app-photos #app-content-vue {
   margin-left: 2.5rem !important;
- }
+ } */
 
  /* preview css*/
 
@@ -2129,7 +2129,6 @@
   }
   .photos-navigation {
     margin-top: 1rem !important;
-    padding-left:0 !important
   }
 
   .app-photos .app-navigation-toggle:before{
@@ -2148,7 +2147,7 @@
   }
 
   .app-photos .photos-navigation__back{
-    margin: 0 8px 0 22px !important;
+    margin: 0 8px 0 0 !important;
     padding: 0 !important;
   }
 
@@ -2164,6 +2163,10 @@
     left: 0 !important;
   }
 
+  .app-photos .grid-title{
+    padding: 65px 0 12px 0 !important;
+    font-size: 20px;
+  }
 
   /* photos app*/
 
@@ -2427,7 +2430,7 @@
          width: calc(50% - 150px)!important;
      }
      #app-content-vue{
-       margin-left: 0 !important;
+       margin: 0 1rem!important;
      }
     #app-navigation-vue{
       left:0 !important
@@ -2515,6 +2518,11 @@
      }
  }
 
+ @media (min-width: 700px) and (max-width: 1024px){
+  .grid-container{
+    padding: 66px 16px 256px 44px;
+  }
+}
  @media screen and (max-width: 420px) {
      #selectedActionLabel .icon-more{
          margin-right: -12px;
