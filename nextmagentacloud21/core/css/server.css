@@ -1594,10 +1594,10 @@
  #app-content, #app-content-vue {
      position: static;
  }
- /* #app-content-vue:not(.left-menu-hide){
-   margin-left: 320px !important;
- } */
 
+ .app-photos, #app-content-vue {
+  margin-left: 2.5rem !important;
+ }
 
  /* preview css*/
 
@@ -2107,29 +2107,57 @@
  .nmc_welcome_popup-header button.modal-default-button:hover {
    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
  }
-    /*photo-gallery-icon*/
+  /*photo-gallery-icon*/
 
-    .app-photos [class^='icon-'],
-    .app-photos [class*=' icon-'] {
-        min-width:24px !important;
-        min-height:24px !important;
-      }
+  .app-photos [class^='icon-'],
+  .app-photos [class*=' icon-'] {
+      min-width:24px !important;
+      min-height:24px !important;
+    }
 
-      .icon-video-white {
-       position: absolute !important;
-       top: 40% !important;
-       left: 50% !important;
-       transform: translate(-50%) !important;
-       z-index: 20 !important;
-     }
+  .icon-video-white {
+    position: absolute !important;
+    top: 40% !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+    z-index: 20 !important;
+  }
+  /* hiding icon share email on mobile */
+  #direct-editor .icon-share,.app-photos .photos-navigation__share {
+    display: none !important;
+  }
+  .photos-navigation {
+    margin-top: 1rem !important;
+    padding-left:0 !important
+  }
 
-     .app-photos .photos-navigation__share{
-       display: none;
-     }
-   /* hiding icon share email on mobile */
-   #direct-editor .icon-share {
-     display: none;
-   }
+  .app-photos .app-navigation-toggle:before{
+    content: '' !important;
+  }
+
+  .app-photos .app-navigation-toggle
+  {
+    top: 24px !important;
+    width: 24px !important;
+    height: 24px !important;
+    background: var(--icon-menu-custom) !important;
+    padding: 0 !important;
+  }
+
+  .app-photos .photos-navigation__back{
+    margin: 0 8px 0 22px !important;
+    padding: 0 !important;
+  }
+
+  .app-photos .photos-navigation > *:hover {
+    color:#E20074;
+
+  }
+  .app-photos .photos-navigation__back:hover {
+    filter: invert(15%) sepia(90%) saturate(5967%) hue-rotate(320deg) brightness(87%) contrast(105%);
+  }
+
+  /* photos app*/
 
   /*Responsive Styling*/
 

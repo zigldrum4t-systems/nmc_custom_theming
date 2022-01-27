@@ -658,3 +658,8 @@ aside .icon-star{
   background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }
 
+/* Photos */
+.app-photos .icon-confirm {
+  background: url('../../core/img/back-nav.svg') !important;
+  transform: rotate(0) !important;
+}
