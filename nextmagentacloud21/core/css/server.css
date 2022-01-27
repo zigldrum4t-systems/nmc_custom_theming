@@ -124,10 +124,11 @@
 
  #app-navigation,#app-navigation-vue{
      z-index: 10 !important;
-     /* left: unset !important;*/
+     left: unset !important;
      top: 73px !important;
      height: calc(100% - 190px) !important;
  }
+
 
  #app-navigation:not(.vue) ul,#app-navigation-vue ul {
      padding-top: 4rem;
@@ -2123,7 +2124,7 @@
     z-index: 20 !important;
   }
   /* hiding icon share email on mobile */
-  #direct-editor .icon-share,.app-photos .photos-navigation__share {
+  #direct-editor .icon-share,.app-photos .photos-navigation__share, .app-photos .app-navigation-toggle span {
     display: none !important;
   }
   .photos-navigation {
@@ -2140,6 +2141,8 @@
     top: 24px !important;
     width: 24px !important;
     height: 24px !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
     background: var(--icon-menu-custom) !important;
     padding: 0 !important;
   }
@@ -2156,6 +2159,11 @@
   .app-photos .photos-navigation__back:hover {
     filter: invert(15%) sepia(90%) saturate(5967%) hue-rotate(320deg) brightness(87%) contrast(105%);
   }
+
+  .app-photos #app-navigation-vue{
+    left: 0 !important;
+  }
+
 
   /* photos app*/
 
