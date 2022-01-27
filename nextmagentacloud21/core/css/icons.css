@@ -458,7 +458,9 @@ aside .icon-close,
 
 /** RIGHT click icons**/
 
-.icon-starred,
+.thumbnail-wrapper .favorite-mark .icon-starred{
+  background-image: unset !important;
+}
 .app-navigation-entry-icon.icon-favorite {
     background-image: var(--icon-favourite-custom) !important;
 }
