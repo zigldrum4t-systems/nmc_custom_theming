@@ -92,7 +92,6 @@
  section {
      font-family: TeleNeoWeb, TeleNeo, sans-serif;
      font-size: 16px;
-     line-height: 1;
      color: var(--scl-color-grey-90);
  }
 
@@ -120,6 +119,7 @@
  #app-navigation:not(.vue)>ul>li>a,
  #app-navigation:not(.vue)>ul>li>ul>li>a {
      background-size: 24px 24px !important;
+     background-position: 14px 9px !important;
  }
 
  #app-navigation,#app-navigation-vue{
@@ -931,6 +931,7 @@
 
  .actions.creatable .add-label{
    margin-left: 0.625rem;
+   margin-top:0.125rem;
    font-weight: normal;
    color:#E20074;
  }
