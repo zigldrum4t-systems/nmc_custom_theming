@@ -458,7 +458,9 @@ aside .icon-close,
 
 /** RIGHT click icons**/
 
-.icon-starred,
+.thumbnail-wrapper .favorite-mark .icon-starred{
+  background-image: unset !important;
+}
 .app-navigation-entry-icon.icon-favorite {
     background-image: var(--icon-favourite-custom) !important;
 }
@@ -658,3 +660,8 @@ aside .icon-star{
   background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }
 
+/* Photos */
+.app-photos .icon-confirm {
+  background: url('../../core/img/back-nav.svg') !important;
+  transform: rotate(0) !important;
+}

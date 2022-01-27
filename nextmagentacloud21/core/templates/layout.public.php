@@ -170,7 +170,6 @@
       </div>
     </header>
   </div>
-  <div class="full-width-breadcrumb"></div>
 
 
   <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
