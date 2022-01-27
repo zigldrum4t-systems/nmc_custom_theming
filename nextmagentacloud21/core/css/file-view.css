@@ -754,6 +754,12 @@ table.multiselect #modified {
   font-size: 14px !important;
 }
 
+#filestable .filename .favorite-mark.icon-starred .icon-star {
+    background-image: var( --icon-yellow-fav) !important;
+    background-size: 24px;
+    min-width: 24px !important;
+    min-height: 24px !important;
+  }
 #filestable.view-grid:not(.hidden) tbody td .popovermenu {
     width: 170px !important;
 }
