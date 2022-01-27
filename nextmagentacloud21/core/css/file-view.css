@@ -766,3 +766,8 @@ table.multiselect #modified {
 #filestable thead{
   line-height: 1;
 }
+
+.fileactions .action-button.accept-pending-share ,
+.fileactions .action-button.reject-pending-share{
+  height:30px;
+}
