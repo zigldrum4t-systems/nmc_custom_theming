@@ -965,3 +965,8 @@ form div{
 /***pending shares***/
 
 
+aside ul.sharing-permissions .action label,
+aside .custom-select{
+  line-height: 1;
+}
+
