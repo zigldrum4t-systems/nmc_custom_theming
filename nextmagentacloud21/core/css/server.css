@@ -119,7 +119,7 @@
  #app-navigation:not(.vue)>ul>li>a,
  #app-navigation:not(.vue)>ul>li>ul>li>a {
      background-size: 24px 24px !important;
-     background-position: 14px 10px !important;
+     background-position: 14px 9px !important;
  }
 
  #app-navigation,#app-navigation-vue{
