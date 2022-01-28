@@ -96,11 +96,11 @@ aside .icon-star {
 }
 
 #tab-sharing ul.sharing-permissions .action-radio__label::before{
-  margin: 0rem 0.5rem 0.063rem 0 !important;
+  margin: 0rem 0.5rem 0.2rem 0 !important;
 }
 
 #tab-sharing ul.sharing-permissions span.action-checkbox .action-checkbox__label::before {
-  margin: 0rem 0.5rem 0.125rem 0 !important;
+  margin: 0rem 0.5rem 0.15rem 0 !important;
 }
 
 
@@ -966,7 +966,8 @@ form div{
 
 
 aside ul.sharing-permissions .action label,
-aside .custom-select{
-  line-height: 1;
+#app .custom-select.select {
+  line-height: 1 !important;
 }
+
 

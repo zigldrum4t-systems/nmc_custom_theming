@@ -55,7 +55,7 @@ table th#headerDate {
 #filestable td.filename .thumbnail {
     width: 44px !important;
     height: 44px !important;
-    margin-top: 4px;
+    margin-top: 0.188rem;
     background-position: center center;
     background-size: 74px !important;
     border: none;
@@ -771,3 +771,19 @@ table.multiselect #modified {
 .fileactions .action-button.reject-pending-share{
   height:30px;
 }
+
+#rightClickMenu span.icon {
+  background-position: 14px 8px !important;
+}
+
+table td.filename a.name, table td.filename p.name {
+    line-height: 48px !important;
+}
+
+
+#app-content-sharingout tbody#fileList,
+#app-content-favorites tbody#fileList {
+  margin-top:1.5rem;
+}
+
+
