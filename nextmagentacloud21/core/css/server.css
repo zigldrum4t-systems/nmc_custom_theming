@@ -1596,10 +1596,10 @@
  #app-content, #app-content-vue {
      position: static;
  }
-
- .app-photos, #app-content-vue {
+/*
+ .app-photos #app-content-vue {
   margin-left: 2.5rem !important;
- }
+ } */
 
  /* preview css*/
 
@@ -2130,7 +2130,7 @@
   }
   .photos-navigation {
     margin-top: 1rem !important;
-    padding-left:0 !important
+    margin-left: 0.5rem;
   }
 
   .app-photos .app-navigation-toggle:before{
@@ -2139,17 +2139,18 @@
 
   .app-photos .app-navigation-toggle
   {
-    top: 24px !important;
+    top: 26px !important;
     width: 24px !important;
     height: 24px !important;
     min-width: 24px !important;
     min-height: 24px !important;
     background: var(--icon-menu-custom) !important;
     padding: 0 !important;
+    margin-right: -32px !important;
   }
 
   .app-photos .photos-navigation__back{
-    margin: 0 8px 0 22px !important;
+    margin: 0 8px 0 0 !important;
     padding: 0 !important;
   }
 
@@ -2163,8 +2164,25 @@
 
   .app-photos #app-navigation-vue{
     left: 0 !important;
+    height: calc(100vh - 73px) !important;
   }
 
+  .app-photos .grid-title{
+    padding: 1.7rem 0 0.75rem 1rem !important;
+    font-size: 1.25rem;
+  }
+
+  .grid-container{
+    padding: 0 0 10rem 2rem !important;
+  }
+
+  .app-photos button:not(:disabled):not(.primary):hover{
+    background-color:unset !important;
+  }
+
+  .app-photos .photos-navigation__title{
+    padding: 0 !important;
+  }
 
   /* photos app*/
 
@@ -2238,6 +2256,12 @@
      table.multiselect th .columntitle.name span{
        font-size: 0.875rem;
      }
+ }
+
+ @media (min-width: 0px) and (max-width: 410px){
+ .grid-container {
+     padding: 0 0 10rem 0 !important;
+  }
  }
 
  @media screen and (max-width: 640px) {
@@ -2428,7 +2452,7 @@
          width: calc(50% - 150px)!important;
      }
      #app-content-vue{
-       margin-left: 0 !important;
+       margin: 0 1rem!important;
      }
     #app-navigation-vue{
       left:0 !important
@@ -2516,6 +2540,15 @@
      }
  }
 
+ @media (min-width: 700px) and (max-width: 1024px){
+  .app-photos .grid-container{
+    padding:0 0 10rem 1rem !important;
+  }
+  .app-photos .photos-navigation{
+    margin-left: 1.5rem;
+    padding: 0 !important;
+  }
+}
  @media screen and (max-width: 420px) {
      #selectedActionLabel .icon-more{
          margin-right: -12px;
