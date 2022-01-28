@@ -2144,6 +2144,7 @@
     min-height: 24px !important;
     background: var(--icon-menu-custom) !important;
     padding: 0 !important;
+    margin-right: -36px !important;
   }
 
   .app-photos .photos-navigation__back{
@@ -2161,6 +2162,7 @@
 
   .app-photos #app-navigation-vue{
     left: 0 !important;
+    height: calc(100vh - 73px) !important;
   }
 
   .app-photos .grid-title{
@@ -2168,6 +2170,9 @@
     font-size: 20px;
   }
 
+  .grid-container{
+    padding: 0 0 10rem 2rem !important;
+  }
   /* photos app*/
 
   /*Responsive Styling*/
@@ -2240,6 +2245,12 @@
      table.multiselect th .columntitle.name span{
        font-size: 0.875rem;
      }
+ }
+
+ @media (min-width: 0px) and (max-width: 410px){
+ .grid-container[data-v-e945440a] {
+     padding: 0 0 10rem 2rem !important;
+  }
  }
 
  @media screen and (max-width: 640px) {
@@ -2520,7 +2531,7 @@
 
  @media (min-width: 700px) and (max-width: 1024px){
   .grid-container{
-    padding: 66px 16px 256px 44px;
+    padding:0px 0 256px 2rem !important;
   }
 }
  @media screen and (max-width: 420px) {
