@@ -50,13 +50,12 @@ table th#headerDate {
     font-size: 16px !important;
     color: #191919 !important;
     padding-left: 20px;
-    padding-top: 1rem;
 }
 
 #filestable td.filename .thumbnail {
     width: 44px !important;
     height: 44px !important;
-    margin-top: 4px;
+    margin-top: 0.188rem;
     background-position: center center;
     background-size: 74px !important;
     border: none;
@@ -65,11 +64,6 @@ table th#headerDate {
 #fileList tr td.filename .favorite-mark {
     top: 27px;
     right: -11px;
-}
-
-
-#filestable span.extension {
-    padding-top: 1rem !important;
 }
 
 #filestable .icon-shared {
@@ -108,10 +102,6 @@ table.multiselect thead #selectedMenu {
 #filestable tbody {
     display: table;
     width: 100%;
-}
-
-#filestable input[type='checkbox'].checkbox+label:before {
-    margin: 0 0 0.063rem 0 !important;
 }
 
 .filename .fileactions a span {
@@ -395,7 +385,7 @@ a.menuitem.action:hover>span,
 }
 
 #filestable .filename .action .icon-more {
-  margin-bottom:0.25rem !important;
+  margin-bottom:0.063rem !important;
 }
 
 /***************************************** File List Toggle View ******************************************************************/
@@ -770,6 +760,30 @@ table.multiselect #modified {
 .oc-dialog-content input {
   width:501px !important;
   margin:1rem 0 1.5rem 0;
+}
+
+
+#filestable thead{
+  line-height: 1;
+}
+
+.fileactions .action-button.accept-pending-share ,
+.fileactions .action-button.reject-pending-share{
+  height:30px;
+}
+
+#rightClickMenu span.icon {
+  background-position: 14px 8px !important;
+}
+
+table td.filename a.name, table td.filename p.name {
+    line-height: 48px !important;
+}
+
+
+#app-content-sharingout tbody#fileList,
+#app-content-favorites tbody#fileList {
+  margin-top:1.5rem;
 }
 
 
