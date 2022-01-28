@@ -511,3 +511,63 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 }
 
 /*to hide desktop client*/
+
+/*Setting #1 changes*/
+
+.profile-settings-container form.section h3 label,
+.profile-settings-container form.section h3 div,
+.profile-settings-container form.section div em,
+.profile-settings-container form.section > div:nth-child(2),
+.email-actions-container .icon-checkmark
+{
+  display: none;
+}
+
+.profile-settings-container form#emailform h3 label{
+  display: inline;
+}
+
+.profile-settings-container form.section input {
+  width: 400px;
+  height: 48px !important;
+  padding: 0.75rem 0.75rem 0.75rem 0.688rem;
+  background-color: #ffffff;
+  border: 1px solid #191919;
+  font-family: TeleNeoWeb, TeleNeo, sans-serif;
+  display: inline-block !important;
+  margin-top: 0.625rem;
+}
+
+.email-actions-container div,
+.personal-settings-setting-box #language em{
+  display: none;
+}
+
+input[name="additionalEmail[]"] {
+  margin-top: -1px !important;
+  background-color: unset !important;
+}
+
+#personal-settings input[name="additionalEmail[]"]:not(:disabled):not(.primary):hover,
+#personal-settings input[name="additionalEmail[]"]:not(:disabled):not(.primary):focus
+{
+  background-color: unset !important;
+}
+
+.profile-settings-container .email-container label{
+  margin-top: -143px;
+
+}
+
+.email-actions-container{
+  align-items: center;
+}
+
+.personal-settings-setting-box.personal-settings-language-box{
+  width: 452px;
+}
+
+#personal-settings-avatar-container .telekom-link p{
+  margin-top: 0.5rem;
+}
+/*Setting #1 changes*/

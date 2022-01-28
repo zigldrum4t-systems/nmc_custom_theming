@@ -2217,6 +2217,7 @@ aside .icon-close:hover,
     }
     .personal-settings-setting-box .section input[type='text'],
     .personal-settings-setting-box .section input[type='email'],
+    #personal-settings input[name='additionalEmail[]'],
      #webdav-address input[type='text'], #security input[type='text'] {
        width:290px !important;
      }
@@ -2341,11 +2342,26 @@ aside .icon-close:hover,
 
     .personal-settings-setting-box .section input[type='text'],
     .personal-settings-setting-box .section input[type='email'],
-     #webdav-address input[type='text'], #security input[type='text'] {
+    #personal-settings input[name='additionalEmail[]'],
+    #webdav-address input[type='text'], #security input[type='text'] {
        width:350px;
      }
 
-     select#languageinput {
+    #personal-settings input[name='additionalEmail[]']{
+      margin-top:unset !important;
+    }
+
+    .profile-settings-container .email-container label {
+      margin-top: -130px;
+    }
+
+    #personal-settings-avatar-container .telekom-link p,
+    .personal-settings-setting-box.personal-settings-group-box.section
+    {
+      max-width: 380px;
+    }
+
+    select#languageinput {
       width:350px;
     }
     .modal-wrapper {
@@ -2564,6 +2580,10 @@ aside .icon-close:hover,
     .app-password-username-row {
 		display: table-caption;
 	}
+
+  .add-button[data-v-609b0a50]{
+    margin:0 !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
