@@ -503,6 +503,9 @@ OC.L10N.register(
     "of" : "von",
     "Memory"  :"Speicher zu",
     "occupied" : "belegt",
-    "Tariff information"  : "Tarifinformationen"
+    "Tariff information"  : "Tarifinformationen",
+    "Add alternative mail address": "Alternative E-Mail-Adresse hinzufügen",
+    "Alternative Mail Address": "Alternative E-Mail-Adresse",
+    "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the": "Sie können einer alternative E-Mail-Adresse angeben um Ihre Benachrichtigungen dort zu erhalten. Sie wird ebenfalls als Adresse für geteilte Inhalte verwendet. Ihr Passwort können Sie in den"
 },
 "nplurals=2; plural=(n != 1);");

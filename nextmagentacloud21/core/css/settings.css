@@ -570,4 +570,12 @@ input[name="additionalEmail[]"] {
 #personal-settings-avatar-container .telekom-link p{
   margin-top: 0.5rem;
 }
+
+.profile-settings-container .action-item.action-item--single.icon-delete{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+.add-button:not(:disabled):not(.primary):active{
+  color: #e20074;
+}
 /*Setting #1 changes*/
