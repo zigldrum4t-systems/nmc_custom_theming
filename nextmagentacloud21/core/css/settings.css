@@ -578,4 +578,8 @@ input[name="additionalEmail[]"] {
 .add-button:not(:disabled):not(.primary):active{
   color: #e20074;
 }
+
+table#app-tokens-table thead tr{
+  height: 2.5em;
+}
 /*Setting #1 changes*/
