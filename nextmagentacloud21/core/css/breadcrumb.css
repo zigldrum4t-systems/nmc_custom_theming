@@ -25,6 +25,7 @@
 #uploadprogressbar .ui-progressbar-value.ui-widget-header.ui-corner-left {
     background-color: #e20074 !important;
     left: 0px !important;
+    line-height: 1.3 !important;
 }
 
 #uploadprogressbar .label {

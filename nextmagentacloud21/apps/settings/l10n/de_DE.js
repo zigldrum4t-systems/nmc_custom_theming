@@ -448,10 +448,10 @@ OC.L10N.register(
     "Trusted" : "Vertrauenswürdig",
     "Public" : "Öffentlich",
     "installing and updating apps via the app store or Federated Cloud Sharing" : "Das Installieren und Aktualisieren von Apps durch den App-Store oder durch Federated Cloud Sharing",
-    "Nextcloud iOS app" : "Nextcloud iOS-App",
-    "Nextcloud Android app" : "Nextcloud Android-App",
-    "Nextcloud Talk for iOS" : "Nextcloud Talk für iOS",
-    "Nextcloud Talk for Android" : "Nextcloud Talk für Android",
+    "Nextcloud iOS app" : "MagentaCLOUD iOS-App",
+    "Nextcloud Android app" : "MagentaCLOUD Android-App",
+    "Nextcloud Talk for iOS" : "MagentaCLOUD Talk für iOS",
+    "Nextcloud Talk for Android" : "MagentaCLOUD Talk für Android",
     "Add user in group" : "Benutzer zur Gruppe hinzufügen",
     "Close" : "Schließen",
     "All languages" : "Alle Sprachen",
@@ -503,6 +503,9 @@ OC.L10N.register(
     "of" : "von",
     "Memory"  :"Speicher zu",
     "occupied" : "belegt",
-    "Tariff information"  : "Tarifinformationen"
+    "Tariff information"  : "Tarifinformationen",
+    "Add alternative mail address": "Alternative E-Mail-Adresse hinzufügen",
+    "Alternative Mail Address": "Alternative E-Mail-Adresse",
+    "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the": "Sie können einer alternative E-Mail-Adresse angeben um Ihre Benachrichtigungen dort zu erhalten. Sie wird ebenfalls als Adresse für geteilte Inhalte verwendet. Ihr Passwort können Sie in den"
 },
 "nplurals=2; plural=(n != 1);");

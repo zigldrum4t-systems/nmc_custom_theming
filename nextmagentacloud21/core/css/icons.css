@@ -660,6 +660,14 @@ aside .icon-star{
   background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }
 
+.add-button .icon-add {
+  background-image: var(--icon-add-custom) !important;
+  background-size: 24px !important;
+  min-width: 24px;
+  min-height: 24px;
+  vertical-align: middle;
+}
+
 /* Photos */
 .app-photos .icon-confirm {
   background: url('../../core/img/back-nav.svg') !important;
