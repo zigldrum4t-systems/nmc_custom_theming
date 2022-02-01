@@ -524,7 +524,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 .multiple-mail .action-item.action-item--single.actions-federation.federation-control.icon-password,
 .multiple-mail span
 {
-  display: none !important;
+  display: none;
 }
 
 .profile-settings-container form#emailform h3 label{
