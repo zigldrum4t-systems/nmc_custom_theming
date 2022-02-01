@@ -520,9 +520,11 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 .profile-settings-container form.section > div:nth-child(2),
 .email-actions-container .icon-checkmark,
 .email-actions-container div,
-.personal-settings-setting-box #language em
+.personal-settings-setting-box #language em,
+.multiple-mail .action-item.action-item--single.actions-federation.federation-control.icon-password,
+.multiple-mail span
 {
-  display: none;
+  display: none !important;
 }
 
 .profile-settings-container form#emailform h3 label{
