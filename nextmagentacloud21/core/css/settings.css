@@ -582,4 +582,10 @@ input[name="additionalEmail[]"] {
 table#app-tokens-table thead tr{
   height: 2.5em;
 }
+
+#app-tokens-table .token-name input{
+  background-color: #FFFFFF;
+  width: 250px;
+  border: 1px solid #191919;
+}
 /*Setting #1 changes*/

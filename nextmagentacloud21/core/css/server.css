@@ -2260,6 +2260,10 @@ aside .icon-close:hover,
     table.multiselect th .columntitle.name span{
       font-size: 0.875rem;
     }
+
+    #app-tokens-table .token-name input{
+      width: 100px !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -2366,7 +2370,10 @@ aside .icon-close:hover,
     }
     .modal-wrapper {
       height: 86% !important;
-  }
+    }
+    #app-tokens-table .token-name input{
+      width: 250px;
+    }
 
 }
 @media screen and (max-width: 689px) {
@@ -2637,6 +2644,9 @@ aside .icon-close:hover,
     margin-top: 0.0625rem;
   }
 
+  #app-tokens-table .token-name input{
+    width: 175px;
+  }
 
 }
 
