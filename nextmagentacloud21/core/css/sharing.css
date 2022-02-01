@@ -95,9 +95,12 @@ aside .icon-star {
   margin: 0.5rem 0 !important;
 }
 
-#tab-sharing ul.sharing-permissions .action-radio__label::before,
+#tab-sharing ul.sharing-permissions .action-radio__label::before{
+  margin: 0rem 0.5rem 0.2rem 0 !important;
+}
+
 #tab-sharing ul.sharing-permissions span.action-checkbox .action-checkbox__label::before {
-  margin: 0.063rem 0.5rem 0 0 !important;
+  margin: 0rem 0.5rem 0.15rem 0 !important;
 }
 
 
@@ -598,9 +601,6 @@ span#global-lookup,
   margin-right: -0.25rem !important;
 }
 
-aside .action-radio__label {
-  align-items: unset !important;
-}
 
 .option__desc--lineone strong {
   font-weight: normal !important;
@@ -963,5 +963,11 @@ form div{
 
 
 /***pending shares***/
+
+
+aside ul.sharing-permissions .action label,
+#app .custom-select.select {
+  line-height: 1 !important;
+}
 
 
