@@ -37314,7 +37314,7 @@ var render = function() {
     "form",
     {
       ref: "form",
-      staticClass: "section",
+      staticClass: "section multiple-mail",
       on: {
         submit: function($event) {
           $event.stopPropagation()
@@ -46217,4 +46217,4 @@ module.exports = function(module) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-settings-personal-info.js.map?v=e35871a070449087df3d
+//# sourceMappingURL=vue-settings-personal-info.js.map?v=6721eb87dee02a882d60

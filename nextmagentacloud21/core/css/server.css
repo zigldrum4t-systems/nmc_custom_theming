@@ -2215,7 +2215,7 @@
      }
      .personal-settings-setting-box .section input[type='text'],
      .personal-settings-setting-box .section input[type='email'],
-     #personal-settings input[name='additionalEmail[]'],
+     #personal-settings .multiple-mail input,
       #webdav-address input[type='text'], #security input[type='text'] {
         width:290px !important;
       }
@@ -2354,12 +2354,12 @@
 
      .personal-settings-setting-box .section input[type='text'],
      .personal-settings-setting-box .section input[type='email'],
-     #personal-settings input[name='additionalEmail[]'],
+     #personal-settings .multiple-mail input,
       #webdav-address input[type='text'], #security input[type='text'] {
         width:350px;
       }
 
-      #personal-settings input[name='additionalEmail[]']{
+      #personal-settings .multiple-mail input{
         margin-top:unset !important;
      }
 

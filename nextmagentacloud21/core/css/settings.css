@@ -518,7 +518,9 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 .profile-settings-container form.section h3 div,
 .profile-settings-container form.section div em,
 .profile-settings-container form.section > div:nth-child(2),
-.email-actions-container .icon-checkmark
+.email-actions-container .icon-checkmark,
+.email-actions-container div,
+.personal-settings-setting-box #language em
 {
   display: none;
 }
@@ -538,21 +540,17 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   margin-top: 0.625rem;
 }
 
-.email-actions-container div,
-.personal-settings-setting-box #language em{
-  display: none;
-}
-
-input[name="additionalEmail[]"] {
+#personal-settings .multiple-mail input {
   margin-top: -1px !important;
   background-color: unset !important;
 }
 
-#personal-settings input[name="additionalEmail[]"]:not(:disabled):not(.primary):hover,
-#personal-settings input[name="additionalEmail[]"]:not(:disabled):not(.primary):focus
+#personal-settings .multiple-mail input:not(:disabled):not(.primary):hover,
+#personal-settings .multiple-mail input:not(:disabled):not(.primary):focus
 {
   background-color: unset !important;
 }
+
 
 .profile-settings-container .email-container label{
   margin-top: -143px;
