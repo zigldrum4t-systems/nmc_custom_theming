@@ -2262,9 +2262,7 @@
      #app-tokens-table .token-name input{
       width: 100px !important;
      }
-     #nmc_welcome_popup a.button {
-       max-width:120px !important;
-     }
+     #nmc_welcome_popup a.button ,
      #nmc_welcome_popup button.primary {
        max-width:120px !important;
      }

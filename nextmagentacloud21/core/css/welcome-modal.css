@@ -109,7 +109,7 @@
 
 
 #nmc_welcome_popup .modal-footer button {
-  margin: 0rem !important;
+  margin: 0 !important;
 }
 
 #nmc_welcome_popup .modal-footer {
@@ -194,7 +194,7 @@
 }
 
 .modal-mask .button {
-  margin:0rem !important;
+  margin:0 !important;
 }
 
 input#add_new_popup {
