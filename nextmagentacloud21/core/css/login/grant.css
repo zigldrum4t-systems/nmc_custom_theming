@@ -10,7 +10,8 @@
     font-weight: 400;
     border-radius: 8px;
     background-color: #ffffff !important;
-    color: #e20074;
+    background-image: unset !important;
+    color: #e20074 !important;
     background-position: right 16px center;
 }
 
