@@ -2,11 +2,14 @@
     float:left;
     color:#191919 !important;
     font-weight:bold !important;
-    margin-top:unset !important;
+    padding:0 !important;
+    margin:0 !important;
 }
 
- .modal-header {
+#nmc_welcome_popup .modal-header {
   background-color: unset !important;
+  height:unset  !important;
+  max-height: 150px !important;
 }
 
 .modal-mask#nmc_welcome_popup .modal-container {
@@ -37,6 +40,7 @@
   overflow: hidden;
   vertical-align: middle;
   display:inline-block;
+  line-height: 1.23;
 }
 
 
@@ -62,6 +66,7 @@
   white-space: nowrap;
   overflow: hidden;
   vertical-align: middle;
+  line-height: 1.23;
 }
 
 #welcome_popup input#de_DE-show-preview,
@@ -104,7 +109,7 @@
 
 
 #nmc_welcome_popup .modal-footer button {
-  margin: unset !important;
+  margin: 0 !important;
 }
 
 #nmc_welcome_popup .modal-footer {
@@ -114,7 +119,7 @@
 #nmc_welcome_popup .modal-footer {
    overflow: unset !important;
    position: unset !important;
-   display: unset !important;
+   justify-content: space-between;
    text-align: right;
    margin-top:2rem !important;
 }
@@ -189,7 +194,7 @@
 }
 
 .modal-mask .button {
-  margin:0rem 0.188rem 0rem 0rem !important;
+  margin:0 !important;
 }
 
 input#add_new_popup {
@@ -320,8 +325,9 @@ display: inline;
 margin-top: -0.313rem;
 width:auto !important;
 }
+
 .footer-actions {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 #nmc_welcome_popup .content ol li,
@@ -333,7 +339,7 @@ width:auto !important;
 /*pagination*/
 
 .modal-footer .pagination {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   float: left;
   width: 200px;
   height: 40px;
