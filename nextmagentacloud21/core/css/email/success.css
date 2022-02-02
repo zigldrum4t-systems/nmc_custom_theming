@@ -1,0 +1,20 @@
+.update{
+	background-color: unset;
+}
+
+.update .success-btn {
+    font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.42857143;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: #ffffff !important;
+    color: #e20074 !important;
+    background-position: right 16px center;
+}
+
+.update .success-btn:hover {
+  background: #ffffff !important;
+  color: #e20074 !important;
+}
