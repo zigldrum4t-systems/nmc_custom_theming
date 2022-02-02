@@ -511,3 +511,81 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 }
 
 /*to hide desktop client*/
+
+/*Setting #1 changes*/
+
+.profile-settings-container form.section h3 label,
+.profile-settings-container form.section h3 div,
+.profile-settings-container form.section div em,
+.profile-settings-container form.section > div:nth-child(2),
+.email-actions-container .icon-checkmark,
+.email-actions-container div,
+.personal-settings-setting-box #language em,
+.multiple-mail .action-item.action-item--single.actions-federation.federation-control.icon-password,
+.multiple-mail span
+{
+  display: none;
+}
+
+.profile-settings-container form#emailform h3 label{
+  display: inline;
+}
+
+.profile-settings-container form.section input {
+  width: 400px;
+  height: 48px !important;
+  padding: 0.75rem 0.75rem 0.75rem 0.688rem;
+  background-color: #ffffff;
+  border: 1px solid #191919;
+  font-family: TeleNeoWeb, TeleNeo, sans-serif;
+  display: inline-block !important;
+  margin-top: 0.625rem;
+}
+
+#personal-settings .multiple-mail input {
+  margin-top: -1px !important;
+  background-color: unset !important;
+}
+
+#personal-settings .multiple-mail input:not(:disabled):not(.primary):hover,
+#personal-settings .multiple-mail input:not(:disabled):not(.primary):focus
+{
+  background-color: unset !important;
+}
+
+
+.profile-settings-container .email-container label{
+  margin-top: -143px;
+
+}
+
+.email-actions-container{
+  align-items: center;
+}
+
+.personal-settings-setting-box.personal-settings-language-box{
+  width: 452px;
+}
+
+#personal-settings-avatar-container .telekom-link p{
+  margin-top: 0.5rem;
+}
+
+.profile-settings-container .action-item.action-item--single.icon-delete{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+.add-button:not(:disabled):not(.primary):active{
+  color: #e20074;
+}
+
+table#app-tokens-table thead tr{
+  height: 2.5em;
+}
+
+#app-tokens-table .token-name input{
+  background-color: #FFFFFF;
+  width: 250px;
+  border: 1px solid #191919;
+}
+/*Setting #1 changes*/

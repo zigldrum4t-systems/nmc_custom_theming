@@ -274,8 +274,12 @@
     "Change password" : "Change password",
     "Public" : "Public",
     "installing and updating apps via the app store or Federated Cloud Sharing" : "installing and updating apps via the app store or Federated Cloud Sharing",
-    "Nextcloud Talk for iOS" : "Nextcloud Talk for iOS",
-    "Nextcloud Talk for Android" : "Nextcloud Talk for Android",
+    "Nextcloud Talk for iOS" : "MagentaCLOUD Talk for iOS",
+    "Nextcloud Talk for Android" : "MagentaCLOUD Talk for Android",
+    "Nextcloud iOS app" : "MagentaCLOUD iOS-App",
+    "Nextcloud Android app" : "MagentaCLOUD Android-App",
+    "Nextcloud iOS app Nextcloud" : "MagentaCLOUD iOS-App",
+    "Nextcloud Android app Nextcloud" : "MagentaCLOUD Android-App",
     "Close" : "Close",
     "All languages" : "All languages",
     "Everyone" : "Everyone",
@@ -324,6 +328,9 @@
     "The recycle bin is automatically tidied up." : "The recycle bin is automatically tidied up.",
     "Files that have been in the recycle bin for longer than 30 days are automatically deleted permanently and free up storage space."  :"Files that have been in the recycle bin for longer than 30 days are automatically deleted permanently and free up storage space.",
     "Tariff information"  : "Tariff information",
-    "Expand storage" : "Expand storage"
+    "Expand storage" : "Expand storage",
+    "Add alternative mail address": "Add alternative mail address",
+    "Alternative Mail Address": "Alternative Mail Address",
+    "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the": "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

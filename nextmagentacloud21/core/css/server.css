@@ -2215,6 +2215,7 @@
      }
      .personal-settings-setting-box .section input[type='text'],
      .personal-settings-setting-box .section input[type='email'],
+     #personal-settings .multiple-mail input,
       #webdav-address input[type='text'], #security input[type='text'] {
         width:290px !important;
       }
@@ -2256,6 +2257,10 @@
 
      table.multiselect th .columntitle.name span{
        font-size: 0.875rem;
+     }
+
+     #app-tokens-table .token-name input{
+      width: 100px !important;
      }
  }
 
@@ -2349,9 +2354,28 @@
 
      .personal-settings-setting-box .section input[type='text'],
      .personal-settings-setting-box .section input[type='email'],
+     #personal-settings .multiple-mail input,
       #webdav-address input[type='text'], #security input[type='text'] {
         width:350px;
       }
+
+      #personal-settings .multiple-mail input{
+        margin-top:unset !important;
+     }
+
+     .profile-settings-container .email-container label {
+        margin-top: -130px;
+     }
+
+     #personal-settings-avatar-container .telekom-link p,
+     .personal-settings-setting-box.personal-settings-group-box.section
+     {
+       max-width: 380px;
+     }
+
+     #app-tokens-table .token-name input{
+      width: 250px;
+     }
 
       select#languageinput {
        width:350px;
@@ -2581,6 +2605,10 @@
      .app-password-username-row {
      display: table-caption;
    }
+
+     .add-button[data-v-609b0a50]{
+      margin:0 !important;
+   }
  }
 
  @media screen and (max-width: 480px) {
@@ -2634,6 +2662,9 @@
      margin-top: 0.0625rem;
    }
 
+   #app-tokens-table .token-name input{
+    width: 175px;
+   }
 
  }
 

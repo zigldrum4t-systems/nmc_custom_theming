@@ -451,6 +451,7 @@ li.action-details-container {
 
 #filestable.view-grid tbody td.filename .name .nametext {
     margin-top: 133px !important;
+    line-height: 1.2 !important;
 }
 
 #filestable.view-grid tbody td.filename .thumbnail-wrapper .thumbnail .favorite-mark {
