@@ -12,9 +12,19 @@
     background-color: #ffffff !important;
     color: #e20074 !important;
     background-position: right 16px center;
+    padding: 10px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 260px !important;
+    height: 50px !important;
 }
 
 .update .success-btn:hover {
   background: #ffffff !important;
   color: #e20074 !important;
+}
+
+.update p {
+  margin: 10px 0px 10px 0px;
+  color: #fff;
 }
