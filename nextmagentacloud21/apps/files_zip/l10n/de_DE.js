@@ -5,7 +5,7 @@ OC.L10N.register(
     "Archive": "Archiv",
     "Select a name for the Zip archive": "Bitte wählen Sie einen Dateinamen für das Zip-Archiv",
     "Compress files": "Archiv erstellen",
-    "File name": "Datei name",
+    "File name": "Dateiname",
     "Cancel": "Abbrechen",
     "Compress {files} file": "{files} Dateien komprimieren",
     "_Compress {files} file_::_Compress {files} files_" : ["{files} Element komprimieren","{files} Elemente komprimieren"],
