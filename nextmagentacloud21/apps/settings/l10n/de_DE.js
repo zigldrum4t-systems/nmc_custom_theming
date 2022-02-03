@@ -506,6 +506,6 @@ OC.L10N.register(
     "Tariff information"  : "Tarifinformationen",
     "Add alternative mail address": "Alternative E-Mail-Adresse hinzufügen",
     "Alternative Mail Address": "Alternative E-Mail-Adresse",
-    "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the": "Sie können einer alternative E-Mail-Adresse angeben um Ihre Benachrichtigungen dort zu erhalten. Sie wird ebenfalls als Adresse für geteilte Inhalte verwendet. Ihr Passwort können Sie in den"
+    "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the": "Sie können eine alternative E-Mail-Adresse angeben um Ihre Benachrichtigungen dort zu erhalten. Sie wird ebenfalls als Adresse für geteilte Inhalte verwendet. Ihr Passwort können Sie in den Login-Einstellungen für alle Telekom Dienste ändern."
 },
 "nplurals=2; plural=(n != 1);");
