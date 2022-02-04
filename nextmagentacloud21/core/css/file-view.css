@@ -788,3 +788,6 @@ table td.filename a.name, table td.filename p.name {
 }
 
 
+#filestable.view-grid  #fileList td.filename input.filename {
+  margin-left: 0 !important;
+}
