@@ -271,6 +271,7 @@ OC.L10N.register(
     "Keep both files for all" : "Keep both files for all",
     "Replace all files" : "Replace all files",
     "Help & FAQ": "Help & FAQ",
-    "Logout": "Logout"
+    "Logout": "Logout",
+    "Your email address has been successfully confirmed and is now in use.": "Your email address has been successfully confirmed and is now in use."
 },
 "nplurals=2; plural=(n != 1);");
