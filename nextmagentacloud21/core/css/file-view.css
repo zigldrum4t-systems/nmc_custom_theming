@@ -787,4 +787,6 @@ table td.filename a.name, table td.filename p.name {
   margin-top:1.5rem;
 }
 
-
+.viewer__file--active .plyr {
+	margin-top: 380px !important;
+}
