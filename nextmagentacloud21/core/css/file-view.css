@@ -787,4 +787,6 @@ table td.filename a.name, table td.filename p.name {
   margin-top:1.5rem;
 }
 
-
+#app-content-sharingin #fileList {
+  margin-top:1.625rem;
+}
