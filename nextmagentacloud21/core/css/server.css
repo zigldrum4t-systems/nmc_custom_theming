@@ -2697,7 +2697,7 @@
    }
 
    @media only screen and (max-width: 988px) and (min-width: 1025px), only screen and (max-width: 688px){
-   #fileList a.action-share span:not(.icon):not(.avatar) {
+    #filestable.view-grid #fileList a.action-share span:not(.icon):not(.avatar) {
        position: unset !important;
        left: unset !important;
        top: unset !important;
