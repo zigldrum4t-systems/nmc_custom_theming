@@ -61,6 +61,8 @@ table th#headerDate {
     border: none;
 }
 
+
+
 #fileList tr td.filename .favorite-mark {
     top: 27px;
     right: -11px;
@@ -787,4 +789,32 @@ table td.filename a.name, table td.filename p.name {
   margin-top:1.5rem;
 }
 
+/* nextcloud patch gard-369 */
 
+
+.uploadtext {
+    width: 100% !important;
+    margin: 0 !important;
+    top: 0 !important;
+    bottom: auto !important;
+    height: 28px !important;
+    padding-top: 4px !important;
+    padding-left: calc(44px - 16px) !important;
+}
+
+table td.filename .uploadtext {
+	position: absolute;
+	font-weight: normal;
+	margin-left: 50px;
+	left: 0;
+	bottom: 0;
+	height: 20px;
+	padding: 0 4px;
+	padding-left: 1px;
+	line-height: 22px;
+    font-size: 11px;
+	color: var(--color-text-maxcontrast);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    overflow: hidden;
+}
