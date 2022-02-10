@@ -70,7 +70,7 @@ function searchInputLabel() {
     ele.onclick = function () {
       var labelElement = document.createElement('label');
       labelElement.className = 'search-input-label';
-      labelElement.innerText = t('core', 'Search files, folders or settings …');
+      labelElement.innerText = t('core', 'Search files or folders …');
       document.getElementsByClassName('unified-search__form-input')[0] ?
       document.getElementsByClassName('unified-search__form-input')[0].required = true : null;
       document.getElementsByClassName('unified-search__form')[0] ?

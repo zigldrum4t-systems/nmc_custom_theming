@@ -590,6 +590,9 @@
      #uploadprogressbar .mobile {
          display: block !important;
      }
+     .nmc_welcome_popup-header h2 {
+       max-width: 320px;
+    }
  }
 
  @media screen and (min-width: 1600px) {
@@ -676,6 +679,9 @@
      }
      .app-files #app-content, #app-content-vue {
          width: 100% !important;
+     }
+     .nmc_welcome_popup-header h2 {
+      max-width: 510px;
      }
  }
 
@@ -2266,6 +2272,9 @@
      #nmc_welcome_popup button.primary {
        max-width:120px !important;
      }
+     .nmc_welcome_popup-header h2 {
+      max-width: 220px !important;
+     }
  }
 
  @media (min-width: 0px) and (max-width: 410px){
@@ -2378,7 +2387,7 @@
      }
 
      #app-tokens-table .token-name input{
-      width: 250px;
+      width: 190px;
      }
 
       select#languageinput {
@@ -2697,7 +2706,7 @@
    }
 
    @media only screen and (max-width: 988px) and (min-width: 1025px), only screen and (max-width: 688px){
-   #fileList a.action-share span:not(.icon):not(.avatar) {
+    #filestable.view-grid #fileList a.action-share span:not(.icon):not(.avatar) {
        position: unset !important;
        left: unset !important;
        top: unset !important;

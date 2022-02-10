@@ -588,4 +588,8 @@ table#app-tokens-table thead tr{
   width: 250px;
   border: 1px solid #191919;
 }
+
+#body-settings{
+  overflow-x: unset;
+}
 /*Setting #1 changes*/

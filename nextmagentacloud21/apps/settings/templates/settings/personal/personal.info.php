@@ -52,16 +52,7 @@ script('settings', [
             </span>
           </a>
         </h3>
-        <input type="text" id="displayname" name="displayname" read-only <?php if (!$_['displayNameChangeSupported']) {
-                                                                  print_unescaped('class="hidden"');
-                                                                } ?> value="<?php p($_['displayName']) ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly/>
-        <?php if (!$_['displayNameChangeSupported']) { ?>
-          <span><?php if (isset($_['displayName']) && !empty($_['displayName'])) {
-                  p($_['displayName']);
-                } else {
-                  p($l->t('No display name set'));
-                } ?></span>
-        <?php } ?>
+        <input type="text" id="displayname" name="displayname" read-only  value="<?php p($_['displayName']) ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly/>
         <span class="icon-checkmark hidden"></span>
         <span class="icon-error hidden"></span>
         <input type="hidden" id="displaynamescope" value="<?php p($_['displayNameScope']) ?>">
@@ -133,21 +124,9 @@ script('settings', [
         }
         ?>">
         </div>
-        <input type="email" name="email" id="email" value="<?php p($_['email']); ?>" <?php if (!$_['displayNameChangeSupported']) {
-                                                                                        print_unescaped('class="hidden"');
-                                                                                      } ?> placeholder="<?php p($l->t('Your email address')); ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly />
+        <input type="email" name="email" id="email" value="<?php p($_['email']); ?>" placeholder="<?php p($l->t('Your email address')); ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly />
         <span class="icon-checkmark hidden"></span>
         <span class="icon-error hidden"></span>
-        <?php if (!$_['displayNameChangeSupported']) { ?>
-          <span><?php if (isset($_['email']) && !empty($_['email'])) {
-                  p($_['email']);
-                } else {
-                  p($l->t('No email address set'));
-                } ?></span>
-        <?php } ?>
-        <?php if ($_['displayNameChangeSupported']) { ?>
-          <em><?php p($l->t('For password reset and notifications')); ?></em>
-        <?php } ?>
         <input type="hidden" id="emailscope" value="<?php p($_['emailScope']) ?>">
       </form>
     </div>
