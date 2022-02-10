@@ -590,6 +590,9 @@
      #uploadprogressbar .mobile {
          display: block !important;
      }
+     .nmc_welcome_popup-header h2 {
+       max-width: 320px;
+    }
  }
 
  @media screen and (min-width: 1600px) {
@@ -676,6 +679,9 @@
      }
      .app-files #app-content, #app-content-vue {
          width: 100% !important;
+     }
+     .nmc_welcome_popup-header h2 {
+      max-width: 510px;
      }
  }
 
@@ -2265,6 +2271,9 @@
      #nmc_welcome_popup a.button ,
      #nmc_welcome_popup button.primary {
        max-width:120px !important;
+     }
+     .nmc_welcome_popup-header h2 {
+      max-width: 220px !important;
      }
  }
 
