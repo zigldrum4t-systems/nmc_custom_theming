@@ -2,29 +2,27 @@
 	background-color: unset;
 }
 
-.update .success-btn {
+.update .confirm-email-btn, .update .success-btn {
     font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
     font-size: 1rem;
-    line-height: 1.42857143;
     cursor: pointer;
     font-weight: 400;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: #ffffff !important;
     color: #e20074 !important;
-    background-position: right 16px center;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 260px !important;
-    height: 50px !important;
+    width: 16.25rem;
+    height:3.125rem;
 }
 
-.update .success-btn:hover {
+.update .confirm-email-btn:hover, .update .success-btn:hover {
   background: #ffffff !important;
   color: #e20074 !important;
 }
 
 .update p {
-  margin: 10px 0px 10px 0px;
+  margin: 0.625rem 0rem 0.625rem 0rem;
   color: #fff;
 }
