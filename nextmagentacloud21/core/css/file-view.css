@@ -788,3 +788,6 @@ table td.filename a.name, table td.filename p.name {
 }
 
 
+#filestable.view-grid .thumbnail-wrapper .thumbnail.thumbnail-contain {
+  background-size: contain !important;
+}
