@@ -822,6 +822,9 @@ table td.filename .uploadtext {
   margin-left: 0 !important;
 }
 
+#filestable.view-grid .thumbnail-wrapper .thumbnail.thumbnail-contain {
+  background-size: contain !important;
+}
 .rightClickOpened {
   overflow: unset !important;
 }
