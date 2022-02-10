@@ -257,7 +257,7 @@ OC.L10N.register(
     "Magentacloud L": "Magentacloud L",
     "Magentacloud XL": "Magentacloud XL",
     "Magentacloud XXL": "Magentacloud XXL",
-    "Search files, folders or settings …": "Search files, folders or settings …",
+    "Search files or folders …": "Search files or folders …",
     "Add":"Add",
     "File conflict" : "File conflict",
     "The file nextcloud.log already exist in the location." : "The file {filename} already exist in the location.",
@@ -271,6 +271,7 @@ OC.L10N.register(
     "Keep both files for all" : "Keep both files for all",
     "Replace all files" : "Replace all files",
     "Help & FAQ": "Help & FAQ",
-    "Logout": "Logout"
+    "Logout": "Logout",
+    "Your email address has been successfully confirmed and is now in use.": "Your email address has been successfully confirmed and is now in use."
 },
 "nplurals=2; plural=(n != 1);");

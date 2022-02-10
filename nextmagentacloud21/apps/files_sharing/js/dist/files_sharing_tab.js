@@ -13347,6 +13347,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       if (this.isExteranlShare) {
         permissions = parseInt(event.target.value, 10);
+
+        if (permissions === OC.PERMISSION_CREATE) {
+          this.share.hideDownload = false;
+        }
+
         this.share.permissions = permissions;
       } else {
         permissions = parseInt(event.target.value, 10) | (this.canReshare ? this.permissionsShare : 0);
@@ -61740,7 +61745,9 @@ var render = function() {
                     {
                       attrs: {
                         checked: _vm.share.hideDownload,
-                        disabled: _vm.saving
+                        disabled:
+                          _vm.saving ||
+                          _vm.sharePermissions === _vm.publicUploadWValue
                       },
                       on: {
                         "update:checked": function($event) {

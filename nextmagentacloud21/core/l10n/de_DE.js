@@ -424,7 +424,7 @@ OC.L10N.register(
     "Magentacloud L": "Magentacloud L",
     "Magentacloud XL": "Magentacloud XL",
     "Magentacloud XXL": "Magentacloud XXL",
-    "Search for files or folders…":  "Nach Dateien oder Ordnern suchen...",
+    "Search files or folders …":  "Nach Dateien oder Ordnern suchen …",
     "Show folder info text": "Ordnerinfotext anzeigen",
     "Add":"Hinzufügen",
     "File conflict" : "Dateikonflikt",
@@ -443,6 +443,7 @@ OC.L10N.register(
     "Email": "E-Mail",
     "Search":"Suche",
     "Menu": "Menü",
-    "Copied!" : "Kopiert!"
+    "Copied!" : "Kopiert!",
+    "Your email address has been successfully confirmed and is now in use." : "Ihre E-Mail-Adresse wurde erfolgreich bestätigt und wird nun verwendet."
 },
 "nplurals=2; plural=(n != 1);");
