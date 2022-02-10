@@ -787,6 +787,9 @@ table td.filename a.name, table td.filename p.name {
   margin-top:1.5rem;
 }
 
+.viewer__file--active .plyr {
+	margin-top: 23.75rem !important;
+}
 
 #filestable.view-grid  #fileList td.filename input.filename {
   margin-left: 0 !important;
@@ -795,3 +798,7 @@ table td.filename a.name, table td.filename p.name {
 #filestable.view-grid .thumbnail-wrapper .thumbnail.thumbnail-contain {
   background-size: contain !important;
 }
+.rightClickOpened {
+  overflow: unset !important;
+}
+

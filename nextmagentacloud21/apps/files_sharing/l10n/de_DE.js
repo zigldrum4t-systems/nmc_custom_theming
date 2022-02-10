@@ -37,6 +37,7 @@ OC.L10N.register(
         "Share label": "Label teilen",
         "The password must contain 10 characters and will not be sent with the mail to maintain confidentiality.": "Das Passwort muss 10 Zeichen enthalten und wird nicht mit der E-Mail verschickt, um die Vertraulichkeit zu wahren.",
         "Link to file": "Link zur Datei",
-        "Link to folder": "Link zum Ordner"
+        "Link to folder": "Link zum Ordner",
+        "No recommendations. Start typing.": "Keine Empfehlungen.Beginnen..."
 },
 "nplurals=2; plural=(n != 1);");

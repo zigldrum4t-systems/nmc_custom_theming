@@ -33,6 +33,7 @@ OC.L10N.register(
         "Share label": "Share label",
         "The password must contain 10 characters and will not be sent with the mail to maintain confidentiality.": "The password must contain 10 characters and will not be sent with the mail to maintain confidentiality.",
         "Link to file": "Link to file",
-        "Link to folder": "Link to folder"
+        "Link to folder": "Link to folder",
+        "No recommendations. Start typing.": "No recommendations.Start typi.."
 },
 "nplurals=2; plural=(n != 1);");
