@@ -1,6 +1,7 @@
 <?php
 /** @var \OCP\IL10N $l */ ?>
 
+<div class='controls-section'></div>
 <div id='notification'></div>
 
 <div id="emptycontent" class="hidden"></div>

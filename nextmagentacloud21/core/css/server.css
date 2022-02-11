@@ -468,9 +468,6 @@
    width: 20px !important;
    height: 20px !important;
  }
- #content-vue.app-photos {
-   padding-top: 0 !important;
- }
 
  .app-photos .folder-name{
    height: auto !important;
@@ -891,6 +888,7 @@
  .controls-section {
      position: sticky;
      z-index: 999;
+     background-color:#fff;
  }
 
  #body-settings .controls-section {
@@ -908,7 +906,7 @@
      border-top: 1px solid #e5e5e5;
  }
 
- #content {
+ #content,#content-vue {
      padding-top: 0;
      top: 135px;
      z-index: 99;
@@ -2172,7 +2170,7 @@
 
   .app-photos #app-navigation-vue{
     left: 0 !important;
-    height: calc(100vh - 73px) !important;
+    height: calc(100vh - 140px) !important;
   }
 
   .app-photos .grid-title{
@@ -2183,13 +2181,21 @@
     padding: 0 0 10rem 2rem !important;
   }
 
-  .app-photos button:not(:disabled):not(.primary):hover{
+  .app-photos button:not(:disabled):not(.primary):hover,
+  .app-photos button:not(:disabled):not(.primary):focus,
+  .app-photos button:not(:disabled):not(.primary):active
+  {
     background-color:unset !important;
   }
 
   .app-photos .photos-navigation__title{
     padding: 0 !important;
   }
+
+  .app-photos img {
+    background: #f2f2f2;
+  }
+
 
   /* photos app*/
 

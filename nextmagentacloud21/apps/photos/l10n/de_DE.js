@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Media" : "Medien",
     "Your memories under your control" : "Ihre Erinnerungen unter Ihrer Kontrolle",
-    "All Media" : "Alle Medien",
+    "All media" : "Alle Medien",
     "My photos" : "Meine Fotos",
     "My videos" : "Meine Videos",
     "Favorites" : "Favoriten",
@@ -24,6 +24,10 @@ OC.L10N.register(
     "No photos in here" : "Keine Fotos vorhanden",
     "No tags yet" : "Noch keine Schlagworte vorhanden",
     "Photos with tags will show up here" : "Fotos mit Schlagworten werden hier angezeigt",
-    "This folder does not exists" : "Dieser Ordner existiert nicht"
+    "This folder does not exists" : "Dieser Ordner existiert nicht",
+    "Folders":"Ordner",
+    "Files":"Dateien",
+    "Close navigation" : "Menü ausblenden"
+
 },
 "nplurals=2; plural=(n != 1);");
