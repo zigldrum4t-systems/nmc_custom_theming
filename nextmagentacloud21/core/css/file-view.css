@@ -814,8 +814,8 @@ table td.filename .uploadtext {
 	white-space: nowrap;
     overflow: hidden;
 }
-.viewer__file--active .plyr {
-	margin-top: 23.75rem !important;
+.viewer__file--active .plyr.plyr--audio {
+  margin-top: 23.75rem !important;
 }
 
 #filestable.view-grid  #fileList td.filename input.filename {
