@@ -888,6 +888,7 @@
  .controls-section {
      position: sticky;
      z-index: 999;
+     background-color:#fff;
  }
 
  #body-settings .controls-section {
