@@ -2,6 +2,9 @@
     "Photos" : "Photos",
     "Favorites" : "Favourites",
     "Shared with you" : "Shared with you",
-    "Settings" : "Settings"
+    "Settings" : "Settings",
+    "Folders":"Folders",
+    "Files":"Files",
+    "Close navigation" : "Hide menu"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
