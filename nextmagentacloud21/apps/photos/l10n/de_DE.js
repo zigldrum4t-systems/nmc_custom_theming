@@ -11,7 +11,7 @@ OC.L10N.register(
     "Shared with me" : "Mit mir geteilt",
     "Tagged photos" : "Fotos mit Schlagworten",
     "Locations" : "Orte",
-    "Settings" : "Einstellungen",
+    "Display settings" : "Anzeigeeinstellungen",
     "Open the full size \"{name}\" image" : "Bild \"{name}\" in Originalgröße öffnen",
     "Open the \"{name}\" sub-directory" : "Öffne den Unterordner \"{name}\" ",
     "Share this folder" : "Diesen Ordner teilen",
@@ -27,7 +27,8 @@ OC.L10N.register(
     "This folder does not exists" : "Dieser Ordner existiert nicht",
     "Folders":"Ordner",
     "Files":"Dateien",
-    "Close navigation" : "Menü ausblenden"
+    "Close navigation" : "Menü ausblenden",
+    "Crop image previews":"Vorschaubilder beschneiden"
 
 },
 "nplurals=2; plural=(n != 1);");
