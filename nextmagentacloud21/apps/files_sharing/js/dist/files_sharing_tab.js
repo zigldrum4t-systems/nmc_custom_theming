@@ -11458,6 +11458,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var permissions = parseInt(option, 10);
       this.share.permissions = permissions;
       this.queueUpdate('permissions');
+
+      if (permissions === OC.PERMISSION_CREATE) {
+        this.share.hideDownload = false;
+        this.queueUpdate('hideDownload');
+      }
     },
     copyLink: function copyLink() {
       var _this4 = this;
