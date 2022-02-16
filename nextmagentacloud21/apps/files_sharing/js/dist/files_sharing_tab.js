@@ -951,8 +951,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
                 case 4:
                   TabInstance.$mount(el);
+                  OCA.Files.Sidebar.setActiveTab('sharing');
 
-                case 5:
+                case 6:
                 case "end":
                   return _context.stop();
               }
