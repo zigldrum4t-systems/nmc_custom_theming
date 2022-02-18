@@ -2199,6 +2199,11 @@
 
   /* photos app*/
 
+  /* NMC-251-blink folder name issue*/
+  .vue-tooltip[data-v-f56d517]{
+    display: none !important;
+  }
+  
   /*Responsive Styling*/
 
  @media screen and (max-width: 375px) {
