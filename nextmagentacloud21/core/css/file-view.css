@@ -829,3 +829,11 @@ table td.filename .uploadtext {
   overflow: unset !important;
 }
 
+.modal-mask#viewer .viewer__content{
+  height:100% !important;
+  margin-top:1rem !important;
+}
+
+.modal-wrapper.modal-wrapper--large.modal-wrapper--spread-navigation {
+  height:80% !important;
+}
