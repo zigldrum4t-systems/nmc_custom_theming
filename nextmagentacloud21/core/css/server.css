@@ -1967,10 +1967,17 @@
    margin-left: 0.875rem !important;
    margin-right:0.5rem !important;
  }
- #oc-dialog-filepicker-content input:not(.icon-confirm) {
-  width: 130px !important;
-  margin: 0 !important;
-}
+ #oc-dialog-filepicker-content .filenameform input{
+  width:130px !important;
+  margin:unset !important;
+
+ }
+
+ #oc-dialog-filepicker-content .filenameform input.icon-confirm{
+  width:34px !important;
+  margin-left: -0.5rem !important;
+
+ }
  /*** Custom conflict dialog ******************************************************/
 
  #oc-dialog-filepicker-content .emptycontent {
