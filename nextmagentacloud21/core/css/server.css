@@ -1967,7 +1967,10 @@
    margin-left: 0.875rem !important;
    margin-right:0.5rem !important;
  }
-
+ #oc-dialog-filepicker-content input:not(.icon-confirm) {
+  width: 130px !important;
+  margin: 0 !important;
+}
  /*** Custom conflict dialog ******************************************************/
 
  #oc-dialog-filepicker-content .emptycontent {
@@ -2203,7 +2206,7 @@
   .vue-tooltip[data-v-f56d517]{
     display: none !important;
   }
-  
+
   /*Responsive Styling*/
 
  @media screen and (max-width: 375px) {
