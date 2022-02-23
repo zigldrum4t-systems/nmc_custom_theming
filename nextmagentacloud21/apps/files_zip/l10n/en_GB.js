@@ -10,6 +10,7 @@ OC.L10N.register(
     "Compress {files} file": "Compress {files} element",
     "Compress {files} files": "Compress {files} elements",
     "Creating Zip archive started. We will notify you as soon as the archive is available.": "Creating Zip archive started. We will notify you as soon as the archive is available.",
-    "An error happened when trying to compress the file.": "An error happened when trying to compress the file."
+    "An error happened when trying to compress the file.": "An error happened when trying to compress the file.",
+    "Your files have been stored as a Zip archive in {path}." : "Your files have been stored as a Zip archive in {path}."
 },
 "nplurals=2; plural=(n != 1);");

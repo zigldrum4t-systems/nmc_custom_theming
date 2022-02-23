@@ -10,6 +10,7 @@ OC.L10N.register(
     "Compress {files} file": "{files} Dateien komprimieren",
     "_Compress {files} file_::_Compress {files} files_" : ["{files} Element komprimieren","{files} Elemente komprimieren"],
     "Creating Zip archive started. We will notify you as soon as the archive is available.": "Erstellen des Zip-Archivs gestartet. Wir benachrichtigen Sie, sobald das Archiv verfügbar ist.",
-    "An error happened when trying to compress the file.": "Beim Komprimieren der Datei ist ein Fehler aufgetreten."
+    "An error happened when trying to compress the file.": "Beim Komprimieren der Datei ist ein Fehler aufgetreten.",
+    "Your files have been stored as a Zip archive in {path}." : "Ihre Dateien wurden als Zip-Archiv in {path} gespeichert."
 },
 "nplurals=2; plural=(n != 1);");
