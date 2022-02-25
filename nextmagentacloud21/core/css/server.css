@@ -1782,6 +1782,10 @@
      padding: 9px !important;
  }
 
+ #content.app-files_sharing.mobile-content.content-translation {
+  top: 120px !important;
+  }
+
 
  /*Copy-move-dialog*/
 
