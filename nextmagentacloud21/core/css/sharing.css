@@ -4,6 +4,7 @@
   padding: 1rem;
   overflow-x: hidden !important;
   overflow-y: scroll !important;
+  height: calc(100vh - 190px) !important;
 }
 
 /*thumbnail*/

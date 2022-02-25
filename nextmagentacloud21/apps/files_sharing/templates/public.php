@@ -91,15 +91,17 @@
               <?php } ?>
             <?php endif; ?>
           <?php endif; ?>
-          <?php if ($_['previewURL'] === $_['downloadURL'] && !$_['hideDownload'] && strpos($_['mimetype'], 'image') !== 0) : ?>
+          <?php if (strpos($_['mimetype'], 'image') !== 0) : ?>
             <div class="directDownload">
               <div class="video-file-details">
                 <?php p($l->t('%s', [$_['filename']])) ?> (<?php p($_['fileSize']) ?>)
               </div>
-              <a href="<?php p($_['downloadURL']); ?>" id="downloadFile" class="button">
-                <span class="icon icon-download"></span>
-                <?php p($l->t('Download')) ?>
-              </a>
+              <?php if ($_['previewURL'] === $_['downloadURL'] && !$_['hideDownload']) : ?>
+                <a href="<?php p($_['downloadURL']); ?>" id="downloadFile" class="button">
+                  <span class="icon icon-download"></span>
+                  <?php p($l->t('Download')) ?>
+                </a>
+              <?php endif; ?>
             </div>
           <?php endif; ?>
         <?php endif; ?>
