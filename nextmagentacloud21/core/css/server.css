@@ -2421,7 +2421,7 @@
       margin:0 0 0.25rem 0 !important;
     }
     .app-photos #app-navigation-vue{
-      height: calc(100vh - 77px) !important;
+      height: calc(100vh - 65px) !important;
     }
 
  }
