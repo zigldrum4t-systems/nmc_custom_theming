@@ -2418,9 +2418,7 @@
       select#languageinput {
        width:350px;
      }
-     .modal-wrapper {
-       height: 86% !important;
-   }
+
    #nmc_welcome_popup .modal-footer button {
     margin:0 0 0.25rem 0 !important;
   }
@@ -2553,6 +2551,9 @@
     .app-photos .app-navigation-toggle{
       margin-right: -40px !important;
     }
+    .modal-wrapper {
+      height: 86% !important;
+  }
  }
 
  @media screen and (min-width: 1025px) and (max-width: 1600px) {
