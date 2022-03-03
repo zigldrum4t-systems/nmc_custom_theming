@@ -507,8 +507,8 @@ OC.L10N.register(
     "Add alternative mail address": "Alternative E-Mail-Adresse hinzufügen",
     "Alternative mail address": "Alternative E-Mail-Adresse",
     "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the": "Sie können eine alternative E-Mail-Adresse angeben um Ihre Benachrichtigungen dort zu erhalten. Sie wird ebenfalls als Adresse für geteilte Inhalte verwendet. Ihr Passwort können Sie in den Login-Einstellungen für alle Telekom Dienste ändern.",
-    "Select this email address": "Diese E-Mail-Adresse auswählen",
-    "Deselect this email address": "Diese E-Mail-Adresse abwählen",
+    "Select email address": "E-Mail-Adresse auswählen",
+    "Deselect email address": "E-Mail-Adresse abwählen",
     "This email address is currently selected": "Diese E-Mail-Adresse ist aktuell ausgewählt",
     "Remove mail address": "E-Mail-Adresse entfernen",
     "This mail address is not confirmed yet.": "Diese E-Mail-Adresse ist noch nicht bestätigt."
