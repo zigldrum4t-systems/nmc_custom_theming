@@ -1782,6 +1782,10 @@
      padding: 9px !important;
  }
 
+ #content.app-files_sharing.mobile-content.content-translation {
+  top: 120px !important;
+  }
+
 
  /*Copy-move-dialog*/
 
@@ -1967,7 +1971,17 @@
    margin-left: 0.875rem !important;
    margin-right:0.5rem !important;
  }
+ #oc-dialog-filepicker-content .filenameform input{
+  width:130px !important;
+  margin:0 !important;
 
+ }
+
+ #oc-dialog-filepicker-content .filenameform input.icon-confirm{
+  width:34px !important;
+  margin-left: -0.5rem !important;
+
+ }
  /*** Custom conflict dialog ******************************************************/
 
  #oc-dialog-filepicker-content .emptycontent {
@@ -2130,7 +2144,7 @@
     z-index: 20 !important;
   }
   /* hiding icon share email on mobile */
-  #direct-editor .icon-share,.app-photos .photos-navigation__share, .app-photos .app-navigation-toggle span {
+  #direct-editor .icon-share,.app-photos .photos-navigation__share, .app-photos .app-navigation-toggle {
     display: none !important;
   }
   .photos-navigation {
@@ -2138,25 +2152,23 @@
     margin-left: 0.5rem;
   }
 
-  .app-photos .app-navigation-toggle:before{
-    content: '' !important;
+  .app-photos .app-nav-main {
+    position: fixed;
+    margin-left: .5rem;
+    margin-top: 1.5rem;
+    z-index:99;
   }
 
-  .app-photos .app-navigation-toggle
+  .app-photos .icon-vue-toggle
   {
-    top: 26px !important;
+    display: block;
+    background: var(--icon-menu-custom) !important;
     width: 24px !important;
     height: 24px !important;
-    min-width: 24px !important;
-    min-height: 24px !important;
-    background: var(--icon-menu-custom) !important;
-    padding: 0 !important;
-    margin-right: -32px !important;
-    opacity: 1 !important;
   }
 
   .app-photos .photos-navigation__back{
-    margin: 0 8px 0 0 !important;
+    margin: 0 .5rem 0 0 !important;
     padding: 0 !important;
   }
 
@@ -2196,8 +2208,12 @@
     background: #f2f2f2;
   }
 
-
   /* photos app*/
+
+  /* NMC-251-blink folder name issue*/
+  .vue-tooltip[data-v-f56d517]{
+    display: none !important;
+  }
 
   /*Responsive Styling*/
 
@@ -2399,12 +2415,13 @@
       select#languageinput {
        width:350px;
      }
-     .modal-wrapper {
-       height: 86% !important;
-   }
-   #nmc_welcome_popup .modal-footer button {
-    margin:0 0 0.25rem 0 !important;
-  }
+
+    #nmc_welcome_popup .modal-footer button {
+      margin:0 0 0.25rem 0 !important;
+    }
+    .app-photos #app-navigation-vue{
+      height: calc(100vh - 65px) !important;
+    }
 
  }
 
@@ -2531,8 +2548,16 @@
        margin-bottom: 0.25rem;
        margin-left: 0.5rem;
     }
-    .app-photos .app-navigation-toggle{
-      margin-right: -40px !important;
+
+    .app-photos .app-nav-main{
+      margin-left: 1rem !important;
+    }
+    .app-nav-main.app-nav-close {
+      left: 285px;
+      transition: left 2s ease 0s;
+    }
+    .modal-wrapper {
+      height: 86% !important;
     }
  }
 
@@ -2563,6 +2588,9 @@
      .username-lable {
          margin-left: 0.5rem;
      }
+     .app-photos .app-navigation--close + main#app-content-vue {
+      margin-left: 20px !important;
+    }
  }
 
  @media screen and (min-width: 641px) {
