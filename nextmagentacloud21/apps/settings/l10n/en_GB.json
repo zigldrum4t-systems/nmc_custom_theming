@@ -330,7 +330,12 @@
     "Tariff information"  : "Tariff information",
     "Expand storage" : "Expand storage",
     "Add alternative mail address": "Add alternative mail address",
-    "Alternative Mail Address": "Alternative Mail Address",
-    "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the": "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the"
+    "Alternative mail address": "Alternative mail address",
+    "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the": "You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the",
+    "Select this email address": "Select this email address",
+    "Deselect this email address": "Deselect this email address",
+    "This email address is currently selected": "This email address is currently selected",
+    "Remove mail address": "Remove mail address",
+    "This mail address is not confirmed yet.": "This mail address is not confirmed yet."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
