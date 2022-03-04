@@ -548,7 +548,7 @@
     position: absolute;
     top: 50%;
     align-self: flex-end !important;
-    margin-right: 0.5rem;
+    margin-right: 1rem !important;
   }
 
   .personal-settings-setting-box.personal-settings-language-box{
@@ -602,9 +602,9 @@
   .section.multiple-mail > div {
     padding: 1rem 0;
   }
+
   .multiple-mail h3{
-    padding-top: 1rem !important;
-    align-items: center;
+    padding-top: 3rem !important;
   }
 
   #body-settings{
