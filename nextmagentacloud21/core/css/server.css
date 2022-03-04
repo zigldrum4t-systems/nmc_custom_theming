@@ -2397,11 +2397,6 @@
       #personal-settings .multiple-mail input{
         margin-top:unset !important;
      }
-
-     .profile-settings-container .email-container label {
-        margin-top: -130px;
-     }
-
      #personal-settings-avatar-container .telekom-link p,
      .personal-settings-setting-box.personal-settings-group-box.section
      {
@@ -2558,6 +2553,10 @@
     }
     .modal-wrapper {
       height: 86% !important;
+    }
+    .profile-settings-container .multiple-mail,
+    .personal-settings-container{
+      flex-direction: column;
     }
  }
 
