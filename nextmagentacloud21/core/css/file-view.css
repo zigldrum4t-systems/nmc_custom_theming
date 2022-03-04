@@ -838,3 +838,6 @@ table td.filename .uploadtext {
   height:80% !important;
 }
 
+.plyr--video .plyr__controls {
+  padding-bottom:30px !important;
+}
