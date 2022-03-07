@@ -2208,6 +2208,9 @@
   .app-photos img {
     background: #f2f2f2;
   }
+  .app-navigation--close{
+    transform: translateX(-100vw) !important;
+  }
 
   /* photos app*/
 
