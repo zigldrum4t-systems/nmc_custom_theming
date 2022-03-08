@@ -213,7 +213,7 @@ table.multiselect thead #selectedMenu {
 #fileList td a a.action.action-share.shared-style {
     opacity: 0.7!important;
     display: flex;
-    width: 130px;
+    width: auto !important;
     height: 50px;
     flex-direction: row-reverse;
 }
