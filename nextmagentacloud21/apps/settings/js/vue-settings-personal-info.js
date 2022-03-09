@@ -15791,6 +15791,20 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -15847,6 +15861,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
       return 'additionalEmail[]';
     },
+    isDisabled: function isDisabled() {
+      if (this.primary) {
+        return true;
+      }
+
+      return false;
+    },
     inputPlaceholder: function inputPlaceholder() {
       if (this.primary) {
         return t('settings', 'Your email address');
@@ -15859,12 +15880,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     },
     setNotificationMailLabel: function setNotificationMailLabel() {
       if (this.isNotificationEmail) {
-        return t('settings', 'Unset as primary email');
+        return t('settings', 'Deselect email address');
       } else if (!this.primary && this.localVerificationState !== _constants_AccountPropertyConstants__WEBPACK_IMPORTED_MODULE_5__["VERIFICATION_ENUM"].VERIFIED) {
-        return t('settings', 'This address is not confirmed');
+        return t('settings', 'This mail address is not confirmed yet.');
       }
 
-      return t('settings', 'Set as primary mail');
+      return t('settings', 'Select email address');
+    },
+    setIconLabel: function setIconLabel() {
+      if (this.isNotificationEmail) {
+        return 'icon-select';
+      } else if (!this.primary && this.localVerificationState !== _constants_AccountPropertyConstants__WEBPACK_IMPORTED_MODULE_5__["VERIFICATION_ENUM"].VERIFIED) {
+        return 'icon-mail';
+      }
+
+      return 'icon-deselect';
     },
     federationDisabled: function federationDisabled() {
       return !this.initialEmail;
@@ -15881,7 +15911,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return t('settings', 'Remove primary email');
       }
 
-      return t('settings', 'Delete mail');
+      return t('settings', 'Remove mail address');
     },
     isNotificationEmail: function isNotificationEmail() {
       return this.email === this.activeNotificationEmail || this.primary && this.activeNotificationEmail === '';
@@ -16282,9 +16312,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
-//
-//
 //
 //
 //
@@ -22772,7 +22799,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".email-container[data-v-a9c46cb4] {\n  display: grid;\n  align-items: center;\n}\n.email-container input[type=email][data-v-a9c46cb4] {\n  grid-area: 1/1;\n}\n.email-container .email-actions-container[data-v-a9c46cb4] {\n  grid-area: 1/1;\n  justify-self: flex-end;\n  height: 30px;\n  display: flex;\n  gap: 0 2px;\n  margin-right: 5px;\n}\n.email-container .email-actions-container .actions-email[data-v-a9c46cb4] {\n  opacity: 0.4 !important;\n}\n.email-container .email-actions-container .actions-email[data-v-a9c46cb4]:hover {\n  opacity: 0.8 !important;\n}\n.email-container .email-actions-container .actions-email[data-v-a9c46cb4] button {\n  height: 30px !important;\n  min-height: 30px !important;\n  width: 30px !important;\n  min-width: 30px !important;\n}\n.email-container .email-actions-container .federation-control[data-v-a9c46cb4] button {\n  padding-bottom: 7px;\n  height: 30px !important;\n  min-height: 30px !important;\n  width: 30px !important;\n  min-width: 30px !important;\n}\n.email-container .email-actions-container .icon-checkmark[data-v-a9c46cb4],\n.email-container .email-actions-container .icon-error[data-v-a9c46cb4] {\n  height: 30px !important;\n  min-height: 30px !important;\n  width: 30px !important;\n  min-width: 30px !important;\n  top: 0;\n  right: 0;\n  float: none;\n}\n.fade-enter-active[data-v-a9c46cb4] {\n  transition: opacity 200ms ease-out;\n}\n.fade-leave-active[data-v-a9c46cb4] {\n  transition: opacity 300ms ease-out;\n}\n.fade-enter[data-v-a9c46cb4],\n.fade-leave-to[data-v-a9c46cb4] {\n  opacity: 0;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".email-container[data-v-a9c46cb4] {\n  display: grid;\n  align-items: center;\n}\n.email-container input[type=email][data-v-a9c46cb4] {\n  grid-area: 1/1;\n}\n.email-container .email-actions-container[data-v-a9c46cb4] {\n  grid-area: 1/1;\n  justify-self: flex-end;\n  height: 30px;\n  display: flex;\n  gap: 0 2px;\n  margin-right: 5px;\n}\n.email-container .email-actions-container .actions-email[data-v-a9c46cb4]:hover {\n  opacity: 0.8 !important;\n}\n.email-container .email-actions-container .actions-email[data-v-a9c46cb4] button {\n  height: 30px !important;\n  min-height: 30px !important;\n  width: 30px !important;\n  min-width: 30px !important;\n}\n.email-container .email-actions-container .federation-control[data-v-a9c46cb4] button {\n  padding-bottom: 7px;\n  height: 30px !important;\n  min-height: 30px !important;\n  width: 30px !important;\n  min-width: 30px !important;\n}\n.email-container .email-actions-container .icon-checkmark[data-v-a9c46cb4],\n.email-container .email-actions-container .icon-error[data-v-a9c46cb4] {\n  height: 30px !important;\n  min-height: 30px !important;\n  width: 30px !important;\n  min-width: 30px !important;\n  top: 0;\n  right: 0;\n  float: none;\n}\n.fade-enter-active[data-v-a9c46cb4] {\n  transition: opacity 200ms ease-out;\n}\n.fade-leave-active[data-v-a9c46cb4] {\n  transition: opacity 300ms ease-out;\n}\n.fade-enter[data-v-a9c46cb4],\n.fade-leave-to[data-v-a9c46cb4] {\n  opacity: 0;\n}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -22838,7 +22865,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".federation-control[data-v-609b0a50] {\n  margin: -12px 0 0 8px;\n}\n.add-button[data-v-609b0a50] {\n  margin: 20px 0 0 0;\n  color: #e20074;\n  font-size: 16px;\n  font-family: TeleNeoWeb, TeleNeo, sans-serif;\n  font-weight: initial !important;\n  height: 20px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".federation-control[data-v-609b0a50] {\n  margin: -12px 0 0 8px;\n}\n.add-button[data-v-609b0a50] {\n  margin: 8px 0 0 0;\n  color: #e20074;\n  font-size: 16px;\n  font-family: TeleNeoWeb, TeleNeo, sans-serif;\n  font-weight: initial !important;\n  height: 20px;\n}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -37189,9 +37216,15 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "email-container" }, [
-      _c("label", [
-        _vm._v(" " + _vm._s(_vm.t("settings", "Alternative mail address")))
-      ]),
+      !_vm.primary
+        ? _c("label", [
+            _vm._v(_vm._s(_vm.t("settings", "Alternative mail address")))
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.primary
+        ? _c("label", [_vm._v(_vm._s(_vm.t("settings", "Mail address")))])
+        : _vm._e(),
       _vm._v(" "),
       _c("input", {
         ref: "email",
@@ -37202,7 +37235,8 @@ var render = function() {
           autocapitalize: "none",
           autocomplete: "on",
           autocorrect: "off",
-          required: "true"
+          required: "true",
+          disabled: _vm.isDisabled
         },
         domProps: { value: _vm.email },
         on: { input: _vm.onEmailChange }
@@ -37241,7 +37275,43 @@ var render = function() {
           _vm._v(" "),
           _c(
             "Actions",
+            {
+              staticClass: "actions-email",
+              attrs: {
+                "aria-label": _vm.t("settings", "Email options"),
+                disabled: _vm.deleteDisabled,
+                "force-menu": true
+              }
+            },
             [
+              !_vm.primary || !_vm.isNotificationEmail
+                ? _c(
+                    "ActionButton",
+                    {
+                      attrs: {
+                        "aria-label": _vm.setNotificationMailLabel,
+                        "close-after-click": true,
+                        disabled: _vm.setNotificationMailDisabled,
+                        icon: _vm.setIconLabel
+                      },
+                      on: {
+                        click: function($event) {
+                          $event.stopPropagation()
+                          $event.preventDefault()
+                          return _vm.setNotificationMail.apply(null, arguments)
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t" +
+                          _vm._s(_vm.setNotificationMailLabel) +
+                          "\n\t\t\t\t"
+                      )
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
               _c(
                 "ActionButton",
                 {
@@ -37277,10 +37347,7 @@ var render = function() {
           _vm._v(
             "\n\t\t" +
               _vm._s(
-                _vm.t(
-                  "settings",
-                  "Primary email for password reset and notifications"
-                )
+                _vm.t("settings", "This email address is currently selected")
               ) +
               "\n\t"
           )
@@ -37324,6 +37391,35 @@ var render = function() {
       }
     },
     [
+      [
+        _c("Email", {
+          attrs: {
+            primary: true,
+            scope: _vm.primaryEmail.scope,
+            email: _vm.primaryEmail.value,
+            "active-notification-email": _vm.notificationEmail
+          },
+          on: {
+            "update:scope": function($event) {
+              return _vm.$set(_vm.primaryEmail, "scope", $event)
+            },
+            "update:email": [
+              function($event) {
+                return _vm.$set(_vm.primaryEmail, "value", $event)
+              },
+              _vm.onUpdateEmail
+            ],
+            "update:activeNotificationEmail": function($event) {
+              _vm.notificationEmail = $event
+            },
+            "update:active-notification-email": function($event) {
+              _vm.notificationEmail = $event
+            },
+            "update:notification-email": _vm.onUpdateNotificationEmail
+          }
+        })
+      ],
+      _vm._v(" "),
       _c("HeaderBar", {
         attrs: {
           "is-valid-form": _vm.isValidForm,
@@ -37337,46 +37433,6 @@ var render = function() {
           addAdditionalEmail: _vm.onAddAdditionalEmail
         }
       }),
-      _vm._v(" "),
-      _vm.displayNameChangeSupported
-        ? [
-            _c("Email", {
-              attrs: {
-                primary: true,
-                scope: _vm.primaryEmail.scope,
-                email: _vm.primaryEmail.value,
-                "active-notification-email": _vm.notificationEmail
-              },
-              on: {
-                "update:scope": function($event) {
-                  return _vm.$set(_vm.primaryEmail, "scope", $event)
-                },
-                "update:email": [
-                  function($event) {
-                    return _vm.$set(_vm.primaryEmail, "value", $event)
-                  },
-                  _vm.onUpdateEmail
-                ],
-                "update:activeNotificationEmail": function($event) {
-                  _vm.notificationEmail = $event
-                },
-                "update:active-notification-email": function($event) {
-                  _vm.notificationEmail = $event
-                },
-                "update:notification-email": _vm.onUpdateNotificationEmail
-              }
-            })
-          ]
-        : _c("span", [
-            _vm._v(
-              "\n\t\t" +
-                _vm._s(
-                  _vm.primaryEmail.value ||
-                    _vm.t("settings", "No email address set")
-                ) +
-                "\n\t"
-            )
-          ]),
       _vm._v(" "),
       _vm._l(_vm.additionalEmails, function(additionalEmail, index) {
         return _c("Email", {
@@ -46217,4 +46273,4 @@ module.exports = function(module) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-settings-personal-info.js.map?v=6721eb87dee02a882d60
+//# sourceMappingURL=vue-settings-personal-info.js.map?v=4d1834b4cbf54841a4bc

@@ -673,3 +673,12 @@ aside .icon-star{
   background: url('../../core/img/back-nav.svg') !important;
   transform: rotate(0) !important;
 }
+
+.icon-select {
+  background-image: var(--icon-select-custom) !important;
+}
+
+.icon-deselect {
+  background-image: var(--icon-deselect-custom) !important;
+}
+
