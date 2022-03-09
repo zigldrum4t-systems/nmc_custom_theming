@@ -47,7 +47,7 @@
 <?php
       if(isset($_['activityGroups'])){
           unset($_['activityGroups']['calendar']);
-          unset($_['activityGroups']['other']);
+         // unset($_['activityGroups']['other']);
       }
       $_['activityGroups']['files']['name'] = ($l->t('Activity'));
   ?>
@@ -56,7 +56,7 @@
 		<?php foreach ($_['activityGroups'] as $group): ?>
       <?php
         unset($group['activities']['group_settings']);
-        unset($group['activities']['comments']);
+        // unset($group['activities']['comments']);
         unset($group['activities']['systemtags']);
       ?>
       <div id="activity_notifications_msg" class="msg"></div>

@@ -15,13 +15,13 @@ describe('Settings related changes', () => {
     cy.wait(2000)
     cy.visit(`${Cypress.env('local').app_url}/apps/files/`);
     cy.wait(1000)
-    cy.get("li[data-id='nmc_files_activity'] a").should('have.text','Activities')
-    cy.get("#app-navigation li[data-id='favorites'] a").should('have.text','Favourites')
-    cy.get("#app-navigation li[data-id='files'] a").should('have.text','All files')
-    cy.get("#app-navigation li[data-id='sharingout'] a").should('have.text','My shares')
-    cy.get("#app-navigation li[data-id='sharingin'] a").should('have.text','Shared with me')
-    cy.get("#app-navigation li[data-id='trashbin'] a").should('have.text','Deleted files')
-    cy.get('.custom-button .btn-default').should('have.text',' Expand storage')
+    cy.get("li[data-id='nmc_files_activity'] a").should('have.contain','Activities')
+    cy.get("#app-navigation li[data-id='favorites'] a").should('have.contain','Favourites')
+    cy.get("#app-navigation li[data-id='files'] a").should('have.contain','All files')
+    cy.get("#app-navigation li[data-id='sharingout'] a").should('have.contain','My shares')
+    cy.get("#app-navigation li[data-id='sharingin'] a").should('have.contain','Shared with me')
+    cy.get("#app-navigation li[data-id='trashbin'] a").should('have.contain','Deleted files')
+    cy.get('.custom-button .btn-default').should('have.contain',' Expand storage')
   })
 
   it('Left menu names - in German', () => {
@@ -35,13 +35,13 @@ describe('Settings related changes', () => {
     cy.visit(`${Cypress.env('local').app_url}/apps/files/`);
     cy.wait(1000)
 
-    cy.get("li[data-id='nmc_files_activity'] a").should('have.text','Aktivitäten')
-    cy.get("#app-navigation li[data-id='favorites'] a").should('have.text','Favoriten')
-    cy.get("#app-navigation li[data-id='files'] a").should('have.text','Alle Dateien')
-    cy.get("#app-navigation li[data-id='sharingout'] a").should('have.text','Meine geteilten Inhalte')
-    cy.get("#app-navigation li[data-id='sharingin'] a").should('have.text','Mit mir geteilt')
-    cy.get("#app-navigation li[data-id='trashbin'] a").should('have.text','Gelöschte Dateien')
-    cy.get('.custom-button .btn-default').should('have.text',' Speicherplatz erweitern')
+    cy.get("li[data-id='nmc_files_activity'] a").should('have.contain','Aktivitäten')
+    cy.get("#app-navigation li[data-id='favorites'] a").should('have.contain','Favoriten')
+    cy.get("#app-navigation li[data-id='files'] a").should('have.contain','Alle Dateien')
+    cy.get("#app-navigation li[data-id='sharingout'] a").should('have.contain','Meine geteilten Inhalte')
+    cy.get("#app-navigation li[data-id='sharingin'] a").should('have.contain','Mit mir geteilt')
+    cy.get("#app-navigation li[data-id='trashbin'] a").should('have.contain','Gelöschte Dateien')
+    cy.get('.custom-button .btn-default').should('have.contain','Speicherplatz erweitern')
   })
 
 })
