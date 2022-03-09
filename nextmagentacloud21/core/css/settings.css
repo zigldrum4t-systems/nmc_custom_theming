@@ -20,9 +20,8 @@
     display: flex;
     grid-template-columns: unset !important;
     grid-template-rows: unset !important;
-    flex-wrap:wrap;
   }
- #personal-settings-avatar-container h3{
+  #personal-settings-avatar-container h3{
     margin:unset !important;
     color:#191919 !important;
     font-weight: bold;
@@ -49,6 +48,7 @@
   .personal-settings-setting-box .section input[type='text'],
   .personal-settings-setting-box .section input[type='email'],
   #webdav-address input[type='text'],
+  .profile-settings-container form.section > div:nth-child(1) .email-container input,
   #security input[type='text']
   {
     width: 400px;
@@ -214,20 +214,20 @@
     margin-bottom: 1rem;
   }
 
-#activity_notifications #notify_setting_batchtime {
+  #activity_notifications #notify_setting_batchtime {
   margin-top: 0.5rem;
-}
+  }
 
-input[type='checkbox'].checkbox:checked + label:before{
+  input[type='checkbox'].checkbox:checked + label:before{
   background-color: #e20074;
   border-color:#e20074 !important;
-}
+  }
 
-input[type='checkbox'].checkbox:checked:disabled + label:before{
+  input[type='checkbox'].checkbox:checked:disabled + label:before{
   border-color:#bababa !important;
-}
+  }
 
-/* Activity Notifications*/
+  /* Activity Notifications*/
 
   #tarrifInfo h4{
   margin-bottom:1rem;
@@ -246,7 +246,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 
   .personal-settings-setting-box,
   #personal-settings .personal-info {
-   margin-right: unset !important;
+  margin-right: unset !important;
   }
 
   .personal-settings-language-box select{
@@ -306,7 +306,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     margin-bottom: 1.5rem;
   }
 
- .devices-session #clientslinks {
+  .devices-session #clientslinks {
     margin-top: 1.5rem;
   }
 
@@ -347,7 +347,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
     cursor: pointer;
     font-weight: 400;
     background-color: #e20074 !important;
-	  margin-bottom: 8rem;
+    margin-bottom: 8rem;
   }
 
   .app-password-code a{
@@ -361,7 +361,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   .app-password-code{
     margin-top: 1rem;
     margin-bottom: 8rem;
-	display: flex;
+  display: flex;
     align-items: center;
   }
 
@@ -396,7 +396,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
 
   #security table{
     max-width: 562px;
-	border-collapse: collapse;
+  border-collapse: collapse;
     width: 100% !important;
   }
 
@@ -426,7 +426,7 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   }
 
   #security table tbody tr:hover, #security table tbody tr:focus, #security table tbody tr:active {
-	background-color: var(--color-background-dark) !important;
+  background-color: var(--color-background-dark) !important;
   }
 
   #app-tokens-table tr th:nth-child(4) {
@@ -503,35 +503,32 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   }
 
 
-/*to hide desktop client*/
+  /*to hide desktop client*/
 
-.devices-session #clientslinks,
-.devices-session .clientslinks + h2 {
+  .devices-session #clientslinks,
+  .devices-session .clientslinks + h2 {
     display: none !important;
-}
+  }
 
-/*to hide desktop client*/
+  /*to hide desktop client*/
 
-/*Setting #1 changes*/
+  /*Setting #1 changes*/
 
-.profile-settings-container form.section h3 label,
-.profile-settings-container form.section h3 div,
-.profile-settings-container form.section div em,
-.profile-settings-container form.section > div:nth-child(2),
-.email-actions-container .icon-checkmark,
-.email-actions-container div,
-.personal-settings-setting-box #language em,
-.multiple-mail .action-item.action-item--single.actions-federation.federation-control.icon-password,
-.multiple-mail span
-{
-  display: none;
-}
+  .profile-settings-container form.section h3 label,
+  .profile-settings-container form.section h3 div,
+  .profile-settings-container form.section > div:nth-child(1) .email-actions-container,
+  .email-actions-container .icon-checkmark,
+  .personal-settings-setting-box #language em,
+  .multiple-mail .actions-federation
+  {
+  display: none !important;
+  }
 
-.profile-settings-container form#emailform h3 label{
+  .profile-settings-container form#emailform h3 label{
   display: inline;
-}
+  }
 
-.profile-settings-container form.section input {
+  .profile-settings-container form.section.multiple-mail input {
   width: 400px;
   height: 48px !important;
   padding: 0.75rem 0.75rem 0.75rem 0.688rem;
@@ -539,57 +536,78 @@ input[type='checkbox'].checkbox:checked:disabled + label:before{
   border: 1px solid #191919;
   font-family: TeleNeoWeb, TeleNeo, sans-serif;
   display: inline-block !important;
-  margin-top: 0.625rem;
-}
+  }
 
-#personal-settings .multiple-mail input {
-  margin-top: -1px !important;
+  #personal-settings .multiple-mail input:not(:disabled):not(.primary):hover,
+  #personal-settings .multiple-mail input:not(:disabled):not(.primary):focus
+  {
   background-color: unset !important;
-}
+  }
 
-#personal-settings .multiple-mail input:not(:disabled):not(.primary):hover,
-#personal-settings .multiple-mail input:not(:disabled):not(.primary):focus
-{
-  background-color: unset !important;
-}
+  .email-actions-container{
+    position: absolute;
+    top: 50%;
+    align-self: flex-end !important;
+    margin-right: 1rem !important;
+  }
 
-
-.profile-settings-container .email-container label{
-  margin-top: -143px;
-
-}
-
-.email-actions-container{
-  align-items: center;
-}
-
-.personal-settings-setting-box.personal-settings-language-box{
+  .personal-settings-setting-box.personal-settings-language-box{
   width: 452px;
-}
+  }
 
-#personal-settings-avatar-container .telekom-link p{
+  #personal-settings-avatar-container .telekom-link p{
   margin-top: 0.5rem;
-}
+  }
 
-.profile-settings-container .action-item.action-item--single.icon-delete{
+  .profile-settings-container .action-item.action-item--single.icon-delete{
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
-}
+  }
 
-.add-button:not(:disabled):not(.primary):active{
+  .add-button:not(:disabled):not(.primary):active{
   color: #e20074;
-}
+  }
 
-table#app-tokens-table thead tr{
+  table#app-tokens-table thead tr{
   height: 2.5em;
-}
+  }
 
-#app-tokens-table .token-name input{
+  #app-tokens-table .token-name input{
   background-color: #FFFFFF;
   width: 250px;
   border: 1px solid #191919;
-}
+  }
 
-#body-settings{
+  .popover__inner li:hover p,
+  .popover__inner li:hover span,
+  .multiple-mail em,
+  .multiple-mail .action-item__menutoggle--default-icon,
+  .multiple-mail .action-item__menutoggle--default-icon::before
+  {
+  color: #e20074 !important;
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%) !important;
+  }
+
+  .profile-settings-container .multiple-mail{
+  display: flex;
+  }
+
+  .multiple-mail .email-container{
+  display: flex !important;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start !important;
+  margin:0 3rem .5rem 0;
+  }
+
+  .section.multiple-mail > div {
+    padding: 1rem 0;
+  }
+
+  .multiple-mail h3{
+    padding-top: 3rem !important;
+  }
+
+  #body-settings{
   overflow-x: unset;
-}
-/*Setting #1 changes*/
+  }
+  /*Setting #1 changes*/

@@ -96,43 +96,9 @@ script('settings', [
       <?php } ?>
     </div>
   </div>
-    <div class="profile-settings-container">
-    <div class="personal-settings-setting-box personal-settings-language-box">
-    <form id="emailform" class="section">
-        <h3>
-          <label for="email"><?php p($l->t('Mail address')); ?></label>
-          <a href="#" class="federation-menu" aria-label="<?php p($l->t('Change privacy level of email')); ?>">
-            <span class="icon-federation-menu icon-password">
-              <span class="icon-triangle-s"></span>
-            </span>
-          </a>
-        </h3>
-        <div class="verify <?php if ($_['email'] === '' || $_['emailScope'] !== 'public') {
-                              p('hidden');
-                            } ?>">
-          <img id="verify-email" title="<?php p($_['emailMessage']); ?>" data-status="<?php p($_['emailVerification']) ?>" src="
-				<?php
-        switch ($_['emailVerification']) {
-          case \OC\Accounts\AccountManager::VERIFICATION_IN_PROGRESS:
-            p(image_path('core', 'actions/verifying.svg'));
-            break;
-          case \OC\Accounts\AccountManager::VERIFIED:
-            p(image_path('core', 'actions/verified.svg'));
-            break;
-          default:
-            p(image_path('core', 'actions/verify.svg'));
-        }
-        ?>">
-        </div>
-        <input type="email" name="email" id="email" value="<?php p($_['email']); ?>" placeholder="<?php p($l->t('Your email address')); ?>" autocomplete="on" autocapitalize="none" autocorrect="off" readonly />
-        <span class="icon-checkmark hidden"></span>
-        <span class="icon-error hidden"></span>
-        <input type="hidden" id="emailscope" value="<?php p($_['emailScope']) ?>">
-      </form>
-    </div>
+  <div class="profile-settings-container">
     <div id="vue-emailsection" class="section"></div>
     <!-- <span class="msg"></span> -->
-
   </div>
   <div class="telekom-link">
   <p><label><?php p($l->t('You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the')); ?>

@@ -2400,11 +2400,6 @@
       #personal-settings .multiple-mail input{
         margin-top:unset !important;
      }
-
-     .profile-settings-container .email-container label {
-        margin-top: -130px;
-     }
-
      #personal-settings-avatar-container .telekom-link p,
      .personal-settings-setting-box.personal-settings-group-box.section
      {
@@ -2568,6 +2563,10 @@
     }
     .modal-wrapper {
       height: 86% !important;
+    }
+    .profile-settings-container .multiple-mail,
+    .personal-settings-container{
+      flex-direction: column;
     }
  }
 
@@ -2759,5 +2758,15 @@
    }
  }
 
+ @media only screen and (max-width: 800px){
+  #fileList a.action-share span:not(.icon):not(.avatar) {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+  }
+  }
 
  /*Responsive Styling*/
