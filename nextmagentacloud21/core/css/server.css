@@ -2207,6 +2207,9 @@
   .app-photos img {
     background: #f2f2f2;
   }
+  .app-navigation--close{
+    transform: translateX(-100vw) !important;
+  }
 
   /* photos app*/
 
@@ -2412,10 +2415,17 @@
      }
 
     #nmc_welcome_popup .modal-footer button {
-      margin:0 0 0.25rem 0 !important;
+      margin:0 0.25rem 0 0 !important;
     }
     .app-photos #app-navigation-vue{
       height: calc(100vh - 65px) !important;
+    }
+    #nmc_welcome_popup .modal-footer {
+     display:inline-block;
+    }
+    .footer-actions {
+      display: inline-block;
+      margin-top:0.5rem;
     }
 
  }
