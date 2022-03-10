@@ -9,6 +9,8 @@ describe('Settings related changes', () => {
     cy.get('.extra-details').find('#files').should('have.class','files-usage')
     cy.get('.extra-details').find('#photos').should('have.class','photos-usage')
     cy.get('.extra-details').find('#bin').should('have.class','bin-usage')
+    cy.get('.personal-settings-setting-box').find('b').should('have.css', 'font-size', '20px').should('have.css', 'color', 'rgb(25, 25, 25)');
+
   })
 
   it('Setting-Storage Utilization english test check', () => {

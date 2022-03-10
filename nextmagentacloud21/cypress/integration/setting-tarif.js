@@ -5,9 +5,13 @@ describe('Settings related changes', () => {
     cy.get('.groupbottom input').type(`${Cypress.env('local').password}{enter}`)
   })
 
-  it('Check Css for setting-Tarif', () => {
+ it('Check Css for setting-Tarif', () => {
     cy.get('.personal-settings-tarrif').should('have.id','tarrifInfo')
+    cy.get('#tarrifInfo').find('h4').should('have.css', 'margin-bottom', '16px')
+    cy.get('#tarrifInfo').find('h4').should('have.css', 'font-size', '20px').should('have.css', 'margin-bottom', '16px').should('have.css', 'font-weight', '700');
   })
+
+
 
   it('Setting-Tarif english test check', () => {
     cy.wait(3000)
@@ -22,6 +26,7 @@ describe('Settings related changes', () => {
     cy.get('#tarrifInfo').find('div').eq(2).find('button').should('have.contain','Expand storage')
 
   })
+
 
   it('Setting-Tarif german test check', () => {
     cy.wait(3000)
