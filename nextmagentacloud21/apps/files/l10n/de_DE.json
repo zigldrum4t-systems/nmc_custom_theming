@@ -6,6 +6,7 @@
   "Toggle grid view" : "Ansicht ändern",
   "Display settings": "Anzeigeeinstellungen",
   "Expand storage"  : "Speicherplatz erweitern",
-  "Memory used up to %s%%": "Speicher zu %s%% belegt "
+  "Memory used up to %s%%": "Speicher zu %s%% belegt ",
+  "of" : "von"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

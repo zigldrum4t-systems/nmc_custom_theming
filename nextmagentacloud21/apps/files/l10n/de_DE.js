@@ -9,6 +9,7 @@ OC.L10N.register(
     "Help & FAQ": "Hilfe & FAQ",
     "Display settings": "Anzeigeeinstellungen",
     "Expand storage"  : "Speicherplatz erweitern",
-    "Memory used up to %s%%": "Speicher zu %s%% belegt "
+    "Memory used up to %s%%": "Speicher zu %s%% belegt ",
+    "of" : "von"
 },
 "nplurals=2; plural=(n != 1);");
