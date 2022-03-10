@@ -13,10 +13,6 @@ describe('Settings related changes', () => {
 
   it('Setting-Storage Utilization english test check', () => {
     cy.wait(3000)
-    cy.get('.settingsdiv').click()
-    cy.wait(1000)
-    cy.get('a[href*="/index.php/settings/user"]').contains('Einstellungen').click()
-    cy.wait(2000)
     cy.get('#languageinput').select('English')
     cy.wait(2000)
     cy.visit(`${Cypress.env('local').app_url}index.php/settings/user`);
@@ -32,10 +28,6 @@ describe('Settings related changes', () => {
 
   it('Setting-Storage Utilization german test check', () => {
     cy.wait(3000)
-    cy.get('.settingsdiv').click()
-    cy.wait(1000)
-    cy.get('a[href*="/index.php/settings/user"]').contains('Settings').click()
-    cy.wait(2000)
     cy.get('#languageinput').select('Deutsch')
     cy.wait(2000)
     cy.visit(`${Cypress.env('local').app_url}index.php/settings/user`);
