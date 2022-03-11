@@ -27,14 +27,14 @@ build-image:
     branch: master
     strategy: depend
   only:
-    - /^dev2-.*$/
+    - /^dev1-.*$/
 
-deploy-dev2:
+deploy-dev1:
   stage: deploy
   needs:
     - job: build-image
   variables:
-    DEPLOY_STAGE: "dev2"
+    DEPLOY_STAGE: "dev1"
     DEPLOY: "true"
     THEME_TAG: $CI_COMMIT_TAG
   trigger:
@@ -42,4 +42,4 @@ deploy-dev2:
     branch: master
     strategy: depend
   only:
-    - /^dev2-.*$/
+    - /^dev1-.*$/
