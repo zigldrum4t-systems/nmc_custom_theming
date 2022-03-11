@@ -10,7 +10,6 @@ build-image:
     DEPLOY: "true"
     PKR_VAR_image_tag: "dev"
     PKR_VAR_APP_FILES_VIDEOPLAYER_TAG: ""
-    PKR_VAR_APP_MONTHLY_STATUS_EMAIL_TAG: ""
     PKR_VAR_APP_FILES_ZIP_TAG: "nmc01.00.00"
     PKR_VAR_APP_PHOTOS_TAG: "nmc01.00.08"
     PKR_VAR_APP_TEXT_TAG: "nmc01.00.03"
@@ -28,14 +27,14 @@ build-image:
     branch: master
     strategy: depend
   only:
-    - /^dev1-.*$/
+    - /^dev2-.*$/
 
-deploy-dev1:
+deploy-dev2:
   stage: deploy
   needs:
     - job: build-image
   variables:
-    DEPLOY_STAGE: "dev1"
+    DEPLOY_STAGE: "dev2"
     DEPLOY: "true"
     THEME_TAG: $CI_COMMIT_TAG
   trigger:
@@ -43,4 +42,4 @@ deploy-dev1:
     branch: master
     strategy: depend
   only:
-    - /^dev1-.*$/
+    - /^dev2-.*$/
