@@ -35,9 +35,9 @@ function brandBarAnimation() {
 
   var richWorkSpace = document.getElementById('showRichWorkspacesToggle');
   if (richWorkSpace) {
-    richWorkSpace.checked = true;
+    // richWorkSpace.checked = true;
     richWorkSpace.nextElementSibling.innerHTML = t('core', 'Show folder info text');
-    richWorkSpace.dispatchEvent(new Event('change'));
+    // richWorkSpace.dispatchEvent(new Event('change'));
   }
 
   document.getElementById('recommendations-setting-enabled') ?
