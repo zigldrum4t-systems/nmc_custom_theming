@@ -2182,7 +2182,9 @@
 
   .app-photos #app-navigation-vue{
     left: 0 !important;
+    transition: opacity .4s;
     height: calc(100vh - 140px) !important;
+    opacity: 1;
   }
 
   .app-photos .grid-title{
@@ -2209,6 +2211,10 @@
   }
   .app-navigation--close{
     transform: translateX(-100vw) !important;
+  }
+
+  .app-photos .app-navigation--close {
+    opacity: 0 !important;
   }
 
   /* photos app*/
