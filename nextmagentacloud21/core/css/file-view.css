@@ -151,6 +151,9 @@ table.multiselect thead #selectedMenu {
     display: inline-block !important;
     text-align: center;
 }
+.select-all+label::before {
+margin:0 0 0.188rem 0.188rem !important;
+}
 
 .column-selection input[type="checkbox"].checkbox:checked+label:before {
     background-color: #73C354 !important;
@@ -838,3 +841,6 @@ table td.filename .uploadtext {
   height:80% !important;
 }
 
+.plyr--video .plyr__controls {
+  padding-bottom:1.875rem !important;
+}

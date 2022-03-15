@@ -913,7 +913,7 @@ form div{
  section#tab-activity .multiselect.multiselect--disabled .multiselect__single {
   background-color: unset !important;
 }
- .action-button p {
+aside .action-button p {
   width:190px !important;
 }
 
