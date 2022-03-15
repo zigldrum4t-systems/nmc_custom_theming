@@ -2224,6 +2224,11 @@
     display: none !important;
   }
 
+  /* NMC-678 VIDEO PLAYER BUTTON NOT VISIBLE */
+  .plyr__control {
+    color: white !important;
+    }
+
   /*Responsive Styling*/
 
  @media screen and (max-width: 375px) {
