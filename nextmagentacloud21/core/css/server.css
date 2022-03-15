@@ -680,6 +680,14 @@
      .nmc_welcome_popup-header h2 {
       max-width: 510px;
      }
+     #fileList a.action-share span:not(.icon):not(.avatar) {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+  }
  }
 
  @media screen and (max-width: 1299px) {
@@ -2753,15 +2761,6 @@
    }
  }
 
- @media only screen and (max-width: 800px){
-  #fileList a.action-share span:not(.icon):not(.avatar) {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-  }
-  }
+
 
  /*Responsive Styling*/
