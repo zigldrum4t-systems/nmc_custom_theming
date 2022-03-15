@@ -680,14 +680,6 @@
      .nmc_welcome_popup-header h2 {
       max-width: 510px;
      }
-     #fileList a.action-share span:not(.icon):not(.avatar) {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-  }
  }
 
  @media screen and (max-width: 1299px) {
@@ -726,6 +718,7 @@
  input[type="checkbox"].checkbox+label:before {
      border-radius: 3px !important;
      border: 1px solid #191919 !important;
+     margin:0 !important;
  }
 
  input[type="checkbox"].checkbox+label:before:hover {
@@ -2190,9 +2183,7 @@
 
   .app-photos #app-navigation-vue{
     left: 0 !important;
-    transition: opacity .4s;
     height: calc(100vh - 140px) !important;
-    opacity: 1;
   }
 
   .app-photos .grid-title{
@@ -2219,10 +2210,6 @@
   }
   .app-navigation--close{
     transform: translateX(-100vw) !important;
-  }
-
-  .app-photos .app-navigation--close {
-    opacity: 0 !important;
   }
 
   /* photos app*/
@@ -2414,6 +2401,11 @@
       #personal-settings .multiple-mail input{
         margin-top:unset !important;
      }
+
+     .profile-settings-container .email-container label {
+        margin-top: -130px;
+     }
+
      #personal-settings-avatar-container .telekom-link p,
      .personal-settings-setting-box.personal-settings-group-box.section
      {
@@ -2429,17 +2421,10 @@
      }
 
     #nmc_welcome_popup .modal-footer button {
-      margin:0 0.25rem 0 0 !important;
+      margin:0 0 0.25rem 0 !important;
     }
     .app-photos #app-navigation-vue{
       height: calc(100vh - 65px) !important;
-    }
-    #nmc_welcome_popup .modal-footer {
-     display:inline-block;
-    }
-    .footer-actions {
-      display: inline-block;
-      margin-top:0.5rem;
     }
 
  }
@@ -2578,10 +2563,7 @@
     .modal-wrapper {
       height: 86% !important;
     }
-    .profile-settings-container .multiple-mail,
-    .personal-settings-container{
-      flex-direction: column;
-    }
+
  }
 
  @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2772,6 +2754,15 @@
    }
  }
 
-
+ @media only screen and (max-width: 1000px){
+  #fileList a.action-share span:not(.icon):not(.avatar) {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+  }
+  }
 
  /*Responsive Styling*/
