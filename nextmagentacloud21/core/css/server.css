@@ -2182,7 +2182,7 @@
 
   .app-photos #app-navigation-vue{
     left: 0 !important;
-    transition: opacity .4s;
+    transition: margin .4s,opacity .4s;
     height: calc(100vh - 140px) !important;
     opacity: 1;
   }
@@ -2769,7 +2769,7 @@
    }
  }
 
- @media only screen and (max-width: 800px){
+ @media only screen and (max-width: 1000px){
   #fileList a.action-share span:not(.icon):not(.avatar) {
       position: absolute;
       left: -10000px;
