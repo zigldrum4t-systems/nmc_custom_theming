@@ -22,6 +22,9 @@ describe('Settings related changes', () => {
     cy.get("#app-navigation li[data-id='sharingin'] a").should('have.contain','Shared with me')
     cy.get("#app-navigation li[data-id='trashbin'] a").should('have.contain','Deleted files')
     cy.get('.custom-button .btn-default').should('have.contain',' Expand storage')
+    cy.get('.settings-button').should('have.contain','Display settings')
+    cy.get("label[for='showhiddenfilesToggle']").should('have.contain','Show hidden files')
+    cy.get("label[for='cropimagepreviewsToggle']").should('have.contain','Crop image previews')
   })
 
   it('Left menu names - in German', () => {
@@ -42,6 +45,14 @@ describe('Settings related changes', () => {
     cy.get("#app-navigation li[data-id='sharingin'] a").should('have.contain','Mit mir geteilt')
     cy.get("#app-navigation li[data-id='trashbin'] a").should('have.contain','Gelöschte Dateien')
     cy.get('.custom-button .btn-default').should('have.contain','Speicherplatz erweitern')
+    cy.get('.settings-button').should('have.contain','Anzeigeeinstellungen')
+
+    cy.get("label[for='showhiddenfilesToggle']").should('have.contain','Versteckte Dateien anzeigen')
+    cy.get("label[for='cropimagepreviewsToggle']").should('have.contain','Vorschaubilder  beschneiden')
   })
 
+
+
 })
+
+
