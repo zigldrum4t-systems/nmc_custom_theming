@@ -2182,7 +2182,7 @@
 
   .app-photos #app-navigation-vue{
     left: 0 !important;
-    transition: opacity .4s;
+    transition: margin .4s,opacity .4s;
     height: calc(100vh - 140px) !important;
     opacity: 1;
   }
