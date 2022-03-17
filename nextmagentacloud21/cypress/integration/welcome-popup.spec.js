@@ -14,17 +14,11 @@ describe('Themes related changes', () => {
 
   it('Open welcome popup', () => {
     cy.wait(2000)
-    cy.get('.fileactions').first().click()
-    cy.get('aside').should('have.contain','Sharing','your shares','You can create links or send shares by mail. If you invite MagentaCLOUD users, you have more opportunities for collaboration.')
-    cy.get('.add-new-link-btn').click()
-  })
-
-  it('Open welcome popup', () => {
-    cy.wait(2000)
-    cy.get('.fileactions').first().click()
-    cy.get('aside').should('have.contain','Sharing')
-    cy.get('input').should('be.visible').should('be.enabled').type("Maria")
-
+    cy.get('#nmc_welcome_popup').should('have.class','.nmc_welcome_popup-header')
+    cy.get('#nmc_welcome_popup').should('have.class','.logo')
+    cy.get('#nmc_welcome_popup .modal-body').should('have.css','padding','0px 24px 0px 24px')
+    cy.get('.modal-body .content').should('have.css','padding','24px 0px 24px 0px')
+    cy.get('#nmc_welcome_popup .modal-footer').should('have.css','text-align','right').should('have.css','justify-content','space-between').should('have.css','margin-top','32px')
   })
 
  })
