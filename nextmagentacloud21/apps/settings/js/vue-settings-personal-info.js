@@ -37342,7 +37342,7 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm.isNotificationEmail
+    _vm.isNotificationEmail && this.email
       ? _c("em", [
           _vm._v(
             "\n\t\t" +
@@ -46273,4 +46273,4 @@ module.exports = function(module) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-settings-personal-info.js.map?v=4d1834b4cbf54841a4bc
+//# sourceMappingURL=vue-settings-personal-info.js.map?v=7ae579394227336f6f9c

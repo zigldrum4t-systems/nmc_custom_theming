@@ -439,7 +439,7 @@ li.action-details-container {
     width: 128px !important;
     height: 108px !important;
     margin: 16px !important;
-    background-size: cover !important;
+    background-size: contain !important;
     border-radius: 2px !important;
 }
 
