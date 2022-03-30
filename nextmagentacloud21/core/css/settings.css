@@ -610,4 +610,8 @@
   #body-settings{
   overflow-x: unset;
   }
+
+  .multiple-mail .add-button, .multiple-mail em, #personal-settings-avatar-container .telekom-link label, .section.multiple-mail > div:nth-child(3){
+    display: none;
+  }
   /*Setting #1 changes*/
