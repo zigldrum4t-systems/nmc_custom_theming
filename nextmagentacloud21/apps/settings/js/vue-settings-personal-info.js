@@ -15904,7 +15904,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return this.email === '';
       }
 
-      return this.email !== '' && !this.isValid();
+      return this.email !== '' && !this.isValid(this.email);
     },
     deleteEmailLabel: function deleteEmailLabel() {
       if (this.primary) {
@@ -15930,121 +15930,157 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   methods: {
     onEmailChange: function onEmailChange(e) {
-      var _this2 = this;
-
       this.$emit('update:email', e.target.value); // $nextTick() ensures that references to this.email further down the chain give the correct non-outdated value
 
-      this.$nextTick(function () {
-        return _this2.debounceEmailChange();
-      });
+      this.debounceEmailChange(e.target.value.trim());
     },
-    debounceEmailChange: debounce__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-      var _this$$refs$email2;
+    debounceEmailChange: debounce__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(email) {
+        var _this$$refs$email2;
 
-      return regeneratorRuntime.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              if (!((_this$$refs$email2 = this.$refs.email) !== null && _this$$refs$email2 !== void 0 && _this$$refs$email2.checkValidity() || this.email === '')) {
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                if (!((_this$$refs$email2 = this.$refs.email) !== null && _this$$refs$email2 !== void 0 && _this$$refs$email2.checkValidity() || email === '')) {
+                  _context.next = 14;
+                  break;
+                }
+
+                if (!this.primary) {
+                  _context.next = 6;
+                  break;
+                }
+
+                _context.next = 4;
+                return this.updatePrimaryEmail(email);
+
+              case 4:
                 _context.next = 14;
                 break;
-              }
 
-              if (!this.primary) {
-                _context.next = 6;
-                break;
-              }
+              case 6:
+                if (!email) {
+                  _context.next = 14;
+                  break;
+                }
 
-              _context.next = 4;
-              return this.updatePrimaryEmail();
+                if (!(this.initialEmail === '')) {
+                  _context.next = 12;
+                  break;
+                }
 
-            case 4:
-              _context.next = 14;
-              break;
+                _context.next = 10;
+                return this.addAdditionalEmail(email);
 
-            case 6:
-              if (!this.email) {
+              case 10:
                 _context.next = 14;
                 break;
-              }
 
-              if (!(this.initialEmail === '')) {
-                _context.next = 12;
-                break;
-              }
+              case 12:
+                _context.next = 14;
+                return this.updateAdditionalEmail(email);
 
-              _context.next = 10;
-              return this.addAdditionalEmail();
-
-            case 10:
-              _context.next = 14;
-              break;
-
-            case 12:
-              _context.next = 14;
-              return this.updateAdditionalEmail();
-
-            case 14:
-            case "end":
-              return _context.stop();
+              case 14:
+              case "end":
+                return _context.stop();
+            }
           }
-        }
-      }, _callee, this);
-    })), 500),
+        }, _callee, this);
+      }));
+
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }(), 500),
     deleteEmail: function deleteEmail() {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                if (!_this2.primary) {
+                  _context2.next = 6;
+                  break;
+                }
+
+                _this2.$emit('update:email', '');
+
+                _context2.next = 4;
+                return _this2.updatePrimaryEmail('');
+
+              case 4:
+                _context2.next = 8;
+                break;
+
+              case 6:
+                _context2.next = 8;
+                return _this2.deleteAdditionalEmail();
+
+              case 8:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }))();
+    },
+    updatePrimaryEmail: function updatePrimaryEmail(email) {
       var _this3 = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
+        var _responseData$ocs, _responseData$ocs$met, responseData;
+
         return regeneratorRuntime.wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                if (!_this3.primary) {
-                  _context3.next = 5;
-                  break;
-                }
+                _context3.prev = 0;
+                _context3.next = 3;
+                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["savePrimaryEmail"])(email);
 
-                _this3.$emit('update:email', '');
+              case 3:
+                responseData = _context3.sent;
 
-                _this3.$nextTick( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-                  return regeneratorRuntime.wrap(function _callee2$(_context2) {
-                    while (1) {
-                      switch (_context2.prev = _context2.next) {
-                        case 0:
-                          _context2.next = 2;
-                          return _this3.updatePrimaryEmail();
+                _this3.handleResponse({
+                  email: email,
+                  status: (_responseData$ocs = responseData.ocs) === null || _responseData$ocs === void 0 ? void 0 : (_responseData$ocs$met = _responseData$ocs.meta) === null || _responseData$ocs$met === void 0 ? void 0 : _responseData$ocs$met.status
+                });
 
-                        case 2:
-                          return _context2.abrupt("return", _context2.sent);
-
-                        case 3:
-                        case "end":
-                          return _context2.stop();
-                      }
-                    }
-                  }, _callee2);
-                })));
-
-                _context3.next = 7;
+                _context3.next = 10;
                 break;
 
-              case 5:
-                _context3.next = 7;
-                return _this3.deleteAdditionalEmail();
-
               case 7:
+                _context3.prev = 7;
+                _context3.t0 = _context3["catch"](0);
+
+                if (email === '') {
+                  _this3.handleResponse({
+                    errorMessage: 'Unable to delete primary email address',
+                    error: _context3.t0
+                  });
+                } else {
+                  _this3.handleResponse({
+                    errorMessage: 'Unable to update primary email address',
+                    error: _context3.t0
+                  });
+                }
+
+              case 10:
               case "end":
                 return _context3.stop();
             }
           }
-        }, _callee3);
+        }, _callee3, null, [[0, 7]]);
       }))();
     },
-    updatePrimaryEmail: function updatePrimaryEmail() {
+    addAdditionalEmail: function addAdditionalEmail(email) {
       var _this4 = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
-        var _responseData$ocs, _responseData$ocs$met, responseData;
+        var _responseData$ocs2, _responseData$ocs2$me, responseData;
 
         return regeneratorRuntime.wrap(function _callee4$(_context4) {
           while (1) {
@@ -16052,12 +16088,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context4.prev = 0;
                 _context4.next = 3;
-                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["savePrimaryEmail"])(_this4.email);
+                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["saveAdditionalEmail"])(email);
 
               case 3:
                 responseData = _context4.sent;
 
-                _this4.handleResponse((_responseData$ocs = responseData.ocs) === null || _responseData$ocs === void 0 ? void 0 : (_responseData$ocs$met = _responseData$ocs.meta) === null || _responseData$ocs$met === void 0 ? void 0 : _responseData$ocs$met.status);
+                _this4.handleResponse({
+                  email: email,
+                  status: (_responseData$ocs2 = responseData.ocs) === null || _responseData$ocs2 === void 0 ? void 0 : (_responseData$ocs2$me = _responseData$ocs2.meta) === null || _responseData$ocs2$me === void 0 ? void 0 : _responseData$ocs2$me.status
+                });
 
                 _context4.next = 10;
                 break;
@@ -16066,11 +16105,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _context4.prev = 7;
                 _context4.t0 = _context4["catch"](0);
 
-                if (_this4.email === '') {
-                  _this4.handleResponse('error', 'Unable to delete primary email address', _context4.t0);
-                } else {
-                  _this4.handleResponse('error', 'Unable to update primary email address', _context4.t0);
-                }
+                _this4.handleResponse({
+                  errorMessage: 'Unable to add additional email address',
+                  error: _context4.t0
+                });
 
               case 10:
               case "end":
@@ -16080,90 +16118,96 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee4, null, [[0, 7]]);
       }))();
     },
-    addAdditionalEmail: function addAdditionalEmail() {
+    setNotificationMail: function setNotificationMail() {
       var _this5 = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
-        var _responseData$ocs2, _responseData$ocs2$me, responseData;
+        var _responseData$ocs3, _responseData$ocs3$me, newNotificationMailValue, responseData;
 
         return regeneratorRuntime.wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
                 _context5.prev = 0;
-                _context5.next = 3;
-                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["saveAdditionalEmail"])(_this5.email);
+                newNotificationMailValue = _this5.primary || _this5.isNotificationEmail ? '' : _this5.initialEmail;
+                _context5.next = 4;
+                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["saveNotificationEmail"])(newNotificationMailValue);
 
-              case 3:
+              case 4:
                 responseData = _context5.sent;
 
-                _this5.handleResponse((_responseData$ocs2 = responseData.ocs) === null || _responseData$ocs2 === void 0 ? void 0 : (_responseData$ocs2$me = _responseData$ocs2.meta) === null || _responseData$ocs2$me === void 0 ? void 0 : _responseData$ocs2$me.status);
+                _this5.handleSetNotificationMailResponse({
+                  notificationEmail: newNotificationMailValue,
+                  status: (_responseData$ocs3 = responseData.ocs) === null || _responseData$ocs3 === void 0 ? void 0 : (_responseData$ocs3$me = _responseData$ocs3.meta) === null || _responseData$ocs3$me === void 0 ? void 0 : _responseData$ocs3$me.status
+                });
 
-                _context5.next = 10;
+                _context5.next = 11;
                 break;
 
-              case 7:
-                _context5.prev = 7;
+              case 8:
+                _context5.prev = 8;
                 _context5.t0 = _context5["catch"](0);
 
-                _this5.handleResponse('error', 'Unable to add additional email address', _context5.t0);
+                _this5.handleSetNotificationMailResponse({
+                  errorMessage: 'Unable to choose this email for notifications',
+                  error: _context5.t0
+                });
 
-              case 10:
+              case 11:
               case "end":
                 return _context5.stop();
             }
           }
-        }, _callee5, null, [[0, 7]]);
+        }, _callee5, null, [[0, 8]]);
       }))();
     },
-    setNotificationMail: function setNotificationMail() {
+    updateAdditionalEmail: function updateAdditionalEmail(email) {
       var _this6 = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
-        var _responseData$ocs3, _responseData$ocs3$me, newNotificationMailValue, responseData;
+        var _responseData$ocs4, _responseData$ocs4$me, responseData;
 
         return regeneratorRuntime.wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
                 _context6.prev = 0;
-                newNotificationMailValue = _this6.primary || _this6.isNotificationEmail ? '' : _this6.initialEmail;
-                _context6.next = 4;
-                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["saveNotificationEmail"])(newNotificationMailValue);
+                _context6.next = 3;
+                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["updateAdditionalEmail"])(_this6.initialEmail, email);
 
-              case 4:
+              case 3:
                 responseData = _context6.sent;
 
-                _this6.handleSetNotificationMailResponse({
-                  notificationEmail: newNotificationMailValue,
-                  status: (_responseData$ocs3 = responseData.ocs) === null || _responseData$ocs3 === void 0 ? void 0 : (_responseData$ocs3$me = _responseData$ocs3.meta) === null || _responseData$ocs3$me === void 0 ? void 0 : _responseData$ocs3$me.status
+                _this6.handleResponse({
+                  email: email,
+                  status: (_responseData$ocs4 = responseData.ocs) === null || _responseData$ocs4 === void 0 ? void 0 : (_responseData$ocs4$me = _responseData$ocs4.meta) === null || _responseData$ocs4$me === void 0 ? void 0 : _responseData$ocs4$me.status
                 });
 
-                _context6.next = 11;
+                _context6.next = 10;
                 break;
 
-              case 8:
-                _context6.prev = 8;
+              case 7:
+                _context6.prev = 7;
                 _context6.t0 = _context6["catch"](0);
 
-                _this6.handleSetNotificationMailResponse({
-                  errorMessage: 'Unable to choose this email for notifications',
+                _this6.handleResponse({
+                  errorMessage: 'Unable to update additional email address',
                   error: _context6.t0
                 });
 
-              case 11:
+              case 10:
               case "end":
                 return _context6.stop();
             }
           }
-        }, _callee6, null, [[0, 8]]);
+        }, _callee6, null, [[0, 7]]);
       }))();
     },
-    updateAdditionalEmail: function updateAdditionalEmail() {
+    deleteAdditionalEmail: function deleteAdditionalEmail() {
       var _this7 = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
-        var _responseData$ocs4, _responseData$ocs4$me, responseData;
+        var _responseData$ocs5, _responseData$ocs5$me, responseData;
 
         return regeneratorRuntime.wrap(function _callee7$(_context7) {
           while (1) {
@@ -16171,12 +16215,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context7.prev = 0;
                 _context7.next = 3;
-                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["updateAdditionalEmail"])(_this7.initialEmail, _this7.email);
+                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["removeAdditionalEmail"])(_this7.initialEmail);
 
               case 3:
                 responseData = _context7.sent;
 
-                _this7.handleResponse((_responseData$ocs4 = responseData.ocs) === null || _responseData$ocs4 === void 0 ? void 0 : (_responseData$ocs4$me = _responseData$ocs4.meta) === null || _responseData$ocs4$me === void 0 ? void 0 : _responseData$ocs4$me.status);
+                _this7.handleDeleteAdditionalEmail((_responseData$ocs5 = responseData.ocs) === null || _responseData$ocs5 === void 0 ? void 0 : (_responseData$ocs5$me = _responseData$ocs5.meta) === null || _responseData$ocs5$me === void 0 ? void 0 : _responseData$ocs5$me.status);
 
                 _context7.next = 10;
                 break;
@@ -16185,7 +16229,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _context7.prev = 7;
                 _context7.t0 = _context7["catch"](0);
 
-                _this7.handleResponse('error', 'Unable to update additional email address', _context7.t0);
+                _this7.handleResponse({
+                  errorMessage: 'Unable to delete additional email address',
+                  error: _context7.t0
+                });
 
               case 10:
               case "end":
@@ -16195,62 +16242,49 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee7, null, [[0, 7]]);
       }))();
     },
-    deleteAdditionalEmail: function deleteAdditionalEmail() {
-      var _this8 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
-        var _responseData$ocs5, _responseData$ocs5$me, responseData;
-
-        return regeneratorRuntime.wrap(function _callee8$(_context8) {
-          while (1) {
-            switch (_context8.prev = _context8.next) {
-              case 0:
-                _context8.prev = 0;
-                _context8.next = 3;
-                return Object(_service_PersonalInfoService__WEBPACK_IMPORTED_MODULE_6__["removeAdditionalEmail"])(_this8.initialEmail);
-
-              case 3:
-                responseData = _context8.sent;
-
-                _this8.handleDeleteAdditionalEmail((_responseData$ocs5 = responseData.ocs) === null || _responseData$ocs5 === void 0 ? void 0 : (_responseData$ocs5$me = _responseData$ocs5.meta) === null || _responseData$ocs5$me === void 0 ? void 0 : _responseData$ocs5$me.status);
-
-                _context8.next = 10;
-                break;
-
-              case 7:
-                _context8.prev = 7;
-                _context8.t0 = _context8["catch"](0);
-
-                _this8.handleResponse('error', 'Unable to delete additional email address', _context8.t0);
-
-              case 10:
-              case "end":
-                return _context8.stop();
-            }
-          }
-        }, _callee8, null, [[0, 7]]);
-      }))();
-    },
-    isValid: function isValid() {
-      return /^\S+$/.test(this.email);
-    },
     handleDeleteAdditionalEmail: function handleDeleteAdditionalEmail(status) {
       if (status === 'ok') {
         this.$emit('deleteAdditionalEmail');
       } else {
-        this.handleResponse('error', 'Unable to delete additional email address', {});
+        this.handleResponse({
+          errorMessage: 'Unable to delete additional email address'
+        });
       }
     },
-    handleSetNotificationMailResponse: function handleSetNotificationMailResponse(_ref3) {
+    handleSetNotificationMailResponse: function handleSetNotificationMailResponse(_ref2) {
+      var _this8 = this;
+
+      var notificationEmail = _ref2.notificationEmail,
+          status = _ref2.status,
+          errorMessage = _ref2.errorMessage,
+          error = _ref2.error;
+
+      if (status === 'ok') {
+        this.$emit('update:notification-email', notificationEmail);
+        this.showCheckmarkIcon = true;
+        setTimeout(function () {
+          _this8.showCheckmarkIcon = false;
+        }, 2000);
+      } else {
+        Object(_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_2__["showError"])(t('settings', errorMessage));
+        this.logger.error(errorMessage, error);
+        this.showErrorIcon = true;
+        setTimeout(function () {
+          _this8.showErrorIcon = false;
+        }, 2000);
+      }
+    },
+    handleResponse: function handleResponse(_ref3) {
       var _this9 = this;
 
-      var notificationEmail = _ref3.notificationEmail,
+      var email = _ref3.email,
           status = _ref3.status,
           errorMessage = _ref3.errorMessage,
           error = _ref3.error;
 
       if (status === 'ok') {
-        this.$emit('update:notification-email', notificationEmail);
+        // Ensure that local initialEmail state reflects server state
+        this.initialEmail = email;
         this.showCheckmarkIcon = true;
         setTimeout(function () {
           _this9.showCheckmarkIcon = false;
@@ -16264,24 +16298,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, 2000);
       }
     },
-    handleResponse: function handleResponse(status, errorMessage, error) {
-      var _this10 = this;
-
-      if (status === 'ok') {
-        // Ensure that local initialEmail state reflects server state
-        this.initialEmail = this.email;
-        this.showCheckmarkIcon = true;
-        setTimeout(function () {
-          _this10.showCheckmarkIcon = false;
-        }, 2000);
-      } else {
-        Object(_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_2__["showError"])(t('settings', errorMessage));
-        this.logger.error(errorMessage, error);
-        this.showErrorIcon = true;
-        setTimeout(function () {
-          _this10.showErrorIcon = false;
-        }, 2000);
-      }
+    isValid: function isValid(email) {
+      return /^\S+$/.test(email);
     },
     onScopeChange: function onScopeChange(scope) {
       this.$emit('update:scope', scope);
@@ -46273,4 +46291,4 @@ module.exports = function(module) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-settings-personal-info.js.map?v=7ae579394227336f6f9c
+//# sourceMappingURL=vue-settings-personal-info.js.map?v=0a6be0e2265c90d42e11
