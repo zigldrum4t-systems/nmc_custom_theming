@@ -1672,6 +1672,10 @@
      text-align: left !important;
  }
 
+ #viewer .modal-header .modal-title {
+  max-width:400px;
+}
+
  #viewer .action-item.header-actions {
      padding: 0 !important;
      margin: 0 !important;
