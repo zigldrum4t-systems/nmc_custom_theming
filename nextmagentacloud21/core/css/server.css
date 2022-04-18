@@ -2225,7 +2225,7 @@
   }
 
   /* NMC-678 VIDEO PLAYER BUTTON NOT VISIBLE */
-  .plyr__control {
+  .plyr__controls__item  .plyr__control {
     color: white !important;
     }
 
