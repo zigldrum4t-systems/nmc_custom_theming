@@ -1,6 +1,6 @@
 describe('Settings related changes', () => {
   beforeEach(() => {
-    cy.visit(`${Cypress.env('local').app_url}index.php/settings/user`);
+    cy.visit(`${Cypress.env('local').app_url}/settings/user`);
     cy.get('.grouptop input').type(`${Cypress.env('local').user}{enter}`)
     cy.get('.groupbottom input').type(`${Cypress.env('local').password}{enter}`)
   })
@@ -17,7 +17,7 @@ describe('Settings related changes', () => {
     cy.wait(3000)
     cy.get('#languageinput').select('English')
     cy.wait(2000)
-    cy.visit(`${Cypress.env('local').app_url}index.php/settings/user`);
+    cy.visit(`${Cypress.env('local').app_url}/settings/user`);
     cy.wait(1000)
 
     cy.get('#tarrifInfo h4').should('have.contain','Tariff information')
@@ -32,7 +32,7 @@ describe('Settings related changes', () => {
     cy.wait(3000)
     cy.get('#languageinput').select('Deutsch')
     cy.wait(2000)
-    cy.visit(`${Cypress.env('local').app_url}index.php/settings/user`);
+    cy.visit(`${Cypress.env('local').app_url}/settings/user`);
     cy.wait(1000)
 
     cy.get('#tarrifInfo h4').should('have.contain','Tarifinformationen')
