@@ -24,7 +24,6 @@ describe('Themes related changes', () => {
     cy.get('#nmc_welcome_popup .modal-footer').should('have.css','text-align','right').should('have.css','justify-content','space-between').should('have.css','margin-top','32px')
     cy.get('.modal-footer .pagination').should('have.css','float','left').should('have.css','height','40px').should('have.css','opacity','0.6')
     cy.get('button.primary').should('have.css','background-color','rgba(0, 0, 0, 0)').should('have.css','border-radius','8px').should('have.css','font-size','16px').should('have.css','overflow','hidden').should('have.css','vertical-align','middle')
-    cy.get(' a .button').should('have.css','background-color','rgb(0,130,201)')
   })
 
  })
