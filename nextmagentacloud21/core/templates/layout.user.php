@@ -26,8 +26,8 @@
   <link rel="mask-icon" sizes="any" href="<?php print_unescaped('/themes/nextmagentacloud21/core/img/favicon-mask.svg'); ?>" color="<?php p($theme->getColorPrimary()); ?>">
   <link rel="manifest" href="<?php print_unescaped('/themes/nextmagentacloud21/core/img/manifest.json'); ?>">
   <!--TODO :Trying to load Telium library directly from CDN -->
-  <!-- <script type="text/javascript" nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>"
-  src="https://tags-eu.tiqcdn.com/utag/telekom/mediencenter/dev/utag.js"></script> -->
+  <script type="text/javascript" nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>"
+  src="https://tags-eu.tiqcdn.com/utag/telekom/mediencenter/dev/utag.js"></script>
 
   <?php emit_css_loading_tags($_); ?>
   <?php emit_script_loading_tags($_); ?>

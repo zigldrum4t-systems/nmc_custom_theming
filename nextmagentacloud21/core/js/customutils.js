@@ -10,7 +10,7 @@ window.onload = function () {
   fileActionButtonSettings();
   breadcrumbAddLabel();
   mobileOnlyClass();
-  // webTrackingEvents();
+  webTrackingEvents();
 };
 
 function brandBarAnimation() {
