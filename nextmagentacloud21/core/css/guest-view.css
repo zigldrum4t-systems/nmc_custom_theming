@@ -187,3 +187,10 @@
         display: block;
       }
     }
+
+    @media only screen and (max-width: 640px){
+      .header-right  .header-primary-action span {
+        padding:0 !important;
+      }
+    }
+
