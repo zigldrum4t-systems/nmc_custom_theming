@@ -12,10 +12,22 @@ describe('Themes related changes', () => {
   })
 
   it('GARD ticket 323 text change in english', () => {
+    cy.get('.settingsdiv').click()
+    cy.wait(5000)
+    cy.get('a[href*="/index.php/settings/user"]').contains('Einstellungen').click()
+    cy.wait(2000)
+    cy.get('#languageinput').select('English')
     cy.wait(2000)
     cy.get('.unified-search__trigger').click()
     cy.get('.search-input-label').should('have.text','Search files or folders …')
-    })
+  })
+
+  it('English language  : check the sub menu for file section check box', () => {
+  cy.visit(`${Cypress.env('local').app_url}/apps/files`);
+  cy.get('#fileList td').first().find('input').check({force: true} );
+  cy.get('.filesSelectionMenu').contains('span','Move or copy').should('have.class','label')
+
+  })
 
   it('GARD ticket 323 text change in german', () => {
     cy.wait(3000)
@@ -29,40 +41,25 @@ describe('Themes related changes', () => {
     cy.get('.search-input-label').should('have.text','Nach Dateien oder Ordnern suchen …')
   })
 
-  it('check the sub menu for file section check box', () => {
-    cy.wait(3000)
-    cy.visit(`${Cypress.env('local').app_url}}/apps/files/`);
-    cy.wait(2000)
-    cy.contains('td','test1.md').prev('td').find('input').check({force: true} );
-    cy.get('.filesSelectionMenu').contains('span','Verschieben oder kopieren').should('have.class','label')
-
+  it('Search box related Css changes', () => {
+    cy.wait(5000)
+    cy.get('.unified-search__trigger').click()
+    cy.get('#header-menu-unified-search').should('have.css','width', '496px').should('have.css','border-radius', '8px')
+    cy.get('#header-menu-unified-search').should('have.css','padding', '14px').should('have.css','position', 'absolute')
+    cy.get('.search-input-label').should('have.css','position', 'absolute').should('have.css','left', '12px').should('have.css','top', '12px')
   })
 
   it('check the sub menu for file section check box and check that last option is cancel', () => {
-    cy.wait(3000)
-    cy.contains('td','test1.md').prev('td').find('input').check({force: true} );
+    cy.wait(5000)
+    cy.visit(`${Cypress.env('local').app_url}/apps/files`);
+    cy.get('#fileList td').first().find('input').check({force: true} );
     cy.get('.filesSelectionMenu').find('li').last().should('contain.text','Abbrechen')
   })
 
-  it('English language  : check the sub menu for file section check box', () => {
-    cy.wait(3000)
-    cy.get('.settingsdiv').click()
-    cy.wait(1000)
-    cy.get('a[href*="/index.php/settings/user"]').contains('Einstellungen').click()
-    cy.wait(2000)
-    cy.get('#languageinput').select('English')
-    cy.wait(2000)
-    cy.visit(`${Cypress.env('local').app_url}}/apps/files/`);
-    cy.wait(2000)
-    cy.contains('td','test1.md').prev('td').find('input').check({force: true} );
-    cy.get('.filesSelectionMenu').contains('span','Move or copy').should('have.class','label')
-
+  it('check the sub menu for file section check box', () => {
+    cy.wait(5000)
+    cy.visit(`${Cypress.env('local').app_url}/apps/files`);
+    cy.get('#fileList td').first().find('input').check({force: true} );
+    cy.get('.filesSelectionMenu').contains('span','Verschieben oder kopieren').should('have.class','label')
   })
-
-  it('English language : check the sub menu for file section check box and check that last option is cancel', () => {
-    cy.wait(3000)
-    cy.contains('td','test1.md').prev('td').find('input').check({force: true} );
-    cy.get('.filesSelectionMenu').find('li').last().should('contain.text','Cancel')
-  })
-
 })
