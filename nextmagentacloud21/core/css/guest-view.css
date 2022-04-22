@@ -181,6 +181,10 @@
         height: auto !important;
     }
 
+    .header-right  #header-primary-action span:first-child:not(.gust-download-svg) {
+      display:none;
+    }
+
     /* Guest view small screen download button */
     @media only screen and (max-width: 1024px){
       #body-public .header-right #header-primary-action {
@@ -188,9 +192,5 @@
       }
     }
 
-    @media only screen and (max-width: 640px){
-      .header-right  .header-primary-action span {
-        padding:0 !important;
-      }
-    }
+
 
