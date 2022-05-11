@@ -1,4 +1,4 @@
-describe('Settings related changes', () => {
+describe('Activity related changes', () => {
   beforeEach(() => {
     cy.visit(`${Cypress.env('local').app_url}/apps/files/?dir=/&view=nmc_files_activity`);
     cy.get('.grouptop input').type(`${Cypress.env('local').user}{enter}`)

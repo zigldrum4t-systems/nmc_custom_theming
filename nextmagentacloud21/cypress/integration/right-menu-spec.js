@@ -1,4 +1,4 @@
-describe('Settings related changes', () => {
+describe('Right menu related changes', () => {
   beforeEach(() => {
     cy.visit(`${Cypress.env('local').app_url}/settings/user`);
     cy.get('.grouptop input').type(`${Cypress.env('local').user}{enter}`)
