@@ -14,7 +14,7 @@ describe('Device and session settings related changes', () => {
       cy.wait(2000)
       cy.visit(`${Cypress.env('local').app_url}/settings/user/security`);
       cy.wait(1000)
-      cy.get('#clientsbox').should('contain.text','Desktop & mobile clients')
+      cy.get('#clientsbox').should('contain','Mobile applications')
       cy.get('#webdav-address').should('contain','WebDAV Address')
       cy.get('#webdav-address em').should('contain','With the WebDAV address, you can set up your MagentaCLOUD as a network drive on Windows, for example. You can find more information about WebDAV and how to use it')
       cy.get('#security.section h2').should('have.text','Sessions')
@@ -48,7 +48,7 @@ describe('Device and session settings related changes', () => {
       cy.wait(2000)
       cy.visit(`${Cypress.env('local').app_url}/settings/user/security`);
       cy.wait(1000)
-      cy.get('#clientsbox').should('contain.text','Desktop & mobile clients')
+      cy.get('#clientsbox').should('contain','Mobile Applikationen')
       cy.get('#webdav-address').should('contain','WebDAV Adresse')
       cy.get('#webdav-address em').should('contain','Mit der WebDAV Adresse können sie ihre MagentaCLOUD z.B. als Netzlaufwerk bei Windows einrichten. Weitere Information über WebDAV und wie Sie es nutzen können finden Sie')
       cy.get('#security h2').should('have.text','Sitzungen')

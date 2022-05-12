@@ -53,6 +53,7 @@ describe('Themes related changes', () => {
     cy.wait(5000)
     cy.visit(`${Cypress.env('local').app_url}/apps/files`);
     cy.get('#fileList td').first().find('input').check({force: true} );
+    cy.wait(5000)
     cy.get('.filesSelectionMenu').find('li').last().should('contain.text','Abbrechen')
   })
 
@@ -60,6 +61,7 @@ describe('Themes related changes', () => {
     cy.wait(5000)
     cy.visit(`${Cypress.env('local').app_url}/apps/files`);
     cy.get('#fileList td').first().find('input').check({force: true} );
+    cy.wait(5000)
     cy.get('.filesSelectionMenu').contains('span','Verschieben oder kopieren').should('have.class','label')
   })
 })
