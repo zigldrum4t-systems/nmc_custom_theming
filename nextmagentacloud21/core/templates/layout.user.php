@@ -31,7 +31,7 @@
     use OCP\IConfig;
     $config = \OC::$server->get(IConfig::class);
     $tealiumConfig = $config->getSystemValue('tealium');
-    if($tealiumConfig['enable']){ ?>
+    if($tealiumConfig && $tealiumConfig['enable']){ ?>
     <!--TODO :Trying to load Telium library directly from CDN -->
       <script type="text/javascript" nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>"
     src="<?php echo $tealiumConfig['Url'];?>"></script>
