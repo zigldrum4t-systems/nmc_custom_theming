@@ -10,7 +10,7 @@ window.onload = function () {
   fileActionButtonSettings();
   breadcrumbAddLabel();
   mobileOnlyClass();
-  // webTrackingEvents();
+  webTrackingEvents();
 };
 
 function brandBarAnimation() {
@@ -147,6 +147,7 @@ function mobileOnlyClass() {
 }
 
 function webTrackingEvents() {
+if(typeof utag!=='undefined' && utag.view()) {
   $('.filesSelectionMenu ul li').click(function(e) {
     var targetElement = e.target;
     if(targetElement.innerHTML=="Move or copy" || targetElement.innerHTML=="Verschieben oder kopieren"){
@@ -500,5 +501,5 @@ function webTrackingEvents() {
 
       }
       });
-
+  }
 }
