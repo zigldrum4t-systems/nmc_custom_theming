@@ -181,53 +181,107 @@ if(typeof utag!=='undefined' && utag.view()) {
   window.addEventListener('click',function(e){
     var targetElement = e.target || e.srcElement;
     try{
-      if(targetElement.id=="select_alselect_all_filesl_files"){
-        var utag_data = {
-          wt_link_id: "content.checkbox.selectall",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
-          }
-          utag.view(utag_data);
+      
+      if(document.getElementById("filestable").classList.contains("view-grid")){
+        if(targetElement.id=="select_alselect_all_filesl_files"){
+          var utag_data = {
+            wt_link_id: "content.checkbox.selectall",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+  
+        }
+  
+        if(targetElement.innerText=="Select all"){
+          var utag_data = {
+            wt_link_id: "content.checkbox.selectall",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+        if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-delete",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+  
+        if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-move",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+  
+        if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-copy",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+      }
+      else{
+        if(targetElement.id=="select_alselect_all_filesl_files"){
+          var utag_data = {
+            wt_link_id: "content.checkbox.selectall",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+  
+        }
+  
+        if(targetElement.innerText=="Select all"){
+          var utag_data = {
+            wt_link_id: "content.checkbox.selectall",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+        if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-delete",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+  
+        if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-move",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+  
+        if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-copy",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
 
       }
-
-      if(targetElement.innerText=="Select all"){
-        var utag_data = {
-          wt_link_id: "content.checkbox.selectall",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
-          }
-          utag.view(utag_data);
-      }
-
-      if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
-        var utag_data = {
-          wt_link_id: "content.button.hover-delete",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
-          }
-          utag.view(utag_data);
-      }
-
-
-      if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
-        var utag_data = {
-          wt_link_id: "content.button.hover-move",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
-          }
-          utag.view(utag_data);
-      }
-
-
-      if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
-        var utag_data = {
-          wt_link_id: "content.button.hover-copy",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
-          }
-          utag.view(utag_data);
-      }
+      
 
       if(targetElement.innerHTML=="Upload file" || targetElement.innerHTML=="Datei hochladen"){
         var utag_data = {
