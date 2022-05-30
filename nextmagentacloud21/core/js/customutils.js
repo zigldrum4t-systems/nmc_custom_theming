@@ -183,6 +183,8 @@ if(typeof utag!=='undefined' && utag.view()) {
     try{
       
       if(document.getElementById("filestable").classList.contains("view-grid")){
+
+
         if(targetElement.id=="select_alselect_all_filesl_files"){
           var utag_data = {
             wt_link_id: "content.checkbox.selectall",
@@ -192,6 +194,15 @@ if(typeof utag!=='undefined' && utag.view()) {
             utag.view(utag_data);
   
         }
+
+        if(targetElement.innerHTML=="Download" || targetElement.innerHTML=="Herunterladen"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-download",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+          }
   
         if(targetElement.innerText=="Select all"){
           var utag_data = {
