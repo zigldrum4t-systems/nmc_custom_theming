@@ -178,7 +178,7 @@ if(typeof utag!=='undefined' && utag.view()) {
       }
   });
 
-  $('#tab-sharing .add-new-link-btn').on('click',function(){
+  $('#tab-sharing .add-new-link-btn').click(function(){
     var utag_data = {
       wt_link_id: "share.view.create.newlink",
       page_content_id : "share.view.start", // page name
@@ -187,8 +187,8 @@ if(typeof utag!=='undefined' && utag.view()) {
       utag.view(utag_data);
     
   });
-  console.log('test1');
-  $('body').on('click','#filestable a.action.action-share.permanent',function(){
+
+  $('#filestable a.action.action-share.permanent').click(function(){
     var pageContentId='';
     if(document.getElementById("filestable").classList.contains("view-grid")){
       pageContentId="files.grid.shareicon";
