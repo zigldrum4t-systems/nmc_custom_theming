@@ -178,6 +178,33 @@ if(typeof utag!=='undefined' && utag.view()) {
       }
   });
 
+  $('#tab-sharing .add-new-link-btn').on('click',function(){
+    var utag_data = {
+      wt_link_id: "share.view.create.newlink",
+      page_content_id : "share.view.start", // page name
+      page_type : "files" // page type
+      }
+      utag.view(utag_data);
+    
+  });
+  console.log('test1');
+  $('body').on('click','#filestable a.action.action-share.permanent',function(){
+    var pageContentId='';
+    if(document.getElementById("filestable").classList.contains("view-grid")){
+      pageContentId="files.grid.shareicon";
+    }
+    else{
+      pageContentId="files.list.shareicon";
+    }
+    var utag_data = {
+      wt_link_id: "content.grid.shareicon",
+      page_content_id : pageContentId, // page name
+      page_type : "files" // page type
+      }
+      utag.view(utag_data);
+    
+});
+  
   window.addEventListener('click',function(e){
     var targetElement = e.target || e.srcElement;
     try{
@@ -292,6 +319,7 @@ if(typeof utag!=='undefined' && utag.view()) {
         }
 
       }
+      
       
 
       if(targetElement.innerHTML=="Upload file" || targetElement.innerHTML=="Datei hochladen"){
