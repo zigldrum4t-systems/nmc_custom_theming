@@ -9,7 +9,7 @@
     font-size: 14px;
     background-color: var(--scl-color-white);
     color: var(--scl-color-grey-10);
-    z-index: 4999;
+    z-index: 998;
     border-top: 2px solid var(--scl-color-grey-10);
 }
 
