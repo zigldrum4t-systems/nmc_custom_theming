@@ -844,3 +844,7 @@ table td.filename .uploadtext {
 .plyr--video .plyr__controls {
   padding-bottom:1.875rem !important;
 }
+
+#app-content-trashbin .item-files_zip {
+  display: none;
+}
