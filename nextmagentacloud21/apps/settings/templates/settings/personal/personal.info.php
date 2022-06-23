@@ -101,7 +101,7 @@ script('settings', [
     <!-- <span class="msg"></span> -->
   </div>
   <div class="telekom-link">
-  <p><label><?php p($l->t('You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can can be changed in the')); ?>
+  <p><label><?php p($l->t('You can add an alternative email address to receive your notifications there. It will also be used as an address for shared content. Your password can be changed in the')); ?>
     <a href='https://account.idm.telekom.com/account-manager/index.xhtml' target='_blank'> <?php p($l->t('login settings')); ?></a>
           <?php p($l->t('for all Telekom services.')); ?>
     </label>
