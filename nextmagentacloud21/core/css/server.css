@@ -2394,7 +2394,7 @@
          width: calc(50% - 70px)!important;
      }
      #filestable .summary {
-         height: 150px;
+         height: 320px;
      }
      .toastify.dialogs{
        max-width: 312px !important;
