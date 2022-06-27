@@ -20,4 +20,13 @@ describe('Themes related changes', () => {
     cy.get('.newFileMenu').find('li').last().should('have.css','display','none')
   })
 
+  it('Help-FAQ open in new tab', () => {
+    cy.wait(3000)
+    cy.get('.settingsdiv').click()
+    cy.wait(1000)
+    cy.get('a[href*="https://cloud.telekom-dienste.de/hilfe"]').contains('Hilfe & FAQ').click()
+    cy.wait(2000)
+    cy.get("li[data-id='help'] a").should('have.attr', 'href', 'https://cloud.telekom-dienste.de/hilfe')
+      .should('have.attr', 'target', '_blank')
+  })
 })
