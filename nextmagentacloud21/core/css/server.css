@@ -1672,6 +1672,10 @@
      text-align: left !important;
  }
 
+ #viewer .modal-header .modal-title {
+  max-width:400px;
+}
+
  #viewer .action-item.header-actions {
      padding: 0 !important;
      margin: 0 !important;
@@ -2225,7 +2229,7 @@
   }
 
   /* NMC-678 VIDEO PLAYER BUTTON NOT VISIBLE */
-  .plyr__control {
+  .plyr__controls__item  .plyr__control {
     color: white !important;
     }
 
@@ -2390,7 +2394,7 @@
          width: calc(50% - 70px)!important;
      }
      #filestable .summary {
-         height: 150px;
+         height: 320px;
      }
      .toastify.dialogs{
        max-width: 312px !important;

@@ -10,7 +10,7 @@ window.onload = function () {
   fileActionButtonSettings();
   breadcrumbAddLabel();
   mobileOnlyClass();
-  // webTrackingEvents();
+  webTrackingEvents();
 };
 
 function brandBarAnimation() {
@@ -147,6 +147,7 @@ function mobileOnlyClass() {
 }
 
 function webTrackingEvents() {
+if(typeof utag!=='undefined' && utag.view()) {
   $('.filesSelectionMenu ul li').click(function(e) {
     var targetElement = e.target;
     if(targetElement.innerHTML=="Move or copy" || targetElement.innerHTML=="Verschieben oder kopieren"){
@@ -169,7 +170,7 @@ function webTrackingEvents() {
 
     if(targetElement.innerHTML=="Download" || targetElement.innerHTML=="Herunterladen"){
       var utag_data = {
-        wt_link_id: "content.button.hover-copy",
+        wt_link_id: "content.button.hover-download",
         page_content_id : "files.list.select", // page name
         page_type : "files" // page type
         }
@@ -177,46 +178,149 @@ function webTrackingEvents() {
       }
   });
 
+  $('#tab-sharing .add-new-link-btn').click(function(){
+    var utag_data = {
+      wt_link_id: "share.view.create.newlink",
+      page_content_id : "share.view.start", // page name
+      page_type : "files" // page type
+      }
+      utag.view(utag_data);
+    
+  });
+
+  $('#filestable a.action.action-share.permanent').click(function(){
+    var pageContentId='';
+    if(document.getElementById("filestable").classList.contains("view-grid")){
+      pageContentId="files.grid.shareicon";
+    }
+    else{
+      pageContentId="files.list.shareicon";
+    }
+    var utag_data = {
+      wt_link_id: "content.grid.shareicon",
+      page_content_id : pageContentId, // page name
+      page_type : "files" // page type
+      }
+      utag.view(utag_data);
+    
+});
+  
   window.addEventListener('click',function(e){
     var targetElement = e.target || e.srcElement;
     try{
-      if(targetElement.id=="select_alselect_all_filesl_files"){
-        var utag_data = {
-          wt_link_id: "content.checkbox.selectall",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
+      
+      if(document.getElementById("filestable").classList.contains("view-grid")){
+
+
+        if(targetElement.id=="select_alselect_all_filesl_files"){
+          var utag_data = {
+            wt_link_id: "content.checkbox.selectall",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+  
+        }
+
+        if(targetElement.innerHTML=="Download" || targetElement.innerHTML=="Herunterladen"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-download",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
           }
+  
+        if(targetElement.innerText=="Select all"){
+          var utag_data = {
+            wt_link_id: "content.checkbox.selectall",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+        if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-delete",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+  
+        if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-move",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+  
+        if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-copy",
+            page_content_id : "files.grid.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+      }
+      else{
+        if(targetElement.id=="select_alselect_all_filesl_files"){
+          var utag_data = {
+            wt_link_id: "content.checkbox.selectall",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+  
+        }
+  
+        if(targetElement.innerText=="Select all"){
+          var utag_data = {
+            wt_link_id: "content.checkbox.selectall",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+        if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-delete",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+  
+        if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-move",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
+  
+  
+        if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
+          var utag_data = {
+            wt_link_id: "content.button.hover-copy",
+            page_content_id : "files.list.select", // page name
+            page_type : "files" // page type
+            }
+            utag.view(utag_data);
+        }
 
       }
-
-      if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
-        var utag_data = {
-          wt_link_id: "content.button.hover-delete",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
-          }
-          utag.view(utag_data);
-      }
-
-
-      if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
-        var utag_data = {
-          wt_link_id: "content.button.hover-move",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
-          }
-          utag.view(utag_data);
-      }
-
-
-      if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
-        var utag_data = {
-          wt_link_id: "content.button.hover-copy",
-          page_content_id : "files.list.select", // page name
-          page_type : "files" // page type
-          }
-          utag.view(utag_data);
-      }
+      
+      
 
       if(targetElement.innerHTML=="Upload file" || targetElement.innerHTML=="Datei hochladen"){
         var utag_data = {
@@ -247,9 +351,20 @@ function webTrackingEvents() {
       }
 
 
+      if(targetElement.innerHTML=="Search" || targetElement.innerHTML=="Suche"){
+        var utag_data = {
+          wt_link_id: "top.bar.menu.search",
+          page_content_id : "top.bar.menu", // page name
+          page_type : "top bar" // page type
+          }
+          utag.view(utag_data);
+      }
+
+
+
       if(targetElement.innerHTML=="Set expiration date" || targetElement.innerHTML=="Ablaufdatum setzen"){
         var utag_data = {
-          wt_link_id: "share.view.setting.edit",
+          wt_link_id: "share.view.setting.timelimit",
           page_content_id : "share.view.settings", // page name
           page_type : "share" // page type
           }
@@ -278,7 +393,7 @@ function webTrackingEvents() {
       var title = $(targetElement).attr('title');
       if(title!='' && title!='undefined' && title!=undefined){
 
-        if(title=="All Media"){
+        if(title=="All media"){
           var utag_data = {
             wt_link_id: "files.view.media.allmedia",
             page_content_id : "files.view.media.all", // page name
@@ -289,7 +404,7 @@ function webTrackingEvents() {
 
         if(title=="My photos"){
           var utag_data = {
-            wt_link_id: "content.checkbox.selectall",
+            wt_link_id: "files.view.media.myphotos",
             page_content_id : "files.view.media.myphotos", // page name
             page_type : "theme" // page type
             }
@@ -298,7 +413,7 @@ function webTrackingEvents() {
 
         if(title=="My videos"){
           var utag_data = {
-            wt_link_id: "content.checkbox.selectall",
+            wt_link_id: "files.view.media.myvideos",
             page_content_id : "files.view.media.myvideos", // page name
             page_type : "theme" // page type
             }
@@ -306,7 +421,7 @@ function webTrackingEvents() {
         }
         if(title=="Favorites"){
           var utag_data = {
-            wt_link_id: "content.checkbox.selectall",
+            wt_link_id: "files.view.media.favorites",
             page_content_id : "files.view.media.favorites",
             page_type : "theme" // page type
             }
@@ -314,7 +429,7 @@ function webTrackingEvents() {
         }
         if(title=="Shared with me"){
           var utag_data = {
-            wt_link_id: "content.checkbox.selectall",
+            wt_link_id: "files.view.media.shares",
             page_content_id : "files.view.media.receivedshares", // page name
             page_type : "theme" // page type
             }
@@ -342,7 +457,7 @@ function webTrackingEvents() {
           utag.view(utag_data);
       }
 
-      if(targetElement.className=="app-sidebar__close.icon-close"){
+      if(targetElement.className=="app-sidebar__close icon-close"){
         var utag_data = {
           wt_link_id: "share.view.create.cancel",
           page_content_id : "share.view.create", // page name
@@ -366,7 +481,7 @@ function webTrackingEvents() {
 
             var eventClassName = targetElement.className;
             var envent_class = eventClassName.split("nav-icon-");
-            if(envent_class[0].includes('menu__trigger')){
+            if(envent_class[0].includes('unified-search__trigger')){
               var utag_data = {
                 wt_link_id: "top.bar.menu.search",
                 page_content_id : "top.bar.menu", // page name
@@ -383,20 +498,13 @@ function webTrackingEvents() {
                   }
                   utag.view(utag_data);
               }
-              else if(envent_class[0].includes('displayname')){
-                var utag_data = {
-                  wt_link_id: "content.checkbox.selectall",
-                  page_content_id : "Content.Button.NewFolder", // page name
-                  page_type : "NewFolder" // page type
-                }
-                utag.view(utag_data);
-              }
+            
               if(envent_class[0]!==""){
                   var envent_class0 = envent_class[0].split("svg");
                   if($.trim(envent_class0[0])=="favorites"){
                     var utag_data = {
-                      wt_link_id: "content.checkbox.selectall",
-                      page_content_id : "left.menu.favorites", // page name
+                      wt_link_id: "left.menu.favorites",
+                      page_content_id : "left.menu", // page name
                       page_type : "theme" // page type
                       }
                       utag.view(utag_data);
@@ -473,8 +581,8 @@ function webTrackingEvents() {
           }
           else if(envent_class[1]=="photos/videos"){
             var utag_data = {
-              wt_link_id: "content.checkbox.selectall",
-              page_content_id : "top.bar.menu.media", // page name
+              wt_link_id: "top.bar.menu.media",
+              page_content_id : "top.bar.menu", // page name
               page_type : "theme" // page type
               }
               utag.view(utag_data);
@@ -500,5 +608,5 @@ function webTrackingEvents() {
 
       }
       });
-
+  }
 }
