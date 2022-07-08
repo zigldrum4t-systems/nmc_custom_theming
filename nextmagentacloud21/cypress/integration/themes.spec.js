@@ -63,5 +63,6 @@ describe('Themes related changes', () => {
     cy.get('#fileList td').first().find('input').check({force: true} );
     cy.wait(5000)
     cy.get('.filesSelectionMenu').contains('span','Verschieben oder kopieren').should('have.class','label')
+    cy.get('#selectedActionsList .item-tags').should('have.css','display', 'none')
   })
 })

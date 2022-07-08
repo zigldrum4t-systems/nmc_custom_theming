@@ -64,84 +64,11 @@ describe('Device and session settings related changes', () => {
 
 })
 
-describe('Notification settings related changes', () => {
-  beforeEach(() => {
-    cy.visit(`${Cypress.env('local').app_url}/apps/files/`);
-    cy.get('.grouptop input').type(`${Cypress.env('local').user}{enter}`)
-    cy.get('.groupbottom input').type(`${Cypress.env('local').password}{enter}`)
-
-  })
-
-  it('For language English check all translation for notification page', () => {
-    cy.get('.settingsdiv').click()
-    cy.wait(5000)
-    cy.get('a[href*="/index.php/settings/user"]').contains('Einstellungen').click()
-    cy.wait(2000)
-    cy.get('#languageinput').select('English')
-    cy.wait(2000)
-    cy.visit(`${Cypress.env('local').app_url}/settings/user/activity`);
-    cy.wait(1000)
-    cy.get('#monthly-notifications-settings h1').should('contain.text','Regular mails')
-    cy.wait(5000)
-    cy.get('#monthly-notifications-settings [type="checkbox"]').check()
-    cy.wait(2000)
-
-    cy.get('#monthly-notifications-settings label').should('contain','Monthly Status Report')
-    cy.get('.settings-hint').should('contain.text','The status report informs you monthly by email about storage space, your shares and gives you useful tips about the MagentaCLOUD.')
-    cy.wait(5000)
-    cy.get('.mails-report-section label').should('contain','Activity Report')
-
-    cy.wait(5000)
-    cy.get('.mails-report-section p').should('contain','The activity report informs you every morning about all processes in your MagentaCLOUD.')
-    cy.wait(1000)
-    cy.get('#activity_notifications h1').should('contain','Notifications')
-    cy.get('#activity_notifications p').should('contain','You can use the following list to determine which activities you would like to be notified of and how often. You can be notified by email or push notification.')
-    cy.get('#notify_setting_batchtime').select('As soon as possible').should('have.value', '3')
-    cy.get('#notify_setting_batchtime').select('Hourly').should('have.value', '0')
-    cy.get('#notify_setting_batchtime').select('Daily').should('have.value', '1')
-    cy.get('#notify_setting_batchtime').select('Weekly').should('have.value', '2')
-    cy.get('#activity_notifications table').should('have.css', 'max-width', 'none').should('have.css', 'border-collapse', 'collapse').should('have.css', 'margin-top', '32px')
-    cy.get('#monthly-notifications-settings h1').should('have.css', 'font-size', '20px').should('have.css', 'color', 'rgb(25, 25, 25)').should('have.css', 'margin-top', "48px").should('have.css', 'margin-top', "48px")
-    cy.get('#monthly-notifications-settings .settings-hint').should('have.css', 'margin-top', '8px').should('have.css', 'color', 'rgb(102, 102, 102)').should('have.css', 'margin-bottom', '12px')
-  })
-
-  it('For language German check all translation for notification page', () => {
-    cy.wait(3000)
-    cy.get('.settingsdiv').click()
-    cy.wait(1000)
-    cy.get('a[href*="/index.php/settings/user"]').contains('Settings').click()
-    cy.wait(2000)
-    cy.get('#languageinput').select('Deutsch')
-    cy.wait(2000)
-    cy.visit(`${Cypress.env('local').app_url}/settings/user/activity`);
-    cy.wait(1000)
-    cy.get('#monthly-notifications-settings h1').should('contain.text','Regelmäßige Mails')
-    cy.wait(5000)
-    cy.get('#monthly-notifications-settings [type="checkbox"]').check()
-    cy.wait(2000)
-    cy.get('#monthly-notifications-settings label').should('contain','Monatlicher Statusbericht')
-    cy.get('.settings-hint').should('contain.text','Der Status-Bericht informiert Sie monatlich per E-Mail über Speicherplatz, Ihre Freigaben und gibt Ihnen nützliche Tipps rund um die MagentaCLOUD.')
-    cy.wait(5000)
-    cy.get('.mails-report-section label').should('contain','Aktivitätsbericht')
-    cy.wait(5000)
-    cy.get('.mails-report-section p').should('contain','Der Aktivitätsbericht informiert Sie jeden Morgen über alle Vorgänge in ihrer MagentaCLOUD.')
-    cy.wait(1000)
-    cy.get('#activity_notifications h1').should('contain','Benachrichtigungen')
-    cy.get('#activity_notifications p').should('contain','Sie können mit der folgenden Auflistung darüber bestimmen, bei welchen Aktivitäten Sie benachrichtigt werden möchten und wie oft. Sie können sich per E-Mail oder Push-Benachrichtigung informieren lassen.')
-    cy.get('#notify_setting_batchtime').select('So bald wie möglich').should('have.value', '3')
-    cy.get('#notify_setting_batchtime').select('Stündlich').should('have.value', '0')
-    cy.get('#notify_setting_batchtime').select('Täglich').should('have.value', '1')
-    cy.get('#notify_setting_batchtime').select('Wöchentlich').should('have.value', '2')
-  })
-
-})
-
-  describe('Account information settings related changes', () => {
+describe('Account information settings related changes', () => {
     beforeEach(() => {
       cy.visit(`${Cypress.env('local').app_url}/apps/files/`);
       cy.get('.grouptop input').type(`${Cypress.env('local').user}{enter}`)
       cy.get('.groupbottom input').type(`${Cypress.env('local').password}{enter}`)
-
     })
 
     it('For language English check all translation for account information page', () => {
@@ -153,6 +80,14 @@ describe('Notification settings related changes', () => {
       cy.wait(2000)
       cy.visit(`${Cypress.env('local').app_url}/settings/user`);
       cy.wait(1000)
+      cy.get('#monthly-notifications-settings h1').should('contain.text','Regular mails')
+      cy.wait(5000)
+      cy.get('#monthly-notifications-settings [type="checkbox"]').check()
+      cy.wait(2000)
+      cy.get('#monthly-notifications-settings label').should('contain','Monthly Status Report')
+      cy.get('.settings-hint').should('contain.text','The status report informs you monthly by email about storage space, your shares and gives you useful tips about the MagentaCLOUD.')
+      cy.get('#monthly-notifications-settings').should('have.css', 'display', 'block').should('have.css', 'max-width', '700px').should('have.css', 'padding-left', '16px')
+      cy.wait(5000)
       cy.get('#personal-settings-avatar-container h3').should('contain.text','Account details')
       cy.wait(2000)
       cy.get('#displaynameform label').should('contain','Name')
@@ -174,6 +109,13 @@ describe('Notification settings related changes', () => {
       cy.wait(2000)
       cy.visit(`${Cypress.env('local').app_url}/settings/user`);
       cy.wait(1000)
+      cy.get('#monthly-notifications-settings h1').should('contain.text','Regelmäßige Mails')
+      cy.wait(5000)
+      cy.get('#monthly-notifications-settings [type="checkbox"]').check()
+      cy.wait(2000)
+      cy.get('#monthly-notifications-settings label').should('contain','Monatlicher Statusbericht')
+      cy.get('.settings-hint').should('contain.text','Der Status-Bericht informiert Sie monatlich per E-Mail über Speicherplatz, Ihre Freigaben und gibt Ihnen nützliche Tipps rund um die MagentaCLOUD.')
+      cy.wait(5000)
       cy.get('#personal-settings-avatar-container h3').should('contain.text','Kontodaten')
       cy.wait(2000)
       cy.get('#displaynameform label').should('contain','Name')
