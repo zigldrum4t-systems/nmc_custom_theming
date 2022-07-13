@@ -6,13 +6,43 @@
 
 URL: https://gitlab.devops.telekom.de/nextmagentacloud/themes
 
+### If needed change the app tags in pipeline cicd
+
+In the file [.gitlab-ci.yaml](../.gitlab-ci.yaml) there are two sections.
+One for **dev1** -> *build-image-dev1* section and one for **dev2** -> *build-image-dev2* section.
+
+It is possible to change the values of the following variables:
+
+* PKR_VAR_APP_FILES_VIDEOPLAYER_TAG
+* PKR_VAR_APP_FILES_ZIP_TAG
+* PKR_VAR_APP_FILES_DOWNLOADLIMIT_TAG
+* PKR_VAR_APP_MONTHLY_STATUS_EMAIL_TAG
+* PKR_VAR_APP_END_TO_END_ENCRYPTION_TAG
+* PKR_VAR_APP_PHOTOS_TAG
+* PKR_VAR_APP_TEXT_TAG
+* PKR_VAR_APP_NMC_FIRSTRUNWIZARD_TAG
+* PKR_VAR_APP_NMC_FILES_ACTIVITY_TAG
+* PKR_VAR_APP_ACTIVITY_TAG
+* PKR_VAR_APP_NMC_SHARING_TAG
+* PKR_VAR_APP_NMC_WELCOME_POPUP_TAG
+* PKR_VAR_APP_NMC_EMAIL_TEMPLATE_TAG
+* PKR_VAR_APP_QUOTA_WARNING_TAG
+* PKR_VAR_NC_VERSION 
+  * for **Nextcloud** version **22** you have to use **22.2.0**
+  * for **Nextcloud** version **23** you have to use **23.0.6**
+* PKR_VAR_NC_TAG
+
+Nothing else should be touched.
+
 ## 2. Tag the code
 
 1. Go to the *Repository* menu and click on *Tags*
 ![Tags menu](./img/tags.jpg)
 1. Click on *New tag*
 ![New tag](./img/tags2.jpg)
-1. Fill in the *Tag name* with the name of the tag. The string have to start with `dev1-`
+1. Fill in the *Tag name* with the name of the tag. The string have to start with 
+  * `dev1-` - for deployment to **dev1**
+  * `dev2-` - for deployment to **dev2**
   * *Create from*: `master`
   *  *Message*: Here add some comment to the tag
 ![New tag](./img/tags3.jpg)
