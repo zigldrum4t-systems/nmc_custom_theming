@@ -8,7 +8,7 @@ build-image-dev1:
   variables:
     TARGET_DIR: 40_nextcloud-magenta
     DEPLOY: "true"
-    PKR_VAR_image_tag: "dev1"
+    PKR_VAR_image_tag: 'dev1_CI-"$CI_PIPELINE_IID"'
     PKR_VAR_APP_FILES_VIDEOPLAYER_TAG: ""
     PKR_VAR_APP_FILES_ZIP_TAG: "nmc01.00.00"
     PKR_VAR_APP_FILES_DOWNLOADLIMIT_TAG: "1.0.1"
@@ -38,7 +38,7 @@ build-image-dev2:
   variables:
     TARGET_DIR: 40_nextcloud-magenta
     DEPLOY: "true"
-    PKR_VAR_image_tag: "dev2"
+    PKR_VAR_image_tag: 'dev2_CI-"$CI_PIPELINE_IID"'
     PKR_VAR_APP_FILES_VIDEOPLAYER_TAG: ""
     PKR_VAR_APP_FILES_ZIP_TAG: "nmc01.00.00"
     PKR_VAR_APP_FILES_DOWNLOADLIMIT_TAG: "1.0.1"
