@@ -610,5 +610,8 @@
   #body-settings{
   overflow-x: unset;
   }
-
+  
+  .settings-menu ul li[data-id='user_status-menuitem']{
+    display: none;
+  }
   /*Setting #1 changes*/
