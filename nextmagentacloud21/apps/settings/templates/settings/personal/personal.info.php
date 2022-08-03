@@ -60,7 +60,11 @@ script('settings', [
     </div>
 
 
-    <div class="personal-settings-setting-box">
+		<div class="personal-settings-setting-box personal-settings-language-box">
+			<div id="vue-language-section"></div>
+		</div>
+
+    <div class="personal-settings-setting-box" style="display:none">
     <?php if (isset($_['activelanguage'])) { ?>
         <form id="language" class="section">
           <h3>

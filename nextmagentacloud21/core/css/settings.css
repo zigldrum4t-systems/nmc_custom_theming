@@ -59,7 +59,7 @@
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
   }
 
-  select#languageinput{
+  select#language{
     width: 400px ;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem;
