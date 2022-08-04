@@ -2,7 +2,7 @@
 /** @var array $_ */
 /** @var \OCP\IL10N $l */
 /** @var \OCP\Defaults $theme */
-style('core', 'email/verification-page');
+  style('core', 'email/verification-page');
 ?>
 
 <div class="update">
