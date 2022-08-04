@@ -54,7 +54,7 @@ build-image-dev2:
     PKR_VAR_APP_NMC_EMAIL_TEMPLATE_TAG: "nmc01.00.17"
     PKR_VAR_APP_QUOTA_WARNING_TAG: "nmc01.00.00"
     PKR_VAR_NC_VERSION: "23.0.6"
-    PKR_VAR_NC_TAG: "nmcrel23.0.6-16"
+    PKR_VAR_NC_TAG: "nmcrel23.0.6-14"
     PKR_VAR_theme_tag: $CI_COMMIT_TAG
   trigger:
     project: nextmagentacloud/images
