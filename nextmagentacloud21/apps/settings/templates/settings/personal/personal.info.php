@@ -101,7 +101,7 @@ script('settings', [
     </div>
   </div>
   <div class="profile-settings-container">
-    <div id="vue-emailsection" class="section"></div>
+  <div id="vue-email-section"></div>
     <!-- <span class="msg"></span> -->
   </div>
   <div class="telekom-link">

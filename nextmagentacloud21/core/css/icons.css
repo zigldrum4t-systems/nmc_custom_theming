@@ -665,7 +665,7 @@ aside .icon-star{
   background-size: 24px !important;
   min-width: 24px;
   min-height: 24px;
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 /* Photos */

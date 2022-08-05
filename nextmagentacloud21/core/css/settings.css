@@ -498,7 +498,7 @@
 
   #monthly-notifications-settings {
     display: block;
-    padding-left: 30px;
+    padding-left: 1rem;
     max-width: 700px;
   }
 
@@ -610,8 +610,19 @@
   #body-settings{
   overflow-x: unset;
   }
-  
+
   .settings-menu ul li[data-id='user_status-menuitem']{
     display: none;
+  }
+
+  .email-actions-container .action-item__menutoggle[data-v-eff40d78]:hover,
+  .email-actions-container .action-item__menutoggle[data-v-eff40d78]:active,
+  .email-actions-container .action-item__menutoggle[data-v-eff40d78]:focus
+  {
+    background-color: unset !important;
+  }
+
+  .material-design-icon__svg{
+    display: none !important;
   }
   /*Setting #1 changes*/
