@@ -335,19 +335,19 @@
   }
 
   .create-session{
-    margin-top: 0.5rem;
+    margin-top: 0.5rem !important;
     padding: 0.563rem 1.5rem !important;
     border-color: #e20074 !important;
     color: #ffffff !important;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 8px !important;
     font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
-    font-size: 1rem;
+    font-size: 1rem !important;
     line-height: 1.42857143;
     cursor: pointer;
     font-weight: 400;
     background-color: #e20074 !important;
-    margin-bottom: 8rem;
+    margin-bottom: 8rem !important;
   }
 
   .app-password-code a{
