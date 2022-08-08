@@ -1293,6 +1293,15 @@
      border-left: 4px solid #E20074 !important;
  }
 
+ #editor-wrapper .popovermenu li>.menuitem {
+    width: 100% !important;
+    height: auto !important;
+ }
+
+ #editor-wrapper li>.menuitem span[class^='icon-']{
+  opacity: unset !important;
+ }
+
  #rich-workspace #editor-wrapper .ProseMirror p div{
    background-color: unset !important;
  }
