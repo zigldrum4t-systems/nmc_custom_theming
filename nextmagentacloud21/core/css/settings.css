@@ -625,4 +625,8 @@
   .material-design-icon__svg{
     display: none !important;
   }
+
+  .personal-settings-language-box > section{
+    padding-left: 0px !important;
+  }
   /*Setting #1 changes*/
