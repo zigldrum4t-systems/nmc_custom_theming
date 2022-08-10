@@ -58,7 +58,7 @@ build-image-dev2:
     PKR_VAR_theme_tag: $CI_COMMIT_TAG
   trigger:
     project: nextmagentacloud/images
-    branch: master
+    branch: nmcrel/*
     strategy: depend
   only:
     - /^dev2-.*$/
