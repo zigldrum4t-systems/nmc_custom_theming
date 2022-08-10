@@ -92,3 +92,4 @@ deploy-dev2:
     strategy: depend
   only:
     - /^dev2-.*$/
+
