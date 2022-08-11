@@ -224,6 +224,8 @@ OCA.Sharing.App = {
     this._pendingFileList = new OCA.Sharing.FileList($el, {
       id: 'shares.pending',
       showPending: true,
+      detailsViewEnabled: false,
+      defaultFileActionsDisabled: true,
       sharedWithUser: true,
       fileActions: this._acceptShareAction(),
       config: OCA.Files.App.getFilesConfig(),
@@ -248,6 +250,7 @@ OCA.Sharing.App = {
 
     this._overviewFileList = new OCA.Sharing.FileList($el, {
       id: 'shares.overview',
+      fileActions: this._createFileActions(),
       config: OCA.Files.App.getFilesConfig(),
       isOverview: true,
       // The file list is created when a "show" event is handled, so
@@ -369,7 +372,13 @@ OCA.Sharing.App = {
       type: OCA.Files.FileActions.TYPE_INLINE,
       actionHandler: function actionHandler(fileName, context) {
         var shareId = context.$file.data('shareId');
-        $.post(OC.linkToOCS('apps/files_sharing/api/v1/shares/pending', 2) + shareId).success(function (result) {
+        var shareBase = 'shares/pending';
+
+        if (context.$file.attr('data-remote-id')) {
+          shareBase = 'remote_shares/pending';
+        }
+
+        $.post(OC.linkToOCS('apps/files_sharing/api/v1/' + shareBase, 2) + shareId).success(function (result) {
           context.fileList.remove(context.fileInfoModel.attributes.name);
         }).fail(function () {
           OC.Notification.showTemporary(t('files_sharing', 'Something happened. Unable to accept the share.'));
@@ -383,10 +392,25 @@ OCA.Sharing.App = {
       permissions: OC.PERMISSION_ALL,
       iconClass: 'icon-close',
       type: OCA.Files.FileActions.TYPE_INLINE,
+      shouldRender: function shouldRender(context) {
+        // disable rejecting group shares from the pending list because they anyway
+        // land back into that same list
+        if (context.$file.attr('data-remote-id') && parseInt(context.$file.attr('data-share-type'), 10) === OC.Share.SHARE_TYPE_REMOTE_GROUP) {
+          return false;
+        }
+
+        return true;
+      },
       actionHandler: function actionHandler(fileName, context) {
         var shareId = context.$file.data('shareId');
+        var shareBase = 'shares';
+
+        if (context.$file.attr('data-remote-id')) {
+          shareBase = 'remote_shares';
+        }
+
         $.ajax({
-          url: OC.linkToOCS('apps/files_sharing/api/v1/shares', 2) + shareId,
+          url: OC.linkToOCS('apps/files_sharing/api/v1/' + shareBase, 2) + shareId,
           type: 'DELETE'
         }).success(function (result) {
           context.fileList.remove(context.fileInfoModel.attributes.name);
@@ -730,6 +754,18 @@ window.addEventListener('DOMContentLoaded', function () {
           xhr.setRequestHeader('OCS-APIREQUEST', 'true');
         }
       };
+      var pendingRemoteShares = {
+        url: OC.linkToOCS('apps/files_sharing/api/v1/remote_shares', 2) + 'pending',
+
+        /* jshint camelcase: false */
+        data: {
+          format: 'json'
+        },
+        type: 'GET',
+        beforeSend: function beforeSend(xhr) {
+          xhr.setRequestHeader('OCS-APIREQUEST', 'true');
+        }
+      };
       var shares = {
         url: OC.linkToOCS('apps/files_sharing/api/v1') + 'shares',
 
@@ -763,6 +799,7 @@ window.addEventListener('DOMContentLoaded', function () {
         promises.push($.ajax(deletedShares));
       } else if (this._showPending) {
         promises.push($.ajax(pendingShares));
+        promises.push($.ajax(pendingRemoteShares));
       } else {
         promises.push($.ajax(shares));
 
@@ -807,7 +844,12 @@ window.addEventListener('DOMContentLoaded', function () {
       }
 
       if (additionalShares && additionalShares.ocs && additionalShares.ocs.data) {
-        files = files.concat(this._makeFilesFromShares(additionalShares.ocs.data, !this._sharedWithUser));
+        if (this._showPending) {
+          // in this case the second callback is about pending remote shares
+          files = files.concat(this._makeFilesFromRemoteShares(additionalShares.ocs.data));
+        } else {
+          files = files.concat(this._makeFilesFromShares(additionalShares.ocs.data, !this._sharedWithUser));
+        }
       }
 
       this.setFiles(files);
@@ -823,11 +865,30 @@ window.addEventListener('DOMContentLoaded', function () {
           mtime: share.mtime * 1000,
           mimetype: share.mimetype,
           type: share.type,
+          // remote share types are different and need to be mapped
+          shareType: parseInt(share.share_type, 10) === 1 ? OC.Share.SHARE_TYPE_REMOTE_GROUP : OC.Share.SHARE_TYPE_REMOTE,
           id: share.file_id,
           path: OC.dirname(share.mountpoint),
           permissions: share.permissions,
           tags: share.tags || []
         };
+
+        if (share.remote_id) {
+          // remote share
+          if (share.accepted !== '1') {
+            file.name = OC.basename(share.name);
+            file.path = '/';
+          }
+
+          file.remoteId = share.remote_id;
+          file.shareOwnerId = share.owner;
+        }
+
+        if (!file.mimetype) {
+          // pending shares usually have no type, so default to showing a directory icon
+          file.mimetype = 'dir-shared';
+        }
+
         file.shares = [{
           id: share.id,
           type: OC.Share.SHARE_TYPE_REMOTE

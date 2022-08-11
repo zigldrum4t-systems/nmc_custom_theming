@@ -201,17 +201,41 @@ window.OCP.Collaboration.registerType('file', {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var escape_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! escape-html */ "./node_modules/escape-html/index.js");
 /* harmony import */ var escape_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(escape_html__WEBPACK_IMPORTED_MODULE_0__);
-/* eslint-disable */
-
-/*
+/**
  * Copyright (c) 2014
  *
- * This file is licensed under the Affero General Public License version 3
- * or later.
+ * @author Arthur Schiwon <blizzz@arthur-schiwon.de>
+ * @author Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @author Daniel Calviño Sánchez <danxuliu@gmail.com>
+ * @author Joas Schilling <coding@schilljs.com>
+ * @author John Molakvoæ <skjnldsv@protonmail.com>
+ * @author Julius Härtl <jus@bitgrid.net>
+ * @author Maxence Lange <maxence@nextcloud.com>
+ * @author Michael Jobst <mjobst+github@tecratech.de>
+ * @author Michael Jobst <mjobst@necls.com>
+ * @author Morris Jobke <hey@morrisjobke.de>
+ * @author Roeland Jago Douma <roeland@famdouma.nl>
+ * @author Samuel <faust64@gmail.com>
+ * @author Vincent Petry <vincent@nextcloud.com>
  *
- * See the COPYING-README file.
+ * @license GNU AGPL version 3 or any later version
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  */
+
+/* eslint-disable */
 
 
 (function () {
@@ -572,7 +596,7 @@ __webpack_require__.r(__webpack_exports__);
         action.addClass('shared-style');
 
         if (c == "sharingout") {
-          avatars = '';
+          avatars = ''; // even if reshared, only show "Shared by"
 
           if (ownerId) {
             message = t('files_sharing', 'Shared by');
@@ -622,11 +646,11 @@ __webpack_require__.r(__webpack_exports__);
     /**
      * Format a remote address
      *
-    * @param {String} shareWith userid, full remote share, or whatever
-    * @param {String} shareWithDisplayName
-    * @param {String} message
-    * @returns {String} HTML code to display
-    */
+     * @param {String} shareWith userid, full remote share, or whatever
+     * @param {String} shareWithDisplayName
+     * @param {String} message
+     * @returns {String} HTML code to display
+     */
     _formatRemoteShare: function _formatRemoteShare(shareWith, shareWithDisplayName, message) {
       var parts = OCA.Sharing.Util._REMOTE_OWNER_REGEXP.exec(shareWith); //console.error(parts);
 
@@ -675,6 +699,8 @@ __webpack_require__.r(__webpack_exports__);
     */
     _formatRemoteSharewith: function _formatRemoteSharewith(shareWith, shareWithDisplayName, message) {
       var parts = OCA.Sharing.Util._REMOTE_OWNER_REGEXP.exec(shareWith);
+
+      console.error(parts);
 
       if (this.validateEmail(shareWith)) {
         if (!parts || !parts[7]) {
@@ -962,6 +988,7 @@ OC.Plugins.register('OCA.Files.FileList', OCA.Sharing.Util);
     },
     _onClick: function _onClick(e) {
       e.preventDefault();
+      e.stopPropagation();
       var fileInfoModel = new OCA.Files.FileInfoModel(this._dirInfo);
       var self = this;
       fileInfoModel.on('change', function () {
@@ -1022,7 +1049,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/**\n * @copyright 2016 Christoph Wurst <christoph@winzerhof-wurst.at>\n *\n * @author 2016 Christoph Wurst <christoph@winzerhof-wurst.at>\n *\n * @license GNU AGPL version 3 or any later version\n *\n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Affero General Public License as\n * published by the Free Software Foundation, either version 3 of the\n * License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU Affero General Public License for more details.\n *\n * You should have received a copy of the GNU Affero General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.\n *\n */\ndiv.crumb span.icon-shared,\ndiv.crumb span.icon-public {\n  display: inline-block;\n  cursor: pointer;\n  opacity: 0.2;\n  margin-right: 6px; }\n\ndiv.crumb span.icon-shared.shared,\ndiv.crumb span.icon-public.shared {\n  opacity: 0.7; }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "/**\n * @copyright 2016 Christoph Wurst <christoph@winzerhof-wurst.at>\n *\n * @author 2016 Christoph Wurst <christoph@winzerhof-wurst.at>\n *\n * @license GNU AGPL version 3 or any later version\n *\n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Affero General Public License as\n * published by the Free Software Foundation, either version 3 of the\n * License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU Affero General Public License for more details.\n *\n * You should have received a copy of the GNU Affero General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.\n *\n */\ndiv.crumb span.icon-shared,\ndiv.crumb span.icon-public {\n  display: inline-block;\n  cursor: pointer;\n  opacity: 0.2;\n  margin-right: 6px;\n}\n\ndiv.crumb span.icon-shared.shared,\ndiv.crumb span.icon-public.shared {\n  opacity: 0.7;\n}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
