@@ -2661,9 +2661,6 @@
   }
 }
  @media screen and (max-width: 420px) {
-     #selectedActionLabel .icon-more{
-         margin-right: -12px;
-     }
      .menububble{
        height: 60px !important;
      }
