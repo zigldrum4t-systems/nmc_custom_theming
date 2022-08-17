@@ -204,9 +204,11 @@ script('settings', [
     <strong><?php p($l->t('Storage')); ?></strong>: <?php p($_['total_space']); ?>
     </div>
     <div>
+        <a href="https://cloud.telekom-dienste.de/tarife" target="_blank">
         <button>
         <?php print_unescaped($l->t('Expand storage')); ?>
         </button>
+        </a>
     </div>
 <div>
 
