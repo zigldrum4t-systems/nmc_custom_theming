@@ -643,6 +643,7 @@
 .settings-menu ul li[data-id='core_apps'] a div,
 .settings-menu ul li[data-id='core_users'] a div,
 .settings-menu ul li[data-id='help'] a div,
+.settings-menu ul li[data-id='kundencenter'] a div,
 .settings-menu ul li[data-id='logout'] a div {
   height:24px !important;
   width:24px !important;
