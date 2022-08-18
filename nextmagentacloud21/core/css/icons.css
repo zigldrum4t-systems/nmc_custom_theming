@@ -221,6 +221,11 @@ div.crumb {
 .settings-menu ul li[data-id='help'] a div {
   background-image: var(--icon-help-custom) !important;
 }
+
+.settings-menu ul li[data-id='kundencenter'] a div {
+  background-image: var(--icon-kundencenter-custom) !important;
+}
+
 .settings-menu ul li[data-id='logout'] a div {
   background-image: var(--icon-logout-custom) !important;
 }

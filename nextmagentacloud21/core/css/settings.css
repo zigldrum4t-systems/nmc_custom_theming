@@ -629,4 +629,8 @@
   .personal-settings-language-box > section{
     padding-left: 0px !important;
   }
+
+  .multiple-mail button:not(.button-vue):disabled{
+    background-color: unset !important;
+  }
   /*Setting #1 changes*/
