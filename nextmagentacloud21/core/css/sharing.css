@@ -16,7 +16,9 @@
   max-height: 125px !important;
 }
 
-aside .icon-close {
+aside .icon-close,
+.app-sidebar .app-sidebar-header .app-sidebar__close
+{
   background-position: left center !important;
 }
 
@@ -458,16 +460,16 @@ p.sharing-input-subtitle{
   color: #0d0dec;
 }
 .add-new-link-btn{
-  margin:0.75rem 0 1rem 0;
+  margin:0.75rem 0 1rem 0 !important;
   font-size:1rem !important;
   width:auto !important;
   background-color: #ffffff !important;
-  border: 1px solid #191919;
-  color: #191919;
+  border: 1px solid #191919 !important;
+  color: #191919 !important;
   border-radius:4px !important;
   padding: 0.563rem 1.5rem !important;
-  height:40px;
-  font-weight:normal;
+  height:40px !important;
+  font-weight:normal !important;
 }
 
 .add-new-link-btn:hover,
@@ -848,8 +850,10 @@ form div{
     min-height: 24px !important;
   }
 
-  .items span {
-    display:none;
+  .items span,
+  .material-design-icon__svg
+  {
+    display:none !important;
   }
 
   .items div {

@@ -445,6 +445,7 @@ aside .custom-select .disabledRow span.icon-triangle-s{
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close,
 aside .icon-close,
+.app-sidebar .app-sidebar-header .app-sidebar__close,
 .oc-conflict-pre-dlg-close-div a ,
 .nmc_welcome_popup-header button.modal-default-button {
     background: var(--icon-dialog-close) !important;
