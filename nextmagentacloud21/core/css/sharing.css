@@ -474,7 +474,7 @@ p.sharing-input-subtitle{
 
 .add-new-link-btn:hover,
 .add-new-link-btn:active {
-  color:#e20074;
+  color:#e20074 !important;
 }
 
 aside .app-sidebar-header__menu{
