@@ -682,3 +682,7 @@ aside .icon-star{
   background-image: var(--icon-deselect-custom) !important;
 }
 
+/* Sharing folder icon */
+#fileList [data-icon="/apps/theming/img/core/filetypes/folder-shared.svg?v=0"] .thumbnail {
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+}
