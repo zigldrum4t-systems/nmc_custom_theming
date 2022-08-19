@@ -738,7 +738,7 @@
      margin-top: 0px !important;
  }
 
- #app-settings-header .settings-button {
+ #app-settings-header .settings-button , #app-settings__header .settings-button {
      display: block;
      height: 20px;
      width: 100%;
@@ -755,6 +755,8 @@
      font-weight: normal;
      color: var(--color-main-text);
  }
+
+
 
  #app-settings-header .settings-button.opened {
      border-top: unset !important;
