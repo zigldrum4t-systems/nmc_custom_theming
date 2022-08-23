@@ -738,7 +738,7 @@
      margin-top: 0px !important;
  }
 
- #app-settings-header .settings-button {
+ #app-settings-header .settings-button , #app-settings__header .settings-button {
      display: block;
      height: 20px;
      width: 100%;
@@ -755,6 +755,8 @@
      font-weight: normal;
      color: var(--color-main-text);
  }
+
+
 
  #app-settings-header .settings-button.opened {
      border-top: unset !important;
@@ -1291,6 +1293,15 @@
 
  #editor-wrapper div.ProseMirror blockquote {
      border-left: 4px solid #E20074 !important;
+ }
+
+ #editor-wrapper .popovermenu li>.menuitem {
+    width: 100% !important;
+    height: auto !important;
+ }
+
+ #editor-wrapper li>.menuitem span[class^='icon-']{
+  opacity: unset !important;
  }
 
  #rich-workspace #editor-wrapper .ProseMirror p div{
@@ -2001,13 +2012,13 @@
  }
 
  .oc-conflict-pre-dlg-button {
-     width: 100%;
-     margin-bottom: 0.5rem;
-     font-size: 1rem;
+     width: 100% !important;
+     margin-bottom: 0.5rem !important;
+     font-size: 1rem !important;
      font-weight: 400 !important;
-     height: 2.5rem;
-     background-color: #FFFFFF;
-     color: #000000;
+     height: 2.5rem !important;
+     background-color: #FFFFFF !important;
+     color: #000000 !important;
      border-radius: 8px !important;
      text-overflow: ellipsis !important;
      font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
@@ -2652,9 +2663,6 @@
   }
 }
  @media screen and (max-width: 420px) {
-     #selectedActionLabel .icon-more{
-         margin-right: -12px;
-     }
      .menububble{
        height: 60px !important;
      }

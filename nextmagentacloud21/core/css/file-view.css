@@ -852,3 +852,11 @@ table td.filename .uploadtext {
 #selectedActionsList .item-tags{
   display: none;
 }
+
+#app-content-files #recommendations{
+  display: none !important;
+}
+
+#app-content-files .multiselect #headerSize{
+  display: none !important;
+}

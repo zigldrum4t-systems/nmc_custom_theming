@@ -221,6 +221,11 @@ div.crumb {
 .settings-menu ul li[data-id='help'] a div {
   background-image: var(--icon-help-custom) !important;
 }
+
+.settings-menu ul li[data-id='kundencenter'] a div {
+  background-image: var(--icon-kundencenter-custom) !important;
+}
+
 .settings-menu ul li[data-id='logout'] a div {
   background-image: var(--icon-logout-custom) !important;
 }
@@ -445,6 +450,7 @@ aside .custom-select .disabledRow span.icon-triangle-s{
 .oc-dialog .oc-dialog-close,
 #uploadprogresswrapper .icon-close,
 aside .icon-close,
+.app-sidebar .app-sidebar-header .app-sidebar__close,
 .oc-conflict-pre-dlg-close-div a ,
 .nmc_welcome_popup-header button.modal-default-button {
     background: var(--icon-dialog-close) !important;
@@ -682,3 +688,7 @@ aside .icon-star{
   background-image: var(--icon-deselect-custom) !important;
 }
 
+/* Sharing folder icon */
+#fileList [data-icon="/apps/theming/img/core/filetypes/folder-shared.svg?v=0"] .thumbnail {
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+}
