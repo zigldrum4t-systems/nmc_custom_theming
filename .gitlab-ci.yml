@@ -38,7 +38,7 @@ build-image-dev2:
   variables:
     TARGET_DIR: 40_nextcloud-magenta
     DEPLOY: "true"
-    PKR_VAR_image_tag: 'dev2_CI-$CI_PIPELINE_IID'
+    PKR_VAR_IMAGE_TAG: 'dev2_CI-$CI_PIPELINE_IID'
     PKR_VAR_APP_FILES_VIDEOPLAYER_TAG: "nmc01.00.02"
     PKR_VAR_APP_FILES_ZIP_TAG: "nmc01.00.00"
     PKR_VAR_APP_FILES_DOWNLOADLIMIT_TAG: "1.0.1"
@@ -54,12 +54,14 @@ build-image-dev2:
     PKR_VAR_APP_NMC_EMAIL_TEMPLATE_TAG: "nmc01.00.17"
     PKR_VAR_APP_QUOTA_WARNING_TAG: "nmc01.00.00"
     PKR_VAR_APP_USER_OIDC_TAG: "nmc1.2.2-1"
+    PKR_VAR_APP_NMCPROVISIONING_VERSION_TAG: "nmc1.0.0-2"
+    PKR_VAR_APP_NMCSLUP_VERSION_TAG: "nmc1.0.0-2"
     PKR_VAR_NC_VERSION: "23.0.6"
     PKR_VAR_NC_TAG: "nmcrel23.0.6-17"
-    PKR_VAR_theme_tag: $CI_COMMIT_TAG
+    PKR_VAR_THEME_TAG: $CI_COMMIT_TAG
   trigger:
     project: nextmagentacloud/images
-    branch: master
+    branch: nmc/1146
     strategy: depend
   only:
     - /^dev2-.*$/
