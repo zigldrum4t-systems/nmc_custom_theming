@@ -60,7 +60,11 @@ script('settings', [
     </div>
 
 
-    <div class="personal-settings-setting-box">
+		<div class="personal-settings-setting-box personal-settings-language-box">
+			<div id="vue-language-section"></div>
+		</div>
+
+    <div class="personal-settings-setting-box" style="display:none">
     <?php if (isset($_['activelanguage'])) { ?>
         <form id="language" class="section">
           <h3>
@@ -97,7 +101,7 @@ script('settings', [
     </div>
   </div>
   <div class="profile-settings-container">
-    <div id="vue-emailsection" class="section"></div>
+  <div id="vue-email-section"></div>
     <!-- <span class="msg"></span> -->
   </div>
   <div class="telekom-link">
@@ -204,9 +208,11 @@ script('settings', [
     <strong><?php p($l->t('Storage')); ?></strong>: <?php p($_['total_space']); ?>
     </div>
     <div>
+      <a href="https://cloud.telekom-dienste.de/tarife" target="_blank">
         <button>
         <?php print_unescaped($l->t('Expand storage')); ?>
         </button>
+      </a>
     </div>
 <div>
 
