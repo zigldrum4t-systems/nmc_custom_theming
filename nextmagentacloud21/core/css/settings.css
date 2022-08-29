@@ -635,9 +635,9 @@
     display: none;
   }
 
-  .email-actions-container .action-item__menutoggle[data-v-eff40d78]:hover,
-  .email-actions-container .action-item__menutoggle[data-v-eff40d78]:active,
-  .email-actions-container .action-item__menutoggle[data-v-eff40d78]:focus
+   .email-actions-container .action-item__menutoggle[data-v-2a98ba3b]:hover,
+  .email-actions-container .action-item__menutoggle[data-v-2a98ba3b]:active,
+  .email-actions-container .action-item__menutoggle[data-v-2a98ba3b]:focus
   {
     background-color: unset !important;
   }
