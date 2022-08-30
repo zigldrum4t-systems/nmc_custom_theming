@@ -2127,7 +2127,7 @@
 
   .oc-dialog .oc-dialog-close:hover,
  #uploadprogresswrapper .icon-close:hover,
- aside .icon-close:hover,
+ .app-sidebar__close:hover,
  .oc-conflict-pre-dlg-close-div a:hover,
  .nmc_welcome_popup-header button.modal-default-button:hover {
    filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
