@@ -1,9 +1,7 @@
-<?php
-script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
-?>
 <div id="app-navigation">
-  <ul class="with-icon">
-    <?php
+	<ul class="with-icon">
+
+		<?php
 
     if(isset($_['navigationItems']['nmc_files_activity'])){
       $customNavigationItems['nmc_files_activity'] = $_['navigationItems']['nmc_files_activity'];
@@ -19,12 +17,11 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
     $customNavigationItems['sharingin']['name'] = ($l->t('Shared with me'));
 
     $customNavigationItems['trashbin'] = $_['navigationItems']['trashbin'];
-    $pinned = 0;
-
-    foreach ($customNavigationItems as $item) {
+		$pinned = 0;
+		foreach ($customNavigationItems as $item) {
       $pinned = NavigationListElements($item, $l, $pinned);
     }
-    ?>
+		?>
 
   </ul>
 
@@ -44,36 +41,37 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
       </div>
     </div>
 
-    <span class="memory-ocup-message" data-extr="<?php echo $_['usage_relative']; ?>">
-      <?php p($l->t('Memory used up to %s%%', [$_['usage_relative']])); ?>
-    </span>
-
+  <span class="memory-ocup-message" data-extr="<?php echo $_['usage_relative']; ?>">
+    <?php p($l->t('Memory used up to %s%%', [$_['usage_relative']])); ?>
+  </span>
   </div>
-
   <div class="custom-button">
     <a href="https://cloud.telekom-dienste.de/tarife" target="_blank"><button type="button" class="btn btn-default btn-style"> <?php p($l->t('Expand storage')); ?></button></a>
   </div>
-  <div id="app-settings">
-    <div id="app-settings-header">
-      <button class="settings-button" data-apps-slide-toggle="#app-settings-content">
-        <?php p($l->t('Display settings')); ?>
-      </button>
-    </div>
-    <div id="app-settings-content">
-      <div id="files-app-settings"></div>
-      <div id="files-setting-showhidden">
-        <input class="checkbox" id="showhiddenfilesToggle" checked="checked" type="checkbox">
-        <label for="showhiddenfilesToggle"><?php p($l->t('Show hidden files')); ?></label>
-      </div>
-      <div id="files-setting-cropimagepreviews">
-        <input class="checkbox" id="cropimagepreviewsToggle" checked="checked" type="checkbox">
-        <label for="cropimagepreviewsToggle"><?php p($l->t('Crop image previews')); ?></label>
-      </div>
-
-    </div>
-  </div>
+	<div id="app-settings">
+		<div id="app-settings-header">
+			<button class="settings-button"
+					data-apps-slide-toggle="#app-settings-content">
+				<?php p($l->t('Display settings')); ?>
+			</button>
+		</div>
+		<div id="app-settings-content">
+			<div id="files-app-settings"></div>
+			<div id="files-setting-showhidden">
+				<input class="checkbox" id="showhiddenfilesToggle"
+					   checked="checked" type="checkbox">
+				<label for="showhiddenfilesToggle"><?php p($l->t('Show hidden files')); ?></label>
+			</div>
+			<div id="files-setting-cropimagepreviews">
+				<input class="checkbox" id="cropimagepreviewsToggle"
+					   checked="checked" type="checkbox">
+				<label for="cropimagepreviewsToggle"><?php p($l->t('Crop image previews')); ?></label>
+			</div>
+		</div>
+	</div>
 
 </div>
+
 
 <?php
 
@@ -86,37 +84,46 @@ script(\OCA\Files\AppInfo\Application::APP_ID, 'dist/files-app-settings');
  *
  * @return int Returns the pinned value
  */
-function NavigationListElements($item, $l, $pinned)
-{
-  strpos($item['classes'] ?? '', 'pinned') !== false ? $pinned++ : ''; ?>
-  <li data-id="<?php p($item['id']) ?>" <?php if (isset($item['dir'])) { ?> data-dir="<?php p($item['dir']); ?>" <?php } ?> <?php if (isset($item['view'])) { ?> data-view="<?php p($item['view']); ?>" <?php } ?> <?php if (isset($item['expandedState'])) { ?> data-expandedstate="<?php p($item['expandedState']); ?>" <?php } ?> class="nav-<?php p($item['id']) ?>
+function NavigationListElements($item, $l, $pinned) {
+	strpos($item['classes'] ?? '', 'pinned') !== false ? $pinned++ : ''; ?>
+	<li
+		data-id="<?php p($item['id']) ?>"
+		<?php if (isset($item['dir'])) { ?> data-dir="<?php p($item['dir']); ?>" <?php } ?>
+		<?php if (isset($item['view'])) { ?> data-view="<?php p($item['view']); ?>" <?php } ?>
+		<?php if (isset($item['expandedState'])) { ?> data-expandedstate="<?php p($item['expandedState']); ?>" <?php } ?>
+		class="nav-<?php p($item['id']) ?>
 		<?php if (isset($item['classes'])) {
-      p($item['classes']);
-    } ?>
+		p($item['classes']);
+	} ?>
 		<?php p($pinned === 1 ? 'first-pinned' : '') ?>
-		<?php if (isset($item['defaultExpandedState']) && $item['defaultExpandedState']) { ?> open<?php } ?>" <?php if (isset($item['folderPosition'])) { ?> folderposition="<?php p($item['folderPosition']); ?>" <?php } ?>>
+		<?php if (isset($item['defaultExpandedState']) && $item['defaultExpandedState']) { ?> open<?php } ?>"
+		<?php if (isset($item['folderPosition'])) { ?> folderposition="<?php p($item['folderPosition']); ?>" <?php } ?>>
 
-    <a href="<?php p(isset($item['href']) ? $item['href'] : '#') ?>" class="nav-icon-<?php p(isset($item['icon']) && $item['icon'] !== '' ? $item['icon'] : $item['id']) ?> svg"><?php p($item['name']); ?></a>
+		<a href="<?php p(isset($item['href']) ? $item['href'] : '#') ?>"
+		   class="nav-icon-<?php p(isset($item['icon']) && $item['icon'] !== '' ? $item['icon'] : $item['id']) ?> svg"><?php p($item['name']); ?></a>
 
-    <?php
-    NavigationElementMenu($item);
-    if (isset($item['sublist'])) {
-    ?>
-      <?php if ($item['id'] != "favorites") { ?>
-        <button class="collapse app-navigation-noclose" <?php if (sizeof($item['sublist']) == 0) { ?> style="display: none" <?php } ?>></button>
-      <?php } ?>
-      <ul id="sublist-<?php p($item['id']); ?>">
-        <?php
-        foreach ($item['sublist'] as $item) {
-          $pinned = NavigationListElements($item, $l, $pinned);
-        } ?>
-      </ul>
-    <?php
-    } ?>
-  </li>
 
-  <?php
-  return $pinned;
+		<?php
+		NavigationElementMenu($item);
+	if (isset($item['sublist'])) {
+		?>
+			<button class="collapse app-navigation-noclose"
+				aria-label="<?php p($l->t('Toggle %1$s sublist', $item['name'])) ?>"
+				<?php if (sizeof($item['sublist']) == 0) { ?> style="display: none" <?php } ?>>
+			</button>
+			<ul id="sublist-<?php p($item['id']); ?>">
+				<?php
+				foreach ($item['sublist'] as $item) {
+					$pinned = NavigationListElements($item, $l, $pinned);
+				} ?>
+			</ul>
+		<?php
+	} ?>
+	</li>
+
+
+	<?php
+	return $pinned;
 }
 
 /**
@@ -126,22 +133,23 @@ function NavigationListElements($item, $l, $pinned)
  *
  * @return void
  */
-function NavigationElementMenu($item)
-{
-  if (isset($item['menubuttons']) && $item['menubuttons'] === 'true') {
-  ?>
-    <div id="dotmenu-<?php p($item['id']); ?>" class="app-navigation-entry-utils" <?php if (isset($item['enableMenuButton']) && $item['enableMenuButton'] === 0) { ?> style="display: none" <?php } ?>>
-      <ul>
-        <li class="app-navigation-entry-utils-menu-button svg">
-          <button id="dotmenu-button-<?php p($item['id']) ?>"></button>
-        </li>
-      </ul>
-    </div>
-    <div id="dotmenu-content-<?php p($item['id']) ?>" class="app-navigation-entry-menu">
-      <ul>
+function NavigationElementMenu($item) {
+	if (isset($item['menubuttons']) && $item['menubuttons'] === 'true') {
+		?>
+		<div id="dotmenu-<?php p($item['id']); ?>"
+			 class="app-navigation-entry-utils" <?php if (isset($item['enableMenuButton']) && $item['enableMenuButton'] === 0) { ?> style="display: none"<?php } ?>>
+			<ul>
+				<li class="app-navigation-entry-utils-menu-button svg">
+					<button id="dotmenu-button-<?php p($item['id']) ?>"></button>
+				</li>
+			</ul>
+		</div>
+		<div id="dotmenu-content-<?php p($item['id']) ?>"
+			 class="app-navigation-entry-menu">
+			<ul>
 
-      </ul>
-    </div>
-<?php
-  }
+			</ul>
+		</div>
+	<?php
+	}
 }
