@@ -654,6 +654,10 @@
     background-color: unset !important;
   }
 
+ .token-list .more .action-item__menutoggle:hover{
+  background-color: unset !important;
+  }
+
 
 
   /*Setting #1 changes*/
