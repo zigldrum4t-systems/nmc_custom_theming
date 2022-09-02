@@ -89,11 +89,15 @@ div.crumb {
     background-image: var(--icon-h1-custom) !important;
 }
 
-.icon-checkmark {
+.icon-checkmark,
+.icon-tasklist
+{
     background-image: var( --icon-checkbox-custom) !important;
 }
 
-.icon-checkmark:hover {
+.icon-checkmark:hover,
+.icon-tasklist:hover
+ {
     background-image: var( --icon-checkbox-magenta) !important;
 }
 
@@ -139,6 +143,15 @@ div.crumb {
 
 .icon-h6 {
     background-image: var(--icon-h6-custom) !important;
+}
+
+.icon-info:hover,
+.icon-table:hover,
+.icon-emoji:hover,
+.icon-help:hover,
+.icon-underline:hover
+{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
 .newFileMenu .icon-upload {
@@ -682,3 +695,7 @@ aside .icon-star{
   background-image: var(--icon-deselect-custom) !important;
 }
 
+/* Sharing folder icon */
+#fileList [data-icon="/apps/theming/img/core/filetypes/folder-shared.svg?v=0"] .thumbnail {
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+}
