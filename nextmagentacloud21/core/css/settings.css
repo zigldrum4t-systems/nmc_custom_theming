@@ -59,7 +59,7 @@
     font-family: TeleNeoWeb, TeleNeo, sans-serif;
   }
 
-  select#languageinput{
+  select#language{
     width: 400px ;
     height:48px !important;
     padding:0.75rem 0.75rem 0.75rem 0.688rem;
@@ -335,19 +335,19 @@
   }
 
   .create-session{
-    margin-top: 0.5rem;
+    margin-top: 0.5rem !important;
     padding: 0.563rem 1.5rem !important;
     border-color: #e20074 !important;
     color: #ffffff !important;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 8px !important;
     font-family: TeleNeoWeb, TeleNeo, sans-serif !important;
-    font-size: 1rem;
+    font-size: 1rem !important;
     line-height: 1.42857143;
     cursor: pointer;
     font-weight: 400;
     background-color: #e20074 !important;
-    margin-bottom: 8rem;
+    margin-bottom: 8rem !important;
   }
 
   .app-password-code a{
@@ -563,8 +563,28 @@
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
   }
 
-  .add-button:not(:disabled):not(.primary):active{
+  .button-vue:not(:disabled):not(.primary):active{
   color: #e20074;
+  }
+
+  .button-vue__text[data-v-27e36536]{
+		color: #e20074;
+		font-size: 16px;
+		font-family: TeleNeoWeb, TeleNeo, sans-serif;
+		font-weight: initial !important;
+		height: 20px;
+  }
+
+ .multiple-mail .button-vue--vue-tertiary[data-v-27e36536]:hover:not(:disabled){
+   background-color: unset !important;
+ }
+
+ .multiple-mail .button-vue:disabled{
+   display: none;
+ }
+
+  .button-vue__wrapper{
+    align-items: flex-start !important;
   }
 
   table#app-tokens-table thead tr{
@@ -610,5 +630,34 @@
   #body-settings{
   overflow-x: unset;
   }
+
+  .settings-menu ul li[data-id='user_status-menuitem']{
+    display: none;
+  }
+
+   .email-actions-container .action-item__menutoggle[data-v-2a98ba3b]:hover,
+  .email-actions-container .action-item__menutoggle[data-v-2a98ba3b]:active,
+  .email-actions-container .action-item__menutoggle[data-v-2a98ba3b]:focus
+  {
+    background-color: unset !important;
+  }
+
+  .material-design-icon__svg{
+    display: none !important;
+  }
+
+  .personal-settings-language-box > section{
+    padding-left: 0px !important;
+  }
+
+  .multiple-mail button:not(.button-vue):disabled{
+    background-color: unset !important;
+  }
+
+ .token-list .more .action-item__menutoggle:hover{
+  background-color: unset !important;
+  }
+
+
 
   /*Setting #1 changes*/

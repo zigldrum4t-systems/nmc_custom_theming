@@ -136,15 +136,31 @@
             </div>
             <nav class="settings-menu" id="expanddiv" style="display:none;" aria-label="<?php p($l->t('Settings menu')); ?>">
               <ul>
+              <?php
+                  $arr['Kundencenter'] = array( "id" => "kundencenter",
+                  "order" => 8,
+                  "href" => 'https://www.telekom.de/mein-kundencenter',
+                  "target" =>'_blank',
+                  "icon" => "settings/img/Kundencenter.svg",
+                  "type" => "Kundencenter",
+                  "name" => "Kundencenter",
+                  "active" => '',
+                  "classes" => '',
+                  "unread" => 0);
+                 array_splice($_['settingsnavigation'], count($_['settingsnavigation'])-1, 0,$arr);
+                ?>
                 <?php foreach ($_['settingsnavigation'] as $entry) : ?>
                   <li data-id="<?php p($entry['id']); ?>">
-                  <a href="<?php $entry['id'] == "help" ? print_unescaped("https://cloud.telekom-dienste.de/hilfe") : print_unescaped($entry['href']); ?>" <?php if ($entry["active"]) : ?> class="active" <?php endif; ?> target="<?php $entry['id'] == "help" ? print_unescaped("_blank") : print_unescaped("_self"); ?>">
+                  <a href="<?php $entry['id'] == "help" ? print_unescaped("https://cloud.telekom-dienste.de/hilfe") : print_unescaped($entry['href']); ?>" <?php if ($entry["active"]) : ?> class="active" <?php endif; ?> target="<?php ($entry['id'] == "help" || $entry['id'] == "kundencenter") ? print_unescaped("_blank") : print_unescaped("_self"); ?>">
                       <?php if ($entry['id'] == "settings") { ?>
                         <img alt="" src="<?php print_unescaped(image_path($_['appid'],'settings/img/admin.svg') . '?v=' . $_['versionHash']); ?>">
                         <?php p($entry['name']); ?>
                       <?php } elseif ($entry['id'] == "help") { ?>
                         <img alt="" src="<?php print_unescaped(image_path($_['appid'],'settings/img/help.svg') . '?v=' . $_['versionHash']); ?>">
                         <?php p($l->t('Help & FAQ')); ?>
+                      <?php } elseif ($entry['id'] == "kundencenter") { ?>
+                        <img alt="" src="<?php print_unescaped(image_path($_['appid'],'settings/img/Kundencenter.svg') . '?v=' . $_['versionHash']); ?>">
+                      <?php p($l->t('Kundencenter')); ?>
                       <?php } elseif ($entry['id'] == "logout") { ?>
                         <img alt="" src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
                         <?php p($l->t('Logout')); ?>
