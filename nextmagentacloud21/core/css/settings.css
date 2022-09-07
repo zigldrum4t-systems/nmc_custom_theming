@@ -519,8 +519,8 @@
   .profile-settings-container form.section > div:nth-child(1) .email-actions-container,
   .email-actions-container .icon-checkmark,
   .personal-settings-setting-box #language em,
-  .multiple-mail .actions-federation
-  {
+  .multiple-mail .actions-federation,
+  .profile-settings-container .material-design-icon__svg{
   display: none !important;
   }
 
@@ -642,9 +642,6 @@
     background-color: unset !important;
   }
 
-  /* .material-design-icon__svg{
-    display: none !important;
-  } */
 
   .personal-settings-language-box > section{
     padding-left: 0px !important;
