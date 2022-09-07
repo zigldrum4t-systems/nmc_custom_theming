@@ -414,7 +414,7 @@ div.crumb {
     background-image: url(../../core/img/icons/next-icon-white.svg) !important;
 }
 
-.icon-play {
+.icon-play,.play-icon {
     background-image: url(../../core/img/icons/play-icon-white.svg) !important;
 }
 

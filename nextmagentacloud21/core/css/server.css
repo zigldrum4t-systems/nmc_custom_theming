@@ -1714,13 +1714,13 @@ opacity: unset !important;
 
  .icon-previous::before,
  .icon-next::before,
- .icon-play::before {
+ .play-icon::before {
      content: '' !important;
  }
 
  .icon-previous,
  .icon-next,
- .icon-play {
+ .play-icon {
      width: 40px !important;
      height: 40px !important;
      margin: 0 !important;
@@ -1728,7 +1728,7 @@ opacity: unset !important;
      background-size: cover;
  }
 
- #viewer .play-pause {
+ #viewer .play-pause-icons {
      position: fixed;
      left: 50%;
      top: 0;
@@ -1777,16 +1777,16 @@ opacity: unset !important;
      background: none;
  }
 
- .modal-mask .play-pause .progress-ring {
+ .modal-mask .play-pause-icons .progress-ring {
      top: 10px !important;
-     left: -5px !important;
+     left: 0px !important;
  }
 
  #viewer circle.progress-ring__circle {
      r: 20;
  }
 
- .modal-header .icons-menu .play-pause .icon-pause {
+ .modal-header .icons-menu .play-pause-icons .icon-pause {
      opacity: 1;
      border-radius: 22px;
      background-color: rgb(255 255 255 / 25%);
@@ -1796,6 +1796,13 @@ opacity: unset !important;
      padding: 9px !important;
  }
 
+ #viewer .modal-wrapper .material-design-icon__svg, #viewer .play-icon .material-design-icon__svg {
+  display: none;
+}
+
+#viewer .close-icon .material-design-icon__svg,#viewer .pause-icon .material-design-icon__svg  {
+  color:#fff;
+}
  #content.app-files_sharing.mobile-content.content-translation {
   top: 120px !important;
   }
@@ -2390,7 +2397,7 @@ opacity: unset !important;
      }
      .icon-previous,
      .icon-next,
-     .icon-play {
+     .play-icon {
          width: 24px !important;
          height: 24px !important;
      }
