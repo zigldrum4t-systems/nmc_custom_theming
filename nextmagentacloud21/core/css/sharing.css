@@ -846,11 +846,11 @@ form div{
     min-height: 24px !important;
   }
 
-  .items span,
+  /* .items span,
   .material-design-icon__svg
   {
     display:none !important;
-  }
+  } */
 
   .items div {
     min-height:32px !important

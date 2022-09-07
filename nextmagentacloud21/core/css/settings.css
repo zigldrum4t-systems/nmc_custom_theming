@@ -642,9 +642,9 @@
     background-color: unset !important;
   }
 
-  .material-design-icon__svg{
+  /* .material-design-icon__svg{
     display: none !important;
-  }
+  } */
 
   .personal-settings-language-box > section{
     padding-left: 0px !important;
