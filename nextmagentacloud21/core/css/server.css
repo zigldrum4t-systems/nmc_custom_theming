@@ -1182,11 +1182,14 @@
  .menubar button:focus,
  .menubar button:active,
  #editor .action-item__menutoggle:hover,
- #editor .action-item__menutoggle:active{
+ #editor .action-item__menutoggle:active,
+.table-settings .action-item__menutoggle:active,
+.table-settings .action-item__menutoggle[data-v-2a98ba3b]:focus
+{
      background-color: unset !important;
- }
+}
 
- .submenu .popovermenu {
+.submenu .popovermenu {
      box-shadow: var(--scl-shadow-level-2);
      padding: 0.813rem 0.625rem;
      border-radius: 8px;
