@@ -1754,9 +1754,11 @@ opacity: unset !important;
  }
 
  #viewer .modal-container {
-     height: 100% !important;
-     max-height: 100% !important;
- }
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    width: 85% !important;
+}
 
  #viewer .modal-container > * {
    z-index: 999999;
