@@ -962,6 +962,10 @@ aside .action-button p {
   background-color: #fff !important;
 }
 
+#app-sidebar-vue .material-design-icon__svg{
+  display: none;
+}
+
 
 /***pending shares***/
 
