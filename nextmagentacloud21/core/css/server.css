@@ -1064,7 +1064,9 @@
  }
 
  #rich-workspace .menubar{
-   z-index: 50 !important
+   z-index: 50 !important;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
  }
  #filestable {
      padding-top: 16px;

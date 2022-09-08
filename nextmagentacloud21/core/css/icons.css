@@ -98,7 +98,7 @@ div.crumb {
   background-image: var( --icon-tasklist-custom) !important;
 }
 
-.icon-checkmark:hover,
+.icon-checkmark:hover
 {
     background-image: var( --icon-checkbox-magenta) !important;
 }
