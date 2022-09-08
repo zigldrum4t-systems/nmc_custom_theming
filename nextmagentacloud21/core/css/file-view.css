@@ -914,7 +914,7 @@ padding-top:4px !important;
   background-size: 1rem;
 }
 
-.modal-mask:not(#viewer) .modal-header{
+.modal-mask:not(#viewer) .modal-header,
+#editor .menubar-icons .submenu:nth-last-child(7) {
   display: none !important;
 }
-

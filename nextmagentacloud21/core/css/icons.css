@@ -737,3 +737,7 @@ aside .icon-star{
   background-image: var(--icon-upload-custom) !important;
 }
 
+#editor .action-item__menutoggle--default-icon{
+  background-position: center;
+}
+
