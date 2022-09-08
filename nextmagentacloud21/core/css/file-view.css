@@ -869,3 +869,52 @@ table td.filename .uploadtext {
   display: block;
   padding: 16px !important;
 }
+
+.table-wrapper .material-design-icon__svg,
+#editor-wrapper .material-design-icon__svg
+{
+  display: none;
+}
+
+.icon-table_settings,
+#editor .menubar-icons
+{
+    width: 24px !important;
+    height: 24px !important;
+    background-size: unset !important;
+    opacity: unset !important;
+    min-height: unset !important;
+}
+
+#editor-wrapper div.ProseMirror table tr:hover{
+  background-color: var(--color-background-dark) !important;
+}
+
+.table-wrapper th .content{
+  padding-right: 4px;
+}
+
+.action-item.action-item--open .action-item__menutoggle.action-item__menutoggle--with-icon-slot{
+  background-image: unset!important;
+}
+
+.editor__content .menububble__button[data-v-462c6fa4]{
+  padding-top:4px !important;
+}
+
+.menububble__button[data-v-462c6fa4] {
+padding-top:4px !important;
+}
+
+.menububble .icon-link,
+.menububble .icon-file,
+.menububble .icon-delete{
+  min-width: 1rem;
+  min-height: 1rem;
+  background-size: 1rem;
+}
+
+.modal-mask:not(#viewer) .modal-header{
+  display: none !important;
+}
+
