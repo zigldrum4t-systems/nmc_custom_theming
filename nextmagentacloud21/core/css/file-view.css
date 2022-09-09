@@ -918,3 +918,11 @@ padding-top:4px !important;
 #editor .menubar-icons .submenu:nth-last-child(7) {
   display: none !important;
 }
+
+#editor .action-item__menutoggle[data-v-2a98ba3b]:focus,
+#app-sidebar-vue .action-item__menutoggle:active,
+#app-sidebar-vue .action-item__menutoggle:focus
+{
+  background-color: unset !important;
+}
+

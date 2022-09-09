@@ -1631,6 +1631,7 @@ opacity: unset !important;
 
  #viewer  .richEditor .action-item__menutoggle--default-icon {
    filter: unset !important;
+   background-position: center !important;
  }
 
  #viewer {
@@ -2353,6 +2354,9 @@ opacity: unset !important;
      .menubar button {
          margin-right: 0rem !important;
      }
+     #editor .menubar button {
+        margin-right: 1rem !important;
+    }
      .menubar button.icon-redo {
          margin-right: 0.5rem !important;
          margin-left: 0.5rem !important;
