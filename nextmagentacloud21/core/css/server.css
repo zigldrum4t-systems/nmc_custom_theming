@@ -756,9 +756,10 @@
      color: var(--color-main-text);
  }
 
- .material-design-icon__svg{
+ .app-photos .material-design-icon__svg{
     color:#fff;
  }
+
  
  #app-settings-header .settings-button.opened {
      border-top: unset !important;
