@@ -89,15 +89,17 @@ div.crumb {
     background-image: var(--icon-h1-custom) !important;
 }
 
-.icon-checkmark,
-.icon-tasklist
+.icon-checkmark
 {
     background-image: var( --icon-checkbox-custom) !important;
 }
 
-.icon-checkmark:hover,
-.icon-tasklist:hover
- {
+.icon-tasklist{
+  background-image: var( --icon-tasklist-custom) !important;
+}
+
+.icon-checkmark:hover
+{
     background-image: var( --icon-checkbox-magenta) !important;
 }
 
@@ -145,11 +147,12 @@ div.crumb {
     background-image: var(--icon-h6-custom) !important;
 }
 
-.icon-info:hover,
 .icon-table:hover,
 .icon-emoji:hover,
 .icon-help:hover,
-.icon-underline:hover
+.icon-underline:hover,
+.icon-tasklist:hover,
+.popover__inner .icon-folder:hover
 {
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
@@ -204,6 +207,7 @@ div.crumb {
 #viewer  .richEditor .action-item__menutoggle--default-icon,
 .modal-mask--dark#viewer   .action-item__menutoggle--default-icon  {
     background-image: var(--icon-more-custom);
+    background-repeat: no-repeat;
 }
 
 .icon-clippy {
@@ -706,3 +710,41 @@ aside .icon-star{
 #fileList [data-icon="/apps/theming/img/core/filetypes/folder-shared.svg?v=0"] .thumbnail {
   background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
 }
+
+.icon-table_settings{
+  background-image: var(--icon-table-settings-custom) !important;
+
+}
+
+.icon-table_settings:hover{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+.icon-underline{
+  background-image: var(--icon-underline-custom) !important;
+}
+
+.icon-table {
+  background-image: var(--icon-table-custom) !important;
+}
+
+.icon-emoji{
+  background-image: var(--icon-emoji-custom) !important;
+}
+
+.icon-help {
+  background-image: var(--icon-help-custom) !important;
+}
+
+.icon-folder{
+  background-image: var(--icon-text-folder) !important;
+}
+
+.icon-upload{
+  background-image: var(--icon-upload-custom) !important;
+}
+
+#editor .action-item__menutoggle--default-icon{
+  background-position: center;
+}
+

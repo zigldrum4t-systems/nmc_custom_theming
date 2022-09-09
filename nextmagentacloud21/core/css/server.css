@@ -1069,7 +1069,9 @@
  }
 
  #rich-workspace .menubar{
-   z-index: 50 !important
+   z-index: 50 !important;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
  }
  #filestable {
      padding-top: 16px;
@@ -1163,7 +1165,8 @@
      margin-right: 0.5rem !important;
  }
 
- .menubar button {
+ .menubar button
+ {
      width: 24px !important;
      height: 24px !important;
      background-size: unset !important;
@@ -1183,12 +1186,15 @@
  .menubar button:hover,
  .menubar button:focus,
  .menubar button:active,
- #editor .action-item__menutoggle:hover
- {
+ #editor .action-item__menutoggle:hover,
+ #editor .action-item__menutoggle:active,
+.table-settings .action-item__menutoggle:active,
+.table-settings .action-item__menutoggle[data-v-2a98ba3b]:focus
+{
      background-color: unset !important;
- }
+}
 
- .submenu .popovermenu {
+.submenu .popovermenu {
      box-shadow: var(--scl-shadow-level-2);
      padding: 0.813rem 0.625rem;
      border-radius: 8px;
@@ -1243,7 +1249,7 @@
      line-height: 120% !important;
  }
 
- #editor-wrapper .submenu button.icon-h1,
+
  #editor-wrapper .submenu button.icon-h2,
  #editor-wrapper .submenu button.icon-h3,
  #editor-wrapper .submenu button.icon-h4,
@@ -1630,6 +1636,7 @@ opacity: unset !important;
 
  #viewer  .richEditor .action-item__menutoggle--default-icon {
    filter: unset !important;
+   background-position: center !important;
  }
 
  #viewer {
@@ -1698,14 +1705,14 @@ opacity: unset !important;
      margin-right: 1.5rem !important;
  }
 
- #viewer .action-item__menutoggle--default-icon {
-     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(148deg) brightness(105%) contrast(101%);
-     min-width: 24px;
-     min-height: 24px;
-     height: 24px;
-     padding: 0 !important;
-     opacity: 1 !important;
- }
+ #viewer .modal-header .action-item__menutoggle--default-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(148deg) brightness(105%) contrast(101%);
+  min-width: 24px;
+  min-height: 24px;
+  height: 24px;
+  padding: 0 !important;
+  opacity: 1 !important;
+}
 
  #viewer .action-item.action-item--single.header-close {
      background-image: unset !important;
@@ -1758,9 +1765,11 @@ opacity: unset !important;
  }
 
  #viewer .modal-container {
-     height: 100% !important;
-     max-height: 100% !important;
- }
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    width: 85% !important;
+}
 
  #viewer .modal-container > * {
    z-index: 999999;
@@ -2357,6 +2366,9 @@ opacity: unset !important;
      .menubar button {
          margin-right: 0rem !important;
      }
+     #editor .menubar button {
+        margin-right: 1rem !important;
+    }
      .menubar button.icon-redo {
          margin-right: 0.5rem !important;
          margin-left: 0.5rem !important;
