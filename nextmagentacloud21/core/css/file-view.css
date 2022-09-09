@@ -926,3 +926,7 @@ padding-top:4px !important;
   background-color: unset !important;
 }
 
+#viewer .download-icon .material-design-icon__svg{
+  color: #fff;
+}
+
