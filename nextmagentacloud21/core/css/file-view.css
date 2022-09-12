@@ -914,8 +914,9 @@ padding-top:4px !important;
   background-size: 1rem;
 }
 
-.modal-mask:not(#viewer) .modal-header,
-#editor .menubar-icons .submenu:nth-last-child(7) {
+#editor .menubar-icons .submenu:nth-last-child(7),
+#text-app .modal-header
+ {
   display: none !important;
 }
 
@@ -929,4 +930,5 @@ padding-top:4px !important;
 #viewer .download-icon .material-design-icon__svg{
   color: #fff;
 }
+
 

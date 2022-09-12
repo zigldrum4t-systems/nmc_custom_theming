@@ -736,7 +736,7 @@ aside .icon-star{
   background-image: var(--icon-help-custom) !important;
 }
 
-.icon-folder{
+.popover__inner .icon-folder{
   background-image: var(--icon-text-folder) !important;
 }
 
