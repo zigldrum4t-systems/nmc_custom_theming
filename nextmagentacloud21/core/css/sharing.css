@@ -899,7 +899,7 @@ form div{
   .mx-datepicker-main .mx-time-header .mx-btn-icon-double-right,
   .mx-datepicker-main .mx-calendar-header .mx-btn-icon-right,
   .mx-datepicker-main .mx-time-header .mx-btn-icon-right {
-   background-image: unset !important;
+   background-image: unset;
   }
 
   aside {
@@ -931,7 +931,7 @@ aside .action-button p {
   display: flex;
   align-items: center;
   border: 1px solid #0998fa;
-  padding: 0.4rem 1.5rem;
+  padding: 0.4rem 1rem;
   border-radius: 8px;
 }
 
@@ -973,6 +973,13 @@ aside .action-button p {
 aside ul.sharing-permissions .action label,
 #app .custom-select.select {
   line-height: 1 !important;
+}
+
+.mx-calendar-header button:not(.button-vue){
+  background-color: unset !important;
+  outline: unset !important;
+  font-weight: unset !important;
+  border:unset !important;
 }
 
 
