@@ -902,8 +902,8 @@ table td.filename .uploadtext {
   padding-top:4px !important;
 }
 
-.menububble__button[data-v-462c6fa4] {
-padding-top:4px !important;
+#editor .menububble__button{
+  padding-top:4px !important;
 }
 
 .menububble .icon-link,

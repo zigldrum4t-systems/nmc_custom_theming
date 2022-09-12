@@ -2613,7 +2613,7 @@ opacity: unset !important;
     .modal-wrapper {
       height: 86% !important;
     }
-    #viewer.modal-wrapper {
+    #viewer .modal-wrapper {
       height: 100% !important;
     }
     .profile-settings-container .multiple-mail,
