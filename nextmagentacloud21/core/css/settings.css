@@ -642,6 +642,9 @@
     background-color: unset !important;
   }
 
+  #app-tokens-table .more .material-design-icon__svg{
+    display: none;
+  }
 
   .personal-settings-language-box > section{
     padding-left: 0px !important;
@@ -654,7 +657,5 @@
  .token-list .more .action-item__menutoggle:hover{
   background-color: unset !important;
   }
-
-
 
   /*Setting #1 changes*/
