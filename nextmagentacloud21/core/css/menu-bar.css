@@ -12,7 +12,7 @@
 
 #header .container-fixed .header-left .logo-area .logo-area__inner .header-brandbar-logo>.brandbar-logo-magenta {
     height: 25px;
-    width: 50px;
+    width: 25px;
     fill: #e20074;
     margin-top:0.5rem;
 }
@@ -199,12 +199,6 @@
 
 .brandbar>.container-fixed>.header-brandbar>.header-brandbar-logo {
     padding: 18px 12px 7px;
-}
-
-.brandbar>.container-fixed>.header-brandbar>.header-brandbar-logo>svg {
-    fill: white;
-    height: 36px;
-    width: 73px;
 }
 
 .brandbar>.container-fixed>.header-brandbar>p.header-brandbar-claim {

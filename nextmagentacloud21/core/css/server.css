@@ -1629,9 +1629,16 @@ opacity: unset !important;
    width:100% !important;
    }
 
- #viewer  .richEditor .action-item__menutoggle--default-icon {
-   filter: unset !important;
+ #viewer .richEditor .action-item__menutoggle--default-icon
+ {
+   filter: unset;
    background-position: center !important;
+ }
+
+
+ .richEditor .action-item__menutoggle.icon-table_settings
+ {
+    margin-top: 0.75rem !important;
  }
 
  #viewer {

@@ -902,8 +902,12 @@ table td.filename .uploadtext {
   padding-top:4px !important;
 }
 
-#editor .menububble__button{
-  padding-top:4px !important;
+#editor .menububble__button .menububble__buttontext{
+  font-size: 0.8125rem !important;
+}
+
+#editor .menububble__button:hover{
+  border-right: unset !important;
 }
 
 .menububble .icon-link,
@@ -931,4 +935,18 @@ table td.filename .uploadtext {
   color: #fff;
 }
 
+.editor__content th .action-item,
+.editor__content td:last-child .action-item,
+.table-settings,
+button:not(.button-vue):not(.action-button)>span[class^='icon-']
+{
+  opacity: unset !important;
+}
 
+#editor .action-item__menutoggle--default-icon:hover,
+#viewer .action-item__menutoggle--default-icon:hover,
+.icon-link:hover,
+.menububble .icon-file:hover
+{
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%) !important;
+}

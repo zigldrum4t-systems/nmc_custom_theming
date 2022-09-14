@@ -535,6 +535,13 @@ aside .icon-close,
     background-position-y: 5px;
 }
 
+.menububble .icon-link{
+  background-image: var(--icon-link-text)!important;
+}
+
+ .menububble .icon-file{
+  background-image: var(--icon-file-text)!important;
+}
 /*check-mark-sharing*/
 .icon-checkmark-color {
   background-image: var(--icon-checkmark-magenta)!important;
