@@ -906,8 +906,14 @@ table td.filename .uploadtext {
   font-size: 0.8125rem !important;
 }
 
+#editor .menububble__button:hover span{
+  color: #E20074;
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%) !important;
+}
+
 #editor .menububble__button:hover{
-  border-right: unset !important;
+  border-right: 1px solid #ededed !important;
+  background-color: unset !important;
 }
 
 .menububble .icon-link,
