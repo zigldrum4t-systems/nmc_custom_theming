@@ -891,7 +891,7 @@ form div{
   .mx-datepicker-main .mx-time-header .mx-btn-icon-double-right,
   .mx-datepicker-main .mx-calendar-header .mx-btn-icon-right,
   .mx-datepicker-main .mx-time-header .mx-btn-icon-right {
-   background-image: unset !important;
+   background-image: unset;
   }
 
   aside {
@@ -968,7 +968,32 @@ aside .action-button p {
 
 aside ul.sharing-permissions .action label,
 #app .custom-select.select {
-  line-height: 1 !important;
+  line-height: 1.5 !important;
 }
 
+.mx-calendar-header button:not(.button-vue){
+  background-color: unset !important;
+  outline: unset !important;
+  font-weight: unset !important;
+  border:unset !important;
+}
 
+.sharing-link-list .action-item--single[data-v-2a98ba3b]:hover, 
+.sharing-link-list .action-item--single[data-v-2a98ba3b]:focus, 
+.sharing-link-list .action-item--single[data-v-2a98ba3b]:active, 
+.sharing-link-list .action-item__menutoggle[data-v-2a98ba3b]:hover, 
+.sharing-link-list .action-item__menutoggle[data-v-2a98ba3b]:focus, 
+.sharing-link-list .action-item__menutoggle[data-v-2a98ba3b]:active {
+  background-color: unset !important;
+}
+
+.mx-datepicker-main .mx-calendar-header .mx-btn-icon-double-left:hover,
+.mx-datepicker-main .mx-time-header .mx-btn-icon-double-left:hover,
+.mx-datepicker-main .mx-calendar-header .mx-btn-icon-left:hover,
+.mx-datepicker-main .mx-time-header .mx-btn-icon-left:hover,
+.mx-datepicker-main .mx-calendar-header .mx-btn-icon-double-right:hover,
+.mx-datepicker-main .mx-time-header .mx-btn-icon-double-right:hover,
+.mx-datepicker-main .mx-calendar-header .mx-btn-icon-right:hover,
+.mx-datepicker-main .mx-time-header .mx-btn-icon-right:hover {
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
