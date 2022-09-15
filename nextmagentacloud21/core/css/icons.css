@@ -751,3 +751,7 @@ aside .icon-star{
 .app-sidebar-header__figure[style='background-image: url("/index.php/apps/theming/img/core/filetypes/x-office-document.svg?v=0");']{
   background-image: url('../../core/img/filetypes/text.svg') !important;
 }
+
+.app-sidebar-header__figure[style='background-image: url("/core/img/filetypes/x-office-document.svg");']{
+  background-image: url('../../core/img/filetypes/text.svg') !important;
+}
