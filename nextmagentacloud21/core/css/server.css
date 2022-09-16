@@ -757,10 +757,10 @@
  }
 
  .app-photos .material-design-icon__svg{
-    color:#fff;
+   display: none;
  }
 
- 
+
  #app-settings-header .settings-button.opened {
      border-top: unset !important;
      background-image: var(--icon-triangle-s-e20074);
@@ -823,9 +823,19 @@
      font-size: 16px !important;
  }
 
+ #app-settings__header .settings-button__label[data-v-20bf47dc]{
+    color: #e20074 !important;
+    font-size: 16px !important;
+  }
+
  #app-settings-header .settings-button:hover {
      background-color: unset !important;
      text-decoration: underline !important;
+ }
+
+ #app-settings__header .settings-button__label[data-v-20bf47dc]:hover {
+    background-color: unset !important;
+    text-decoration: underline !important;
  }
 
  #app-settings-header {
