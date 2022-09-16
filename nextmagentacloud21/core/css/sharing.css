@@ -982,12 +982,12 @@ aside ul.sharing-permissions .action label,
   border:unset !important;
 }
 
-.sharing-link-list .action-item--single[data-v-2a98ba3b]:hover, 
-.sharing-link-list .action-item--single[data-v-2a98ba3b]:focus, 
-.sharing-link-list .action-item--single[data-v-2a98ba3b]:active, 
-.sharing-link-list .action-item__menutoggle[data-v-2a98ba3b]:hover, 
-.sharing-link-list .action-item__menutoggle[data-v-2a98ba3b]:focus, 
-.sharing-link-list .action-item__menutoggle[data-v-2a98ba3b]:active {
+.app-sidebar-tabs__content .action-item--single[data-v-2a98ba3b]:hover,
+.app-sidebar-tabs__content .action-item--single[data-v-2a98ba3b]:focus,
+.app-sidebar-tabs__content .action-item--single[data-v-2a98ba3b]:active,
+.app-sidebar-tabs__content .action-item__menutoggle[data-v-2a98ba3b]:hover,
+.app-sidebar-tabs__content .action-item__menutoggle[data-v-2a98ba3b]:focus,
+.app-sidebar-tabs__content .action-item__menutoggle[data-v-2a98ba3b]:active {
   background-color: unset !important;
 }
 
