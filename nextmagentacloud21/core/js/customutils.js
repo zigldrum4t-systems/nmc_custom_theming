@@ -10,7 +10,7 @@ window.onload = function () {
   fileActionButtonSettings();
   breadcrumbAddLabel();
   mobileOnlyClass();
-  webTrackingEvents();
+  //webTrackingEvents();
 };
 
 function brandBarAnimation() {
@@ -185,7 +185,7 @@ if(typeof utag!=='undefined' && utag.view()) {
       page_type : "files" // page type
       }
       utag.view(utag_data);
-    
+
   });
 
   $('#filestable a.action.action-share.permanent').click(function(){
@@ -202,13 +202,13 @@ if(typeof utag!=='undefined' && utag.view()) {
       page_type : "files" // page type
       }
       utag.view(utag_data);
-    
+
 });
-  
+
   window.addEventListener('click',function(e){
     var targetElement = e.target || e.srcElement;
     try{
-      
+
       if(document.getElementById("filestable").classList.contains("view-grid")){
 
 
@@ -219,7 +219,7 @@ if(typeof utag!=='undefined' && utag.view()) {
             page_type : "files" // page type
             }
             utag.view(utag_data);
-  
+
         }
 
         if(targetElement.innerHTML=="Download" || targetElement.innerHTML=="Herunterladen"){
@@ -230,7 +230,7 @@ if(typeof utag!=='undefined' && utag.view()) {
             }
             utag.view(utag_data);
           }
-  
+
         if(targetElement.innerText=="Select all"){
           var utag_data = {
             wt_link_id: "content.checkbox.selectall",
@@ -239,7 +239,7 @@ if(typeof utag!=='undefined' && utag.view()) {
             }
             utag.view(utag_data);
         }
-  
+
         if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
           var utag_data = {
             wt_link_id: "content.button.hover-delete",
@@ -248,8 +248,8 @@ if(typeof utag!=='undefined' && utag.view()) {
             }
             utag.view(utag_data);
         }
-  
-  
+
+
         if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
           var utag_data = {
             wt_link_id: "content.button.hover-move",
@@ -258,8 +258,8 @@ if(typeof utag!=='undefined' && utag.view()) {
             }
             utag.view(utag_data);
         }
-  
-  
+
+
         if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
           var utag_data = {
             wt_link_id: "content.button.hover-copy",
@@ -277,9 +277,9 @@ if(typeof utag!=='undefined' && utag.view()) {
             page_type : "files" // page type
             }
             utag.view(utag_data);
-  
+
         }
-  
+
         if(targetElement.innerText=="Select all"){
           var utag_data = {
             wt_link_id: "content.checkbox.selectall",
@@ -288,7 +288,7 @@ if(typeof utag!=='undefined' && utag.view()) {
             }
             utag.view(utag_data);
         }
-  
+
         if(targetElement.innerHTML=="Delete" || targetElement.innerHTML=="Löschen"){
           var utag_data = {
             wt_link_id: "content.button.hover-delete",
@@ -297,8 +297,8 @@ if(typeof utag!=='undefined' && utag.view()) {
             }
             utag.view(utag_data);
         }
-  
-  
+
+
         if(targetElement.innerHTML=="Move" || targetElement.innerHTML=="Verschieben"){
           var utag_data = {
             wt_link_id: "content.button.hover-move",
@@ -307,8 +307,8 @@ if(typeof utag!=='undefined' && utag.view()) {
             }
             utag.view(utag_data);
         }
-  
-  
+
+
         if(targetElement.innerHTML=="Copy" || targetElement.innerHTML=="Kopieren"){
           var utag_data = {
             wt_link_id: "content.button.hover-copy",
@@ -319,8 +319,8 @@ if(typeof utag!=='undefined' && utag.view()) {
         }
 
       }
-      
-      
+
+
 
       if(targetElement.innerHTML=="Upload file" || targetElement.innerHTML=="Datei hochladen"){
         var utag_data = {
@@ -498,7 +498,7 @@ if(typeof utag!=='undefined' && utag.view()) {
                   }
                   utag.view(utag_data);
               }
-            
+
               if(envent_class[0]!==""){
                   var envent_class0 = envent_class[0].split("svg");
                   if($.trim(envent_class0[0])=="favorites"){
