@@ -10,7 +10,8 @@ window.onload = function () {
   fileActionButtonSettings();
   breadcrumbAddLabel();
   mobileOnlyClass();
-  //webTrackingEvents();
+  webTrackingEvents();
+  leftSidebarEvents()
 };
 
 function brandBarAnimation() {
@@ -609,4 +610,22 @@ if(typeof utag!=='undefined' && utag.view()) {
       }
       });
   }
+}
+
+function leftSidebarEvents() {
+  $('.nav-icon-sharingout').click(function(){
+    window._nc_event_bus.emit('files:navigation:changed')
+  })
+
+  $('.nav-icon-sharingin').click(function(){
+    window._nc_event_bus.emit('files:navigation:changed')
+  })
+
+  $('.nav-icon-favorites').click(function(){
+    window._nc_event_bus.emit('files:navigation:changed')
+  })
+
+  $('.nav-icon-trashbin').click(function(){
+    window._nc_event_bus.emit('files:navigation:changed')
+  })
 }
