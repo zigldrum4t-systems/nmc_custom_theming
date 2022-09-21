@@ -917,7 +917,7 @@ table td.filename .uploadtext {
 }
 
 #editor .menububble__button.is-active{
-padding: unset !important;
+  padding: 0 0.4rem !important;
 }
 
 .menububble .icon-link,
