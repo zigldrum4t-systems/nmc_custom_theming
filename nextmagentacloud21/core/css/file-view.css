@@ -916,6 +916,10 @@ table td.filename .uploadtext {
   background-color: unset !important;
 }
 
+#editor .menububble__button.is-active{
+  padding: 0 0.4rem !important;
+}
+
 .menububble .icon-link,
 .menububble .icon-file,
 .menububble .icon-delete{

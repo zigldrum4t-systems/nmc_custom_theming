@@ -63,9 +63,6 @@ if ($isLoginPage || $isShareAuth) {
           <div class="app-logo brand">
             <img src="/themes/nextmagentacloud21/core/img/1-T-3-logo.svg">
           </div>
-          <div class="app-claim brand">
-            <img src="/themes/nextmagentacloud21/core/img/app-claim-logo.svg">
-          </div>
         </div>
 
       <?php endif; ?>
