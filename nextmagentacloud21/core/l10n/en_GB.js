@@ -272,6 +272,7 @@ OC.L10N.register(
     "Replace all files" : "Replace all files",
     "Help & FAQ": "Help & FAQ",
     "Logout": "Logout",
-    "Your email address has been successfully confirmed and is now in use.": "Your email address has been successfully confirmed and is now in use."
+    "Your email address has been successfully confirmed and is now in use.": "Your email address has been successfully confirmed and is now in use.",
+    "Currently logged in as" : "Currently logged in as"
 },
 "nplurals=2; plural=(n != 1);");
