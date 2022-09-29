@@ -19,8 +19,8 @@
  *
  */
 
-
 style('core', 'login/grant');
+
 
 /** @var array $_ */
 /** @var \OCP\IURLGenerator $urlGenerator */
@@ -28,7 +28,18 @@ $urlGenerator = $_['urlGenerator'];
 ?>
 
 <div class="picker-window">
-
+	<h2><?php p($l->t('Account access')) ?></h2>
+	<p class="info">
+		<?php p($l->t('Currently logged in as'));  ?>
+	</p>
+  <span class="grantinfo"><?php echo $_['userDisplayName']; ?></span>
+	<p class="info">
+		<?php print_unescaped($l->t('You are about to grant %1$s access to your %2$s account.', [
+			'<strong>' . \OCP\Util::sanitizeHTML($_['client']) . '</strong>',
+			\OCP\Util::sanitizeHTML($_['instanceName'])
+		])) ?>
+	</p>
+	<br/>
 	<p id="redirect-link">
 		<form method="POST" action="<?php p($urlGenerator->linkToRouteAbsolute('core.ClientFlowLoginV2.generateAppPassword')) ?>">
 			<input type="hidden" name="requesttoken" value="<?php p($_['requesttoken']) ?>" />

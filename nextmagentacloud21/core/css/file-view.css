@@ -960,3 +960,7 @@ button:not(.button-vue):not(.action-button)>span[class^='icon-']
 {
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%) !important;
 }
+
+#uploadprogresswrapper button:not(.button-vue){
+  min-height: 24px;
+}

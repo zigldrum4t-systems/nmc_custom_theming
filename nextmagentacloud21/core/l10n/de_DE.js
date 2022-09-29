@@ -444,6 +444,7 @@ OC.L10N.register(
     "Search":"Suche",
     "Menu": "Menü",
     "Copied!" : "Kopiert!",
-    "Your email address has been successfully confirmed and is now in use." : "Ihre E-Mail-Adresse wurde erfolgreich bestätigt und wird nun verwendet."
+    "Your email address has been successfully confirmed and is now in use." : "Ihre E-Mail-Adresse wurde erfolgreich bestätigt und wird nun verwendet.",
+    "Currently logged in as" : "Aktuell angemeldet als"
 },
 "nplurals=2; plural=(n != 1);");
