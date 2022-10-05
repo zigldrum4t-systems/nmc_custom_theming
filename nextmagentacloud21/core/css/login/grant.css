@@ -39,7 +39,11 @@
 .login-footer{display: none;}
 .login-main {
   display: block !important;
-  margin-top: 10rem !important;
+  /* margin-top: 10rem !important; */
+}
+
+#body-login{
+  justify-content: unset !important;
 }
 
 
