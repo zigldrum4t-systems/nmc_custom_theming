@@ -1741,8 +1741,9 @@ opacity: unset !important;
  }
 
  #viewer iframe {
-     top: 81px !important;
- }
+  top: 2rem !important;
+  width: 85% !important;
+}
 
  #viewer .viewer__content {
      align-self: start;
