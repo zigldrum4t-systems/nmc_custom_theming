@@ -682,3 +682,17 @@ aside .icon-star{
   background-image: var(--icon-deselect-custom) !important;
 }
 
+/* office new file creation */
+
+.newFileMenu .icon-filetype-document {
+  background-image: url('../../core/img/office_icons_custom/file-text-24.svg') !important;
+}
+
+
+.newFileMenu .icon-filetype-spreadsheet {
+  background-image: url('../../core/img/office_icons_custom/file-calculation-24.svg') !important;
+}
+
+.newFileMenu .icon-filetype-presentation {
+  background-image: url('../../core/img/office_icons_custom/file-presentation-24.svg') !important;
+}

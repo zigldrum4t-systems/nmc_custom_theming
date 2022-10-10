@@ -852,3 +852,10 @@ table td.filename .uploadtext {
 #selectedActionsList .item-tags{
   display: none;
 }
+
+/* office new file creation */
+
+.newFileMenu .menuitem[data-templatename='New diagram.odg'] {
+  display: none;
+}
+
