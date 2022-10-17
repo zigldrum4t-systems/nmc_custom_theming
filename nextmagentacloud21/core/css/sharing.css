@@ -970,14 +970,7 @@ aside ul.sharing-permissions .action label,
   line-height: 1 !important;
 }
 
-#app-sidebar-vue .app-sidebar.app-sidebar--full{
-  height: 100% !important;
-}
-
 #app-sidebar-vue.app-sidebar--full{
   top: 75px !important;
-}
-
-#app-sidebar-vue.app-sidebar--full .sharing-link-list{
-  padding-bottom: 10rem;
+  height: calc(100vh - 145px) !important;
 }
