@@ -4,7 +4,7 @@
   padding: 1rem;
   overflow-x: hidden !important;
   overflow-y: scroll !important;
-  height: calc(100vh - 190px) !important;
+  height: calc(100vh - 190px);
 }
 
 /*thumbnail*/
@@ -965,10 +965,19 @@ aside .action-button p {
 
 /***pending shares***/
 
-
 aside ul.sharing-permissions .action label,
 #app .custom-select.select {
   line-height: 1 !important;
 }
 
+#app-sidebar-vue .app-sidebar.app-sidebar--full{
+  height: 100% !important;
+}
 
+#app-sidebar-vue.app-sidebar--full{
+  top: 75px !important;
+}
+
+#app-sidebar-vue.app-sidebar--full .sharing-link-list{
+  padding-bottom: 10rem;
+}

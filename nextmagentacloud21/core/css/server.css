@@ -597,6 +597,11 @@
      .modal-header {
          width: 1536px !important;
      }
+
+     #viewer .modal-header {
+      width: 100% !important;
+    }
+
      #app-navigation, #app-navigation-vue {
          width: 288px !important;
      }
@@ -628,6 +633,10 @@
      .modal-header {
          width: 1280px !important;
      }
+
+     #viewer .modal-header {
+      width: 100% !important;
+    }
      #app-navigation,#app-navigation-vue,
      #app-sidebar-vue {
          width: 288px !important;
@@ -658,6 +667,11 @@
      .modal-header {
          width: 1024px !important;
      }
+
+     #viewer .modal-header {
+      width: 100% !important;
+    }
+
      #app-navigation,
      #app-sidebar-vue , #app-navigation-vue{
          width: 288px !important;
@@ -687,6 +701,11 @@
      .modal-header {
          width: 100%;
      }
+
+     #viewer .modal-header {
+      width: 100% !important;
+    }
+
      #filestable.view-grid tbody {
          row-gap: 16px !important;
      }
@@ -1608,9 +1627,9 @@
 
  /* preview css*/
 
- .modal-mask.viewer.modal-mask--dark {
-   width:100% !important;
-   }
+#viewer #collaboraframe{
+  width: 100% !important;
+ }
 
  #viewer  .richEditor .action-item__menutoggle--default-icon {
    filter: unset !important;

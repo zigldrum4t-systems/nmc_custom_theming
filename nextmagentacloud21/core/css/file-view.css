@@ -852,3 +852,7 @@ table td.filename .uploadtext {
 #selectedActionsList .item-tags{
   display: none;
 }
+
+#filestable tbody tr[data-e2eencrypted="true"] {
+  background-color: unset !important;
+ }
