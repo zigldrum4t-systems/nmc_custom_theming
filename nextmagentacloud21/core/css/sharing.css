@@ -4,7 +4,7 @@
   padding: 1rem;
   overflow-x: hidden !important;
   overflow-y: scroll !important;
-  height: calc(100vh - 190px) !important;
+  height: calc(100vh - 190px);
 }
 
 /*thumbnail*/
@@ -965,7 +965,6 @@ aside .action-button p {
 
 /***pending shares***/
 
-
 aside ul.sharing-permissions .action label,
 #app .custom-select.select {
   line-height: 1.5 !important;
@@ -996,4 +995,9 @@ aside ul.sharing-permissions .action label,
 .mx-datepicker-main .mx-calendar-header .mx-btn-icon-right:hover,
 .mx-datepicker-main .mx-time-header .mx-btn-icon-right:hover {
   filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
+#app-sidebar-vue.app-sidebar--full{
+  top: 75px !important;
+  height: calc(100vh - 145px) !important;
 }

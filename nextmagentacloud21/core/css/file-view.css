@@ -964,3 +964,7 @@ button:not(.button-vue):not(.action-button)>span[class^='icon-']
 #uploadprogresswrapper button:not(.button-vue){
   min-height: 24px;
 }
+
+#filestable tbody tr[data-e2eencrypted="true"] {
+  background-color: unset !important;
+ }
