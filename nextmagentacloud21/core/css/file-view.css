@@ -870,3 +870,9 @@ table td.filename .uploadtext {
 #filestable tbody tr[data-e2eencrypted="true"] td a{
   pointer-events: none !important;
 }
+
+/* office new file creation */
+
+.newFileMenu .menuitem[data-templatename='New diagram.odg'] {
+  display: none;
+}
