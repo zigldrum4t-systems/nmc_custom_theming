@@ -955,7 +955,7 @@ aside .action-button p {
 }
 
 #filestable tbody tr[data-permissions="0"], #filestable tbody tr[data-permissions="16"]{
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 #app-sidebar-vue .material-design-icon__svg{
@@ -999,5 +999,5 @@ aside ul.sharing-permissions .action label,
 
 #app-sidebar-vue.app-sidebar--full{
   top: 75px !important;
-  height: calc(100vh - 145px) !important;
+  height: calc(100vh - 141px) !important;
 }
