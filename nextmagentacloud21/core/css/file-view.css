@@ -854,5 +854,19 @@ table td.filename .uploadtext {
 }
 
 #filestable tbody tr[data-e2eencrypted="true"] {
-  background-color: unset !important;
- }
+  background-color: #f2f2f2 !important;
+}
+
+#filestable.view-grid:not(.hidden) tbody tr[data-e2eencrypted="true"] td.filename .thumbnail-wrapper{
+  z-index: unset !important;
+}
+
+#filestable tr[data-e2eencrypted="true"] td.filename .nametext .innernametext,
+#filestable tbody tr[data-e2eencrypted="true"] td.filesize,
+#filestable tbody tr[data-e2eencrypted="true"] td.date span {
+    color: #666666 !important;
+}
+
+#filestable tbody tr[data-e2eencrypted="true"] td a{
+  pointer-events: none !important;
+}
