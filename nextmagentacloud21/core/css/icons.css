@@ -599,7 +599,8 @@ aside .icon-star{
 #filestable [data-mime="text/markdown"] .thumbnail,
 #filestable [data-mime="application/msword"] .thumbnail,
 #filestable [data-mime="application/vnd.oasis.opendocument.text"] .thumbnail,
-#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail {
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] .thumbnail,
+#filestable [data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.template"] .thumbnail {
   background-image: url('../../core/img/filetypes/text.svg') !important;
 }
 
