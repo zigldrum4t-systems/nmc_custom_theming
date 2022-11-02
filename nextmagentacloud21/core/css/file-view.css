@@ -966,7 +966,8 @@ button:not(.button-vue):not(.action-button)>span[class^='icon-']
 }
 
 #filestable tbody tr[data-e2eencrypted="true"] {
-  background-color: #f2f2f2 !important;
+  background-color: rgb(242 242 242 / 50%) !important;
+  pointer-events: none !important;
 }
 
 #filestable.view-grid:not(.hidden) tbody tr[data-e2eencrypted="true"] td.filename .thumbnail-wrapper{
@@ -988,3 +989,9 @@ button:not(.button-vue):not(.action-button)>span[class^='icon-']
 .newFileMenu .menuitem[data-templatename='New diagram.odg'] {
   display: none;
 }
+
+#filestable tr[data-e2eencrypted="true"] td input[type="checkbox"].checkbox+label:before {
+	border: 1px solid #cccccc !important;
+}
+
+
