@@ -682,3 +682,9 @@ aside .icon-star{
   background-image: var(--icon-deselect-custom) !important;
 }
 
+/**comment**/
+.fileactions .action-comment .svg[src='/core/img/actions/comment.svg']{
+  content: url('../../core/img/actions/comment-magenta.svg') !important;
+  height: 24px !important;
+  width: 24px !important;
+}

@@ -219,6 +219,7 @@ margin:0 0 0.188rem 0.188rem !important;
     width: auto !important;
     height: 50px;
     flex-direction: row-reverse;
+    margin-left: 32px;
 }
 
 #filestable .icon-public {
@@ -852,3 +853,13 @@ table td.filename .uploadtext {
 #selectedActionsList .item-tags{
   display: none;
 }
+
+/**comment**/
+.action-comment {
+  position:absolute !important;
+  padding-top: 0px !important;
+  padding-bottom: 42px !important;
+}
+
+
+
