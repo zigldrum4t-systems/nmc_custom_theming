@@ -334,8 +334,15 @@
     border-color: #e20074 !important;
   }
 
-  .create-session{
-    margin-top: 0.5rem !important;
+  #settings-input{
+    margin-bottom: 8rem;
+  }
+
+  .create-session,
+  .notecard .button-vue--vue-error,
+  .settings-section .button-vue--vue-warning
+  {
+    margin-top: 0.5rem;
     padding: 0.563rem 1.5rem !important;
     border-color: #e20074 !important;
     color: #ffffff !important;
@@ -347,7 +354,71 @@
     cursor: pointer;
     font-weight: 400;
     background-color: #e20074 !important;
-    margin-bottom: 8rem !important;
+  }
+
+  .notecard .checkbox-radio-switch{
+    display: none !important;
+  }
+
+  .settings-section .button-vue--vue-warning{
+    margin-bottom: 0.5rem !important;
+  }
+
+  .notecard .button-vue--vue-error .button-vue__text,
+  .settings-section .button-vue--vue-warning .button-vue__text,
+  .button-vue--vue-error .button-vue__text
+  {
+    color: #ffffff !important;
+    margin:unset !important;
+  }
+
+  .notecard.warning{
+    background-color: rgb(242 242 242 / 50%) !important;
+    --note-background: rgb(242 242 242 / 50%) !important;
+  }
+
+  .modal-mask.esecurity .modal-header{
+    display:none !important;
+  }
+
+  .modal-mask.esecurity button.button-vue--vue-tertiary {
+    border-radius: 8px !important;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: #ffffff !important;
+    border-color: #191919 !important;
+    color:#191919;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 1.23;
+    border: 1px solid #191919 !important;
+ }
+
+  .modal-mask.esecurity button.button-vue--vue-error{
+    background-color: #e20074 !important;
+    border-color: #e20074 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding:0.625rem 1.5rem !important;
+    height:40px;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.625rem 1.5rem !important;
+    width:auto !important;
+    max-width: 180px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    display:inline-block;
+    line-height: 1.23;
+  }
+
+  .settings-section{
+    padding: 0rem 1rem !important;
+    max-width: 700px;
   }
 
   .app-password-code a{
