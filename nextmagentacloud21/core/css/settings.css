@@ -374,6 +374,7 @@
   .notecard.warning{
     background-color: rgb(242 242 242 / 50%) !important;
     --note-background: rgb(242 242 242 / 50%) !important;
+    border:unset !important;
   }
 
   .modal-mask.esecurity .modal-header{
