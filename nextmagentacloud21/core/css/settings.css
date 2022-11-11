@@ -397,6 +397,10 @@
     border: 1px solid #191919 !important;
  }
 
+ .modal-mask.esecurity button.button-vue--vue-tertiary .button-vue__text[data-v-27e36536]{
+    color:#191919 !important;
+ }
+
  .modal-mask.esecurity button.button-vue--vue-tertiary:hover {
     border-color: #e20074 !important;
     color: #e20074 !important;
