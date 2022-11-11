@@ -369,6 +369,7 @@
   {
     color: #ffffff !important;
     margin:unset !important;
+    font-weight: bold !important;
   }
 
   .notecard.warning{
@@ -384,10 +385,10 @@
   .modal-mask.esecurity button.button-vue--vue-tertiary {
     border-radius: 8px !important;
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: normal !important;
     background-color: #ffffff !important;
     border-color: #191919 !important;
-    color:#191919;
+    color:#191919 !important;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -395,6 +396,16 @@
     line-height: 1.23;
     border: 1px solid #191919 !important;
  }
+
+ .modal-mask.esecurity button.button-vue--vue-tertiary:hover {
+    border-color: #e20074 !important;
+    color: #e20074 !important;
+    background-color: #ffffff !important;
+ }
+
+ .modal-mask.esecurity button.button-vue--vue-tertiary .button-vue__text:hover {
+  color: #e20074 !important;
+}
 
   .modal-mask.esecurity button.button-vue--vue-error{
     background-color: #e20074 !important;
