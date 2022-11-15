@@ -862,4 +862,8 @@ table td.filename .uploadtext {
 }
 
 
-
+@media (max-width: 720px){
+  .action-comment {
+    display: none !important;
+  }
+}
