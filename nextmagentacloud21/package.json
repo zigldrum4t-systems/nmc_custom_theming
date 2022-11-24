@@ -1,0 +1,17 @@
+{
+	"name": "NextMagentaCloud",
+	"description": "Custom theme for NextMagentaCloud",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"test": "cypress open"
+	},
+	"devDependencies": {
+		"cypress": "^9.5.0"
+	},
+	"browserslist": [],
+	"engines": {
+		"node": ">=14.0.0",
+		"npm": ">=7.0.0"
+	}
+}
