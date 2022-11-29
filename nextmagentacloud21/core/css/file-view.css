@@ -861,6 +861,108 @@ table td.filename .uploadtext {
   padding-bottom: 42px !important;
 }
 
+#comments .app-sidebar-tabs__tab-icon .icon-comment{
+  display: none;
+}
+
+#tab-comments .comments .comment__header .comment__avatar{
+  display: none;
+}
+.comment.comments__writer .comment__author{
+  display: none !important;
+}
+.comment.comments__writer .comment__editor, .comment.comments__list .comment__message{
+  padding-left: unset;
+}
+.comments .comments__list{
+  padding: unset !important;
+  margin-bottom: 1rem;
+}
+
+.comment.comments__writer .comment__header{
+  min-height: 16px;
+}
+
+.comment.comments__list .comment__header{
+  padding: unset;
+  min-height: 24px !important;
+  height: 24px !important;
+}
+
+.comments .comments__list .comment__author{
+  margin-left: 0px !important;
+  color: #999999;
+}
+
+.comments__list .comment__timestamp{
+  color: #999999 !important;
+}
+
+.comments .comments__list .action-item .material-design-icon.dots-horizontal-icon{
+  min-height: unset;
+  min-width: unset;
+  width: unset;
+  height: unset;
+}
+
+.comment.comments__list .comment__message,
+.comments .empty-content .empty__comment
+{
+  color: #191919;
+}
+
+.comments .empty-content .empty__comment__mesage{
+  color: #666666;
+}
+
+#tab-comments .icon-confirm{
+  min-width: 24px;
+  min-height: 24px !important;
+  background-size: 24px !important;
+}
+
+#tab-comments .mention-bubble__title{
+  color: #E20074;
+}
+
+#tab-comments .mention-bubble__content{
+  background-color: unset!important;
+}
+
+#tab-comments .mention-bubble__icon--with-avatar{
+  display: none;
+}
+
+#tab-comments .empty-content__icon.icon-comment{
+  display: none;
+}
+
+.comments .empty-content__title{
+  text-align: left !important;
+}
+
+.comments .empty-content{
+  margin-top: 0.5625em !important;
+}
+
+.empty-content h2{
+  font-weight: unset !important;
+  line-height: 24px !important;
+}
+
+.empty-content__title .empty__comment{
+  margin-bottom: 0.5rem !important;
+}
+
+.comments__writer{
+  margin-bottom: 9px !important;
+}
+
+.comments .comment__header .action-item.action-item--single{
+  min-width: 30px !important;
+  height: 30px !important;
+}
+
 
 @media (max-width: 720px){
   .action-comment {
