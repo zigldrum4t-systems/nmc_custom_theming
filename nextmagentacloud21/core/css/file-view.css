@@ -871,7 +871,10 @@ table td.filename .uploadtext {
 .comment.comments__writer .comment__author{
   display: none !important;
 }
-.comment.comments__writer .comment__editor, .comment.comments__list .comment__message{
+.comment.comments__writer .comment__editor,
+.comment.comments__list .comment__message,
+.comment.comments__list .comment__editor
+{
   padding-left: unset;
 }
 .comments .comments__list{
@@ -892,6 +895,7 @@ table td.filename .uploadtext {
 .comments .comments__list .comment__author{
   margin-left: 0px !important;
   color: #999999;
+  margin-right: 8px !important;
 }
 
 .comments__list .comment__timestamp{
@@ -959,10 +963,19 @@ table td.filename .uploadtext {
 }
 
 .comments .comment__header .action-item.action-item--single{
-  min-width: 30px !important;
-  height: 30px !important;
+  min-width: 24px !important;
+  height: 24px !important;
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
 }
 
+.comments .comments__list .comment__actions{
+  margin-left: 4px !important;
+}
+
+#tab-comments .action-item__menutoggle--default-icon{
+min-width: 24px !important;
+height: 24px !important;
+}
 
 @media (max-width: 720px){
   .action-comment {
