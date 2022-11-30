@@ -10,6 +10,7 @@ OC.L10N.register(
     "Confirm and reset" : "Bestätigen und Zurücksetzen",
     "This the final warning: Do you really want to reset your encryption. Encrypted data are lost and will be deleted." : "Das ist die letzte Warnung: Möchten Sie wirklich die Verschlüsselung zurücksetzen? Verschlüsselte Daten gehen dabei verloren und werden gelöscht.",
     "Cancel" : "Abbrechen",
-    "Confirm" : "Bestätigen"
+    "Confirm" : "Bestätigen",
+    "End to end encryption is currently disabled. You can set it up with the {productName} clients." : "Die Ende-zu-Ende Verschlüsselung ist deaktiviert. Sie können sie in den Apps oder Desktop Clients einrichten."
     },
 "nplurals=2; plural=(n != 1);");
