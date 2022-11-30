@@ -10,6 +10,7 @@ OC.L10N.register(
       "Confirm and reset" : "Confirm and reset",
       "This the final warning: Do you really want to reset your encryption. Encrypted data are lost and will be deleted." : "This the final warning: Do you really want to reset your encryption. Encrypted data are lost and will be deleted.",
       "Cancel" : "Cancel",
-      "Confirm" : "Confirm"
+      "Confirm" : "Confirm",
+      "End to end encryption is currently disabled. You can set it up with the {productName} clients." : "End-to-end encryption is currently disabled. You can set it up with MagentaCLOUD clients."
 },
 "nplurals=2; plural=(n != 1);");
