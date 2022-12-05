@@ -977,6 +977,10 @@ min-width: 24px !important;
 height: 24px !important;
 }
 
+.action-separator{
+  border-bottom: unset !important;
+}
+
 @media (max-width: 720px){
   .action-comment {
     display: none !important;
