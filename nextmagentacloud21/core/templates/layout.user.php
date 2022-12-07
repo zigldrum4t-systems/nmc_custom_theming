@@ -209,6 +209,7 @@
         </div>
         <div class="col-l-8 col-s-12">
           <ul class="nav brand-footer-nav text-l-right">
+            <li><a href="https://static.magentacloud.de/licences/webui.htm" title="Open Source Lizenzen" target="_blank">Open Source Lizenzen</a>
             <li><a href="http://www.telekom.de/impressum" title="Impressum" target="_blank">Impressum</a></li>
             <li><a href="https://static.magentacloud.de/Datenschutz" title="Datenschutz" target="_blank">Datenschutz</a>
             </li>
