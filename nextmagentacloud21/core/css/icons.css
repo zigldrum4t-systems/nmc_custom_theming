@@ -696,3 +696,16 @@ aside .icon-star{
 .newFileMenu .icon-filetype-presentation {
   background-image: url('../../core/img/office_icons_custom/file-presentation-24.svg') !important;
 }
+
+
+.newFileMenu .icon-filetype-draw {
+  background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+}
+
+
+/* office file icon grid view*/
+#filestable [data-mime="application/vnd.oasis.opendocument.graphics"] .thumbnail {
+  background-image: url('../../core/img/office_icons_custom/file-analytics.svg') !important;
+  background-size: 44px!important;
+}
+
