@@ -986,10 +986,6 @@ button:not(.button-vue):not(.action-button)>span[class^='icon-']
 
 /* office new file creation */
 
-.newFileMenu .menuitem[data-templatename='New diagram.odg'] {
-  display: none;
-}
-
 #filestable tr[data-e2eencrypted="true"] td input[type="checkbox"].checkbox+label:before {
 	border: 1px solid #cccccc !important;
 }

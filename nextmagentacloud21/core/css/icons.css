@@ -168,7 +168,9 @@ div.crumb {
     background-size: 24px !important;
 }
 
-.newFileMenu .icon-filetype-text {
+.newFileMenu .icon-filetype-text,
+#rightClickMenu .icon-richdocuments
+ {
     background-image: var(--icon-text-custom) !important;
     background-size: 24px !important;
 }
@@ -778,3 +780,16 @@ aside .icon-star{
 .newFileMenu .icon-filetype-presentation {
   background-image: url('../../core/img/office_icons_custom/file-presentation-24.svg') !important;
 }
+
+
+.newFileMenu .icon-filetype-draw {
+  background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+}
+
+
+/* office file icon grid view*/
+#filestable [data-mime="application/vnd.oasis.opendocument.graphics"] .thumbnail {
+  background-image: url('../../core/img/office_icons_custom/file-analytics.svg') !important;
+  background-size: 44px!important;
+}
+
