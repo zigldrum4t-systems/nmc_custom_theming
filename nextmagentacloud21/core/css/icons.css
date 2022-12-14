@@ -152,7 +152,9 @@ div.crumb {
     background-size: 24px !important;
 }
 
-.newFileMenu .icon-filetype-text {
+.newFileMenu .icon-filetype-text,
+#rightClickMenu .icon-richdocuments
+ {
     background-image: var(--icon-text-custom) !important;
     background-size: 24px !important;
 }
