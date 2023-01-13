@@ -801,6 +801,10 @@
      display: inline;
  }
 
+ .logo-right-text {
+   padding-left: 8px !important;
+ }
+
  .Memory-consumed .logo-right-text {
      display: inline-block;
      vertical-align: middle;

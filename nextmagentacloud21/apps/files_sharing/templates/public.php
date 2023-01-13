@@ -124,7 +124,7 @@
         </div>
         <div class="content-button">
           <div class="informNow">
-            <a href="https://www.magentacloud.de" id="downloadFile" class="button">
+            <a href="https://cloud.telekom-dienste.de/" id="downloadFile" class="button">
               <span class="icon icon-download"></span>
               <span class="text"><?php p($l->t('Inform Now'))?></span>
             </a>
