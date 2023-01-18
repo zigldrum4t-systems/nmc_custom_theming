@@ -22,6 +22,8 @@ OC.L10N.register(
     "This folder does not exist" : "Dieser Ordner existiert nicht",
     "An error occurred" : "Es ist ein Fehler aufgetreten",
     "No photos in here" : "Keine Fotos vorhanden",
+    "No media in here"  : "Keine Medien vorhanden",
+    "No videos in here" : "Keine Videos vorhanden",
     "No tags yet" : "Noch keine Schlagworte vorhanden",
     "Photos with tags will show up here" : "Fotos mit Schlagworten werden hier angezeigt",
     "This folder does not exists" : "Dieser Ordner existiert nicht",
