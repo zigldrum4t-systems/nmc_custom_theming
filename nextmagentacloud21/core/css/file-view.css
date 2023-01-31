@@ -990,4 +990,8 @@ button:not(.button-vue):not(.action-button)>span[class^='icon-']
 	border: 1px solid #cccccc !important;
 }
 
+.modal-mask.viewer.modal-mask--dark {
+  width:100% !important;
+}
+
 
