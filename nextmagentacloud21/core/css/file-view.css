@@ -878,4 +878,8 @@ table td.filename .uploadtext {
 	border: 1px solid #cccccc !important;
 }
 
+.modal-mask.viewer.modal-mask--dark {
+  width:100% !important;
+}
+
 
