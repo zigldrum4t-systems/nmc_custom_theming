@@ -1282,16 +1282,6 @@
      line-height: 120% !important;
  }
 
-
- #editor-wrapper .submenu button.icon-h2,
- #editor-wrapper .submenu button.icon-h3,
- #editor-wrapper .submenu button.icon-h4,
- #editor-wrapper .submenu button.icon-h5,
- #editor-wrapper .submenu button.icon-h6
- {
-   padding: 0 1rem !important;
- }
-
  #editor-session-list .v-popover {
      display: none !important;
  }
@@ -2661,6 +2651,101 @@ opacity: unset !important;
     .personal-settings-container{
       flex-direction: column;
     }
+
+    .menubar button.is-active.icon-bold {
+      background-image: var(--icon-bold-custom) !important;
+    }
+
+    .icon-bold:hover {
+      background-image: var(--icon-bold-custom) !important;
+    }
+
+    .menubar button.is-active.icon-h1:hover {
+      background-image: var(--icon-h1-custom) !important;
+    }
+
+    .menubar button.is-active.icon-h1 {
+      background-image: var(--icon-h1-custom) !important;
+  }
+
+    .menubar button.is-active.icon-h2 {
+      background-image: var(--icon-h2-custom) !important;
+    }
+
+    .menubar button.is-active.icon-h3 {
+      background-image: var(--icon-h3-custom) !important;
+    }
+
+    .menubar button.is-active.icon-h4 {
+      background-image: var(--icon-h4-custom) !important;
+    }
+
+    .menubar button.is-active.icon-h5 {
+      background-image: var(--icon-h5-custom) !important;
+    }
+
+    .menubar button.is-active.icon-h6 {
+      background-image: var(--icon-h6-custom) !important;
+    }
+
+    .menubar button.is-active.icon-italic,
+    .icon-italic:hover
+     {
+      background-image: var(--icon-italic-custom) !important;
+    }
+
+    .menubar button.is-active.icon-ul,
+    .icon-ul:hover
+     {
+      background-image: var(--icon-ul-custom) !important;
+    }
+
+    .menubar button.is-active.icon-ol,
+    .icon-ul:hover
+    {
+      background-image: var(--icon-ol-custom) !important;
+    }
+
+    .icon-quote:hover
+    {
+      background-image: var(--icon-quote-custom) !important;
+    }
+
+    .icon-code:hover {
+      background-image: var(--icon-code-custom) !important;
+    }
+
+  .icon-undo:hover {
+    background-image: var(--icon-backward-custom) !important;
+  }
+
+  .icon-redo:hover {
+    background-image: var(--icon-forward-custom) !important;
+  }
+
+  .menubar button.is-active.icon-strike {
+    background-image: var(--icon-strike-custom) !important;
+  }
+
+  .icon-strike:hover {
+    background-image: var(--icon-strike-custom) !important;
+  }
+
+  .icon-h1:hover,
+  .icon-h2:hover,
+  .icon-h3:hover,
+  .icon-h4:hover,
+  .icon-h5:hover,
+  .icon-h6:hover,
+  .icon-tasklist:hover,
+  .icon-underline:hover,
+  .menubar button.is-active.icon-tasklist,
+  .menubar button.is-active.icon-table,
+  .menubar button.is-active.icon-quote,
+  .menubar button.is-active.icon-code
+  {
+    filter: unset !important;
+  }
  }
 
  @media screen and (min-width: 1025px) and (max-width: 1600px) {
@@ -2758,7 +2843,8 @@ opacity: unset !important;
    .button-vue[data-v-609b0a50]{
       margin:0 !important;
    }
- }
+
+}
 
  @media screen and (max-width: 480px) {
      .app-password-row {

@@ -384,6 +384,12 @@ div.crumb {
     background-image: var(--icon-h6-magenta) !important;
 }
 
+.menubar button.is-active.icon-tasklist,
+.menubar button.is-active.icon-table
+ {
+  filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+}
+
 .informNow a:hover .icon-download {
     background-image: var(--icon-cloud-btn-magenta) !important;
 }
