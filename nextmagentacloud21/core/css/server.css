@@ -172,7 +172,7 @@
      text-decoration: none;
  }
  #app-navigation img {
-   width: 40px !important;
+   width: 30px !important;
  }
 
  .NextCloudPorgressBar {
@@ -897,6 +897,10 @@
  .Memory-consumed .left-logo {
      width: 30%;
      display: inline;
+ }
+
+ .logo-right-text {
+   padding-left: 8px !important;
  }
 
  .Memory-consumed .logo-right-text {

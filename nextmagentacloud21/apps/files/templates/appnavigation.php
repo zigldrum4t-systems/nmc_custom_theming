@@ -26,7 +26,7 @@
   </ul>
 
   <div class="Memory-consumed pinned <?php p($pinned === 0 ? 'first-pinned ' : '') ?>" title="<?php p($l->t('%s%% of %s used', [$_['usage_relative'], $_['total_space']])); ?>">
-    <div class="left-logo"><img src='<?php print_unescaped(image_path('mya\OCA\Files\AppInfo\Application::APP_IDpp', 'CloudPink.png')); ?>'>
+    <div class="left-logo"><img src='<?php print_unescaped(image_path('mya\OCA\Files\AppInfo\Application::APP_IDpp', 'memory-consumption-display.svg')); ?>'>
     </div>
     <div class="logo-right-text">
       <span class="avlspace"><?php p($l->t('%1$s', [$_['usage']])); ?></span><span class="outoftext">
