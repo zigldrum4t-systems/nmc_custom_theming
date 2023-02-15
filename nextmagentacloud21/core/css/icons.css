@@ -799,3 +799,20 @@ aside .icon-star{
   background-size: 44px!important;
 }
 
+#files-public-content a[href$=".docx"] .publicpreview, #files-public-content a[href$=".doc"] .publicpreview{
+  content:url("/themes/nextmagentacloud21/core/img/filetypes/text.svg");
+}
+
+#files-public-content a[href$=".xlsx"] .publicpreview, #files-public-content a[href$=".ods"] .publicpreview{
+  content:url("/themes/nextmagentacloud21/core/img/filetypes/x-office-spreadsheet.svg");
+}
+
+#files-public-content a[href$=".odg"] .publicpreview{
+  content:url("/themes/nextmagentacloud21/core/img/filetypes/file-analytics.svg");
+}
+
+#files-public-content a[href$=".pptx"] .publicpreview, #files-public-content a[href$=".odp"] .publicpreview{
+  content:url("/themes/nextmagentacloud21/core/img/filetypes/x-office-presentation.svg");
+}
+
+
