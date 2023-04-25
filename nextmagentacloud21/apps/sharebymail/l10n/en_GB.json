@@ -1,5 +1,0 @@
-{ "translations": {
-    "»%s« added a note to a file shared with you" : "%s has added a message to a file shared with you",
-    "%1$s shared »%2$s« with you and wants to add" : "%1$s shared '%2$s' with you and wants to add"
-},"pluralForm" :"nplurals=2; plural=(n != 1);"
-}
