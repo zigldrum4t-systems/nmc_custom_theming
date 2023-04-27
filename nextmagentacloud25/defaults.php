@@ -25,7 +25,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getBaseUrl() {
-		return 'https://nextcloud.com';
+		return 'http://nextcloud.indemo.t-systems.net';
 	}
 
 	/**
@@ -41,7 +41,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'Custom Cloud';
+		return 'MagentaCLOUD';
 	}
 
 	/**
@@ -49,7 +49,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return 'Custom Cloud';
+		return 'MagentaCLOUD';
 	}
 
 	/**
@@ -57,7 +57,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'Custom Cloud';
+		return 'MagentaCLOUD';
 	}
 
 	/**
@@ -65,7 +65,7 @@ class OC_Theme {
 	 * @return string entity name
 	 */
 	public function getEntity() {
-		return 'Custom Cloud Co.';
+		return 'T-Systems International GmbH';
 	}
 
 	/**
@@ -73,7 +73,7 @@ class OC_Theme {
 	 * @return string slogan
 	 */
 	public function getSlogan() {
-		return 'Your custom cloud, personalized for you!';
+		return 'Alle Dateien sicher an einem Ort';
 	}
 
 	/**
@@ -112,7 +112,7 @@ class OC_Theme {
 	 * @return string
 	 */
 	public function getColorPrimary() {
-		return '#745bca';
+		return '#E20074';
 	}
 
 	/**
@@ -121,7 +121,45 @@ class OC_Theme {
 	 */
 	public function getScssVariables() {
 		return [
-			'color-primary' => '#745bca'
+			'color-primary' => '#E20074'
 		];
 	}
+
+	/**
+	 * link to the desktop sync client
+	 * @return string
+	 * @since 6.0.0
+	 */
+	// public function getSyncClientUrl(): string {
+	// 	return $this->defaults->getSyncClientUrl();
+	// }
+
+	/**
+	 * link to the iOS client
+	 * @return string
+	 * @since 8.0.0
+	 */
+	public function getiOSClientUrl(): string {
+		return 'https://apps.apple.com/us/app/magentacloud-cloud-speicher/id312838242';
+	}
+
+
+	/**
+	 * Returns the AppId for the App Store for the iOS Client
+	 * @return string AppId
+	 * @since 8.0.0
+	 */
+	public function getiTunesAppId(): string {
+		return '312838242';
+	}
+
+	/**
+	 * link to the Android client
+	 * @return string
+	 * @since 8.0.0
+	 */
+	public function getAndroidClientUrl(): string {
+		return 'https://play.google.com/store/apps/details?=com.t_systems.android.webdav';
+	}
+
 }
