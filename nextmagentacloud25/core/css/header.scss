@@ -1,0 +1,40 @@
+#body-user #header, #body-settings #header, #body-public #header{
+	background-color: #fff;
+}
+.app-navigation,#app-content, #app-navigation:not(.vue){
+	margin-top: calc(3% - 8px);
+    background: var(--color-primary-text) !important;
+}
+
+.header-left{
+
+	h5{
+		font-size: 25px;
+		font-weight: bold;
+		color:var(--color-primary-light-text);
+		margin-left: 1.5rem;
+	}
+	 span {
+		font-weight: normal;
+		font-size: 25px !important;
+	}
+}
+
+.brand-bar-logo {
+    position: absolute;
+	padding: 0.3rem 2rem;
+}
+
+#header-menu-unified-search {
+    width: 496px;
+    max-width: unset;
+    border-radius: 8px;
+    box-shadow: var(--scl-shadow-level-2);
+    padding: 14px;
+    position: absolute !important;
+}
+
+.header-menu__wrapper {
+    right: 0px !important;
+    // filter: unset !important;
+}
