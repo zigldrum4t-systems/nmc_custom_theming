@@ -124,4 +124,7 @@ class OC_Theme {
 			'color-primary' => '#745bca'
 		];
 	}
+	public function __construct() {
+		\OCP\Util::addScript('core', 'customutils');
+	 }
 }
