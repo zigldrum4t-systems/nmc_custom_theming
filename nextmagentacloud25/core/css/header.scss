@@ -1,9 +1,10 @@
-#body-user #header, #body-settings #header, #body-public #header{
-	background-color: #fff;
-}
-.app-navigation,#app-content, #app-navigation:not(.vue){
-	margin-top: calc(3% - 8px);
-    background: var(--color-primary-text) !important;
+#body-user #header, #body-settings #header {
+	background-color: var(--color-primary-text);
+
+	.app-navigation,#app-content, #app-navigation:not(.vue){
+		margin-top: calc(3% - 8px);
+		background: var(--color-primary-text) !important;
+	}
 }
 
 .header-left{
@@ -37,4 +38,8 @@
 .header-menu__wrapper {
     right: 0px !important;
     // filter: unset !important;
+}
+
+#nextcloud{
+	padding-left: 15rem;
 }
