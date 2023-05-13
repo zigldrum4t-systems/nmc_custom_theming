@@ -1,11 +1,11 @@
 name: Sync theme basefiles
 
 # this workflow is manually triggered
-# and every day at midnight
+# and every day at 02:22 CET
 on:
   workflow_dispatch:
-#  schedule:
-#    - cron: '0 0 * * *'
+  schedule:
+    - cron: '22 2 * * *'
 
 env:
   UPSTREAM_REPO: 'nextcloud/server'
@@ -31,14 +31,14 @@ jobs:
       with:
         repository: ${{ env.UPSTREAM_REPO }}
         ref: ${{ env.UPSTREAM_BRANCH }}
-        fetch-depth: 4
+        fetch-depth: 0
         path: ${{ env.upstream_path }}
     - name: Checkout repo to sync
       uses: actions/checkout@v3
       with:
         repository: ${{ env.SYNC_REPO }}
         ref: ${{ env.SYNC_BRANCH }}
-        fetch-depth: 4
+        fetch-depth: 0
         path: ${{ env.downstream_path }}
     - name: Sync upstream files since last checkout
       env:
@@ -68,23 +68,23 @@ jobs:
                     for commitId in $(git log --since="$lastCommitDate" --format=%H --reverse $UPSTREAM/$syncfile)
                     do
                         cd $UPSTREAM
-                        echo "::notice::Sync $(git log -1 --oneline $commitId -- $UPSTREAM/$syncfile)" 
                         commitMessages=$(git log -1 --format="-m \"%s\" -m \"Upstream commit: %H\" -m \"%b\"" $commitId -- $UPSTREAM/$syncfile)
                         git show --patch $commitId > /tmp/transfer.patch
                         cd $DOWNSTREAM
                         git apply --allow-empty --include $syncfile /tmp/transfer.patch
                         eval git commit $commitMessages $DOWNSTREAM/$syncfile
+                        echo "::notice file=$syncfile::Synced commit $(git log -1 --oneline $commitId -- $UPSTREAM/$syncfile)" 
                     done
                 else
                     # create initial filecopy with latest commit
                     cd $UPSTREAM        
-                    echo "::notice::Init $(git log -1 --oneline -- $UPSTREAM/$syncfile)" 
                     latestCommitMessages=$(git log -1 --format="-m \"%s\" -m \"Init upstream commit: %H\" -m \"%b\"" -- $UPSTREAM/$syncfile)
                     cd $DOWNSTREAM
                     mkdir -p $(dirname $DOWNSTREAM/$syncfile)
                     cp $UPSTREAM/$syncfile $DOWNSTREAM/$syncfile
                     git add $DOWNSTREAM/$syncfile
                     eval git commit $latestCommitMessages $DOWNSTREAM/$syncfile
+                    echo "::notice file=$syncfile::Copied $(git log -1 --oneline -- $UPSTREAM/$syncfile)" 
                 fi
             fi
             echo "::endgroup::"
@@ -92,7 +92,7 @@ jobs:
         # cleanup
         rm -f /tmp/transfer.patch
 
-    #- name: Push sync update
-    #  run: |
-    #    cd $DOWNSTREAM
-    #    git push
+    - name: Push sync update
+      run: |
+        cd $DOWNSTREAM
+        git push
