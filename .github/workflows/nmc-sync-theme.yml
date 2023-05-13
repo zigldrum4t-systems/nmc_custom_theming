@@ -8,26 +8,19 @@ on:
     - cron: '22 2 * * *'
 
 env:
-  UPSTREAM_REPO: 'nextcloud/server'
-  UPSTREAM_BRANCH: 'master'
-  SYNC_DIR: 'magentacloud25'
-  SYNC_FILES: |
-    core/css/server.scss
-    lib/l10n/de_DE.json
-    lib/l10n/en_GB.json
-    not_existing_fail.txt
+  UPSTREAM_REPO: ${{ vars.UPSTREAM_REPO || 'nextcloud/server' }}
+  UPSTREAM_BRANCH: ${{ vars.UPSTREAM_BRANCH || 'master' }}
+  SYNC_DIR: ${{ vars.SYNC_DIR || 'magentacloud25' }}
+  SYNC_FILES: ${{ vars.SYNC_FILES || 'README.md LICENSE' }}
   SYNC_REPO: ${{ github.repository }}
   SYNC_BRANCH: ${{ github.refs }}
-  # internal only
-  upstream_path: source
-  downstream_path: syncrepo
 
 jobs:
   sync-from-upstream:
     runs-on: ubuntu-latest
     env:
-      UPSTREAM: ${{ github.workspace }}/${{ env.upstream_path }}
-      DOWNSTREAM: ${{ github.workspace }}/${{ env.downstream_path }}/${{ env.SYNC_DIR }}
+      upstream_path: source
+      downstream_path: syncrepo
     steps:
     - name: Checkout upstream code
       uses: actions/checkout@v3
@@ -45,6 +38,8 @@ jobs:
         path: ${{ env.downstream_path }}
     - name: Sync upstream files since last checkout
       run: |
+        UPSTREAM="$GITHUB_WORKSPACE/$upstream_path"
+        DOWNSTREAM="$GITHUB_WORKSPACE/$downstream_path/$SYNC_DIR"
         mkdir -p $DOWNSTREAM
         cd $DOWNSTREAM
         git config user.name $GITHUB_ACTOR
@@ -94,5 +89,6 @@ jobs:
 
     - name: Push sync update
       run: |
+        DOWNSTREAM="$GITHUB_WORKSPACE/$downstream_path/$SYNC_DIR"
         cd $DOWNSTREAM
         git push
