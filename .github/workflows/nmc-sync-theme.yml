@@ -12,7 +12,7 @@ env:
   UPSTREAM_BRANCH: ${{ vars.UPSTREAM_BRANCH || 'master' }}
   SYNC_DIR: ${{ vars.SYNC_DIR || 'magentacloud25' }}
   # SYNC_FILES: (${{ join(fromJSON(vars.SYNC_FILES), ' ') }})
-  SYNC_FILES: (${{ vars.SYNC_FILES }})
+  SYNC_FILES: ${{ join(vars.SYNC_FILES, ' ') }}
   SYNC_REPO: ${{ github.repository }}
   SYNC_BRANCH: ${{ github.ref }}
 
