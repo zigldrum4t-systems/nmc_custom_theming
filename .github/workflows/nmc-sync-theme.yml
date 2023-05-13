@@ -13,7 +13,7 @@ env:
   SYNC_DIR: ${{ vars.SYNC_DIR || 'magentacloud25' }}
   SYNC_FILES: ${{ vars.SYNC_FILES || 'README.md LICENSE' }}
   SYNC_REPO: ${{ github.repository }}
-  SYNC_BRANCH: ${{ github.refs }}
+  SYNC_BRANCH: ${{ github.ref }}
 
 jobs:
   sync-from-upstream:
