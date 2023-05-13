@@ -12,7 +12,7 @@ env:
   UPSTREAM_BRANCH: ${{ vars.UPSTREAM_BRANCH || 'master' }}
   SYNC_DIR: ${{ vars.SYNC_DIR || 'magentacloud25' }}
   # SYNC_FILES: ${{ join(fromJSON(vars.SYNC_FILES), ' ') }}
-  SYNC_FILES: (${{ join(vars.SYNC_FILES, ' ') }})
+  SYNC_FILES: (${{ vars.SYNC_FILES }})
   SYNC_REPO: ${{ github.repository }}
   SYNC_BRANCH: ${{ github.ref }}
 
@@ -47,7 +47,7 @@ jobs:
         git config user.email $GITHUB_ACTOR@github.com
         #iterate over each file separately
         echo "::notice:: $SYNC_FILES"
-        for syncfile in ($SYNC_FILES)
+        for syncfile in $SYNC_FILES
         do
             cd $UPSTREAM
             echo "::group::$syncfile"
