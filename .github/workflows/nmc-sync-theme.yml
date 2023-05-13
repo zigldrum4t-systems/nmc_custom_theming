@@ -45,12 +45,12 @@ jobs:
         cd $DOWNSTREAM
         git config user.name $GITHUB_ACTOR
         git config user.email $GITHUB_ACTOR@github.com
+        # sanitize linebreaks
+        SYNC_FILES="${SYNC_FILES//$'\n'/' '}"
+        SYNC_FILES="${SYNC_FILES//$'\r'/' '}"
         #iterate over each file separately
-        IFS=$'\n'               # Change IFS to newline char
-        workfiles=($SYNC_FILES) # split the `names` string into an array by the same name
-        IFS=$SAVEIFS            # back to SPACE
-        echo "::notice:: $workfiles"
-        for syncfile in $workfiles
+        echo "::notice:: $SYNC_FILES"
+        for syncfile in $SYNC_FILES
         do
             cd $UPSTREAM
             echo "::group::$syncfile"
