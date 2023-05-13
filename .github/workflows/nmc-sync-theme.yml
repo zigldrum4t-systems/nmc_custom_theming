@@ -46,8 +46,11 @@ jobs:
         git config user.name $GITHUB_ACTOR
         git config user.email $GITHUB_ACTOR@github.com
         #iterate over each file separately
-        echo "::notice:: $SYNC_FILES"
-        for syncfile in ${SYNC_FILES[@]}
+        IFS=$'\n'               # Change IFS to newline char
+        workfiles=($SYNC_FILES) # split the `names` string into an array by the same name
+        IFS=$SAVEIFS            # back to SPACE
+        echo "::notice:: $workfiles"
+        for syncfile in $workfiles
         do
             cd $UPSTREAM
             echo "::group::$syncfile"
