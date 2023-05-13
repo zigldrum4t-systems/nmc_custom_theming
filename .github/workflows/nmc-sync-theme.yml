@@ -11,7 +11,8 @@ env:
   UPSTREAM_REPO: ${{ vars.UPSTREAM_REPO || 'nextcloud/server' }}
   UPSTREAM_BRANCH: ${{ vars.UPSTREAM_BRANCH || 'master' }}
   SYNC_DIR: ${{ vars.SYNC_DIR || 'magentacloud25' }}
-  SYNC_FILES: ${{ vars.SYNC_FILES || 'README.md LICENSE' }}
+  # SYNC_FILES: ${{ join(fromJSON(vars.SYNC_FILES), ' ') }}
+  SYNC_FILES: (${{ join(vars.SYNC_FILES, ' ') }})
   SYNC_REPO: ${{ github.repository }}
   SYNC_BRANCH: ${{ github.ref }}
 
@@ -38,7 +39,6 @@ jobs:
         path: ${{ env.downstream_path }}
     - name: Sync upstream files since last checkout
       run: |
-        echo "::debug:: $SYNC_FILES"
         UPSTREAM="$GITHUB_WORKSPACE/$upstream_path"
         DOWNSTREAM="$GITHUB_WORKSPACE/$downstream_path/$SYNC_DIR"
         mkdir -p $DOWNSTREAM
@@ -46,7 +46,8 @@ jobs:
         git config user.name $GITHUB_ACTOR
         git config user.email $GITHUB_ACTOR@github.com
         #iterate over each file separately
-        for syncfile in $SYNC_FILES
+        echo "::notice:: $SYNC_FILES"
+        for syncfile in ($SYNC_FILES)
         do
             cd $UPSTREAM
             echo "::group::$syncfile"
