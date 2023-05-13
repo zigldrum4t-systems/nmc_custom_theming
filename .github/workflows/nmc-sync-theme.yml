@@ -4,8 +4,8 @@ name: Sync theme basefiles
 # and every day at midnight
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
+#  schedule:
+#    - cron: '0 0 * * *'
 
 env:
   UPSTREAM_REPO: 'nextcloud/server'
@@ -53,10 +53,10 @@ jobs:
         for syncfile in $SYNC_FILES
         do
             cd $UPSTREAM
-            echo "::startGroup $syncfile"
+            echo "::group::$syncfile"
             if [ ! -f "$UPSTREAM/$syncfile" ]
             then
-                echo "::error No upstream file [$UPSTREAM/$syncfile](https://github.com/$THEME_SYNC_OWNER/$THEME_SYNC_REPO/$syncfile)" 
+                echo "::error file=$syncfile::No upstream file [$UPSTREAM/$syncfile](https://github.com/$THEME_SYNC_OWNER/$THEME_SYNC_REPO/$syncfile)" 
             else 
                 cd $DOWNSTREAM
                 # check whether the file with commits exists already downstream
@@ -68,7 +68,7 @@ jobs:
                     for commitId in $(git log --since="$lastCommitDate" --format=%H --reverse $UPSTREAM/$syncfile)
                     do
                         cd $UPSTREAM
-                        echo "::notice Sync $(git log -1 --oneline $commitId -- $UPSTREAM/$syncfile)" 
+                        echo "::notice::Sync $(git log -1 --oneline $commitId -- $UPSTREAM/$syncfile)" 
                         commitMessages=$(git log -1 --format="-m \"%s\" -m \"Upstream commit: %H\" -m \"%b\"" $commitId -- $UPSTREAM/$syncfile)
                         git show --patch $commitId > /tmp/transfer.patch
                         cd $DOWNSTREAM
@@ -78,7 +78,7 @@ jobs:
                 else
                     # create initial filecopy with latest commit
                     cd $UPSTREAM        
-                    echo "::notice Init $(git log -1 --oneline -- $UPSTREAM/$syncfile)" 
+                    echo "::notice::Init $(git log -1 --oneline -- $UPSTREAM/$syncfile)" 
                     latestCommitMessages=$(git log -1 --format="-m \"%s\" -m \"Init upstream commit: %H\" -m \"%b\"" -- $UPSTREAM/$syncfile)
                     cd $DOWNSTREAM
                     mkdir -p $(dirname $DOWNSTREAM/$syncfile)
@@ -87,12 +87,12 @@ jobs:
                     eval git commit $latestCommitMessages $DOWNSTREAM/$syncfile
                 fi
             fi
-            echo "::endGroup $syncfile"
+            echo "::endgroup::"
         done
         # cleanup
         rm -f /tmp/transfer.patch
 
-    #- name: Push sync
+    #- name: Push sync update
     #  run: |
     #    cd $DOWNSTREAM
     #    git push
