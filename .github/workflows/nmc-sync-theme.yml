@@ -18,13 +18,16 @@ env:
     not_existing_fail.txt
   SYNC_REPO: ${{ github.repository }}
   SYNC_BRANCH: ${{ github.refs }}
+  # internal only
+  upstream_path: source
+  downstream_path: syncrepo
 
 jobs:
   sync-from-upstream:
     runs-on: ubuntu-latest
     env:
-      upstream_path: source
-      downstream_path: syncrepo
+      UPSTREAM: ${{ github.workspace }}/${{ env.upstream_path }}
+      DOWNSTREAM: ${{ github.workspace }}/${{ env.downstream_path }}/${{ env.SYNC_DIR }}
     steps:
     - name: Checkout upstream code
       uses: actions/checkout@v3
@@ -41,9 +44,6 @@ jobs:
         fetch-depth: 0
         path: ${{ env.downstream_path }}
     - name: Sync upstream files since last checkout
-      env:
-        UPSTREAM: ${{ github.workspace }}/${{ env.upstream_path }}
-        DOWNSTREAM: ${{ github.workspace }}/${{ env.downstream_path }}/${{ env.SYNC_DIR }}
       run: |
         mkdir -p $DOWNSTREAM
         cd $DOWNSTREAM
