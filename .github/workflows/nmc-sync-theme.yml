@@ -38,6 +38,7 @@ jobs:
         path: ${{ env.downstream_path }}
     - name: Sync upstream files since last checkout
       run: |
+        echo "::debug:: $SYNC_FILES"
         UPSTREAM="$GITHUB_WORKSPACE/$upstream_path"
         DOWNSTREAM="$GITHUB_WORKSPACE/$downstream_path/$SYNC_DIR"
         mkdir -p $DOWNSTREAM
