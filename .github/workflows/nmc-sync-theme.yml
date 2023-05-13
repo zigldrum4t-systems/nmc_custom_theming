@@ -47,7 +47,7 @@ jobs:
         git config user.email $GITHUB_ACTOR@github.com
         #iterate over each file separately
         echo "::notice:: $SYNC_FILES"
-        for syncfile in "${SYNC_FILES[@]}"
+        for syncfile in ${SYNC_FILES[@]}
         do
             cd $UPSTREAM
             echo "::group::$syncfile"
