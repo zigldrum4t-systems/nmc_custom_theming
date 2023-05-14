@@ -40,6 +40,9 @@ jobs:
         path: ${{ env.downstream_path }}
         token: ${{ secrets.BUILD_TOKEN }}
     - name: Sync upstream files since last checkout
+      env:
+        BUILD_USER: ${{ env.BUILD_USER }}
+        BUILD_EMAIL: ${{ env.BUILD_EMAIL }}
       run: |
         echo "::notice:: Executed by $BUILD_USER, $BUILD_EMAIL"
         UPSTREAM="$GITHUB_WORKSPACE/$upstream_path"
