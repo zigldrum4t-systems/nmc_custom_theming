@@ -30,6 +30,7 @@ jobs:
         ref: ${{ env.UPSTREAM_BRANCH }}
         fetch-depth: 0
         path: ${{ env.upstream_path }}
+        token: ${{ secrets.BUILD_TOKEN }}
     - name: Checkout repo to sync
       uses: actions/checkout@v3
       with:
@@ -37,14 +38,16 @@ jobs:
         ref: ${{ env.SYNC_BRANCH }}
         fetch-depth: 0
         path: ${{ env.downstream_path }}
+        token: ${{ secrets.BUILD_TOKEN }}
     - name: Sync upstream files since last checkout
       run: |
+        echo "::notice:: Executed by $BUILD_USER, $BUILD_EMAIL"
         UPSTREAM="$GITHUB_WORKSPACE/$upstream_path"
         DOWNSTREAM="$GITHUB_WORKSPACE/$downstream_path/$SYNC_DIR"
         mkdir -p $DOWNSTREAM
         cd $DOWNSTREAM
-        git config user.name $GITHUB_ACTOR
-        git config user.email $GITHUB_ACTOR@github.com
+        git config user.name $BUILD_USER
+        git config user.email $BUILD_EMAIL
         # sanitize linebreaks
         SYNC_FILES="${SYNC_FILES//$'\n'/' '}"
         SYNC_FILES="${SYNC_FILES//$'\r'/' '}"
@@ -72,6 +75,7 @@ jobs:
                         cd $DOWNSTREAM
                         git apply --allow-empty --include $syncfile /tmp/transfer.patch
                         eval git commit $commitMessages $DOWNSTREAM/$syncfile
+                        cd $UPSTREAM
                         echo "::notice file=$syncfile::Synced commit $(git log -1 --oneline $commitId -- $UPSTREAM/$syncfile)" 
                     done
                 else
@@ -83,6 +87,7 @@ jobs:
                     cp $UPSTREAM/$syncfile $DOWNSTREAM/$syncfile
                     git add $DOWNSTREAM/$syncfile
                     eval git commit $latestCommitMessages $DOWNSTREAM/$syncfile
+                    cd $UPSTREAM
                     echo "::notice file=$syncfile::Copied $(git log -1 --oneline -- $UPSTREAM/$syncfile)" 
                 fi
             fi
