@@ -15,8 +15,6 @@ env:
   SYNC_FILES: ${{ vars.SYNC_FILES || 'README.md LICENSE' }}
   SYNC_REPO: ${{ github.repository }}
   SYNC_BRANCH: ${{ github.ref }}
-  BUILD_USER: ${{ env.BUILD_USER }}
-  BUILD_EMAIL: ${{ env.BUILD_EMAIL }}
 
 jobs:
   sync-from-upstream:
@@ -42,6 +40,9 @@ jobs:
         path: ${{ env.downstream_path }}
         token: ${{ secrets.BUILD_TOKEN }}
     - name: Sync upstream files since last checkout
+      env:
+        BUILD_USER: ${{ vars.BUILD_USER }}
+        BUILD_EMAIL: ${{ vars.BUILD_EMAIL }}      
       run: |
         echo "::notice:: Executed by $BUILD_USER, $BUILD_EMAIL"
         UPSTREAM="$GITHUB_WORKSPACE/$upstream_path"
