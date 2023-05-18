@@ -162,4 +162,7 @@ class OC_Theme {
 		return 'https://play.google.com/store/apps/details?=com.t_systems.android.webdav';
 	}
 
+	public function __construct() {
+		\OCP\Util::addScript('core', 'fileconflict');
+	}
 }
