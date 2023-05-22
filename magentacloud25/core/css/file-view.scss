@@ -762,8 +762,6 @@ li.action-details-container {
 			background-image: url('"../../core/img/filetypes/text.svg') !important;
 		}
 	}
-}
-#filestable {
 	[data-mime="application/vnd.lotus-wordpro"] {
 		.thumbnail {
 			background-image: url('"../../core/img/filetypes/text.svg') !important;
@@ -783,9 +781,8 @@ li.action-details-container {
 		.thumbnail {
 			background-image: url('"../../core/img/filetypes/text.svg') !important;
 		}
-	}
+	}	
 }
-
 
 /* Guest view Colloboara icons */
 #files-public-content {
@@ -859,17 +856,18 @@ li.action-details-container {
 			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
 		}
 	}
+
 	a[href$=".ods"] {
 		.publicpreview {
-			#files-public-content {
-				a[href$=".fods"] {
-					.publicpreview {
-						content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
-					}
-				}
-			}
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
 		}
 	}
+	a[href$=".fods"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+
 	a[href$=".csv"] {
 		.publicpreview {
 			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
@@ -947,9 +945,7 @@ li.action-details-container {
 	}
 }
 
-
 /* Guest view Colloboara icons for hidedownload*/
-
 #files-public-content {
 	img[src$=".docx&scalingup=0"].publicpreview {
 		content: url("../../core/img/filetypes/text.svg") !important;
@@ -991,13 +987,11 @@ li.action-details-container {
 		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
 	}
 	img[src$=".ods&scalingup=0"].publicpreview {
-		#files-public-content {
-			img[src$=".fods&scalingup=0"].publicpreview {
-				content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
-			}
-		}
 		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
 	}
+	img[src$=".fods&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}	
 	img[src$=".csv&scalingup=0"].publicpreview {
 		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
 	}
@@ -1035,7 +1029,6 @@ li.action-details-container {
 		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
 	}
 	img[src$=".fodp&scalingup=0"].publicpreview {
-		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
 		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
 	}
 	img[src$=".ppsx&scalingup=0"].publicpreview {
