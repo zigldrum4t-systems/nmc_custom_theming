@@ -615,30 +615,8 @@ li.action-details-container {
 	}
 }
 
-/* office new file creation */
-.newFileMenu {
-	.icon-filetype-document {
-		background-image: url('../../core/img/office_icons_custom/file-text-24.svg') !important;
-	}
-	.icon-filetype-spreadsheet {
-		background-image: url('../../core/img/office_icons_custom/file-calculation-24.svg') !important;
-	}
-	.icon-filetype-presentation {
-		background-image: url('../../core/img/office_icons_custom/file-presentation-24.svg') !important;
-	}
-	.icon-filetype-draw {
-		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
-	}
-}
-
-
 /* Office - graphics file icon grid view, sharing*/
-.newFileMenu {
-	.icon-filetype-draw {
-		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
-		background-size: contain !important;
-	}
-}
+
 #app-sidebar-vue[data-mimetype="application/vnd.oasis.opendocument.graphics"] {
 	.app-sidebar-header__figure {
 		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
