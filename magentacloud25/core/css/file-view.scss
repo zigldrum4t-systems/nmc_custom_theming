@@ -8,6 +8,12 @@
 	}
 }
 
+.files-controls .actions .button .icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 50px 40px;
+}
+
 .files-filestable:not(.view-grid) tbody tr:active,
 .files-filestable:not(.view-grid) tbody tr:hover,
 .files-filestable:not(.view-grid) tbody tr:focus,
@@ -523,3 +529,523 @@ li.action-details-container {
     margin-right: 0.5rem;
     margin-top:0.4rem;
 }
+
+
+/***************************************** Mimetype icons & file list******************************************************************/
+
+.files-fileList {
+	[data-mime="text/plain"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="text/markdown"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/msword"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.oasis.opendocument.text"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.template"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.ms-excel"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+		}
+	}
+	[data-mime="text/csv"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+		}
+	}
+	[data-mime="application/octet-stream"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/unknown-file.svg') !important;
+		}
+	}
+	[data-icon="/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=807bfe2a"] .thumbnail {
+		background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+	}	
+}
+
+.app-sidebar-header__figure[style='background-image: url("/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=807bfe2a");']{
+  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+}
+
+
+/*conflict*/
+.oc-conflict-pre-dlg-close-div {
+	a {
+		background: url('../../core/img/close.svg') no-repeat !important;
+	}
+}
+
+.oc-conflict-pre-dlg-close-div {
+	a {
+		&:hover {
+			background: url('../../core/img/close-magenta.svg') no-repeat !important;
+		}
+		&:active {
+			background: url('../../core/img/close-magenta.svg') no-repeat !important;
+		}
+		&:focus {
+			background: url('../../core/img/close-magenta.svg') no-repeat !important;
+		}
+	}
+}
+
+/* office new file creation */
+.newFileMenu {
+	.icon-filetype-document {
+		background-image: url('../../core/img/office_icons_custom/file-text-24.svg') !important;
+	}
+	.icon-filetype-spreadsheet {
+		background-image: url('../../core/img/office_icons_custom/file-calculation-24.svg') !important;
+	}
+	.icon-filetype-presentation {
+		background-image: url('../../core/img/office_icons_custom/file-presentation-24.svg') !important;
+	}
+	.icon-filetype-draw {
+		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+	}
+}
+
+
+/* Office - graphics file icon grid view, sharing*/
+.newFileMenu {
+	.icon-filetype-draw {
+		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+		background-size: contain !important;
+	}
+}
+#app-sidebar-vue[data-mimetype="application/vnd.oasis.opendocument.graphics"] {
+	.app-sidebar-header__figure {
+		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+		background-size: contain !important;
+	}
+}
+#app-sidebar-vue[data-mimetype="application/vnd.oasis.opendocument.graphics-flat-xml"] {
+	.app-sidebar-header__figure {
+		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+		background-size: contain !important;
+	}
+}
+
+.files-fileList {
+	[data-mime="application/vnd.oasis.opendocument.graphics"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/file-analytics.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.oasis.opendocument.graphics-flat-xml"] {
+		.thumbnail {
+			background-image: url('../../core/img/filetypes/file-analytics.svg') !important;
+		}
+    }
+}
+
+
+#files-public-content {
+	a[href$=".odg"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/file-analytics.svg");
+		}
+	}
+}
+
+
+/* Office- pdf file icon in sharing, grid view*/
+#app-sidebar-vue[data-mimetype="application/pdf"] {
+	.app-sidebar-header__figure {
+		background-image: url('../../core/img/filetypes/application-pdf.svg') !important;
+		width: 96px;
+	}
+}
+
+/* Office- excel icon gridview and sharing*/
+
+#files-public-content a[href$=".xlsx"] .publicpreview, #files-public-content a[href$=".ods"] .publicpreview{
+	content:url("../../core/img/filetypes/x-office-spreadsheet.svg");
+} 
+
+
+#files-public-content {
+	a[href$=".xlsx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".ods"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+}
+
+/* Office - pdf gridview, sharing */
+
+#files-public-content {
+	a[href$=".pptx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-presentation.svg");
+		}
+	}
+	a[href$=".odp"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-presentation.svg");
+		}
+	}
+}
+
+
+
+/* audio file icon in sharing view*/
+#app-sidebar-vue[data-mimetype="audio/mpeg"] {
+	.app-sidebar-header__figure {
+		background-image: url('"../../core/img/filetypes/audio.svg') !important;
+		width: 96px;
+	}
+}
+
+
+
+/* Grid view Colloboara icons other formats */
+.files-fileList {
+	[data-mime="application/vnd.oasis.opendocument.text-flat-xml"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.ms-visio.drawing"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.wordperfect"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.template"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.ms-word.document.macroEnabled.12"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.visio"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+}
+#filestable {
+	[data-mime="application/vnd.lotus-wordpro"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/vnd.ms-visio.drawing"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/msonenote"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+	[data-mime="application/octet-stream"] {
+		.thumbnail {
+			background-image: url('"../../core/img/filetypes/text.svg') !important;
+		}
+	}
+}
+
+
+/* Guest view Colloboara icons */
+#files-public-content {
+	a[href$=".docx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".doc"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".odt"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".fodt"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".lwp"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".vsd"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".vsdx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".wpd"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".one"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".dotx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".docm"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".rtf"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".svg"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/text.svg");
+		}
+	}
+	a[href$=".xlsx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".ods"] {
+		.publicpreview {
+			#files-public-content {
+				a[href$=".fods"] {
+					.publicpreview {
+						content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+					}
+				}
+			}
+		}
+	}
+	a[href$=".csv"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".xltx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".xltm"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".xlam"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".xlsb"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".xls"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".xlsm"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+		}
+	}
+	a[href$=".odg"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/file-analytics.svg");
+		}
+	}
+	a[href$=".fodg"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/file-analytics.svg");
+		}
+	}
+	a[href$=".pptx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-presentation.svg");
+		}
+	}
+	a[href$=".odp"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-presentation.svg");
+		}
+	}
+	a[href$=".fodp"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-presentation.svg");
+		}
+	}
+	a[href$=".ppsx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-presentation.svg");
+		}
+	}
+	a[href$=".potx"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-presentation.svg");
+		}
+	}
+	a[href$=".ppam"] {
+		.publicpreview {
+			content: url("../../core/img/filetypes/x-office-presentation.svg");
+		}
+	}
+}
+
+
+/* Guest view Colloboara icons for hidedownload*/
+
+#files-public-content {
+	img[src$=".docx&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".doc&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".odt&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".fodt&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".lwp&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".vsd&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".vsdx&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".wpd&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".one&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".dotx&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".docm&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".rtf&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/text.svg") !important;
+	}
+	img[src$=".xlsx&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".ods&scalingup=0"].publicpreview {
+		#files-public-content {
+			img[src$=".fods&scalingup=0"].publicpreview {
+				content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+			}
+		}
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".csv&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".xltx&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".xltm&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".xlam&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".xlsb&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".fods&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".xls&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".xlsm&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-spreadsheet.svg") !important;
+	}
+	img[src$=".odg&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/file-analytics.svg") !important;
+	}
+	img[src$=".fodg&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/file-analytics.svg") !important;
+	}
+	img[src$=".pptx&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
+	}
+	img[src$=".odp&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
+	}
+	img[src$=".fodp&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
+		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
+	}
+	img[src$=".ppsx&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
+	}
+	img[src$=".potx&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
+	}
+	img[src$=".ppam&scalingup=0"].publicpreview {
+		content: url("../../core/img/filetypes/x-office-presentation.svg") !important;
+	}
+}
+
