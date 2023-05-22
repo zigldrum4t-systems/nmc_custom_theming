@@ -1,0 +1,7 @@
+{ "translations": {
+  "All": "Alle",
+  "Cancel": "Abbrechen",
+  "Show list view" : "Ansicht ändern",
+  "Show grid view" : "Ansicht ändern"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
