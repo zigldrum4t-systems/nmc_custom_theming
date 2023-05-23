@@ -663,11 +663,6 @@ li.action-details-container {
 
 /* Office- excel icon gridview and sharing*/
 
-#files-public-content a[href$=".xlsx"] .publicpreview, #files-public-content a[href$=".ods"] .publicpreview{
-	content:url("../../core/img/filetypes/x-office-spreadsheet.svg");
-} 
-
-
 #files-public-content {
 	a[href$=".xlsx"] {
 		.publicpreview {
@@ -701,7 +696,7 @@ li.action-details-container {
 /* audio file icon in sharing view*/
 #app-sidebar-vue[data-mimetype="audio/mpeg"] {
 	.app-sidebar-header__figure {
-		background-image: url('"../../core/img/filetypes/audio.svg') !important;
+		background-image: url('../../core/img/filetypes/audio.svg') !important;
 		width: 96px;
 	}
 }
@@ -712,56 +707,57 @@ li.action-details-container {
 .files-fileList {
 	[data-mime="application/vnd.oasis.opendocument.text-flat-xml"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.ms-visio.drawing"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.wordperfect"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.template"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.ms-word.document.macroEnabled.12"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.visio"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.lotus-wordpro"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.ms-visio.drawing"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/msonenote"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}
 	[data-mime="application/octet-stream"] {
 		.thumbnail {
-			background-image: url('"../../core/img/filetypes/text.svg') !important;
+			background-image: url('../../core/img/filetypes/text.svg') !important;
 		}
 	}	
 }
 
+  
 /* Guest view Colloboara icons */
 #files-public-content {
 	a[href$=".docx"] {
