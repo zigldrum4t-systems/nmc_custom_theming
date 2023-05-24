@@ -8,7 +8,8 @@
     "Replace file" : "Replace file",
     "The file {filename} already exist in the location." : "The file {filename} already exist in the location.",
     "The files already exist in the location." : "The files already exist in the location.",
-    "{conflictCount} File conflicts" : "{conflictCount} File conflicts"
+    "{conflictCount} File conflicts" : "{conflictCount} File conflicts",
+    "Search": "Search"
   },
   "pluralForm": "nplurals=2; plural=(n != 1);"
 }

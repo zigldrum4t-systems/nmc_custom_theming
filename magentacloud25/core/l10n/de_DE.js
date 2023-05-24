@@ -11,6 +11,7 @@ OC.L10N.register(
     "The files already exist in the location." : "Die Dateien sind bereits am Speicherort vorhanden.",
     "{conflictCount} File conflicts" : "{conflictCount} Dateikonflikte",
     "Keep both files for all" : "Beide Dateien für alle behalten",
-    "Replace all files" : "Alle Dateien ersetzen"
+    "Replace all files" : "Alle Dateien ersetzen",
+    "Search": "Suche"
 },
 "nplurals=2; plural=(n != 1);");
