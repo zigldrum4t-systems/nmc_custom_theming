@@ -1,4 +1,5 @@
-@use 'theme';
+@use 'variables';
+@import 'functions';
 
 /* FileList view changes */
 .files-filestable {
@@ -63,7 +64,7 @@ input[type="checkbox"].checkbox {
 
 .files-filestable  tbody tr.highlighted .name:focus,
 .files-filestable  tbody tr.searchresult {
-	background-color: unset !important;
+	@include unset('background-color',true);
 }
 
 .files-filestable  {
@@ -144,8 +145,7 @@ input[type="checkbox"].checkbox {
 	.fileactions {
 		a {
 			span {
-
-				background-size: unset !important;
+				@include unset('background-size',true);
 			}
 		}
 	}
@@ -215,7 +215,7 @@ input[type="checkbox"].checkbox {
 				&.shared-style {
 					span {
 						&:not(.icon) {
-							overflow: unset !important;
+							@include unset('overflow',true);
 							color: #E20074;
 						}
 					}
@@ -246,7 +246,7 @@ input[type="checkbox"].checkbox {
 				& > .selectCheckBox {
 					& + label {
 						&:before {
-							opacity: unset !important;
+							@include unset('opacity',true);
 						}
 					}
 				}
@@ -308,7 +308,7 @@ input[type="checkbox"].checkbox {
             padding-left: 0 !important;
 		}
 		.summary {
-			opacity: unset !important;
+			@include unset('opacity',true);
 			.info {
 				margin-left: 3.5rem;
 			}
@@ -406,17 +406,17 @@ li.action-details-container {
 	tbody {
 		tr {
 			height: 172px !important;
-			border-bottom: unset !important;
+			@include unset('border-bottom',true);
 			td {
 				a {
 					width: 160px;
 				}
 			}
 		}
-		height: unset !important;
+		@include unset('height',true);
 		td.selection {
 			top: 22px !important;
-			left: unset !important;
+			@include unset('left',true);
 			right: 22px;
 			&:hover {
 				opacity: 1;
@@ -435,7 +435,7 @@ li.action-details-container {
 						padding: 14px;
 						left: 36px !important;
 						top: 79px !important;
-						right: unset !important;
+						@include unset('right',true);
 					}
 				}
 			}
@@ -467,7 +467,7 @@ li.action-details-container {
 		tbody {
 			td.selection {
 				label {
-					box-sizing: unset !important;
+					@include unset('box-sizing',true);
 					width: 54px;
 					height: 54px;
 					display: inline-block;
@@ -477,7 +477,7 @@ li.action-details-container {
 			td.filename {
 				.favorite-mark {
 					label {
-						box-sizing: unset !important;
+						@include unset('box-sizing',true);
 						width: 54px;
 						height: 54px;
 						display: inline-block;
@@ -532,75 +532,75 @@ li.action-details-container {
 .files-fileList {
 	[data-mime="text/plain"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="text/markdown"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/msword"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.oasis.opendocument.text"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.template"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.ms-excel"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
 		}
 	}
 	[data-mime="text/csv"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
 		}
 	}
 	[data-mime="application/octet-stream"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'unknown-file.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'unknown-file.svg') !important;
 		}
 	}
 	[data-icon="/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=807bfe2a"] .thumbnail {
-		background-image: url(#{theme.$filetypes-image-path} + 'folder-shared.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'folder-shared.svg') !important;
 	}	
 }
 
 .app-sidebar-header__figure[style='background-image: url("/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=807bfe2a");']{
-  background-image: url(#{theme.$filetypes-image-path} + 'folder-shared.svg') !important;
+  background-image: url(#{variables.$filetypes-image-path} + 'folder-shared.svg') !important;
 }
 
 /* Office - graphics file icon grid view*/
 
 #app-sidebar-vue[data-mimetype="application/vnd.oasis.opendocument.graphics"] {
 	.app-sidebar-header__figure {
-		background-image: url(#{theme.$filetypes-image-path} + 'file-analytics-24.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'file-analytics-24.svg') !important;
 		background-size: contain !important;
 	}
 }
 
 #app-sidebar-vue[data-mimetype="application/vnd.oasis.opendocument.graphics-flat-xml"] {
 	.app-sidebar-header__figure {
-		background-image: url(#{theme.$filetypes-image-path} + 'file-analytics-24.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'file-analytics-24.svg') !important;
 		background-size: contain !important;
 	}
 }
@@ -608,12 +608,12 @@ li.action-details-container {
 .files-fileList {
 	[data-mime="application/vnd.oasis.opendocument.graphics"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'file-analytics.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'file-analytics.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.oasis.opendocument.graphics-flat-xml"] {
 		.thumbnail {
-			background-image: url(#{theme.$filetypes-image-path} + 'file-analytics.svg') !important;
+			background-image: url(#{variables.$filetypes-image-path} + 'file-analytics.svg') !important;
 		}
     }
 }
@@ -622,7 +622,7 @@ li.action-details-container {
 #files-public-content {
 	a[href$=".odg"] {
 		.publicpreview {
-			content: url(#{theme.$filetypes-image-path} + 'file-analytics.svg');
+			content: url(#{variables.$filetypes-image-path} + 'file-analytics.svg');
 		}
 	}
 }
@@ -631,7 +631,7 @@ li.action-details-container {
 /* Office- pdf file icon in grid view*/
 #app-sidebar-vue[data-mimetype="application/pdf"] {
 	.app-sidebar-header__figure {
-		background-image: url(#{theme.$filetypes-image-path} + 'application-pdf.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'application-pdf.svg') !important;
 		width: 96px;
 	}
 }
@@ -641,12 +641,12 @@ li.action-details-container {
 #files-public-content {
 	a[href$=".xlsx"] {
 		.publicpreview {
-			content: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg');
+			content: url(#{variables.$filetypes-image-path} + 'x-office-spreadsheet.svg');
 		}
 	}
 	a[href$=".ods"] {
 		.publicpreview {
-			content: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg');
+			content: url(#{variables.$filetypes-image-path} + 'x-office-spreadsheet.svg');
 		}
 	}
 }
@@ -656,12 +656,12 @@ li.action-details-container {
 #files-public-content {
 	a[href$=".pptx"] {
 		.publicpreview {
-			content: url(#{theme.$filetypes-image-path} + 'x-office-presentation.svg');
+			content: url(#{variables.$filetypes-image-path} + 'x-office-presentation.svg');
 		}
 	}
 	a[href$=".odp"] {
 		.publicpreview {
-			content: url(#{theme.$filetypes-image-path} + 'x-office-presentation.svg');
+			content: url(#{variables.$filetypes-image-path} + 'x-office-presentation.svg');
 		}
 	}
 }
@@ -669,7 +669,7 @@ li.action-details-container {
 /* audio file icon in grid view*/
 #app-sidebar-vue[data-mimetype="audio/mpeg"] {
 	.app-sidebar-header__figure {
-		background-image: url(#{theme.$filetypes-image-path} + 'audio.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'audio.svg') !important;
 		width: 96px;
 	}
 }
