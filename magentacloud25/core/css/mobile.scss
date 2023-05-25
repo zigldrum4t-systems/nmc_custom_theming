@@ -20,11 +20,12 @@
 	table th .selectedActions {
 		float: right;
     }
-    table th .selectedActions a {
-		padding: 17px 14px;
-	}
-	table th #selectedActionLabel a {
-		padding: 17px 14px;
+	table th {
+		.selectedActions a,
+		#selectedActionLabel a
+		{
+			padding: 17px 14px;
+		}
 	}
 	table th .columntitle.name {
 		margin-left: 0;
