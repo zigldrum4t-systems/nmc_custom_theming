@@ -1,3 +1,5 @@
+@use 'variables';
+
 // Add button newFileMenu
 .newFileMenu {
 	padding: 0.813rem 0.625rem;
@@ -189,16 +191,16 @@ button {
 /* office new file creation */
 .newFileMenu {
 	.icon-filetype-document {
-		background-image: url('../../core/img/office_icons_custom/file-text-24.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'file-text-24.svg') !important;
 	}
 	.icon-filetype-spreadsheet {
-		background-image: url('../../core/img/office_icons_custom/file-calculation-24.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'file-calculation-24.svg') !important;
 	}
 	.icon-filetype-presentation {
-		background-image: url('../../core/img/office_icons_custom/file-presentation-24.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'file-presentation-24.svg') !important;
 	}
 	.icon-filetype-draw {
-		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+		background-image: url(#{variables.$filetypes-image-path} + 'file-analytics-24.svg') !important;
 		background-size: contain !important;
 	}
 }
