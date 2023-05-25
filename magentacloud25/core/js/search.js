@@ -4,7 +4,6 @@ window.onload = function () {
 	searchInputLabel();
 };
 
-
 function searchIconLabel() {
 	var spanElement = document.createElement('span');
 	spanElement.className = 'menu-search-text';
