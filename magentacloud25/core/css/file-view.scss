@@ -1,3 +1,5 @@
+@use 'theme';
+
 /* FileList view changes */
 .files-filestable {
 	tbody {
@@ -530,96 +532,75 @@ li.action-details-container {
 .files-fileList {
 	[data-mime="text/plain"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/text.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="text/markdown"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/text.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/msword"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/text.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.oasis.opendocument.text"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/text.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/text.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.openxmlformats-officedocument.wordprocessingml.template"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/text.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'text.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.ms-excel"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
 		}
 	}
 	[data-mime="text/csv"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/x-office-spreadsheet.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg') !important;
 		}
 	}
 	[data-mime="application/octet-stream"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/unknown-file.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'unknown-file.svg') !important;
 		}
 	}
 	[data-icon="/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=807bfe2a"] .thumbnail {
-		background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
+		background-image: url(#{theme.$filetypes-image-path} + 'folder-shared.svg') !important;
 	}	
 }
 
 .app-sidebar-header__figure[style='background-image: url("/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=807bfe2a");']{
-  background-image: url('../../core/img/filetypes/folder-shared.svg') !important;
-}
-
-
-/*conflict*/
-.oc-conflict-pre-dlg-close-div {
-	a {
-		background: url('../../core/img/close.svg') no-repeat !important;
-	}
-}
-
-.oc-conflict-pre-dlg-close-div {
-	a {
-		&:hover {
-			background: url('../../core/img/close-magenta.svg') no-repeat !important;
-		}
-		&:active {
-			background: url('../../core/img/close-magenta.svg') no-repeat !important;
-		}
-		&:focus {
-			background: url('../../core/img/close-magenta.svg') no-repeat !important;
-		}
-	}
+  background-image: url(#{theme.$filetypes-image-path} + 'folder-shared.svg') !important;
 }
 
 /* Office - graphics file icon grid view*/
 
 #app-sidebar-vue[data-mimetype="application/vnd.oasis.opendocument.graphics"] {
 	.app-sidebar-header__figure {
-		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+		background-image: url(#{theme.$filetypes-image-path} + 'file-analytics-24.svg') !important;
 		background-size: contain !important;
 	}
 }
+
 #app-sidebar-vue[data-mimetype="application/vnd.oasis.opendocument.graphics-flat-xml"] {
 	.app-sidebar-header__figure {
-		background-image: url('../../core/img/office_icons_custom/file-analytics-24.svg') !important;
+		background-image: url(#{theme.$filetypes-image-path} + 'file-analytics-24.svg') !important;
 		background-size: contain !important;
 	}
 }
@@ -627,12 +608,12 @@ li.action-details-container {
 .files-fileList {
 	[data-mime="application/vnd.oasis.opendocument.graphics"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/file-analytics.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'file-analytics.svg') !important;
 		}
 	}
 	[data-mime="application/vnd.oasis.opendocument.graphics-flat-xml"] {
 		.thumbnail {
-			background-image: url('../../core/img/filetypes/file-analytics.svg') !important;
+			background-image: url(#{theme.$filetypes-image-path} + 'file-analytics.svg') !important;
 		}
     }
 }
@@ -641,7 +622,7 @@ li.action-details-container {
 #files-public-content {
 	a[href$=".odg"] {
 		.publicpreview {
-			content: url("../../core/img/filetypes/file-analytics.svg");
+			content: url(#{theme.$filetypes-image-path} + 'file-analytics.svg');
 		}
 	}
 }
@@ -650,7 +631,7 @@ li.action-details-container {
 /* Office- pdf file icon in grid view*/
 #app-sidebar-vue[data-mimetype="application/pdf"] {
 	.app-sidebar-header__figure {
-		background-image: url('../../core/img/filetypes/application-pdf.svg') !important;
+		background-image: url(#{theme.$filetypes-image-path} + 'application-pdf.svg') !important;
 		width: 96px;
 	}
 }
@@ -660,35 +641,35 @@ li.action-details-container {
 #files-public-content {
 	a[href$=".xlsx"] {
 		.publicpreview {
-			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+			content: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg');
 		}
 	}
 	a[href$=".ods"] {
 		.publicpreview {
-			content: url("../../core/img/filetypes/x-office-spreadsheet.svg");
+			content: url(#{theme.$filetypes-image-path} + 'x-office-spreadsheet.svg');
 		}
 	}
 }
 
-/* Office - pdf gridview, sharing */
+/* Office - pdf gridview */
 
 #files-public-content {
 	a[href$=".pptx"] {
 		.publicpreview {
-			content: url("../../core/img/filetypes/x-office-presentation.svg");
+			content: url(#{theme.$filetypes-image-path} + 'x-office-presentation.svg');
 		}
 	}
 	a[href$=".odp"] {
 		.publicpreview {
-			content: url("../../core/img/filetypes/x-office-presentation.svg");
+			content: url(#{theme.$filetypes-image-path} + 'x-office-presentation.svg');
 		}
 	}
 }
 
-/* audio file icon in sharing view*/
+/* audio file icon in grid view*/
 #app-sidebar-vue[data-mimetype="audio/mpeg"] {
 	.app-sidebar-header__figure {
-		background-image: url('../../core/img/filetypes/audio.svg') !important;
+		background-image: url(#{theme.$filetypes-image-path} + 'audio.svg') !important;
 		width: 96px;
 	}
 }
