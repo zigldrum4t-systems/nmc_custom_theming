@@ -1,4 +1,4 @@
-@use 'theme';
+@use 'variables';
 /* Search related changes */
 #header-menu-unified-search {
     width: 496px;
@@ -136,7 +136,7 @@
 
 .header-menu--opened {
 	.unified-search__trigger {
-		filter: invert(11%) sepia(80%) saturate(6905%) hue-rotate(320deg) brightness(93%) contrast(110%);
+		filter: var(--color-background-magenta);
 	}
 }
 
@@ -243,7 +243,7 @@ input:not([type=range],.input-field__input,[type=submit],[type=button],[type=res
 }
 
 #header-menu-unified-search .icon-folder {
-   background-image: url(#{theme.$filetypes-image-path} + 'folder.svg') !important;
+   background-image: url(#{variables.$filetypes-image-path} + 'folder.svg') !important;
 }
 
 .unified-search__result-icon--no-preview {
