@@ -165,5 +165,6 @@ class OC_Theme {
 	public function __construct() {
 		\OCP\Util::addScript('core', 'fileconflict');
 		\OCP\Util::addScript('files', 'filelistplugin');
+		\OCP\Util::addScript('core', 'search');
 	}
 }
