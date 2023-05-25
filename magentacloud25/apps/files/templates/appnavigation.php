@@ -53,7 +53,7 @@ foreach ($customNavigationItems as $item) {
 		<div id="app-settings-header">
 			<button class="settings-button"
 					data-apps-slide-toggle="#app-settings-content">
-				<?php p($l->t('Files settings'));?>
+				<?php p($l->t('Display settings'));?>
 			</button>
 		</div>
 		<div id="app-settings-content">
@@ -68,10 +68,10 @@ foreach ($customNavigationItems as $item) {
 					   checked="checked" type="checkbox">
 				<label for="cropimagepreviewsToggle"><?php p($l->t('Crop image previews'));?></label>
 			</div>
-			<label for="webdavurl"><?php p($l->t('WebDAV'));?></label>
+			<!-- <label for="webdavurl"><?php p($l->t('WebDAV'));?></label>
 			<input id="webdavurl" type="text" readonly="readonly"
 				   value="<?php p($_['webdav_url']);?>"/>
-			<em><a href="<?php echo link_to_docs('user-webdav') ?>" target="_blank" rel="noreferrer noopener"><?php p($l->t('Use this address to access your Files via WebDAV'))?> ↗</a></em>
+			<em><a href="<?php echo link_to_docs('user-webdav') ?>" target="_blank" rel="noreferrer noopener"><?php p($l->t('Use this address to access your Files via WebDAV'))?> ↗</a></em> -->
 		</div>
 	</div>
 

@@ -51,16 +51,17 @@
 	.custom-button {
 		padding-left: 1rem;
 		.btn-style {
-			padding: 0.563rem 1.5rem !important;
+			padding: 0.563rem 1.5rem ;
 			border: 1px solid var(--color-main-text);
-			background-color: #fff;
+			background-color: var(--white-color);
 			display: inline-block;
 			border-radius: 4px;
 			line-height: 1.42857143;
 			font-weight: 400;
 		}
 		.btn-style:hover {
-			color: var(--color-background-plain) !important;
+			color: var(--color-background-plain);
+			border: 1px solid var(--color-primary-element);
 		}
 	}
 	.collapsible:before {
@@ -218,4 +219,20 @@
 	}
 
 }
+#app-settings-header{
+	.settings-button{
+		color:var(--color-primary-element);
+		&:hover{
+			text-decoration: underline ;
+		}
+		&:hover,&:focus{
+			background-color:unset;
+		}
+		&.opened::before{
+			background-image: var(--icon-triangle-s-e20074);
+		}
+	}
+}
+
+
 // Files app navigation
