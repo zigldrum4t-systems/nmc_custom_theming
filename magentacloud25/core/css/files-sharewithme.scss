@@ -44,12 +44,12 @@
 }
 
 .action-share span.avatar {
-    background-color: unset;
-    color: unset !important;
-    font-weight: unset;
-    text-align: unset;
-    line-height: unset;
-    font-size: unset;
+    @include unset('background-color',false);
+    @include unset('color',true);
+    @include unset('font-weight',false);
+    @include unset('text-align',false);
+    @include unset('line-height',false);
+    @include unset('font-size',false);
 }
 
 .fileactions .action .avatar img, .action .avatardiv img {
