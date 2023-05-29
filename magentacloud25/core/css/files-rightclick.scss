@@ -33,18 +33,9 @@
 	}
 }
 
-#rightClickMenu.bubble {
-	li {
-		>a {
-			align-items: center !important;
-			&:hover {
-				@include unset('background-color',false);
-			}
-		}
-	}
-}
-
-.fileActionsMenu.bubble {
+#rightClickMenu.bubble,
+.fileActionsMenu.bubble
+{
 	li {
 		>a {
 			align-items: center !important;
