@@ -1,3 +1,4 @@
+@import 'functions';
 
  // Files app navigation
 
@@ -65,7 +66,7 @@
 		}
 	}
 	.collapsible:before {
-		content: unset !important;
+		@include unset('content',true);
 	}
 }
 
@@ -222,14 +223,21 @@
 #app-settings-header{
 	.settings-button{
 		color:var(--color-primary-element);
+		&::before{
+			background-image: var(--icon-triangle-up);
+		}
 		&:hover{
 			text-decoration: underline ;
 		}
 		&:hover,&:focus{
-			background-color:unset;
+			@include unset('background-color',false);
 		}
-		&.opened::before{
-			background-image: var(--icon-triangle-s-e20074);
+		&.opened
+		{
+			@include unset('border-top',false);
+			&::before{
+				background-image: var(--icon-triangle-s-e20074);
+			}
 		}
 	}
 }
