@@ -1,6 +1,3 @@
-window.onload = function () {
-  renderCustomFileConflictWidget();
-};
 
 function renderCustomFileConflictWidget() {
   $.widget('oc.ocdialogconflictpredlg', {
