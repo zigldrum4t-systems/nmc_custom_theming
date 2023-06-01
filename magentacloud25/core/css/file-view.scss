@@ -208,6 +208,29 @@ input[type="checkbox"].checkbox {
 	}
 }
 
+.files-filestable input[type='checkbox'].checkbox:checked+label:before {
+    background-image: var(--icon-checkbox-checkmark) !important;
+    background-position: -26% 13%;
+    box-sizing: border-box;
+}
+
+.select-all+label::before {
+    margin: 0 0 0.188rem 0.188rem !important;
+}
+
+.select-all+label {
+    width: 54px;
+    height: 52px;
+    padding: 1rem 0rem !important;
+    display: inline-block !important;
+    text-align: center;
+}
+
+.file-fileList tr td.selection>.selectCheckBox:focus+label, .select-all:focus+label {
+    background-color: var(--color-background-hover);
+    border-radius: var(--border-radius-pill);
+}
+
 .files-fileList {
 	.action {
 		&.action-share {
@@ -672,4 +695,30 @@ li.action-details-container {
 		background-image: url(#{variables.$filetypes-image-path} + 'audio.svg') !important;
 		width: 96px;
 	}
+}
+
+#app-content-files .emptycontent h2:nth-child(3) {
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+#app-content-files .emptycontent h2 {
+    font-size: 1.25rem;
+}
+
+.emptycontent .icon-folder, .icon-filetype-folder {
+    background-image: var( --icon-folder-empty) !important;
+	background-size: cover;
+}
+
+#app-content-files .emptycontent p {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.emptycontent [class^='icon-'],
+.emptycontent [class*='icon-'] {
+    height: 192px;
+    width: 192px;
+    margin: 0 auto !important;
 }
