@@ -33,10 +33,22 @@
 			&.filesize {
 				padding: 1.25rem 1rem;
 			}
+			&.selection>.selectCheckBox+label {
+				width: 54px;
+				padding: 1rem 0rem !important;
+				display: inline-block !important;
+			}
 		}
 	}
 	.filesize {
 		color: var(--scl-color-grey-90);
+	}
+	.select-all+label {
+		width: 60px;
+		height: 52px;
+		padding: 1rem 0rem !important;
+		display: inline-block !important;
+		text-align: center;
 	}
 }
 
@@ -605,7 +617,7 @@ li.action-details-container {
 	}
 	[data-icon="/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=807bfe2a"] .thumbnail {
 		background-image: url(#{variables.$filetypes-image-path} + 'folder-shared.svg') !important;
-	}	
+	}
 }
 
 .app-sidebar-header__figure[style='background-image: url("/index.php/apps/theming/img/core/filetypes/folder-public.svg?v=807bfe2a");']{
