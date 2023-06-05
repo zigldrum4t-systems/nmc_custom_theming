@@ -2,6 +2,7 @@
 #allLabel {
 	color: var(--scl-color-grey-90);
 	padding-top: 5px;
+	padding-left: 10px;
 	&:hover {
 		color: var(--color-background-plain);
 	}
@@ -184,7 +185,9 @@ a.menuitem.action {
  }
 
 .span-visibility,
-.item-toggleSelectionMode{
+.item-toggleSelectionMode,
+.item-tags
+{
     display: none !important;
 }
 
