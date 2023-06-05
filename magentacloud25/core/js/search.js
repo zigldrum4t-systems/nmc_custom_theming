@@ -1,17 +1,3 @@
-
-window.onload = function () {
-	searchIconLabel();
-	searchInputLabel();
-};
-
-function searchIconLabel() {
-	var spanElement = document.createElement('span');
-	spanElement.className = 'menu-search-text';
-	spanElement.innerText = t('core', 'Search');
-	document.getElementsByClassName('header-menu__trigger')[0] ?
-	document.getElementsByClassName('header-menu__trigger')[0].appendChild(spanElement) : null;
-}
-
 function searchInputLabel() {
 	var ele = document.getElementsByClassName('header-menu__trigger')[0];
 	if (ele) {
